@@ -1,1 +1,1 @@
-Development copes of the SWO will go into this folder, such as owl files
+Development copies of the SWO will go into this folder, such as owl files
