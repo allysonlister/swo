@@ -2,7 +2,7 @@
 
 
 <!DOCTYPE rdf:RDF [
-    <!ENTITY swo2 "http://www.ebi.ac.uk/efo/swo/" >
+    <!ENTITY swo "http://www.ebi.ac.uk/efo/swo/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
@@ -17,15 +17,13 @@
      xml:base="http://www.ebi.ac.uk/swo/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
-     xmlns:swo2="http://www.ebi.ac.uk/efo/swo/"
+     xmlns:swo="http://www.ebi.ac.uk/efo/swo/"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
      xmlns:owl="http://www.w3.org/2002/07/owl#">
-    <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/">
-        <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/licence/"/>
-    </owl:Ontology>
+    <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/"/>
     
 
 
@@ -107,7 +105,7 @@
 
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000393 -->
 
-    <owl:Class rdf:about="&swo2;SWO_0000393">
+    <owl:Class rdf:about="&swo;SWO_0000393">
         <rdfs:label xml:lang="en">information processing</rdfs:label>
         <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
     </owl:Class>
