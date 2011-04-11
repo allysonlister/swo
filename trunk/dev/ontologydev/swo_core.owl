@@ -29,7 +29,10 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#">
     <owl:Ontology rdf:about="">
         <owl:imports rdf:resource="algorithm/"/>
+        <owl:imports rdf:resource="data/"/>
         <owl:imports rdf:resource="license/"/>
+        <owl:imports rdf:resource="objective/"/>
+        <owl:imports rdf:resource="organization/"/>
         <owl:imports rdf:resource="version/"/>
     </owl:Ontology>
     
@@ -111,6 +114,15 @@
     <owl:Class rdf:about="&obo;IAO_0000129">
         <rdfs:label xml:lang="en">version number</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000245">
+        <rdfs:label xml:lang="en">organization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
     </owl:Class>
     
 
