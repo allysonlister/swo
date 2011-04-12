@@ -109,6 +109,38 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000293">
+        <rdfs:label
+            >has specified input</rdfs:label>
+        <dc:creator>Melanie Courtot</dc:creator>
+        <dc:creator>Alan Ruttenberg</dc:creator>
+        <dc:creator>Larry Hunter</dc:creator>
+        <dc:creator>Bjoern Peters</dc:creator>
+        <obo:IAO_0000115 xml:lang="en"
+            >The input to a process. [Adapted from original by James Malone]</obo:IAO_0000115>
+        <rdfs:domain rdf:resource="&span;ProcessualEntity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000299">
+        <rdfs:label xml:lang="en"
+            >has specified output</rdfs:label>
+        <dc:creator xml:lang="en">Alan Ruttenberg</dc:creator>
+        <dc:creator xml:lang="en">Bjoern Peters</dc:creator>
+        <dc:creator xml:lang="en">Larry Hunter</dc:creator>
+        <dc:creator xml:lang="en">Melanie Courtot</dc:creator>
+        <obo:IAO_0000115 xml:lang="en"
+            >The output of a process. [Adapted from original by James Malone]</obo:IAO_0000115>
+        <rdfs:domain rdf:resource="&span;ProcessualEntity"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.obofoundry.org/ro/ro.owl#has_part -->
 
     <owl:ObjectProperty rdf:about="&ro;has_part">
