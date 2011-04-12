@@ -2,16 +2,24 @@
 
 
 <!DOCTYPE rdf:RDF [
-    <!ENTITY swo2 "http://www.ebi.ac.uk/swo/" >
-    <!ENTITY swo "http://www.ebi.ac.uk/efo/swo/" >
+    <!ENTITY efo "http://www.ebi.ac.uk/efo/" >
+    <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY obof "http://purl.obofoundry.org/obo/" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
     <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
     <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
+    <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+    <!ENTITY xsp "http://www.owl-ontologies.com/2005/08/07/xsp.owl#" >
 ]>
 
 
@@ -19,14 +27,22 @@
      xml:base="http://www.ebi.ac.uk/swo/"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:obof="http://purl.obofoundry.org/obo/"
      xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
-     xmlns:swo2="http://www.ebi.ac.uk/swo/"
-     xmlns:swo="http://www.ebi.ac.uk/efo/swo/"
+     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:swo="http://www.ebi.ac.uk/swo/"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#">
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
     <owl:Ontology rdf:about="">
         <owl:imports rdf:resource="algorithm/"/>
         <owl:imports rdf:resource="data/"/>
@@ -46,7 +62,68 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <owl:AnnotationProperty rdf:about="&efo;obsoleted_in_version">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >obsoleted in version</rdfs:label>
+        <dc:creator rdf:datatype="&xsd;string"
+            >EFO Development Team</dc:creator>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string"
+            >The version in which a class or property has been made obsolete</obo:IAO_0000115>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&efo;reason_for_obsolescence">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >reason for obsolescence</rdfs:label>
+        <dc:creator rdf:datatype="&xsd;string"
+            >EFO Development Team</dc:creator>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string"
+            >The reason a class or property was made obsolete</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >textual definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obofoundry.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="&obof;IAO_0000136">
+        <rdfs:label xml:lang="en">is about</rdfs:label>
+        <dc:creator xml:lang="en">Alan Ruttenberg</dc:creator>
+        <obo:IAO_0000115 xml:lang="en"
+            >is about relates an information entity to other entities in which the information entity holds some information which dscribes some facet of the other entity, such as the arrow direction on a sign. [Adapted from original by James Malone]</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#has_part -->
+
+    <owl:ObjectProperty rdf:about="&ro;has_part">
+        <rdfs:label rdf:datatype="&xsd;string">has part</rdfs:label>
+        <dc:creator rdf:datatype="&xsd;string">OBO Foundry</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#part_of -->
+
+    <owl:ObjectProperty rdf:about="&ro;part_of">
+        <rdfs:label rdf:datatype="&xsd;string">part of</rdfs:label>
+        <dc:creator rdf:datatype="&xsd;string">OBO Foundry</dc:creator>
+    </owl:ObjectProperty>
     
 
 
@@ -84,7 +161,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
     <owl:Class rdf:about="&obo;IAO_0000030">
-        <rdfs:label
+        <rdfs:label rdf:datatype="&xsd;string"
             >information artifact</rdfs:label>
     </owl:Class>
     
@@ -93,7 +170,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000064 -->
 
     <owl:Class rdf:about="&obo;IAO_0000064">
-        <rdfs:label>algorithm</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
     </owl:Class>
     
@@ -127,16 +204,6 @@
     
 
 
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000393 -->
-
-    <owl:Class rdf:about="&swo;SWO_0000393">
-        <rdfs:label xml:lang="en"
-            >information processing</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.ebi.ac.uk/swo/SWO_0000001 -->
 
     <owl:Class rdf:about="SWO_0000001">
@@ -149,9 +216,29 @@
     <!-- http://www.ebi.ac.uk/swo/SWO_0000002 -->
 
     <owl:Class rdf:about="SWO_0000002">
-        <rdfs:label
+        <rdfs:label rdf:datatype="&xsd;string"
             >software license</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000003 -->
+
+    <owl:Class rdf:about="SWO_0000003">
+        <rdfs:label xml:lang="en"
+            >information processing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000004 -->
+
+    <owl:Class rdf:about="SWO_0000004">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >Microsoft Excel 2007</rdfs:label>
+        <rdfs:subClassOf rdf:resource="SWO_0000001"/>
     </owl:Class>
     
 
@@ -164,10 +251,18 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
+
+    <owl:Class rdf:about="&oboInOwl;ObsoleteClass">
+        <rdfs:label rdf:datatype="&xsd;string">obsolete class</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ifomis.org/bfo/1.1/snap#MaterialEntity -->
 
     <owl:Class rdf:about="&snap;MaterialEntity">
-        <rdfs:label>material entity</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">material entity</rdfs:label>
     </owl:Class>
     
 
@@ -175,8 +270,7 @@
     <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
 
     <owl:Class rdf:about="&snap;Role">
-        <rdfs:label>role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:label rdf:datatype="&xsd;string">role</rdfs:label>
     </owl:Class>
     
 
@@ -184,14 +278,8 @@
     <!-- http://www.ifomis.org/bfo/1.1/span#ProcessualEntity -->
 
     <owl:Class rdf:about="&span;ProcessualEntity">
-        <rdfs:label>process</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">process</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#Thing -->
-
-    <owl:Class rdf:about="&owl;Thing"/>
 </rdf:RDF>
 
 
