@@ -10,12 +10,14 @@
     <!ENTITY obof "http://purl.obofoundry.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY license "http://www.ebi.ac.uk/swo/license/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
     <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
     <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
     <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY organization "http://www.ebi.ac.uk/swo/organization/" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
     <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
@@ -35,12 +37,14 @@
      xmlns:obof="http://purl.obofoundry.org/obo/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:organization="http://www.ebi.ac.uk/swo/organization/"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:license="http://www.ebi.ac.uk/swo/license/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
     <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/">
@@ -140,10 +144,46 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/has_format_specification -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/has_format_specification">
+        <rdfs:label rdf:datatype="&xsd;string">has format specification</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">relationship between some information and a data format </obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="&obof;IAO_0000136"/>
+        <rdfs:domain rdf:resource="&obo;IAO_0000030"/>
+        <rdfs:range rdf:resource="&obo;IAO_0000098"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/has_license -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/has_license"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/is_developed_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/is_developed_by">
+        <rdfs:label rdf:datatype="&xsd;string">is developed by</rdfs:label>
+        <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ebi.ac.uk/swo/is_executed_in -->
 
     <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/is_executed_in">
         <rdfs:label rdf:datatype="&xsd;string">is_executed_in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/is_published_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/is_published_by">
+        <rdfs:label>is published by</rdfs:label>
+        <dc:creator>James Malone</dc:creator>
     </owl:ObjectProperty>
     
 
@@ -199,6 +239,7 @@
 
     <owl:Class rdf:about="&obo;IAO_0000030">
         <rdfs:label rdf:datatype="&xsd;string">information artifact</rdfs:label>
+        <obo:IAO_0000115>Information is a statement about some entity.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -273,24 +314,68 @@
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/is_published_by"/>
+                <owl:hasValue rdf:resource="&organization;SWO_9000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/is_developed_by"/>
+                <owl:hasValue rdf:resource="&organization;SWO_9000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/is_executed_in"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/SWO_0000003"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                                <owl:someValuesFrom rdf:resource="&data;SWO_3000001"/>
-                            </owl:Restriction>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/data"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_format_specification"/>
+                                        <owl:someValuesFrom rdf:resource="&data;XLS_spreadsheet"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                                <owl:someValuesFrom rdf:resource="&data;SWO_3000001"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/data"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_format_specification"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:unionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="&data;XLS_spreadsheet"/>
+                                                            <rdf:Description rdf:about="&data;XML_spreadsheet"/>
+                                                        </owl:unionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
+                <owl:someValuesFrom rdf:resource="&license;SWO_10000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Microsoft Excel 2007 is a spreadsheet editing and viewing tool.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -299,6 +384,24 @@
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data">
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/homepage_URL -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/homepage_URL">
+        <rdfs:label>homepage URL</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/website_URL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/website_URL -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/website_URL">
+        <rdfs:label>website URL</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data"/>
     </owl:Class>
     
 
@@ -332,6 +435,26 @@
     <owl:Class rdf:about="&span;ProcessualEntity">
         <rdfs:label rdf:datatype="&xsd;string">process</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_9000002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/SWO_9000002">
+        <rdf:type rdf:resource="http://www.ebi.ac.uk/swo/homepage_URL"/>
+        <rdfs:comment rdf:datatype="&xsd;anyURI">http://office.microsoft.com/en-us/excel/</rdfs:comment>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
