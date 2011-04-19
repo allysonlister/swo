@@ -12,6 +12,7 @@
     <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
     <!ENTITY license "http://www.ebi.ac.uk/swo/license/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY objective "http://www.ebi.ac.uk/swo/objective/" >
     <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
     <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
     <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
@@ -29,6 +30,7 @@
      xml:base="http://www.ebi.ac.uk/swo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:objective="http://www.ebi.ac.uk/swo/objective/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
      xmlns:efo="http://www.ebi.ac.uk/efo/"
@@ -44,8 +46,8 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:license="http://www.ebi.ac.uk/swo/license/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:license="http://www.ebi.ac.uk/swo/license/"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
     <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/">
         <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/algorithm/"/>
@@ -120,11 +122,11 @@
 
     <owl:ObjectProperty rdf:about="&obo;OBI_0000293">
         <rdfs:label>has specified input</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The input to a process. [Adapted from original by James Malone]</obo:IAO_0000115>
         <dc:creator>Melanie Courtot</dc:creator>
         <dc:creator>Alan Ruttenberg</dc:creator>
         <dc:creator>Larry Hunter</dc:creator>
         <dc:creator>Bjoern Peters</dc:creator>
-        <obo:IAO_0000115 xml:lang="en">The input to a process. [Adapted from original by James Malone]</obo:IAO_0000115>
         <rdfs:domain rdf:resource="&span;ProcessualEntity"/>
     </owl:ObjectProperty>
     
@@ -139,6 +141,18 @@
         <dc:creator xml:lang="en">Larry Hunter</dc:creator>
         <dc:creator xml:lang="en">Melanie Courtot</dc:creator>
         <obo:IAO_0000115 xml:lang="en">The output of a process. [Adapted from original by James Malone]</obo:IAO_0000115>
+        <rdfs:domain rdf:resource="&span;ProcessualEntity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000417 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000417">
+        <rdfs:label rdf:datatype="&xsd;string">achieves objective</rdfs:label>
+        <dc:creator rdf:datatype="&xsd;string">OBI</dc:creator>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The relationship betwee a process and the objective which the process achieves. [Adapted from original by James Malone]</obo:IAO_0000115>
+        <rdfs:range rdf:resource="&obo;IAO_0000005"/>
         <rdfs:domain rdf:resource="&span;ProcessualEntity"/>
     </owl:ObjectProperty>
     
@@ -314,13 +328,19 @@
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/is_published_by"/>
-                <owl:hasValue rdf:resource="&organization;SWO_9000001"/>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
+                <owl:someValuesFrom rdf:resource="&license;SWO_10000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/is_developed_by"/>
+                <owl:hasValue rdf:resource="&organization;SWO_9000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/is_published_by"/>
                 <owl:hasValue rdf:resource="&organization;SWO_9000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -364,15 +384,13 @@
                                     </owl:Class>
                                 </owl:someValuesFrom>
                             </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                                <owl:someValuesFrom rdf:resource="&objective;SWO_4000001"/>
+                            </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
-                <owl:someValuesFrom rdf:resource="&license;SWO_10000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Microsoft Excel 2007 is a spreadsheet editing and viewing tool.</obo:IAO_0000115>
