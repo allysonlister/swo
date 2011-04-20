@@ -87,6 +87,15 @@
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
         <rdfs:label rdf:datatype="&xsd;string">Microsoft</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000002 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/organization/SWO_9000002">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">MathWorks</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
