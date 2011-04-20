@@ -71,6 +71,7 @@
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_40000002 -->
 
     <owl:Class rdf:about="&ebi;swo/objective/SWO_40000002">
+        <rdfs:label rdf:datatype="&xsd;string">matrix manipulation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
     </owl:Class>
     
