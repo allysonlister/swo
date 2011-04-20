@@ -83,9 +83,9 @@
     
 
 
-    <!-- http://www.ebi.ac.uk/swo/data/XLS_spreadsheet -->
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000002 -->
 
-    <owl:Class rdf:about="&ebi;swo/data/XLS_spreadsheet">
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000002">
         <rdfs:label rdf:datatype="&xsd;string">XLS spreadsheet</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000001"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A spreadsheet data format designed for Microsoft Excel.</obo:IAO_0000115>
@@ -93,13 +93,22 @@
     
 
 
-    <!-- http://www.ebi.ac.uk/swo/data/XML_spreadsheet -->
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000003 -->
 
-    <owl:Class rdf:about="&ebi;swo/data/XML_spreadsheet">
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000003">
         <rdfs:label rdf:datatype="&xsd;string">XML spreadsheet</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000001"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A spreadsheet data format in which the structure of the data is described using XML, such as column and row headers and cell identity.</obo:IAO_0000115>
         <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000004 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000004">
+        <rdfs:label rdf:datatype="&xsd;string">matlab m file</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
 </rdf:RDF>
 
