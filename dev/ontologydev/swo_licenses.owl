@@ -58,15 +58,6 @@
     
 
 
-    <!-- http://www.ebi.ac.uk/SWO_1000001 -->
-
-    <owl:Class rdf:about="&ebi;SWO_1000001">
-        <rdfs:label>creative commons</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_0000002"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.ebi.ac.uk/swo/SWO_0000002 -->
 
     <owl:Class rdf:about="&ebi;swo/SWO_0000002">
@@ -75,10 +66,28 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_10000001 -->
+
+    <owl:Class rdf:about="&ebi;swo/license/SWO_10000001">
+        <rdfs:label>creative commons</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_0000002"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/swo/license/SWO_10000002 -->
 
     <owl:Class rdf:about="&ebi;swo/license/SWO_10000002">
         <rdfs:label rdf:datatype="&xsd;string">proprietary commercial software license</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_0000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_10000003 -->
+
+    <owl:Class rdf:about="&ebi;swo/license/SWO_10000003">
+        <rdfs:label>Mozilla Public License Version 1.1</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_0000002"/>
     </owl:Class>
 </rdf:RDF>

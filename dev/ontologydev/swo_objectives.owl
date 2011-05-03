@@ -77,6 +77,15 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/objective/SWO_40000003 -->
+
+    <owl:Class rdf:about="&ebi;swo/objective/SWO_40000003">
+        <rdfs:label>ontology engineering</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000001 -->
 
     <owl:Class rdf:about="&ebi;swo/objective/SWO_4000001">
