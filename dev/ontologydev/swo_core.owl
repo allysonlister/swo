@@ -307,6 +307,14 @@
     </owl:Class>
     
 
+    <!-- http://www.ebi.ac.uk/swo/SWO_9000005 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000005">
+        <rdfs:label rdf:datatype="&xsd;string">clause</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+    </owl:Class>
+    
+
 
     <!-- http://www.ebi.ac.uk/swo/SWO_0000002 -->
 
