@@ -58,6 +58,7 @@
         <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/objective/"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/organization/"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/version/"/>
+        <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/interface/"/>
     </owl:Ontology>
     
 
@@ -311,6 +312,15 @@
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000005">
         <rdfs:label rdf:datatype="&xsd;string">clause</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_9000050 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000050">
+        <rdfs:label rdf:datatype="&xsd;string">software interface</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
     </owl:Class>
     
