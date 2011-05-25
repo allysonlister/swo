@@ -94,6 +94,15 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/EDAM/EDAM:0002331 -->
+
+    <owl:Class rdf:about="&ebi;EDAM/EDAM:0002331">
+        <rdfs:label>html</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000013"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000001 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000001">
@@ -225,6 +234,15 @@
         <dc:creator>James Malone</dc:creator>
         <obo:IAO_0000115>Computer Graphics Metafile (CGM) is a free and open international standard file format for 2D vector graphics, raster graphics, and text, and is defined by ISO/IEC 8632.</obo:IAO_0000115>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Computer_Graphics_Metafile</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000013 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000013">
+        <rdfs:label>web page specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
 </rdf:RDF>
 
