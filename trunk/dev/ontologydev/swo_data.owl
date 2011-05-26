@@ -357,6 +357,49 @@
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000024">
         <rdfs:label>PostScript</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000014"/>
+        <obo:IAO_0000115>PostScript is a format used for describing documents.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000025 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000025">
+        <rdfs:label>tex</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000014"/>
+        <obo:IAO_0000115>tex is a format for documents written in the document markup language and document preparation system LaTeX.</obo:IAO_0000115>
+        <swo:alternative_term>LaTeX format</swo:alternative_term>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000026 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000026">
+        <rdfs:label>outline document format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <obo:IAO_0000115>A format specification for data used or produced by outliner software</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000027 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000027">
+        <rdfs:label>OmniOutline format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000026"/>
+        <obo:IAO_0000115>A proprietary format for documents created and edited using OmniOutliner outliner software,</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000028 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000028">
+        <rdfs:label>OPML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000026"/>
+        <obo:IAO_0000115>OPML (Outline Processor Markup Language) is an XML format for outlines</obo:IAO_0000115>
+        <swo:alternative_term>Outline Processor Markup Language</swo:alternative_term>
     </owl:Class>
 </rdf:RDF>
 
