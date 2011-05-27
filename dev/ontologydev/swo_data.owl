@@ -401,6 +401,16 @@
         <obo:IAO_0000115>OPML (Outline Processor Markup Language) is an XML format for outlines</obo:IAO_0000115>
         <swo:alternative_term>Outline Processor Markup Language</swo:alternative_term>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000029 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000029">
+        <rdfs:label>JPEG 2000</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000020"/>
+        <obo:IAO_0000115>JPEG 2000 is a compression standard enabling both lossless and lossy storage. The compression methods used are different from the ones in standard JFIF/JPEG; they improve quality and compression ratios, but also require more computational power to process. [wikipedia]</obo:IAO_0000115>
+    </owl:Class>
 </rdf:RDF>
 
 
