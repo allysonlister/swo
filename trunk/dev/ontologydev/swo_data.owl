@@ -411,6 +411,34 @@
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000020"/>
         <obo:IAO_0000115>JPEG 2000 is a compression standard enabling both lossless and lossy storage. The compression methods used are different from the ones in standard JFIF/JPEG; they improve quality and compression ratios, but also require more computational power to process. [wikipedia]</obo:IAO_0000115>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000030 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000030">
+        <rdfs:label>word processing document format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000031 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000031">
+        <rdfs:label>WordStar format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000032 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000032">
+        <rdfs:label>Microsoft Word doc</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000030"/>
+        <obo:IAO_0000115>A file format for word processing documents for Microsoft Word. </obo:IAO_0000115>
+    </owl:Class>
 </rdf:RDF>
 
 
