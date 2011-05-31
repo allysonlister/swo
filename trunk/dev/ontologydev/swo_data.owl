@@ -471,6 +471,29 @@
         <obo:IAO_0000115>A format in which a .java file has been compiled into bytecode using a Java compiler and which is specified to be executed using the Java virtual machine.</obo:IAO_0000115>
         <obo:IAO_0000119>James Malone</obo:IAO_0000119>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000036 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000036">
+        <rdfs:label>CopasiML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <swo:alternative_term>.cps</swo:alternative_term>
+        <obo:IAO_0000115>An XML-based file format for use with the COPASI software.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000037 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000037">
+        <rdfs:label>SBML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <obo:IAO_0000115>Systems Biology Markup Language (SBML) is a machine-readable format for representing models. It&#39;s oriented towards describing systems where biological entities are involved in, and modified by, processes that occur over time.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://sbml.org</obo:IAO_0000119>
+        <swo:alternative_term>Systems Biology Markup Language</swo:alternative_term>
+    </owl:Class>
 </rdf:RDF>
 
 
