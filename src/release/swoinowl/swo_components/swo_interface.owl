@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY ebi "http://www.ebi.ac.uk/" >
+    <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="&ebi;swo/interface/"
+     xml:base="&ebi;swo/interface/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:swo="&ebi;swo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ebi="http://www.ebi.ac.uk/">
+    <owl:Ontology rdf:about="&ebi;swo/interface/"/>
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_9000050 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000050">
+        <rdfs:label rdf:datatype="&xsd;string">software interface</rdfs:label>
+    </owl:Class>
+    
+
+
+
+    <!-- http://www.ebi.ac.uk/swo/interface/SWO_9000051 -->
+
+    <owl:Class rdf:about="&ebi;swo/interface/SWO_9000051">
+        <rdfs:label>Web Service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_9000050"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/interface/SWO_9000052 -->
+
+    <owl:Class rdf:about="&ebi;swo/interface/SWO_9000052">
+        <rdfs:label>Graphical User Interface</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_9000050"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/interface/SWO_9000053 -->
+
+    <owl:Class rdf:about="&ebi;swo/interface/SWO_9000053">
+        <rdfs:label>Command Line Interface</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_9000050"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/interface/SWO_9000054 -->
+
+    <owl:Class rdf:about="&ebi;swo/interface/SWO_9000054">
+        <rdfs:label>Application Programming Interface</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_9000050"/>
+    </owl:Class>
+    
+
+
+
+ </rdf:RDF>

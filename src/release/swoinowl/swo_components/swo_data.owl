@@ -1,0 +1,502 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY ebi "http://www.ebi.ac.uk/" >
+    <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY data "http://www.ebi.ac.uk/swo/data/http://www.ebi.ac.uk/swo/data/" >
+]>
+
+
+<rdf:RDF xmlns="&ebi;swo/data/"
+     xml:base="&ebi;swo/data/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:swo="&ebi;swo/"
+     xmlns:data="&ebi;swo/data/&ebi;swo/data/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ebi="http://www.ebi.ac.uk/">
+    <owl:Ontology rdf:about="&ebi;swo/data/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="&ebi;swo/alternative_term"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000098 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000098">
+        <rdfs:label xml:lang="en">data format specification</rdfs:label>
+        <obo:IAO_0000115>The syntax by which data is specified which renders it valid for a given format.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/EDAM/EDAM:0001478 -->
+
+    <owl:Class rdf:about="&ebi;EDAM/EDAM:0001478">
+        <rdfs:label>pdbml</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/EDAM/EDAM:0001665 -->
+
+    <owl:Class rdf:about="&ebi;EDAM/EDAM:0001665">
+        <rdfs:label>Taverna workflow format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <obo:IAO_0000115>Format of Taverna workflows.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/EDAM/EDAM:0002331 -->
+
+    <owl:Class rdf:about="&ebi;EDAM/EDAM:0002331">
+        <rdfs:label>html</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000013"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000001 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000001">
+        <rdfs:label rdf:datatype="&xsd;string">spreadsheet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A spreadsheet data format is one in which data is organised into a matrix (or matrices) of columns and rows to form cells in which values are entered.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000002 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000002">
+        <rdfs:label rdf:datatype="&xsd;string">XLS spreadsheet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000001"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A spreadsheet data format designed for Microsoft Excel.</obo:IAO_0000115>
+        <dc:creator>James Malone</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000003 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000003">
+        <rdfs:label rdf:datatype="&xsd;string">XML spreadsheet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000001"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A spreadsheet data format in which the structure of the data is described using XML, such as column and row headers and cell identity.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000004 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000004">
+        <rdfs:label rdf:datatype="&xsd;string">matlab m file</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <dc:creator>James Malone</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000005 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000005">
+        <rdfs:label>XML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <obo:IAO_0000115>Extensible Markup Language (XML) is a standard set of rules for encoding documents in a machine-readable form defined by the W3C.</obo:IAO_0000115>
+        <dc:creator>James Malone</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000006 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000006">
+        <rdfs:label>RDF</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;anyURI">http://www.w3.org/TR/REC-rdf-syntax/</obo:IAO_0000119>
+        <obo:IAO_0000115>The Resource Description Framework (RDF) is a general-purpose language for representing information in the Web.</obo:IAO_0000115>
+        <dc:creator>James Malone</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000007 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000007">
+        <rdfs:label>RDF-XML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000006"/>
+        <dc:creator>James Malone</dc:creator>
+        <obo:IAO_0000115>A serialisation of RDF into an XML format.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000008 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000008">
+        <rdfs:label>image format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000009 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000009">
+        <rdfs:label>DWG</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000008"/>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/.dwg</obo:IAO_0000119>
+        <obo:IAO_0000115>DWG (&quot;drawing&quot;) is a binary file format used for storing two and three dimensional design data and metadata</obo:IAO_0000115>
+        <dc:creator>James Malone</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000010 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000010">
+        <rdfs:label>DXF</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000008"/>
+        <dc:creator>James Malone</dc:creator>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/AutoCAD_DXF</obo:IAO_0000119>
+        <obo:IAO_0000115>DXF (Drawing Interchange Format, or Drawing Exchange Format) is a CAD data file format developed by Autodesk for enabling data interoperability between AutoCAD and other programs.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000011 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000011">
+        <rdfs:label>BMP</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000020"/>
+        <obo:IAO_0000119>http://www.fileformat.info/format/bmp/egff.htm</obo:IAO_0000119>
+        <obo:IAO_0000115>The BMP File Format is a Raster graphics image file format used to store bitmap digital images, independently of the display device (such as a graphics adapter).</obo:IAO_0000115>
+        <dc:creator>James Malone</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000012 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000012">
+        <rdfs:label>CGM</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000020"/>
+        <dc:creator>James Malone</dc:creator>
+        <obo:IAO_0000115>Computer Graphics Metafile (CGM) is a free and open international standard file format for 2D vector graphics, raster graphics, and text, and is defined by ISO/IEC 8632.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Computer_Graphics_Metafile</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000013 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000013">
+        <rdfs:label>web page specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000014 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000014">
+        <rdfs:label>document exchange format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000015 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000015">
+        <rdfs:label>pdf</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000014"/>
+        <swo:alternative_term>Portable Document Format</swo:alternative_term>
+        <obo:IAO_0000115>PDF is an open standard for document exchange. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000016 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000016">
+        <rdfs:label>TIFF</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000020"/>
+        <swo:alternative_term>Tagged Image File Format</swo:alternative_term>
+        <obo:IAO_0000115>TIFF is a flexible, adaptable file format for handling images and data within a single file, by including the header tags (size, definition, image-data arrangement, applied image compression) defining the image&#39;s geometry.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000017 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000017">
+        <rdfs:label>JPEG</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000020"/>
+        <obo:IAO_0000115>JPEG is a lossy file format for storing images</obo:IAO_0000115>
+        <swo:alternative_term>JPG</swo:alternative_term>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000018 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000018">
+        <rdfs:label>PNG</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000020"/>
+        <swo:alternative_term>Portable Network Graphics</swo:alternative_term>
+        <obo:IAO_0000115>PNG is a bitmapped image format and video codec that employs lossless data compression.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000019 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000019">
+        <rdfs:label>GIF</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000020"/>
+        <obo:IAO_0000115>The Graphics Interchange Format (GIF) is a bitmap image format. The format supports up to 8 bits per pixel thus allowing a single image to reference a palette of up to 256 distinct colors. The colors are chosen from the 24-bit RGB color space. It also supports animations and allows a separate palette of 256 colors for each frame. The color limitation makes the GIF format unsuitable for reproducing color photographs and other images with continuous color, but it is well-suited for simpler images such as graphics or logos with solid areas of color. [wikipedia]</obo:IAO_0000115>
+        <swo:alternative_term>Graphics Interchange Format</swo:alternative_term>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000020 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000020">
+        <rdfs:label>raster image format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000008"/>
+        <obo:IAO_0000115>A raster image is a format for representing a rectangular grid of dots (pixels) which contains information on the specific colour of each pixel.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000021 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000021">
+        <rdfs:label>vector image format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000008"/>
+        <obo:IAO_0000115>A vector image is a collection of connected lines and curves that produce objects. This geometric description enables the image to be displayed without loss at any size rendering.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000022 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000022">
+        <rdfs:label>SVG</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000021"/>
+        <swo:alternative_term>Scalable Vector Graphics</swo:alternative_term>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000023 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000023">
+        <rdfs:label>AI</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000021"/>
+        <swo:alternative_term>Adobe Illustrator format</swo:alternative_term>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000024 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000024">
+        <rdfs:label>PostScript</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000014"/>
+        <obo:IAO_0000115>PostScript is a format used for describing documents.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000025 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000025">
+        <rdfs:label>tex</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000014"/>
+        <obo:IAO_0000115>tex is a format for documents written in the document markup language and document preparation system LaTeX.</obo:IAO_0000115>
+        <swo:alternative_term>LaTeX format</swo:alternative_term>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000026 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000026">
+        <rdfs:label>outline document format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <obo:IAO_0000115>A format specification for data used or produced by outliner software</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000027 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000027">
+        <rdfs:label>OmniOutline format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000026"/>
+        <obo:IAO_0000115>A proprietary format for documents created and edited using OmniOutliner outliner software,</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000028 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000028">
+        <rdfs:label>OPML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000026"/>
+        <obo:IAO_0000115>OPML (Outline Processor Markup Language) is an XML format for outlines</obo:IAO_0000115>
+        <swo:alternative_term>Outline Processor Markup Language</swo:alternative_term>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000029 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000029">
+        <rdfs:label>JPEG 2000</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000020"/>
+        <obo:IAO_0000115>JPEG 2000 is a compression standard enabling both lossless and lossy storage. The compression methods used are different from the ones in standard JFIF/JPEG; they improve quality and compression ratios, but also require more computational power to process. [wikipedia]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000030 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000030">
+        <rdfs:label>word processing document format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000031 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000031">
+        <rdfs:label>WordStar format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000032 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000032">
+        <rdfs:label>Microsoft Word doc</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000030"/>
+        <obo:IAO_0000115>A file format for word processing documents for Microsoft Word. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000033 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000033">
+        <rdfs:label>programming language format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000034 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000034">
+        <rdfs:label>.java file</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000033"/>
+        <obo:IAO_0000119>James Malone</obo:IAO_0000119>
+        <obo:IAO_0000115>A source code file format which is specified to be used with the Java programming language.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000035 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000035">
+        <rdfs:label>.class file</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000033"/>
+        <obo:IAO_0000115>A format in which a .java file has been compiled into bytecode using a Java compiler and which is specified to be executed using the Java virtual machine.</obo:IAO_0000115>
+        <obo:IAO_0000119>James Malone</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000036 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000036">
+        <rdfs:label>CopasiML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <swo:alternative_term>.cps</swo:alternative_term>
+        <obo:IAO_0000115>An XML-based file format for use with the COPASI software.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000037 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000037">
+        <rdfs:label>SBML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <obo:IAO_0000115>Systems Biology Markup Language (SBML) is a machine-readable format for representing models. It&#39;s oriented towards describing systems where biological entities are involved in, and modified by, processes that occur over time.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://sbml.org</obo:IAO_0000119>
+        <swo:alternative_term>Systems Biology Markup Language</swo:alternative_term>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.2.1789) http://owlapi.sourceforge.net -->
+
