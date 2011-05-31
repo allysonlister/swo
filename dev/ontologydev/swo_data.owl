@@ -72,6 +72,7 @@
 
     <owl:Class rdf:about="&obo;IAO_0000098">
         <rdfs:label xml:lang="en">data format specification</rdfs:label>
+        <obo:IAO_0000115>The syntax by which data is specified which renders it valid for a given format.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -438,6 +439,37 @@
         <rdfs:label>Microsoft Word doc</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000030"/>
         <obo:IAO_0000115>A file format for word processing documents for Microsoft Word. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000033 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000033">
+        <rdfs:label>programming language format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000034 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000034">
+        <rdfs:label>.java file</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000033"/>
+        <obo:IAO_0000119>James Malone</obo:IAO_0000119>
+        <obo:IAO_0000115>A source code file format which is specified to be used with the Java programming language.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000035 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000035">
+        <rdfs:label>.class file</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000033"/>
+        <obo:IAO_0000115>A format in which a .java file has been compiled into bytecode using a Java compiler and which is specified to be executed using the Java virtual machine.</obo:IAO_0000115>
+        <obo:IAO_0000119>James Malone</obo:IAO_0000119>
     </owl:Class>
 </rdf:RDF>
 
