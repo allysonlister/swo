@@ -128,6 +128,15 @@
         <rdfs:label>software development</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000008 -->
+
+    <owl:Class rdf:about="&ebi;swo/objective/SWO_4000008">
+        <rdfs:label>simulation and analysis of biochemical networks</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+    </owl:Class>
 </rdf:RDF>
 
 
