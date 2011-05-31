@@ -1,0 +1,57 @@
+ ____  _   _  ____    ___  _____  ____  ____  _    _    __    ____  ____ 
+(_  _)( )_( )( ___)  / __)(  _  )( ___)(_  _)( \/\/ )  /__\  (  _ \( ___)
+  )(   ) _ (  )__)   \__ \ )(_)(  )__)   )(   )    (  /(__)\  )   / )__) 
+ (__) (_) (_)(____)  (___/(_____)(__)   (__) (__/\__)(__)(__)(_)\_)(____)
+ _____  _  _  ____  _____  __    _____  ___  _  _ 
+(  _  )( \( )(_  _)(  _  )(  )  (  _  )/ __)( \/ )
+ )(_)(  )  (   )(   )(_)(  )(__  )(_)(( (_-. \  / 
+(_____)(_)\_) (__) (_____)(____)(_____)\___/ (__) 
+
+
+--------------------------------
+The Software Ontology
+
+http://theswo.sourceforge.net
+
+RELEASE NOTES
+
+VERSION: 0.1
+DATE: 31st may 2011
+--------------------------------
+
+
+--------------------------------
+Contents
+
+1. New to SWO
+2. Obsolete Classses
+3. Release Policy
+
+--------------------------------
+
+
+--------------------------------
+1. New to SWO
+
+Relase 0.1 comprises the first Beta release of the Software Ontology and it's components. 
+--------------------------------
+
+
+--------------------------------
+2. Obsolete Classes
+
+None.
+--------------------------------
+
+
+--------------------------------
+3. Release Policy
+
+1. Releases of SWO will appear in the sourceforge folder \trunk\src\release\swoinowl
+
+2. Assigned identifiers will remain on a class and will not be deleted from the owl files. classes that are no longer required will be subclassed under the obsolete class and stripped of axioms but the uri will remain.
+
+3. Classes that change their intended meaning significantly (i.e. they denote a new entity) will be assigned a new URI and the old URi will be made obsolete as per the above.
+
+4. A release notes file will be attached to each release. this will appear in the folder trunk\src\release\releasenotes and will outline major changes 
+--------------------------------
