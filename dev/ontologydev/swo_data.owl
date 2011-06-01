@@ -494,6 +494,26 @@
         <obo:IAO_0000119>http://sbml.org</obo:IAO_0000119>
         <swo:alternative_term>Systems Biology Markup Language</swo:alternative_term>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000038 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000038">
+        <rdfs:label>OWL-XML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <obo:IAO_0000115>The Web Ontology Language (OWL) in XML serialization</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000039 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000039">
+        <rdfs:label>OWL2-XML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <obo:IAO_0000115>Web Ontology Language version 2 in XML Serialization</obo:IAO_0000115>
+    </owl:Class>
 </rdf:RDF>
 
 
