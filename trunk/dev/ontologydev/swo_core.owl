@@ -136,7 +136,6 @@
         <dc:creator>Alan Ruttenberg</dc:creator>
         <dc:creator>Larry Hunter</dc:creator>
         <dc:creator>Bjoern Peters</dc:creator>
-        <rdfs:domain rdf:resource="&span;ProcessualEntity"/>
     </owl:ObjectProperty>
     
 
@@ -150,7 +149,6 @@
         <dc:creator xml:lang="en">Larry Hunter</dc:creator>
         <dc:creator xml:lang="en">Melanie Courtot</dc:creator>
         <obo:IAO_0000115 xml:lang="en">The output of a process. [Adapted from original by James Malone]</obo:IAO_0000115>
-        <rdfs:domain rdf:resource="&span;ProcessualEntity"/>
     </owl:ObjectProperty>
     
 
@@ -162,7 +160,6 @@
         <dc:creator rdf:datatype="&xsd;string">OBI</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The relationship betwee a process and the objective which the process achieves. [Adapted from original by James Malone]</obo:IAO_0000115>
         <rdfs:range rdf:resource="&obo;IAO_0000005"/>
-        <rdfs:domain rdf:resource="&span;ProcessualEntity"/>
     </owl:ObjectProperty>
     
 
@@ -386,57 +383,30 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/is_executed_in"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/SWO_0000003"/>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                                        <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/data"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_format_specification"/>
-                                        <owl:someValuesFrom rdf:resource="&data;SWO_3000002"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/data"/>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_format_specification"/>
-                                                <owl:someValuesFrom>
-                                                    <owl:Class>
-                                                        <owl:unionOf rdf:parseType="Collection">
-                                                            <rdf:Description rdf:about="&data;SWO_3000002"/>
-                                                            <rdf:Description rdf:about="&data;SWO_3000003"/>
-                                                        </owl:unionOf>
-                                                    </owl:Class>
-                                                </owl:someValuesFrom>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                                <owl:someValuesFrom rdf:resource="&objective;SWO_4000001"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
+                <owl:someValuesFrom rdf:resource="&license;SWO_1000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
-                <owl:hasValue>http://office.microsoft.com/</owl:hasValue>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&objective;SWO_4000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/data"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_format_specification"/>
+                                <owl:someValuesFrom rdf:resource="&data;SWO_3000002"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -447,8 +417,40 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
-                <owl:someValuesFrom rdf:resource="&license;SWO_1000002"/>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
+                <owl:hasValue>http://office.microsoft.com/</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/data"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_format_specification"/>
+                                <owl:someValuesFrom rdf:resource="&data;SWO_3000003"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/data"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_format_specification"/>
+                                <owl:someValuesFrom rdf:resource="&data;SWO_3000002"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Microsoft Excel 2007 is a spreadsheet editing and viewing tool.</obo:IAO_0000115>
@@ -463,19 +465,19 @@
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&objective;SWO_40000002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/is_published_by"/>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/is_developed_by"/>
                 <owl:hasValue rdf:resource="&organization;SWO_9000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/is_developed_by"/>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
+                <owl:hasValue>http://www.mathworks.com/products/matlab/</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/is_published_by"/>
                 <owl:hasValue rdf:resource="&organization;SWO_9000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -497,8 +499,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
-                <owl:hasValue>http://www.mathworks.com/products/matlab/</owl:hasValue>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&objective;SWO_40000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
+                <owl:someValuesFrom rdf:resource="&license;SWO_1000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -517,12 +525,6 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
-                <owl:someValuesFrom rdf:resource="&license;SWO_1000002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -534,50 +536,100 @@
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/is_developed_by"/>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
+                <owl:hasValue>http://protege.stanford.edu/</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/ontology"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_format_specification"/>
+                                <owl:someValuesFrom rdf:resource="&data;SWO_3000039"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/is_published_by"/>
                 <owl:hasValue rdf:resource="&organization;SWO_9000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/is_executed_in"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/SWO_0000003"/>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                                        <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/ontology"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_format_specification"/>
-                                        <owl:someValuesFrom rdf:resource="&data;SWO_3000006"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
+                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/ontology"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/ontology"/>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_format_specification"/>
-                                                <owl:someValuesFrom rdf:resource="&data;SWO_3000006"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                                <owl:someValuesFrom rdf:resource="&objective;SWO_4000005"/>
+                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_format_specification"/>
+                                <owl:someValuesFrom rdf:resource="&data;SWO_3000007"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/ontology"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_format_specification"/>
+                                <owl:someValuesFrom rdf:resource="&data;SWO_3000007"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/ontology"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_format_specification"/>
+                                <owl:someValuesFrom rdf:resource="&data;SWO_3000038"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/ontology"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_format_specification"/>
+                                <owl:someValuesFrom rdf:resource="&data;SWO_3000039"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&objective;SWO_4000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -588,13 +640,23 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
-                <owl:hasValue>http://protege.stanford.edu/</owl:hasValue>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/ontology"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_format_specification"/>
+                                <owl:someValuesFrom rdf:resource="&data;SWO_3000038"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/is_published_by"/>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/is_developed_by"/>
                 <owl:hasValue rdf:resource="&organization;SWO_9000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -609,8 +671,30 @@
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/data"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_format_specification"/>
+                                <owl:someValuesFrom rdf:resource="&data;SWO_3000027"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
                 <owl:hasValue>http://www.omnigroup.com/products/omnioutliner/</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
+                <owl:someValuesFrom rdf:resource="&license;SWO_1000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -621,48 +705,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/is_executed_in"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/SWO_0000003"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/data"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/data"/>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_format_specification"/>
-                                                <owl:someValuesFrom rdf:resource="&data;SWO_3000027"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                                <owl:someValuesFrom rdf:resource="&data;SWO_3000026"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/is_published_by"/>
                 <owl:hasValue rdf:resource="&organization;SWO_9000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
-                <owl:someValuesFrom rdf:resource="&license;SWO_1000002"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&data;SWO_3000026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>OmniOutliner is commercial outlining software for Mac OS X produced by The Omni Group</obo:IAO_0000115>
@@ -699,18 +749,8 @@
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/data"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_format_specification"/>
-                                <owl:someValuesFrom rdf:resource="&data;SWO_3000008"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
+                <owl:hasValue>http://www.kakadusoftware.com</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -731,8 +771,18 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
-                <owl:hasValue>http://www.kakadusoftware.com</owl:hasValue>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/data"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_format_specification"/>
+                                <owl:someValuesFrom rdf:resource="&data;SWO_3000008"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -752,50 +802,46 @@
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/is_published_by"/>
-                <owl:hasValue rdf:resource="&organization;SWO_9000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/is_executed_in"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/SWO_0000003"/>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                                        <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/data"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_format_specification"/>
-                                        <owl:someValuesFrom rdf:resource="&data;SWO_3000031"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
+                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/data"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/data"/>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_format_specification"/>
-                                                <owl:someValuesFrom rdf:resource="&data;SWO_3000031"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                                <owl:someValuesFrom rdf:resource="&objective;SWO_4000006"/>
+                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_format_specification"/>
+                                <owl:someValuesFrom rdf:resource="&data;SWO_3000031"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/data"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_format_specification"/>
+                                <owl:someValuesFrom rdf:resource="&data;SWO_3000031"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&objective;SWO_4000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/is_published_by"/>
+                <owl:hasValue rdf:resource="&organization;SWO_9000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -807,31 +853,6 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000011">
         <rdfs:label>IntelliJ IDEA</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&license;SWO_1000002"/>
-                            <rdf:Description rdf:about="&license;SWO_1000005"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&objective;SWO_4000007"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
-                <owl:hasValue>http://www.jetbrains.com/idea/</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
@@ -850,12 +871,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/is_developed_by"/>
-                <owl:hasValue rdf:resource="&organization;SWO_9000007"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -866,6 +881,37 @@
                                 <owl:someValuesFrom rdf:resource="&data;SWO_3000034"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&objective;SWO_4000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
+                <owl:hasValue>http://www.jetbrains.com/idea/</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/is_developed_by"/>
+                <owl:hasValue rdf:resource="&organization;SWO_9000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&license;SWO_1000002"/>
+                            <rdf:Description rdf:about="&license;SWO_1000005"/>
+                        </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
@@ -898,12 +944,6 @@
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
-                <owl:hasValue>http://www.copasi.org</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -920,8 +960,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&objective;SWO_4000008"/>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
+                <owl:hasValue>http://www.copasi.org</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -938,6 +978,12 @@
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&objective;SWO_4000008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1110,25 +1156,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000030"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000020"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000027"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000019"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1140,7 +1168,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000025"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1152,7 +1180,25 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000029"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
