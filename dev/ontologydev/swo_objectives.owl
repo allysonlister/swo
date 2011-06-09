@@ -37,6 +37,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
     
 
 
@@ -136,6 +137,26 @@
     <owl:Class rdf:about="&ebi;swo/objective/SWO_4000008">
         <rdfs:label>simulation and analysis of biochemical networks</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000009 -->
+
+    <owl:Class rdf:about="&ebi;swo/objective/SWO_4000009">
+        <rdfs:label>laboratory information management</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <obo:IAO_0000115>Manage Laboratory information such is commonly performed by LIMS software.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000010 -->
+
+    <owl:Class rdf:about="&ebi;swo/objective/SWO_4000010">
+        <rdfs:label>manage computer operations</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <obo:IAO_0000115>the objective of performing the actions of an operation system such as managing the software running a computer and the interactions with the system resources and hardware.</obo:IAO_0000115>
     </owl:Class>
 </rdf:RDF>
 
