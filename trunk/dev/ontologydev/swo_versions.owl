@@ -210,6 +210,37 @@
         <rdf:type rdf:resource="&obo;IAO_0000129"/>
         <rdfs:label>version 4</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000011 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000011">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>Matlab R14</rdfs:label>
+        <ro:preceded_by rdf:resource="&ebi;swo/version/SWO_2000012"/>
+        <ro:precedes rdf:resource="&ebi;swo/version/SWO_2000013"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000012 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000012">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>Matlab R12</rdfs:label>
+        <ro:precedes rdf:resource="&ebi;swo/version/SWO_2000011"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000013 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000013">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>R2011a</rdfs:label>
+        <ro:preceded_by rdf:resource="&ebi;swo/version/SWO_2000011"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
