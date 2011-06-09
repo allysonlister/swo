@@ -1382,6 +1382,15 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000023 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000023">
+        <rdfs:label>Microsoft Word 2001</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/swo/SWO_9000005 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000005">
