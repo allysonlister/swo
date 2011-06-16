@@ -16,12 +16,12 @@
 <rdf:RDF xmlns="&swo;maturity/"
      xml:base="&swo;maturity/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:maturity="&swo;maturity/"
      xmlns:swo="http://www.ebi.ac.uk/swo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="&swo;maturity/"/>
     
@@ -105,6 +105,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000030"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/swo/SWO_0000005 -->
 
     <owl:Class rdf:about="&swo;SWO_0000005">
@@ -117,9 +123,9 @@
 
     <owl:Class rdf:about="&swo;maturity/SWO_9000061">
         <rdfs:label rdf:datatype="&xsd;string">status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
         <rdfs:comment rdf:datatype="&xsd;string">The maturity status of software</rdfs:comment>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
     </owl:Class>
     
 
