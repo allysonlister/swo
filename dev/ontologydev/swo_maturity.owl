@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY maturity "http://www.ebi.ac.uk/swo/maturity/" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="&swo;maturity/"
+     xml:base="&swo;maturity/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:maturity="&swo;maturity/"
+     xmlns:swo="http://www.ebi.ac.uk/swo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="&swo;maturity/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000067 -->
+
+    <owl:ObjectProperty rdf:about="&swo;maturity/SWO_9000067">
+        <rdfs:label rdf:datatype="&xsd;string">has declared status</rdfs:label>
+        <rdfs:range rdf:resource="&swo;maturity/SWO_9000061"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000068 -->
+
+    <owl:DatatypeProperty rdf:about="&swo;maturity/SWO_9000068">
+        <rdfs:label>has release date</rdfs:label>
+        <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
+        <rdfs:comment rdf:datatype="&xsd;string">The official date of release of software</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000070 -->
+
+    <owl:DatatypeProperty rdf:about="&swo;maturity/SWO_9000070">
+        <rdfs:label>has support URL</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">A URL for a source of support information about software</rdfs:comment>
+        <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000005 -->
+
+    <owl:Class rdf:about="&swo;SWO_0000005">
+        <rdfs:label>SWO_0000005</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000061 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000061">
+        <rdfs:label rdf:datatype="&xsd;string">status</rdfs:label>
+        <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
+        <rdfs:comment rdf:datatype="&xsd;string">The maturity status of software</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000062 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000062">
+        <rdfs:label rdf:datatype="&xsd;string">alpha</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000063 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000063">
+        <rdfs:label>beta</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000064 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000064">
+        <rdfs:label>release candidate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000065 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000065">
+        <rdfs:label>live</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000066 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000066">
+        <rdfs:label>obsolete</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000069 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000069">
+        <rdfs:label>superseded</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+        <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
+        <rdfs:comment rdf:datatype="&xsd;string">Software still available, but updated version also available.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&swo;maturity/SWO_9000062"/>
+            <rdf:Description rdf:about="&swo;maturity/SWO_9000063"/>
+            <rdf:Description rdf:about="&swo;maturity/SWO_9000064"/>
+            <rdf:Description rdf:about="&swo;maturity/SWO_9000065"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.20069) http://owlapi.sourceforge.net -->
+
