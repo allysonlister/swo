@@ -514,6 +514,16 @@
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
         <obo:IAO_0000115>Web Ontology Language version 2 in XML Serialization</obo:IAO_0000115>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000040 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000040">
+        <rdfs:label>OBO Flat File Format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <obo:IAO_0000115>OBO format is the text file format used by OBO-Edit, the open source, platform-independent application for viewing and editing ontologies. </obo:IAO_0000115>
+    </owl:Class>
 </rdf:RDF>
 
 
