@@ -158,6 +158,16 @@
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
         <obo:IAO_0000115>the objective of performing the actions of an operation system such as managing the software running a computer and the interactions with the system resources and hardware.</obo:IAO_0000115>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000011 -->
+
+    <owl:Class rdf:about="&ebi;swo/objective/SWO_4000011">
+        <rdfs:label>text editing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <obo:IAO_0000115>Text editing is the objective of editing plain text files.</obo:IAO_0000115>
+    </owl:Class>
 </rdf:RDF>
 
 
