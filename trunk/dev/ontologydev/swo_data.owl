@@ -524,6 +524,33 @@
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
         <obo:IAO_0000115>OBO format is the text file format used by OBO-Edit, the open source, platform-independent application for viewing and editing ontologies. </obo:IAO_0000115>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000041 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000041">
+        <rdfs:label>text file format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000042 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000042">
+        <rdfs:label>ASCII format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000043"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000043 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000043">
+        <rdfs:label>plain text file format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+    </owl:Class>
 </rdf:RDF>
 
 
