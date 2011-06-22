@@ -167,6 +167,7 @@
     <owl:Class rdf:about="&swo;maturity/SWO_9000066">
         <rdfs:label>obsolete</rdfs:label>
         <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+        <owl:disjointWith rdf:resource="&swo;maturity/SWO_9000073"/>
         <rdfs:comment rdf:datatype="&xsd;string">Sofware is no longer being supplied by the developers/publishers</rdfs:comment>
     </owl:Class>
     
@@ -232,7 +233,6 @@
             <rdf:Description rdf:about="&swo;maturity/SWO_9000064"/>
             <rdf:Description rdf:about="&swo;maturity/SWO_9000065"/>
             <rdf:Description rdf:about="&swo;maturity/SWO_9000066"/>
-            <rdf:Description rdf:about="&swo;maturity/SWO_9000073"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
