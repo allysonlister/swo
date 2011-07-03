@@ -33,7 +33,7 @@ Contents
 --------------------------------
 1. New to SWO
 
-Relase 0.2 begins to add more software to the ontology, including some new defined classes which add structure to the software hierarchy. The software maturity elements have also been added as a new component file.
+Relase 0.2 begins to add more software to the ontology, including some new defined classes which add structure to the software hierarchy. The software maturity elements have also been added as a new component file. An import from the OntoDM ontology has also been included in the algorithm file.
 --------------------------------
 
 
