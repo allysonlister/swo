@@ -2,14 +2,18 @@
 
 
 <!DOCTYPE rdf:RDF [
+    <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
     <!ENTITY data "http://www.ebi.ac.uk/swo/data/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
-    <!ENTITY obo2 "http://purl.obofoundry.org/obo/" >
+    <!ENTITY obo2 "http://purl.obolibrary.org/obo/" >
+    <!ENTITY OntoDM "http://kt.ijs.si/panovp/OntoDM#" >
+    <!ENTITY obo "http://purl.obofoundry.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY version "http://www.ebi.ac.uk/swo/version/" >
     <!ENTITY license "http://www.ebi.ac.uk/swo/license/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY maturity "http://www.ebi.ac.uk/swo/maturity/" >
+    <!ENTITY algorithm "http://www.ebi.ac.uk/swo/algorithm/" >
     <!ENTITY objective "http://www.ebi.ac.uk/swo/objective/" >
     <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
     <!ENTITY interface "http://www.ebi.ac.uk/swo/interface/" >
@@ -26,23 +30,27 @@
      xml:base="http://www.ebi.ac.uk/swo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
-     xmlns:objective="http://www.ebi.ac.uk/swo/objective/"
+     xmlns:maturity="&swo;maturity/"
+     xmlns:objective="&swo;objective/"
+     xmlns:swo="http://www.ebi.ac.uk/swo/"
      xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
-     xmlns:data="http://www.ebi.ac.uk/swo/data/"
-     xmlns:interface="http://www.ebi.ac.uk/swo/interface/"
-     xmlns:version="http://www.ebi.ac.uk/swo/version/"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:obo2="http://purl.obofoundry.org/obo/"
+     xmlns:data="&swo;data/"
+     xmlns:OntoDM="http://kt.ijs.si/panovp/OntoDM#"
+     xmlns:interface="&swo;interface/"
+     xmlns:version="&swo;version/"
+     xmlns:algorithm="&swo;algorithm/"
+     xmlns:obo2="http://purl.obolibrary.org/obo/"
+     xmlns:obo="http://purl.obofoundry.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:organization="http://www.ebi.ac.uk/swo/organization/"
+     xmlns:organization="&swo;organization/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:license="http://www.ebi.ac.uk/swo/license/"
+     xmlns:license="&swo;license/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
     <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/">
-        <owl:versionInfo>0.1  Date: 31st May 2011</owl:versionInfo>
+        <owl:versionInfo>0.2</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -56,14 +64,14 @@
      -->
 
     <owl:AnnotationProperty rdf:about="&dc;creator"/>
-    <rdf:Description rdf:about="&obo;IAO_0000115">
+    <rdf:Description rdf:about="&obo2;IAO_0000115">
         <rdfs:label rdf:datatype="&xsd;string">textual definition</rdfs:label>
     </rdf:Description>
     <owl:AnnotationProperty rdf:about="&dc;contributor"/>
-    <rdf:Description rdf:about="&obo;IAO_0000119">
+    <rdf:Description rdf:about="&obo2;IAO_0000119">
         <rdfs:label rdf:datatype="&xsd;string">definition source</rdfs:label>
     </rdf:Description>
-    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/swo/alternative_term"/>
+    <owl:AnnotationProperty rdf:about="&swo;alternative_term"/>
     
 
 
@@ -91,14 +99,14 @@
 
     <!-- http://purl.obofoundry.org/obo/IAO_0000136 -->
 
-    <owl:ObjectProperty rdf:about="&obo2;IAO_0000136">
+    <owl:ObjectProperty rdf:about="&obo;IAO_0000136">
         <rdfs:label rdf:datatype="&xsd;string">is about</rdfs:label>
         <dc:creator xml:lang="en">Alan Ruttenberg</dc:creator>
-        <obo:IAO_0000115 xml:lang="en">is about relates an information entity to other entities in which the information entity holds some information which dscribes some facet of the other entity, such as the arrow direction on a sign. [Adapted from original by James Malone]</obo:IAO_0000115>
+        <obo2:IAO_0000115 xml:lang="en">is about relates an information entity to other entities in which the information entity holds some information which dscribes some facet of the other entity, such as the arrow direction on a sign. [Adapted from original by James Malone]</obo2:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
         <owl:inverseOf>
             <rdf:Description>
-                <owl:inverseOf rdf:resource="&obo2;IAO_0000136"/>
+                <owl:inverseOf rdf:resource="&obo;IAO_0000136"/>
             </rdf:Description>
         </owl:inverseOf>
     </owl:ObjectProperty>
@@ -107,48 +115,58 @@
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
 
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000293">
+    <owl:ObjectProperty rdf:about="&obo2;OBI_0000293">
         <rdfs:label>has specified input</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">The input to a process. [Adapted from original by James Malone]</obo:IAO_0000115>
+        <obo2:IAO_0000115 rdf:datatype="&xsd;string">The input to a process. [Adapted from original by James Malone]</obo2:IAO_0000115>
         <dc:creator>Melanie Courtot</dc:creator>
         <dc:creator>Alan Ruttenberg</dc:creator>
         <dc:creator>Larry Hunter</dc:creator>
         <dc:creator>Bjoern Peters</dc:creator>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="&obo2;OBI_0000293"/>
+            </rdf:Description>
+        </owl:inverseOf>
     </owl:ObjectProperty>
-    <rdf:Description>
-        <owl:inverseOf rdf:resource="&obo;OBI_0000293"/>
-    </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
 
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000299">
+    <owl:ObjectProperty rdf:about="&obo2;OBI_0000299">
         <rdfs:label rdf:datatype="&xsd;string">has specified output</rdfs:label>
         <dc:creator xml:lang="en">Alan Ruttenberg</dc:creator>
         <dc:creator xml:lang="en">Bjoern Peters</dc:creator>
         <dc:creator xml:lang="en">Larry Hunter</dc:creator>
         <dc:creator xml:lang="en">Melanie Courtot</dc:creator>
-        <obo:IAO_0000115 xml:lang="en">The output of a process. [Adapted from original by James Malone]</obo:IAO_0000115>
+        <obo2:IAO_0000115 xml:lang="en">The output of a process. [Adapted from original by James Malone]</obo2:IAO_0000115>
+        <owl:inverseOf rdf:resource="&swo;SWO_9000058"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="&swo;SWO_9000058"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="&obo2;OBI_0000299"/>
+            </rdf:Description>
+        </owl:inverseOf>
     </owl:ObjectProperty>
-    <rdf:Description>
-        <owl:inverseOf rdf:resource="&obo;OBI_0000299"/>
-    </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000417 -->
 
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000417">
+    <owl:ObjectProperty rdf:about="&obo2;OBI_0000417">
         <rdfs:label rdf:datatype="&xsd;string">achieves objective</rdfs:label>
         <dc:creator rdf:datatype="&xsd;string">OBI</dc:creator>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">The relationship betwee a process and the objective which the process achieves. [Adapted from original by James Malone]</obo:IAO_0000115>
+        <obo2:IAO_0000115 rdf:datatype="&xsd;string">The relationship betwee a process and the objective which the process achieves. [Adapted from original by James Malone]</obo2:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
         <owl:inverseOf>
             <rdf:Description>
-                <owl:inverseOf rdf:resource="&obo;OBI_0000417"/>
+                <owl:inverseOf rdf:resource="&obo2;OBI_0000417"/>
             </rdf:Description>
         </owl:inverseOf>
     </owl:ObjectProperty>
@@ -157,28 +175,61 @@
 
     <!-- http://www.ebi.ac.uk/swo/OWLObjectProperty_00000011293132912570 -->
 
-    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/OWLObjectProperty_00000011293132912570">
+    <owl:ObjectProperty rdf:about="&swo;OWLObjectProperty_00000011293132912570">
         <rdfs:label>has_interface</rdfs:label>
         <dc:contributor>Andy Brown</dc:contributor>
         <rdfs:comment>Describes the way in which something may be interacted with</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
         <owl:inverseOf>
             <rdf:Description>
-                <owl:inverseOf rdf:resource="http://www.ebi.ac.uk/swo/OWLObjectProperty_00000011293132912570"/>
+                <owl:inverseOf rdf:resource="&swo;OWLObjectProperty_00000011293132912570"/>
             </rdf:Description>
         </owl:inverseOf>
     </owl:ObjectProperty>
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/SWO_9000057 -->
+
+    <owl:ObjectProperty rdf:about="&swo;SWO_9000057">
+        <rdfs:label rdf:datatype="&xsd;string">has_role</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="&swo;SWO_9000057"/>
+            </rdf:Description>
+        </owl:inverseOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_9000058 -->
+
+    <owl:ObjectProperty rdf:about="&swo;SWO_9000058">
+        <rdfs:label rdf:datatype="&xsd;string">is specified output of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="&swo;SWO_9000058"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="&obo2;OBI_0000299"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ebi.ac.uk/swo/SWO_9001002 -->
 
-    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_9001002">
+    <owl:ObjectProperty rdf:about="&swo;SWO_9001002">
         <rdfs:label>has clause</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
         <owl:inverseOf>
             <rdf:Description>
-                <owl:inverseOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9001002"/>
+                <owl:inverseOf rdf:resource="&swo;SWO_9001002"/>
             </rdf:Description>
         </owl:inverseOf>
     </owl:ObjectProperty>
@@ -187,13 +238,13 @@
 
     <!-- http://www.ebi.ac.uk/swo/has_format_specification -->
 
-    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/has_format_specification">
+    <owl:ObjectProperty rdf:about="&swo;has_format_specification">
         <rdfs:label rdf:datatype="&xsd;string">has format specification</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">relationship between some information and a data format </obo:IAO_0000115>
-        <rdfs:subPropertyOf rdf:resource="&obo2;IAO_0000136"/>
+        <obo2:IAO_0000115 rdf:datatype="&xsd;string">relationship between some information and a data format </obo2:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000136"/>
         <owl:inverseOf>
             <rdf:Description>
-                <owl:inverseOf rdf:resource="http://www.ebi.ac.uk/swo/has_format_specification"/>
+                <owl:inverseOf rdf:resource="&swo;has_format_specification"/>
             </rdf:Description>
         </owl:inverseOf>
     </owl:ObjectProperty>
@@ -202,11 +253,26 @@
 
     <!-- http://www.ebi.ac.uk/swo/has_license -->
 
-    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/has_license">
+    <owl:ObjectProperty rdf:about="&swo;has_license">
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
         <owl:inverseOf>
             <rdf:Description>
-                <owl:inverseOf rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
+                <owl:inverseOf rdf:resource="&swo;has_license"/>
+            </rdf:Description>
+        </owl:inverseOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/has_version -->
+
+    <owl:ObjectProperty rdf:about="&swo;has_version">
+        <rdfs:label>has version</rdfs:label>
+        <obo2:IAO_0000115>relationship between an entity and a version name or number</obo2:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="&swo;has_version"/>
             </rdf:Description>
         </owl:inverseOf>
     </owl:ObjectProperty>
@@ -215,13 +281,13 @@
 
     <!-- http://www.ebi.ac.uk/swo/is_developed_by -->
 
-    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/is_developed_by">
+    <owl:ObjectProperty rdf:about="&swo;is_developed_by">
         <rdfs:label rdf:datatype="&xsd;string">is developed by</rdfs:label>
         <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
         <owl:inverseOf>
             <rdf:Description>
-                <owl:inverseOf rdf:resource="http://www.ebi.ac.uk/swo/is_developed_by"/>
+                <owl:inverseOf rdf:resource="&swo;is_developed_by"/>
             </rdf:Description>
         </owl:inverseOf>
     </owl:ObjectProperty>
@@ -230,12 +296,12 @@
 
     <!-- http://www.ebi.ac.uk/swo/is_executed_in -->
 
-    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/is_executed_in">
+    <owl:ObjectProperty rdf:about="&swo;is_executed_in">
         <rdfs:label rdf:datatype="&xsd;string">is_executed_in</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
         <owl:inverseOf>
             <rdf:Description>
-                <owl:inverseOf rdf:resource="http://www.ebi.ac.uk/swo/is_executed_in"/>
+                <owl:inverseOf rdf:resource="&swo;is_executed_in"/>
             </rdf:Description>
         </owl:inverseOf>
     </owl:ObjectProperty>
@@ -244,13 +310,68 @@
 
     <!-- http://www.ebi.ac.uk/swo/is_published_by -->
 
-    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/is_published_by">
+    <owl:ObjectProperty rdf:about="&swo;is_published_by">
         <rdfs:label>is published by</rdfs:label>
         <dc:creator>James Malone</dc:creator>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
         <owl:inverseOf>
             <rdf:Description>
-                <owl:inverseOf rdf:resource="http://www.ebi.ac.uk/swo/is_published_by"/>
+                <owl:inverseOf rdf:resource="&swo;is_published_by"/>
+            </rdf:Description>
+        </owl:inverseOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000067 -->
+
+    <owl:ObjectProperty rdf:about="&swo;maturity/SWO_9000067">
+        <rdfs:label rdf:datatype="&xsd;string">has declared status</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="&swo;maturity/SWO_9000067"/>
+            </rdf:Description>
+        </owl:inverseOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000058 -->
+
+    <owl:ObjectProperty rdf:about="&swo;organization/SWO_9000058">
+        <rdfs:label rdf:datatype="&xsd;string">participates in</rdfs:label>
+        <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="&swo;organization/SWO_9000058"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="&swo;organization/SWO_9000059"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000059 -->
+
+    <owl:ObjectProperty rdf:about="&swo;organization/SWO_9000059">
+        <rdfs:label rdf:datatype="&xsd;string">has participant</rdfs:label>
+        <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
+        <owl:inverseOf rdf:resource="&swo;organization/SWO_9000058"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="&swo;organization/SWO_9000058"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="&swo;organization/SWO_9000059"/>
             </rdf:Description>
         </owl:inverseOf>
     </owl:ObjectProperty>
@@ -260,14 +381,21 @@
     <!-- http://www.obofoundry.org/ro/ro.owl#has_part -->
 
     <owl:ObjectProperty rdf:about="&ro;has_part">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label rdf:datatype="&xsd;string">has part</rdfs:label>
         <dc:creator rdf:datatype="&xsd;string">OBO Foundry</dc:creator>
+        <owl:inverseOf rdf:resource="&ro;part_of"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
         <owl:inverseOf>
             <rdf:Description>
                 <owl:inverseOf rdf:resource="&ro;has_part"/>
             </rdf:Description>
         </owl:inverseOf>
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="&ro;part_of"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
     </owl:ObjectProperty>
     
 
@@ -275,6 +403,7 @@
     <!-- http://www.obofoundry.org/ro/ro.owl#part_of -->
 
     <owl:ObjectProperty rdf:about="&ro;part_of">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label rdf:datatype="&xsd;string">part of</rdfs:label>
         <dc:creator rdf:datatype="&xsd;string">OBO Foundry</dc:creator>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
@@ -283,6 +412,54 @@
                 <owl:inverseOf rdf:resource="&ro;part_of"/>
             </rdf:Description>
         </owl:inverseOf>
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="&ro;has_part"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#preceded_by -->
+
+    <owl:ObjectProperty rdf:about="&ro;preceded_by">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">preceded by</rdfs:label>
+        <dc:creator rdf:datatype="&xsd;string">OBO Foundry</dc:creator>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="&ro;preceded_by"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="&ro;precedes"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#precedes -->
+
+    <owl:ObjectProperty rdf:about="&ro;precedes">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">followed by</rdfs:label>
+        <dc:creator rdf:datatype="&xsd;string">OBO Foundry</dc:creator>
+        <owl:inverseOf rdf:resource="&ro;preceded_by"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="&ro;precedes"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="&ro;preceded_by"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
     </owl:ObjectProperty>
     
 
@@ -300,7 +477,29 @@
 
     <!-- http://www.ebi.ac.uk/swo/has_website_homepage -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ebi.ac.uk/swo/has_website_homepage">
+    <owl:DatatypeProperty rdf:about="&swo;has_website_homepage">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000068 -->
+
+    <owl:DatatypeProperty rdf:about="&swo;maturity/SWO_9000068">
+        <rdfs:label>has release date</rdfs:label>
+        <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
+        <rdfs:comment rdf:datatype="&xsd;string">The official date of release of software</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000070 -->
+
+    <owl:DatatypeProperty rdf:about="&swo;maturity/SWO_9000070">
+        <rdfs:label>has support URL</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">A URL for a source of support information about software</rdfs:comment>
+        <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
         <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
     </owl:DatatypeProperty>
     
@@ -317,68 +516,402 @@
     
 
 
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_511616 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM-KDD_511616">
+        <rdfs:label>data visualization algorithm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000064"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_521641 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM-KDD_521641">
+        <rdfs:label>data visualization algorithm execution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_147247"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_524003 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM-KDD_524003">
+        <rdfs:label>data processing algorithm execution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_147247"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_545286 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM-KDD_545286">
+        <rdfs:label>data cleaning algorithm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_361570"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_573276 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM-KDD_573276">
+        <rdfs:label>data selection algorithm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_361570"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_776185 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM-KDD_776185">
+        <rdfs:label>data integration algorithm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_361570"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_778151 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM-KDD_778151">
+        <rdfs:label>data processing task</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_757135"/>
+        <rdfs:comment>A data processing task is an information processing objective that specifies the objective that a data processing algorithm execution process needs to achieve when executed on a dataset to produce as output a new dataset.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_798363 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM-KDD_798363">
+        <rdfs:label>data mining algorithm execution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_147247"/>
+        <rdfs:comment>Data mining algorithm execution is a planned process that achieves planned objective a data mining task, realizes a data mining operator, has specified input a dataset, has specified output a generalization and has as agent computer.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_806059 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM-KDD_806059">
+        <rdfs:label>data construction algorithm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_361570"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000034 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM_000034">
+        <rdfs:label>generalization specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000030"/>
+        <rdfs:comment>A generalization is a broad name for an output of a execution of a data mining algorithm on a specific dataset. A generalization specification is an informational entity that specifies the type of the generalization such as: decision trees, decision rules, neural networks, itemsets etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000037 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM_000037">
+        <rdfs:label>ensemble specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_000034"/>
+        <rdfs:comment>An ensemble specification denotes a type of generalization which is an output of an execution of a ensemble algorithm. 
+Ensembles are sets of generalizations (have as parts single generalizations) with a defined procedure of their combination into a single generalization when executed in a process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000038 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM_000038">
+        <rdfs:label>data mining algorithm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000064"/>
+        <rdfs:comment>A data mining algorithm is an algorithm, that has as its objective a data mining task and outputes as a result a generalization specified by a generalization specification.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000078 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM_000078">
+        <rdfs:label>pattern specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_419460"/>
+        <rdfs:comment>A pattern P on type T specifies a Boolean function on objects of type T, i.e., has
+the signature p :: T → bool. A pattern on type T is true or false on an object
+of type T. Frawley et al. (1991) define a pattern as a statement (expression) in
+a given language, that describes (relationships among) the facts in (a subset of)
+the data. In the broadest sense, the word pattern is used to describe the output
+of a variety of data mining algorithms and includes probability distributions,
+predictive models and clusters/clusterings; however, we restrict it here to the
+sense that it is most commonly used, i.e., in the sense of frequent pattern mining.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000087 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM_000087">
+        <rdfs:label>probability distribution estimation task</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_000098"/>
+        <rdfs:comment>Estimating the (Joint) Probability Distribution. A set of data (of type
+T) is often assumed to be a sample taken from a population according to a
+probability distribution. A probability distribution/density function assigns a
+non-negative probability/density to each object of type T. Probably the most
+general data mining task (Hand et al. 2001) is the task of estimating the (joint)
+probability distribution D over type T from a set of data items or a sample
+drawn from that distribution.
+As mentioned above, in the most typical case we would have T = Tuple(T1,
+. . ., Tk), where each of T1, . . ., Tk is Boolean, Discrete(S) or Real. We talk about
+the joint probability distribution to emphasize the difference to the marginal
+distributions of each of the variables of type T1, . . ., Tk: the joint distribution
+captures the interactions among the variables.
+Representing multi-variate distributions is a non-trivial task. Two approaches
+are commonly used in data mining. In the density-based clustering paradigm,
+mixtures of multi-variate Gaussian distributions are typically considered (Hand
+et al. 2001). Probabilistic graphical models, most notably Bayesian networks,
+represent graphically the (in)dependencies between the variables: Learning their
+structure and parameters is an important approach to the problem of estimating
+the joint probability distribution.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000092 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM_000092">
+        <rdfs:label>pattern discovery task</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_000098"/>
+        <rdfs:comment>the task of pattern discovery is to find all local patterns from a given
+pattern language that satisfy the required conditions. A prototypical instantiation
+of this task is the task of finding frequent itemsets (sets of items, such as
+{bread, butter}), which are often found together in a transaction (e.g., a market
+basket) (Aggrawal et al 1993). The condition that a pattern (itemset) has to
+satisfy in this case is to appear in (hold true for) a sufficiently high proportion
+(called support and denoted by s) of the transactions in the input dataset.
+With the increasing interest in mining complex data, mining frequent patterns
+is also considered for structured data. We can thus talk about mining frequent
+subsequences or mining frequent subgraphs in sequence or graph data. We can
+consider as frequency the multiple occurrences of a pattern in a single data
+structure (e.g., sequence or graph) or the single occurrences of a pattern in
+multiple data structures.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000098 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM_000098">
+        <rdfs:label>data mining task</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_757135"/>
+        <rdfs:comment>A data mining task is an objective specification that specifies the objective that a data mining algorithm needs to achieve when executed on a dataset to produce as output a generalization.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000228 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM_000228">
+        <rdfs:label>predictive model specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_419460"/>
+        <rdfs:comment>A predictive model M for types Td, Tc specifies a function that takes an object
+of type Td and returns one of type Tc, i.e., has the signature m :: Td → Tc. Most
+often, predictive modelling is concerned with classification, where Tc would be
+Boolean (for binary classification) or Discrete(S) (for multi-class classification),
+or regression, where Tc would be Real. In our case, we allow both Td (description)
+and Tc (class/target) to be arbitrarily complex data types.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000235 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM_000235">
+        <rdfs:label>predictive modeling task</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_000098"/>
+        <rdfs:comment>Learning a (Probabilistic) Predictive Model. In this task, we are given
+a dataset that consists of examples of the form (d, c), where each d is of type
+Td and each c is of type Tc. We will refer to d as the description and c as the
+class or target. To learn a predictive model means to find a mapping from the
+description to the target, m :: Td → Tc, that fits the data closely. This means
+that the observed target values and the target values predicted by the model,
+i.e., c and ˆc = m(d), have to match closely.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000253 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM_000253">
+        <rdfs:label>probability distribution estimation algorithm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_731692"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000264 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM_000264">
+        <rdfs:label>clustering task</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_000098"/>
+        <rdfs:comment>Clustering. Clustering in general is concerned with grouping objects into classes
+of similar objects (Kaufman and Rousseeuw 1990). Given a set of examples (object
+descriptions), the task of clustering is to partition these examples into subsets,
+called clusters.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000285 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM_000285">
+        <rdfs:label>probability distribution specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_419460"/>
+        <rdfs:comment>A probability distribution D on type T specifies a mapping from objects of type
+T to non-negative Reals, i.e., has the signature d :: T → R0+. For uncountably
+infinite types, probability densities are used instead. The sum of all probabilities
+(the integral of the probability densities) over T is constrained to amount to one.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_147247 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM_147247">
+        <rdfs:label>algorithm execution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <rdfs:comment>algorithm execution is a planned process (information processing process) that achieves some information processing objective , realizes an operator and has as agent computer</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_361570 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM_361570">
+        <rdfs:label>data processing algorithm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000064"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_419460 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM_419460">
+        <rdfs:label>single generalization specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_000034"/>
+        <rdfs:comment>A single generalization specification denotes a type of generalization which is an output of an execution of a single generalization algorithm.
+Examples of such generalization types are: decision trees, desicion rules, neural networks, frequent itemsets, clusters etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_530819 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM_530819">
+        <rdfs:label>ensemble algorithm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_000038"/>
+        <rdfs:comment>Ensemble algorithms are algorithms that generate an ensemble when executed on a dataset. The ensemble algorithms include a specification of  single generalization algorithms which are executed in oreder to produce the single generalizations that compose the ensemble.
+
+Examples of ensemble algorithms include bagging, boosting, stacking, random forests, random subspaces,bagging of random subspaces etc.
+
+For example, bagging of decision trees algorithm includes the specification of a bagging algorithm and having a decision tree algorithm for generating the base models composing the ensemble.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_731692 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM_731692">
+        <rdfs:label>single generalization algorithm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_000038"/>
+        <rdfs:comment>single generalization algorithms are data mining algorithms that given a dataset on input produce a generalization at the output.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_757135 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM_757135">
+        <rdfs:label>information processing objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000005"/>
+        <rdfs:comment>Information processing objective is an objective specification that is achieved by information processing procees.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_953101 -->
+
+    <owl:Class rdf:about="&OntoDM;OntoDM_953101">
+        <rdfs:label>data visualization task</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_757135"/>
+        <rdfs:comment>data visualization task is information processing objective achieved by a data visualization algorithm execution process.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
 
-    <owl:Class rdf:about="&obo;IAO_0000005">
+    <owl:Class rdf:about="&obo2;IAO_0000005">
         <rdfs:label rdf:datatype="&xsd;string">objective specification</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <rdfs:label>objective specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000030"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000025 -->
 
-    <owl:Class rdf:about="&obo;IAO_0000025">
+    <owl:Class rdf:about="&obo2;IAO_0000025">
         <rdfs:label rdf:datatype="&xsd;string">programming language</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000030"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
-    <owl:Class rdf:about="&obo;IAO_0000030">
+    <owl:Class rdf:about="&obo2;IAO_0000030">
         <rdfs:label rdf:datatype="&xsd;string">information artifact</rdfs:label>
+        <rdfs:label>information artifact</rdfs:label>
         <rdfs:subClassOf rdf:resource="&owl;Thing"/>
-        <obo:IAO_0000115>Information is a statement about some entity.</obo:IAO_0000115>
+        <obo2:IAO_0000115>Information is a statement about some entity.</obo2:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000064 -->
 
-    <owl:Class rdf:about="&obo;IAO_0000064">
+    <owl:Class rdf:about="&obo2;IAO_0000064">
         <rdfs:label rdf:datatype="&xsd;string">algorithm</rdfs:label>
         <rdfs:label>algorithm</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000030"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000098 -->
 
-    <owl:Class rdf:about="&obo;IAO_0000098">
+    <owl:Class rdf:about="&obo2;IAO_0000098">
         <rdfs:label rdf:datatype="&xsd;string">data format specification</rdfs:label>
         <rdfs:label xml:lang="en">data format specification</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
-        <obo:IAO_0000115>The syntax by which data is specified which renders it valid for a given format.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000030"/>
+        <obo2:IAO_0000115>The syntax by which data is specified which renders it valid for a given format.</obo2:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000129 -->
 
-    <owl:Class rdf:about="&obo;IAO_0000129">
-        <rdfs:label rdf:datatype="&xsd;string">version number</rdfs:label>
-        <rdfs:label xml:lang="en">version number</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+    <owl:Class rdf:about="&obo2;IAO_0000129">
+        <rdfs:label rdf:datatype="&xsd;string">version name or number</rdfs:label>
+        <rdfs:label>version name or number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000030"/>
+        <obo2:IAO_0000115>A number or name assigned to a piece of software used to identify a specific state of software.</obo2:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
 
-    <owl:Class rdf:about="&obo;OBI_0000245">
+    <owl:Class rdf:about="&obo2;OBI_0000245">
         <rdfs:label rdf:datatype="&xsd;string">organization</rdfs:label>
         <rdfs:label xml:lang="en">organization</rdfs:label>
         <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
@@ -390,7 +923,7 @@
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/EDAM/EDAM:0001478">
         <rdfs:label>pdbml</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000005"/>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000005"/>
     </owl:Class>
     
 
@@ -399,8 +932,8 @@
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/EDAM/EDAM:0001665">
         <rdfs:label>Taverna workflow format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000005"/>
-        <obo:IAO_0000115>Format of Taverna workflows.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000005"/>
+        <obo2:IAO_0000115>Format of Taverna workflows.</obo2:IAO_0000115>
     </owl:Class>
     
 
@@ -409,33 +942,33 @@
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/EDAM/EDAM:0002331">
         <rdfs:label>html</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000013"/>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000013"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_0000001 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000001">
+    <owl:Class rdf:about="&swo;SWO_0000001">
         <rdfs:label rdf:datatype="&xsd;string">software</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000030"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_0000002 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000002">
+    <owl:Class rdf:about="&swo;SWO_0000002">
         <rdfs:label rdf:datatype="&xsd;string">software license</rdfs:label>
         <rdfs:label>software license</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000030"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_0000003 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000003">
+    <owl:Class rdf:about="&swo;SWO_0000003">
         <rdfs:label rdf:datatype="&xsd;string">information processing</rdfs:label>
         <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
     </owl:Class>
@@ -444,213 +977,385 @@
 
     <!-- http://www.ebi.ac.uk/swo/SWO_0000004 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000004">
+    <owl:Class rdf:about="&swo;SWO_0000004">
         <rdfs:label rdf:datatype="&xsd;string">Microsoft Excel 2007</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
-        <obo:IAO_0000115>Microsoft Excel 2007 is a spreadsheet editing and viewing tool.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000070"/>
+        <obo2:IAO_0000115>Microsoft Excel 2007 is a spreadsheet editing and viewing tool.</obo2:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_0000005 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000005">
+    <owl:Class rdf:about="&swo;SWO_0000005">
         <rdfs:label rdf:datatype="&xsd;string">MATLAB</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000001"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_0000006 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000006">
-        <rdfs:label>Protege</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+    <owl:Class rdf:about="&swo;SWO_0000006">
+        <rdfs:label>Protege 4</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000028"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_0000007 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000007">
+    <owl:Class rdf:about="&swo;SWO_0000007">
         <rdfs:label>OmniOutliner</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
-        <obo:IAO_0000115>OmniOutliner is commercial outlining software for Mac OS X produced by The Omni Group</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000001"/>
+        <obo2:IAO_0000115>OmniOutliner is commercial outlining software for Mac OS X produced by The Omni Group</obo2:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_0000008 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000008">
+    <owl:Class rdf:about="&swo;SWO_0000008">
         <rdfs:label>Racket</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000025"/>
-        <obo:IAO_0000115>Racket is a Scheme-based language interpreter and programming environment</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000025"/>
+        <obo2:IAO_0000115>Racket is a Scheme-based language interpreter and programming environment</obo2:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_0000009 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000009">
+    <owl:Class rdf:about="&swo;SWO_0000009">
         <rdfs:label>Kakadu</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000026"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_0000010 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000010">
+    <owl:Class rdf:about="&swo;SWO_0000010">
         <rdfs:label>WordStar</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000001"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_0000011 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000011">
+    <owl:Class rdf:about="&swo;SWO_0000011">
         <rdfs:label>IntelliJ IDEA</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000001"/>
         <alternative_term>IntelliJ</alternative_term>
-        <obo:IAO_0000115>IntelliJ IDEA is a commercial Java IDE for developing software.</obo:IAO_0000115>
+        <obo2:IAO_0000115>IntelliJ IDEA is a commercial Java IDE for developing software.</obo2:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_0000012 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000012">
+    <owl:Class rdf:about="&swo;SWO_0000012">
         <rdfs:label>Java</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000025"/>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000025"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_0000013 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000013">
+    <owl:Class rdf:about="&swo;SWO_0000013">
         <rdfs:label>COPASI</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000014 -->
+
+    <owl:Class rdf:about="&swo;SWO_0000014">
+        <rdfs:label>Microsoft Excel 2003</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000070"/>
+        <rdfs:subClassOf rdf:resource="&swo;software_before_Microsoft_2007"/>
+        <obo2:IAO_0000115>Microsoft Excel 2003 is a spreadsheet editing and viewing tool.</obo2:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000015 -->
+
+    <owl:Class rdf:about="&swo;SWO_0000015">
+        <rdfs:label>Microsoft Excel 2001</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000070"/>
+        <rdfs:subClassOf rdf:resource="&swo;software_before_Microsoft_2007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000016 -->
+
+    <owl:Class rdf:about="&swo;SWO_0000016">
+        <rdfs:label>MATLAB 7</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000017 -->
+
+    <owl:Class rdf:about="&swo;SWO_0000017">
+        <rdfs:label>MATLAB 6</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000018 -->
+
+    <owl:Class rdf:about="&swo;SWO_0000018">
+        <rdfs:label>MATLAB 7.12</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000019 -->
+
+    <owl:Class rdf:about="&swo;SWO_0000019">
+        <rdfs:label>STARLIMS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000020 -->
+
+    <owl:Class rdf:about="&swo;SWO_0000020">
+        <rdfs:label>Unix</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000021"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000021 -->
+
+    <owl:Class rdf:about="&swo;SWO_0000021">
+        <rdfs:label>operating system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000001"/>
+        <obo2:IAO_0000115>An operating system is a piece of software which is responsible for managing software that runs on a computer and the interactions of that software with the hardware and system resources.</obo2:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000022 -->
+
+    <owl:Class rdf:about="&swo;SWO_0000022">
+        <rdfs:label>Linux</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000021"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000023 -->
+
+    <owl:Class rdf:about="&swo;SWO_0000023">
+        <rdfs:label>Microsoft Word 2001</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000025"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000024 -->
+
+    <owl:Class rdf:about="&swo;SWO_0000024">
+        <rdfs:label>Adobe Illustrator 10</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000026"/>
+        <obo2:IAO_0000115>Adobe Illustrator is a graphics editor for creating and editing vector graphics.</obo2:IAO_0000115>
+        <dc:creator>James Malone</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000025 -->
+
+    <owl:Class rdf:about="&swo;SWO_0000025">
+        <rdfs:label>Microsoft Word</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000029"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000026 -->
+
+    <owl:Class rdf:about="&swo;SWO_0000026">
+        <rdfs:label>software with image input</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000027 -->
+
+    <owl:Class rdf:about="&swo;SWO_0000027">
+        <rdfs:label>OBO-Edit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000028"/>
+        <obo2:IAO_0000115>OBO-Edit is an open source ontology editor optimized for the OBO biological ontology file format. It features an easy to use editing interface, a simple but fast reasoner, and powerful search capabilities.</obo2:IAO_0000115>
+        <alternative_term>OBO edit</alternative_term>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000028 -->
+
+    <owl:Class rdf:about="&swo;SWO_0000028">
+        <rdfs:label>ontology engineering software</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000029 -->
+
+    <owl:Class rdf:about="&swo;SWO_0000029">
+        <rdfs:label>Microsoft developed software</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000030 -->
+
+    <owl:Class rdf:about="&swo;SWO_0000030">
+        <rdfs:label>software with command line interface</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000031 -->
+
+    <owl:Class rdf:about="&swo;SWO_0000031">
+        <rdfs:label>Smultron</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000001"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000005 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000005">
+    <owl:Class rdf:about="&swo;SWO_9000005">
         <rdfs:label rdf:datatype="&xsd;string">clause</rdfs:label>
-        <rdfs:label>clause</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <rdfs:label rdf:datatype="&xsd;string">license clause</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000030"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000006 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000006">
+    <owl:Class rdf:about="&swo;SWO_9000006">
         <rdfs:label>attribution clause</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000005"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000005"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000007 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000007">
+    <owl:Class rdf:about="&swo;SWO_9000007">
         <rdfs:label>derivatives clause</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000005"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000005"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000008 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000008">
+    <owl:Class rdf:about="&swo;SWO_9000008">
         <rdfs:label>source code clause</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000005"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000005"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000009 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000009">
+    <owl:Class rdf:about="&swo;SWO_9000009">
         <rdfs:label>platform clause</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000005"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000005"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000010 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000010">
+    <owl:Class rdf:about="&swo;SWO_9000010">
         <rdfs:label>number of installations clause</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000005"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000005"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000011 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000011">
+    <owl:Class rdf:about="&swo;SWO_9000011">
         <rdfs:label>number of users clause</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000005"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000005"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000012 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000012">
+    <owl:Class rdf:about="&swo;SWO_9000012">
         <rdfs:label>time clause</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000005"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000005"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000013 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000013">
+    <owl:Class rdf:about="&swo;SWO_9000013">
         <rdfs:label>usage clause</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000005"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000005"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000016 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000016">
+    <owl:Class rdf:about="&swo;SWO_9000016">
         <rdfs:label>no restrictions on derivatives</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000007"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000007"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000017 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000017">
+    <owl:Class rdf:about="&swo;SWO_9000017">
         <rdfs:label>restrictions on derivative software</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000007"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000007"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000018 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000018">
+    <owl:Class rdf:about="&swo;SWO_9000018">
         <rdfs:label>no derivative software allowed</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000017"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000017"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000019 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000019">
+    <owl:Class rdf:about="&swo;SWO_9000019">
         <rdfs:label>derivative code same license</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000017"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000017"/>
         <rdfs:comment>derivative software must be released under the same license</rdfs:comment>
     </owl:Class>
     
@@ -658,135 +1363,135 @@
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000020 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000020">
+    <owl:Class rdf:about="&swo;SWO_9000020">
         <rdfs:label>source code available</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000008"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000008"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000021 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000021">
+    <owl:Class rdf:about="&swo;SWO_9000021">
         <rdfs:label>source code unavailable</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000008"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000008"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000022 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000022">
+    <owl:Class rdf:about="&swo;SWO_9000022">
         <rdfs:label>platform restricted</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000009"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000009"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000023 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000023">
+    <owl:Class rdf:about="&swo;SWO_9000023">
         <rdfs:label>platform unrestricted</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000009"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000009"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000024 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000024">
+    <owl:Class rdf:about="&swo;SWO_9000024">
         <rdfs:label>number of installations restricted</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000010"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000010"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000025 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000025">
+    <owl:Class rdf:about="&swo;SWO_9000025">
         <rdfs:label>number of installations unrestricted</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000010"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000010"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000026 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000026">
+    <owl:Class rdf:about="&swo;SWO_9000026">
         <rdfs:label>number of users restricted</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000011"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000011"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000027 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000027">
+    <owl:Class rdf:about="&swo;SWO_9000027">
         <rdfs:label>number of users unrestricted</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000011"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000011"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000028 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000028">
+    <owl:Class rdf:about="&swo;SWO_9000028">
         <rdfs:label>time for use restricted</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000012"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000012"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000029 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000029">
+    <owl:Class rdf:about="&swo;SWO_9000029">
         <rdfs:label>time for use unrestricted</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000012"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000012"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000030 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000030">
+    <owl:Class rdf:about="&swo;SWO_9000030">
         <rdfs:label>usage unrestricted</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000013"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000013"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000031 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000031">
+    <owl:Class rdf:about="&swo;SWO_9000031">
         <rdfs:label>usage restricted</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000013"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000013"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000032 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000032">
+    <owl:Class rdf:about="&swo;SWO_9000032">
         <rdfs:label>usage non commercial only</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000031"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000031"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000033 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000033">
+    <owl:Class rdf:about="&swo;SWO_9000033">
         <rdfs:label>usage academic only</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000031"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000031"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000034 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000034">
+    <owl:Class rdf:about="&swo;SWO_9000034">
         <rdfs:label>derivative code linked same license</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000017"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000017"/>
         <rdfs:comment>code may only be linked to in derivative software that is released under the same license</rdfs:comment>
     </owl:Class>
     
@@ -794,35 +1499,129 @@
 
     <!-- http://www.ebi.ac.uk/swo/SWO_9000050 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000050">
+    <owl:Class rdf:about="&swo;SWO_9000050">
         <rdfs:label rdf:datatype="&xsd;string">software interface</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_9000070 -->
+
+    <owl:Class rdf:about="&swo;SWO_9000070">
+        <rdfs:label rdf:datatype="&xsd;string">Microsoft Excel</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000029"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_9000071 -->
+
+    <owl:Class rdf:about="&swo;SWO_9000071">
+        <rdfs:label>Microsoft Excel for Windows 2010</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000070"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_9000072 -->
+
+    <owl:Class rdf:about="&swo;SWO_9000072">
+        <rdfs:label rdf:datatype="&xsd;string">Microsoft Windows</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000021"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000029"/>
+        <rdfs:comment rdf:datatype="&xsd;string">The Windows Operating System</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_9000073 -->
+
+    <owl:Class rdf:about="&swo;SWO_9000073">
+        <rdfs:label>Windows Vista</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000072"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_9000074 -->
+
+    <owl:Class rdf:about="&swo;SWO_9000074">
+        <rdfs:label>Windows XP</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000072"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/data -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data">
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+    <owl:Class rdf:about="&swo;data">
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000030"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/ontology -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/ontology">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data"/>
+    <owl:Class rdf:about="&swo;ontology">
+        <rdfs:subClassOf rdf:resource="&swo;data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/software_before_Microsoft_2007 -->
+
+    <owl:Class rdf:about="&swo;software_before_Microsoft_2007">
+        <rdfs:label>software before Microsoft 2007</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/algorithm/OntoDM_170075 -->
+
+    <owl:Class rdf:about="&swo;algorithm/OntoDM_170075">
+        <rdfs:label>clustering algorithm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_731692"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/algorithm/OntoDM_175260 -->
+
+    <owl:Class rdf:about="&swo;algorithm/OntoDM_175260">
+        <rdfs:label>pattern discovery algorithm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_731692"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/algorithm/OntoDM_382176 -->
+
+    <owl:Class rdf:about="&swo;algorithm/OntoDM_382176">
+        <rdfs:label>predictive modeling algorithm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_731692"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/algorithm/OntoDM_584946 -->
+
+    <owl:Class rdf:about="&swo;algorithm/OntoDM_584946">
+        <rdfs:label>clustering specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_419460"/>
+        <rdfs:comment>A clustering C on a set of objects S of type T specifies a function from S
+to {1, . . . , k}, where k is the number of clusters, which has to obey k ≤ |S|.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000001 -->
 
-    <owl:Class rdf:about="&data;SWO_3000001">
+    <owl:Class rdf:about="&swo;data/SWO_3000001">
         <rdfs:label rdf:datatype="&xsd;string">spreadsheet</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A spreadsheet data format is one in which data is organised into a matrix (or matrices) of columns and rows to form cells in which values are entered.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000098"/>
+        <obo2:IAO_0000115 rdf:datatype="&xsd;string">A spreadsheet data format is one in which data is organised into a matrix (or matrices) of columns and rows to form cells in which values are entered.</obo2:IAO_0000115>
         <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
     </owl:Class>
     
@@ -830,10 +1629,10 @@
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000002 -->
 
-    <owl:Class rdf:about="&data;SWO_3000002">
+    <owl:Class rdf:about="&swo;data/SWO_3000002">
         <rdfs:label rdf:datatype="&xsd;string">XLS spreadsheet</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000001"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A spreadsheet data format designed for Microsoft Excel.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000001"/>
+        <obo2:IAO_0000115 rdf:datatype="&xsd;string">A spreadsheet data format designed for Microsoft Excel.</obo2:IAO_0000115>
         <dc:creator>James Malone</dc:creator>
     </owl:Class>
     
@@ -841,10 +1640,10 @@
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000003 -->
 
-    <owl:Class rdf:about="&data;SWO_3000003">
+    <owl:Class rdf:about="&swo;data/SWO_3000003">
         <rdfs:label rdf:datatype="&xsd;string">XML spreadsheet</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000001"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A spreadsheet data format in which the structure of the data is described using XML, such as column and row headers and cell identity.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000001"/>
+        <obo2:IAO_0000115 rdf:datatype="&xsd;string">A spreadsheet data format in which the structure of the data is described using XML, such as column and row headers and cell identity.</obo2:IAO_0000115>
         <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
     </owl:Class>
     
@@ -852,9 +1651,9 @@
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000004 -->
 
-    <owl:Class rdf:about="&data;SWO_3000004">
+    <owl:Class rdf:about="&swo;data/SWO_3000004">
         <rdfs:label rdf:datatype="&xsd;string">matlab m file</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000098"/>
         <dc:creator>James Malone</dc:creator>
     </owl:Class>
     
@@ -862,10 +1661,10 @@
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000005 -->
 
-    <owl:Class rdf:about="&data;SWO_3000005">
+    <owl:Class rdf:about="&swo;data/SWO_3000005">
         <rdfs:label>XML</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
-        <obo:IAO_0000115>Extensible Markup Language (XML) is a standard set of rules for encoding documents in a machine-readable form defined by the W3C.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000098"/>
+        <obo2:IAO_0000115>Extensible Markup Language (XML) is a standard set of rules for encoding documents in a machine-readable form defined by the W3C.</obo2:IAO_0000115>
         <dc:creator>James Malone</dc:creator>
     </owl:Class>
     
@@ -873,11 +1672,11 @@
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000006 -->
 
-    <owl:Class rdf:about="&data;SWO_3000006">
+    <owl:Class rdf:about="&swo;data/SWO_3000006">
         <rdfs:label>RDF</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;anyURI">http://www.w3.org/TR/REC-rdf-syntax/</obo:IAO_0000119>
-        <obo:IAO_0000115>The Resource Description Framework (RDF) is a general-purpose language for representing information in the Web.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000098"/>
+        <obo2:IAO_0000119 rdf:datatype="&xsd;anyURI">http://www.w3.org/TR/REC-rdf-syntax/</obo2:IAO_0000119>
+        <obo2:IAO_0000115>The Resource Description Framework (RDF) is a general-purpose language for representing information in the Web.</obo2:IAO_0000115>
         <dc:creator>James Malone</dc:creator>
     </owl:Class>
     
@@ -885,32 +1684,32 @@
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000007 -->
 
-    <owl:Class rdf:about="&data;SWO_3000007">
+    <owl:Class rdf:about="&swo;data/SWO_3000007">
         <rdfs:label>RDF-XML</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000005"/>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000006"/>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000005"/>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000006"/>
         <dc:creator>James Malone</dc:creator>
-        <obo:IAO_0000115>A serialisation of RDF into an XML format.</obo:IAO_0000115>
+        <obo2:IAO_0000115>A serialisation of RDF into an XML format.</obo2:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000008 -->
 
-    <owl:Class rdf:about="&data;SWO_3000008">
+    <owl:Class rdf:about="&swo;data/SWO_3000008">
         <rdfs:label>image format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000098"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000009 -->
 
-    <owl:Class rdf:about="&data;SWO_3000009">
+    <owl:Class rdf:about="&swo;data/SWO_3000009">
         <rdfs:label>DWG</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000008"/>
-        <obo:IAO_0000119>http://en.wikipedia.org/wiki/.dwg</obo:IAO_0000119>
-        <obo:IAO_0000115>DWG (&quot;drawing&quot;) is a binary file format used for storing two and three dimensional design data and metadata</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000008"/>
+        <obo2:IAO_0000119>http://en.wikipedia.org/wiki/.dwg</obo2:IAO_0000119>
+        <obo2:IAO_0000115>DWG (&quot;drawing&quot;) is a binary file format used for storing two and three dimensional design data and metadata</obo2:IAO_0000115>
         <dc:creator>James Malone</dc:creator>
     </owl:Class>
     
@@ -918,23 +1717,23 @@
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000010 -->
 
-    <owl:Class rdf:about="&data;SWO_3000010">
+    <owl:Class rdf:about="&swo;data/SWO_3000010">
         <rdfs:label>DXF</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000008"/>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000008"/>
         <dc:creator>James Malone</dc:creator>
-        <obo:IAO_0000119>http://en.wikipedia.org/wiki/AutoCAD_DXF</obo:IAO_0000119>
-        <obo:IAO_0000115>DXF (Drawing Interchange Format, or Drawing Exchange Format) is a CAD data file format developed by Autodesk for enabling data interoperability between AutoCAD and other programs.</obo:IAO_0000115>
+        <obo2:IAO_0000119>http://en.wikipedia.org/wiki/AutoCAD_DXF</obo2:IAO_0000119>
+        <obo2:IAO_0000115>DXF (Drawing Interchange Format, or Drawing Exchange Format) is a CAD data file format developed by Autodesk for enabling data interoperability between AutoCAD and other programs.</obo2:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000011 -->
 
-    <owl:Class rdf:about="&data;SWO_3000011">
+    <owl:Class rdf:about="&swo;data/SWO_3000011">
         <rdfs:label>BMP</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000020"/>
-        <obo:IAO_0000119>http://www.fileformat.info/format/bmp/egff.htm</obo:IAO_0000119>
-        <obo:IAO_0000115>The BMP File Format is a Raster graphics image file format used to store bitmap digital images, independently of the display device (such as a graphics adapter).</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000020"/>
+        <obo2:IAO_0000119>http://www.fileformat.info/format/bmp/egff.htm</obo2:IAO_0000119>
+        <obo2:IAO_0000115>The BMP File Format is a Raster graphics image file format used to store bitmap digital images, independently of the display device (such as a graphics adapter).</obo2:IAO_0000115>
         <dc:creator>James Malone</dc:creator>
     </owl:Class>
     
@@ -942,62 +1741,62 @@
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000012 -->
 
-    <owl:Class rdf:about="&data;SWO_3000012">
+    <owl:Class rdf:about="&swo;data/SWO_3000012">
         <rdfs:label>CGM</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000020"/>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000020"/>
         <dc:creator>James Malone</dc:creator>
-        <obo:IAO_0000115>Computer Graphics Metafile (CGM) is a free and open international standard file format for 2D vector graphics, raster graphics, and text, and is defined by ISO/IEC 8632.</obo:IAO_0000115>
-        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Computer_Graphics_Metafile</obo:IAO_0000119>
+        <obo2:IAO_0000115>Computer Graphics Metafile (CGM) is a free and open international standard file format for 2D vector graphics, raster graphics, and text, and is defined by ISO/IEC 8632.</obo2:IAO_0000115>
+        <obo2:IAO_0000119>http://en.wikipedia.org/wiki/Computer_Graphics_Metafile</obo2:IAO_0000119>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000013 -->
 
-    <owl:Class rdf:about="&data;SWO_3000013">
+    <owl:Class rdf:about="&swo;data/SWO_3000013">
         <rdfs:label>web page specification</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000098"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000014 -->
 
-    <owl:Class rdf:about="&data;SWO_3000014">
+    <owl:Class rdf:about="&swo;data/SWO_3000014">
         <rdfs:label>document exchange format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000098"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000015 -->
 
-    <owl:Class rdf:about="&data;SWO_3000015">
+    <owl:Class rdf:about="&swo;data/SWO_3000015">
         <rdfs:label>pdf</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000014"/>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000014"/>
         <alternative_term>Portable Document Format</alternative_term>
-        <obo:IAO_0000115>PDF is an open standard for document exchange. </obo:IAO_0000115>
+        <obo2:IAO_0000115>PDF is an open standard for document exchange. </obo2:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000016 -->
 
-    <owl:Class rdf:about="&data;SWO_3000016">
+    <owl:Class rdf:about="&swo;data/SWO_3000016">
         <rdfs:label>TIFF</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000020"/>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000020"/>
         <alternative_term>Tagged Image File Format</alternative_term>
-        <obo:IAO_0000115>TIFF is a flexible, adaptable file format for handling images and data within a single file, by including the header tags (size, definition, image-data arrangement, applied image compression) defining the image&#39;s geometry.</obo:IAO_0000115>
+        <obo2:IAO_0000115>TIFF is a flexible, adaptable file format for handling images and data within a single file, by including the header tags (size, definition, image-data arrangement, applied image compression) defining the image&#39;s geometry.</obo2:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000017 -->
 
-    <owl:Class rdf:about="&data;SWO_3000017">
+    <owl:Class rdf:about="&swo;data/SWO_3000017">
         <rdfs:label>JPEG</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000020"/>
-        <obo:IAO_0000115>JPEG is a lossy file format for storing images</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000020"/>
+        <obo2:IAO_0000115>JPEG is a lossy file format for storing images</obo2:IAO_0000115>
         <alternative_term>JPG</alternative_term>
     </owl:Class>
     
@@ -1005,21 +1804,21 @@
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000018 -->
 
-    <owl:Class rdf:about="&data;SWO_3000018">
+    <owl:Class rdf:about="&swo;data/SWO_3000018">
         <rdfs:label>PNG</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000020"/>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000020"/>
         <alternative_term>Portable Network Graphics</alternative_term>
-        <obo:IAO_0000115>PNG is a bitmapped image format and video codec that employs lossless data compression.</obo:IAO_0000115>
+        <obo2:IAO_0000115>PNG is a bitmapped image format and video codec that employs lossless data compression.</obo2:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000019 -->
 
-    <owl:Class rdf:about="&data;SWO_3000019">
+    <owl:Class rdf:about="&swo;data/SWO_3000019">
         <rdfs:label>GIF</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000020"/>
-        <obo:IAO_0000115>The Graphics Interchange Format (GIF) is a bitmap image format. The format supports up to 8 bits per pixel thus allowing a single image to reference a palette of up to 256 distinct colors. The colors are chosen from the 24-bit RGB color space. It also supports animations and allows a separate palette of 256 colors for each frame. The color limitation makes the GIF format unsuitable for reproducing color photographs and other images with continuous color, but it is well-suited for simpler images such as graphics or logos with solid areas of color. [wikipedia]</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000020"/>
+        <obo2:IAO_0000115>The Graphics Interchange Format (GIF) is a bitmap image format. The format supports up to 8 bits per pixel thus allowing a single image to reference a palette of up to 256 distinct colors. The colors are chosen from the 24-bit RGB color space. It also supports animations and allows a separate palette of 256 colors for each frame. The color limitation makes the GIF format unsuitable for reproducing color photographs and other images with continuous color, but it is well-suited for simpler images such as graphics or logos with solid areas of color. [wikipedia]</obo2:IAO_0000115>
         <alternative_term>Graphics Interchange Format</alternative_term>
     </owl:Class>
     
@@ -1027,29 +1826,29 @@
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000020 -->
 
-    <owl:Class rdf:about="&data;SWO_3000020">
+    <owl:Class rdf:about="&swo;data/SWO_3000020">
         <rdfs:label>raster image format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000008"/>
-        <obo:IAO_0000115>A raster image is a format for representing a rectangular grid of dots (pixels) which contains information on the specific colour of each pixel.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000008"/>
+        <obo2:IAO_0000115>A raster image is a format for representing a rectangular grid of dots (pixels) which contains information on the specific colour of each pixel.</obo2:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000021 -->
 
-    <owl:Class rdf:about="&data;SWO_3000021">
+    <owl:Class rdf:about="&swo;data/SWO_3000021">
         <rdfs:label>vector image format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000008"/>
-        <obo:IAO_0000115>A vector image is a collection of connected lines and curves that produce objects. This geometric description enables the image to be displayed without loss at any size rendering.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000008"/>
+        <obo2:IAO_0000115>A vector image is a collection of connected lines and curves that produce objects. This geometric description enables the image to be displayed without loss at any size rendering.</obo2:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000022 -->
 
-    <owl:Class rdf:about="&data;SWO_3000022">
+    <owl:Class rdf:about="&swo;data/SWO_3000022">
         <rdfs:label>SVG</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000021"/>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000021"/>
         <alternative_term>Scalable Vector Graphics</alternative_term>
     </owl:Class>
     
@@ -1057,9 +1856,9 @@
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000023 -->
 
-    <owl:Class rdf:about="&data;SWO_3000023">
+    <owl:Class rdf:about="&swo;data/SWO_3000023">
         <rdfs:label>AI</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000021"/>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000021"/>
         <alternative_term>Adobe Illustrator format</alternative_term>
     </owl:Class>
     
@@ -1067,20 +1866,20 @@
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000024 -->
 
-    <owl:Class rdf:about="&data;SWO_3000024">
+    <owl:Class rdf:about="&swo;data/SWO_3000024">
         <rdfs:label>PostScript</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000014"/>
-        <obo:IAO_0000115>PostScript is a format used for describing documents.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000014"/>
+        <obo2:IAO_0000115>PostScript is a format used for describing documents.</obo2:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000025 -->
 
-    <owl:Class rdf:about="&data;SWO_3000025">
+    <owl:Class rdf:about="&swo;data/SWO_3000025">
         <rdfs:label>tex</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000014"/>
-        <obo:IAO_0000115>tex is a format for documents written in the document markup language and document preparation system LaTeX.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000014"/>
+        <obo2:IAO_0000115>tex is a format for documents written in the document markup language and document preparation system LaTeX.</obo2:IAO_0000115>
         <alternative_term>LaTeX format</alternative_term>
     </owl:Class>
     
@@ -1088,30 +1887,30 @@
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000026 -->
 
-    <owl:Class rdf:about="&data;SWO_3000026">
+    <owl:Class rdf:about="&swo;data/SWO_3000026">
         <rdfs:label>outline document format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
-        <obo:IAO_0000115>A format specification for data used or produced by outliner software</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000098"/>
+        <obo2:IAO_0000115>A format specification for data used or produced by outliner software</obo2:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000027 -->
 
-    <owl:Class rdf:about="&data;SWO_3000027">
+    <owl:Class rdf:about="&swo;data/SWO_3000027">
         <rdfs:label>OmniOutline format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000026"/>
-        <obo:IAO_0000115>A proprietary format for documents created and edited using OmniOutliner outliner software,</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000026"/>
+        <obo2:IAO_0000115>A proprietary format for documents created and edited using OmniOutliner outliner software,</obo2:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000028 -->
 
-    <owl:Class rdf:about="&data;SWO_3000028">
+    <owl:Class rdf:about="&swo;data/SWO_3000028">
         <rdfs:label>OPML</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000026"/>
-        <obo:IAO_0000115>OPML (Outline Processor Markup Language) is an XML format for outlines</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000026"/>
+        <obo2:IAO_0000115>OPML (Outline Processor Markup Language) is an XML format for outlines</obo2:IAO_0000115>
         <alternative_term>Outline Processor Markup Language</alternative_term>
     </owl:Class>
     
@@ -1119,299 +1918,541 @@
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000029 -->
 
-    <owl:Class rdf:about="&data;SWO_3000029">
+    <owl:Class rdf:about="&swo;data/SWO_3000029">
         <rdfs:label>JPEG 2000</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000020"/>
-        <obo:IAO_0000115>JPEG 2000 is a compression standard enabling both lossless and lossy storage. The compression methods used are different from the ones in standard JFIF/JPEG; they improve quality and compression ratios, but also require more computational power to process. [wikipedia]</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000020"/>
+        <obo2:IAO_0000115>JPEG 2000 is a compression standard enabling both lossless and lossy storage. The compression methods used are different from the ones in standard JFIF/JPEG; they improve quality and compression ratios, but also require more computational power to process. [wikipedia]</obo2:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000030 -->
 
-    <owl:Class rdf:about="&data;SWO_3000030">
+    <owl:Class rdf:about="&swo;data/SWO_3000030">
         <rdfs:label>word processing document format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000098"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000031 -->
 
-    <owl:Class rdf:about="&data;SWO_3000031">
+    <owl:Class rdf:about="&swo;data/SWO_3000031">
         <rdfs:label>WordStar format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000030"/>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000030"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000032 -->
 
-    <owl:Class rdf:about="&data;SWO_3000032">
+    <owl:Class rdf:about="&swo;data/SWO_3000032">
         <rdfs:label>Microsoft Word doc</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000030"/>
-        <obo:IAO_0000115>A file format for word processing documents for Microsoft Word. </obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000030"/>
+        <obo2:IAO_0000115>A file format for word processing documents for Microsoft Word. </obo2:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000033 -->
 
-    <owl:Class rdf:about="&data;SWO_3000033">
+    <owl:Class rdf:about="&swo;data/SWO_3000033">
         <rdfs:label>programming language format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000098"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000034 -->
 
-    <owl:Class rdf:about="&data;SWO_3000034">
+    <owl:Class rdf:about="&swo;data/SWO_3000034">
         <rdfs:label>.java file</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000033"/>
-        <obo:IAO_0000119>James Malone</obo:IAO_0000119>
-        <obo:IAO_0000115>A source code file format which is specified to be used with the Java programming language.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000033"/>
+        <obo2:IAO_0000119>James Malone</obo2:IAO_0000119>
+        <obo2:IAO_0000115>A source code file format which is specified to be used with the Java programming language.</obo2:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000035 -->
 
-    <owl:Class rdf:about="&data;SWO_3000035">
+    <owl:Class rdf:about="&swo;data/SWO_3000035">
         <rdfs:label>.class file</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000033"/>
-        <obo:IAO_0000115>A format in which a .java file has been compiled into bytecode using a Java compiler and which is specified to be executed using the Java virtual machine.</obo:IAO_0000115>
-        <obo:IAO_0000119>James Malone</obo:IAO_0000119>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000033"/>
+        <obo2:IAO_0000115>A format in which a .java file has been compiled into bytecode using a Java compiler and which is specified to be executed using the Java virtual machine.</obo2:IAO_0000115>
+        <obo2:IAO_0000119>James Malone</obo2:IAO_0000119>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000036 -->
 
-    <owl:Class rdf:about="&data;SWO_3000036">
+    <owl:Class rdf:about="&swo;data/SWO_3000036">
         <rdfs:label>CopasiML</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&data;SWO_3000005"/>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000005"/>
         <alternative_term>.cps</alternative_term>
-        <obo:IAO_0000115>An XML-based file format for use with the COPASI software.</obo:IAO_0000115>
+        <obo2:IAO_0000115>An XML-based file format for use with the COPASI software.</obo2:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000037 -->
 
-    <owl:Class rdf:about="&data;SWO_3000037">
+    <owl:Class rdf:about="&swo;data/SWO_3000037">
         <rdfs:label>SBML</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
-        <obo:IAO_0000115>Systems Biology Markup Language (SBML) is a machine-readable format for representing models. It&#39;s oriented towards describing systems where biological entities are involved in, and modified by, processes that occur over time.</obo:IAO_0000115>
-        <obo:IAO_0000119>http://sbml.org</obo:IAO_0000119>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000098"/>
+        <obo2:IAO_0000115>Systems Biology Markup Language (SBML) is a machine-readable format for representing models. It&#39;s oriented towards describing systems where biological entities are involved in, and modified by, processes that occur over time.</obo2:IAO_0000115>
+        <obo2:IAO_0000119>http://sbml.org</obo2:IAO_0000119>
         <alternative_term>Systems Biology Markup Language</alternative_term>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000038 -->
+
+    <owl:Class rdf:about="&swo;data/SWO_3000038">
+        <rdfs:label>OWL-XML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000005"/>
+        <obo2:IAO_0000115>The Web Ontology Language (OWL) in XML serialization</obo2:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000039 -->
+
+    <owl:Class rdf:about="&swo;data/SWO_3000039">
+        <rdfs:label>OWL2-XML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000005"/>
+        <obo2:IAO_0000115>Web Ontology Language version 2 in XML Serialization</obo2:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000040 -->
+
+    <owl:Class rdf:about="&swo;data/SWO_3000040">
+        <rdfs:label>OBO Flat File Format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000098"/>
+        <obo2:IAO_0000115>OBO format is the text file format used by OBO-Edit, the open source, platform-independent application for viewing and editing ontologies. </obo2:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000041 -->
+
+    <owl:Class rdf:about="&swo;data/SWO_3000041">
+        <rdfs:label>text file format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000042 -->
+
+    <owl:Class rdf:about="&swo;data/SWO_3000042">
+        <rdfs:label>ASCII format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000043"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000043 -->
+
+    <owl:Class rdf:about="&swo;data/SWO_3000043">
+        <rdfs:label>plain text file format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;data/SWO_3000041"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/interface/SWO_9000051 -->
 
-    <owl:Class rdf:about="&interface;SWO_9000051">
+    <owl:Class rdf:about="&swo;interface/SWO_9000051">
         <rdfs:label>Web Service</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000050"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000050"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/interface/SWO_9000052 -->
 
-    <owl:Class rdf:about="&interface;SWO_9000052">
+    <owl:Class rdf:about="&swo;interface/SWO_9000052">
         <rdfs:label>Graphical User Interface</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000050"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000050"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/interface/SWO_9000053 -->
 
-    <owl:Class rdf:about="&interface;SWO_9000053">
+    <owl:Class rdf:about="&swo;interface/SWO_9000053">
         <rdfs:label>Command Line Interface</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000050"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000050"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/interface/SWO_9000054 -->
 
-    <owl:Class rdf:about="&interface;SWO_9000054">
+    <owl:Class rdf:about="&swo;interface/SWO_9000054">
         <rdfs:label>Application Programming Interface</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000050"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000050"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/license/SWO_1000001 -->
 
-    <owl:Class rdf:about="&license;SWO_1000001">
+    <owl:Class rdf:about="&swo;license/SWO_1000001">
         <rdfs:label>creative commons</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000002"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/license/SWO_1000002 -->
 
-    <owl:Class rdf:about="&license;SWO_1000002">
+    <owl:Class rdf:about="&swo;license/SWO_1000002">
         <rdfs:label rdf:datatype="&xsd;string">proprietary commercial software license</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000002"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/license/SWO_1000003 -->
 
-    <owl:Class rdf:about="&license;SWO_1000003">
+    <owl:Class rdf:about="&swo;license/SWO_1000003">
         <rdfs:label>Mozilla Public License Version 1.1</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000002"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/license/SWO_10000035 -->
 
-    <owl:Class rdf:about="&license;SWO_10000035">
+    <owl:Class rdf:about="&swo;license/SWO_10000035">
         <rdfs:label>distribution clause</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000005"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000005"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/license/SWO_10000036 -->
 
-    <owl:Class rdf:about="&license;SWO_10000036">
+    <owl:Class rdf:about="&swo;license/SWO_10000036">
         <rdfs:label>distribution restricted</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&license;SWO_10000035"/>
+        <rdfs:subClassOf rdf:resource="&swo;license/SWO_10000035"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/license/SWO_10000037 -->
 
-    <owl:Class rdf:about="&license;SWO_10000037">
+    <owl:Class rdf:about="&swo;license/SWO_10000037">
         <rdfs:label>distribution unrestricted</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&license;SWO_10000035"/>
+        <rdfs:subClassOf rdf:resource="&swo;license/SWO_10000035"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/license/SWO_10000038 -->
 
-    <owl:Class rdf:about="&license;SWO_10000038">
+    <owl:Class rdf:about="&swo;license/SWO_10000038">
         <rdfs:label>derivative software allowed</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000017"/>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_9000017"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/license/SWO_1000004 -->
 
-    <owl:Class rdf:about="&license;SWO_1000004">
+    <owl:Class rdf:about="&swo;license/SWO_1000004">
         <rdfs:label>GNU General Public License</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+        <rdfs:subClassOf rdf:resource="&swo;license/SWO_1000008"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/license/SWO_1000005 -->
 
-    <owl:Class rdf:about="&license;SWO_1000005">
+    <owl:Class rdf:about="&swo;license/SWO_1000005">
         <rdfs:label>Apache license</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+        <rdfs:subClassOf rdf:resource="&swo;license/SWO_1000009"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_1000006 -->
+
+    <owl:Class rdf:about="&swo;license/SWO_1000006">
+        <rdfs:label rdf:datatype="&xsd;string">Academic Licence version 3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;license/SWO_1000008"/>
+        <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_1000007 -->
+
+    <owl:Class rdf:about="&swo;license/SWO_1000007">
+        <rdfs:label rdf:datatype="&xsd;string">FreeBSD Licence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000002"/>
+        <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_1000008 -->
+
+    <owl:Class rdf:about="&swo;license/SWO_1000008">
+        <rdfs:label>open source software license</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_1000009 -->
+
+    <owl:Class rdf:about="&swo;license/SWO_1000009">
+        <rdfs:label>licence without restrictions on derivatives</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;SWO_0000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_9000059 -->
+
+    <owl:Class rdf:about="&swo;license/SWO_9000059">
+        <rdfs:label rdf:datatype="&xsd;string">distribution with notices</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;license/SWO_10000035"/>
+        <dc:creator rdf:datatype="&xsd;string">Andy Brownh</dc:creator>
+        <rdfs:comment rdf:datatype="&xsd;string">Distribution is unrestricted, except that all distributions must retain certain licence information (e.g., copyright notices)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000061 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000061">
+        <rdfs:label rdf:datatype="&xsd;string">development status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000030"/>
+        <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
+        <rdfs:comment rdf:datatype="&xsd;string">The maturity status of software</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000062 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000062">
+        <rdfs:label rdf:datatype="&xsd;string">alpha</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Software has been designated &#39;alpha&#39; by the developer/publisher</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000063 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000063">
+        <rdfs:label>beta</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Software has been designated &#39;beta&#39; by the develoer/publisher</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000064 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000064">
+        <rdfs:label>release candidate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000065 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000065">
+        <rdfs:label>live</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Software is available from the publisher as a completed product</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000066 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000066">
+        <rdfs:label>obsolete</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Sofware is no longer being supplied by the developers/publishers</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000069 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000069">
+        <rdfs:label>superseded</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+        <rdfs:comment rdf:datatype="&xsd;string">An updated version of the software is available.</rdfs:comment>
+        <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000071 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000071">
+        <rdfs:label>first release</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+        <dc:creator>James Malone</dc:creator>
+        <obo2:IAO_0000115>The first release of a piece of software. A first release does not imply any particular levels of maturity other than is this is the first instance of this software to be considered released.</obo2:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000072 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000072">
+        <rdfs:label>latest release</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+        <obo2:IAO_0000115>The latest release of a piece of software. This does not imply any levels of maturity other than indicating this is the most recent release.</obo2:IAO_0000115>
+        <dc:creator>James Malone</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000073 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000073">
+        <rdfs:label rdf:datatype="&xsd;string">maintained</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+        <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
+        <rdfs:comment rdf:datatype="&xsd;string">Software has developers actively maintaining it (fixing bugs)</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_40000002 -->
 
-    <owl:Class rdf:about="&objective;SWO_40000002">
+    <owl:Class rdf:about="&swo;objective/SWO_40000002">
         <rdfs:label rdf:datatype="&xsd;string">matrix manipulation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000005"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000001 -->
 
-    <owl:Class rdf:about="&objective;SWO_4000001">
+    <owl:Class rdf:about="&swo;objective/SWO_4000001">
         <rdfs:label rdf:datatype="&xsd;string">spreadsheet editing</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000005"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000003 -->
 
-    <owl:Class rdf:about="&objective;SWO_4000003">
+    <owl:Class rdf:about="&swo;objective/SWO_4000003">
         <rdfs:label>document outlining</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000005"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000004 -->
 
-    <owl:Class rdf:about="&objective;SWO_4000004">
+    <owl:Class rdf:about="&swo;objective/SWO_4000004">
         <rdfs:label>image compression</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000005"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000005 -->
 
-    <owl:Class rdf:about="&objective;SWO_4000005">
+    <owl:Class rdf:about="&swo;objective/SWO_4000005">
         <rdfs:label>ontology engineering</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000005"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000006 -->
 
-    <owl:Class rdf:about="&objective;SWO_4000006">
+    <owl:Class rdf:about="&swo;objective/SWO_4000006">
         <rdfs:label>word processing</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000005"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000007 -->
 
-    <owl:Class rdf:about="&objective;SWO_4000007">
+    <owl:Class rdf:about="&swo;objective/SWO_4000007">
         <rdfs:label>software development</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000005"/>
     </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000008 -->
 
-    <owl:Class rdf:about="&objective;SWO_4000008">
+    <owl:Class rdf:about="&swo;objective/SWO_4000008">
         <rdfs:label>simulation and analysis of biochemical networks</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000005"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_20000002 -->
+    <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000009 -->
 
-    <owl:Class rdf:about="&version;SWO_20000002">
-        <rdfs:label rdf:datatype="&xsd;string">beta version</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000129"/>
+    <owl:Class rdf:about="&swo;objective/SWO_4000009">
+        <rdfs:label>laboratory information management</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000005"/>
+        <obo2:IAO_0000115>Manage Laboratory information such is commonly performed by LIMS software.</obo2:IAO_0000115>
     </owl:Class>
     
 
 
-    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000001 -->
+    <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000010 -->
 
-    <owl:Class rdf:about="&version;SWO_2000001">
-        <rdfs:label rdf:datatype="&xsd;string">alpha version</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000129"/>
+    <owl:Class rdf:about="&swo;objective/SWO_4000010">
+        <rdfs:label>manage computer operations</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000005"/>
+        <obo2:IAO_0000115>the objective of performing the actions of an operation system such as managing the software running a computer and the interactions with the system resources and hardware.</obo2:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000011 -->
+
+    <owl:Class rdf:about="&swo;objective/SWO_4000011">
+        <rdfs:label>text editing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo2;IAO_0000005"/>
+        <obo2:IAO_0000115>Text editing is the objective of editing plain text files.</obo2:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000055 -->
+
+    <owl:Class rdf:about="&swo;organization/SWO_9000055">
+        <rdfs:label rdf:datatype="&xsd;string">publishing_process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000056 -->
+
+    <owl:Class rdf:about="&swo;organization/SWO_9000056">
+        <rdfs:label rdf:datatype="&xsd;string">developing_process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
     </owl:Class>
     
 
@@ -1447,6 +2488,7 @@
 
     <owl:Class rdf:about="&span;ProcessualEntity">
         <rdfs:label rdf:datatype="&xsd;string">process</rdfs:label>
+        <rdfs:label>process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&owl;Thing"/>
     </owl:Class>
     
@@ -1465,8 +2507,8 @@
 
     <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000001 -->
 
-    <owl:Thing rdf:about="&organization;SWO_9000001">
-        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    <owl:Thing rdf:about="&swo;organization/SWO_9000001">
+        <rdf:type rdf:resource="&obo2;OBI_0000245"/>
         <rdf:type rdf:resource="&snap;MaterialEntity"/>
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
         <rdfs:label rdf:datatype="&xsd;string">Microsoft</rdfs:label>
@@ -1476,8 +2518,8 @@
 
     <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000002 -->
 
-    <owl:Thing rdf:about="&organization;SWO_9000002">
-        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    <owl:Thing rdf:about="&swo;organization/SWO_9000002">
+        <rdf:type rdf:resource="&obo2;OBI_0000245"/>
         <rdf:type rdf:resource="&snap;MaterialEntity"/>
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
         <rdfs:label rdf:datatype="&xsd;string">MathWorks</rdfs:label>
@@ -1487,8 +2529,8 @@
 
     <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000003 -->
 
-    <owl:Thing rdf:about="&organization;SWO_9000003">
-        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    <owl:Thing rdf:about="&swo;organization/SWO_9000003">
+        <rdf:type rdf:resource="&obo2;OBI_0000245"/>
         <rdf:type rdf:resource="&snap;MaterialEntity"/>
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
         <rdfs:label>Stanford University</rdfs:label>
@@ -1498,8 +2540,8 @@
 
     <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000004 -->
 
-    <owl:Thing rdf:about="&organization;SWO_9000004">
-        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    <owl:Thing rdf:about="&swo;organization/SWO_9000004">
+        <rdf:type rdf:resource="&obo2;OBI_0000245"/>
         <rdf:type rdf:resource="&snap;MaterialEntity"/>
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
         <rdfs:label>Omni</rdfs:label>
@@ -1509,8 +2551,8 @@
 
     <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000005 -->
 
-    <owl:Thing rdf:about="&organization;SWO_9000005">
-        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    <owl:Thing rdf:about="&swo;organization/SWO_9000005">
+        <rdf:type rdf:resource="&obo2;OBI_0000245"/>
         <rdf:type rdf:resource="&snap;MaterialEntity"/>
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
         <rdfs:label>PLT Scheme Inc</rdfs:label>
@@ -1520,8 +2562,8 @@
 
     <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000006 -->
 
-    <owl:Thing rdf:about="&organization;SWO_9000006">
-        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    <owl:Thing rdf:about="&swo;organization/SWO_9000006">
+        <rdf:type rdf:resource="&obo2;OBI_0000245"/>
         <rdf:type rdf:resource="&snap;MaterialEntity"/>
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
         <rdfs:label>MicroPro International</rdfs:label>
@@ -1531,11 +2573,267 @@
 
     <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000007 -->
 
-    <owl:Thing rdf:about="&organization;SWO_9000007">
-        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    <owl:Thing rdf:about="&swo;organization/SWO_9000007">
+        <rdf:type rdf:resource="&obo2;OBI_0000245"/>
         <rdf:type rdf:resource="&snap;MaterialEntity"/>
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
         <rdfs:label>JetBrains</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000008 -->
+
+    <owl:Thing rdf:about="&swo;organization/SWO_9000008">
+        <rdf:type rdf:resource="&obo2;OBI_0000245"/>
+        <rdf:type rdf:resource="&snap;MaterialEntity"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label>Free Software Foundation</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000009 -->
+
+    <owl:Thing rdf:about="&swo;organization/SWO_9000009">
+        <rdf:type rdf:resource="&obo2;OBI_0000245"/>
+        <rdf:type rdf:resource="&snap;MaterialEntity"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label>Adobe Systems</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/6.0 -->
+
+    <owl:Thing rdf:about="&swo;version/6.0">
+        <rdf:type rdf:resource="&obo2;IAO_0000030"/>
+        <rdf:type rdf:resource="&obo2;IAO_0000129"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label>6.0</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000001 -->
+
+    <owl:Thing rdf:about="&swo;version/SWO_2000001">
+        <rdf:type rdf:resource="&obo2;IAO_0000030"/>
+        <rdf:type rdf:resource="&obo2;IAO_0000129"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label>beta</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000002 -->
+
+    <owl:Thing rdf:about="&swo;version/SWO_2000002">
+        <rdf:type rdf:resource="&obo2;IAO_0000030"/>
+        <rdf:type rdf:resource="&obo2;IAO_0000129"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label>alpha</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000003 -->
+
+    <owl:Thing rdf:about="&swo;version/SWO_2000003">
+        <rdf:type rdf:resource="&obo2;IAO_0000030"/>
+        <rdf:type rdf:resource="&obo2;IAO_0000129"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label>Microsoft 98 version</rdfs:label>
+        <ro:precedes rdf:resource="&swo;version/SWO_2000004"/>
+        <ro:precedes rdf:resource="&swo;version/SWO_2000005"/>
+        <ro:preceded_by rdf:resource="&swo;version/SWO_2000006"/>
+        <ro:precedes rdf:resource="&swo;version/SWO_2000007"/>
+        <ro:precedes rdf:resource="&swo;version/SWO_2000008"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000004 -->
+
+    <owl:Thing rdf:about="&swo;version/SWO_2000004">
+        <rdf:type rdf:resource="&obo2;IAO_0000030"/>
+        <rdf:type rdf:resource="&obo2;IAO_0000129"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label>Microsoft 2001 version</rdfs:label>
+        <ro:preceded_by rdf:resource="&swo;version/SWO_2000003"/>
+        <ro:precedes rdf:resource="&swo;version/SWO_2000005"/>
+        <ro:preceded_by rdf:resource="&swo;version/SWO_2000006"/>
+        <ro:precedes rdf:resource="&swo;version/SWO_2000007"/>
+        <ro:precedes rdf:resource="&swo;version/SWO_2000008"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000005 -->
+
+    <owl:Thing rdf:about="&swo;version/SWO_2000005">
+        <rdf:type rdf:resource="&obo2;IAO_0000030"/>
+        <rdf:type rdf:resource="&obo2;IAO_0000129"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label>Microsoft 2003 version</rdfs:label>
+        <ro:preceded_by rdf:resource="&swo;version/SWO_2000003"/>
+        <ro:preceded_by rdf:resource="&swo;version/SWO_2000004"/>
+        <ro:preceded_by rdf:resource="&swo;version/SWO_2000006"/>
+        <ro:precedes rdf:resource="&swo;version/SWO_2000007"/>
+        <ro:precedes rdf:resource="&swo;version/SWO_2000008"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000006 -->
+
+    <owl:Thing rdf:about="&swo;version/SWO_2000006">
+        <rdf:type rdf:resource="&obo2;IAO_0000030"/>
+        <rdf:type rdf:resource="&obo2;IAO_0000129"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label>Microsoft 95 version</rdfs:label>
+        <ro:precedes rdf:resource="&swo;version/SWO_2000003"/>
+        <ro:precedes rdf:resource="&swo;version/SWO_2000004"/>
+        <ro:precedes rdf:resource="&swo;version/SWO_2000005"/>
+        <ro:precedes rdf:resource="&swo;version/SWO_2000007"/>
+        <ro:precedes rdf:resource="&swo;version/SWO_2000008"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000007 -->
+
+    <owl:Thing rdf:about="&swo;version/SWO_2000007">
+        <rdf:type rdf:resource="&obo2;IAO_0000030"/>
+        <rdf:type rdf:resource="&obo2;IAO_0000129"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label>Microsoft 2007 version</rdfs:label>
+        <ro:preceded_by rdf:resource="&swo;version/SWO_2000003"/>
+        <ro:preceded_by rdf:resource="&swo;version/SWO_2000004"/>
+        <ro:preceded_by rdf:resource="&swo;version/SWO_2000005"/>
+        <ro:preceded_by rdf:resource="&swo;version/SWO_2000006"/>
+        <ro:precedes rdf:resource="&swo;version/SWO_2000008"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000008 -->
+
+    <owl:Thing rdf:about="&swo;version/SWO_2000008">
+        <rdf:type rdf:resource="&obo2;IAO_0000030"/>
+        <rdf:type rdf:resource="&obo2;IAO_0000129"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label>Microsoft 2010 version</rdfs:label>
+        <ro:preceded_by rdf:resource="&swo;version/SWO_2000003"/>
+        <ro:preceded_by rdf:resource="&swo;version/SWO_2000004"/>
+        <ro:preceded_by rdf:resource="&swo;version/SWO_2000005"/>
+        <ro:preceded_by rdf:resource="&swo;version/SWO_2000006"/>
+        <ro:preceded_by rdf:resource="&swo;version/SWO_2000007"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000009 -->
+
+    <owl:Thing rdf:about="&swo;version/SWO_2000009">
+        <rdf:type rdf:resource="&obo2;IAO_0000030"/>
+        <rdf:type rdf:resource="&obo2;IAO_0000129"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label>version 3</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000010 -->
+
+    <owl:Thing rdf:about="&swo;version/SWO_2000010">
+        <rdf:type rdf:resource="&obo2;IAO_0000030"/>
+        <rdf:type rdf:resource="&obo2;IAO_0000129"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label>version 4</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000011 -->
+
+    <owl:Thing rdf:about="&swo;version/SWO_2000011">
+        <rdf:type rdf:resource="&obo2;IAO_0000030"/>
+        <rdf:type rdf:resource="&obo2;IAO_0000129"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label>Matlab R14</rdfs:label>
+        <ro:preceded_by rdf:resource="&swo;version/SWO_2000012"/>
+        <ro:precedes rdf:resource="&swo;version/SWO_2000013"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000012 -->
+
+    <owl:Thing rdf:about="&swo;version/SWO_2000012">
+        <rdf:type rdf:resource="&obo2;IAO_0000030"/>
+        <rdf:type rdf:resource="&obo2;IAO_0000129"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label>Matlab R12</rdfs:label>
+        <ro:precedes rdf:resource="&swo;version/SWO_2000011"/>
+        <ro:precedes rdf:resource="&swo;version/SWO_2000013"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000013 -->
+
+    <owl:Thing rdf:about="&swo;version/SWO_2000013">
+        <rdf:type rdf:resource="&obo2;IAO_0000030"/>
+        <rdf:type rdf:resource="&obo2;IAO_0000129"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label>R2011a</rdfs:label>
+        <ro:preceded_by rdf:resource="&swo;version/SWO_2000011"/>
+        <ro:preceded_by rdf:resource="&swo;version/SWO_2000012"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000014 -->
+
+    <owl:Thing rdf:about="&swo;version/SWO_2000014">
+        <rdf:type rdf:resource="&obo2;IAO_0000030"/>
+        <rdf:type rdf:resource="&obo2;IAO_0000129"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label>Microsoft XP</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000015 -->
+
+    <owl:Thing rdf:about="&swo;version/SWO_2000015">
+        <rdf:type rdf:resource="&obo2;IAO_0000030"/>
+        <rdf:type rdf:resource="&obo2;IAO_0000129"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label>14</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000016 -->
+
+    <owl:Thing rdf:about="&swo;version/SWO_2000016">
+        <rdf:type rdf:resource="&obo2;IAO_0000030"/>
+        <rdf:type rdf:resource="&obo2;IAO_0000129"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label>5.1</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000017 -->
+
+    <owl:Thing rdf:about="&swo;version/SWO_2000017">
+        <rdf:type rdf:resource="&obo2;IAO_0000030"/>
+        <rdf:type rdf:resource="&obo2;IAO_0000129"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label>3.5.1</rdfs:label>
     </owl:Thing>
     
 
@@ -1551,16 +2849,16 @@
     <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/reason_for_obsolescence">
         <rdfs:label rdf:datatype="&xsd;string">reason for obsolescence</rdfs:label>
         <dc:creator rdf:datatype="&xsd;string">EFO Development Team</dc:creator>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">The reason a class or property was made obsolete</obo:IAO_0000115>
+        <obo2:IAO_0000115 rdf:datatype="&xsd;string">The reason a class or property was made obsolete</obo2:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/obsoleted_in_version">
         <rdfs:label rdf:datatype="&xsd;string">obsoleted in version</rdfs:label>
         <dc:creator rdf:datatype="&xsd;string">EFO Development Team</dc:creator>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">The version in which a class or property has been made obsolete</obo:IAO_0000115>
+        <obo2:IAO_0000115 rdf:datatype="&xsd;string">The version in which a class or property has been made obsolete</obo2:IAO_0000115>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.2.2.1789) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.2.3.1799) http://owlapi.sourceforge.net -->
 
