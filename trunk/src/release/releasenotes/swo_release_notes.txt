@@ -15,8 +15,8 @@ http://theswo.sourceforge.net
 
 RELEASE NOTES
 
-VERSION: 0.1
-DATE: 31st may 2011
+VERSION: 0.2
+DATE: 30th June 2011
 --------------------------------
 
 
@@ -33,7 +33,7 @@ Contents
 --------------------------------
 1. New to SWO
 
-Relase 0.1 comprises the first Beta release of the Software Ontology and it's components. 
+Relase 0.2 begins to add more software to the ontology, including some new defined classes which add structure to the software hierarchy. The software maturity elements have also been added as a new component file.
 --------------------------------
 
 
