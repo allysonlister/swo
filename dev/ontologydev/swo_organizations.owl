@@ -28,7 +28,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:ebi="http://www.ebi.ac.uk/">
     <owl:Ontology rdf:about="&ebi;swo/organization/">
-        <owl:versionInfo>0.2</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="&rdf;PlainLiteral">0.2</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -41,19 +41,11 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
     <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
     
 
 
@@ -217,9 +209,191 @@
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
         <rdfs:label>Adobe Systems</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000010 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/organization/SWO_9000010">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label>The Community</rdfs:label>
+        <rdfs:comment>An undefined, or ill-defined, group of people.  May be used, for example, to denote software development as being done by &#39;the community&#39;, with contributions by many individuals, but no over-arching organisation.</rdfs:comment>
+        <dc:contributor>Andy Brown</dc:contributor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000011 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/organization/SWO_9000011">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label>University of New Hampshire</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000012 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/organization/SWO_9000012">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label>The National Archives</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000013 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/organization/SWO_9000013">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label>Eclipse Foundation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000014 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/organization/SWO_9000014">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label>Dropbox</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000015 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/organization/SWO_9000015">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label>Thompson Reuters</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000016 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/organization/SWO_9000016">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label>OMII-UK</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000017 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/organization/SWO_9000017">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label>Apple</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000018 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/organization/SWO_9000018">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label>The University of Manchester</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000019 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/organization/SWO_9000019">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label>European Bioinformatics Institute</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000020 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/organization/SWO_9000020">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label>EPCC</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000021 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/organization/SWO_9000021">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label>The National Archives, Tessella</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000022 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/organization/SWO_9000022">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label>Spotify Ltd.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000023 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/organization/SWO_9000023">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label>Mozilla Foundation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000024 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/organization/SWO_9000024">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label>Altova</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000025 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/organization/SWO_9000025">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label>The GIMP Development Team</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000026 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/organization/SWO_9000026">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label>Canonical Ltd</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000027 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/organization/SWO_9000027">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label>Apache Software Foundation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000028 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/organization/SWO_9000028">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label>European Patent Office</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000029 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/organization/SWO_9000029">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label>National Cancer Institute</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.2.3.1799) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.1.0.20069) http://owlapi.sourceforge.net -->
 
