@@ -6,6 +6,7 @@
     <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY objective "http://www.ebi.ac.uk/swo/objective/" >
     <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
@@ -21,6 +22,7 @@
      xmlns:swo="&ebi;swo/"
      xmlns:ebi="http://www.ebi.ac.uk/"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:objective="&ebi;swo/objective/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -40,6 +42,7 @@
      -->
 
     <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
@@ -218,6 +221,16 @@
     <owl:Class rdf:about="&ebi;swo/objective/SWO_4000016">
         <rdfs:label>molecular sequence analysis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000017 -->
+
+    <owl:Class rdf:about="&ebi;swo/objective/SWO_4000017">
+        <rdfs:label>Citation management</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <dc:contributor>Andy Brown</dc:contributor>
     </owl:Class>
 </rdf:RDF>
 
