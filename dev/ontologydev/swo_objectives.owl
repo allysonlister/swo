@@ -17,16 +17,16 @@
 
 <rdf:RDF xmlns="&ebi;swo/objective/"
      xml:base="&ebi;swo/objective/"
-     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:swo="&ebi;swo/"
-     xmlns:ebi="http://www.ebi.ac.uk/"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:objective="&ebi;swo/objective/"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:swo="&ebi;swo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#">
+     xmlns:ebi="http://www.ebi.ac.uk/">
     <owl:Ontology rdf:about="&ebi;swo/objective/">
         <owl:versionInfo>0.2</owl:versionInfo>
     </owl:Ontology>
@@ -42,10 +42,10 @@
      -->
 
     <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
-    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
-    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
     
 
 
@@ -73,14 +73,16 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
 
-    <owl:Class rdf:about="&obo;IAO_0000005"/>
+    <owl:Class rdf:about="&obo;IAO_0000005">
+        <rdfs:label>objective specification</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_40000002 -->
 
     <owl:Class rdf:about="&ebi;swo/objective/SWO_40000002">
-        <rdfs:label rdf:datatype="&xsd;string">matrix manipulation</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Matrix manipulation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
     </owl:Class>
     
@@ -89,7 +91,7 @@
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000001 -->
 
     <owl:Class rdf:about="&ebi;swo/objective/SWO_4000001">
-        <rdfs:label rdf:datatype="&xsd;string">spreadsheet editing</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Spreadsheet editing</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
     </owl:Class>
     
@@ -98,7 +100,7 @@
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000003 -->
 
     <owl:Class rdf:about="&ebi;swo/objective/SWO_4000003">
-        <rdfs:label>document outlining</rdfs:label>
+        <rdfs:label>Document outlining</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
     </owl:Class>
     
@@ -107,7 +109,7 @@
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000004 -->
 
     <owl:Class rdf:about="&ebi;swo/objective/SWO_4000004">
-        <rdfs:label>image compression</rdfs:label>
+        <rdfs:label>Image compression</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
     </owl:Class>
     
@@ -116,7 +118,7 @@
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000005 -->
 
     <owl:Class rdf:about="&ebi;swo/objective/SWO_4000005">
-        <rdfs:label>ontology engineering</rdfs:label>
+        <rdfs:label>Ontology engineering</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
     </owl:Class>
     
@@ -125,7 +127,7 @@
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000006 -->
 
     <owl:Class rdf:about="&ebi;swo/objective/SWO_4000006">
-        <rdfs:label>word processing</rdfs:label>
+        <rdfs:label>Word processing</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
     </owl:Class>
     
@@ -134,7 +136,7 @@
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000007 -->
 
     <owl:Class rdf:about="&ebi;swo/objective/SWO_4000007">
-        <rdfs:label>software development</rdfs:label>
+        <rdfs:label>Software development</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
     </owl:Class>
     
@@ -143,7 +145,7 @@
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000008 -->
 
     <owl:Class rdf:about="&ebi;swo/objective/SWO_4000008">
-        <rdfs:label>simulation and analysis of biochemical networks</rdfs:label>
+        <rdfs:label>Simulation and analysis of biochemical networks</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
     </owl:Class>
     
@@ -152,7 +154,7 @@
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000009 -->
 
     <owl:Class rdf:about="&ebi;swo/objective/SWO_4000009">
-        <rdfs:label>laboratory information management</rdfs:label>
+        <rdfs:label>Laboratory information management</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
         <obo:IAO_0000115>Manage Laboratory information such is commonly performed by LIMS software.</obo:IAO_0000115>
     </owl:Class>
@@ -162,7 +164,7 @@
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000010 -->
 
     <owl:Class rdf:about="&ebi;swo/objective/SWO_4000010">
-        <rdfs:label>manage computer operations</rdfs:label>
+        <rdfs:label>Manage computer operations</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
         <obo:IAO_0000115>the objective of performing the actions of an operation system such as managing the software running a computer and the interactions with the system resources and hardware.</obo:IAO_0000115>
     </owl:Class>
@@ -172,7 +174,7 @@
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000011 -->
 
     <owl:Class rdf:about="&ebi;swo/objective/SWO_4000011">
-        <rdfs:label>text editing</rdfs:label>
+        <rdfs:label>Text editing</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
         <obo:IAO_0000115>Text editing is the objective of editing plain text files.</obo:IAO_0000115>
     </owl:Class>
@@ -182,7 +184,7 @@
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000012 -->
 
     <owl:Class rdf:about="&ebi;swo/objective/SWO_4000012">
-        <rdfs:label>file rendering</rdfs:label>
+        <rdfs:label>File rendering</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
         <rdfs:comment>Renders a file in such a way that its contents can be understood by users.</rdfs:comment>
     </owl:Class>
@@ -192,7 +194,7 @@
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000013 -->
 
     <owl:Class rdf:about="&ebi;swo/objective/SWO_4000013">
-        <rdfs:label>annotation editing</rdfs:label>
+        <rdfs:label>Annotation editing</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
     </owl:Class>
     
@@ -201,7 +203,7 @@
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000014 -->
 
     <owl:Class rdf:about="&ebi;swo/objective/SWO_4000014">
-        <rdfs:label>biological data processing</rdfs:label>
+        <rdfs:label>Biological data processing</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
     </owl:Class>
     
@@ -210,7 +212,7 @@
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000015 -->
 
     <owl:Class rdf:about="&ebi;swo/objective/SWO_4000015">
-        <rdfs:label>modelling</rdfs:label>
+        <rdfs:label>Modelling</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
     </owl:Class>
     
@@ -219,7 +221,7 @@
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000016 -->
 
     <owl:Class rdf:about="&ebi;swo/objective/SWO_4000016">
-        <rdfs:label>molecular sequence analysis</rdfs:label>
+        <rdfs:label>Molecular sequence analysis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
     </owl:Class>
     
@@ -236,5 +238,5 @@
 
 
 
-<!-- Generated by the OWL API (version 3.2.3.22702) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
 
