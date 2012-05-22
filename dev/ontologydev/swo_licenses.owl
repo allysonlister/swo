@@ -28,7 +28,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:ebi="http://www.ebi.ac.uk/">
     <owl:Ontology rdf:about="&ebi;swo/license/">
-        <owl:versionInfo rdf:datatype="&rdf;PlainLiteral">0.2</owl:versionInfo>
+        <owl:versionInfo>0.2</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -47,6 +47,17 @@
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
     
 
 
@@ -428,13 +439,25 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000037"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000029"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -447,18 +470,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000025"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000030"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -479,13 +490,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000016"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000037"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000037"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -495,14 +506,8 @@
     <!-- http://www.ebi.ac.uk/swo/license/SWO_1000006 -->
 
     <owl:Class rdf:about="&ebi;swo/license/SWO_1000006">
-        <rdfs:label rdf:datatype="&xsd;string">Academic Licence version 3</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Academic License version 3</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_0000002"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
@@ -513,6 +518,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
@@ -523,22 +534,22 @@
     <!-- http://www.ebi.ac.uk/swo/license/SWO_1000007 -->
 
     <owl:Class rdf:about="&ebi;swo/license/SWO_1000007">
-        <rdfs:label rdf:datatype="&xsd;string">FreeBSD Licence</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">FreeBSD License</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_0000002"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_9000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
-        <rdfs:comment>2 clause BSD Licence</rdfs:comment>
+        <rdfs:comment>2 clause BSD License</rdfs:comment>
     </owl:Class>
     
 
@@ -561,7 +572,7 @@
     <!-- http://www.ebi.ac.uk/swo/license/SWO_1000009 -->
 
     <owl:Class rdf:about="&ebi;swo/license/SWO_1000009">
-        <rdfs:label>licence without restrictions on derivatives</rdfs:label>
+        <rdfs:label>license without restrictions on derivatives</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
@@ -587,24 +598,12 @@
     <!-- http://www.ebi.ac.uk/swo/license/SWO_9000074 -->
 
     <owl:Class rdf:about="&ebi;swo/license/SWO_9000074">
-        <rdfs:label>MIT Licence</rdfs:label>
+        <rdfs:label>MIT License</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_0000002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_9000059"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000027"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -616,7 +615,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000038"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_9000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -631,6 +636,12 @@
                 <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -638,7 +649,7 @@
     <!-- http://www.ebi.ac.uk/swo/license/SWO_9000080 -->
 
     <owl:Class rdf:about="&ebi;swo/license/SWO_9000080">
-        <rdfs:label>Lesser GNU Public Licence</rdfs:label>
+        <rdfs:label>Lesser GNU Public License</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_0000002"/>
     </owl:Class>
     
@@ -647,7 +658,7 @@
     <!-- http://www.ebi.ac.uk/swo/license/SWO_9000082 -->
 
     <owl:Class rdf:about="&ebi;swo/license/SWO_9000082">
-        <rdfs:label>The Artistic Licence 1.0</rdfs:label>
+        <rdfs:label>The Artistic License 1.0</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_0000002"/>
         <dc:contributor>Andy Brown</dc:contributor>
     </owl:Class>
@@ -657,7 +668,7 @@
     <!-- http://www.ebi.ac.uk/swo/license/SWO_9000084 -->
 
     <owl:Class rdf:about="&ebi;swo/license/SWO_9000084">
-        <rdfs:label>Eclipse Public Licence</rdfs:label>
+        <rdfs:label>Eclipse Public License</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_0000002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -678,7 +689,7 @@
     <!-- http://www.ebi.ac.uk/swo/license/SWO_9000085 -->
 
     <owl:Class rdf:about="&ebi;swo/license/SWO_9000085">
-        <rdfs:label>Modified BSD Licence</rdfs:label>
+        <rdfs:label>Modified BSD License</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_0000002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -686,7 +697,7 @@
                 <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>3 clause BSD Licence</rdfs:comment>
+        <rdfs:comment>3 clause BSD License</rdfs:comment>
     </owl:Class>
     
 
@@ -694,7 +705,7 @@
     <!-- http://www.ebi.ac.uk/swo/license/SWO_9000086 -->
 
     <owl:Class rdf:about="&ebi;swo/license/SWO_9000086">
-        <rdfs:label>Latex Project Public Licence</rdfs:label>
+        <rdfs:label>Latex Project Public License</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_0000002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -709,14 +720,8 @@
     <!-- http://www.ebi.ac.uk/swo/license/SWO_9000087 -->
 
     <owl:Class rdf:about="&ebi;swo/license/SWO_9000087">
-        <rdfs:label>Open Public Licence</rdfs:label>
+        <rdfs:label>Open Public License</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_0000002"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_9000059"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
@@ -729,6 +734,12 @@
                 <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_9000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000119>http://wyatterp.com/opl.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -737,7 +748,7 @@
     <!-- http://www.ebi.ac.uk/swo/license/SWO_9000088 -->
 
     <owl:Class rdf:about="&ebi;swo/license/SWO_9000088">
-        <rdfs:label>Mozilla Public Licence</rdfs:label>
+        <rdfs:label>Mozilla Public License</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_0000002"/>
     </owl:Class>
     
@@ -761,5 +772,5 @@
 
 
 
-<!-- Generated by the OWL API (version 3.1.0.20069) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
 
