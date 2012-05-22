@@ -28,7 +28,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:ebi="http://www.ebi.ac.uk/">
     <owl:Ontology rdf:about="&ebi;swo/data/">
-        <owl:versionInfo rdf:datatype="&rdf;PlainLiteral">0.2</owl:versionInfo>
+        <owl:versionInfo>0.2</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -48,6 +48,17 @@
     <owl:AnnotationProperty rdf:about="&ebi;swo/alternative_term"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
     
 
 
@@ -102,7 +113,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000001 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000001">
-        <rdfs:label rdf:datatype="&xsd;string">spreadsheet</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Spreadsheet</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A spreadsheet data format is one in which data is organised into a matrix (or matrices) of columns and rows to form cells in which values are entered.</obo:IAO_0000115>
         <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
@@ -135,7 +146,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000004 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000004">
-        <rdfs:label rdf:datatype="&xsd;string">matlab m file</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Matlab m file</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
         <dc:creator>James Malone</dc:creator>
     </owl:Class>
@@ -180,7 +191,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000008 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000008">
-        <rdfs:label>image format</rdfs:label>
+        <rdfs:label>Image format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
@@ -237,7 +248,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000013 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000013">
-        <rdfs:label>web page specification</rdfs:label>
+        <rdfs:label>Web page specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
@@ -246,7 +257,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000014 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000014">
-        <rdfs:label>document exchange format</rdfs:label>
+        <rdfs:label>Document exchange format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
@@ -310,7 +321,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000020 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000020">
-        <rdfs:label>raster image format</rdfs:label>
+        <rdfs:label>Raster image format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000008"/>
         <obo:IAO_0000115>A raster image is a format for representing a rectangular grid of dots (pixels) which contains information on the specific colour of each pixel.</obo:IAO_0000115>
     </owl:Class>
@@ -320,7 +331,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000021 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000021">
-        <rdfs:label>vector image format</rdfs:label>
+        <rdfs:label>Vector image format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000008"/>
         <obo:IAO_0000115>A vector image is a collection of connected lines and curves that produce objects. This geometric description enables the image to be displayed without loss at any size rendering.</obo:IAO_0000115>
     </owl:Class>
@@ -371,7 +382,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000026 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000026">
-        <rdfs:label>outline document format</rdfs:label>
+        <rdfs:label>Outline document format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
         <obo:IAO_0000115>A format specification for data used or produced by outliner software</obo:IAO_0000115>
     </owl:Class>
@@ -412,7 +423,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000030 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000030">
-        <rdfs:label>word processing document format</rdfs:label>
+        <rdfs:label>Word processing document format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
@@ -440,7 +451,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000033 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000033">
-        <rdfs:label>programming language format</rdfs:label>
+        <rdfs:label>Programming language format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
@@ -524,7 +535,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000041 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000041">
-        <rdfs:label>text file format</rdfs:label>
+        <rdfs:label>Text file format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
@@ -542,7 +553,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000043 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000043">
-        <rdfs:label>plain text file format</rdfs:label>
+        <rdfs:label>Plain text file format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
     </owl:Class>
     
@@ -562,12 +573,12 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000046 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000046">
-        <rdfs:label>tab delimited file format</rdfs:label>
+        <rdfs:label>Tab delimited file format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
     </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.1.0.20069) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
 
