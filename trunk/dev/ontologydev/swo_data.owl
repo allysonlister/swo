@@ -47,6 +47,7 @@
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="&dc;creator"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000117"/>
     <owl:AnnotationProperty rdf:about="&ebi;swo/alternative_term"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
@@ -147,6 +148,60 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000017 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000017">
+        <rdfs:label rdf:datatype="&xsd;string">ARR</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000051 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000051">
+        <rdfs:label rdf:datatype="&xsd;string">BED file</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000057 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000057">
+        <rdfs:label rdf:datatype="&xsd;string">BPMAP</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000083 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000083">
+        <rdfs:label rdf:datatype="&xsd;string">CDF</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000084 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000084">
+        <rdfs:label rdf:datatype="&xsd;string">CEL</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000088 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000088">
+        <rdfs:label rdf:datatype="&xsd;string">CHP file</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000116 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000116">
@@ -183,11 +238,38 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000142 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000142">
+        <rdfs:label rdf:datatype="&xsd;string">FASTA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000144 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000144">
+        <rdfs:label rdf:datatype="&xsd;string">FCS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000156 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000156">
         <rdfs:label rdf:datatype="&xsd;string">GEO data type</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000157 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000157">
+        <rdfs:label rdf:datatype="&xsd;string">GEO Matrix Series file</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
 
@@ -201,11 +283,29 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000249 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000249">
+        <rdfs:label rdf:datatype="&xsd;string">KGML file</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000253 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000253">
         <rdfs:label rdf:datatype="&xsd;string">LC-MS data</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000268 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000268">
+        <rdfs:label rdf:datatype="&xsd;string">MAGE-ML files</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
 
@@ -228,6 +328,54 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000363 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000363">
+        <rdfs:label rdf:datatype="&xsd;string">Rnw</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000378 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000378">
+        <rdfs:label rdf:datatype="&xsd;string">SBMLR file</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000379 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000379">
+        <rdfs:label rdf:datatype="&xsd;string">SBML file</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000381 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000381">
+        <rdfs:label rdf:datatype="&xsd;string">SDF format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000399 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000399">
+        <rdfs:label rdf:datatype="&xsd;string">html</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">James Malone</obo:IAO_0000117>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">html, or HyperText Markup Language in full, is a data format specification is a markup language for web pages and is the publishing language of the World Wide Web.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.w3.org/TR/html401/</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000406 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000406">
@@ -242,6 +390,42 @@
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000408">
         <rdfs:label rdf:datatype="&xsd;string">clustered data set</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000409 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000409">
+        <rdfs:label rdf:datatype="&xsd;string">R data frame</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000434 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000434">
+        <rdfs:label rdf:datatype="&xsd;string">TIFF image</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000448 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000448">
+        <rdfs:label rdf:datatype="&xsd;string">XML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000449 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000449">
+        <rdfs:label rdf:datatype="&xsd;string">Xba.CQV and Xba.regions</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
 
@@ -264,11 +448,128 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000493 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000493">
+        <rdfs:label rdf:datatype="&xsd;string">cdt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000497 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000497">
+        <rdfs:label rdf:datatype="&xsd;string">chamber slide format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000498 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000498">
+        <rdfs:label rdf:datatype="&xsd;string">cls</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000508 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000508">
+        <rdfs:label rdf:datatype="&xsd;string">covdesc file</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000516 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000516">
+        <rdfs:label rdf:datatype="&xsd;string">.data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000518 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000518">
+        <rdfs:label rdf:datatype="&xsd;string">dcf</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000519 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000519">
+        <rdfs:label rdf:datatype="&xsd;string">design file</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000548 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000548">
+        <rdfs:label rdf:datatype="&xsd;string">gct</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000554 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000554">
         <rdfs:label rdf:datatype="&xsd;string">gene expression dataset</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000559 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000559">
+        <rdfs:label rdf:datatype="&xsd;string">gff format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000562 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000562">
+        <rdfs:label rdf:datatype="&xsd;string">gmt format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000566 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000566">
+        <rdfs:label rdf:datatype="&xsd;string">gpr format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000569 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000569">
+        <rdfs:label rdf:datatype="&xsd;string">gtr</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000570 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000570">
+        <rdfs:label rdf:datatype="&xsd;string">gxl format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
 
@@ -300,6 +601,60 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000585 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000585">
+        <rdfs:label rdf:datatype="&xsd;string">.java file</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000586 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000586">
+        <rdfs:label rdf:datatype="&xsd;string">jpeg</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000596 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000596">
+        <rdfs:label rdf:datatype="&xsd;string">lma</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000598 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000598">
+        <rdfs:label rdf:datatype="&xsd;string">log file</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000600 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000600">
+        <rdfs:label rdf:datatype="&xsd;string">logicFS dataset</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000615 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000615">
+        <rdfs:label rdf:datatype="&xsd;string">mas5 format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000620 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000620">
@@ -318,11 +673,47 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000634 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000634">
+        <rdfs:label rdf:datatype="&xsd;string">newick</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000640 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000640">
         <rdfs:label rdf:datatype="&xsd;string">OMICS data</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000644 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000644">
+        <rdfs:label rdf:datatype="&xsd;string">pair file</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000652 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000652">
+        <rdfs:label rdf:datatype="&xsd;string">pdf</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000655 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000655">
+        <rdfs:label rdf:datatype="&xsd;string">pedigree data file</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
 
@@ -336,11 +727,74 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000663 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000663">
+        <rdfs:label rdf:datatype="&xsd;string">png</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000668 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000668">
+        <rdfs:label rdf:datatype="&xsd;string">ps</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000670 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000670">
         <rdfs:label rdf:datatype="&xsd;string">qPCR data</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000682 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000682">
+        <rdfs:label rdf:datatype="&xsd;string">.raw files</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000684 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000684">
+        <rdfs:label rdf:datatype="&xsd;string">rda</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000687 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000687">
+        <rdfs:label rdf:datatype="&xsd;string">.rma format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000708 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000708">
+        <rdfs:label rdf:datatype="&xsd;string">sproc</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000709 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000709">
+        <rdfs:label rdf:datatype="&xsd;string">sqlite</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
 
