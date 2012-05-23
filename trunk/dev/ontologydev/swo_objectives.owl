@@ -4,6 +4,8 @@
 <!DOCTYPE rdf:RDF [
     <!ENTITY ebi "http://www.ebi.ac.uk/" >
     <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
+    <!ENTITY efo "http://www.ebi.ac.uk/efo/" >
+    <!ENTITY swo2 "http://www.ebi.ac.uk/efo/swo/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
@@ -18,15 +20,17 @@
 <rdf:RDF xmlns="&ebi;swo/objective/"
      xml:base="&ebi;swo/objective/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:swo2="&ebi;efo/swo/"
+     xmlns:objective="&ebi;swo/objective/"
+     xmlns:swo="&ebi;swo/"
+     xmlns:efo="&ebi;efo/"
+     xmlns:ebi="http://www.ebi.ac.uk/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:objective="&ebi;swo/objective/"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
-     xmlns:swo="&ebi;swo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:ebi="http://www.ebi.ac.uk/">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="&ebi;swo/objective/">
         <owl:versionInfo>0.2</owl:versionInfo>
     </owl:Ontology>
@@ -44,7 +48,10 @@
     <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000117"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&ebi;efo/example_of_usage"/>
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
     
 
@@ -75,6 +82,238 @@
 
     <owl:Class rdf:about="&obo;IAO_0000005">
         <rdfs:label>objective specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000425 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000425">
+        <rdfs:label rdf:datatype="&xsd;string">averaging objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An averaging objective is a data transformation objective where the aim is to perform mean calculations on the input of the data transformation.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">James Malone</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000704 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000704">
+        <rdfs:label rdf:datatype="&xsd;string">decision tree induction objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A decision tree induction objective is a data transformation objective in which a tree-like graph of edges and nodes is created and from which the selection of each branch requires that some type of logical decision is made.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">James Malone</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">PERSON: James Malone</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200005 -->
+
+    <owl:Class rdf:about="&obo;OBI_0200005">
+        <rdfs:label rdf:datatype="&xsd;string">feature extraction objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A feature extraction objective is a data transformation objective where the aim of the data transformation is to generate quantified values from a scanned image.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200031 -->
+
+    <owl:Class rdf:about="&obo;OBI_0200031">
+        <rdfs:label rdf:datatype="&xsd;string">differential expression analysis objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200078 -->
+
+    <owl:Class rdf:about="&obo;OBI_0200078">
+        <rdfs:label rdf:datatype="&xsd;string">descriptive statistical calculation objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A descriptive statistical calculation objective is a data transformation objective which concerns any calculation intended to describe a feature of a data set, for example, its center or its variability.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">James Malone</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">PERSON: Elisabetta Manduchi</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">PERSON: James Malone</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">PERSON: Melanie Courtot</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">PERSON: Monnie McGee</obo:IAO_0000119>
+        <efo:example_of_usage rdf:datatype="&xsd;string">mean calculation</efo:example_of_usage>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200167 -->
+
+    <owl:Class rdf:about="&obo;OBI_0200167">
+        <rdfs:label rdf:datatype="&xsd;string">data normalization objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A normalization objective is a data transformation objective where the aim is to remove systematic sources of variation to put the data on equal footing in order to create a common base for comparisons.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">James Malone</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">PERSON: Elisabetta Manduchi</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">PERSON: Helen Parkinson</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">PERSON: James Malone</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200168 -->
+
+    <owl:Class rdf:about="&obo;OBI_0200168">
+        <rdfs:label rdf:datatype="&xsd;string">correction objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A correction objective is a data transformation objective where the aim is to correct for error, noise or other impairments to the input of the data transformation or derived from the data transformation itself.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">PERSON: James Malone</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">PERSON: Melanie Courtot</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200173 -->
+
+    <owl:Class rdf:about="&obo;OBI_0200173">
+        <rdfs:label rdf:datatype="&xsd;string">background correction objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0200168"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A background correction objective is a data transformation objective where the aim is to remove irrelevant contributions from the measured signal, e.g. those due to instrument noise or sample preparation.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">James Malone</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">PERSON: Elisabetta Manduchi</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200174 -->
+
+    <owl:Class rdf:about="&obo;OBI_0200174">
+        <rdfs:label rdf:datatype="&xsd;string">curve fitting objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A curve fitting objective is a data transformation objective in which the aim is to find a curve which matches a series of data points and possibly other constraints.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Elisabetta Manduchi</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">James Malone</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">PERSON: Elisabetta Manduchi</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200177 -->
+
+    <owl:Class rdf:about="&obo;OBI_0200177">
+        <rdfs:label rdf:datatype="&xsd;string">center calculation objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A center calculation objective is a data transformation objective where the aim is to calculate the center of an input data set.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">James Malone</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200178 -->
+
+    <owl:Class rdf:about="&obo;OBI_0200178">
+        <rdfs:label rdf:datatype="&xsd;string">class discovery objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A class discovery objective (sometimes called unsupervised classification) is a data transformation objective where the aim is to organize input data  (typically vectors of attributes) into classes, where the number of classes and their specifications are not known a priori. Depending on usage, the class assignment can be definite or probabilistic.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">James Malone</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200179 -->
+
+    <owl:Class rdf:about="&obo;OBI_0200179">
+        <rdfs:label rdf:datatype="&xsd;string">class prediction objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A class prediction objective (sometimes called supervised classification) is a data transformation objective where the aim is to create a predictor from training data through a machine learning technique. The training data consist of pairs of objects (typically vectors of attributes) and class labels for these objects. The resulting predictor can be used to attach class labels to any valid novel input object. Depending on usage, the prediction can be definite or probabilistic. A classification is learned from the training data and can then be tested on test data.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">PERSON: Elisabetta Manduchi</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">PERSON: James Malone</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200186 -->
+
+    <owl:Class rdf:about="&obo;OBI_0200186">
+        <rdfs:label rdf:datatype="&xsd;string">error correction objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0200168"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An error correction objective is a data transformation objective where the aim is to remove (correct for) erroneous contributions arising from the input data, or the transformation itself.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">James Malone</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">PERSON: James Malone</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000110 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000110">
+        <rdfs:label rdf:datatype="&xsd;string">distance calculation objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000467 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000467">
+        <rdfs:label rdf:datatype="&xsd;string">data annotation objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000502 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000502">
+        <rdfs:label rdf:datatype="&xsd;string">dataset comparison objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000509 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000509">
+        <rdfs:label rdf:datatype="&xsd;string">database creation objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An objective in which the aim is to create a new database instance.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">James Malone</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">PERSON: James Malone</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000511 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000511">
+        <rdfs:label rdf:datatype="&xsd;string">cross validation objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000553 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000553">
+        <rdfs:label rdf:datatype="&xsd;string">gene expression analysis objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000648 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000648">
+        <rdfs:label rdf:datatype="&xsd;string">parse objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000724 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000724">
+        <rdfs:label rdf:datatype="&xsd;string">data visualization objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
     </owl:Class>
     
 
