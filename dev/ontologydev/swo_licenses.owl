@@ -72,18 +72,18 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/SWO_0004004 -->
+
+    <owl:ObjectProperty rdf:about="&ebi;swo/SWO_0004004"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/swo/SWO_9001002 -->
 
     <owl:ObjectProperty rdf:about="&ebi;swo/SWO_9001002">
         <rdfs:label>has clause</rdfs:label>
         <rdfs:range rdf:resource="&ebi;swo/SWO_9000005"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/is_published_by -->
-
-    <owl:ObjectProperty rdf:about="&ebi;swo/is_published_by"/>
     
 
 
@@ -451,18 +451,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000029"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000019"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -470,6 +458,18 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -603,31 +603,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000027"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000029"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000025"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_9000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -639,7 +621,25 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_9000059"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -725,6 +725,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -732,12 +738,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_9000059"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>http://wyatterp.com/opl.html</obo:IAO_0000119>

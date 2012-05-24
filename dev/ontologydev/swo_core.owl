@@ -275,6 +275,24 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/SWO_0004003 -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0004003">
+        <rdfs:label rdf:datatype="&xsd;string">is developed by</rdfs:label>
+        <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0004004 -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0004004">
+        <rdfs:label>is published by</rdfs:label>
+        <dc:creator>James Malone</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ebi.ac.uk/swo/SWO_9000058 -->
 
     <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_9000058">
@@ -298,28 +316,10 @@
     
 
 
-    <!-- http://www.ebi.ac.uk/swo/is_developed_by -->
-
-    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/is_developed_by">
-        <rdfs:label rdf:datatype="&xsd;string">is developed by</rdfs:label>
-        <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.ebi.ac.uk/swo/is_executed_in -->
 
     <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/is_executed_in">
         <rdfs:label rdf:datatype="&xsd;string">is_executed_in</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/is_published_by -->
-
-    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/is_published_by">
-        <rdfs:label>is published by</rdfs:label>
-        <dc:creator>James Malone</dc:creator>
     </owl:ObjectProperty>
     
 
