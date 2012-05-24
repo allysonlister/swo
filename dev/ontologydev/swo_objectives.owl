@@ -10,7 +10,6 @@
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY objective "http://www.ebi.ac.uk/swo/objective/" >
     <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
@@ -21,7 +20,6 @@
      xml:base="&ebi;swo/objective/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:swo2="&ebi;efo/swo/"
-     xmlns:objective="&ebi;swo/objective/"
      xmlns:swo="&ebi;swo/"
      xmlns:efo="&ebi;efo/"
      xmlns:ebi="http://www.ebi.ac.uk/"
@@ -245,7 +243,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000110 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000110">
-        <rdfs:label rdf:datatype="&xsd;string">distance calculation objective</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Distance calculation objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
     </owl:Class>
     
@@ -254,7 +252,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000467 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000467">
-        <rdfs:label rdf:datatype="&xsd;string">data annotation objective</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Data annotation objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
     </owl:Class>
     
@@ -263,7 +261,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000502 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000502">
-        <rdfs:label rdf:datatype="&xsd;string">dataset comparison objective</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Dataset comparison objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
     </owl:Class>
     
@@ -272,7 +270,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000509 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000509">
-        <rdfs:label rdf:datatype="&xsd;string">database creation objective</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Database creation objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">An objective in which the aim is to create a new database instance.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="&xsd;string">James Malone</obo:IAO_0000117>
@@ -284,7 +282,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000511 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000511">
-        <rdfs:label rdf:datatype="&xsd;string">cross validation objective</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Cross validation objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
     </owl:Class>
     
@@ -293,7 +291,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000553 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000553">
-        <rdfs:label rdf:datatype="&xsd;string">gene expression analysis objective</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Gene expression analysis objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
     </owl:Class>
     
@@ -302,7 +300,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000648 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000648">
-        <rdfs:label rdf:datatype="&xsd;string">parse objective</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Parse objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
     </owl:Class>
     
@@ -311,7 +309,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000724 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000724">
-        <rdfs:label rdf:datatype="&xsd;string">data visualization objective</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Data visualization objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
         <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
     </owl:Class>
