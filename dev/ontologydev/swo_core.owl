@@ -293,6 +293,14 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/SWO_0040005 -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0040005">
+        <rdfs:label rdf:datatype="&xsd;string">is executed in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ebi.ac.uk/swo/SWO_9000058 -->
 
     <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_9000058">
@@ -312,14 +320,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/has_license">
         <rdfs:range rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/is_executed_in -->
-
-    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/is_executed_in">
-        <rdfs:label rdf:datatype="&xsd;string">is_executed_in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -390,9 +390,10 @@
     
 
 
-    <!-- http://www.ebi.ac.uk/swo/has_website_homepage -->
+    <!-- http://www.ebi.ac.uk/swo/SWO_0004006 -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ebi.ac.uk/swo/has_website_homepage">
+    <owl:DatatypeProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0004006">
+        <rdfs:label>has website homepage</rdfs:label>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
     </owl:DatatypeProperty>
     
@@ -19082,7 +19083,7 @@ tiple samples</efo:definition>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/is_executed_in"/>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0040005"/>
                 <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -19115,12 +19116,6 @@ tiple samples</efo:definition>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000070"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
-                <owl:hasValue>http://office.microsoft.com/</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;precedes"/>
                 <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000071"/>
             </owl:Restriction>
@@ -19149,6 +19144,12 @@ tiple samples</efo:definition>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>http://office.microsoft.com/</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&maturity;SWO_9000068"/>
                 <owl:hasValue>2007-01-30T0:00:00</owl:hasValue>
             </owl:Restriction>
@@ -19165,6 +19166,12 @@ tiple samples</efo:definition>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>http://www.mathworks.com/products/matlab/</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
                 <owl:someValuesFrom rdf:resource="&license;SWO_1000002"/>
             </owl:Restriction>
@@ -19173,12 +19180,6 @@ tiple samples</efo:definition>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
                 <owl:someValuesFrom rdf:resource="&objective;SWO_40000002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
-                <owl:hasValue>http://www.mathworks.com/products/matlab/</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -19288,6 +19289,12 @@ tiple samples</efo:definition>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>http://protege.stanford.edu/</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004001"/>
                 <owl:someValuesFrom rdf:resource="&interface;SWO_9000052"/>
             </owl:Restriction>
@@ -19328,12 +19335,6 @@ tiple samples</efo:definition>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
                 <owl:someValuesFrom rdf:resource="&objective;SWO_4000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
-                <owl:hasValue>http://protege.stanford.edu/</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -19477,7 +19478,7 @@ tiple samples</efo:definition>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
                 <owl:hasValue>http://www.omnigroup.com/products/omnioutliner/</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -19547,7 +19548,7 @@ tiple samples</efo:definition>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
                 <owl:hasValue>http://www.kakadusoftware.com</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -19675,12 +19676,6 @@ tiple samples</efo:definition>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
-                <owl:hasValue>http://www.jetbrains.com/idea/</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -19706,6 +19701,12 @@ tiple samples</efo:definition>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>http://www.jetbrains.com/idea/</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -19743,7 +19744,7 @@ tiple samples</efo:definition>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000025"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
                 <owl:hasValue>http://www.java.com</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -19758,14 +19759,14 @@ tiple samples</efo:definition>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
-                <owl:hasValue>http://www.copasi.org</owl:hasValue>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&objective;SWO_4000008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&objective;SWO_4000008"/>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>http://www.copasi.org</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -20454,7 +20455,7 @@ tiple samples</efo:definition>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
                 <owl:hasValue>http://oboedit.org/</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -20548,12 +20549,6 @@ tiple samples</efo:definition>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
-                <owl:hasValue>http://www.peterborgapps.com/smultron/</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
                 <owl:someValuesFrom rdf:resource="&objective;SWO_4000011"/>
             </owl:Restriction>
@@ -20568,6 +20563,12 @@ tiple samples</efo:definition>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004000"/>
                 <owl:hasValue rdf:resource="&version;SWO_2000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>http://www.peterborgapps.com/smultron/</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -20947,12 +20948,6 @@ tiple samples</efo:definition>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
-                <owl:hasValue rdf:datatype="&xsd;string">http://get.adobe.com/reader/</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000058"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -20971,6 +20966,12 @@ tiple samples</efo:definition>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004001"/>
                 <owl:someValuesFrom rdf:resource="&interface;SWO_9000052"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue rdf:datatype="&xsd;string">http://get.adobe.com/reader/</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -21069,12 +21070,6 @@ tiple samples</efo:definition>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
-                <owl:hasValue rdf:datatype="&xsd;string">http://code.google.com/p/annotare/</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
                 <owl:someValuesFrom rdf:resource="&objective;SWO_4000013"/>
             </owl:Restriction>
@@ -21083,6 +21078,12 @@ tiple samples</efo:definition>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004001"/>
                 <owl:someValuesFrom rdf:resource="&interface;SWO_9000052"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue rdf:datatype="&xsd;string">http://code.google.com/p/annotare/</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:contributor>Andy Brown</dc:contributor>
@@ -21119,14 +21120,14 @@ tiple samples</efo:definition>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
-                <owl:hasValue rdf:datatype="&xsd;string">http://biojava.org</owl:hasValue>
+                <owl:onProperty rdf:resource="&maturity;SWO_9000067"/>
+                <owl:someValuesFrom rdf:resource="&maturity;SWO_9000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&maturity;SWO_9000067"/>
-                <owl:someValuesFrom rdf:resource="&maturity;SWO_9000065"/>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue rdf:datatype="&xsd;string">http://biojava.org</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -21158,14 +21159,14 @@ tiple samples</efo:definition>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004001"/>
-                <owl:someValuesFrom rdf:resource="&interface;SWO_9000054"/>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue rdf:datatype="&xsd;string">http://www.bioperl.org</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
-                <owl:hasValue rdf:datatype="&xsd;string">http://www.bioperl.org</owl:hasValue>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004001"/>
+                <owl:someValuesFrom rdf:resource="&interface;SWO_9000054"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -21220,8 +21221,8 @@ tiple samples</efo:definition>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
-                <owl:hasValue rdf:datatype="&xsd;string">http://www.dndc.sr.unh.edu/</owl:hasValue>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue rdf:datatype="&xsd;string">http://ecobas.org/www-server/rem/mdb/dndc.html</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -21244,12 +21245,6 @@ tiple samples</efo:definition>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
-                <owl:hasValue rdf:datatype="&xsd;string">http://ecobas.org/www-server/rem/mdb/dndc.html</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -21262,6 +21257,12 @@ tiple samples</efo:definition>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue rdf:datatype="&xsd;string">http://www.dndc.sr.unh.edu/</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:contributor>Andy Brown</dc:contributor>
@@ -21285,6 +21286,12 @@ tiple samples</efo:definition>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004000"/>
                 <owl:hasValue rdf:resource="&version;SWO_2000022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue rdf:datatype="&xsd;string">http://sourceforge.net/projects/droid/</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -21313,12 +21320,6 @@ tiple samples</efo:definition>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004001"/>
                 <owl:someValuesFrom rdf:resource="&interface;SWO_9000052"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
-                <owl:hasValue rdf:datatype="&xsd;string">http://sourceforge.net/projects/droid/</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Digital Record Object Identification</rdfs:comment>
@@ -21361,14 +21362,14 @@ tiple samples</efo:definition>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004001"/>
-                <owl:someValuesFrom rdf:resource="&interface;SWO_9000053"/>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue rdf:datatype="&xsd;string">www.dropbox.com</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
-                <owl:hasValue rdf:datatype="&xsd;string">www.dropbox.com</owl:hasValue>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004001"/>
+                <owl:someValuesFrom rdf:resource="&interface;SWO_9000053"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -21404,14 +21405,14 @@ tiple samples</efo:definition>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004001"/>
-                <owl:someValuesFrom rdf:resource="&interface;SWO_9000052"/>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>http://www.eclipse.org</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
-                <owl:hasValue>http://www.eclipse.org</owl:hasValue>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004001"/>
+                <owl:someValuesFrom rdf:resource="&interface;SWO_9000052"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -21566,7 +21567,7 @@ tiple samples</efo:definition>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
                 <owl:hasValue>http://www.endnote.com/</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -21601,12 +21602,6 @@ tiple samples</efo:definition>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
-                <owl:hasValue>http://sf.net/projects/grimoires</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004001"/>
                 <owl:someValuesFrom rdf:resource="&interface;SWO_9000053"/>
             </owl:Restriction>
@@ -21625,6 +21620,12 @@ tiple samples</efo:definition>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>http://sf.net/projects/grimoires</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -21966,7 +21967,7 @@ tiple samples</efo:definition>
     <owl:Class rdf:about="&license;SWO_1000006">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_website_homepage"/>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
                 <owl:hasValue>http://www.opensource.org/licenses/afl-3.0.php</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
