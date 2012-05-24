@@ -208,7 +208,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000116 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000116">
-        <rdfs:label rdf:datatype="&xsd;string">text data set</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Text data set</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
     </owl:Class>
     
@@ -217,7 +217,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000117 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000117">
-        <rdfs:label rdf:datatype="&xsd;string">csv data set</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">CSV data set</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
     </owl:Class>
     
@@ -226,7 +226,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000129 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000129">
-        <rdfs:label rdf:datatype="&xsd;string">digital gene expression (DGE) datasets</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Digital gene expression (DGE) datasets</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
     </owl:Class>
     
@@ -325,7 +325,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000282 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000282">
-        <rdfs:label rdf:datatype="&xsd;string">mutual information matrix (MIM)</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Mutual information matrix (MIM)</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
     </owl:Class>
     
@@ -382,7 +382,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000406 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000406">
-        <rdfs:label rdf:datatype="&xsd;string">gene list</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Gene list</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
     </owl:Class>
     
@@ -391,7 +391,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000408 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000408">
-        <rdfs:label rdf:datatype="&xsd;string">clustered data set</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Clustered data set</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
     </owl:Class>
     
@@ -436,7 +436,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000469 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000469">
-        <rdfs:label rdf:datatype="&xsd;string">annotation data packages</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Annotation data packages</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
     </owl:Class>
     
@@ -445,7 +445,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000484 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000484">
-        <rdfs:label rdf:datatype="&xsd;string">bitmap object</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Bitmap object</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
     </owl:Class>
     
@@ -526,7 +526,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000554 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000554">
-        <rdfs:label rdf:datatype="&xsd;string">gene expression dataset</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Gene expression dataset</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
     </owl:Class>
     
@@ -580,7 +580,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000571 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000571">
-        <rdfs:label rdf:datatype="&xsd;string">heatmap</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Heatmap</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
     </owl:Class>
     
@@ -598,7 +598,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000580 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000580">
-        <rdfs:label rdf:datatype="&xsd;string">image</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Image</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
     </owl:Class>
     
@@ -661,7 +661,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000620 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000620">
-        <rdfs:label rdf:datatype="&xsd;string">meta data</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Meta data</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
     </owl:Class>
     
@@ -670,7 +670,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000624 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000624">
-        <rdfs:label rdf:datatype="&xsd;string">microarray data</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Microarray data</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
     </owl:Class>
     
@@ -724,7 +724,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000661 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000661">
-        <rdfs:label rdf:datatype="&xsd;string">graph plot</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Graph plot</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
     </owl:Class>
     
