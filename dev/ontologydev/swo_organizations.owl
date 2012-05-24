@@ -53,6 +53,7 @@
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000117"/>
     <owl:AnnotationProperty rdf:about="&ebi;efo/definition_citation"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
     
@@ -279,6 +280,7 @@ are made on behalf of the organization by the organization members.</efo:definit
                 <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000392"/>
             </owl:Restriction>
         </rdf:type>
+        <rdfs:label rdf:datatype="&xsd;string">Affymetrix</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -287,6 +289,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000033">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Agilent Technologies</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -295,6 +298,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000036">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Applied Biosystems</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -303,6 +307,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000038">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Applied Precision Life Science</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -311,6 +316,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000061">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Bahler Lab</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -319,6 +325,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000067">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Bio-Rad Laboratories, Inc.</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -327,6 +334,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000069">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Bio Discovery</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -335,6 +343,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000073">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Bioconducter</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -343,6 +352,8 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000074">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Biometric Research Branch</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -351,6 +362,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000093">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">COSE, France</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -359,6 +371,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000119">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Clontech Laboratories, Inc</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -367,6 +380,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000131">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Dana-Farber Cancer Institute and Harvard School of Public Health</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -375,6 +389,8 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000136">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">EMBL</rdfs:label>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">European Molecular Biology Laboratory</obo:IAO_0000118>
     </owl:NamedIndividual>
     
 
@@ -383,6 +399,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000151">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Fujifilm</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -391,6 +408,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000160">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">GE Healthcare Life Sciences</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -399,6 +417,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000198">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Genedata</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -407,6 +426,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000204">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Genicon Sciences</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -415,6 +435,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000211">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Grid grinder</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -423,6 +444,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000223">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Havard School of Public Health</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -431,6 +453,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000232">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Illumina</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -439,6 +462,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000240">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Incyte Genomics</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -447,6 +471,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000242">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Institute for Genomics and Bioinformatics Graz University of Technology</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -455,6 +480,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000244">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">J. Craig Venter Institute</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -463,6 +489,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000286">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">MWG Biotech</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -477,6 +504,7 @@ are made on behalf of the organization by the organization members.</efo:definit
                 <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000260"/>
             </owl:Restriction>
         </rdf:type>
+        <rdfs:label rdf:datatype="&xsd;string">Matforsk</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -485,6 +513,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000291">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">MathWorks</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -493,6 +522,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000299">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Molecular Devices</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -501,6 +531,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000300">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Molecular Neuroscience Core, Center for Behavioral Neuroscience, Atlanta</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -509,6 +540,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000301">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Molecular Dynamics</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -517,6 +549,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000302">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Motorola Life Sciences</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -525,6 +558,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000303">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">NIH</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -533,6 +567,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000325">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">PerkinElmer</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -541,6 +576,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000351">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Raytest</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -549,6 +585,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000357">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Research Genetics</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -557,6 +594,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000366">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Rosetta Biosoftware</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -565,6 +603,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000376">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">SAS Institute Inc.</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -573,6 +612,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000427">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Speed Berkeley Research Group</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -581,6 +621,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000431">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Stanford University</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -589,6 +630,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000433">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">TIBCO Software Inc</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -597,6 +639,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000436">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Technological Advances for Genomics and Clinics, France</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -605,6 +648,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000439">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">UC Irvine</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -613,6 +657,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000440">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">University Of California, Berkeley</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -621,6 +666,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000443">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Walter and Eliza Hall Institute</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -629,6 +675,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000492">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Cambridge Bluegnome</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -637,6 +684,7 @@ are made on behalf of the organization by the organization members.</efo:definit
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000743">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label rdf:datatype="&xsd;string">Strand Life Sciences</rdfs:label>
     </owl:NamedIndividual>
     
 
