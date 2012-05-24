@@ -4,13 +4,15 @@
 <!DOCTYPE rdf:RDF [
     <!ENTITY ebi "http://www.ebi.ac.uk/" >
     <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
+    <!ENTITY efo "http://www.ebi.ac.uk/efo/" >
+    <!ENTITY swo2 "http://www.ebi.ac.uk/efo/swo/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY organization "http://www.ebi.ac.uk/swo/organization/" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
 ]>
 
@@ -18,15 +20,17 @@
 <rdf:RDF xmlns="&ebi;swo/organization/"
      xml:base="&ebi;swo/organization/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:organization="&ebi;swo/organization/"
-     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:swo2="&ebi;efo/swo/"
      xmlns:swo="&ebi;swo/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:efo="&ebi;efo/"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:ebi="http://www.ebi.ac.uk/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:ebi="http://www.ebi.ac.uk/">
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="&ebi;swo/organization/">
         <owl:versionInfo>0.2</owl:versionInfo>
     </owl:Ontology>
@@ -43,7 +47,12 @@
 
     <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
     <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    <owl:AnnotationProperty rdf:about="&ebi;efo/definition"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000117"/>
+    <owl:AnnotationProperty rdf:about="&ebi;efo/definition_citation"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
     
@@ -68,6 +77,29 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000304 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000304">
+        <rdfs:label rdf:datatype="&xsd;string">is_manufactured_by</rdfs:label>
+        <efo:definition_citation rdf:datatype="&xsd;string">OBI</efo:definition_citation>
+        <efo:definition rdf:datatype="&xsd;string">c is_manufactured_by o means that there was a process p in which c was 
+built in which a person, or set of people or machines did the work(bore 
+the &quot;Manufacturer Role&quot;, and those people/and or machines were members 
+or of directed by the organization to do this.</efo:definition>
+        <rdfs:range rdf:resource="&obo;OBI_0000245"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000316 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000316">
+        <rdfs:label rdf:datatype="&xsd;string">has_role</rdfs:label>
+        <rdfs:range rdf:resource="&snap;Role"/>
+    </owl:ObjectProperty>
     
 
 
@@ -104,7 +136,68 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
 
     <owl:Class rdf:about="&obo;OBI_0000245">
+        <rdfs:label rdf:datatype="&xsd;string">organization</rdfs:label>
         <rdfs:label xml:lang="en">organization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <efo:definition rdf:datatype="&xsd;string">An organization is a continuant entity which can play roles,  has 
+members, and has a set of organization rules.  Members of organizations 
+are either organizations themselves or individual people. Members can 
+play specific organization member roles that are determined in the 
+organization rules. The organization rules also determine how decisions 
+are made on behalf of the organization by the organization members.</efo:definition>
+        <efo:definition_citation rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/OBI_0000245</efo:definition_citation>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000260 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000260">
+        <rdfs:label rdf:datatype="&xsd;string">publisher role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A publisher role is a role borne by an organization or individual in which they are responsible for making software available to a particular consumer group. Such organizations or individuals do need to be involved in the development of the software.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">James Malone</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000392 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000392">
+        <rdfs:label rdf:datatype="&xsd;string">software developer role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">James Malone</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Software developer role is a role borne by an organization or individual in which they are responsible for authoring software.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000396 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000396">
+        <rdfs:label rdf:datatype="&xsd;string">software developer organization</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000392"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000245"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000397 -->
+
+    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000397">
+        <rdfs:label rdf:datatype="&xsd;string">software publisher organization</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000260"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000245"/>
     </owl:Class>
     
 
@@ -125,6 +218,26 @@
     
 
 
+    <!-- http://www.ifomis.org/bfo/1.1/snap#MaterialEntity -->
+
+    <owl:Class rdf:about="&snap;MaterialEntity">
+        <rdfs:label rdf:datatype="&xsd;string">material entity</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A material entity is a real world physical object. It is an entity that exists in full during the length of time of its existence, persists through this time while maintaining its identity and has no temporal parts. For example a heart, a human, a fly, a microarray.</obo:IAO_0000115>
+        <efo:definition rdf:datatype="&xsd;string">A material entity is an entity that exists in full during the length of time of its existence, persists through this time while maintaining its identity and has no temporal parts. For example a heart, a human, a fly, a microarray.</efo:definition>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">James Malone</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
+
+    <owl:Class rdf:about="&snap;Role">
+        <rdfs:label rdf:datatype="&xsd;string">role</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A role is an entity which is borne in a material entity in some kinds of natural, social or institutional contexts, but which is not essential to the fundamental definition of that material entity (i.e. the material entity exists with or without the role). For example, the role of a person as a surgeon, the role of an artificial heart in pumping blood, the role of a chemical compound in an experiment, the role of a drug in the treatment of a disease.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://www.w3.org/2002/07/owl#Thing -->
 
     <owl:Class rdf:about="&owl;Thing"/>
@@ -139,6 +252,392 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/OBI_0000245_1 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/OBI_0000245_1">
+        <rdf:type rdf:resource="&ebi;efo/swo/SWO_0000260"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000023 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000023">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000260"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000392"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000033 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000033">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000036 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000036">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000038 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000038">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000061 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000061">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000067 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000067">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000069 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000069">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000073 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000073">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000074 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000074">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000093 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000093">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000119 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000119">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000131 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000131">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000136 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000136">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000151 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000151">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000160 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000160">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000198 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000198">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000204 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000204">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000211 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000211">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000223 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000223">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000232 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000232">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000240 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000240">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000242 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000242">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000244 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000244">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000286 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000286">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000290 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000290">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000260"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000291 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000291">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000299 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000299">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000300 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000300">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000301 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000301">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000302 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000302">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000303 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000303">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000325 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000325">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000351 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000351">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000357 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000357">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000366 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000366">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000376 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000376">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000427 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000427">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000431 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000431">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000433 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000433">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000436 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000436">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000439 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000439">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000440 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000440">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000443 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000443">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000492 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000492">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000743 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000743">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+    </owl:NamedIndividual>
     
 
 
