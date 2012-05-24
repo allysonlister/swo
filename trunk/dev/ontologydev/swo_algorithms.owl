@@ -473,7 +473,7 @@ For example, bagging of decision trees algorithm includes the specification of a
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000010 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000010">
-        <rdfs:label rdf:datatype="&xsd;string">average log expression across arrays (ALE)</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Average log expression across arrays (ALE)</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -550,7 +550,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000055 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000055">
-        <rdfs:label rdf:datatype="&xsd;string">iterative Bayesian Model Averaging (BMA)</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Iterative Bayesian Model Averaging (BMA)</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -662,7 +662,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000108 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000108">
-        <rdfs:label rdf:datatype="&xsd;string">chi-square</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Chi-square</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -681,7 +681,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000113 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000113">
-        <rdfs:label rdf:datatype="&xsd;string">cosmo</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Cosmo</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
         <efo:definition rdf:datatype="&xsd;string">cosmo allows the user to target the motif search by specifying a set of constraints that the unknown position weight matrix must satisfy. The algorithm is based on a probabilistic model that describes the DNA sequences of interest through a two- component multinomial mixture model with estimates of the position weight matrix entries obtained by maximizing the observed data likelihood over the smaller parameter space corresponding to the imposed constraints. It includes methods such as Probabilistic models and one-occurrence-per-sequence and zero-or-one-occurrence-per-sequence and two-component mixture</efo:definition>
     </owl:Class>
@@ -700,7 +700,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000118 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000118">
-        <rdfs:label rdf:datatype="&xsd;string">non-linear functional regression model</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Non-linear functional regression model</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
         <efo:definition rdf:datatype="&xsd;string">non-linear functional regression model with both additive and multiplicative error terms</efo:definition>
     </owl:Class>
@@ -846,7 +846,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000165 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000165">
-        <rdfs:label rdf:datatype="&xsd;string">modied version of the GLAD algorithm (Gain and Loss Analysis of DNA)</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Modified version of the GLAD algorithm (Gain and Loss Analysis of DNA)</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -891,7 +891,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000212 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000212">
-        <rdfs:label rdf:datatype="&xsd;string">hexagon binning algorithm</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Hexagon binning algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1003,19 +1003,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
         <rdfs:label rdf:datatype="&xsd;string">Kolmogorov Smirnov rank-sum based algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
         <efo:definition rdf:datatype="&xsd;string">KS measures how biased the ranks of a subset of items are among the ranks of the entire set</efo:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000254 -->
-
-    <owl:Class rdf:about="&efo;swo/SWO_0000254">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000595"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1252,7 +1239,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000323 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000323">
-        <rdfs:label rdf:datatype="&xsd;string">propagation of uncertainty in microarray analysis</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Propagation of uncertainty in microarray analysis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
         <efo:definition rdf:datatype="&xsd;string">Included are summarisation, differential expression detection, clustering and PCA methods, together with useful plotting and data manipulation functions</efo:definition>
     </owl:Class>
@@ -1478,7 +1465,7 @@ the graph structure of GO.</efo:definition>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000441 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000441">
-        <rdfs:label rdf:datatype="&xsd;string">variance-stabilizing transformation (VST) algorithm</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Variance-stabilizing transformation (VST) algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1505,7 +1492,7 @@ the graph structure of GO.</efo:definition>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000477 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000477">
-        <rdfs:label rdf:datatype="&xsd;string">associative T method</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Associative T method</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1514,7 +1501,7 @@ the graph structure of GO.</efo:definition>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000478 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000478">
-        <rdfs:label rdf:datatype="&xsd;string">avgNRRs</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">AvgNRRs</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1532,7 +1519,7 @@ the graph structure of GO.</efo:definition>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000500 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000500">
-        <rdfs:label rdf:datatype="&xsd;string">clustering algorithm</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Clustering algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1568,7 +1555,7 @@ the graph structure of GO.</efo:definition>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000552 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000552">
-        <rdfs:label rdf:datatype="&xsd;string">gene array analysis algorithm</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Gene array analysis algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1587,7 +1574,7 @@ the graph structure of GO.</efo:definition>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000573 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000573">
-        <rdfs:label rdf:datatype="&xsd;string">hierarchical clustering</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Hierarchical clustering</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1596,7 +1583,7 @@ the graph structure of GO.</efo:definition>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000576 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000576">
-        <rdfs:label rdf:datatype="&xsd;string">hypergeometric enrichment</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Hypergeometric enrichment</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1605,7 +1592,7 @@ the graph structure of GO.</efo:definition>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000584 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000584">
-        <rdfs:label rdf:datatype="&xsd;string">iterative local regression and model selection</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Iterative local regression and model selection</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1641,7 +1628,7 @@ the graph structure of GO.</efo:definition>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000592 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000592">
-        <rdfs:label rdf:datatype="&xsd;string">likelihood method</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Likelihood method</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1659,7 +1646,7 @@ the graph structure of GO.</efo:definition>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000597 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000597">
-        <rdfs:label rdf:datatype="&xsd;string">local-pooled-error</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Local-pooled-error</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1670,26 +1657,6 @@ the graph structure of GO.</efo:definition>
     <owl:Class rdf:about="&efo;swo/SWO_0000602">
         <rdfs:label rdf:datatype="&xsd;string">Logit-t algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000609 -->
-
-    <owl:Class rdf:about="&efo;swo/SWO_0000609">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&efo;swo/SWO_0000573"/>
-                            <rdf:Description rdf:about="&efo;swo/SWO_0000661"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1724,7 +1691,7 @@ the graph structure of GO.</efo:definition>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000627 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000627">
-        <rdfs:label rdf:datatype="&xsd;string">multinomial probit regression with Gaussian Process priors</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Multinomial probit regression with Gaussian Process priors</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1743,7 +1710,7 @@ the graph structure of GO.</efo:definition>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000629 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000629">
-        <rdfs:label rdf:datatype="&xsd;string">multivariate t mixture models</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Multivariate t mixture models</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1752,7 +1719,7 @@ the graph structure of GO.</efo:definition>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000631 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000631">
-        <rdfs:label rdf:datatype="&xsd;string">negative binomial distribution</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Negative binomial distribution</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1761,22 +1728,16 @@ the graph structure of GO.</efo:definition>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000633 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000633">
-        <rdfs:label rdf:datatype="&xsd;string">neural networks models</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Neural networks models</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000661 -->
-
-    <owl:Class rdf:about="&efo;swo/SWO_0000661"/>
     
 
 
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000664 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000664">
-        <rdfs:label rdf:datatype="&xsd;string">position weight matrix (PWM )</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Position weight matrix (PWM )</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1785,7 +1746,7 @@ the graph structure of GO.</efo:definition>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000673 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000673">
-        <rdfs:label rdf:datatype="&xsd;string">quantile normalization</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Quantile normalization</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1794,7 +1755,7 @@ the graph structure of GO.</efo:definition>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000674 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000674">
-        <rdfs:label rdf:datatype="&xsd;string">quantile regression techniques</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Quantile regression techniques</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1803,7 +1764,7 @@ the graph structure of GO.</efo:definition>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000680 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000680">
-        <rdfs:label rdf:datatype="&xsd;string">rank-invariant set normalization</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Rank-invariant set normalization</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1812,7 +1773,7 @@ the graph structure of GO.</efo:definition>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000681 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000681">
-        <rdfs:label rdf:datatype="&xsd;string">rank product non-parametric method</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Rank product non-parametric method</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1821,7 +1782,7 @@ the graph structure of GO.</efo:definition>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000695 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000695">
-        <rdfs:label rdf:datatype="&xsd;string">sim method</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Sim method</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1830,7 +1791,7 @@ the graph structure of GO.</efo:definition>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000713 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000713">
-        <rdfs:label rdf:datatype="&xsd;string">statistical tests</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Statistical tests</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
         <efo:definition rdf:datatype="&xsd;string">Paired t-test , Paired L-statistic and Paired Lw-statistic with their FDRs</efo:definition>
     </owl:Class>
@@ -1849,7 +1810,7 @@ the graph structure of GO.</efo:definition>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000722 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000722">
-        <rdfs:label rdf:datatype="&xsd;string">two-stage measurement error model</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Two-stage measurement error model</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
