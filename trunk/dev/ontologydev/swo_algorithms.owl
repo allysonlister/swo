@@ -1519,7 +1519,7 @@ the graph structure of GO.</efo:definition>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000500 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000500">
-        <rdfs:label rdf:datatype="&xsd;string">Clustering algorithm</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">obsolete_Clustering algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1879,18 +1879,18 @@ to {1, . . . , k}, where k is the number of clusters, which has to obey k ≤ |S
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&OntoDM;OntoDM_000087"/>
-            <rdf:Description rdf:about="&OntoDM;OntoDM_000092"/>
-            <rdf:Description rdf:about="&OntoDM;OntoDM_000235"/>
-            <rdf:Description rdf:about="&OntoDM;OntoDM_000264"/>
+            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_170075"/>
+            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_175260"/>
+            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_382176"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_170075"/>
-            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_175260"/>
-            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_382176"/>
+            <rdf:Description rdf:about="&OntoDM;OntoDM_000087"/>
+            <rdf:Description rdf:about="&OntoDM;OntoDM_000092"/>
+            <rdf:Description rdf:about="&OntoDM;OntoDM_000235"/>
+            <rdf:Description rdf:about="&OntoDM;OntoDM_000264"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
