@@ -604,15 +604,6 @@
     
 
 
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000585 -->
-
-    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000585">
-        <rdfs:label rdf:datatype="&xsd;string">.java file</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000586 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000586">
