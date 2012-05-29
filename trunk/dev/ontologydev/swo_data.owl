@@ -406,15 +406,6 @@
     
 
 
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000434 -->
-
-    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000434">
-        <rdfs:label rdf:datatype="&xsd;string">TIFF image</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000448 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000448">
