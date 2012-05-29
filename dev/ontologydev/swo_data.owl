@@ -406,15 +406,6 @@
     
 
 
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000448 -->
-
-    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000448">
-        <rdfs:label rdf:datatype="&xsd;string">XML</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000449 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000449">
@@ -830,6 +821,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000005 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000005">
+        <rdfs:label rdf:datatype="&xsd;string">XML</rdfs:label>
         <rdfs:label>XML</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
         <obo:IAO_0000115>Extensible Markup Language (XML) is a standard set of rules for encoding documents in a machine-readable form defined by the W3C.</obo:IAO_0000115>
