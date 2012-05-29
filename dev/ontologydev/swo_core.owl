@@ -295,10 +295,32 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/SWO_0004007 -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0004007">
+        <rdfs:label>obsolete object property</rdfs:label>
+        <dc:creator>Allyson Lister</dc:creator>
+        <efo:definition>Stores those object properties which are no longer appropriate for use within SWO.</efo:definition>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ebi.ac.uk/swo/SWO_0040005 -->
 
     <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0040005">
         <rdfs:label rdf:datatype="&xsd;string">is executed in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_9000058 -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_9000058">
+        <rdfs:label>obsolete_is specified output of</rdfs:label>
+        <efo:reason_for_obsolescence>There is an object property duplication for is specified output of, where one is from OBI (OBI_0000312) and one is from SWO (SWO_9000058); additionally, the reasoner infers these two object properties as equivalent. Both are the inverse properties for has specified output. It makes sense to retain the OBI object property. The SWO class URI was renamed to the OBI term URI (to make the moving of the axioms across to the OBI term simple), and then an SWO class with the original URI was marked as obsolete. Please use OBI_0000312 instead.</efo:reason_for_obsolescence>
+        <dc:contributor>Marked as obsolete by Allyson Lister.</dc:contributor>
+        <efo:obsoleted_in_version>0.3</efo:obsoleted_in_version>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004007"/>
     </owl:ObjectProperty>
     
 
@@ -12201,8 +12223,9 @@ tiple samples</efo:definition>
     <owl:Class rdf:about="&efo;swo/SWO_0000500">
         <rdfs:label rdf:datatype="&xsd;string">obsolete_Clustering algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
-        <efo:reason_for_obsolescence>The original label for this class, &#39;Clustering algorithm&#39;, was used in two separate class URIs. The first was SWO_0000500, initially created within the originalsoftwareontology.owl. The second URI is stored within swo_algorithms.owl and is an import from OntoDM. As the SWO class contains no annotation beyond its label, and because OntoDM has more structure surrounding its algorithm classes, the OntoDM class was retained and the SWO class was deemed obsolete. The 6 usages of the SWO class were refactored to reference the OntoDM term and then the SWO class was marked as obsolete.</efo:reason_for_obsolescence>
+        <efo:reason_for_obsolescence>The original label for this class, &#39;Clustering algorithm&#39;, was used in two separate class URIs. The first was SWO_0000500, initially created within the originalsoftwareontology.owl. The second URI is stored within swo_algorithms.owl and is an import from OntoDM (OntoDM_170075). As the SWO class contains no annotation beyond its label, and because OntoDM has more structure surrounding its algorithm classes, the OntoDM class was retained and the SWO class was deemed obsolete. The 6 usages of the SWO class were refactored to reference the OntoDM term and then the SWO class was marked as obsolete. Please use OntoDM_170075 instead.</efo:reason_for_obsolescence>
         <efo:obsoleted_in_version>0.3</efo:obsoleted_in_version>
+        <dc:contributor>Marked as obsolete by Allyson Lister.</dc:contributor>
     </owl:Class>
     
 
