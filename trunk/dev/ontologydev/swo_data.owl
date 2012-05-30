@@ -660,15 +660,6 @@
     
 
 
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000652 -->
-
-    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000652">
-        <rdfs:label rdf:datatype="&xsd;string">obsolete_pdf</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000655 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000655">
@@ -683,15 +674,6 @@
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000661">
         <rdfs:label rdf:datatype="&xsd;string">Graph plot</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000663 -->
-
-    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000663">
-        <rdfs:label rdf:datatype="&xsd;string">png</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
 
