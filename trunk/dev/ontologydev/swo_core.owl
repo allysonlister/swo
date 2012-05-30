@@ -4907,6 +4907,12 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&efo;swo/SWO_0000741"/>
+                <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -4914,17 +4920,11 @@ The analysis includes normalization and data preprocessing, detection for differ
                             <rdf:Description rdf:about="&efo;swo/SWO_0000661"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004002"/>
-                                <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000668"/>
+                                <owl:someValuesFrom rdf:resource="&data;SWO_3000024"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&efo;swo/SWO_0000741"/>
-                <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -6008,7 +6008,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                             <rdf:Description rdf:about="&obo;IAO_0000027"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004002"/>
-                                <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000668"/>
+                                <owl:someValuesFrom rdf:resource="&data;SWO_3000024"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -16569,7 +16569,6 @@ tiple samples</efo:definition>
 
     <owl:Class rdf:about="&efo;swo/SWO_0000652">
         <rdfs:label rdf:datatype="&xsd;string">obsolete_pdf</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
         <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
         <efo:obsoleted_in_version>0.3</efo:obsoleted_in_version>
         <efo:reason_for_obsolescence>SWO_0000652 was initially created within the originalsoftwareontology.owl and later moved to swo_data.owl. SWO_3000015 is also present and stored within swo_data.owl. SWO_3000015 was retained and SWO_0000652 deemed obsolete, as SWO_3000015 has a better location in the hierarchy. All axioms belonging to SWO_0000652 were transferred to SWO_3000015. Please use SWO_3000015 instead. </efo:reason_for_obsolescence>
@@ -17080,9 +17079,13 @@ tiple samples</efo:definition>
 
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000668 -->
 
-    <rdf:Description rdf:about="&efo;swo/SWO_0000668">
-        <owl:equivalentClass rdf:resource="&data;SWO_3000024"/>
-    </rdf:Description>
+    <owl:Class rdf:about="&efo;swo/SWO_0000668">
+        <rdfs:label rdf:datatype="&xsd;string">obsolete_ps</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
+        <efo:obsoleted_in_version>0.3</efo:obsoleted_in_version>
+        <dc:contributor>Marked as obsolete by Allyson Lister.</dc:contributor>
+        <efo:reason_for_obsolescence>An equivalence statement is already marked for these two classes. Removed equivalence statement as the location of the obsoleted class has been changed. SWO_0000668 was initially created within the originalsoftwareontology.owl and later moved to swo_data.owl. SWO_3000024 is also present and stored within swo_data.owl. SWO_3000018 was retained and SWO_0000668 deemed obsolete, as SWO_3000024 has a better location in the hierarchy. All axioms belonging to SWO_0000668 were transferred to SWO_3000024. Please use SWO_3000024 instead. </efo:reason_for_obsolescence>
+    </owl:Class>
     
 
 
@@ -21906,12 +21909,6 @@ tiple samples</efo:definition>
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000023 -->
 
     <owl:Class rdf:about="&data;SWO_3000023"/>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000024 -->
-
-    <rdf:Description rdf:about="&data;SWO_3000024"/>
     
 
 
