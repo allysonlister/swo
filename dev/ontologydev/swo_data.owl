@@ -663,7 +663,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000652 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000652">
-        <rdfs:label rdf:datatype="&xsd;string">pdf</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">obsolete_pdf</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
