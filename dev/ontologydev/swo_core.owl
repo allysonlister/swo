@@ -10465,7 +10465,7 @@ easily and accurately visualize and quantitate gene expression data.</efo:defini
         <rdfs:label rdf:datatype="&xsd;string">obsolete_TIFF image</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
         <dc:contributor>Marked as obsolete by Allyson Lister.</dc:contributor>
-        <efo:reason_for_obsolescence>SWO_0000434 was initially created within the originalsoftwareontology.owl and later moved to swo_data.owl. SWO_3000016, with the label &#39;TIFF&#39;, is also present, and stored within swo_data.owl. SWO_3000016 was retained and SWO_ 0000434 deemed obsolete, as SWO_3000016 has a better location in the hierarchy. All axioms belonging to SWO_ 0000434 were transferred to SWO_3000016. Please use SWO_3000016 instead.</efo:reason_for_obsolescence>
+        <efo:reason_for_obsolescence>SWO_0000434 was initially created within the originalsoftwareontology.owl and later moved to swo_data.owl. SWO_3000016, with the label &#39;TIFF&#39;, is also present, and stored within swo_data.owl. SWO_3000016 was retained and SWO_0000434 deemed obsolete, as SWO_3000016 has a better location in the hierarchy. All axioms belonging to SWO_0000434 were transferred to SWO_3000016. Please use SWO_3000016 instead.</efo:reason_for_obsolescence>
         <efo:obsoleted_in_version>0.3</efo:obsoleted_in_version>
     </owl:Class>
     
@@ -10697,7 +10697,7 @@ easily and accurately visualize and quantitate gene expression data.</efo:defini
         <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
         <dc:contributor>Marked as obsolete by Allyson Lister.</dc:contributor>
         <efo:obsoleted_in_version>0.3</efo:obsoleted_in_version>
-        <efo:reason_for_obsolescence>5. SWO_0000448 was initially created within the originalsoftwareontology.owl and later moved to swo_data.owl. SWO_3000005 is also present within swo_data.owl. SWO_ 3000005 was retained and SWO_ 0000448 deemed obsolete, as SWO_ 3000005 has a better location in the hierarchy. All axioms belonging to SWO_ 0000448 were transferred to SWO_3000005. Please use SWO_3000005 instead.</efo:reason_for_obsolescence>
+        <efo:reason_for_obsolescence>5. SWO_0000448 was initially created within the originalsoftwareontology.owl and later moved to swo_data.owl. SWO_3000005 is also present within swo_data.owl. SWO_3000005 was retained and SWO_0000448 deemed obsolete, as SWO_3000005 has a better location in the hierarchy. All axioms belonging to SWO_0000448 were transferred to SWO_3000005. Please use SWO_3000005 instead.</efo:reason_for_obsolescence>
     </owl:Class>
     
 
@@ -14746,8 +14746,8 @@ tiple samples</efo:definition>
     <owl:Class rdf:about="&efo;swo/SWO_0000586">
         <rdfs:label rdf:datatype="&xsd;string">obsolete_jpeg</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
-        <efo:reason_for_obsolescence>SWO_0000586 (jpeg) was initially created within the originalsoftwareontology.owl and later moved to swo_data.owl. SWO_3000017, with the label &#39;JPEG&#39;, is also present, and stored within swo_data.owl. SWO_3000017 was retained and SWO_ 0000586 deemed obsolete, as SWO_3000017 has a better location in the hierarchy. All axioms belonging to SWO_ 0000586 were transferred to SWO_3000017. Please use SWO_3000017 instead.</efo:reason_for_obsolescence>
         <dc:contributor>Marked as obsolete by Allyson Lister.</dc:contributor>
+        <efo:reason_for_obsolescence>SWO_0000586 (jpeg) was initially created within the originalsoftwareontology.owl and later moved to swo_data.owl. SWO_3000017, with the label &#39;JPEG&#39;, is also present, and stored within swo_data.owl. SWO_3000017 was retained and SWO_ 0000586 deemed obsolete, as SWO_3000017 has a better location in the hierarchy. All axioms belonging to SWO_0000586 were transferred to SWO_3000017. Please use SWO_3000017 instead.</efo:reason_for_obsolescence>
         <efo:obsoleted_in_version>0.3</efo:obsoleted_in_version>
     </owl:Class>
     
@@ -16572,8 +16572,8 @@ tiple samples</efo:definition>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
         <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
         <efo:obsoleted_in_version>0.3</efo:obsoleted_in_version>
+        <efo:reason_for_obsolescence>SWO_0000652 was initially created within the originalsoftwareontology.owl and later moved to swo_data.owl. SWO_3000015 is also present and stored within swo_data.owl. SWO_3000015 was retained and SWO_0000652 deemed obsolete, as SWO_3000015 has a better location in the hierarchy. All axioms belonging to SWO_0000652 were transferred to SWO_3000015. Please use SWO_3000015 instead. </efo:reason_for_obsolescence>
         <dc:contributor>Marked as obsolete by Allyson Lister.</dc:contributor>
-        <efo:reason_for_obsolescence>SWO_0000652 was initially created within the originalsoftwareontology.owl and later moved to swo_data.owl. SWO_3000015 is also present and stored within swo_data.owl. SWO_3000015 was retained and SWO_0000652 deemed obsolete, as SWO_3000015 has a better location in the hierarchy. All axioms belonging to SWO_ 0000652 were transferred to SWO_3000015. Please use SWO_ 3000015 instead. </efo:reason_for_obsolescence>
     </owl:Class>
     
 
@@ -16956,7 +16956,7 @@ tiple samples</efo:definition>
         <rdfs:label rdf:datatype="&xsd;string">obsolete_png</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
         <efo:obsoleted_in_version>0.3</efo:obsoleted_in_version>
-        <efo:reason_for_obsolescence>SWO_0000663 was initially created within the originalsoftwareontology.owl and later moved to swo_data.owl. SWO_3000018 is also present and stored within swo_data.owl. SWO_ 3000018 was retained and SWO_ 0000663 deemed obsolete, as SWO_ 3000018 has a better location in the hierarchy. All axioms belonging to SWO_ 0000663 were transferred to SWO_3000018 . Please use SWO_ 3000018 instead.</efo:reason_for_obsolescence>
+        <efo:reason_for_obsolescence>SWO_0000663 was initially created within the originalsoftwareontology.owl and later moved to swo_data.owl. SWO_3000018 is also present and stored within swo_data.owl. SWO_3000018 was retained and SWO_0000663 deemed obsolete, as SWO_3000018 has a better location in the hierarchy. All axioms belonging to SWO_0000663 were transferred to SWO_3000018 . Please use SWO_3000018 instead.</efo:reason_for_obsolescence>
         <dc:contributor>Marked as obsolete by Allyson Lister.</dc:contributor>
     </owl:Class>
     
@@ -22005,7 +22005,7 @@ tiple samples</efo:definition>
         <rdfs:label>obsolete_html</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
         <dc:contributor>Marked as obsolete by Allyson Lister.</dc:contributor>
-        <efo:reason_for_obsolescence>There is one EDAM html class (EDAM:0002331) and one SWO class (SWO_0000399) within swo_data.owl. EDAM:0002331 was retained and SWO_ 0000399 deemed obsolete, as EDAM:0002331 has a better location in the hierarchy and is an imported term. All axioms belonging to SWO_ 0000399 were transferred to EDAM:0002331. Please use EDAM:0002331 instead.</efo:reason_for_obsolescence>
+        <efo:reason_for_obsolescence>There is one EDAM html class (EDAM:0002331) and one SWO class (SWO_0000399) within swo_data.owl. EDAM:0002331 was retained and SWO_0000399 deemed obsolete, as EDAM:0002331 has a better location in the hierarchy and is an imported term. All axioms belonging to SWO_0000399 were transferred to EDAM:0002331. Please use EDAM:0002331 instead.</efo:reason_for_obsolescence>
         <efo:obsoleted_in_version>0.3</efo:obsoleted_in_version>
     </owl:Class>
     
