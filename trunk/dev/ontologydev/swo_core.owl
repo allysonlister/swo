@@ -20729,6 +20729,17 @@ tiple samples</efo:definition>
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000044 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000044">
+        <rdfs:label xml:lang="en">BLAST+ 2.2.26</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000054"/>
+        <dc:creator>Allyson Lister</dc:creator>
+        <obo:IAO_0000115>The C++ version of the command line BLAST+ tool made by the NCBI. (See also http://www.ncbi.nlm.nih.gov/books/NBK1763)</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/swo/SWO_9000005 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000005">
