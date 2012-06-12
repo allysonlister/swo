@@ -417,6 +417,7 @@
         <rdfs:label xml:lang="en">has publication</rdfs:label>
         <obo:IAO_0000115>Should be used to link a particular class (e.g. a piece of software or an algorithm) with a publication(s) which act as the primary reference(s) for that class.</obo:IAO_0000115>
         <dc:creator>Allyson Lister</dc:creator>
+        <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
 
