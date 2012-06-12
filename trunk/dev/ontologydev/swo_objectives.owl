@@ -47,6 +47,7 @@
 
     <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
     <owl:AnnotationProperty rdf:about="&dc;contributor"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000117"/>
@@ -607,6 +608,7 @@ called clusters.</rdfs:comment>
     <owl:Class rdf:about="&ebi;swo/objective/SWO_7000002">
         <rdfs:label xml:lang="en">sequence alignment</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_000092"/>
+        <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
     
 
@@ -616,6 +618,7 @@ called clusters.</rdfs:comment>
     <owl:Class rdf:about="&ebi;swo/objective/SWO_7000003">
         <rdfs:label xml:lang="en">multiple sequence alignment</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/objective/SWO_7000002"/>
+        <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
     
 
@@ -625,6 +628,7 @@ called clusters.</rdfs:comment>
     <owl:Class rdf:about="&ebi;swo/objective/SWO_7000004">
         <rdfs:label xml:lang="en">pairwise sequence alignment</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/objective/SWO_7000002"/>
+        <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
     
 
