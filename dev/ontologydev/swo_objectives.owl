@@ -606,7 +606,7 @@ called clusters.</rdfs:comment>
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_7000002 -->
 
     <owl:Class rdf:about="&ebi;swo/objective/SWO_7000002">
-        <rdfs:label xml:lang="en">sequence alignment</rdfs:label>
+        <rdfs:label xml:lang="en">Sequence alignment</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_000092"/>
         <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
@@ -616,7 +616,7 @@ called clusters.</rdfs:comment>
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_7000003 -->
 
     <owl:Class rdf:about="&ebi;swo/objective/SWO_7000003">
-        <rdfs:label xml:lang="en">multiple sequence alignment</rdfs:label>
+        <rdfs:label xml:lang="en">Multiple sequence alignment</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/objective/SWO_7000002"/>
         <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
@@ -626,7 +626,7 @@ called clusters.</rdfs:comment>
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_7000004 -->
 
     <owl:Class rdf:about="&ebi;swo/objective/SWO_7000004">
-        <rdfs:label xml:lang="en">pairwise sequence alignment</rdfs:label>
+        <rdfs:label xml:lang="en">Pairwise sequence alignment</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/objective/SWO_7000002"/>
         <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
