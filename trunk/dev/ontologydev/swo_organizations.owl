@@ -49,7 +49,6 @@
     <owl:AnnotationProperty rdf:about="&dc;creator"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="&dc;contributor"/>
-    <owl:AnnotationProperty rdf:about="&ebi;efo/definition"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000117"/>
     <owl:AnnotationProperty rdf:about="&ebi;efo/definition_citation"/>
@@ -86,10 +85,10 @@
     <owl:ObjectProperty rdf:about="&obo;OBI_0000304">
         <rdfs:label rdf:datatype="&xsd;string">is_manufactured_by</rdfs:label>
         <efo:definition_citation rdf:datatype="&xsd;string">OBI</efo:definition_citation>
-        <efo:definition rdf:datatype="&xsd;string">c is_manufactured_by o means that there was a process p in which c was 
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">c is_manufactured_by o means that there was a process p in which c was 
 built in which a person, or set of people or machines did the work(bore 
 the &quot;Manufacturer Role&quot;, and those people/and or machines were members 
-or of directed by the organization to do this.</efo:definition>
+or of directed by the organization to do this.</obo:IAO_0000115>
         <rdfs:range rdf:resource="&obo;OBI_0000245"/>
     </owl:ObjectProperty>
     
@@ -140,12 +139,12 @@ or of directed by the organization to do this.</efo:definition>
         <rdfs:label rdf:datatype="&xsd;string">organization</rdfs:label>
         <rdfs:label xml:lang="en">organization</rdfs:label>
         <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
-        <efo:definition rdf:datatype="&xsd;string">An organization is a continuant entity which can play roles,  has 
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An organization is a continuant entity which can play roles,  has 
 members, and has a set of organization rules.  Members of organizations 
 are either organizations themselves or individual people. Members can 
 play specific organization member roles that are determined in the 
 organization rules. The organization rules also determine how decisions 
-are made on behalf of the organization by the organization members.</efo:definition>
+are made on behalf of the organization by the organization members.</obo:IAO_0000115>
         <efo:definition_citation rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/OBI_0000245</efo:definition_citation>
     </owl:Class>
     
@@ -224,7 +223,7 @@ are made on behalf of the organization by the organization members.</efo:definit
     <owl:Class rdf:about="&snap;MaterialEntity">
         <rdfs:label rdf:datatype="&xsd;string">material entity</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A material entity is a real world physical object. It is an entity that exists in full during the length of time of its existence, persists through this time while maintaining its identity and has no temporal parts. For example a heart, a human, a fly, a microarray.</obo:IAO_0000115>
-        <efo:definition rdf:datatype="&xsd;string">A material entity is an entity that exists in full during the length of time of its existence, persists through this time while maintaining its identity and has no temporal parts. For example a heart, a human, a fly, a microarray.</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A material entity is an entity that exists in full during the length of time of its existence, persists through this time while maintaining its identity and has no temporal parts. For example a heart, a human, a fly, a microarray.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="&xsd;string">James Malone</obo:IAO_0000117>
     </owl:Class>
     
@@ -271,13 +270,13 @@ are made on behalf of the organization by the organization members.</efo:definit
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
-                <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000392"/>
+                <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000260"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
-                <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000260"/>
+                <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000392"/>
             </owl:Restriction>
         </rdf:type>
         <rdfs:label rdf:datatype="&xsd;string">Affymetrix</rdfs:label>
