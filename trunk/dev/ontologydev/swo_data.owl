@@ -51,7 +51,7 @@
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="&dc;creator"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
-    <owl:AnnotationProperty rdf:about="&ebi;swo/alternative_term"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
     
@@ -891,7 +891,7 @@
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000015">
         <rdfs:label>pdf</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000014"/>
-        <swo:alternative_term>Portable Document Format</swo:alternative_term>
+        <obo:IAO_0000118>Portable Document Format</obo:IAO_0000118>
         <obo:IAO_0000115>PDF is an open standard for document exchange. </obo:IAO_0000115>
     </owl:Class>
     
@@ -902,7 +902,7 @@
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000016">
         <rdfs:label>TIFF</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000020"/>
-        <swo:alternative_term>Tagged Image File Format</swo:alternative_term>
+        <obo:IAO_0000118>Tagged Image File Format</obo:IAO_0000118>
         <obo:IAO_0000115>TIFF is a flexible, adaptable file format for handling images and data within a single file, by including the header tags (size, definition, image-data arrangement, applied image compression) defining the image&#39;s geometry.</obo:IAO_0000115>
     </owl:Class>
     
@@ -914,7 +914,7 @@
         <rdfs:label>JPEG</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000020"/>
         <obo:IAO_0000115>JPEG is a lossy file format for storing images</obo:IAO_0000115>
-        <swo:alternative_term>JPG</swo:alternative_term>
+        <obo:IAO_0000118>JPG</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -924,7 +924,7 @@
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000018">
         <rdfs:label>PNG</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000020"/>
-        <swo:alternative_term>Portable Network Graphics</swo:alternative_term>
+        <obo:IAO_0000118>Portable Network Graphics</obo:IAO_0000118>
         <obo:IAO_0000115>PNG is a bitmapped image format and video codec that employs lossless data compression.</obo:IAO_0000115>
     </owl:Class>
     
@@ -935,8 +935,8 @@
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000019">
         <rdfs:label>GIF</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000020"/>
+        <obo:IAO_0000118>Graphics Interchange Format</obo:IAO_0000118>
         <obo:IAO_0000115>The Graphics Interchange Format (GIF) is a bitmap image format. The format supports up to 8 bits per pixel thus allowing a single image to reference a palette of up to 256 distinct colors. The colors are chosen from the 24-bit RGB color space. It also supports animations and allows a separate palette of 256 colors for each frame. The color limitation makes the GIF format unsuitable for reproducing color photographs and other images with continuous color, but it is well-suited for simpler images such as graphics or logos with solid areas of color. [wikipedia]</obo:IAO_0000115>
-        <swo:alternative_term>Graphics Interchange Format</swo:alternative_term>
     </owl:Class>
     
 
@@ -966,7 +966,7 @@
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000022">
         <rdfs:label>SVG</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000021"/>
-        <swo:alternative_term>Scalable Vector Graphics</swo:alternative_term>
+        <obo:IAO_0000118>Scalable Vector Graphics</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -976,7 +976,7 @@
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000023">
         <rdfs:label>AI</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000021"/>
-        <swo:alternative_term>Adobe Illustrator format</swo:alternative_term>
+        <obo:IAO_0000118>Adobe Illustrator format</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -996,8 +996,8 @@
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000025">
         <rdfs:label>tex</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000014"/>
+        <obo:IAO_0000118>LaTeX format</obo:IAO_0000118>
         <obo:IAO_0000115>tex is a format for documents written in the document markup language and document preparation system LaTeX.</obo:IAO_0000115>
-        <swo:alternative_term>LaTeX format</swo:alternative_term>
     </owl:Class>
     
 
@@ -1028,7 +1028,7 @@
         <rdfs:label>OPML</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000026"/>
         <obo:IAO_0000115>OPML (Outline Processor Markup Language) is an XML format for outlines</obo:IAO_0000115>
-        <swo:alternative_term>Outline Processor Markup Language</swo:alternative_term>
+        <obo:IAO_0000118>Outline Processor Markup Language</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1107,7 +1107,7 @@
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000036">
         <rdfs:label>CopasiML</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
-        <swo:alternative_term>.cps</swo:alternative_term>
+        <obo:IAO_0000118>.cps</obo:IAO_0000118>
         <obo:IAO_0000115>An XML-based file format for use with the COPASI software.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1118,9 +1118,9 @@
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000037">
         <rdfs:label>SBML</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <obo:IAO_0000118>Systems Biology Markup Language</obo:IAO_0000118>
         <obo:IAO_0000115>Systems Biology Markup Language (SBML) is a machine-readable format for representing models. It&#39;s oriented towards describing systems where biological entities are involved in, and modified by, processes that occur over time.</obo:IAO_0000115>
         <obo:IAO_0000119>http://sbml.org</obo:IAO_0000119>
-        <swo:alternative_term>Systems Biology Markup Language</swo:alternative_term>
     </owl:Class>
     
 

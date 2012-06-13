@@ -41,9 +41,9 @@
 
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
-    <owl:AnnotationProperty rdf:about="&efo;alternative_term"/>
     
 
 
@@ -374,7 +374,7 @@ For example, bagging of decision trees algorithm includes the specification of a
     <owl:Class rdf:about="&efo;swo/SWO_0000014">
         <rdfs:label rdf:datatype="&xsd;string">&#39;ANOVA&#39;</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:alternative_term rdf:datatype="&xsd;string">ANNOVA</efo:alternative_term>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ANNOVA</obo:IAO_0000118>
     </owl:Class>
     
 
