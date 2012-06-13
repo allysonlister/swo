@@ -48,7 +48,6 @@
     <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="&dc;creator"/>
-    <owl:AnnotationProperty rdf:about="&ebi;efo/definition"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000117"/>
     <owl:AnnotationProperty rdf:about="&ebi;swo/alternative_term"/>
@@ -1187,7 +1186,7 @@
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000045">
         <rdfs:label>MAGE tab format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
-        <efo:definition rdf:datatype="&xsd;string">MAGE-TAB is a tab delimited data format comprimising of ADF file for array design, IDFfor experimental design, SDRF for sample data relationships and associated data files.</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">MAGE-TAB is a tab delimited data format comprimising of ADF file for array design, IDFfor experimental design, SDRF for sample data relationships and associated data files.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.mged.org/mage-tab/</obo:IAO_0000119>
         <rdfs:comment>A simple spreadsheet-based, MIAME-supportive format for microarray data: MAGE-TAB.</rdfs:comment>
     </owl:Class>

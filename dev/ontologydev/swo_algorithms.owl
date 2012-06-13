@@ -40,7 +40,6 @@
      -->
 
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
-    <owl:AnnotationProperty rdf:about="&efo;definition"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
@@ -337,7 +336,7 @@ For example, bagging of decision trees algorithm includes the specification of a
     <owl:Class rdf:about="&efo;swo/SWO_0000006">
         <rdfs:label rdf:datatype="&xsd;string">&#39;ACME&#39;</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:definition rdf:datatype="&xsd;string">The ACME algorithm is quite straightforward. Using a user-dened quantile of the data,called the threshold, any probes in the data that are above that threshold are considered positive probes. A p-value is then assigned to each probe.</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The ACME algorithm is quite straightforward. Using a user-dened quantile of the data,called the threshold, any probes in the data that are above that threshold are considered positive probes. A p-value is then assigned to each probe.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -365,7 +364,7 @@ For example, bagging of decision trees algorithm includes the specification of a
     <owl:Class rdf:about="&efo;swo/SWO_0000013">
         <rdfs:label rdf:datatype="&xsd;string">ANCOVA</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:definition rdf:datatype="&xsd;string">The ANCOVA global test is a test for the association between expression values and clinical entities. The test is carried out by comparison of linear models via the extra sum of squares principle. If the mean expression level for at least one gene diers between corresponding models the global null hypothesis, which is the intersection of all single gene null hypotheses, is violated. FDR</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The ANCOVA global test is a test for the association between expression values and clinical entities. The test is carried out by comparison of linear models via the extra sum of squares principle. If the mean expression level for at least one gene diers between corresponding models the global null hypothesis, which is the intersection of all single gene null hypotheses, is violated. FDR</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -403,8 +402,8 @@ For example, bagging of decision trees algorithm includes the specification of a
     <owl:Class rdf:about="&efo;swo/SWO_0000049">
         <rdfs:label rdf:datatype="&xsd;string">Binning clustering method</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:definition rdf:datatype="&xsd;string">binning clustering method- The algorithm uses single-linkage clustering to join compounds into similarity groups, where every member in a cluster shares with at least one other member a similarity value above a user-specified threshold. The algorithm is optimized for speed and memory
-eciency by avoiding the calculation of an all-against-all distance matrix.</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">binning clustering method- The algorithm uses single-linkage clustering to join compounds into similarity groups, where every member in a cluster shares with at least one other member a similarity value above a user-specified threshold. The algorithm is optimized for speed and memory
+eciency by avoiding the calculation of an all-against-all distance matrix.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -414,7 +413,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <owl:Class rdf:about="&efo;swo/SWO_0000052">
         <rdfs:label rdf:datatype="&xsd;string">BGL</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:definition rdf:datatype="&xsd;string">BGL implements Depth First Search, Breadth First Search,Dijkstra&#39;s, Bellman Ford&#39;s and DAG,Johnson&#39;s and Floyd Warshall&#39;s.Kruskal&#39;s algorithm and Prim&#39;s algorithm Cuthill-McKee&#39;s algorithm Minimum degree Ordering</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">BGL implements Depth First Search, Breadth First Search,Dijkstra&#39;s, Bellman Ford&#39;s and DAG,Johnson&#39;s and Floyd Warshall&#39;s.Kruskal&#39;s algorithm and Prim&#39;s algorithm Cuthill-McKee&#39;s algorithm Minimum degree Ordering</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -460,7 +459,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <owl:Class rdf:about="&efo;swo/SWO_0000081">
         <rdfs:label rdf:datatype="&xsd;string">CBS</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:definition rdf:datatype="&xsd;string">The circular binary segmentation (CBS) algorithm divides the genome into regions of equal copy number . The algorithm tests for change-points using a maximal t-statistic with a permutation reference distribution to obtain the corresponding p-value. The number of computations required for the maximal test statistic is O(N^2),where N is the number of markers. This makes the full permutation approach computationally prohibitive for the newer arrays that contain tens of thousands markers and highlights the need for a faster algorithm.</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The circular binary segmentation (CBS) algorithm divides the genome into regions of equal copy number . The algorithm tests for change-points using a maximal t-statistic with a permutation reference distribution to obtain the corresponding p-value. The number of computations required for the maximal test statistic is O(N^2),where N is the number of markers. This makes the full permutation approach computationally prohibitive for the newer arrays that contain tens of thousands markers and highlights the need for a faster algorithm.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -488,7 +487,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <owl:Class rdf:about="&efo;swo/SWO_0000091">
         <rdfs:label rdf:datatype="&xsd;string">CMA</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:definition rdf:datatype="&xsd;string">CMA- it implements k-fold cross validation, MCMC cross validation, bootstrap and (t.test or welch.test or wilcox.test or f.test or kruskal.test or One-step Recursive Feature Elimination or random forest variable importance measure or lasso or elastic net or componentwise boosting)</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">CMA- it implements k-fold cross validation, MCMC cross validation, bootstrap and (t.test or welch.test or wilcox.test or f.test or kruskal.test or One-step Recursive Feature Elimination or random forest variable importance measure or lasso or elastic net or componentwise boosting)</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -498,7 +497,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <owl:Class rdf:about="&efo;swo/SWO_0000094">
         <rdfs:label rdf:datatype="&xsd;string">CRLMM algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:definition rdf:datatype="&xsd;string">This algorithm offers improved confidence scores, quality scores for SNP’s and batches, higher accuracy on different datasets and better performance.</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">This algorithm offers improved confidence scores, quality scores for SNP’s and batches, higher accuracy on different datasets and better performance.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -526,7 +525,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <owl:Class rdf:about="&efo;swo/SWO_0000106">
         <rdfs:label rdf:datatype="&xsd;string">PCMG</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:definition rdf:datatype="&xsd;string">PCMG- a bipartite graph in which one set of nodes represents proteins, the other set represents complexes, and an edge from a protein node to a complex node represents membership of the protein in that complex.</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">PCMG- a bipartite graph in which one set of nodes represents proteins, the other set represents complexes, and an edge from a protein node to a complex node represents membership of the protein in that complex.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -545,7 +544,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <owl:Class rdf:about="&efo;swo/SWO_0000112">
         <rdfs:label rdf:datatype="&xsd;string">BCRANK</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:definition rdf:datatype="&xsd;string">BCRANK is a method that takes a ranked list of genomic regions as input and outputs short DNA sequences that are overrepresented in some part of the list.</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">BCRANK is a method that takes a ranked list of genomic regions as input and outputs short DNA sequences that are overrepresented in some part of the list.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -555,7 +554,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <owl:Class rdf:about="&efo;swo/SWO_0000113">
         <rdfs:label rdf:datatype="&xsd;string">Cosmo</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:definition rdf:datatype="&xsd;string">cosmo allows the user to target the motif search by specifying a set of constraints that the unknown position weight matrix must satisfy. The algorithm is based on a probabilistic model that describes the DNA sequences of interest through a two- component multinomial mixture model with estimates of the position weight matrix entries obtained by maximizing the observed data likelihood over the smaller parameter space corresponding to the imposed constraints. It includes methods such as Probabilistic models and one-occurrence-per-sequence and zero-or-one-occurrence-per-sequence and two-component mixture</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">cosmo allows the user to target the motif search by specifying a set of constraints that the unknown position weight matrix must satisfy. The algorithm is based on a probabilistic model that describes the DNA sequences of interest through a two- component multinomial mixture model with estimates of the position weight matrix entries obtained by maximizing the observed data likelihood over the smaller parameter space corresponding to the imposed constraints. It includes methods such as Probabilistic models and one-occurrence-per-sequence and zero-or-one-occurrence-per-sequence and two-component mixture</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -574,7 +573,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <owl:Class rdf:about="&efo;swo/SWO_0000118">
         <rdfs:label rdf:datatype="&xsd;string">Non-linear functional regression model</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:definition rdf:datatype="&xsd;string">non-linear functional regression model with both additive and multiplicative error terms</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">non-linear functional regression model with both additive and multiplicative error terms</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -593,7 +592,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <owl:Class rdf:about="&efo;swo/SWO_0000127">
         <rdfs:label rdf:datatype="&xsd;string">Discriminant Fuzzy Pattern Algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:definition rdf:datatype="&xsd;string">A DFP version of a FP (fuzzy pattern) only includes those genes that can serve to differentiate it from the rest of the patterns.This algorithm is based on the discretization of float values (gene expression values) stored in an ExpressionSet object into labels combining &#39;Low&#39;, &#39;Medium&#39; and &#39;High&#39;</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A DFP version of a FP (fuzzy pattern) only includes those genes that can serve to differentiate it from the rest of the patterns.This algorithm is based on the discretization of float values (gene expression values) stored in an ExpressionSet object into labels combining &#39;Low&#39;, &#39;Medium&#39; and &#39;High&#39;</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -810,7 +809,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <owl:Class rdf:about="&efo;swo/SWO_0000219">
         <rdfs:label rdf:datatype="&xsd;string">Hidden Variable Dynamic Modelling HVDM)</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:definition rdf:datatype="&xsd;string">Technique which predicts a given transcription factor activity and then uses this infor- mation to predict its targets.</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Technique which predicts a given transcription factor activity and then uses this infor- mation to predict its targets.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -874,7 +873,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <owl:Class rdf:about="&efo;swo/SWO_0000251">
         <rdfs:label rdf:datatype="&xsd;string">Kolmogorov Smirnov rank-sum based algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:definition rdf:datatype="&xsd;string">KS measures how biased the ranks of a subset of items are among the ranks of the entire set</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">KS measures how biased the ranks of a subset of items are among the ranks of the entire set</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -983,7 +982,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <owl:Class rdf:about="&efo;swo/SWO_0000278">
         <rdfs:label rdf:datatype="&xsd;string">MCR algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:definition rdf:datatype="&xsd;string">minimum common regions (MCR) algorithm- Minimal common regions (MCRs) are dened as contiguous spans having at least a recurrence rate dened by a parameter (recurrence) across samples.</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">minimum common regions (MCR) algorithm- Minimal common regions (MCRs) are dened as contiguous spans having at least a recurrence rate dened by a parameter (recurrence) across samples.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1002,7 +1001,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <owl:Class rdf:about="&efo;swo/SWO_0000284">
         <rdfs:label rdf:datatype="&xsd;string">MMD</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:definition rdf:datatype="&xsd;string">MMD describes the distributions of gene expression levels directly via the marginal distributions. It includes EM algorithm, FDR, it is the percentage of nondifferentially expressed genes among selected genes), false non-discovery rate (denoted as FNDR; it is the percentage of differentially expressed genes among unselected genes),false positive rate (denoted as FPR; it is the percentage of selected genes among nondifferentially expressed genes), and false negative rate (denoted as FNR; it is the percentage of un-selected genes among differentially expressed genes),</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">MMD describes the distributions of gene expression levels directly via the marginal distributions. It includes EM algorithm, FDR, it is the percentage of nondifferentially expressed genes among selected genes), false non-discovery rate (denoted as FNDR; it is the percentage of differentially expressed genes among unselected genes),false positive rate (denoted as FPR; it is the percentage of selected genes among nondifferentially expressed genes), and false negative rate (denoted as FNR; it is the percentage of un-selected genes among differentially expressed genes),</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1048,7 +1047,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <owl:Class rdf:about="&efo;swo/SWO_0000305">
         <rdfs:label rdf:datatype="&xsd;string">Nested Effects Models</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:definition rdf:datatype="&xsd;string">This includes exhaustive enumeration, triple-based inference,pairwise heuristic,  module based inference, greedy hillclimbing</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">This includes exhaustive enumeration, triple-based inference,pairwise heuristic,  module based inference, greedy hillclimbing</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1085,7 +1084,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <owl:Class rdf:about="&efo;swo/SWO_0000318">
         <rdfs:label rdf:datatype="&xsd;string">&#39;PLM&#39;</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:definition rdf:datatype="&xsd;string">it is where we fit a model with probe level and chip level parameters on a probeset by probeset basis</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">it is where we fit a model with probe level and chip level parameters on a probeset by probeset basis</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1113,7 +1112,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <owl:Class rdf:about="&efo;swo/SWO_0000323">
         <rdfs:label rdf:datatype="&xsd;string">Propagation of uncertainty in microarray analysis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:definition rdf:datatype="&xsd;string">Included are summarisation, differential expression detection, clustering and PCA methods, together with useful plotting and data manipulation functions</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Included are summarisation, differential expression detection, clustering and PCA methods, together with useful plotting and data manipulation functions</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1168,7 +1167,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <owl:Class rdf:about="&efo;swo/SWO_0000337">
         <rdfs:label rdf:datatype="&xsd;string">Recursive Feature Elimination (RFE)</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:definition rdf:datatype="&xsd;string">for the Support Vector Machine (SVM), as presented in [3] and the Nearest Shrunken Centroid (NSC)</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">for the Support Vector Machine (SVM), as presented in [3] and the Nearest Shrunken Centroid (NSC)</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1268,12 +1267,12 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</efo:
     <owl:Class rdf:about="&efo;swo/SWO_0000389">
         <rdfs:label rdf:datatype="&xsd;string">Semantic Similarity Measures</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:definition rdf:datatype="&xsd;string">Semantic Similarity Measures- Four methods proposed by Resnik[Philip, 1999], Jiang[Jiang and Conrath,
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Semantic Similarity Measures- Four methods proposed by Resnik[Philip, 1999], Jiang[Jiang and Conrath,
 1997], Lin[Lin, 1998] and Schlicker[Schlicker et al., 2006] respectively have
 presented to determine the semantic similarities of two GO terms based
 on the annotation statistics of their common ancestor terms. Wang [Wang
 et al., 2007] proposed a new method to measure the similarities based on
-the graph structure of GO.</efo:definition>
+the graph structure of GO.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1429,7 +1428,7 @@ the graph structure of GO.</efo:definition>
     <owl:Class rdf:about="&efo;swo/SWO_0000560">
         <rdfs:label rdf:datatype="&xsd;string">Global test</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:definition rdf:datatype="&xsd;string">global test allows the unit of analysis of the microarray experiment to be shifted from the single gene level to the pathway level, where a ‘pathway’ may be any set of genes, e.g. chosen using the Gene Ontology database or from earlier experiments.</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">global test allows the unit of analysis of the microarray experiment to be shifted from the single gene level to the pathway level, where a ‘pathway’ may be any set of genes, e.g. chosen using the Gene Ontology database or from earlier experiments.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1565,7 +1564,7 @@ the graph structure of GO.</efo:definition>
     <owl:Class rdf:about="&efo;swo/SWO_0000628">
         <rdfs:label rdf:datatype="&xsd;string">Multiple testing</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:definition rdf:datatype="&xsd;string">multiple testing which includes controlling the family-wise error rate (FWER), generalized family-wise error rate (gFWER), tail probability of the proportion of false positives (TPPFP), and false discovery rate (FDR). Tests based on a variety of t- and F-statistics (including t-statistics based on regression parameters from linear and survival models as well as those based on correlation parameters) are included.</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">multiple testing which includes controlling the family-wise error rate (FWER), generalized family-wise error rate (gFWER), tail probability of the proportion of false positives (TPPFP), and false discovery rate (FDR). Tests based on a variety of t- and F-statistics (including t-statistics based on regression parameters from linear and survival models as well as those based on correlation parameters) are included.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1656,7 +1655,7 @@ the graph structure of GO.</efo:definition>
     <owl:Class rdf:about="&efo;swo/SWO_0000713">
         <rdfs:label rdf:datatype="&xsd;string">Statistical tests</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <efo:definition rdf:datatype="&xsd;string">Paired t-test , Paired L-statistic and Paired Lw-statistic with their FDRs</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Paired t-test , Paired L-statistic and Paired Lw-statistic with their FDRs</obo:IAO_0000115>
     </owl:Class>
     
 
