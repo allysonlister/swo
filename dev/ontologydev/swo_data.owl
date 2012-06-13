@@ -9,6 +9,7 @@
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY elements "http://purl.org/dc/elements/1,1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
@@ -25,12 +26,13 @@
      xmlns:efo="&ebi;efo/"
      xmlns:data="&ebi;swo/data/&ebi;swo/data/"
      xmlns:ebi="http://www.ebi.ac.uk/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:elements="http://purl.org/dc/elements/1,1/">
     <owl:Ontology rdf:about="&ebi;swo/data/">
         <owl:versionInfo>0.2</owl:versionInfo>
     </owl:Ontology>
@@ -49,7 +51,6 @@
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="&dc;creator"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000117"/>
     <owl:AnnotationProperty rdf:about="&ebi;swo/alternative_term"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
@@ -130,7 +131,7 @@
         <rdfs:label>html</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000013"/>
-        <obo:IAO_0000117 rdf:datatype="&xsd;string">James Malone</obo:IAO_0000117>
+        <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">html, or HyperText Markup Language in full, is a data format specification is a markup language for web pages and is the publishing language of the World Wide Web.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.w3.org/TR/html401/</obo:IAO_0000119>
     </owl:Class>
