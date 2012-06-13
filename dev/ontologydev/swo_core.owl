@@ -20812,6 +20812,33 @@ tiple samples</obo:IAO_0000115>
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000052 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000052">
+        <rdfs:label xml:lang="en">Clustal Omega</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000053 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000053">
+        <rdfs:label xml:lang="en">ClustalW</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000054 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000054">
+        <rdfs:label xml:lang="en">ClustalX</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000051"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/swo/SWO_9000005 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000005">
