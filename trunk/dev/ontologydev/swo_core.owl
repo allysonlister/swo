@@ -20914,7 +20914,7 @@ tiple samples</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000058">
         <rdfs:label xml:lang="en">EBI Clustal W2 Web Tool</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000053"/>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000051"/>
         <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
     
@@ -20924,7 +20924,7 @@ tiple samples</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000059">
         <rdfs:label xml:lang="en">EBI Clustal Omega Web Tool</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000052"/>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000051"/>
         <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
     
@@ -20933,7 +20933,7 @@ tiple samples</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_0000060 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000060">
-        <rdfs:label xml:lang="en">Muscle</rdfs:label>
+        <rdfs:label xml:lang="en">MUSCLE</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -20942,6 +20942,24 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:creator>Allyson Lister</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000061 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000061">
+        <rdfs:label xml:lang="en">EBI Muscle Web Tool</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000062 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000062">
+        <rdfs:label xml:lang="en">MUSCLE 3.8.31</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000060"/>
     </owl:Class>
     
 
