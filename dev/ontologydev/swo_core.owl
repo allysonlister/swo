@@ -20915,6 +20915,7 @@ tiple samples</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000058">
         <rdfs:label xml:lang="en">EBI Clustal W2 Web Tool</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000053"/>
+        <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
     
 
@@ -20924,6 +20925,7 @@ tiple samples</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000059">
         <rdfs:label xml:lang="en">EBI Clustal Omega Web Tool</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000052"/>
+        <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
     
 
