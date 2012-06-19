@@ -21117,6 +21117,13 @@ tiple samples</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000064">
         <rdfs:label xml:lang="en">TCoffee</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&objective;SWO_7000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
     
 
@@ -21126,6 +21133,7 @@ tiple samples</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000065">
         <rdfs:label xml:lang="en">CRG TCoffee</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000064"/>
+        <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
     
 
@@ -21135,6 +21143,7 @@ tiple samples</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000066">
         <rdfs:label xml:lang="en">EBI TCoffee Web Tool</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000064"/>
+        <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
     
 
@@ -21144,6 +21153,7 @@ tiple samples</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000067">
         <rdfs:label xml:lang="en">CRG RCoffee Web Tool</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000064"/>
+        <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
     
 
@@ -21153,6 +21163,7 @@ tiple samples</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000068">
         <rdfs:label xml:lang="en">CRG TCoffee Web Tool</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000064"/>
+        <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
     
 
@@ -21162,6 +21173,7 @@ tiple samples</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000069">
         <rdfs:label xml:lang="en">CRG MCoffee Web Tool</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000064"/>
+        <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
     
 
@@ -21171,6 +21183,7 @@ tiple samples</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000070">
         <rdfs:label xml:lang="en">CRG Expresso Web Tool</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000064"/>
+        <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
     
 
@@ -21180,6 +21193,7 @@ tiple samples</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000071">
         <rdfs:label xml:lang="en">CRG 3DCoffee Web Tool</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000064"/>
+        <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
     
 
@@ -21189,6 +21203,7 @@ tiple samples</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000072">
         <rdfs:label xml:lang="en">CRG TCoffee 9.02.r1228</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000065"/>
+        <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
     
 
