@@ -21133,6 +21133,12 @@ tiple samples</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000065">
         <rdfs:label xml:lang="en">CRG TCoffee</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000064"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000043"/>
+                <owl:hasValue>http://dx.doi.org/10.1006/jmbi.2000.4042</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <dc:creator>Allyson Lister</dc:creator>
         <obo:IAO_0000115>TCoffee is a multiple sequence alignment program with a number of different modes. </obo:IAO_0000115>
     </owl:Class>
@@ -21144,6 +21150,12 @@ tiple samples</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000066">
         <rdfs:label xml:lang="en">EBI TCoffee Web Tool</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000064"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004001"/>
+                <owl:someValuesFrom rdf:resource="&interface;SWO_9000051"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
@@ -21160,8 +21172,8 @@ tiple samples</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>Performs an alignment of DNA, RNA or Proteins with the standard TCoffee mode. This Web tool provides both interactive access via a Web browser and programmatic SOAP Web service access. Currently only the Web service interface is modelled in OWL.</obo:IAO_0000115>
         <dc:creator>Allyson Lister</dc:creator>
-        <obo:IAO_0000115>Performs an alignment of DNA, RNA or Proteins with the standard TCoffee mode.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -21187,6 +21199,12 @@ tiple samples</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000043"/>
+                <owl:hasValue>http://dx.doi.org/10.1093/nar/gkn278</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000119>http://tcoffee.crg.cat/apps/tcoffee/index.html, Accessed 19 June 2012</obo:IAO_0000119>
         <obo:IAO_0000115>Aligns RNA sequences using predicted secondary structures by accessing the RCoffee mode of the underlying TCoffee software.</obo:IAO_0000115>
         <dc:creator>Allyson Lister</dc:creator>
@@ -21199,6 +21217,12 @@ tiple samples</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000068">
         <rdfs:label xml:lang="en">CRG TCoffee Web Tool</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000064"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000043"/>
+                <owl:hasValue>http://dx.doi.org/10.1093/nar/gkr245</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
@@ -21227,6 +21251,12 @@ tiple samples</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000069">
         <rdfs:label xml:lang="en">CRG MCoffee Web Tool</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000064"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000043"/>
+                <owl:hasValue>http://dx.doi.org/10.1093/nar/gkm333</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
@@ -21271,6 +21301,12 @@ tiple samples</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000043"/>
+                <owl:hasValue>http://dx.doi.org/10.1093/nar/gkl092</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <dc:creator>Allyson Lister</dc:creator>
         <obo:IAO_0000119>http://tcoffee.crg.cat/apps/tcoffee/index.html, Accessed 19 June 2012</obo:IAO_0000119>
         <obo:IAO_0000115>Aligns protein sequences using structural information by accessing the 3DCoffee/Expresso mode of the underlying TCoffee software.</obo:IAO_0000115>
@@ -21283,6 +21319,12 @@ tiple samples</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000071">
         <rdfs:label xml:lang="en">CRG PSICoffee Web Tool</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000064"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000043"/>
+                <owl:hasValue>http://dx.doi.org/10.1093/nar/gkr245</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
