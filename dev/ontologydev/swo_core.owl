@@ -21481,7 +21481,7 @@ tiple samples</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_0000076 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000076">
-        <rdfs:label xml:lang="en">SPSS</rdfs:label>
+        <rdfs:label xml:lang="en">SPSS 20.0</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000075"/>
         <rdfs:subClassOf>
             <owl:Restriction>
