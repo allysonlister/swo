@@ -343,7 +343,7 @@ are made on behalf of the organization by the organization members.</obo:IAO_000
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000073">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
-        <rdfs:label rdf:datatype="&xsd;string">Bioconducter</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Bioconductor</rdfs:label>
     </owl:NamedIndividual>
     
 
