@@ -354,15 +354,6 @@
     
 
 
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000379 -->
-
-    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000379">
-        <rdfs:label rdf:datatype="&xsd;string">SBML file</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000381 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000381">
@@ -1116,6 +1107,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000037 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000037">
+        <rdfs:label rdf:datatype="&xsd;string">SBML file</rdfs:label>
         <rdfs:label>SBML</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
         <obo:IAO_0000118>Systems Biology Markup Language</obo:IAO_0000118>
