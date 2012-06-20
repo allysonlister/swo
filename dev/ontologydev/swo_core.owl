@@ -21585,6 +21585,12 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&OntoDM;OntoDM_953101"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000043"/>
+                <owl:hasValue>http://dx.doi.org/10.1101/gr.1239303</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Cytoscape is an open source bioinformatics software platform for visualizing molecular interaction networks and biological pathways and integrating these networks with annotations, gene expression profiles and other state data.</obo:IAO_0000115>
         <dc:creator>Allyson Lister</dc:creator>
         <obo:IAO_0000119>http://www.cytoscape.org/what_is_cytoscape.html, Accessed June 20, 2012.</obo:IAO_0000119>
@@ -21597,6 +21603,12 @@ tiple samples</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000080">
         <rdfs:label xml:lang="en">Cytoscape 2.8</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000079"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000046"/>
+                <owl:hasValue>http://www.cytoscape.org/download.html</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
