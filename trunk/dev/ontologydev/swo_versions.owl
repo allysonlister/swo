@@ -85,6 +85,8 @@
     <owl:ObjectProperty rdf:about="&ro;precedes">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label rdf:datatype="&xsd;string">followed by</rdfs:label>
+        <rdfs:range rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:domain rdf:resource="&obo;IAO_0000129"/>
     </owl:ObjectProperty>
     
 
