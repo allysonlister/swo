@@ -348,7 +348,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000378 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000378">
-        <rdfs:label rdf:datatype="&xsd;string">SBMLR file</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">SBMLR format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
@@ -357,7 +357,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000379 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000379">
-        <rdfs:label rdf:datatype="&xsd;string">SBML file</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">SBML format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
