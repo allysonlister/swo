@@ -409,6 +409,16 @@
         <rdfs:label xml:lang="en">Clustal Omega version 1.1</rdfs:label>
         <dc:creator>Allyson Lister</dc:creator>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000031 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000031">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">MUSCLE version 3.8.31</rdfs:label>
+        <dc:creator>Allyson Lister</dc:creator>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
