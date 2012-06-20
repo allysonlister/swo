@@ -379,6 +379,36 @@
         <rdfs:label xml:lang="en">BLAST+ version 2.2.26</rdfs:label>
         <dc:creator>Allyson Lister</dc:creator>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000028 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000028">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">ClustalW version 2.1</rdfs:label>
+        <dc:creator>Allyson Lister</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000029 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000029">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">ClustalX version 2.1</rdfs:label>
+        <dc:creator>Allyson Lister</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000030 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000030">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">Clustal Omega version 1.1</rdfs:label>
+        <dc:creator>Allyson Lister</dc:creator>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
