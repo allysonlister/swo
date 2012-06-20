@@ -1239,6 +1239,17 @@
         <obo:IAO_0000119>http://wiki.cytoscape.org/GettingStarted, accessed 20 June 2012</obo:IAO_0000119>
         <obo:IAO_0000115>XGMML stands for eXtensible Graph Markup and Modelling Language, and it is a XML standard; similar to but preferred over GML.</obo:IAO_0000115>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000052 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000052">
+        <rdfs:label xml:lang="en">Interaction data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <dc:creator>Allyson Lister</dc:creator>
+        <obo:IAO_0000115>A type of data which defines interactions between items in the file. This can be simple pairwise interactions or more complex ones. Used to provide a class of data for software requiring specific types of interaction data as input.</obo:IAO_0000115>
+    </owl:Class>
 </rdf:RDF>
 
 
