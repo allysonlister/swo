@@ -1192,6 +1192,53 @@
         <rdfs:label>Tab delimited file format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000048 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000048">
+        <rdfs:label xml:lang="en">PSI-MI format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <obo:IAO_0000119>Modified from http://wiki.cytoscape.org/GettingStarted, accessed 20 June 2012.</obo:IAO_0000119>
+        <obo:IAO_0000115>The PSI-MI format is an acronym for the Proteomics Standards Initiative - Molecular Interaction format. It provides an XML standard for molecular interactions and is supported by many molecular interaction databases and tools.</obo:IAO_0000115>
+        <dc:creator>Allyson Lister</dc:creator>
+        <obo:IAO_0000118>PSI-MIF</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000049 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000049">
+        <rdfs:label xml:lang="en">SIF</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <obo:IAO_0000119>http://wiki.cytoscape.org/GettingStarted and http://wiki.cytoscape.org/Cytoscape_User_Manual/Network_Formats, accessed 20 June 2012</obo:IAO_0000119>
+        <dc:creator>Allyson Lister</dc:creator>
+        <obo:IAO_0000115>SIF stands for Simple Interaction Format, and is a text format invented for Cytoscape. If the file contains any tab characters, then tabs are used to delimit the fields and spaces are considered part of the name. If the file contains no tabs, then any spaces are delimiters that separate names (and names cannot contain spaces). </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000050 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000050">
+        <rdfs:label xml:lang="en">GML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <obo:IAO_0000115>GML stands for Graph Markup Language, and is a standard network file format; supported by multiple generic network software packages </obo:IAO_0000115>
+        <obo:IAO_0000119>http://wiki.cytoscape.org/GettingStarted, accessed 20 June 2012</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000051 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000051">
+        <rdfs:label xml:lang="en">XGMML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <obo:IAO_0000119>http://wiki.cytoscape.org/GettingStarted, accessed 20 June 2012</obo:IAO_0000119>
+        <obo:IAO_0000115>XGMML stands for eXtensible Graph Markup and Modelling Language, and it is a XML standard; similar to but preferred over GML.</obo:IAO_0000115>
+    </owl:Class>
 </rdf:RDF>
 
 
