@@ -21585,7 +21585,9 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&OntoDM;OntoDM_953101"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>Cytoscape is an open source bioinformatics software platform for visualizing molecular interaction networks and biological pathways and integrating these networks with annotations, gene expression profiles and other state data.</obo:IAO_0000115>
         <dc:creator>Allyson Lister</dc:creator>
+        <obo:IAO_0000119>http://www.cytoscape.org/what_is_cytoscape.html, Accessed June 20, 2012.</obo:IAO_0000119>
     </owl:Class>
     
 
