@@ -1109,7 +1109,7 @@
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000037">
         <rdfs:label rdf:datatype="&xsd;string">SBML file</rdfs:label>
         <rdfs:label>SBML</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
         <obo:IAO_0000118>Systems Biology Markup Language</obo:IAO_0000118>
         <obo:IAO_0000115>Systems Biology Markup Language (SBML) is a machine-readable format for representing models. It&#39;s oriented towards describing systems where biological entities are involved in, and modified by, processes that occur over time.</obo:IAO_0000115>
         <obo:IAO_0000119>http://sbml.org</obo:IAO_0000119>
