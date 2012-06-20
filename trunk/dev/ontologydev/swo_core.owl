@@ -257,7 +257,12 @@
     <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0000081">
         <rdfs:label xml:lang="en">is version of</rdfs:label>
         <dc:creator>Allyson Lister</dc:creator>
+        <rdfs:range rdf:resource="&obo;IAO_0000025"/>
+        <rdfs:range rdf:resource="&obo;IAO_0000064"/>
+        <rdfs:range rdf:resource="&obo;IAO_0000098"/>
         <rdfs:domain rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:range rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:range rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
     </owl:ObjectProperty>
     
 
@@ -267,7 +272,12 @@
     <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0004000">
         <rdfs:label>has version</rdfs:label>
         <obo:IAO_0000115>relationship between an entity and a version name or number</obo:IAO_0000115>
+        <rdfs:domain rdf:resource="&obo;IAO_0000025"/>
+        <rdfs:domain rdf:resource="&obo;IAO_0000064"/>
+        <rdfs:domain rdf:resource="&obo;IAO_0000098"/>
         <rdfs:range rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:domain rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:domain rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
         <owl:inverseOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000081"/>
     </owl:ObjectProperty>
     
