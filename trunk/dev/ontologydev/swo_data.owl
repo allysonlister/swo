@@ -12,6 +12,7 @@
     <!ENTITY elements "http://purl.org/dc/elements/1,1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY Snap "http://www.ifomis.org/bfo/1.1/Snap#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY data "http://www.ebi.ac.uk/swo/data/http://www.ebi.ac.uk/swo/data/" >
@@ -22,6 +23,7 @@
      xml:base="&ebi;swo/data/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:swo2="&ebi;efo/swo/"
+     xmlns:Snap="http://www.ifomis.org/bfo/1.1/Snap#"
      xmlns:swo="&ebi;swo/"
      xmlns:efo="&ebi;efo/"
      xmlns:data="&ebi;swo/data/&ebi;swo/data/"
@@ -65,6 +67,36 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000316 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000316">
+        <rdfs:label>has_role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000054 -->
+
+    <owl:ObjectProperty rdf:about="&ebi;swo/data/SWO_3000054">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">is alternative format of</rdfs:label>
+        <rdfs:domain rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:range rdf:resource="&obo;IAO_0000098"/>
+    </owl:ObjectProperty>
     
 
 
@@ -1249,6 +1281,59 @@
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <dc:creator>Allyson Lister</dc:creator>
         <obo:IAO_0000115>A type of data which defines interactions between items in the file. This can be simple pairwise interactions or more complex ones. Used to provide a class of data for software requiring specific types of interaction data as input.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000053 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000053">
+        <rdfs:label xml:lang="en">Knowledge representation role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Snap;Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000055 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000055">
+        <rdfs:label xml:lang="en">BioPAX RDF/XML format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000056 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000056">
+        <rdfs:label xml:lang="en">BioPAX Manchester OWL Syntax format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/data/SWO_3000054"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000055"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/Snap#Role -->
+
+    <owl:Class rdf:about="&Snap;Role">
+        <rdfs:label>role</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
