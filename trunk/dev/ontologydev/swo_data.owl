@@ -13,6 +13,7 @@
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
     <!ENTITY Snap "http://www.ifomis.org/bfo/1.1/Snap#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY data "http://www.ebi.ac.uk/swo/data/http://www.ebi.ac.uk/swo/data/" >
@@ -26,13 +27,14 @@
      xmlns:Snap="http://www.ifomis.org/bfo/1.1/Snap#"
      xmlns:swo="&ebi;swo/"
      xmlns:efo="&ebi;efo/"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
      xmlns:data="&ebi;swo/data/&ebi;swo/data/"
      xmlns:ebi="http://www.ebi.ac.uk/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:elements="http://purl.org/dc/elements/1,1/">
     <owl:Ontology rdf:about="&ebi;swo/data/">
@@ -1289,7 +1291,7 @@
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000053">
         <rdfs:label xml:lang="en">Knowledge representation role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&Snap;Role"/>
+        <rdfs:subClassOf rdf:resource="&snap;Role"/>
     </owl:Class>
     
 
@@ -1316,23 +1318,23 @@
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
+                <owl:onProperty rdf:resource="&ebi;swo/data/SWO_3000054"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000055"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/data/SWO_3000054"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000055"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.ifomis.org/bfo/1.1/Snap#Role -->
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
 
-    <owl:Class rdf:about="&Snap;Role">
+    <owl:Class rdf:about="&snap;Role">
         <rdfs:label>role</rdfs:label>
     </owl:Class>
 </rdf:RDF>
