@@ -115,6 +115,15 @@
     
 
 
+    <!-- http://edamontology.org/format_1478 -->
+
+    <owl:Class rdf:about="&edamontology;format_1478">
+        <rdfs:label>PDBML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+    </owl:Class>
+    
+
+
     <!-- http://edamontology.org/format_2331 -->
 
     <owl:Class rdf:about="&edamontology;format_2331">
@@ -150,15 +159,6 @@
         <rdfs:label xml:lang="en">data format specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <obo:IAO_0000115>The syntax by which data is specified which renders it valid for a given format.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/EDAM/EDAM:0001478 -->
-
-    <owl:Class rdf:about="&ebi;EDAM/EDAM:0001478">
-        <rdfs:label>pdbml</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
     </owl:Class>
     
 
