@@ -162,8 +162,7 @@
     <!-- http://www.ebi.ac.uk/EDAM/EDAM:0002331 -->
 
     <owl:Class rdf:about="&ebi;EDAM/EDAM:0002331">
-        <rdfs:label rdf:datatype="&xsd;string">html</rdfs:label>
-        <rdfs:label>html</rdfs:label>
+        <rdfs:label>HTML</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000013"/>
         <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">html, or HyperText Markup Language in full, is a data format specification is a markup language for web pages and is the publishing language of the World Wide Web.</obo:IAO_0000115>
