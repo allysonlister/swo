@@ -3,6 +3,7 @@
 
 <!DOCTYPE rdf:RDF [
     <!ENTITY ebi "http://www.ebi.ac.uk/" >
+    <!ENTITY edamontology "http://edamontology.org/" >
     <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
     <!ENTITY efo "http://www.ebi.ac.uk/efo/" >
     <!ENTITY swo2 "http://www.ebi.ac.uk/efo/swo/" >
@@ -23,6 +24,7 @@
 <rdf:RDF xmlns="&ebi;swo/data/"
      xml:base="&ebi;swo/data/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:edamontology="http://edamontology.org/"
      xmlns:swo2="&ebi;efo/swo/"
      xmlns:Snap="http://www.ifomis.org/bfo/1.1/Snap#"
      xmlns:swo="&ebi;swo/"
@@ -113,6 +115,18 @@
     
 
 
+    <!-- http://edamontology.org/format_2331 -->
+
+    <owl:Class rdf:about="&edamontology;format_2331">
+        <rdfs:label>HTML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000013"/>
+        <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">html, or HyperText Markup Language in full, is a data format specification is a markup language for web pages and is the publishing language of the World Wide Web.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.w3.org/TR/html401/</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
     <owl:Class rdf:about="&obo;IAO_0000027">
@@ -155,18 +169,6 @@
         <rdfs:label>Taverna workflow format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
         <obo:IAO_0000115>Format of Taverna workflows.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/EDAM/EDAM:0002331 -->
-
-    <owl:Class rdf:about="&ebi;EDAM/EDAM:0002331">
-        <rdfs:label>HTML</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000013"/>
-        <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">html, or HyperText Markup Language in full, is a data format specification is a markup language for web pages and is the publishing language of the World Wide Web.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.w3.org/TR/html401/</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1317,14 +1319,14 @@
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/data/SWO_3000054"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000055"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
+                <owl:onProperty rdf:resource="&ebi;swo/data/SWO_3000054"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000055"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
