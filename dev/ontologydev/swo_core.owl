@@ -23152,8 +23152,8 @@ tiple samples</obo:IAO_0000115>
         <rdfs:label>obsolete_html</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
         <dc:contributor>Marked as obsolete by Allyson Lister.</dc:contributor>
-        <efo:reason_for_obsolescence>There is one EDAM html class (EDAM:0002331) and one SWO class (SWO_0000399) within swo_data.owl. EDAM:0002331 was retained and SWO_0000399 deemed obsolete, as EDAM:0002331 has a better location in the hierarchy and is an imported term. All axioms belonging to SWO_0000399 were transferred to EDAM:0002331. Please use EDAM:0002331 instead.</efo:reason_for_obsolescence>
         <efo:obsoleted_in_version>0.3</efo:obsoleted_in_version>
+        <efo:reason_for_obsolescence>There is one EDAM html class (EDAM_format:2331) and one SWO class (SWO_0000399) within swo_data.owl. EDAM_format:2331 was retained and SWO_0000399 deemed obsolete, as EDAM_format:2331 has a better location in the hierarchy and is an imported term. All axioms belonging to SWO_0000399 were transferred to EDAM_format:2331. Please use EDAM_format:2331 (in this ontology via its full URI http://edamontology.org/format_2331) instead.</efo:reason_for_obsolescence>
     </owl:Class>
     
 
