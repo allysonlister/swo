@@ -15,8 +15,8 @@ http://theswo.sourceforge.net
 
 RELEASE NOTES
 
-VERSION: 0.2
-DATE: 30th June 2011
+VERSION: 0.4
+DATE: 18th July 2012
 --------------------------------
 
 

@@ -6,6 +6,7 @@
     <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
     <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#" >
@@ -16,6 +17,7 @@
 
 <rdf:RDF xmlns="&ebi;swo/version/"
      xml:base="&ebi;swo/version/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
@@ -39,7 +41,9 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
     
 
@@ -71,6 +75,8 @@
     <owl:ObjectProperty rdf:about="&ro;preceded_by">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label rdf:datatype="&xsd;string">preceded by</rdfs:label>
+        <rdfs:domain rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:range rdf:resource="&obo;IAO_0000129"/>
         <owl:inverseOf rdf:resource="&ro;precedes"/>
     </owl:ObjectProperty>
     
@@ -81,6 +87,8 @@
     <owl:ObjectProperty rdf:about="&ro;precedes">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label rdf:datatype="&xsd;string">followed by</rdfs:label>
+        <rdfs:range rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:domain rdf:resource="&obo;IAO_0000129"/>
     </owl:ObjectProperty>
     
 
@@ -289,9 +297,140 @@
         <rdf:type rdf:resource="&obo;IAO_0000129"/>
         <rdfs:label>3.5.1</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000018 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000018">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>10.1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000019 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000019">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000020 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000020">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>3.0.1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000021 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000021">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>1.6.9</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000022 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000022">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>6.02</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000023 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000023">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>Helios Service Release 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000024 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000024">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>6.3.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000025 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000025">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>2.0.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000027 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000027">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">BLAST+ version 2.2.26</rdfs:label>
+        <dc:creator>Allyson Lister</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000028 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000028">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">ClustalW version 2.1</rdfs:label>
+        <dc:creator>Allyson Lister</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000029 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000029">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">ClustalX version 2.1</rdfs:label>
+        <dc:creator>Allyson Lister</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000030 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000030">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">Clustal Omega version 1.1</rdfs:label>
+        <dc:creator>Allyson Lister</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000031 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000031">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">MUSCLE version 3.8.31</rdfs:label>
+        <dc:creator>Allyson Lister</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000032 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000032">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">CRG TCoffee version 9.02.r1228</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.2.3.1799) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
 
