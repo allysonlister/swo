@@ -1,0 +1,589 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY edamontology "http://edamontology.org/" >
+    <!ENTITY efo "http://www.ebi.ac.uk/efo/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://edamontology.org#"
+     xml:base="http://edamontology.org"
+     xmlns:edamontology="http://edamontology.org/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://edamontology.org">
+        <data-version rdf:datatype="&xsd;string">1.1</data-version>
+        <format-version rdf:datatype="&xsd;string">1.2</format-version>
+        <date rdf:datatype="&xsd;string">13:01:2012 18:00</date>
+        <next_id rdf:datatype="&xsd;string">3237</next_id>
+        <default-relationship-id-prefix rdf:datatype="&xsd;string">EDAM</default-relationship-id-prefix>
+        <remark rdf:datatype="&xsd;string">EDAM (EMBRACE Data And Methods) is an ontology of bioinformatics operations (tool, application, or workflow functions), types of data, topics (application domains), and data formats. The applications of EDAM are within organising tools and data, finding suitable tools in catalogues, and integrating them into complex applications or workflows. Semantic annotations with EDAM are applicable to diverse entities such as for example Web services, databases, programmatic libraries, standalone tools and toolkits, interactive applications, data schemas, data sets, or publications within bioinformatics. Annotation with EDAM may also contribute to data provenance, and EDAM terms and synonyms can be used in text mining. EDAM - and in particular the EDAM Data sub-ontology - serves also as a markup vocabulary for bioinformatics data on the Semantic Web.</remark>
+        <remark rdf:datatype="&xsd;string">EDAM editors: Jon Ison and Matus Kalas. Co-authors: Inge Jonassen, Hamish McWilliam, James Malone, Rodrigo Lopez, Helen Parkinson, Steve Pettifer, and Peter Rice. Funding: No funding targetted exclusively the development of EDAM; contibutions from these projects: EMBRACE (FP6, EU), EMBOSS (BBSRC, UK), eSysbio and FUGE Bioinformatics Platform (both Research Council of Norway). See http://edamontology.org for documentation and licence.</remark>
+        <idspace rdf:datatype="&xsd;string">EDAM http://edamontology.org/ &quot;EDAM Relations and Concept Attributes&quot;</idspace>
+        <idspace rdf:datatype="&xsd;string">EDAM_data http://edamontology.org/data_ &quot;EDAM Types of Data&quot;</idspace>
+        <idspace rdf:datatype="&xsd;string">EDAM_format http://edamontology.org/format_ &quot;EDAM Data Formats&quot;</idspace>
+        <idspace rdf:datatype="&xsd;string">EDAM_operation http://edamontology.org/operation_ &quot;EDAM Operations&quot;</idspace>
+        <idspace rdf:datatype="&xsd;string">EDAM_topic http://edamontology.org/topic_ &quot;EDAM Topics&quot;</idspace>
+        <saved-by rdf:datatype="&xsd;string">Jon Ison</saved-by>
+        <subsetdef rdf:datatype="&xsd;string">bioinformatics &quot;Bioinformatics&quot;</subsetdef>
+        <subsetdef rdf:datatype="&xsd;string">concept_attributes &quot;EDAM concept attributes&quot;</subsetdef>
+        <subsetdef rdf:datatype="&xsd;string">data &quot;EDAM types of data&quot;</subsetdef>
+        <subsetdef rdf:datatype="&xsd;string">edam &quot;EDAM&quot;</subsetdef>
+        <subsetdef rdf:datatype="&xsd;string">formats &quot;EDAM data formats&quot;</subsetdef>
+        <subsetdef rdf:datatype="&xsd;string">identifiers &quot;EDAM types of identifiers&quot;</subsetdef>
+        <subsetdef rdf:datatype="&xsd;string">operations &quot;EDAM operations&quot;</subsetdef>
+        <subsetdef rdf:datatype="&xsd;string">relations &quot;EDAM relations&quot;</subsetdef>
+        <subsetdef rdf:datatype="&xsd;string">topics &quot;EDAM topics&quot;</subsetdef>
+        <owl:imports rdf:resource="&edamontology;data"/>
+        <owl:imports rdf:resource="&edamontology;obsoletes"/>
+        <owl:imports rdf:resource="&edamontology;operations"/>
+        <owl:imports rdf:resource="&edamontology;topics"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&edamontology;is_obsolete"/>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#subset"/>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#created_in"/>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#replaced_by"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;comment"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;subset"/>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#obsolete_since"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;range"/>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#is_obsolete"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;domain"/>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#xref"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;is_symmetric"/>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#domain"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;alt_id"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;obsolete_since">
+        <rdfs:label rdf:datatype="&xsd;string">Obsolete since</rdfs:label>
+        <def>&quot;Version in which a term was made obsolete.&quot; [http://edamontology.org]</def>
+        <subset>concept_attributes</subset>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+        <is_metadata_tag>true</is_metadata_tag>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&edamontology;replaced_by"/>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#namespace"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;transitive_over"/>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#range"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;example">
+        <rdfs:label rdf:datatype="&xsd;string">Example</rdfs:label>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+        <is_metadata_tag>true</is_metadata_tag>
+        <def>&quot;&#39;Example&#39; concept attribute (&#39;example&#39; metadat tag) lists examples of valid values of types of identifiers (accessions). Applicable to some other types of data, too.&quot; [http://edamontology.org]</def>
+        <subset>concept_attributes</subset>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#example"/>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#obsolete_alt_id"/>
+    <owl:AnnotationProperty rdf:about="&owl;is_reflexive"/>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#transitive_over"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;regex">
+        <rdfs:label rdf:datatype="&xsd;string">Regular expression</rdfs:label>
+        <is_metadata_tag>true</is_metadata_tag>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+        <def>&quot;&#39;Regular expression&#39; concept attribute (&#39;regex&#39; metadata tag) specifies the allowed values of types of identifiers (accessions). Applicable to some other types of data, too.&quot; [http://edamontology.org]</def>
+        <subset>concept_attributes</subset>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#editor_note"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;editor_note"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;is_metadata_tag"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;obsolete_alt_id"/>
+    <owl:AnnotationProperty rdf:about="&efo;definition_editor"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;consider"/>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#regex"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;documentation">
+        <rdfs:label rdf:datatype="&xsd;string">Documentation</rdfs:label>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+        <def>&quot;&#39;Documentation&#39; trailing modifier (qualifier, &#39;documentation&#39;) of &#39;xref&#39; links of &#39;Format&#39; concepts. When &#39;true&#39;, the link is pointing to a page with explanation, description, documentation, or specification of the given data format.&quot; [http://edamontology.org]</def>
+        <is_metadata_tag>true</is_metadata_tag>
+        <edamontology:synonym>Specification</edamontology:synonym>
+        <subset>concept_attributes</subset>
+        <synonym>Specification</synonym>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#def"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;def"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;synonym"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;namespace"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;is_reflexive"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;inverse_of"/>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#synonym"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;is_cyclic"/>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#consider"/>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#is_anti_symmetric"/>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#documentation"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;created_in">
+        <rdfs:label rdf:datatype="&xsd;string">Created in</rdfs:label>
+        <subset>concept_attributes</subset>
+        <def>&quot;Version in which a term was created.&quot; [http://edamontology.org]</def>
+        <is_metadata_tag>true</is_metadata_tag>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#inverse_of"/>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#is_cyclic"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;xref"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;synonymtype"/>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#comment"/>
+    <owl:AnnotationProperty rdf:about="&owl;is_symmetric"/>
+    <owl:AnnotationProperty rdf:about="&edamontology;is_anti_symmetric"/>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org#is_metadata_tag"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edamontology.org/created_in -->
+
+    <owl:ObjectProperty rdf:about="&edamontology;created_in">
+        <rdfs:label rdf:datatype="&xsd;string">Created in</rdfs:label>
+        <subset>concept_attributes</subset>
+        <def>&quot;Version in which a term was created.&quot; [http://edamontology.org]</def>
+        <is_metadata_tag>true</is_metadata_tag>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edamontology.org/definition_editor -->
+
+    <owl:ObjectProperty rdf:about="&edamontology;definition_editor">
+        <rdfs:label rdf:datatype="&xsd;string">Definition editor</rdfs:label>
+        <subset>concept_attributes</subset>
+        <is_metadata_tag>true</is_metadata_tag>
+        <def>&quot;Editor of the term definition.&quot; [http://edamontology.org]</def>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edamontology.org/documentation -->
+
+    <owl:ObjectProperty rdf:about="&edamontology;documentation">
+        <rdfs:label rdf:datatype="&xsd;string">Documentation</rdfs:label>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+        <def>&quot;&#39;Documentation&#39; trailing modifier (qualifier, &#39;documentation&#39;) of &#39;xref&#39; links of &#39;Format&#39; concepts. When &#39;true&#39;, the link is pointing to a page with explanation, description, documentation, or specification of the given data format.&quot; [http://edamontology.org]</def>
+        <is_metadata_tag>true</is_metadata_tag>
+        <edamontology:synonym>Specification</edamontology:synonym>
+        <subset>concept_attributes</subset>
+        <synonym>Specification</synonym>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edamontology.org/example -->
+
+    <owl:ObjectProperty rdf:about="&edamontology;example">
+        <rdfs:label rdf:datatype="&xsd;string">Example</rdfs:label>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+        <is_metadata_tag>true</is_metadata_tag>
+        <def>&quot;&#39;Example&#39; concept attribute (&#39;example&#39; metadat tag) lists examples of valid values of types of identifiers (accessions). Applicable to some other types of data, too.&quot; [http://edamontology.org]</def>
+        <subset>concept_attributes</subset>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edamontology.org/has_format -->
+
+    <owl:ObjectProperty rdf:about="&edamontology;has_format">
+        <rdfs:label rdf:datatype="&xsd;string">has format</rdfs:label>
+        <owl:is_reflexive rdf:datatype="&xsd;boolean">false</owl:is_reflexive>
+        <owl:is_symmetric rdf:datatype="&xsd;boolean">false</owl:is_symmetric>
+        <edamontology:synonym>has_quality</edamontology:synonym>
+        <range>format:1915</range>
+        <domain>data:0006</domain>
+        <edamontology:synonym>has-quality</edamontology:synonym>
+        <inverse_of>EDAM:is_format_of</inverse_of>
+        <synonym>has-quality</synonym>
+        <is_cyclic>false</is_cyclic>
+        <def>&quot;&#39;A has_format B&#39; defines for the subject A, that it has the object B as its data format.&quot; [http://edamontology.org]</def>
+        <editor_note>In EDAM, &#39;has_format&#39; is not explicitly defined between EDAM concepts, only the inverse &#39;is_format_of&#39;. &#39;OBI:has_quality&#39; might be seen narrower in the sense that it only relates subjects that are an &#39;independent_continuant&#39; (snap:IndependentContinuant) with objects that are a &#39;quality&#39; (snap:Quality), and is broader in the sense that it relates with any qualities of the subject.</editor_note>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+        <transitive_over>OBO_REL:is_a</transitive_over>
+        <is_anti_symmetric>false</is_anti_symmetric>
+        <comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is (or is in a role of) &#39;Data&#39;, or an input, output, input or output argument of an &#39;Operation&#39;. Object B can either be a concept that is a &#39;Format&#39;, or in unexpected cases an entity outside of an ontology that is a &#39;Format&#39; or is in the role of a &#39;Format&#39;.</comment>
+        <synonym>has_quality</synonym>
+        <subset>relations</subset>
+        <owl:inverseOf rdf:resource="&edamontology;is_format_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edamontology.org/has_function -->
+
+    <owl:ObjectProperty rdf:about="&edamontology;has_function">
+        <rdfs:label rdf:datatype="&xsd;string">has function</rdfs:label>
+        <owl:is_symmetric rdf:datatype="&xsd;boolean">false</owl:is_symmetric>
+        <owl:is_reflexive rdf:datatype="&xsd;boolean">false</owl:is_reflexive>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+        <subset>relations</subset>
+        <def>&quot;&#39;A has_function B&#39; defines for the subject A, that it has the object B as its function.&quot; [http://edamontology.org]</def>
+        <comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is (or is in a role of) a function, or an entity outside of an ontology that is (or is in a role of) a function specification.</comment>
+        <is_anti_symmetric>false</is_anti_symmetric>
+        <synonym>has-quality</synonym>
+        <range>operation:0004</range>
+        <synonym>bearer_of</synonym>
+        <edamontology:synonym>has_function</edamontology:synonym>
+        <edamontology:synonym>bearer_of</edamontology:synonym>
+        <inverse_of>is_function_of</inverse_of>
+        <is_cyclic>true</is_cyclic>
+        <editor_note>In the scope of EDAM, &#39;has_function&#39; serves only for relating annotated entities outside of EDAM with &#39;Operation&#39; concepts. &#39;OBI:has_function&#39; only relates subjects that are an &#39;independent_continuant&#39; (snap:IndependentContinuant), so for example no processes, with objects that are a &#39;function&#39; (snap:Function). It does not define explicitly that the object is a function of the subject. Is defined anywhere? Not in the &#39;unknown&#39; version of RO. &#39;OBO_REL:bearer_of&#39; is narrower in the sense that it only relates ontological categories (concepts) that are an &#39;independent_continuant&#39; (snap:IndependentContinuant) with ontological categories that are a &#39;specifically_dependent_continuant&#39; (snap:SpecificallyDependentContinuant), and broader in the sense that it relates with any borne objects not just functions of the subject. is_cyclic in very unusual cases only.</editor_note>
+        <synonym>has_function</synonym>
+        <edamontology:synonym>has-quality</edamontology:synonym>
+        <synonym>has function</synonym>
+        <transitive_over>OBO_REL:is_a</transitive_over>
+        <edamontology:synonym>has function</edamontology:synonym>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edamontology.org/has_identifier -->
+
+    <owl:ObjectProperty rdf:about="&edamontology;has_identifier">
+        <rdfs:label rdf:datatype="&xsd;string">has identifier</rdfs:label>
+        <owl:is_symmetric rdf:datatype="&xsd;boolean">false</owl:is_symmetric>
+        <owl:is_reflexive rdf:datatype="&xsd;boolean">false</owl:is_reflexive>
+        <editor_note>In EDAM, &#39;has_identifier&#39; is not explicitly defined between EDAM concepts, only the inverse &#39;is_identifier_of&#39;.</editor_note>
+        <is_cyclic>false</is_cyclic>
+        <comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is an &#39;Identifier&#39;, or an entity outside of an ontology that is an &#39;Identifier&#39; or is in the role of an &#39;Identifier&#39;.</comment>
+        <def>&quot;&#39;A has_identifier B&#39; defines for the subject A, that it has the object B as its identifier.&quot; [http://edamontology.org]</def>
+        <is_anti_symmetric>false</is_anti_symmetric>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+        <range>data:0842</range>
+        <subset>relations</subset>
+        <domain>data:0006</domain>
+        <transitive_over>OBO_REL:is_a</transitive_over>
+        <inverse_of>EDAM:is_identifier_of</inverse_of>
+        <owl:inverseOf rdf:resource="&edamontology;is_identifier_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edamontology.org/has_input -->
+
+    <owl:ObjectProperty rdf:about="&edamontology;has_input">
+        <rdfs:label rdf:datatype="&xsd;string">has input</rdfs:label>
+        <owl:is_reflexive rdf:datatype="&xsd;boolean">false</owl:is_reflexive>
+        <owl:is_symmetric rdf:datatype="&xsd;boolean">false</owl:is_symmetric>
+        <transitive_over>OBO_REL:is_a</transitive_over>
+        <edamontology:synonym>has_specified_input</edamontology:synonym>
+        <is_cyclic>true</is_cyclic>
+        <domain>operation:0004</domain>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+        <synonym>has_specified_input</synonym>
+        <range>data:0006</range>
+        <edamontology:synonym>has_participant</edamontology:synonym>
+        <synonym>has input</synonym>
+        <editor_note>In EDAM, only &#39;has_input&#39; is explicitly defined between EDAM concepts (&#39;Operation&#39; &#39;has_input&#39; &#39;Data&#39;). The inverse, &#39;is_input_of&#39;, is not explicitly defined. &#39;OBI:has_specified_input&#39; only relates subjects that are a &#39;planned process&#39; (http://purl.obolibrary.org/obo/OBI_0000011) with objects that are a &#39;continuant&#39; (snap:Continuant). &quot;&#39;OBO_REL:has_participant&#39; is narrower in the sense that it only relates ontological categories (concepts) that are a &#39;process&#39; (span:Process) with ontological categories that are a &#39;continuant&#39; (snap:Continuant), and broader in the sense that it relates with any participating objects not just inputs or input arguments of the subject. In very unusual cases.</editor_note>
+        <synonym>has_participant</synonym>
+        <def>&quot;&#39;A EDAM:has_input B&#39; defines for the subject A, that it has the object B as a necessary or actual input or input argument.&quot; [http://edamontology.org]</def>
+        <edamontology:synonym>has input</edamontology:synonym>
+        <subset>relations</subset>
+        <is_anti_symmetric>false</is_anti_symmetric>
+        <inverse_of>is_input_of</inverse_of>
+        <comment>Subject A can either be concept that is or has an &#39;Operation&#39; function, or an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that has an &#39;Operation&#39; function or is an &#39;Operation&#39;. Object B can be any concept or entity.</comment>
+        <owl:inverseOf rdf:resource="&edamontology;is_input_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edamontology.org/has_output -->
+
+    <owl:ObjectProperty rdf:about="&edamontology;has_output">
+        <rdfs:label rdf:datatype="&xsd;string">has output</rdfs:label>
+        <owl:is_reflexive rdf:datatype="&xsd;boolean">false</owl:is_reflexive>
+        <owl:is_symmetric rdf:datatype="&xsd;boolean">false</owl:is_symmetric>
+        <def>&quot;&#39;A EDAM:has_output B&#39; defines for the subject A, that it has the object B as a necessary or actual output or output argument.&quot; [http://edamontology.org]</def>
+        <comment>Subject A can either be concept that is or has an &#39;Operation&#39; function, or an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that has an &#39;Operation&#39; function or is an &#39;Operation&#39;. Object B can be any concept or entity.</comment>
+        <is_anti_symmetric>false</is_anti_symmetric>
+        <edamontology:synonym>has output</edamontology:synonym>
+        <edamontology:synonym>has_participant</edamontology:synonym>
+        <domain>operation:0004</domain>
+        <inverse_of>is_output_of</inverse_of>
+        <synonym>has_specified_output</synonym>
+        <range>data:0006</range>
+        <subset>relations</subset>
+        <editor_note>In EDAM, only &#39;has_output&#39; is explicitly defined between EDAM concepts (&#39;Operation&#39; &#39;has_output&#39; &#39;Data&#39;). The inverse, &#39;is_output_of&#39;, is not explicitly defined. &#39;OBI:has_specified_output&#39; only relates subjects that are a &#39;planned process&#39; (http://purl.obolibrary.org/obo/OBI_0000011) with objects that are a &#39;continuant&#39; (snap:Continuant). &#39;OBO_REL:has_participant&#39; is narrower in the sense that it only relates ontological categories (concepts) that are a &#39;process&#39; (span:Process) with ontological categories that are a &#39;continuant&#39; (snap:Continuant), and broader in the sense that it relates with any participating objects not just outputs or output arguments of the subject. It is also not clear whether an output (result) actually participates in the process that generates it. is_cyclic in very unusual cases only.</editor_note>
+        <synonym>has output</synonym>
+        <edamontology:synonym>has_specified_output</edamontology:synonym>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+        <is_cyclic>true</is_cyclic>
+        <synonym>has_participant</synonym>
+        <transitive_over>OBO_REL:is_a</transitive_over>
+        <owl:inverseOf rdf:resource="&edamontology;is_output_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edamontology.org/has_topic -->
+
+    <owl:ObjectProperty rdf:about="&edamontology;has_topic">
+        <rdfs:label rdf:datatype="&xsd;string">has topic</rdfs:label>
+        <owl:is_reflexive rdf:datatype="&xsd;boolean">false</owl:is_reflexive>
+        <owl:is_symmetric rdf:datatype="&xsd;boolean">false</owl:is_symmetric>
+        <domain>data:0006</domain>
+        <domain>operation:0004</domain>
+        <transitive_over>OBO_REL:is_a</transitive_over>
+        <synonym>is about</synonym>
+        <subset>relations</subset>
+        <is_cyclic>true</is_cyclic>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+        <inverse_of>is_topic_of</inverse_of>
+        <edamontology:synonym>hasTopic</edamontology:synonym>
+        <comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is a &#39;Topic&#39;, or in unexpected cases an entity outside of an ontology that is a &#39;Topic&#39; or is in the role of a &#39;Topic&#39;.</comment>
+        <range>topic:0003</range>
+        <def>&quot;&#39;A EDAM:has_topic B&#39; defines for the subject A, that it has the object B as its topic (A is in the scope of a topic B).&quot; [http://edamontology.org]</def>
+        <is_anti_symmetric>false</is_anti_symmetric>
+        <edamontology:synonym>is about</edamontology:synonym>
+        <synonym>has_quality</synonym>
+        <synonym>has-quality</synonym>
+        <edamontology:synonym>has-quality</edamontology:synonym>
+        <synonym>hasTopic</synonym>
+        <editor_note>In EDAM, only &#39;has_topic&#39; is explicitly defined between EDAM concepts (&#39;Operation&#39; or &#39;Data&#39; &#39;has_topic&#39; &#39;Topic&#39;). The inverse, &#39;is_topic_of&#39;, is not explicitly defined. &#39;ao:hasTopic&#39; is narrower in the sense that it only relates subjects that are an annotation, and it is broader in the sense that it relates with any resource. &#39;OBI:has_quality&#39; might be seen narrower in the sense that it only relates subjects that are an &#39;independent_continuant&#39; (snap:IndependentContinuant) with objects that are a &#39;quality&#39; (snap:Quality), and is broader in the sense that it relates with any qualities of the subject. &#39;is about&#39; is narrower in the sense that it only relates subjects that are information artifacts and the relation is not necessarily the one of having a topic. It is broader in the sense that it relates with any object. is_cyclic in very unusual cases.</editor_note>
+        <edamontology:synonym>has_quality</edamontology:synonym>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edamontology.org/is_format_of -->
+
+    <owl:ObjectProperty rdf:about="&edamontology;is_format_of">
+        <rdfs:label rdf:datatype="&xsd;string">is format of</rdfs:label>
+        <owl:is_symmetric rdf:datatype="&xsd;boolean">false</owl:is_symmetric>
+        <owl:is_reflexive rdf:datatype="&xsd;boolean">false</owl:is_reflexive>
+        <synonym>inherent-in</synonym>
+        <def>&quot;&#39;A EDAM:is_format_of B&#39; defines for the subject A, that it is a data format of the object B.&quot; [http://edamontology.org]</def>
+        <edamontology:synonym>quality_of</edamontology:synonym>
+        <domain>format:1915</domain>
+        <edamontology:synonym>inherent-in</edamontology:synonym>
+        <synonym>quality_of</synonym>
+        <inverse_of>has_format</inverse_of>
+        <subset>relations</subset>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+        <is_anti_symmetric>false</is_anti_symmetric>
+        <is_cyclic>false</is_cyclic>
+        <comment>Subject A can either be a concept that is a &#39;Format&#39;, or in unexpected cases an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is a &#39;Format&#39; or is in the role of a &#39;Format&#39;. Object B can be any concept or entity outside of an ontology that is (or is in a role of) &#39;Data&#39;, or  an input, output, input or output argument of an &#39;Operation&#39;.</comment>
+        <transitive_over>OBO_REL:is_a</transitive_over>
+        <range>data:0006</range>
+        <editor_note>In EDAM, only &#39;is_format_of&#39; is explicitly defined between EDAM concepts (&#39;Format&#39; &#39;is_format_of&#39; &#39;Data&#39;). The inverse, &#39;has_format&#39;, is not explicitly defined. Is defined anywhere? Not in the &#39;unknown&#39; version of RO. &#39;OBO_REL:quality_of&#39; might be seen narrower in the sense that it only relates subjects that are a &#39;quality&#39; (snap:Quality) with objects that are an &#39;independent_continuant&#39; (snap:IndependentContinuant), and is broader in the sense that it relates any qualities of the object.</editor_note>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edamontology.org/is_function_of -->
+
+    <owl:ObjectProperty rdf:about="&edamontology;is_function_of">
+        <rdfs:label rdf:datatype="&xsd;string">is function of</rdfs:label>
+        <owl:is_symmetric rdf:datatype="&xsd;boolean">false</owl:is_symmetric>
+        <owl:is_reflexive rdf:datatype="&xsd;boolean">false</owl:is_reflexive>
+        <editor_note>Within EDAM itself, &#39;is_function_of&#39; is not used. Is defined anywhere? Not in the &#39;unknown&#39; version of RO. &#39;OBO_REL:function_of&#39; only relates subjects that are a &#39;function&#39; (snap:Function) with objects that are an &#39;independent_continuant&#39; (snap:IndependentContinuant), so for example no processes. It does not define explicitly that the subject is a function of the object. Is defined anywhere? Not in the &#39;unknown&#39; version of RO. &#39;OBO_REL:inheres_in&#39; is narrower in the sense that it only relates ontological categories (concepts) that are a &#39;specifically_dependent_continuant&#39; (snap:SpecificallyDependentContinuant) with ontological categories that are an &#39;independent_continuant&#39; (snap:IndependentContinuant), and broader in the sense that it relates any borne subjects not just functions. is_cyclic in very unusual cases.</editor_note>
+        <subset>relations</subset>
+        <edamontology:synonym>is function of</edamontology:synonym>
+        <def>&quot;&#39;A is_function_of B&#39; defines for the subject A, that it is a function of the object B.&quot; [http://edamontology.org]</def>
+        <synonym>is function of</synonym>
+        <synonym>inheres_in</synonym>
+        <comment>Subject A can either be concept that is (or is in a role of) a function, or an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is (or is in a role of) a function specification. Object B can be any concept or entity.</comment>
+        <inverse_of>has_function</inverse_of>
+        <is_cyclic>true</is_cyclic>
+        <edamontology:synonym>function_of</edamontology:synonym>
+        <synonym>function_of</synonym>
+        <edamontology:synonym>inheres_in</edamontology:synonym>
+        <domain>operation:0004</domain>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+        <synonym>inherent-in</synonym>
+        <is_anti_symmetric>false</is_anti_symmetric>
+        <transitive_over>OBO_REL:is_a</transitive_over>
+        <edamontology:synonym>inherent-in</edamontology:synonym>
+        <owl:inverseOf rdf:resource="&edamontology;has_function"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edamontology.org/is_identifier_of -->
+
+    <owl:ObjectProperty rdf:about="&edamontology;is_identifier_of">
+        <rdfs:label rdf:datatype="&xsd;string">is identifier of</rdfs:label>
+        <owl:is_reflexive rdf:datatype="&xsd;boolean">false</owl:is_reflexive>
+        <owl:is_symmetric rdf:datatype="&xsd;boolean">false</owl:is_symmetric>
+        <range>data:0006</range>
+        <editor_note>In EDAM, only &#39;is_identifier_of&#39; is explicitly defined between EDAM concepts (only &#39;Identifier&#39; &#39;is_identifier_of&#39; &#39;Data&#39;). The inverse, &#39;has_identifier&#39;, is not explicitly defined.</editor_note>
+        <def>&quot;&#39;A EDAM:is_identifier_of B&#39; defines for the subject A, that it is an identifier of the object B.&quot; [http://edamontology.org]</def>
+        <domain>data:0842</domain>
+        <is_cyclic>false</is_cyclic>
+        <is_anti_symmetric>false</is_anti_symmetric>
+        <inverse_of>has_identifier</inverse_of>
+        <transitive_over>OBO_REL:is_a</transitive_over>
+        <subset>relations</subset>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+        <comment>Subject A can either be a concept that is an &#39;Identifier&#39;, or an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is an &#39;Identifier&#39; or is in the role of an &#39;Identifier&#39;. Object B can be any concept or entity outside of an ontology.</comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edamontology.org/is_input_of -->
+
+    <owl:ObjectProperty rdf:about="&edamontology;is_input_of">
+        <rdfs:label rdf:datatype="&xsd;string">is input of</rdfs:label>
+        <owl:is_symmetric rdf:datatype="&xsd;boolean">false</owl:is_symmetric>
+        <owl:is_reflexive rdf:datatype="&xsd;boolean">false</owl:is_reflexive>
+        <synonym>is_specified_input_of</synonym>
+        <edamontology:synonym>participates_in</edamontology:synonym>
+        <is_cyclic>true</is_cyclic>
+        <editor_note>In EDAM, &#39;is_input_of&#39; is not explicitly defined between EDAM concepts, only the inverse &#39;has_input&#39;. &#39;OBI:is_specified_input_of&#39; only relates subjects that are a &#39;continuant&#39; (snap:Continuant) with objects that are a &#39;planned process&#39; (http://purl.obolibrary.org/obo/OBI_0000011). &#39;OBO_REL:participates_in&#39; is narrower in the sense that it only relates ontological categories (concepts) that are a &#39;continuant&#39; (snap:Continuant) with ontological categories that are a &#39;process&#39; (span:Process), and broader in the sense that it relates any participating subjects not just inputs or input arguments. is_cyclic, in very unusual cases</editor_note>
+        <subset>relations</subset>
+        <range>operation:0004</range>
+        <synonym>participates_in</synonym>
+        <edamontology:synonym>is input of</edamontology:synonym>
+        <is_anti_symmetric>false</is_anti_symmetric>
+        <inverse_of>EDAM:has_input</inverse_of>
+        <comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is or has an &#39;Operation&#39; function, or an entity outside of an ontology that has an &#39;Operation&#39; function or is an &#39;Operation&#39;.</comment>
+        <def>&quot;&#39;A is_input_of B&#39; defines for the subject A, that it as a necessary or actual input or input argument of the object B.&quot; [http://edamontology.org]</def>
+        <transitive_over>OBO_REL:is_a</transitive_over>
+        <synonym>is input of</synonym>
+        <domain>data:0006</domain>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+        <edamontology:synonym>is_specified_input_of</edamontology:synonym>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edamontology.org/is_output_of -->
+
+    <owl:ObjectProperty rdf:about="&edamontology;is_output_of">
+        <rdfs:label rdf:datatype="&xsd;string">is output of</rdfs:label>
+        <owl:is_reflexive rdf:datatype="&xsd;boolean">false</owl:is_reflexive>
+        <owl:is_symmetric rdf:datatype="&xsd;boolean">false</owl:is_symmetric>
+        <inverse_of>EDAM:has_output</inverse_of>
+        <synonym>is_specified_output_of</synonym>
+        <range>operation:0004</range>
+        <def>&quot;&#39;A is_output_of B&#39; defines for the subject A, that it as a necessary or actual output or output argument of the object B.&quot; [http://edamontology.org]</def>
+        <edamontology:synonym>is_specified_output_of</edamontology:synonym>
+        <comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is or has an &#39;Operation&#39; function, or an entity outside of an ontology that has an &#39;Operation&#39; function or is an &#39;Operation&#39;.</comment>
+        <subset>relations</subset>
+        <transitive_over>OBO_REL:is_a</transitive_over>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+        <edamontology:synonym>is output of</edamontology:synonym>
+        <synonym>participates_in</synonym>
+        <synonym>is output of</synonym>
+        <is_cyclic>true</is_cyclic>
+        <domain>data:0006</domain>
+        <editor_note>In EDAM, &#39;is_output_of&#39; is not explicitly defined between EDAM concepts, only the inverse &#39;has_output&#39;. &#39;OBI:is_specified_output_of&#39; only relates subjects that are a &#39;continuant&#39; (snap:Continuant) with objects that are a &#39;planned process&#39; (http://purl.obolibrary.org/obo/OBI_0000011). &#39;OBO_REL:participates_in&#39; is narrower in the sense that it only relates ontological categories (concepts) that are a &#39;continuant&#39; (snap:Continuant) with ontological categories that are a &#39;process&#39; (span:Process), and broader in the sense that it relates any participating subjects not just outputs or output arguments. It is also not clear whether an output (result) actually participates in the process that generates it. is_cyclic in very unusual cases only.</editor_note>
+        <is_anti_symmetric>false</is_anti_symmetric>
+        <edamontology:synonym>participates_in</edamontology:synonym>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edamontology.org/is_topic_of -->
+
+    <owl:ObjectProperty rdf:about="&edamontology;is_topic_of">
+        <rdfs:label rdf:datatype="&xsd;string">is topic of</rdfs:label>
+        <owl:is_symmetric rdf:datatype="&xsd;boolean">false</owl:is_symmetric>
+        <owl:is_reflexive rdf:datatype="&xsd;boolean">false</owl:is_reflexive>
+        <synonym>inherent-in</synonym>
+        <inverse_of>EDAM:has_topic</inverse_of>
+        <range>operation:0004</range>
+        <is_cyclic>true</is_cyclic>
+        <transitive_over>OBO_REL:is_a</transitive_over>
+        <edamontology:synonym>inherent-in</edamontology:synonym>
+        <range>data:0006</range>
+        <synonym>quality_of</synonym>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+        <def>&quot;&#39;A is_topic_of B&#39; defines for the subject A, that it is a topic of the object B (a topic A is the scope of B).&quot; [http://edamontology.org]</def>
+        <subset>relations</subset>
+        <domain>topic:0003</domain>
+        <comment>Subject A can either be a concept that is a &#39;Topic&#39;, or in unexpected cases an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is a &#39;Topic&#39; or is in the role of a &#39;Topic&#39;. Object B can be any concept or entity outside of an ontology.</comment>
+        <editor_note>In EDAM, &#39;is_topic_of&#39; is not explicitly defined between EDAM concepts, only the inverse &#39;has_topic&#39;. Is defined anywhere? Not in the &#39;unknown&#39; version of RO. &#39;OBO_REL:quality_of&#39; might be seen narrower in the sense that it only relates subjects that are a &#39;quality&#39; (snap:Quality) with objects that are an &#39;independent_continuant&#39; (snap:IndependentContinuant), and is broader in the sense that it relates any qualities of the object. is_cyclic in very unusual cases.</editor_note>
+        <edamontology:synonym>quality_of</edamontology:synonym>
+        <is_anti_symmetric>false</is_anti_symmetric>
+        <owl:inverseOf rdf:resource="&edamontology;has_topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edamontology.org/note -->
+
+    <owl:ObjectProperty rdf:about="&edamontology;note">
+        <rdfs:label rdf:datatype="&xsd;string">Note</rdfs:label>
+        <def>&quot;&#39;Note&#39; trailing modifier (&#39;note&#39;) of any concept or ontology attributes. Contains a note for a human reader related to the given attribute.&quot; [http://edamontology.org]</def>
+        <subset>concept_attributes</subset>
+        <is_metadata_tag>true</is_metadata_tag>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edamontology.org/obsolete_since -->
+
+    <owl:ObjectProperty rdf:about="&edamontology;obsolete_since">
+        <rdfs:label rdf:datatype="&xsd;string">Obsolete since</rdfs:label>
+        <def>&quot;Version in which a term was made obsolete.&quot; [http://edamontology.org]</def>
+        <subset>concept_attributes</subset>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+        <is_metadata_tag>true</is_metadata_tag>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edamontology.org/regex -->
+
+    <owl:ObjectProperty rdf:about="&edamontology;regex">
+        <rdfs:label rdf:datatype="&xsd;string">Regular expression</rdfs:label>
+        <is_metadata_tag>true</is_metadata_tag>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+        <def>&quot;&#39;Regular expression&#39; concept attribute (&#39;regex&#39; metadata tag) specifies the allowed values of types of identifiers (accessions). Applicable to some other types of data, too.&quot; [http://edamontology.org]</def>
+        <subset>concept_attributes</subset>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edamontology.org/since -->
+
+    <owl:ObjectProperty rdf:about="&edamontology;since">
+        <rdfs:label rdf:datatype="&xsd;string">Since</rdfs:label>
+        <def>&quot;&#39;Since&#39; trailing modifier (&#39;since&#39;) of &#39;id&#39; and &#39;is_obsolete: true&#39; attributes (may be applicable to other attributes, too). Specificies the released version of the ontology in which the attribute received its current value/started to be valid. In case of &#39;id&#39; this is the version in which the concept has been introduced, and in case of &#39;is_obsolete: true&#39; the version in which the concept became obsolete.&quot; [http://edamontology.org]</def>
+        <subset>concept_attributes</subset>
+        <is_metadata_tag>true</is_metadata_tag>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
+    </owl:ObjectProperty>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
