@@ -35,16 +35,16 @@
 
     <owl:AnnotationProperty rdf:about="&edamontology2;synonym"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;subset"/>
-    <owl:AnnotationProperty rdf:about="&edamontology2;namespace"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;editor_note"/>
+    <owl:AnnotationProperty rdf:about="&edamontology2;namespace"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;consider"/>
-    <owl:AnnotationProperty rdf:about="&edamontology2;created_in"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;replaced_by"/>
+    <owl:AnnotationProperty rdf:about="&edamontology2;created_in"/>
     <owl:AnnotationProperty rdf:about="&efo;definition_editor"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;obsolete_since"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;example"/>
-    <owl:AnnotationProperty rdf:about="&edamontology2;is_obsolete"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;regex"/>
+    <owl:AnnotationProperty rdf:about="&edamontology2;is_obsolete"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;xref"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;def"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;obsolete_alt_id"/>
@@ -395,12 +395,6 @@
     
 
 
-    <!-- http://edamontology.org/data_0920 -->
-
-    <owl:Class rdf:about="&edamontology;data_0920"/>
-    
-
-
     <!-- http://edamontology.org/data_0932 -->
 
     <owl:Class rdf:about="&edamontology;data_0932">
@@ -408,8 +402,8 @@
         <rdfs:subClassOf rdf:resource="&edamontology;3234"/>
         <edamontology2:def>&quot;Data on oligonucleotide probes (typically for use with DNA microarrays).&quot; [http://edamontology.org]</edamontology2:def>
         <edamontology2:subset>bioinformatics</edamontology2:subset>
-        <edamontology2:is_obsolete>true</edamontology2:is_obsolete>
         <edamontology2:created_in>beta12orEarlier</edamontology2:created_in>
+        <edamontology2:is_obsolete>true</edamontology2:is_obsolete>
         <efo:definition_editor>Jon Ison</efo:definition_editor>
         <edamontology2:namespace>data</edamontology2:namespace>
         <edamontology2:consider>data:2717</edamontology2:consider>
@@ -871,8 +865,8 @@
         <rdfs:subClassOf rdf:resource="&edamontology;3234"/>
         <efo:definition_editor>Jon Ison</efo:definition_editor>
         <edamontology2:def>&quot;Identifier of a phylogenetic distance matrix.&quot; [http://edamontology.org]</edamontology2:def>
-        <edamontology2:created_in>beta12orEarlier</edamontology2:created_in>
         <edamontology2:subset>bioinformatics</edamontology2:subset>
+        <edamontology2:created_in>beta12orEarlier</edamontology2:created_in>
         <edamontology2:consider>data:0976</edamontology2:consider>
         <edamontology2:subset>edam</edamontology2:subset>
         <edamontology2:obsolete_since>beta12orEarlier</edamontology2:obsolete_since>
@@ -2146,8 +2140,8 @@
         <edamontology2:comment>C-beta atoms from amino acid side-chains may be included.</edamontology2:comment>
         <edamontology2:consider>data:1470</edamontology2:consider>
         <efo:definition_editor>Jon Ison</efo:definition_editor>
-        <edamontology2:subset>edam</edamontology2:subset>
         <edamontology2:subset>bioinformatics</edamontology2:subset>
+        <edamontology2:subset>edam</edamontology2:subset>
         <edamontology2:consider>data:1468</edamontology2:consider>
         <edamontology2:created_in>beta12orEarlier</edamontology2:created_in>
         <edamontology2:obsolete_since>beta12orEarlier</edamontology2:obsolete_since>
@@ -3378,8 +3372,8 @@
         <edamontology2:consider>data:1035</edamontology2:consider>
         <edamontology2:is_obsolete>true</edamontology2:is_obsolete>
         <edamontology2:namespace>identifier</edamontology2:namespace>
-        <efo:definition_editor>Jon Ison</efo:definition_editor>
         <edamontology2:subset>edam</edamontology2:subset>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
         <edamontology2:def>&quot;Gene identifier from Plasmodium falciparum GeneDB database.&quot; [http://edamontology.org]</edamontology2:def>
     </owl:Class>
     
@@ -3616,11 +3610,11 @@
         <edamontology2:obsolete_since>beta13</edamontology2:obsolete_since>
         <edamontology2:def>&quot;Identifier for genetic elements in MIPS Maize database.&quot; [http://edamontology.org]</edamontology2:def>
         <edamontology2:synonym>MIPS genetic element identifier (Maize)</edamontology2:synonym>
+        <edamontology2:subset>bioinformatics</edamontology2:subset>
         <edamontology2:subset>identifiers</edamontology2:subset>
         <edamontology2:consider>data:2285</edamontology2:consider>
-        <edamontology2:subset>bioinformatics</edamontology2:subset>
-        <edamontology2:subset>edam</edamontology2:subset>
         <edamontology2:is_obsolete>true</edamontology2:is_obsolete>
+        <edamontology2:subset>edam</edamontology2:subset>
         <edamontology:synonym>MIPS genetic element identifier (Maize)</edamontology:synonym>
         <edamontology2:created_in>beta12orEarlier</edamontology2:created_in>
         <efo:definition_editor>Jon Ison</efo:definition_editor>
@@ -5024,8 +5018,8 @@
         <edamontology2:namespace>identifier</edamontology2:namespace>
         <edamontology2:obsolete_since>beta12orEarlier</edamontology2:obsolete_since>
         <edamontology2:consider>data:2610</edamontology2:consider>
-        <edamontology2:regex>&quot;ENSHUM([EGTP])[0-9]{11}&quot;</edamontology2:regex>
         <edamontology2:created_in>beta12orEarlier</edamontology2:created_in>
+        <edamontology2:regex>&quot;ENSHUM([EGTP])[0-9]{11}&quot;</edamontology2:regex>
         <edamontology2:is_obsolete>true</edamontology2:is_obsolete>
         <edamontology2:subset>edam</edamontology2:subset>
         <edamontology2:subset>bioinformatics</edamontology2:subset>
@@ -5167,8 +5161,8 @@
         <rdfs:label rdf:datatype="&xsd;string">Ensembl ID (&#39;Oryctolagus cuniculus&#39;)</rdfs:label>
         <rdfs:subClassOf rdf:resource="&edamontology;3234"/>
         <edamontology2:regex>&quot;ENSOCU([EGTP])[0-9]{11}&quot;</edamontology2:regex>
-        <edamontology2:consider>data:2610</edamontology2:consider>
         <edamontology2:obsolete_since>beta12orEarlier</edamontology2:obsolete_since>
+        <edamontology2:consider>data:2610</edamontology2:consider>
         <edamontology2:is_obsolete>true</edamontology2:is_obsolete>
         <edamontology2:subset>identifiers</edamontology2:subset>
         <efo:definition_editor>Jon Ison</efo:definition_editor>
@@ -5218,8 +5212,8 @@
         <edamontology2:def>&quot;Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &#39;core&#39; database (&#39;Otolemur garnettii&#39; division).&quot; [http://edamontology.org]</edamontology2:def>
         <edamontology2:consider>data:2610</edamontology2:consider>
         <edamontology2:subset>edam</edamontology2:subset>
-        <edamontology2:subset>identifiers</edamontology2:subset>
         <edamontology2:namespace>identifier</edamontology2:namespace>
+        <edamontology2:subset>identifiers</edamontology2:subset>
     </owl:Class>
     
 
@@ -6614,8 +6608,8 @@
         <edamontology2:created_in>beta12orEarlier</edamontology2:created_in>
         <edamontology2:namespace>format</edamontology2:namespace>
         <efo:definition_editor>Jon Ison</efo:definition_editor>
-        <edamontology2:is_obsolete>true</edamontology2:is_obsolete>
         <edamontology2:subset>bioinformatics</edamontology2:subset>
+        <edamontology2:is_obsolete>true</edamontology2:is_obsolete>
         <edamontology2:consider>format:2331</edamontology2:consider>
         <edamontology2:subset>edam</edamontology2:subset>
         <edamontology2:def>&quot;Entry format for the dbSNP database.&quot; [http://edamontology.org]</edamontology2:def>
@@ -7284,8 +7278,8 @@
     <owl:Class rdf:about="&edamontology;format_1955">
         <rdfs:label rdf:datatype="&xsd;string">phylip sequence format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&edamontology;3234"/>
-        <edamontology2:def>&quot;Phylip interleaved sequence format.&quot; [http://edamontology.org]</edamontology2:def>
         <edamontology2:subset>bioinformatics</edamontology2:subset>
+        <edamontology2:def>&quot;Phylip interleaved sequence format.&quot; [http://edamontology.org]</edamontology2:def>
         <edamontology2:subset>formats</edamontology2:subset>
         <edamontology2:is_obsolete>true</edamontology2:is_obsolete>
         <edamontology2:consider>format:1997</edamontology2:consider>
@@ -7549,12 +7543,6 @@
     <owl:Class rdf:about="&edamontology;format_2059">
         <rdfs:label rdf:datatype="&xsd;string">Genotype and phenotype annotation format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&edamontology;3234"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&edamontology;is_format_of"/>
-                <owl:someValuesFrom rdf:resource="&edamontology;data_0920"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <edamontology2:subset>bioinformatics</edamontology2:subset>
         <efo:definition_editor>Jon Ison</efo:definition_editor>
         <edamontology2:is_obsolete>true</edamontology2:is_obsolete>
@@ -7878,8 +7866,8 @@
     <owl:Class rdf:about="&edamontology;operation_0229">
         <rdfs:label rdf:datatype="&xsd;string">Annotation retrieval (sequence)</rdfs:label>
         <rdfs:subClassOf rdf:resource="&edamontology;3234"/>
-        <edamontology2:is_obsolete>true</edamontology2:is_obsolete>
         <edamontology2:consider>operation:1813</edamontology2:consider>
+        <edamontology2:is_obsolete>true</edamontology2:is_obsolete>
         <edamontology2:subset>bioinformatics</edamontology2:subset>
         <edamontology2:namespace>operation</edamontology2:namespace>
         <edamontology2:created_in>beta12orEarlier</edamontology2:created_in>
@@ -7905,8 +7893,8 @@
         <edamontology2:namespace>operation</edamontology2:namespace>
         <edamontology2:is_obsolete>true</edamontology2:is_obsolete>
         <efo:definition_editor>Jon Ison</efo:definition_editor>
-        <edamontology2:subset>bioinformatics</edamontology2:subset>
         <edamontology2:subset>edam</edamontology2:subset>
+        <edamontology2:subset>bioinformatics</edamontology2:subset>
         <edamontology2:obsolete_since>beta13</edamontology2:obsolete_since>
     </owl:Class>
     
@@ -8449,8 +8437,8 @@
     <owl:Class rdf:about="&edamontology;operation_2224">
         <rdfs:label rdf:datatype="&xsd;string">Data retrieval (ontology concept)</rdfs:label>
         <rdfs:subClassOf rdf:resource="&edamontology;3234"/>
-        <edamontology2:synonym>Ontology retrieval</edamontology2:synonym>
         <edamontology2:subset>edam</edamontology2:subset>
+        <edamontology2:synonym>Ontology retrieval</edamontology2:synonym>
         <efo:definition_editor>Jon Ison</efo:definition_editor>
         <edamontology2:namespace>operation</edamontology2:namespace>
         <edamontology2:consider>operation:2422</edamontology2:consider>
@@ -8478,8 +8466,8 @@
         <edamontology2:def>&quot;Query a profile data resource and retrieve one or more profile(s) and / or associated annotation.&quot; [http://edamontology.org]</edamontology2:def>
         <edamontology2:is_obsolete>true</edamontology2:is_obsolete>
         <edamontology2:subset>edam</edamontology2:subset>
-        <edamontology2:namespace>operation</edamontology2:namespace>
         <edamontology2:consider>operation:2422</edamontology2:consider>
+        <edamontology2:namespace>operation</edamontology2:namespace>
         <efo:definition_editor>Jon Ison</efo:definition_editor>
     </owl:Class>
     
@@ -9413,8 +9401,8 @@
         <rdfs:subClassOf rdf:resource="&edamontology;3234"/>
         <edamontology2:obsolete_since>beta12orEarlier</edamontology2:obsolete_since>
         <edamontology2:subset>topics</edamontology2:subset>
-        <efo:definition_editor>Jon Ison</efo:definition_editor>
         <edamontology2:subset>edam</edamontology2:subset>
+        <efo:definition_editor>Jon Ison</efo:definition_editor>
         <edamontology2:consider>topic:0200</edamontology2:consider>
         <edamontology2:subset>bioinformatics</edamontology2:subset>
         <edamontology2:def>&quot;Topic concerning gene expression e.g. microarray data, northern blots, gene-indexed expression profiles etc.&quot; [http://edamontology.org]</edamontology2:def>
