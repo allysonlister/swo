@@ -146,6 +146,15 @@
     
 
 
+    <!-- http://edamontology.org/format_2333 -->
+
+    <owl:Class rdf:about="&edamontology;format_2333">
+        <rdfs:label>Binary format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
     <owl:Class rdf:about="&obo;IAO_0000027">
@@ -195,7 +204,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000017">
         <rdfs:label rdf:datatype="&xsd;string">ARR</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
     </owl:Class>
     
 
@@ -203,8 +212,8 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000051 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000051">
-        <rdfs:label rdf:datatype="&xsd;string">BED file</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:label rdf:datatype="&xsd;string">BED format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
     </owl:Class>
     
 
@@ -213,7 +222,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000057">
         <rdfs:label rdf:datatype="&xsd;string">BPMAP</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2333"/>
     </owl:Class>
     
 
@@ -221,8 +230,9 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000083 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000083">
-        <rdfs:label rdf:datatype="&xsd;string">CDF</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:label rdf:datatype="&xsd;string">CDF binary format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2333"/>
+        <rdfs:comment>It is unclear whether this format was intended to be the ASCII or binary version of the CDF file. As such, this class has been renamed as the binary format, and a new class created (CDF ASCII format) to make both options available.</rdfs:comment>
     </owl:Class>
     
 
@@ -231,7 +241,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000084">
         <rdfs:label rdf:datatype="&xsd;string">CEL</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2333"/>
     </owl:Class>
     
 
@@ -240,7 +250,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000088">
         <rdfs:label rdf:datatype="&xsd;string">CHP file</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2333"/>
     </owl:Class>
     
 
@@ -285,7 +295,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000142">
         <rdfs:label rdf:datatype="&xsd;string">FASTA</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
     </owl:Class>
     
 
@@ -294,7 +304,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000144">
         <rdfs:label rdf:datatype="&xsd;string">FCS</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
     </owl:Class>
     
 
@@ -311,8 +321,8 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000157 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000157">
-        <rdfs:label rdf:datatype="&xsd;string">GEO Matrix Series file</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:label rdf:datatype="&xsd;string">GEO Matrix Series format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
     </owl:Class>
     
 
@@ -329,8 +339,8 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000249 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000249">
-        <rdfs:label rdf:datatype="&xsd;string">KGML file</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:label rdf:datatype="&xsd;string">KGML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
     </owl:Class>
     
 
@@ -347,8 +357,8 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000268 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000268">
-        <rdfs:label rdf:datatype="&xsd;string">MAGE-ML files</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:label rdf:datatype="&xsd;string">MAGE-ML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
     </owl:Class>
     
 
@@ -375,7 +385,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000363">
         <rdfs:label rdf:datatype="&xsd;string">Rnw</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
     </owl:Class>
     
 
@@ -383,8 +393,8 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000378 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000378">
-        <rdfs:label rdf:datatype="&xsd;string">SBMLR file</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:label rdf:datatype="&xsd;string">SBMLR format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
     </owl:Class>
     
 
@@ -393,7 +403,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000381">
         <rdfs:label rdf:datatype="&xsd;string">SDF format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
     </owl:Class>
     
 
@@ -420,7 +430,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000409">
         <rdfs:label rdf:datatype="&xsd;string">R data frame</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
     </owl:Class>
     
 
@@ -794,8 +804,8 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000004 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000004">
-        <rdfs:label rdf:datatype="&xsd;string">Matlab m file</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:label rdf:datatype="&xsd;string">Matlab .m file</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000033"/>
         <dc:creator>James Malone</dc:creator>
     </owl:Class>
     
@@ -1176,7 +1186,7 @@
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000040">
         <rdfs:label>OBO Flat File Format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
         <obo:IAO_0000115>OBO format is the text file format used by OBO-Edit, the open source, platform-independent application for viewing and editing ontologies. </obo:IAO_0000115>
     </owl:Class>
     
@@ -1213,7 +1223,7 @@
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000045">
         <rdfs:label>MAGE tab format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000046"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">MAGE-TAB is a tab delimited data format comprimising of ADF file for array design, IDFfor experimental design, SDRF for sample data relationships and associated data files.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.mged.org/mage-tab/</obo:IAO_0000119>
         <rdfs:comment>A simple spreadsheet-based, MIAME-supportive format for microarray data: MAGE-TAB.</rdfs:comment>
@@ -1329,6 +1339,16 @@
                 <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000057 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000057">
+        <rdfs:label xml:lang="en">CDF ASCII format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000042"/>
+        <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
     
 
