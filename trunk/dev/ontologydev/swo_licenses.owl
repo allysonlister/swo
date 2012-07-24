@@ -28,7 +28,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:ebi="http://www.ebi.ac.uk/">
     <owl:Ontology rdf:about="&ebi;swo/license/">
-        <owl:versionInfo>0.2</owl:versionInfo>
+        <owl:versionInfo>0.4</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -439,13 +439,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000030"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -463,19 +463,19 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000019"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000037"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -511,6 +511,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000037"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -518,12 +524,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
@@ -603,7 +603,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000030"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -615,7 +615,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -627,19 +627,19 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000029"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -725,12 +725,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -738,6 +732,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_9000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>http://wyatterp.com/opl.html</obo:IAO_0000119>

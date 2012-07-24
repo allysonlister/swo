@@ -40,7 +40,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:elements="http://purl.org/dc/elements/1,1/">
     <owl:Ontology rdf:about="&ebi;swo/data/">
-        <owl:versionInfo>0.2</owl:versionInfo>
+        <owl:versionInfo>0.4</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1329,14 +1329,14 @@
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/data/SWO_3000054"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000055"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
+                <owl:onProperty rdf:resource="&ebi;swo/data/SWO_3000054"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000055"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>

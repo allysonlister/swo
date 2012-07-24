@@ -34,7 +34,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:elements="http://purl.org/dc/elements/1,1/">
     <owl:Ontology rdf:about="&ebi;swo/organization/">
-        <owl:versionInfo>0.2</owl:versionInfo>
+        <owl:versionInfo>0.4</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -271,13 +271,13 @@ are made on behalf of the organization by the organization members.</obo:IAO_000
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
-                <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000392"/>
+                <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000260"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
-                <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000260"/>
+                <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000392"/>
             </owl:Restriction>
         </rdf:type>
         <rdfs:label rdf:datatype="&xsd;string">Affymetrix</rdfs:label>
