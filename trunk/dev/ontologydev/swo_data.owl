@@ -648,7 +648,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000615">
         <rdfs:label rdf:datatype="&xsd;string">mas5 format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
     </owl:Class>
     
 
@@ -675,7 +675,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000634">
         <rdfs:label rdf:datatype="&xsd;string">newick</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
     </owl:Class>
     
 
@@ -738,7 +738,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000684">
         <rdfs:label rdf:datatype="&xsd;string">rda</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
     </owl:Class>
     
 
@@ -1331,14 +1331,14 @@
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/data/SWO_3000054"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000055"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
+                <owl:onProperty rdf:resource="&ebi;swo/data/SWO_3000054"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000055"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
