@@ -5,7 +5,10 @@
     <!ENTITY edamontology2 "http://edamontology.org#" >
     <!ENTITY edamontology "http://edamontology.org/" >
     <!ENTITY efo "http://www.ebi.ac.uk/efo/" >
+    <!ENTITY data-1 "http://www.ebi.ac.uk/swo/data/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
@@ -14,13 +17,16 @@
 
 <rdf:RDF xmlns="&edamontology;data#"
      xml:base="&edamontology;data"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:edamontology="http://edamontology.org/"
      xmlns:edamontology2="http://edamontology.org#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:efo="http://www.ebi.ac.uk/efo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:data-1="http://www.ebi.ac.uk/swo/data/">
     <owl:Ontology rdf:about="&edamontology;data"/>
     
 
@@ -33,6 +39,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;synonym"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;subset"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;editor_note"/>
@@ -40,8 +47,10 @@
     <owl:AnnotationProperty rdf:about="&edamontology2;documentation"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;created_in"/>
     <owl:AnnotationProperty rdf:about="&efo;definition_editor"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;example"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;regex"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;xref"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;def"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;obsolete_alt_id"/>
@@ -153,6 +162,18 @@
     <owl:ObjectProperty rdf:about="&edamontology;is_topic_of">
         <rdfs:range rdf:resource="&edamontology;data_0006"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000316 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000316"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000054 -->
+
+    <owl:ObjectProperty rdf:about="&data-1;SWO_3000054"/>
     
 
 
@@ -4244,13 +4265,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&edamontology;is_identifier_of"/>
-                <owl:someValuesFrom rdf:resource="&edamontology;data_0849"/>
+                <owl:someValuesFrom rdf:resource="&edamontology;data_2044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&edamontology;is_identifier_of"/>
-                <owl:someValuesFrom rdf:resource="&edamontology;data_2044"/>
+                <owl:someValuesFrom rdf:resource="&edamontology;data_0849"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <edamontology2:subset>edam</edamontology2:subset>
@@ -12552,13 +12573,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&edamontology;is_identifier_of"/>
-                <owl:someValuesFrom rdf:resource="&edamontology;data_1597"/>
+                <owl:someValuesFrom rdf:resource="&edamontology;data_1598"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&edamontology;is_identifier_of"/>
-                <owl:someValuesFrom rdf:resource="&edamontology;data_1598"/>
+                <owl:someValuesFrom rdf:resource="&edamontology;data_1597"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <edamontology2:def>&quot;Identifier of a codon usage table, for example a genetic code.&quot; [http://edamontology.org]</edamontology2:def>
@@ -25941,13 +25962,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&edamontology;is_format_of"/>
-                <owl:someValuesFrom rdf:resource="&edamontology;data_0863"/>
+                <owl:someValuesFrom rdf:resource="&edamontology;data_2044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&edamontology;is_format_of"/>
-                <owl:someValuesFrom rdf:resource="&edamontology;data_2044"/>
+                <owl:someValuesFrom rdf:resource="&edamontology;data_0863"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -25967,23 +25988,6 @@
         <edamontology2:xref>http://bioxsd.org</edamontology2:xref>
         <edamontology2:subset>formats</edamontology2:subset>
         <edamontology2:synonym>BioXSD XML format</edamontology2:synonym>
-    </owl:Class>
-    
-
-
-    <!-- http://edamontology.org/format_2376 -->
-
-    <owl:Class rdf:about="&edamontology;format_2376">
-        <rdfs:label rdf:datatype="&xsd;string">RDF</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&edamontology;format_1915"/>
-        <edamontology2:subset>edam</edamontology2:subset>
-        <edamontology2:subset>bioinformatics</edamontology2:subset>
-        <edamontology2:subset>formats</edamontology2:subset>
-        <edamontology2:def>&quot;Resource Description Framework (RDF) format.&quot; [http://edamontology.org]</edamontology2:def>
-        <edamontology2:namespace>format</edamontology2:namespace>
-        <edamontology2:created_in>beta12orEarlier</edamontology2:created_in>
-        <edamontology2:comment>Data in RDF format can be serialised into XML, textual, or binary format.</edamontology2:comment>
-        <efo:definition_editor>Jon Ison</efo:definition_editor>
     </owl:Class>
     
 
@@ -26486,13 +26490,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&edamontology;is_format_of"/>
-                <owl:someValuesFrom rdf:resource="&edamontology;data_0970"/>
+                <owl:someValuesFrom rdf:resource="&edamontology;data_2849"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&edamontology;is_format_of"/>
-                <owl:someValuesFrom rdf:resource="&edamontology;data_2849"/>
+                <owl:someValuesFrom rdf:resource="&edamontology;data_0970"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <efo:definition_editor>Jon Ison</efo:definition_editor>
@@ -27365,6 +27369,39 @@
         <edamontology2:def>&quot;Cytoband format for chromosome cytobands.&quot; [http://edamontology.org]</edamontology2:def>
         <edamontology2:created_in>1.2</edamontology2:created_in>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000098 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000098"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000005 -->
+
+    <owl:Class rdf:about="&data-1;SWO_3000005"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000006 -->
+
+    <owl:Class rdf:about="&data-1;SWO_3000006">
+        <rdfs:label>RDF</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_1915"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000053 -->
+
+    <owl:Class rdf:about="&data-1;SWO_3000053"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000056 -->
+
+    <owl:Class rdf:about="&data-1;SWO_3000056"/>
 </rdf:RDF>
 
 
