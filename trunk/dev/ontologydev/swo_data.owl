@@ -466,7 +466,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000493">
         <rdfs:label rdf:datatype="&xsd;string">cdt</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000046"/>
     </owl:Class>
     
 
@@ -484,7 +484,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000498">
         <rdfs:label rdf:datatype="&xsd;string">cls</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
     </owl:Class>
     
 
@@ -511,7 +511,8 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000518">
         <rdfs:label rdf:datatype="&xsd;string">dcf</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <obo:IAO_0000118>debian control file format</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -529,7 +530,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000548">
         <rdfs:label rdf:datatype="&xsd;string">gct</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000046"/>
     </owl:Class>
     
 
@@ -547,7 +548,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000559">
         <rdfs:label rdf:datatype="&xsd;string">gff format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
     </owl:Class>
     
 
@@ -565,7 +566,8 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000566">
         <rdfs:label rdf:datatype="&xsd;string">gpr format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000046"/>
+        <obo:IAO_0000118>GenePix Pro Results file format</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -574,7 +576,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000569">
         <rdfs:label rdf:datatype="&xsd;string">gtr</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000046"/>
     </owl:Class>
     
 
@@ -583,7 +585,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000570">
         <rdfs:label rdf:datatype="&xsd;string">gxl format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
     </owl:Class>
     
 
@@ -619,7 +621,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000596">
         <rdfs:label rdf:datatype="&xsd;string">lma</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2333"/>
     </owl:Class>
     
 
@@ -1329,14 +1331,14 @@
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
+                <owl:onProperty rdf:resource="&ebi;swo/data/SWO_3000054"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000055"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/data/SWO_3000054"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000055"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
