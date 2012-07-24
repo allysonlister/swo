@@ -35,16 +35,16 @@
 
     <owl:AnnotationProperty rdf:about="&edamontology2;synonym"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;subset"/>
-    <owl:AnnotationProperty rdf:about="&edamontology2;editor_note"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;namespace"/>
+    <owl:AnnotationProperty rdf:about="&edamontology2;editor_note"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;consider"/>
-    <owl:AnnotationProperty rdf:about="&edamontology2;replaced_by"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;created_in"/>
+    <owl:AnnotationProperty rdf:about="&edamontology2;replaced_by"/>
     <owl:AnnotationProperty rdf:about="&efo;definition_editor"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;obsolete_since"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;example"/>
-    <owl:AnnotationProperty rdf:about="&edamontology2;regex"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;is_obsolete"/>
+    <owl:AnnotationProperty rdf:about="&edamontology2;regex"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;xref"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;def"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;obsolete_alt_id"/>
@@ -7781,6 +7781,17 @@
         <efo:definition_editor>Jon Ison</efo:definition_editor>
         <edamontology2:def>&quot;The format of an entry from the NCI-Nature pathways database.&quot; [http://edamontology.org]</edamontology2:def>
         <edamontology2:created_in>beta12orEarlier</edamontology2:created_in>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_2376 -->
+
+    <owl:Class rdf:about="&edamontology;format_2376">
+        <rdfs:label>RDF</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&edamontology;3234"/>
+        <edamontology2:is_obsolete>true</edamontology2:is_obsolete>
+        <rdfs:comment>This class has been replaced by the equivalent SWO class, http://www.ebi.ac.uk/SWO/data/SWO_3000006. Obsoleted by Allyson Lister.</rdfs:comment>
     </owl:Class>
     
 
