@@ -26,7 +26,7 @@
      xmlns:OntoDM="http://kt.ijs.si/panovp/OntoDM#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
     <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/algorithm/">
-        <owl:versionInfo>0.2</owl:versionInfo>
+        <owl:versionInfo>0.4</owl:versionInfo>
     </owl:Ontology>
     
 

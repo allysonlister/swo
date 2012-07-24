@@ -22,7 +22,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="&swo;maturity/">
-        <owl:versionInfo>0.2</owl:versionInfo>
+        <owl:versionInfo>0.4</owl:versionInfo>
     </owl:Ontology>
     
 
