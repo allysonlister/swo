@@ -62,11 +62,11 @@
     <owl:AnnotationProperty rdf:about="&edamontology2;created_in"/>
     <owl:AnnotationProperty rdf:about="&ebi;efo/definition_editor"/>
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
-    <owl:AnnotationProperty rdf:about="&edamontology2;def"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
+    <owl:AnnotationProperty rdf:about="&edamontology2;def"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;comment"/>
     
 
@@ -146,6 +146,15 @@
 
     <owl:Class rdf:about="&edamontology;format_1929">
         <rdfs:label rdf:datatype="&xsd;string">FASTA format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_2305 -->
+
+    <owl:Class rdf:about="&edamontology;format_2305">
+        <rdfs:label rdf:datatype="&xsd;string">GFF</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
     </owl:Class>
     
@@ -558,15 +567,6 @@
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000554">
         <rdfs:label rdf:datatype="&xsd;string">Gene expression dataset</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000559 -->
-
-    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000559">
-        <rdfs:label rdf:datatype="&xsd;string">gff format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
     </owl:Class>
     
 
@@ -1346,14 +1346,14 @@
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
+                <owl:onProperty rdf:resource="&ebi;swo/data/SWO_3000054"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000055"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/data/SWO_3000054"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000055"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>

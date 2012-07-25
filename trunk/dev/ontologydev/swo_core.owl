@@ -6296,7 +6296,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                             <rdf:Description rdf:about="&obo;IAO_0000027"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004002"/>
-                                <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000559"/>
+                                <owl:someValuesFrom rdf:resource="&edamontology;format_2305"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -6346,7 +6346,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                             <rdf:Description rdf:about="&obo;IAO_0000027"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004002"/>
-                                <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000559"/>
+                                <owl:someValuesFrom rdf:resource="&edamontology;format_2305"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -7499,7 +7499,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                             <rdf:Description rdf:about="&obo;IAO_0000027"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004002"/>
-                                <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000559"/>
+                                <owl:someValuesFrom rdf:resource="&edamontology;format_2305"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -9519,19 +9519,6 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&efo;swo/SWO_0000559"/>
-                            <rdf:Description rdf:about="&efo;swo/SWO_0000661"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&efo;swo/SWO_0000741"/>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
@@ -9560,6 +9547,19 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000116"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&edamontology;format_2305"/>
+                            <rdf:Description rdf:about="&efo;swo/SWO_0000661"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
@@ -14305,19 +14305,6 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&efo;swo/SWO_0000409"/>
-                            <rdf:Description rdf:about="&efo;swo/SWO_0000559"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000409"/>
             </owl:Restriction>
@@ -14330,6 +14317,19 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&edamontology;format_2305"/>
+                            <rdf:Description rdf:about="&efo;swo/SWO_0000409"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0200078"/>
             </owl:Restriction>
@@ -14337,6 +14337,19 @@ tiple samples</obo:IAO_0000115>
         <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Tools for operation on genomic intervals.</obo:IAO_0000115>
         <efo:definition_citation rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/genomeIntervals.html</efo:definition_citation>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000559 -->
+
+    <owl:Class rdf:about="&efo;swo/SWO_0000559">
+        <rdfs:label>obsolete_gff format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
+        <owl:deprecated rdf:datatype="&xsd;boolean">true</owl:deprecated>
+        <dc:contributor>Marked as obsolete by Allyson Lister.</dc:contributor>
+        <efo:obsoleted_in_version>Obsoleted after the 0.4 release.</efo:obsoleted_in_version>
+        <efo:reason_for_obsolescence>Equivalence with EDAM format_2305.</efo:reason_for_obsolescence>
     </owl:Class>
     
 
@@ -17889,21 +17902,21 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&edamontology;format_3003"/>
-                            <rdf:Description rdf:about="&efo;swo/SWO_0000559"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000724"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000724"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&edamontology;format_2305"/>
+                            <rdf:Description rdf:about="&edamontology;format_3003"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -23211,7 +23224,7 @@ tiple samples</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000040 -->
 
     <owl:Class rdf:about="&data;SWO_3000040">
-        <rdfs:label>OBO flat file format</rdfs:label>
+        <rdfs:label>obsolete_OBO flat file format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
         <owl:deprecated rdf:datatype="&xsd;boolean">true</owl:deprecated>
         <efo:obsoleted_in_version>Obsoleted after the 0.4 release.</efo:obsoleted_in_version>
