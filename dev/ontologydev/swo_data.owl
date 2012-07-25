@@ -62,11 +62,11 @@
     <owl:AnnotationProperty rdf:about="&edamontology2;created_in"/>
     <owl:AnnotationProperty rdf:about="&ebi;efo/definition_editor"/>
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
-    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;def"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;comment"/>
     
 
@@ -168,6 +168,16 @@
     <owl:Class rdf:about="&edamontology;format_2333">
         <rdfs:label>Binary format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_2549 -->
+
+    <owl:Class rdf:about="&edamontology;format_2549">
+        <rdfs:label>OBO Flat File Format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <obo:IAO_0000115>OBO format is the text file format used by OBO-Edit, the open source, platform-independent application for viewing and editing ontologies. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1199,16 +1209,6 @@
     
 
 
-    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000040 -->
-
-    <owl:Class rdf:about="&ebi;swo/data/SWO_3000040">
-        <rdfs:label>OBO Flat File Format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
-        <obo:IAO_0000115>OBO format is the text file format used by OBO-Edit, the open source, platform-independent application for viewing and editing ontologies. </obo:IAO_0000115>
-    </owl:Class>
-    
-
-
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000041 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000041">
@@ -1346,14 +1346,14 @@
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/data/SWO_3000054"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000055"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
+                <owl:onProperty rdf:resource="&ebi;swo/data/SWO_3000054"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000055"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
