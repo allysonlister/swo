@@ -62,11 +62,11 @@
     <owl:AnnotationProperty rdf:about="&edamontology2;created_in"/>
     <owl:AnnotationProperty rdf:about="&ebi;efo/definition_editor"/>
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
-    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;def"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
     <owl:AnnotationProperty rdf:about="&edamontology2;comment"/>
     
 
@@ -205,6 +205,15 @@
     <owl:Class rdf:about="&edamontology;format_3003">
         <rdfs:label rdf:datatype="&xsd;string">BED format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3161 -->
+
+    <owl:Class rdf:about="&edamontology;format_3161">
+        <rdfs:label rdf:datatype="&xsd;string">MAGE-ML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
     </owl:Class>
     
 
@@ -398,15 +407,6 @@
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000253">
         <rdfs:label rdf:datatype="&xsd;string">LC-MS data</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000268 -->
-
-    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000268">
-        <rdfs:label rdf:datatype="&xsd;string">MAGE-ML</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
     </owl:Class>
     
 
