@@ -209,6 +209,18 @@
     
 
 
+    <!-- http://edamontology.org/format_3162 -->
+
+    <owl:Class rdf:about="&edamontology;format_3162">
+        <rdfs:label>MAGE-TAB</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000046"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">MAGE-TAB is a tab delimited data format comprimising of ADF file for array design, IDFfor experimental design, SDRF for sample data relationships and associated data files.</obo:IAO_0000115>
+        <rdfs:comment>A simple spreadsheet-based, MIAME-supportive format for microarray data: MAGE-TAB.</rdfs:comment>
+        <obo:IAO_0000119>http://www.mged.org/mage-tab/</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
     <owl:Class rdf:about="&obo;IAO_0000027">
@@ -1232,18 +1244,6 @@
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000043">
         <rdfs:label>Plain text file format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000045 -->
-
-    <owl:Class rdf:about="&ebi;swo/data/SWO_3000045">
-        <rdfs:label>MAGE tab format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000046"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">MAGE-TAB is a tab delimited data format comprimising of ADF file for array design, IDFfor experimental design, SDRF for sample data relationships and associated data files.</obo:IAO_0000115>
-        <obo:IAO_0000119>http://www.mged.org/mage-tab/</obo:IAO_0000119>
-        <rdfs:comment>A simple spreadsheet-based, MIAME-supportive format for microarray data: MAGE-TAB.</rdfs:comment>
     </owl:Class>
     
 

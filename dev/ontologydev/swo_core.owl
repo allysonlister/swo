@@ -538,6 +538,12 @@
     
 
 
+    <!-- http://edamontology.org/format_3162 -->
+
+    <owl:Class rdf:about="&edamontology;format_3162"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
 
     <owl:Class rdf:about="&obo;IAO_0000005">
@@ -1012,22 +1018,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&efo;swo/SWO_0000554"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004002"/>
-                                <owl:someValuesFrom rdf:resource="&data;SWO_3000045"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -1036,6 +1026,22 @@
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004002"/>
                                 <owl:someValuesFrom rdf:resource="&obo;IAO_0000098"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&efo;swo/SWO_0000554"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004002"/>
+                                <owl:someValuesFrom rdf:resource="&edamontology;format_3162"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -3490,7 +3496,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                             <rdf:Description rdf:about="&obo;IAO_0000027"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004002"/>
-                                <owl:someValuesFrom rdf:resource="&data;SWO_3000045"/>
+                                <owl:someValuesFrom rdf:resource="&edamontology;format_3162"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -10308,6 +10314,22 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&efo;swo/SWO_0000554"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004002"/>
+                                <owl:someValuesFrom rdf:resource="&edamontology;format_3162"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -10326,22 +10348,6 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&efo;swo/SWO_0000741"/>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&efo;swo/SWO_0000554"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004002"/>
-                                <owl:someValuesFrom rdf:resource="&data;SWO_3000045"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -13054,24 +13060,6 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&efo;swo/SWO_0000409"/>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="&efo;swo/SWO_0000116"/>
-                                    <rdf:Description rdf:about="&data;SWO_3000045"/>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -13094,6 +13082,24 @@ tiple samples</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&efo;swo/SWO_0000741"/>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&efo;swo/SWO_0000409"/>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&edamontology;format_3162"/>
+                                    <rdf:Description rdf:about="&efo;swo/SWO_0000116"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Gene-specific dye-bias correction of two-color microarray data using the GASSCO method</obo:IAO_0000115>
@@ -22369,6 +22375,22 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;IAO_0000027"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004002"/>
+                                <owl:someValuesFrom rdf:resource="&edamontology;format_3162"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004000"/>
                 <owl:hasValue rdf:resource="&version;SWO_2000019"/>
             </owl:Restriction>
@@ -22404,23 +22426,7 @@ tiple samples</obo:IAO_0000115>
                             <rdf:Description rdf:about="&obo;IAO_0000027"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004002"/>
-                                <owl:someValuesFrom rdf:resource="&data;SWO_3000045"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;IAO_0000027"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004002"/>
-                                <owl:someValuesFrom rdf:resource="&data;SWO_3000045"/>
+                                <owl:someValuesFrom rdf:resource="&edamontology;format_3162"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -23255,7 +23261,14 @@ tiple samples</obo:IAO_0000115>
 
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000045 -->
 
-    <owl:Class rdf:about="&data;SWO_3000045"/>
+    <owl:Class rdf:about="&data;SWO_3000045">
+        <rdfs:label>obsolete_MAGE tab format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
+        <owl:deprecated rdf:datatype="&xsd;boolean">true</owl:deprecated>
+        <dc:contributor>Marked as obsolete by Allyson Lister.</dc:contributor>
+        <efo:obsoleted_in_version>Obsoleted after release 0.4</efo:obsoleted_in_version>
+        <efo:reason_for_obsolescence>Equivalent with EDAM format_3162.</efo:reason_for_obsolescence>
+    </owl:Class>
     
 
 
