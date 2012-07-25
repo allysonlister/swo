@@ -209,6 +209,19 @@
     
 
 
+    <!-- http://edamontology.org/format_3158 -->
+
+    <owl:Class rdf:about="&edamontology;format_3158">
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <obo:IAO_0000119>Modified from http://wiki.cytoscape.org/GettingStarted, accessed 20 June 2012.</obo:IAO_0000119>
+        <obo:IAO_0000118>PSI-MIF</obo:IAO_0000118>
+        <dc:creator>Allyson Lister</dc:creator>
+        <obo:IAO_0000118 xml:lang="en">PSI-MI format</obo:IAO_0000118>
+        <obo:IAO_0000115>The PSI-MI format is an acronym for the Proteomics Standards Initiative - Molecular Interaction format. It provides an XML standard for molecular interactions and is supported by many molecular interaction databases and tools.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://edamontology.org/format_3161 -->
 
     <owl:Class rdf:about="&edamontology;format_3161">
@@ -1253,19 +1266,6 @@
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000046">
         <rdfs:label>Tab delimited file format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000048 -->
-
-    <owl:Class rdf:about="&ebi;swo/data/SWO_3000048">
-        <rdfs:label xml:lang="en">PSI-MI format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
-        <obo:IAO_0000119>Modified from http://wiki.cytoscape.org/GettingStarted, accessed 20 June 2012.</obo:IAO_0000119>
-        <obo:IAO_0000115>The PSI-MI format is an acronym for the Proteomics Standards Initiative - Molecular Interaction format. It provides an XML standard for molecular interactions and is supported by many molecular interaction databases and tools.</obo:IAO_0000115>
-        <dc:creator>Allyson Lister</dc:creator>
-        <obo:IAO_0000118>PSI-MIF</obo:IAO_0000118>
     </owl:Class>
     
 
