@@ -21937,12 +21937,6 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000079"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000046"/>
-                <owl:hasValue>http://www.cytoscape.org/download.html</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -21953,8 +21947,8 @@ tiple samples</obo:IAO_0000115>
                                 <owl:someValuesFrom>
                                     <owl:Class>
                                         <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&edamontology;format_3158"/>
                                             <rdf:Description rdf:about="&data;SWO_3000037"/>
-                                            <rdf:Description rdf:about="&data;SWO_3000048"/>
                                             <rdf:Description rdf:about="&data;SWO_3000049"/>
                                             <rdf:Description rdf:about="&data;SWO_3000050"/>
                                             <rdf:Description rdf:about="&data;SWO_3000051"/>
@@ -21966,6 +21960,12 @@ tiple samples</obo:IAO_0000115>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000046"/>
+                <owl:hasValue>http://www.cytoscape.org/download.html</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -23302,6 +23302,19 @@ tiple samples</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000046 -->
 
     <owl:Class rdf:about="&data;SWO_3000046"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000048 -->
+
+    <owl:Class rdf:about="&data;SWO_3000048">
+        <rdfs:label>obsolete_PSI-MI format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
+        <owl:deprecated rdf:datatype="&xsd;boolean">true</owl:deprecated>
+        <efo:reason_for_obsolescence>Equivalence with EDAM format_3158.</efo:reason_for_obsolescence>
+        <efo:obsoleted_in_version>Obsoleted after the version 0.4 release.</efo:obsoleted_in_version>
+        <dc:contributor>Marked as obsolete by Allyson Lister.</dc:contributor>
+    </owl:Class>
     
 
 
