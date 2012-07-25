@@ -12796,6 +12796,12 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000116"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -12803,20 +12809,14 @@ tiple samples</obo:IAO_0000115>
                             <rdf:Description rdf:about="&efo;swo/SWO_0000571"/>
                             <owl:Class>
                                 <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&edamontology;format_1910"/>
                                     <rdf:Description rdf:about="&efo;swo/SWO_0000493"/>
                                     <rdf:Description rdf:about="&efo;swo/SWO_0000569"/>
-                                    <rdf:Description rdf:about="&efo;swo/SWO_0000634"/>
                                 </owl:unionOf>
                             </owl:Class>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000116"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
@@ -16183,6 +16183,19 @@ tiple samples</obo:IAO_0000115>
         <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Nested Effects Models to reconstruct phenotypic hierarchies</obo:IAO_0000115>
         <efo:definition_citation rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/nem.html</efo:definition_citation>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000634 -->
+
+    <owl:Class rdf:about="&efo;swo/SWO_0000634">
+        <rdfs:label>obsolete_newick</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
+        <owl:deprecated rdf:datatype="&xsd;boolean">true</owl:deprecated>
+        <efo:obsoleted_in_version>Obsoleted after the 0.4 release.</efo:obsoleted_in_version>
+        <efo:reason_for_obsolescence>Equivalence with EDAM format_1910.</efo:reason_for_obsolescence>
+        <dc:contributor>Marked as obsolete by Allyson Lister</dc:contributor>
     </owl:Class>
     
 

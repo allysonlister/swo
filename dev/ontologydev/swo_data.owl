@@ -142,6 +142,15 @@
     
 
 
+    <!-- http://edamontology.org/format_1910 -->
+
+    <owl:Class rdf:about="&edamontology;format_1910">
+        <rdfs:label rdf:datatype="&xsd;string">newick</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+    </owl:Class>
+    
+
+
     <!-- http://edamontology.org/format_1929 -->
 
     <owl:Class rdf:about="&edamontology;format_1929">
@@ -685,15 +694,6 @@
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000624">
         <rdfs:label rdf:datatype="&xsd;string">Microarray data</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000634 -->
-
-    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000634">
-        <rdfs:label rdf:datatype="&xsd;string">newick</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
     </owl:Class>
     
 
