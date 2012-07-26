@@ -123,6 +123,14 @@
     
 
 
+    <!-- http://edamontology.org/data_1636 -->
+
+    <owl:Class rdf:about="&edamontology;data_1636">
+        <rdfs:label rdf:datatype="&xsd;string">Heatmap</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://edamontology.org/data_2603 -->
 
     <owl:Class rdf:about="&edamontology;data_2603">
@@ -669,15 +677,6 @@
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000570">
         <rdfs:label rdf:datatype="&xsd;string">gxl format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000571 -->
-
-    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000571">
-        <rdfs:label rdf:datatype="&xsd;string">Heatmap</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
     </owl:Class>
     
 
