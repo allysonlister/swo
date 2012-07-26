@@ -123,6 +123,15 @@
     
 
 
+    <!-- http://edamontology.org/data_2603 -->
+
+    <owl:Class rdf:about="&edamontology;data_2603">
+        <rdfs:label rdf:datatype="&xsd;string">Microarray data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+    </owl:Class>
+    
+
+
     <!-- http://edamontology.org/data_2968 -->
 
     <owl:Class rdf:about="&edamontology;data_2968">
@@ -722,15 +731,6 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000620">
         <rdfs:label rdf:datatype="&xsd;string">Meta data</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000624 -->
-
-    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000624">
-        <rdfs:label rdf:datatype="&xsd;string">Microarray data</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
     </owl:Class>
     
