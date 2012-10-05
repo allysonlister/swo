@@ -3,6 +3,7 @@
 
 <!DOCTYPE rdf:RDF [
     <!ENTITY efo "http://www.ebi.ac.uk/efo/" >
+    <!ENTITY swo2 "http://www.ebi.ac.uk/swo/" >
     <!ENTITY swo "http://www.ebi.ac.uk/efo/swo/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY OntoDM "http://kt.ijs.si/panovp/OntoDM#" >
@@ -14,10 +15,11 @@
 ]>
 
 
-<rdf:RDF xmlns="http://www.ebi.ac.uk/swo/algorithm/"
-     xml:base="http://www.ebi.ac.uk/swo/algorithm/"
+<rdf:RDF xmlns="&swo2;algorithm/"
+     xml:base="&swo2;algorithm/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swo2="http://www.ebi.ac.uk/swo/"
      xmlns:swo="&efo;swo/"
      xmlns:efo="http://www.ebi.ac.uk/efo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -25,7 +27,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:OntoDM="http://kt.ijs.si/panovp/OntoDM#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
-    <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/algorithm/">
+    <owl:Ontology rdf:about="&swo2;algorithm/">
         <owl:versionInfo>0.4</owl:versionInfo>
     </owl:Ontology>
     
@@ -69,15 +71,15 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000299"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0000417 -->
 
     <owl:ObjectProperty rdf:about="&obo;OBI_0000417"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000087 -->
+
+    <owl:ObjectProperty rdf:about="&swo2;SWO_0000087"/>
     
 
 
@@ -375,6 +377,7 @@ For example, bagging of decision trees algorithm includes the specification of a
         <rdfs:label rdf:datatype="&xsd;string">&#39;ANOVA&#39;</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">ANNOVA</obo:IAO_0000118>
+        <obo:IAO_0000115>ANOVA or Analysis of Variance is a hypothesis testing algorithm which a variable is partitioned into components attributable to different sources of variation.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1680,7 +1683,7 @@ the graph structure of GO.</obo:IAO_0000115>
 
     <!-- http://www.ebi.ac.uk/swo/algorithm/OntoDM_170075 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_170075">
+    <owl:Class rdf:about="&swo2;algorithm/OntoDM_170075">
         <rdfs:label>clustering algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_731692"/>
     </owl:Class>
@@ -1689,7 +1692,7 @@ the graph structure of GO.</obo:IAO_0000115>
 
     <!-- http://www.ebi.ac.uk/swo/algorithm/OntoDM_175260 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_175260">
+    <owl:Class rdf:about="&swo2;algorithm/OntoDM_175260">
         <rdfs:label>pattern discovery algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_731692"/>
     </owl:Class>
@@ -1698,7 +1701,7 @@ the graph structure of GO.</obo:IAO_0000115>
 
     <!-- http://www.ebi.ac.uk/swo/algorithm/OntoDM_382176 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_382176">
+    <owl:Class rdf:about="&swo2;algorithm/OntoDM_382176">
         <rdfs:label>predictive modeling algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_731692"/>
     </owl:Class>
@@ -1707,7 +1710,7 @@ the graph structure of GO.</obo:IAO_0000115>
 
     <!-- http://www.ebi.ac.uk/swo/algorithm/OntoDM_584946 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_584946">
+    <owl:Class rdf:about="&swo2;algorithm/OntoDM_584946">
         <rdfs:label>clustering specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_419460"/>
         <rdfs:comment>A clustering C on a set of objects S of type T specifies a function from S
@@ -1741,9 +1744,9 @@ to {1, . . . , k}, where k is the number of clusters, which has to obey k ≤ |S
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_170075"/>
-            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_175260"/>
-            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_382176"/>
+            <rdf:Description rdf:about="&swo2;algorithm/OntoDM_170075"/>
+            <rdf:Description rdf:about="&swo2;algorithm/OntoDM_175260"/>
+            <rdf:Description rdf:about="&swo2;algorithm/OntoDM_382176"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
