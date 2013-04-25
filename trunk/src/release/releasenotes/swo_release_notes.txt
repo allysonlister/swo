@@ -15,8 +15,8 @@ http://theswo.sourceforge.net
 
 RELEASE NOTES
 
-VERSION: 0.5
-DATE: 5th October 2012
+VERSION: 0.6
+DATE: 25th April 2013
 --------------------------------
 
 
@@ -35,7 +35,7 @@ Contents
 --------------------------------
 1. Summary
 
-Relase 0.5 contains some refactoring of object properties for connecting data to software and introduces an inverse to the implements object property - is implemented by.
+Relase 0.6 contains some refactoring of object properties for connecting data to software and introduces an inverse to the implements object property - is implemented by.
 
 
 --------------------------------
