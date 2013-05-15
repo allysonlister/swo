@@ -32,7 +32,6 @@
     <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
     <!ENTITY xsp "http://www.owl-ontologies.com/2005/08/07/xsp.owl#" >
     <!ENTITY swo2 "http://www.ebi.ac.uk/swo/http://www.ebi.ac.uk/efo/swo/" >
-    <!ENTITY data2 "http://www.ebi.ac.uk/swo/data/http://www.ebi.ac.uk/swo/data/" >
 ]>
 
 
@@ -61,7 +60,6 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
      xmlns:obof="http://purl.obofoundry.org/obo/"
-     xmlns:data2="&data;&data;"
      xmlns:interface="http://www.ebi.ac.uk/swo/interface/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
