@@ -4,7 +4,6 @@
 <!DOCTYPE rdf:RDF [
     <!ENTITY edamontology "http://edamontology.org/" >
     <!ENTITY efo "http://www.ebi.ac.uk/efo/" >
-    <!ENTITY swo "http://www.ebi.ac.uk/efo/swo/" >
     <!ENTITY data "http://www.ebi.ac.uk/swo/data/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
@@ -31,16 +30,13 @@
     <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
     <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
     <!ENTITY xsp "http://www.owl-ontologies.com/2005/08/07/xsp.owl#" >
-    <!ENTITY swo2 "http://www.ebi.ac.uk/swo/http://www.ebi.ac.uk/efo/swo/" >
 ]>
 
 
 <rdf:RDF xmlns="http://www.ebi.ac.uk/swo/"
      xml:base="http://www.ebi.ac.uk/swo/"
      xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
-     xmlns:swo2="http://www.ebi.ac.uk/swo/&efo;swo/"
      xmlns:maturity="http://www.ebi.ac.uk/swo/maturity/"
-     xmlns:swo="&efo;swo/"
      xmlns:efo="http://www.ebi.ac.uk/efo/"
      xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
      xmlns:data="http://www.ebi.ac.uk/swo/data/"
@@ -23427,9 +23423,9 @@ tiple samples</obo:IAO_0000115>
     
 
 
-    <!-- http://www.ebi.ac.uk/swo/http://www.ebi.ac.uk/efo/swo/SWO__0000399 -->
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000399 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/&efo;swo/SWO__0000399">
+    <owl:Class rdf:about="&efo;swo/SWO_0000399">
         <rdfs:label>obsolete_html</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
         <owl:deprecated rdf:datatype="&xsd;boolean">true</owl:deprecated>
