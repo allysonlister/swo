@@ -2369,38 +2369,10 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
     <owl:Class rdf:about="&efo;swo/SWO_0000072">
         <rdfs:label rdf:datatype="&xsd;string">BioConductor Software</rdfs:label>
         <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="&organization;SWO_9000055"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&organization;SWO_9000059"/>
-                                        <owl:hasValue rdf:resource="&efo;swo/SWO_0000073"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="&organization;SWO_9000056"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&organization;SWO_9000059"/>
-                                        <owl:hasValue rdf:resource="&efo;swo/SWO_0000073"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:unionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004004"/>
+                <owl:hasValue rdf:resource="&efo;swo/SWO_0000073"/>
+            </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
@@ -2413,6 +2385,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Bioconductor is an open source and open development software project to provide tools for the analysis and comprehension of genomic data. Bioconductor is based primarily on the R programming language, but does contain contributions in other programming languages.</obo:IAO_0000115>
         <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">http://www.bioconductor.org/overview</obo:IAO_0000115>
+        <rdfs:comment>This is a defined class which will be populated if a piece of software identifies itself as having the value &apos;Bioconductor&apos; for the &apos;is published by&apos; property. (Allyson Lister)</rdfs:comment>
     </owl:Class>
     
 
