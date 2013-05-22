@@ -407,7 +407,8 @@
     <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0004004">
         <rdfs:label>is published by</rdfs:label>
         <dc:creator>James Malone</dc:creator>
-        <obo:IAO_0000115>&apos;is published by&apos; elucidates the relationship between a piece of software or a data format specification and its owning/creating organization.</obo:IAO_0000115>
+        <dc:creator>Allyson Lister</dc:creator>
+        <obo:IAO_0000115>&apos;is published by&apos; elucidates the relationship between a piece of software or a data format specification and its owning organization. Please note that this is not the same as authorship of the software. For instance, affy is published within Bioconductor, but has its own distinct authorship list.</obo:IAO_0000115>
         <rdfs:range rdf:resource="&obo;OBI_0000245"/>
         <rdfs:domain>
             <owl:Class>
@@ -11179,9 +11180,9 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">affyContam functions for structured corruption of cel file data to demonstrate QA effectiveness</obo:IAO_0000115>
-        <efo:definition_citation rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/affyContam.html</efo:definition_citation>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan, Allyson Lister</dc:creator>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">affyContam is software which provides the in silico creation of quality problems in CEL-level data to help evaluate performance of quality metrics. In essence, it creates structured corruption within CEL data to demonstrate QA effectiveness.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/affyContam.html (access unknown); http://www.bioconductor.org/packages/2.12/bioc/vignettes/affyContam/inst/doc/affyContam.pdf, accessed 22 May 2013.</obo:IAO_0000119>
     </owl:Class>
     
 
