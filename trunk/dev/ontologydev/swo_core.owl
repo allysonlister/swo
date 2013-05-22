@@ -3370,6 +3370,24 @@ The analysis includes normalization and data preprocessing, detection for differ
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000086"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004002"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&efo;swo/SWO_0000083"/>
+                                    <rdf:Description rdf:about="&efo;swo/SWO_0000084"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&efo;swo/SWO_0000741"/>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
@@ -3391,19 +3409,6 @@ The analysis includes normalization and data preprocessing, detection for differ
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&efo;swo/SWO_0000395"/>
                 <owl:hasValue rdf:resource="&efo;swo/SWO_0000023"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000086"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&efo;swo/SWO_0000083"/>
-                            <rdf:Description rdf:about="&efo;swo/SWO_0000084"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
