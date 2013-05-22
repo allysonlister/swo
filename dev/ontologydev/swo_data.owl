@@ -1502,7 +1502,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000059 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000059">
-        <rdfs:label xml:lang="en">&apos;CEL ASCII format&apos;</rdfs:label>
+        <rdfs:label xml:lang="en">CEL ASCII format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000042"/>
         <rdfs:subClassOf>
             <owl:Restriction>
