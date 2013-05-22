@@ -1312,10 +1312,15 @@
     <owl:Class rdf:about="&efo;swo/SWO_0000026">
         <rdfs:label rdf:datatype="&xsd;string">Affymetrix Software</rdfs:label>
         <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004004"/>
-                <owl:hasValue rdf:resource="&efo;swo/SWO_0000023"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004004"/>
+                        <owl:hasValue rdf:resource="&efo;swo/SWO_0000023"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
@@ -2341,10 +2346,15 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
     <owl:Class rdf:about="&efo;swo/SWO_0000072">
         <rdfs:label rdf:datatype="&xsd;string">BioConductor Software</rdfs:label>
         <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004004"/>
-                <owl:hasValue rdf:resource="&efo;swo/SWO_0000073"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004004"/>
+                        <owl:hasValue rdf:resource="&efo;swo/SWO_0000073"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
