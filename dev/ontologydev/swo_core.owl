@@ -408,9 +408,15 @@
         <rdfs:label>is published by</rdfs:label>
         <dc:creator>James Malone</dc:creator>
         <obo:IAO_0000115>&apos;is published by&apos; elucidates the relationship between a piece of software or a data format specification and its owning/creating organization.</obo:IAO_0000115>
-        <rdfs:domain rdf:resource="&obo;IAO_0000098"/>
         <rdfs:range rdf:resource="&obo;OBI_0000245"/>
-        <rdfs:domain rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;IAO_0000098"/>
+                    <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
     </owl:ObjectProperty>
     
 
