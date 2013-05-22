@@ -11223,25 +11223,18 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000454 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000454">
-        <rdfs:label rdf:datatype="&xsd;string">&apos;affyImGUI&apos;</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">affyImGUI</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&efo;swo/SWO_0000741"/>
-                <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004004"/>
+                <owl:hasValue rdf:resource="&efo;swo/SWO_0000073"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000086"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&efo;swo/SWO_0000409"/>
-                            <rdf:Description rdf:about="&efo;swo/SWO_0000596"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="&efo;swo/SWO_0000741"/>
+                <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11260,6 +11253,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A Graphical User Interface for affy analysis using the limma Microarray package</obo:IAO_0000115>
         <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
         <efo:definition_citation rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/affylmGUI.html</efo:definition_citation>
+        <rdfs:comment>Removed the links to specified data inputs, as this software is a GUI wrapper for another package, and it is this package which takes the inputs. (Allyson Lister 22/05/2013)</rdfs:comment>
     </owl:Class>
     
 
@@ -11551,19 +11545,12 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000460 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000460">
-        <rdfs:label rdf:datatype="&xsd;string">&apos;affyio&apos;</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">affyio</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000086"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&efo;swo/SWO_0000083"/>
-                            <rdf:Description rdf:about="&efo;swo/SWO_0000084"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004004"/>
+                <owl:hasValue rdf:resource="&efo;swo/SWO_0000073"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11574,14 +11561,41 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000086"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004002"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&efo;swo/SWO_0000083"/>
+                                    <rdf:Description rdf:about="&efo;swo/SWO_0000084"/>
+                                    <rdf:Description rdf:about="&data;SWO_3000057"/>
+                                    <rdf:Description rdf:about="&data;SWO_3000059"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000087"/>
                 <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&efo;swo/SWO_0000083"/>
-                            <rdf:Description rdf:about="&efo;swo/SWO_0000084"/>
-                        </owl:unionOf>
-                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004002"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&efo;swo/SWO_0000083"/>
+                                    <rdf:Description rdf:about="&efo;swo/SWO_0000084"/>
+                                    <rdf:Description rdf:about="&data;SWO_3000057"/>
+                                    <rdf:Description rdf:about="&data;SWO_3000059"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -11591,9 +11605,9 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000648"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Routines for parsing Affymetrix data files based upon file format information. Primary focus is on accessing the CEL and CDF file formats.</obo:IAO_0000115>
-        <efo:definition_citation rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/affyio.html</efo:definition_citation>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/affyio.html</obo:IAO_0000119>
     </owl:Class>
     
 
