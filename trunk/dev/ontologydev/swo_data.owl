@@ -112,12 +112,6 @@
     
 
 
-    <!-- http://www.ebi.ac.uk/efo/definition_editor -->
-
-    <owl:AnnotationProperty rdf:about="&ebi;efo/definition_editor"/>
-    
-
-
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
@@ -996,9 +990,9 @@
         <edamontology2:comment>Data in RDF format can be serialised into XML, textual, or binary format.</edamontology2:comment>
         <dc:creator>James Malone</dc:creator>
         <edamontology2:namespace>format</edamontology2:namespace>
+        <dc:creator>Jon Ison</dc:creator>
         <edamontology2:subset>bioinformatics</edamontology2:subset>
         <edamontology2:subset>formats</edamontology2:subset>
-        <efo:definition_editor>Jon Ison</efo:definition_editor>
     </owl:Class>
     
 
@@ -1449,14 +1443,14 @@
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/data/SWO_3000054"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000055"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
+                <owl:onProperty rdf:resource="&ebi;swo/data/SWO_3000054"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000055"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
