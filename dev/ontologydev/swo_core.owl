@@ -11238,19 +11238,6 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000087"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&efo;swo/SWO_0000409"/>
-                            <rdf:Description rdf:about="&efo;swo/SWO_0000661"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&efo;swo/SWO_0000741"/>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
@@ -11266,6 +11253,28 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000087"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&efo;swo/SWO_0000661"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004002"/>
+                                <owl:allValuesFrom rdf:resource="&efo;swo/SWO_0000409"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&efo;swo/SWO_0000395"/>
+                <owl:hasValue rdf:resource="&efo;swo/SWO_0000073"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11287,9 +11296,9 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">XDE: a Bayesian hierarchical model for cross-study analysis of differential gene expression</obo:IAO_0000115>
-        <efo:definition_citation rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/XDE.html</efo:definition_citation>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/XDE.html</obo:IAO_0000119>
     </owl:Class>
     
 
