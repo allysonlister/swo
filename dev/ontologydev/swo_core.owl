@@ -134,12 +134,6 @@
     
 
 
-    <!-- http://www.ebi.ac.uk/efo/definition_editor -->
-
-    <owl:AnnotationProperty rdf:about="&efo;definition_editor"/>
-    
-
-
     <!-- http://www.ebi.ac.uk/efo/obsoleted_in_version -->
 
     <owl:AnnotationProperty rdf:about="&efo;obsoleted_in_version">
