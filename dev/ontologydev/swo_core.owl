@@ -254,7 +254,7 @@
 
     <owl:ObjectProperty rdf:about="&efo;swo/SWO_0000740">
         <rdfs:label rdf:datatype="&xsd;string">implements</rdfs:label>
-        <efo:definition_editor>James Malone</efo:definition_editor>
+        <dc:creator>James Malone</dc:creator>
         <obo:IAO_0000115>implements is the relationship between software and an algorithm that is defined for use within that software when executed. </obo:IAO_0000115>
         <rdfs:range rdf:resource="&obo;IAO_0000064"/>
         <rdfs:domain rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
@@ -297,7 +297,7 @@
     <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0000085">
         <rdfs:label xml:lang="en">is implemented by</rdfs:label>
         <obo:IAO_0000115>is implemented by is the relationship between an algorithm and a piece of software which includes an implementation of that software for use when the software is executed. </obo:IAO_0000115>
-        <efo:definition_editor>James Malone</efo:definition_editor>
+        <dc:creator>James Malone</dc:creator>
         <rdfs:domain rdf:resource="&obo;IAO_0000064"/>
         <owl:inverseOf rdf:resource="&efo;swo/SWO_0000740"/>
         <rdfs:range rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
@@ -310,7 +310,7 @@
     <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0000086">
         <rdfs:label>has specified data input</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The relationship between input data which is permitted to a piece of software.</obo:IAO_0000115>
-        <efo:definition_editor>James Malone</efo:definition_editor>
+        <dc:creator>James Malone</dc:creator>
         <rdfs:range rdf:resource="&obo;IAO_0000027"/>
         <rdfs:domain rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
     </owl:ObjectProperty>
@@ -321,7 +321,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0000087">
         <rdfs:label xml:lang="en">has specified data output</rdfs:label>
-        <efo:definition_editor>James Malone</efo:definition_editor>
+        <dc:creator>James Malone</dc:creator>
         <obo:IAO_0000115 xml:lang="en">The relationship between a piece of software and the data that it is possible to output.</obo:IAO_0000115>
         <rdfs:range rdf:resource="&obo;IAO_0000027"/>
         <rdfs:domain rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
@@ -334,7 +334,7 @@
     <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0000088">
         <rdfs:label xml:lang="en">is specified data input of</rdfs:label>
         <obo:IAO_0000115>The relationship between a data and the software which can possibly take this data as input.</obo:IAO_0000115>
-        <efo:definition_editor>James Malone</efo:definition_editor>
+        <dc:creator>James Malone</dc:creator>
         <rdfs:domain rdf:resource="&obo;IAO_0000027"/>
         <rdfs:range rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <owl:inverseOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000086"/>
@@ -347,7 +347,7 @@
     <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0000089">
         <rdfs:label xml:lang="en">is specified data output of</rdfs:label>
         <obo:IAO_0000115>The relationship between a data and the software which can possibly produce this data as output.</obo:IAO_0000115>
-        <efo:definition_editor>James Malone</efo:definition_editor>
+        <dc:creator>James Malone</dc:creator>
         <rdfs:domain rdf:resource="&obo;IAO_0000027"/>
         <rdfs:range rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <owl:inverseOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000087"/>
@@ -792,7 +792,7 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">50-50 Manova is software in which the 50-50 MANOVA algorithm is implemented.</obo:IAO_0000115>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">General linear modeling of fixed-effects models with multiple responses is performed. The function calculates 50-50 MANOVA p-values, ordinary univariate p-values and adjusted p-values using rotation testing.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://rss.acs.unt.edu/Rdoc/library/ffmanova/html/ffmanova.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -903,7 +903,7 @@
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000715"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The ABarray is designed to work with Applied Biosystems whole genome microarray platform, as well as any other platform whose data can be tranformed into expression data matrix.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.bioconductor.org/packages/2.4/bioc/html/ABarray.html</obo:IAO_0000119>
     </owl:Class>
@@ -957,7 +957,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">ACME (Algorithms for Calculating Microarray Enrichment) is a set of tools for analysing tiling array ChIP/chip, DNAse hypersensitivity, or other experiments that result in regions of the genome showing &quot;enrichment&quot;. It does not rely on a specific array technology (although the array should be a &quot;tiling&quot; array), is very general (can be applied in experiments resulting in regions of enrichment), and is very insensitive to array noise or normalization methods. It is also very fast and can be applied on whole-genome tiling array experiments quite easily with enough memory.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/ACME.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -1051,7 +1051,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Expression Console™ software supports probe set summarization and CHP file generation for 3&apos; expression (e.g., GeneChip® Human Genome U133 Plus 2.0 Array), gene-level (e.g., GeneChip® Human Gene 1.0 ST array) and exon-level arrays (e.g., GeneChip® Human Exon 1.0 ST Array). The Expression Console workflow provides the user with a choice of the more commonly used probe set summarization algorithms</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.affymetrix.com/</obo:IAO_0000119>
     </owl:Class>
     
@@ -1079,7 +1079,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">AIDA is a modular software package for evaluation and documentation of images that were obtained with digital devices such as CCD cameras, flat bed scanners, or BAS / FLA- scanners from Fuji. Additionally, AIDA allows the loading of loading a variety of images in other image formats (e.g.: TIFF, JPEG, Bmp, gel). AIDA can control all scanning devices offering a TWAIN compatible driver.</obo:IAO_0000119>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.raytest.de/index2.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -1090,7 +1090,7 @@
     <owl:Class rdf:about="&efo;swo/SWO_0000019">
         <rdfs:label rdf:datatype="&xsd;string">Absolute Expression Analysis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000297"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -1100,7 +1100,7 @@
     <owl:Class rdf:about="&efo;swo/SWO_0000020">
         <rdfs:label rdf:datatype="&xsd;string">Absolute Expression Analysis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000272"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -1154,7 +1154,7 @@
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000648"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The AffyCompatible package provides an interface to Affymetrix chip annotation and sample attribute files. The package allows an easy way for users to download and manage local data bases of Affynmetrix NetAffx annotation files. The package also provides access to GeneChip Operating System (GCOS) and GeneChip Command Console (AGCC)-compatible sample annotation files.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/AffyCompatible.html</obo:IAO_0000119>
     </owl:Class>
@@ -1260,7 +1260,7 @@
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0200168"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The purpose of this package is to provide a comprehensive and easy-to-use tool for quality assessment and to identify differentially expressed genes in the Affymetrix gene expression data.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/AffyExpress.html</obo:IAO_0000119>
     </owl:Class>
@@ -1272,7 +1272,7 @@
     <owl:Class rdf:about="&efo;swo/SWO_0000024">
         <rdfs:label rdf:datatype="&xsd;string">Affymetrix GCOS v1.2</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000025"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -1301,7 +1301,7 @@
         <obo:IAO_0000118 rdf:datatype="&xsd;string">Affymetrix GCOS software</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">GCOS software</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">GeneChip Operating Software</obo:IAO_0000118>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The Affymetrix GeneChip Operating Software (GCOS) is an operating system software that controls Affymetrix instruments, acquires data, and executes gene expression analysis. In addition, GCOS contains an embedded database that manages both experiment information and data.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.affymetrix.com</obo:IAO_0000119>
     </owl:Class>
@@ -1324,7 +1324,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -1460,7 +1460,7 @@
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0200168"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Preprocessing of Agilent 4x44 array data</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/Agi4x44PreProcess.html</obo:IAO_0000119>
     </owl:Class>
@@ -1472,7 +1472,7 @@
     <owl:Class rdf:about="&efo;swo/SWO_0000028">
         <rdfs:label rdf:datatype="&xsd;string">Agilent Feature Extraction 5.1.1</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000147"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -1482,7 +1482,7 @@
     <owl:Class rdf:about="&efo;swo/SWO_0000029">
         <rdfs:label rdf:datatype="&xsd;string">Agilent Feature Extraction software version 7.1</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000147"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -1492,7 +1492,7 @@
     <owl:Class rdf:about="&efo;swo/SWO_0000030">
         <rdfs:label rdf:datatype="&xsd;string">Agilent Feature Extraction software version 7.5</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000147"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -1502,7 +1502,7 @@
     <owl:Class rdf:about="&efo;swo/SWO_0000031">
         <rdfs:label rdf:datatype="&xsd;string">Agilent Feature Extraction software version A.5.1.1</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000147"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -1528,7 +1528,7 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">Scan Control Application software</obo:IAO_0000118>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Scan Control Software is the user interface software that controls the Agilent scanner. This software is usable only with the Agilent high-resolution scanner (G2565CA) or high-resolution scanner upgrade. It will not function with earlier scanner versions</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.chem.agilent.com/</obo:IAO_0000119>
@@ -1557,7 +1557,7 @@
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -1621,7 +1621,7 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package provides user interface and database connection code for annotation data packages using SQLite data storage.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/AnnotationDbi.html</obo:IAO_0000119>
     </owl:Class>
@@ -1653,7 +1653,7 @@
 Sensitivity: a detection threshold of as little as a femtomole of expresseed mRNA and requiring as little as 500ng of starting total RNA.
 Content: each probe is associated with a gene sequence buiult on unique Celera data and validated by public RefSeqs all of which have been curated.
 Pipeline: complete integrated solutions for gene expression research including Applied Biosystems Bioinformatic tools and ready-to-go gene expression TaqMan assays for validation of results.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.geneservice.co.uk/services/geneexpression/overview_1700.jsp</obo:IAO_0000119>
     </owl:Class>
     
@@ -1683,7 +1683,7 @@ Pipeline: complete integrated solutions for gene expression research including A
         <obo:IAO_0000118 rdf:datatype="&xsd;string">ArrayGauge [FUJIFILM]</obo:IAO_0000118>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Fujifilm ArrayGauge™ software is specifically designed for Macroarray and Microarray samples, with all the practical functions necessary for the most powerful array analysis.
 Its ultra-friendly navigation and functions can handle any kind of array (CLONTECH, Genome Systems, Research Genetics - even hand-made arrays). It already includes virtually every contemporary cDNA membrane template on the market, with the flexibility to handle others as they develop.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.fujifilm.com/products/life_science_systems/science_imaging/arraygauge/</obo:IAO_0000119>
     </owl:Class>
     
@@ -1711,7 +1711,7 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">ArrayNorm is an platform-independent Java tool for normalization and statistical analysis for microarray-experiment data. It provides modules for visualization (scatterplot, histogram, boxplot, etc.), normalization and analysis.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bin.tugraz.at/Tools/ArrayNorm.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -1772,7 +1772,7 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package is designed to provide solutions for quality assessment and to detect differentially expressed genes for the Affymetrix GeneChips, including both 3&apos; -arrays and gene 1.0-ST arrays.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/ArrayTools.html</obo:IAO_0000119>
     </owl:Class>
@@ -1801,7 +1801,7 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This software implements a robust algorithm for spot finding and quantitation, quality metrics, and use of pre-made protocols ensure accuracy and reproducibility. Choices for background correction, normalization, and ratio calculation between arrays provides flexibility.Wizard guides simplify operation.Automatic batch processing increases throughput and saves time.Data easily exported to Microsoft™ Excel or database programs for flexibility in reporting.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1812,7 +1812,7 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
     <owl:Class rdf:about="&efo;swo/SWO_0000044">
         <rdfs:label rdf:datatype="&xsd;string">ArrayVision 6.0 (Imaging Research Inc.)</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000042"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -1822,7 +1822,7 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
     <owl:Class rdf:about="&efo;swo/SWO_0000045">
         <rdfs:label rdf:datatype="&xsd;string">Array_vision_(Interfocus)</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000042"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -1849,7 +1849,7 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Computer software for the analysis and comparison of Atlas™ nylon and plastic arrays.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.clontech.com/images/pacs/634650-PA27475.pdf</obo:IAO_0000119>
     </owl:Class>
     
@@ -1860,7 +1860,7 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
     <owl:Class rdf:about="&efo;swo/SWO_0000047">
         <rdfs:label rdf:datatype="&xsd;string">Axon GenePix Pro 3</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000187"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -1972,7 +1972,7 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Functions and classes for de novo prediction of transcription factor binding consensus by heuristic search</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/BCRANK.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -2021,7 +2021,7 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Bayesian models for differential gene expression</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/BGmix.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -2084,7 +2084,7 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">BLAST, or Basic Local Alignment Search Tool in full, is an algorithm for comparing primary biological sequence information, such as the amino-acid  sequences of different proteins or the nucleotides  of DNA sequences.</obo:IAO_0000115>
         <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The Basic Local Alignment Search Tool (BLAST) finds regions of local similarity between sequences. The program compares nucleotide or protein sequences to sequence databases and calculates the statistical significance of matches. BLAST can be used to infer functional and evolutionary relationships between sequences as well as help identify members of gene families.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://blast.ncbi.nlm.nih.gov/Blast.cgi</obo:IAO_0000119>
         <dc:contributor>Allyson Lister: added &apos;achieves objective&apos; axioms for pairwise and multiple sequence alignment classes.</dc:contributor>
@@ -2114,7 +2114,7 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">BRB-ArrayTools is an integrated package for the visualization and statistical analysis of DNA microarray gene expression data. It was developed by professional statisticians experienced in the analysis of microarray data and involved in the development of improved methods for the design and analysis of microarray based experiments. The system incorporates a variety of powerful analytic and visualization tools developed specifically for microarray data analysis.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://linus.nci.nih.gov/BRB-ArrayTools.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -2163,7 +2163,7 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This document describes the process of forging a BSgenome data package. It is intended for Bioconductor
 users who want to make a new BSgenome data package</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/BSgenome.html</obo:IAO_0000119>
@@ -2193,7 +2193,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">BZScan is a free java tool for automatic quantification of DNA microarrays with radioactive labeling. BZScan provides saturation, overshining, and background noise correction, it also gives quality control measures. It can work either in a fully automatic &quot;batch mode&quot; or at different levels of manual operation.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://tagc.univ-mrs.fr/bioinformatics/bzscan/</obo:IAO_0000119>
     </owl:Class>
     
@@ -2220,7 +2220,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This program may be used to read out image data from all scanners of the FujiFilm BAS series (BAS1000, BAS1500, BAS1800, BAS2000, BAS2500, BAS3000, BAS5000) and the FujiFilm FLA scanners (FLA-2000, FLA-3000).</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.rubion.rub.de/labor/pdf/BASREAD.pdf</obo:IAO_0000119>
     </owl:Class>
@@ -2249,7 +2249,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">BeadStudio Software is a modular analysis tool for genotyping, gene expression, and methylation applications</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.illumina.com/pages.ilmn?ID=35</obo:IAO_0000119>
     </owl:Class>
     
@@ -2282,7 +2282,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package is dedicated to biclustering analysis which allows to discover sets of genes that have the same expression pattern accross a set of samples</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/BicARE.html</obo:IAO_0000119>
     </owl:Class>
@@ -2301,7 +2301,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Creates classes used in model-view-controller (MVC) design</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/BioMVCClass.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -2319,7 +2319,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Functions that are needed by many other packages or which replace R functions</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/Biobase.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -2336,7 +2336,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Software and data to support the case studies.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/BiocCaseStudies.html</obo:IAO_0000119>
     </owl:Class>
@@ -2367,7 +2367,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
         </rdfs:subClassOf>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">Bioconductor</obo:IAO_0000118>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Bioconductor is an open source and open development software project to provide tools for the analysis and comprehension of genomic data. Bioconductor is based primarily on the R programming language, but does contain contributions in other programming languages.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">http://www.bioconductor.org/overview</obo:IAO_0000115>
         <rdfs:comment>This is a defined class which will be populated if a piece of software identifies itself as having the value &apos;Bioconductor&apos; for the &apos;is published by&apos; property. (Allyson Lister)</rdfs:comment>
     </owl:Class>
@@ -2398,7 +2398,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Memory efficient string containers, string matching algorithms, and other utilities, for fast manipulation of large biological sequences or set of sequences.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/Biostrings.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -2427,7 +2427,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">BlueFuse  for Microarrays is a powerful software solution for the analysis of microarray expression and arrayCGH experiments. Operation is simple and fully automated, saving time, removing operator error and subjectivity and ensuring experimental reproducibility.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">BlueFuse [BlueGnome]</obo:IAO_0000118>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.cambridgebluegnome.com/bluefuse.htm</obo:IAO_0000119>
     </owl:Class>
     
@@ -2508,7 +2508,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package creates a tabular style data object where most data is stored outside main memory. A buffer is used to speed up access to data.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/BufferedMatrix.html</obo:IAO_0000119>
     </owl:Class>
@@ -2558,7 +2558,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package involves microarray Data related methods that utlize BufferedMatrix objects</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/BufferedMatrixMethods.html</obo:IAO_0000119>
     </owl:Class>
@@ -2620,7 +2620,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package contains functions for normalizing spotted microarray data, based on a physically motivated calibration model. The model parameters and error distributions are estiamted from external control spikes.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/CALIB.html</obo:IAO_0000119>
     </owl:Class>
@@ -2677,7 +2677,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Annotation of peaklists generated by xcms, rule based annotation of isotopes and adducts, EIC correlation based tagging of unknown adducts and fragments</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -2738,7 +2738,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Contains functions and classes that are needed by arrayCGH packages.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/CGHbase.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -2812,7 +2812,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Calls aberrations for array CGH data using a six state mixture model as well as several biological concepts that are ignored by existing algorithms. Visualization of profiles is also provided.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/CGHcall.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -2868,7 +2868,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Dimension Reduction for Array CGH Data with Minimal Information Loss</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/CGHregions.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -2929,7 +2929,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package provides a comprehensive collection of various microarray-based classification algorithms both from Machine Learning and Statistics. Variable Selection, Hyperparameter tuning, Evaluation and Comparison can be performed combined or stepwise in a user-friendly environment.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/CMA.html</obo:IAO_0000119>
     </owl:Class>
@@ -2992,7 +2992,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Multivariate correlation estimation and statistical inference.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/CORREP.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -3022,7 +3022,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">CARMAweb allows the analysis of Affymetrix GeneChip, ABI microarrays and two color microarrays.
 The analysis includes normalization and data preprocessing, detection for differentially expressed genes, cluster analysis and GO analysis. All calculations (except the cluster analysis) are performed in R using functions provided by the BioConductor packages.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">CarmaWEB</obo:IAO_0000118>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">https://carmaweb.genome.tugraz.at/carma/</obo:IAO_0000119>
     </owl:Class>
     
@@ -3169,7 +3169,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">ChemMineR is an open source compound mining framework. It contains functions for atom descriptor calculation, structure similarity searching, clustering of compound libraries and various utilities for managing complex compound data. It also offers a wide range of visualization functions for compound clusters and chemical structures. The package is integrated with the online ChemMine environment and allows bidirectional communications between the two services.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/ChemmineR.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -3196,7 +3196,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">VersArray ChipReader</obo:IAO_0000118>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Versarray ChipReader systems are highly sensitive laser confocal systems designed for rapid imaging of microarrays. These are advanced scanners that meet your expectations, differentiating between a spot response and background level, and optimizing the signal on the bottom as well as the top end of the range for increased sensitivity. Results with versarray chipreader systems have a low background, enhanced weak signal detection, and virtually no photobleaching for a long dye lifetime.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.bio-medicine.org/</obo:IAO_0000119>
@@ -3228,7 +3228,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <obo:IAO_0000115 rdf:datatype="&xsd;string">ChipSkipper - an integrated tool for analysis, evaluation and quantitation of  DNA micro-array data</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">ChipSkipper Microarray Data Evaluation Software</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">ChipSkipper [EMBL]</obo:IAO_0000118>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://angiogenesis.dkfz.de/software/chipskipper/index.htm</obo:IAO_0000119>
     </owl:Class>
     
@@ -3239,7 +3239,7 @@ The analysis includes normalization and data preprocessing, detection for differ
     <owl:Class rdf:about="&efo;swo/SWO_0000102">
         <rdfs:label rdf:datatype="&xsd;string">ChipSkipper V0.99</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000101"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -3287,7 +3287,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A multiscan is an R package for combining multiple scans</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/multiscan.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -3371,7 +3371,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The affy package contains functions for exploratory oligonucleotide array analysis. The dependance to tkWidgets only concerns few convenience functions. &apos;affy&apos; is fully functional without it.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/affy.html</obo:IAO_0000119>
     </owl:Class>
@@ -3434,7 +3434,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The affycomp package contains functions that can be used to compare expression measures for Affymetrix Oligonucleotide Arrays.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/affycomp.html</obo:IAO_0000119>
     </owl:Class>
@@ -3452,7 +3452,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0200005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -3528,7 +3528,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">adSplit implements clustering of microarray gene expression profiles according to functional annotations. For each term genes are annotated to, splits into two subclasses are computed and a significance of the supporting gene set is determined.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/adSplit.html</obo:IAO_0000119>
     </owl:Class>
@@ -3546,7 +3546,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Statistical methods for identifying differentially expressed genes in replicated cDNA microarray experiments.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.stat.berkeley.edu/users/terry/zarray/Software/smacode.html</obo:IAO_0000119>
     </owl:Class>
@@ -3574,7 +3574,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -3647,7 +3647,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A collection of software tools for dealing with co-citation data.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/CoCiteStats.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -3674,7 +3674,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This software has a series of analytical tools to address the manufacturing, detection and data analysis components of a microarray experiment. Together, these tools help optimize performance in an expression profiling study.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=101854</obo:IAO_0000119>
     </owl:Class>
@@ -3702,7 +3702,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Slides are scanned using CodeLink Expression Scanning Software</obo:IAO_0000115>
     </owl:Class>
     
@@ -3730,7 +3730,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Cyber-T may be used to statistically determine what the probability is that a specific gene is differentially expressed by determining an associated p-value statistic.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://dmaf.biochem.uci.edu/affymetrix_analysis_software.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -3815,7 +3815,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This library contains functions that calculate various statistics of differential expression for microarray data, including t statistics, fold change, F statistics, SAM, moderated t and F statistics and B statistics. It also implements a new methodology called DEDS (Differential Expression via Distance Summary), which selects differentially expressed genes by integrating and summarizing a set of statistics using a weighted distance approach.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/DEDS.html</obo:IAO_0000119>
     </owl:Class>
@@ -3877,7 +3877,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000127"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package provides a supervised technique able to identify differentially expressed genes. The Fuzzy Patterns are built by means of applying 3 Membership Functions to discretized gene expression values.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/DFP.html</obo:IAO_0000119>
     </owl:Class>
@@ -3927,7 +3927,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Segments DNA copy number data using circular binary segmentation to detect regions with abnormal copy number</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/DNAcopy.html</obo:IAO_0000119>
     </owl:Class>
@@ -3962,7 +3962,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A set of functions to create and interact with dynamic documents and vignettes.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/DynDoc.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -4028,7 +4028,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">EBImage is an R package which provides general purpose functionality for the reading, writing, processing and analysis of images. Furthermore, in the context of microscopy based cellular assays, EBImage offers tools to transform the images, segment cells and extract quantitative cellular descriptors.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/EBImage.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -4124,7 +4124,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">EBarrays provides tools for the analysis of replicated/unreplicated microarray data.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/EBarrays.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -4152,7 +4152,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Exper 2100 offers powerful data evaluation tools for all available assays, automatic and manual integration, smear analysis and many assay-specific tools.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.chem.agilent.com/en-US/products/instruments/lab-on-a-chip/2100expertsoftware/pages/default.aspx</obo:IAO_0000119>
     </owl:Class>
     
@@ -4201,7 +4201,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <obo:IAO_0000118 rdf:datatype="&xsd;string">Feature Extraction Software</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">Feature Extraction Software [Agilent Technologies]</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">Feature Extraction software</obo:IAO_0000118>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The software automatically finds and places microarray grids, rejects outlier pixels, accurately determines feature intensities and ratios, flags outlier pixels, and calculates statistical confidences. Application-specific QC reports summarize results and provide an at-a-glance quality assessment</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.chem.agilent.com/en-us/products/instruments/dnamicroarrays/featureextractionsoftware/pages/default.aspx</obo:IAO_0000119>
     </owl:Class>
@@ -4230,7 +4230,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Dynamically chooses cutoffs for grouping into present/divergent genes based on the shape of the distribution. More resistant to variation in hybridization data than CCACK.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://falkow.stanford.edu/whatwedo/software/software.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -4258,7 +4258,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">GC-RMA Quantification (Stratagene ArrayAssist Expression Software)</obo:IAO_0000118>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Single-user desktop software package for analyzing microarray data from multiple microarray platforms.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.biocompare.com/ProductDetails/475470/ArrayAssist-Expression-Software-(1-year-academic-license).html</obo:IAO_0000119>
     </owl:Class>
@@ -4287,7 +4287,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Incyte GEMTools software is an enterprise solution for managing gene expression data using the SQL Server and Oracle relational databases. It was one of the first integrated software packages designed with an easy-to-use interface to help scientist track and analyze the vast amounts of gene expression data generated from microarray experiments. GEMTools can be used quantify and graphically display your gene expression data. Incyte Genomics relied on the GEMTools for internal operations and to track each well, probe, cDNA target, and other components of GEM arrays through ordering, fabrication, image analysis, and final data delivery.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.baymedia.com/gemtools/</obo:IAO_0000119>
     </owl:Class>
     
@@ -4320,7 +4320,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The NCBI Gene Expression Omnibus (GEO) represents the largest public repository of microarray data. However, finding data of interest can be challenging using current tools. GEOmetadb is an attempt to make access to the metadata associated with samples, platforms, and datasets much more feasible. This is accomplished by parsing all the NCBI GEO metadata into a SQLite database that can be stored and queried locally. GEOmetadb is simply a thin wrapper around the SQLite database along with associated documentation. Finally, the SQLite database is updated regularly as new data is added to GEO and can be downloaded at will for the most up-to-date metadata.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/GEOmetadb.html</obo:IAO_0000119>
     </owl:Class>
@@ -4354,7 +4354,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The NCBI Gene Expression Omnibus (GEO) is a public repository of microarray data. Given the rich and varied nature of these data, it is only natural to want to apply BioConductor tools to these data.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/GEOquery.html</obo:IAO_0000119>
     </owl:Class>
@@ -4436,7 +4436,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package is an infrastructure for dealing with hapmap SNP reports, GWAS, etc.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/GGBase.html</obo:IAO_0000119>
     </owl:Class>
@@ -4518,7 +4518,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package deals with hapmap SNP reports, GWAS, etc.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/GGtools.html</obo:IAO_0000119>
     </owl:Class>
@@ -4575,7 +4575,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Analysis of array CGH data : detection of breakpoints in genomic profiles and assignment of a status (gain, normal or lost) to each chromosomal regions identified.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/GLAD.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -4603,7 +4603,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Microarray image quantification is performed using GLEAMS software</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://hmg.oxfordjournals.org/cgi/reprint/12/17/2145.pdf</obo:IAO_0000119>
     </owl:Class>
     
@@ -4614,7 +4614,7 @@ The analysis includes normalization and data preprocessing, detection for differ
     <owl:Class rdf:about="&efo;swo/SWO_0000167">
         <rdfs:label rdf:datatype="&xsd;string">GMS</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -4713,7 +4713,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A set of tools for interacting with GO and microarray data. A variety of basic manipulation tools for graphs, hypothesis testing and other simple calculations</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/GOstats.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -4778,7 +4778,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package provides classes and methods to support Gene Set Enrichment Analysis (GSEA).</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/GSEABase.html</obo:IAO_0000119>
     </owl:Class>
@@ -4853,7 +4853,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Models and methods for fitting linear models to gene expression data, together with tools for computing and using various regression diagnostics.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/GSEAlm.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -4881,7 +4881,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Genedata Expressionist® is an enterprise solution that integrates, stores and analyzes transcriptomics, proteomics and metabolomics data as well as a wide variety of phenotypic data.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.genedata.com/products/expressionist/overview.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -4911,7 +4911,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <obo:IAO_0000118 rdf:datatype="&xsd;string">Gene Pix</obo:IAO_0000118>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">GenePix is the industry standard microarray image analysis software because of its unique combination of imaging and analysis tools, visualizations, automation capabilities, performance and ease of use.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">Genepix</obo:IAO_0000118>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.moleculardevices.com/pages/software/gn_genepix_pro.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -4922,7 +4922,7 @@ The analysis includes normalization and data preprocessing, detection for differ
     <owl:Class rdf:about="&efo;swo/SWO_0000177">
         <rdfs:label rdf:datatype="&xsd;string">GenePix 3.0.6</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000176"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -4932,7 +4932,7 @@ The analysis includes normalization and data preprocessing, detection for differ
     <owl:Class rdf:about="&efo;swo/SWO_0000178">
         <rdfs:label rdf:datatype="&xsd;string">GenePix 4.1</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000176"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -4943,7 +4943,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:label rdf:datatype="&xsd;string">GenePix 4100A</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000181"/>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">GenePix 4100A [Axon Instruments]</obo:IAO_0000118>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -4953,7 +4953,7 @@ The analysis includes normalization and data preprocessing, detection for differ
     <owl:Class rdf:about="&efo;swo/SWO_0000180">
         <rdfs:label rdf:datatype="&xsd;string">GenePix 5.0.1</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000176"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -4964,7 +4964,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:label rdf:datatype="&xsd;string">GenePix</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000176"/>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">GenePix [Axon Instruments]</obo:IAO_0000118>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -4974,7 +4974,7 @@ The analysis includes normalization and data preprocessing, detection for differ
     <owl:Class rdf:about="&efo;swo/SWO_0000182">
         <rdfs:label rdf:datatype="&xsd;string">GenePix Pro</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000176"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -4984,7 +4984,7 @@ The analysis includes normalization and data preprocessing, detection for differ
     <owl:Class rdf:about="&efo;swo/SWO_0000183">
         <rdfs:label rdf:datatype="&xsd;string">GenePix Pro 3</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000182"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -4994,7 +4994,7 @@ The analysis includes normalization and data preprocessing, detection for differ
     <owl:Class rdf:about="&efo;swo/SWO_0000184">
         <rdfs:label rdf:datatype="&xsd;string">GenePix Pro 5.0</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000182"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -5004,7 +5004,7 @@ The analysis includes normalization and data preprocessing, detection for differ
     <owl:Class rdf:about="&efo;swo/SWO_0000185">
         <rdfs:label rdf:datatype="&xsd;string">GenePix Pro 6.0</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000182"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -5014,7 +5014,7 @@ The analysis includes normalization and data preprocessing, detection for differ
     <owl:Class rdf:about="&efo;swo/SWO_0000186">
         <rdfs:label rdf:datatype="&xsd;string">GenePix Pro 6 [Axon Instruments]</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000187"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -5025,7 +5025,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:label rdf:datatype="&xsd;string">GenePix Pro [Axon Instruments]</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000182"/>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">Axon GenePix Pro</obo:IAO_0000118>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -5089,7 +5089,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Package manipulating nucleotidic sequences (Embl, Fasta, GenBank)</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/GeneR.html</obo:IAO_0000119>
     </owl:Class>
@@ -5140,7 +5140,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A package with focus on analysis of discrete regions of the genome. This package is useful for investigation of one or a few genes using Affymetrix data, since it will extract probe level data using the Affymetrix Power Tools application and wrap these data into a ProbeLevelSet. A ProbeLevelSet directly extends the expressionSet, but includes additional information about the sequence of each probe and the probe set it is derived from. The package includes a number of functions used for plotting these probe level data as a function of location along sequences of mRNA-strands. This can be used for analysis of variable splicing, and is especially well suited for use with exon-array data</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/GeneRegionScan.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -5189,7 +5189,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Package manipulating sequences with fold routines</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/GeneRfold.html</obo:IAO_0000119>
     </owl:Class>
@@ -5268,7 +5268,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Gene selection based on a mixture of marginal distributions</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/GeneSelectMMD.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -5333,7 +5333,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000064"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The term &apos;GeneSelector&apos; refers to a filter selecting those genes which are consistently identified as differentially expressed using various statistical procedures. &apos;Selected&apos; genes are those present at the top of the list in various featured ranking methods (currently 15). In addition, the stability of the findings can be taken in account in the final ranking by examining perturbed versions of the original data set, e.g. by leaving samples, swapping class labels, generating bootstrap replicates or adding noise.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/GeneSelector.html</obo:IAO_0000119>
     </owl:Class>
@@ -5415,7 +5415,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Set of functions and class definitions to be able to read and write GeneSpring specific data objects and covert them to BioConductor objects</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/GeneSpring.html</obo:IAO_0000119>
     </owl:Class>
@@ -5427,7 +5427,7 @@ The analysis includes normalization and data preprocessing, detection for differ
     <owl:Class rdf:about="&efo;swo/SWO_0000194">
         <rdfs:label rdf:datatype="&xsd;string">GeneSpringGX</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000193"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -5454,7 +5454,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Genetic Analyzer is a multi-color fluorescence-based DNA analysis system with 16 capillaries operating in parallel, offers high-quality data and efficient sample processing</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">https://products.appliedbiosystems.com/ab/en/US/adirect/ab?cmd=catNavigate2&amp;catID=600530</obo:IAO_0000119>
     </owl:Class>
     
@@ -5487,7 +5487,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Set of functions and class definitions to be able to read GeneTraffic specific data from a project summary zip file and covert them to BioConductor objects (for 1 color projects affy&apos;s ExpressionSet, for 2 color projects marray&apos;s marrayRaw)</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/GeneTraffic.html</obo:IAO_0000119>
     </owl:Class>
@@ -5501,7 +5501,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000182"/>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">GenePix Pro v4.0 scanning software</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">Genepix Pro 4.0</obo:IAO_0000118>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -5512,7 +5512,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:label rdf:datatype="&xsd;string">GenePix Pro 3.0</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000182"/>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">Genepix pro 3.0</obo:IAO_0000118>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -5633,7 +5633,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package contains functions useful for designing genetics studies, including power and sample-size calculations.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/GeneticsDesign.html</obo:IAO_0000119>
     </owl:Class>
@@ -5741,7 +5741,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Genomic data analyses requires integrated visualization of known genomic information and new experimental data. GenomeGraphs uses the biomaRt package to perform live annotation queries to Ensembl and translates this to e.g. gene/transcript structures in viewports of the grid graphics package. This results in genomic information plotted together with your data. Another strength of GenomeGraphs is to plot different data types such as array CGH, gene expression, sequencing and other data, together in one plot using the same genome coordinate system.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/GenomeGraphs.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -5809,7 +5809,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">GlobalAncova approach: After appropriate normalisation, gene-expression-data appear rather symmetrical and outliers are no real problem, so least squares should be rather robust. ANCOVA with interaction yields saturated data modelling e.g. different means per group and gene. Covariate adjustment can help to correct for possible selection bias. Variance homogeneity and uncorrelated residuals cannot be expected. Application of ordinary least squares gives unbiased, but no longer optimal estimates (Gauss-Markov-Aitken). Therefore, using the classical F-test is inappropriate, due to correlation. The test statistic however mirrors deviations from the null hypothesis. In combination with a permutation approach, empirical significance levels can be approximated. Alternatively, an approximation yields asymptotic p-values.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/GlobalAncova.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -5871,7 +5871,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Methods for estimating GO semantic similarities. Implemented five methods proposed by Resnik, Schlicker(Rel), Jiang, Lin and Wang respectively. Support five species: human, rat, mouse, fly, and yeast.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/GOSemSim.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -5927,7 +5927,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Functions and data used in Balasubramanian, et al. (2004)</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/GraphAT.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -5983,7 +5983,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Graph alignment is an extension package for the R programming environment which provides functions for finding an alignment between two networks based on link and node similarity scores.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/GraphAlignment.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -6010,7 +6010,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Software for microarray image analysis.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.oxfordjournals.org/nar/webserver/summary/825</obo:IAO_0000119>
     </owl:Class>
@@ -6123,7 +6123,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The package contains a modular pipeline for analysis of HELP microarray data, and includes graphical and mathematical tools with more general applications</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/HELP.html</obo:IAO_0000119>
     </owl:Class>
@@ -6197,7 +6197,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000215"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package fits heterogeneous error models for analysis of microarray data</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/HEM.html</obo:IAO_0000119>
     </owl:Class>
@@ -6259,7 +6259,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The package is used to detect extended, diffuse and compact blemishes on microarray chips. Harshlight automatically marks the areas in a collection of chips (affybatch objects) and a corrected AffyBatch object is returned, in which the defected areas are substituted with NAs or the median of the values of the same probe in the other chips in the collection. The new version handle the substitue value as whole matrix to solve the memory problem.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/Harshlight.html</obo:IAO_0000119>
     </owl:Class>
@@ -6316,7 +6316,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Add an extra graphical display at the bottom of a heat map, indicating for each column a) whether it has one of several binary properties or not, and b) the value of a quantitative variable. A cutting threshold for the sample dendrogram can also be specified, and the resulting clustering of the columns is indicated by coloring both the dendrogram and the extra variable display.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/Heatplus.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -6394,7 +6394,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Functions to visualize long vectors of integer data by means of Hilbert curves</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/HilbertVis.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -6466,7 +6466,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">An interactive tool to visualize long vectors of integer data by means of Hilbert curves</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/HilbertVisGUI.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -6493,7 +6493,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -6553,7 +6553,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The IRanges class and its extensions are low-level containers for storing sets of integer ranges. A typical use of these containers in biology is for representing a set of chromosome regions. More specific extensions of the IRanges class will typically allow the storage of additional information attached to each chromosome region as well as a hierarchical relationship between these regions.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/IRanges.html</obo:IAO_0000119>
     </owl:Class>
@@ -6628,7 +6628,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A Method to normalize of Affymetrix GeneChip Human Mapping 100K and 500K set</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/ITALICS.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -6639,7 +6639,7 @@ The analysis includes normalization and data preprocessing, detection for differ
     <owl:Class rdf:about="&efo;swo/SWO_0000234">
         <rdfs:label rdf:datatype="&xsd;string">ImaGene4.1 software</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000238"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -6649,7 +6649,7 @@ The analysis includes normalization and data preprocessing, detection for differ
     <owl:Class rdf:about="&efo;swo/SWO_0000235">
         <rdfs:label rdf:datatype="&xsd;string">ImaGene 3.0</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000238"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -6676,7 +6676,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">ImageQuant (Molecular Dynamics)</obo:IAO_0000118>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This is a general image analysis program used in the study of electrophoretic separations, dot blots, slot blots, microplate assays, TLC assays, and plaque assays. ImageQuant provides a point-and-click environment for fast analysis of qualitative and quantitative assays. With tools for accurate volume integration, ImageQuant generates accurate lane profiles even for curved or slanted lanes.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.research.bidmc.harvard.edu/AcademicIT/ImageQuant.asp</obo:IAO_0000119>
     </owl:Class>
@@ -6688,7 +6688,7 @@ The analysis includes normalization and data preprocessing, detection for differ
     <owl:Class rdf:about="&efo;swo/SWO_0000237">
         <rdfs:label rdf:datatype="&xsd;string">ImageReader</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -6717,7 +6717,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <obo:IAO_0000118 rdf:datatype="&xsd;string">ImaGene [BioDiscovery]</obo:IAO_0000118>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">ImaGene microarray image analysis software by biodiscovery for microarrays, protein arrays and CGH analysis.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">Imagene</obo:IAO_0000118>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.biodiscovery.com/index/imagene</obo:IAO_0000119>
     </owl:Class>
     
@@ -6728,7 +6728,7 @@ The analysis includes normalization and data preprocessing, detection for differ
     <owl:Class rdf:about="&efo;swo/SWO_0000239">
         <rdfs:label rdf:datatype="&xsd;string">Imagene v4.0</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000238"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -6754,7 +6754,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">These scripts are for primer design and initial microarray data processing and are available as .zip files:</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.bahlerlab.info/resources/</obo:IAO_0000119>
     </owl:Class>
@@ -6783,7 +6783,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Image analysis software</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -6866,7 +6866,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Multi sample aCGH analysis package using kernel convolution</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/KCsmart.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -6916,7 +6916,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A package that provides a client interface to the KEGG SOAP server</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/KEGGSOAP.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -6972,7 +6972,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">KEGGGraph is an interface between KEGG pathway and graph object as well as a collection of tools to analyze, dissect and visualize these graphs. It parses the regularly updated KGML (KEGG XML) files into graph models maintaining all essential pathway attributes. The package offers functionalities including parsing, graph operation, visualization and etc.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/KEGGgraph.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -7050,7 +7050,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">LBE is an efficient procedure for estimating the proportion of true null hypotheses, the false discovery rate (and so the q-values) in the framework of estimating procedures based on the marginal distribution of the p-values without assumption for the alternative hypothesis.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/LBE.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -7118,7 +7118,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">LMGene package for analysis of microarray data using a linear model and glog data transformation in the R statistical package</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/LMGene.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -7197,7 +7197,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This LPE library is used to do significance analysis of microarray data with small number of replicates. It uses resampling based FDR adjustment, and gives less conservative results than traditional &apos;BH&apos; or &apos;BY&apos; procedures. Data accepted is raw data in txt format from MAS4, MAS5 or dChip. Data can also be supplied after normalization. LPE library is primarily used for analyzing data between two conditions. To use it for paired data, see LPEP library. For using LPE in multiple conditions, use HEM library.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/LPE.html</obo:IAO_0000119>
     </owl:Class>
@@ -7293,7 +7293,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Two options are added to the LPE algorithm. The original LPE method sets all variances below the max variance in the ordered distribution of variances to the maximum variance. in LPEadj this option is turned off by default. The second option is to use a variance adjustment based on sample size rather than pi/2. By default the LPEadj uses the sample size based variance adjustment.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/LPEadj.html</obo:IAO_0000119>
     </owl:Class>
@@ -7305,7 +7305,7 @@ The analysis includes normalization and data preprocessing, detection for differ
     <owl:Class rdf:about="&efo;swo/SWO_0000266">
         <rdfs:label rdf:datatype="&xsd;string">MAANOVA v1.2 package for MATLAB</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Tools for analyzing Micro Array experiments</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://cran.r-project.org/web/packages/maanova/index.html</obo:IAO_0000119>
     </owl:Class>
@@ -7373,7 +7373,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000661"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">We propose importation, normalization, visualization, and quality control functions to correct identified sources of variability in array-CGH experiments.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/MANOR.html</obo:IAO_0000119>
     </owl:Class>
@@ -7404,7 +7404,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <obo:IAO_0000118 rdf:datatype="&xsd;string">Affymetrix MicroArraySuite</obo:IAO_0000118>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Affymetrix® Microarray Suite (MAS) is the core software product in the Affymetrix Software System providing instrument control, data acquisition, and data analysis for the entire GeneChip® platform.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">MAS</obo:IAO_0000118>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.affymetrix.com/support/technical/datasheets/mas_datasheet.pdf</obo:IAO_0000119>
     </owl:Class>
     
@@ -7416,7 +7416,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:label rdf:datatype="&xsd;string">MicroArraySuite 5.0</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000271"/>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">MAS 5.0 software</obo:IAO_0000118>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -7459,7 +7459,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">MATLAB® is a high-level language and interactive environment that enables you to perform computationally intensive tasks faster than with traditional programming languages such as C, C++, and Fortran</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.mathworks.com/products/matlab/?s_cid=SA_trafrefpai_MLipspot_Doc_bioinfo_MATLAB</obo:IAO_0000119>
     </owl:Class>
     
@@ -7495,7 +7495,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -7543,7 +7543,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package includes a function for combining preprocessing and classification methods to calculate misclassification errors</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/MCRestimate.html</obo:IAO_0000119>
     </owl:Class>
@@ -7594,7 +7594,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">MEDME allows the prediction of absolute and relative methylation levels based on measures obtained by MeDIP-microarray experiments</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/MEDME.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -7649,7 +7649,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Uniform interfaces to machine learning code for data in Bioconductor containers</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/MLInterfaces.html</obo:IAO_0000119>
     </owl:Class>
@@ -7706,7 +7706,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Creates classes used in model-view-controller (MVC) design</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/MVCClass.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -7768,7 +7768,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Computes Mantel cluster correlations from a (p x n) numeric data matrix (e.g. microarray gene-expression data)</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/MantelCorr.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -7823,7 +7823,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Processing Mass Spectrometry spectrum by using wavelet based algorithm</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/MassSpecWavelet.html</obo:IAO_0000119>
     </owl:Class>
@@ -7885,7 +7885,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Two-stage measurement error model for correlation estimation with smaller bias than the usual sample correlation</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/MeasurementError.cor.html</obo:IAO_0000119>
     </owl:Class>
@@ -7979,7 +7979,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The functions in this R extension are intended for cross-study comparison of gene expression array data. Required from the user is gene expression matrices, their corresponding gene-id vectors and other useful information, and they could be &apos;list&apos;,&apos;matrix&apos;, or &apos;ExpressionSet&apos;. The main function is &apos;mergeExprs&apos; which transforms the input objects into data in the merged format, such that common genes in different datasets can be easily found. And the function &apos;intcor&apos; calculate the correlation coefficients. Other functions use the output from &apos;modelOutcome&apos; to graphically display the results and cross-validate associations of gene expression data with survival.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/MergeMaid.html</obo:IAO_0000119>
     </owl:Class>
@@ -8051,7 +8051,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 <owl:someValuesFrom rdf:resource="&algorithm;OntoDM_170075"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Package for noise-robust soft clustering of gene expression time-series data (including a graphical user interface)</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/Mfuzz.html</obo:IAO_0000119>
     </owl:Class>
@@ -8113,7 +8113,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0200167"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package finds optimal sets of genes that seperate samples into two or more classes.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/MiPP.html</obo:IAO_0000119>
     </owl:Class>
@@ -8125,7 +8125,7 @@ The analysis includes normalization and data preprocessing, detection for differ
     <owl:Class rdf:about="&efo;swo/SWO_0000297">
         <rdfs:label rdf:datatype="&xsd;string">MicroArraySuite 4.0</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000271"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -8195,7 +8195,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package allows to characterize the operating characeristics of a microarray experiment, i.e. the trade-off between false discovery rate and the power to detect truly regulated genes. The package includes tools both for planned experiments (for sample size assessment) and for already collected data (identification of differentially expressed genes).</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/OCplus.html</obo:IAO_0000119>
     </owl:Class>
@@ -8264,7 +8264,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Functions for normalisation of two-color microarrays by optimised local regression and for detection of artefacts in microarray data</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/OLIN.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -8338,7 +8338,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Graphical user interface for the OLIN package</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/OLINgui.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -8366,7 +8366,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Computer software for image acquisition, analysis and reporting, for use in the life sciences</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.findownersearch.com/optiquant/7766418/</obo:IAO_0000119>
     </owl:Class>
     
@@ -8428,7 +8428,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Detection of similarities between ordered lists of genes. Thereby, either simple lists can be compared or gene expression data can be used to deduce the lists. Significance of similarities is evaluated by shuffling lists or by resampling in microarray data, respectively.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/OrderedList.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -8489,7 +8489,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package detects outliers using quantile regression on the M-A scatterplots of high-throughput data.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/OutlierD.html</obo:IAO_0000119>
     </owl:Class>
@@ -8539,7 +8539,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Processing annotation data from public data repositories and building annoation data packages.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/PAnnBuilder.html</obo:IAO_0000119>
     </owl:Class>
@@ -8629,7 +8629,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000560"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Tools to integrate, annotate, and link phenotypes to cellular organizational units such as protein complexes and pathways.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/PCpheno.html</obo:IAO_0000119>
     </owl:Class>
@@ -8695,7 +8695,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Parametric Analysis of Gene Set Enrichment</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/PGSEA.html</obo:IAO_0000119>
     </owl:Class>
@@ -8763,7 +8763,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package performs tests for paired high-throughput data.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/PLPE.html</obo:IAO_0000119>
     </owl:Class>
@@ -8832,7 +8832,7 @@ The analysis includes normalization and data preprocessing, detection for differ
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A package for processing protein mass spectrometry data.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/PROcess.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -8859,7 +8859,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The background intensity data from the spot quantification programs may be used to correct spot intensity. This  software measures background globally as: BGLow (low background), BGAvg (Average background), BGRms (root mean square background).</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://maexplorer.sourceforge.net/MaeRefMan/hmaeDoc2.4.2.html</obo:IAO_0000119>
     </owl:Class>
@@ -8871,7 +8871,7 @@ The analysis includes normalization and data preprocessing, detection for differ
     <owl:Class rdf:about="&efo;swo/SWO_0000327">
         <rdfs:label rdf:datatype="&xsd;string">Probe Cell Analysis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000272"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -8897,7 +8897,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">QuantArray</obo:IAO_0000118>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">QuantArray® is a powerful microarray analysis software that enables researchers to
 easily and accurately visualize and quantitate gene expression data.</obo:IAO_0000115>
@@ -8911,7 +8911,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
     <owl:Class rdf:about="&efo;swo/SWO_0000330">
         <rdfs:label rdf:datatype="&xsd;string">QuantArray, PackaardBiochip technologies</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000329"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -8921,7 +8921,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
     <owl:Class rdf:about="&efo;swo/SWO_0000331">
         <rdfs:label rdf:datatype="&xsd;string">QuantArray version 2</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000329"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -9004,7 +9004,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A fairly extensive and comprehensive interface to the graph algorithms contained in the BOOST library.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/RBGL.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -9060,7 +9060,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Functions and datasets and examples to accompany the monograph R For Bioinformatics.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/RBioinf.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -9294,7 +9294,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">RNAither analyzes cell-based RNAi screens, and includes quality assessment, customizable normalization and statistical tests, leading to lists of significant genes and biological processes</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/RNAither.html</obo:IAO_0000119>
     </owl:Class>
@@ -9460,7 +9460,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Support for Springer monograph on Bioconductor</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/RbcBook1.html</obo:IAO_0000119>
     </owl:Class>
@@ -9627,7 +9627,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The package contains functions for pre-processing Affymetrix data using the RMA+ and the RMA++ methods.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/RefPlus.html</obo:IAO_0000119>
     </owl:Class>
@@ -9657,7 +9657,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000116"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package allows user either to read an annotation data file from TIGR Resourcerer as a matrix or convert the file into a Bioconductor annotation data package using the AnnBuilder package.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/Resourcerer.html</obo:IAO_0000119>
     </owl:Class>
@@ -9859,7 +9859,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Microarray Classification is designed for both biologists and statisticians. It offers the ability to train a classifier on a labelled microarray dataset and to then use that classifier to predict the class of new observations.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/Rmagpie.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -9876,7 +9876,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:hasValue rdf:resource="&efo;swo/SWO_0000366"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The Rosetta Resolver® system provides a central analysis center and repository for biologists, statisticians, and bioinformaticians for the evaluation of gene expression data from microarrays and qPCR studies.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.rosettabio.com/products/resolver</obo:IAO_0000119>
     </owl:Class>
@@ -10155,7 +10155,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:hasValue rdf:resource="&efo;swo/SWO_0000376"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Statistical Analysis with a number of procedures, providing statistical information such as analysis of variance, regression, multivariate analysis, and categorical data analysis.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/SAS_System</obo:IAO_0000119>
     </owl:Class>
@@ -10277,7 +10277,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Finds associations between DNA copy number and gene expression.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/SIM.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -10762,7 +10762,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">ArrayExpress Bioconductor package is software that read in MAGE-TAB format files from the ArrayExpress FTP site and converts them to R objects.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/ArrayExpress.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -10849,7 +10849,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:hasValue rdf:resource="&efo;swo/SWO_0000431"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Processes fluorescent images of microarrays</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://smd.stanford.edu/resources/restech.shtml</obo:IAO_0000119>
     </owl:Class>
@@ -10867,7 +10867,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:hasValue rdf:resource="&efo;swo/SWO_0000325"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">ScanArray Express</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">ScanArray Express [PerkinElmer]</obo:IAO_0000118>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">ScanArray Express provides superior spot finding and quantization algorithm. This combined with template adjustment features drives excellence in analysis performance.</obo:IAO_0000115>
@@ -10881,7 +10881,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
     <owl:Class rdf:about="&efo;swo/SWO_0000419">
         <rdfs:label rdf:datatype="&xsd;string">ScanArray v3.1 software</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000418"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">ScanArray version 3.1</obo:IAO_0000118>
     </owl:Class>
     
@@ -10892,7 +10892,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
     <owl:Class rdf:about="&efo;swo/SWO_0000420">
         <rdfs:label rdf:datatype="&xsd;string">Scanning software</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -10909,7 +10909,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">High resolution scanning with pixel sizes of 2, 3, 5, and 10 microns enables users to scan a range of array types from ultra-high density commercial arrays as well as low-density home-brew arrays.Low level detection resulting from optimized precision optics, broad dynamic range, minimal spectral cross talk allowing users to detect weak features, achieve rapid, accurate and dependable results</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.chem.agilent.com/en-us/products/instruments/dnamicroarrays/dnamicroarrayscanner/pages/default.aspx</obo:IAO_0000119>
     </owl:Class>
     
@@ -10967,7 +10967,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:hasValue rdf:resource="&efo;swo/SWO_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">SiliconGenetics GeneSpring</obo:IAO_0000118>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The GeneSpring-R integration package will allow you to expand the capability of GeneSpring by integrating R programs seamlessly into GeneSpring. With the integration package you will be able to use the power of R and BioConductor scripts in GeneSpring&apos;s rich graphical environment</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.silicongenetics.com/cgi/SiG.cgi/Support/gs_r_int.smf</obo:IAO_0000119>
@@ -10980,7 +10980,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
     <owl:Class rdf:about="&efo;swo/SWO_0000428">
         <rdfs:label rdf:datatype="&xsd;string">Spot quantification</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -11002,7 +11002,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:hasValue rdf:resource="&efo;swo/SWO_0000131"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">TIGR Spotfinder was designed for the rapid, reproducible and computer-aided analysis of microarray images and the quantification of gene expression</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.tm4.org/contributors.html</obo:IAO_0000119>
     </owl:Class>
@@ -11020,7 +11020,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:hasValue rdf:resource="&efo;swo/SWO_0000433"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Spotfire’s interactive, visual capabilities for data analysis empower individuals to easily see trends, patterns outliers and unanticipated relationships in data with unprecedented speed and adaptability.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://spotfire.tibco.com/Products/Info.aspx</obo:IAO_0000119>
     </owl:Class>
@@ -11038,7 +11038,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:hasValue rdf:resource="&efo;swo/SWO_0000023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Tiling Analysis Software (TAS) is a freely downloadable tool for analysis, with which one can perform a simulation to assess the likelihood that an observed probe overlap region is different from the expected overlap with no enrichment from binding, and can derive an interval overlap report and/or computation of summary statistics.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://dmaf.biochem.uci.edu/affymetrix_analysis_software.html</obo:IAO_0000119>
     </owl:Class>
@@ -11315,7 +11315,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Analysis Software for Integrated Image Analysis for Spot Detection , Position and Quantification</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.cose.fr/us_dots.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -11411,7 +11411,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The aCGH package functions for reading data from image analysis output files and clone information files, creation of aCGH S3 objects for storing these data. Basic methods for accessing/replacing, subsetting, printing and plotting aCGH objects.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/aCGH.html</obo:IAO_0000119>
     </owl:Class>
@@ -11440,7 +11440,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Acuity is the complete enterprise microarray informatics platform for microarray data storage, data filtering and data analysis. It analysis tools for quality, visualizations for discovery and  Data Management for Security.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.bio-medicine.org/</obo:IAO_0000119>
     </owl:Class>
     
@@ -11487,7 +11487,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:someValuesFrom rdf:resource="&data;SWO_3000060"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">affxparser is a package for parsing Affymetrix files (CDF, CEL, CHP, BPMAP, BAR). It provides methods for fast and memory efficient parsing of Affymetrix files using the Affymetrix&apos; Fusion SDK.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/affxparser.html</obo:IAO_0000119>
     </owl:Class>
@@ -11586,7 +11586,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A Graphical User Interface for affy analysis using the limma Microarray package</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/affylmGUI.html</obo:IAO_0000119>
         <rdfs:comment>Removed the links to specified data inputs, as this software is a GUI wrapper for another package, and it is this package which takes the inputs. (Allyson Lister 22/05/2013)</rdfs:comment>
     </owl:Class>
@@ -11925,7 +11925,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0200031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Various wrapper functions that have been written to streamline the more common analyses that a core Biostatistician might see</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/affycoretools.html</obo:IAO_0000119>
     </owl:Class>
@@ -12154,7 +12154,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000575"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Using R enviroments for annotation.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/annotate.html</obo:IAO_0000119>
     </owl:Class>
@@ -12244,7 +12244,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000661"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package functions to estimate a bipartite graph of protein complex membership using AP-MS data.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/apComplex.html</obo:IAO_0000119>
     </owl:Class>
@@ -12396,7 +12396,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package functions for performing print-run and array level quality assessment.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/arrayQuality.html</obo:IAO_0000119>
     </owl:Class>
@@ -12456,7 +12456,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
     <owl:Class rdf:about="&efo;swo/SWO_0000475">
         <rdfs:label rdf:datatype="&xsd;string">arrayWoRx 2.0</rdfs:label>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000476"/>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
     </owl:Class>
     
 
@@ -12473,7 +12473,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Applied Precision MicroArray Scanner Model arrayWoRx Comprehensive system that fully automates the image capture and quantitation of microarrays. by integrating Slid handling, fluorescent microscopy, and sophisticated spot scan and analysis software the systems detects and measures the fluorescence intensity at each of the specified elements in a microarray. The intensity data can be presented as image data, graphical representation, or as numerical data.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.hitechtrader.com/detail.cfm?autonumber=64022</obo:IAO_0000119>
     </owl:Class>
     
@@ -12496,7 +12496,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The package is able to read bead-level data (raw TIFFs and text files) output by BeadScan as well as bead-summary data from BeadStudio. Methods for quality assessment and low-level analysis are provided.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/beadarray.html</obo:IAO_0000119>
     </owl:Class>
@@ -12533,7 +12533,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Importing data from Illumina SNP experiments and performing copy number calculations and reports.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/beadarraySNP.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -12764,7 +12764,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Synthetic datasets to a) demonstrate the usage of bioconductor packages, b) write unit tests, while keeping dependencies and ressources usage minimal.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/biocDatasets.html</obo:IAO_0000119>
     </owl:Class>
@@ -12801,7 +12801,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000661"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package provides examples and code that make use of the different graph related packages produced by Bioconductor.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/biocGraph.html</obo:IAO_0000119>
     </owl:Class>
@@ -12826,7 +12826,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Categorized views of R package repositories</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/biocViews.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -12897,7 +12897,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0200031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The bridge package consists of several functions for testing for dierential expression among mul-
 tiple samples</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/bridge.html</obo:IAO_0000119>
@@ -12949,7 +12949,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Analysis of cell-based RNA interference screens</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/cellHTS.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -13000,7 +13000,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Analysis of cell-based RNA interference screens</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/cellHTS2.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -13127,7 +13127,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package can be used to estimate the number of clusters in a set of microarray data, as well as test the stability of these clusters.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/clusterStab.html</obo:IAO_0000119>
     </owl:Class>
@@ -13199,7 +13199,7 @@ tiple samples</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This packages allow reading into R of Codelink bioarray data exported as text from the Codelink software. Also includes some functions to ease the manipulation and pre-processing of data, such in background correction and normalization.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/codelink.html</obo:IAO_0000119>
     </owl:Class>
@@ -13621,7 +13621,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Analysis and visualization of gene expression and SNP microarrays</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.bioinformatics.org/dchip/</obo:IAO_0000119>
     </owl:Class>
     
@@ -13724,7 +13724,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Analyze microarray data</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/diffGeneAnalysis.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -13766,7 +13766,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Find significantly enriched gene classifications in a list of functionally undescribed genes based on their InterPro domain structure.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/domainsignatures.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -13828,7 +13828,7 @@ tiple samples</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package implements a Kolmogorov Smirnov rank-sum based algorithm for training and classification of gene expression data sets. One of the chief strengths of this approach is that it is amenable to the &quot;multiclass&quot; problem. That is, it can discriminate between more than 2 classes.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/dualKS.html</obo:IAO_0000119>
     </owl:Class>
@@ -14075,7 +14075,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Estimation and Testing for Differential Expression in Multiple Digital Gene Expression Libraries.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/edgeR.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -14207,7 +14207,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package explores and analyzes *omics data with R and GGobi</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/explorase.html</obo:IAO_0000119>
     </owl:Class>
@@ -14226,7 +14226,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Basic class definitions and generics for external pointer based vector objects for R. A simple in-memory implementation is also provided</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/externalVector.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -14981,7 +14981,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package contains functions connecting R with the Gaggle</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/gaggle.html</obo:IAO_0000119>
     </owl:Class>
@@ -15010,7 +15010,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Background adjustment using sequence information</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.bioconductor.org/packages/2.3/bioc/html/gcrma.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -15134,7 +15134,7 @@ tiple samples</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">genArise is an easy to use tool for dual color microarray data. Its GUI-Tk based environment let any non-experienced user performs a basic, but not simple, data analysis just following a wizard. In addition it provides some tools for the developer.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/genArise.html</obo:IAO_0000119>
     </owl:Class>
@@ -15344,7 +15344,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A collection of meta-analysis tools for analysing high throughput experimental data</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/GeneMeta.html</obo:IAO_0000119>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/GeneMeta.html</obo:IAO_0000115>
     </owl:Class>
@@ -15374,7 +15374,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000661"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Some basic functions for plotting genetic data</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/geneplotter.html</obo:IAO_0000119>
     </owl:Class>
@@ -15554,7 +15554,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000406"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The package implements methods to compare lists of genes based on comparing the corresponding &apos;functional profiles&apos;.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/goProfiles.html</obo:IAO_0000119>
     </owl:Class>
@@ -15850,7 +15850,7 @@ tiple samples</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The HOPACH clustering algorithm builds a hierarchical tree of clusters by recursively partitioning a data set, while ordering and possibly collapsing clusters at each level. The algorithm uses the Mean/Median Split Silhouette (MSS) criteria to identify the level of the tree with maximally homogeneous clusters. It also runs the tree down to produce a final ordered list of the elements. The non-parametric bootstrap allows one to estimate the probability that each element belongs to each cluster (fuzzy clustering).</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/hopach.html</obo:IAO_0000119>
     </owl:Class>
@@ -15961,7 +15961,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Many functions for computing the NPMLE for censored and truncated data.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/Icens.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -16058,7 +16058,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Imputation for microarray data (currently KNN only)</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/impute.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -16100,7 +16100,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000554"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The iterative Bayesian Model Averaging (BMA) algorithm is a variable selection and classification algorithm with an application of classifying 2-class microarray samples, as described in Yeung, Bumgarner and Raftery (Bioinformatics 2005, 21: 2394-2402).</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/iterativeBMA.html</obo:IAO_0000119>
     </owl:Class>
@@ -16737,7 +16737,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000554"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/maSigPro.html</obo:IAO_0000119>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">maSigPro is a regression based approach to find genes for which there are significant gene expression profile differences between experimental groups in time course microarray experiments.</obo:IAO_0000115>
     </owl:Class>
@@ -16810,7 +16810,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Analysis of N-dye Micro Array experiment using mixed model effect. Containing anlysis of variance, permutation and bootstrap, cluster and consensus tree.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/maanova.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -16875,7 +16875,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000116"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This library contains functions to investigate links between differential gene expression and the chromosomal localization of the genes. MACAT is motivated by the common observation of phenomena involving large chromosomal regions in tumor cells. MACAT is the implementation of a statistical approach for identifying significantly differentially expressed chromosome regions. The functions have been tested on a publicly available data set about acute lymphoblastic leukemia (Yeoh et al.Cancer Cell 2002), which is provided in the library &apos;stjudem&apos;.</obo:IAO_0000115>
     </owl:Class>
     
@@ -16918,7 +16918,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Multivariate data analysis and graphical display of microarray data. Functions include between group analysis and coinertia analysis. It contains functions that require ADE4.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/made4.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -16977,7 +16977,7 @@ tiple samples</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package uses functions of various other packages together with other functions in a coordinated way to handle and analyse cDNA microarray data</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/maigesPack.html</obo:IAO_0000119>
     </owl:Class>
@@ -17259,7 +17259,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">MDQC is a multivariate quality assessment method for microarrays based on quality control (QC) reports. The Mahalanobis distance of an array&apos;s quality attributes is used to measure the similarity of the quality of that array against the quality of the other arrays. Then, arrays with unusually high distances can be flagged as potentially low-quality.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/mdqc.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -17537,7 +17537,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0200078"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package implements various algorithms for inferring mutual information networks from data. All the algorithms compute the mutual information matrix in order to infer a network. Several mutual information estimators are implemented.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/minet.html</obo:IAO_0000119>
     </owl:Class>
@@ -17640,7 +17640,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000661"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Nested Effects Models to reconstruct phenotypic hierarchies</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/nem.html</obo:IAO_0000119>
     </owl:Class>
@@ -17906,7 +17906,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package contains class definitions, validity checks, and initialization methods for classes used by the oligo package.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/oligoClasses.html</obo:IAO_0000119>
     </owl:Class>
@@ -18276,7 +18276,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000661"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">build graphs from pathway databases, render them by Rgraphviz</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/pathRender.html</obo:IAO_0000119>
     </owl:Class>
@@ -18785,7 +18785,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000554"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The PLIER (Probe Logarithmic Error Intensity Estimate) method produces an improved signal by accounting for experimentally observed patterns in probe behavior and handling error at the appropriately at low and high signal values.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/plier.html</obo:IAO_0000119>
     </owl:Class>
@@ -19176,7 +19176,7 @@ tiple samples</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The package contains functions to perform normalization of high-throughput qPCR data. Basic functions for processing raw Ct data plus functions to generate diagnostic plots are also available.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/qpcrNorm.html</obo:IAO_0000119>
     </owl:Class>
@@ -19284,7 +19284,7 @@ tiple samples</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Quantile smoothing and genomic visualization of array data</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/quantsmooth.html</obo:IAO_0000119>
     </owl:Class>
@@ -19327,7 +19327,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000554"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This package takes a list of p-values resulting from the simultaneous testing of many hypotheses and estimates their q-values. The q-value of a test measures the proportion of false positives incurred (called the false discovery rate) when that particular test is called significant.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/qvalue.html</obo:IAO_0000119>
     </owl:Class>
@@ -19377,7 +19377,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Hidden Variable Dynamic Modeling</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/rHVDM.html</obo:IAO_0000115>
     </owl:Class>
     
@@ -19614,7 +19614,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A set of functions to dentify regional expression biases</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/reb.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -19997,7 +19997,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Conducts pathway analysis by calculating the NT_k and NE_k statistics</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/sigPathway.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -20047,7 +20047,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Identification of differentially expressed genes and estimation of the False Discovery Rate (FDR) using both the Significance Analysis of Microarrays (SAM) and the Empirical Bayes Analyses of Microarrays (EBAM).</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/siggenes.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -20179,7 +20179,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Functions to computationally simulate the AP-MS technology based on wet-lab data.</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/simulatorAPMS.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -20464,7 +20464,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Affymetrix Spike-in Langmuir Isotherm Data Analysis Tool</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/spikeLI.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -20513,7 +20513,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The package contains functions that can be used to compare expression measures on different array platforms.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/spkTools.html</obo:IAO_0000119>
     </owl:Class>
@@ -20824,7 +20824,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&edamontology;data_2603"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The stam package performs a biologically structured classification of microarray profiles according to clinical phenotypes. GO terms are used to link classification results to biological aspects.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/stam.html</obo:IAO_0000119>
     </owl:Class>
@@ -20868,7 +20868,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&edamontology;data_2603"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Stepwise normalization functions for cDNA microarray data.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/stepNorm.html</obo:IAO_0000119>
     </owl:Class>
@@ -20998,7 +20998,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">Widgets to provide user interfaces. tcltk should have been installed for the widgets to run.</obo:IAO_0000119>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/tkWidgets.html</obo:IAO_0000119>
     </owl:Class>
@@ -21276,7 +21276,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The package implements a method for normalising microarray intensities, both between colours within array, and between arrays. The method uses a robust variant of the maximum-likelihood estimator for the stochastic model of microarray data described in the references</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/vsn.html</obo:IAO_0000119>
     </owl:Class>
@@ -21393,7 +21393,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000116"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">This packages contains tools to support the construction of tcltk widgets</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/widgetTools.html</obo:IAO_0000119>
     </owl:Class>
@@ -21527,7 +21527,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000661"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Quality control of Affymetrix GeneChip expression data and reproducibility analysis of human whole genome chips with the MAQC reference datasets.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://bioconductor.org/packages/2.4/bioc/html/yaqcaffy.html</obo:IAO_0000119>
     </owl:Class>
