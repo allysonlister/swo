@@ -11709,7 +11709,12 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000086"/>
-                <owl:someValuesFrom rdf:resource="&edamontology;format_1929"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004002"/>
+                        <owl:allValuesFrom rdf:resource="&edamontology;format_1929"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11724,9 +11729,10 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000661"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">Convenience data structures and functions to handle cdfenvs</obo:IAO_0000115>
-        <efo:definition_editor rdf:datatype="&xsd;string">Nandini Badarinarayan</efo:definition_editor>
-        <efo:definition_citation rdf:datatype="&xsd;string">http://www.bioconductor.org/packages/release/Software.html</efo:definition_citation>
+        <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">altcdfenvs is a software package for alternative CDF environments (aka probeset mappings) and contains convenience data structures and functions to handle cdfenvs. </obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.bioconductor.org/packages/release/bioc/html/altcdfenvs.html, accessed May 28 2013.</obo:IAO_0000119>
+        <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
     
 
