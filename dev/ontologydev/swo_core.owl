@@ -4160,7 +4160,10 @@ The analysis includes normalization and data preprocessing, detection for differ
 
     <rdf:Description rdf:about="&efo;swo/SWO_0000139">
         <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
+        <efo:reason_for_obsolescence>This class had no definition, and seemed incorrectly placed as an algorithm, as from its name it seemed to only be an experimental method.</efo:reason_for_obsolescence>
+        <dc:contributor>Marked as obsolete by Allyson Lister.</dc:contributor>
         <owl:deprecated>true</owl:deprecated>
+        <efo:obsoleted_in_version>0.5</efo:obsoleted_in_version>
     </rdf:Description>
     
 
@@ -18980,12 +18983,6 @@ tiple samples</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&efo;swo/SWO_0000741"/>
                 <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&efo;swo/SWO_0000740"/>
-                <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000139"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:creator rdf:datatype="&xsd;string">Nandini Badarinarayan</dc:creator>
