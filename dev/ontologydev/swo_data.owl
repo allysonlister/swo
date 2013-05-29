@@ -54,13 +54,6 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-
-    
-
-
-    <!-- http://edamontology.org#comment -->
-
-    <owl:AnnotationProperty rdf:about="&edamontology2;comment"/>
     
 
 
@@ -987,7 +980,7 @@
         <obo:IAO_0000115>The Resource Description Framework (RDF) is a general-purpose language for representing information in the Web.</obo:IAO_0000115>
         <edamontology2:subset>edam</edamontology2:subset>
         <edamontology2:def>&quot;Resource Description Framework (RDF) format.&quot; [http://edamontology.org]</edamontology2:def>
-        <edamontology2:comment>Data in RDF format can be serialised into XML, textual, or binary format.</edamontology2:comment>
+        <rdfs:comment>Data in RDF format can be serialised into XML, textual, or binary format.</rdfs:comment>
         <dc:creator>James Malone</dc:creator>
         <edamontology2:namespace>format</edamontology2:namespace>
         <dc:creator>Jon Ison</dc:creator>
