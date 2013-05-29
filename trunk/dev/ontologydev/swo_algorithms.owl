@@ -644,8 +644,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000139 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000139">
-        <rdfs:label rdf:datatype="&xsd;string">FACS ( fluorescence-activated cell sorter)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
+        <rdfs:label rdf:datatype="&xsd;string">obsolete_FACS ( fluorescence-activated cell sorter)</rdfs:label>
     </owl:Class>
     
 
