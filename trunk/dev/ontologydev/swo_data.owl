@@ -143,6 +143,12 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/SWO_0004000 -->
+
+    <owl:ObjectProperty rdf:about="&ebi;swo/SWO_0004000"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/swo/SWO_0004002 -->
 
     <owl:ObjectProperty rdf:about="&ebi;swo/SWO_0004002"/>
@@ -365,6 +371,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000129 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000129">
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000011 -->
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000011">
@@ -500,15 +514,6 @@
         <obo:IAO_0000119>http://www.bioconductor.org/packages/2.12/bioc/vignettes/prada/inst/doc/fcs3.html, accessed 29 May 2013.</obo:IAO_0000119>
         <dc:creator>Allyson Lister</dc:creator>
         <obo:IAO_0000115>FACS data is data which describes flow cytometry data sets.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000144 -->
-
-    <owl:Class rdf:about="&ebi;efo/swo/SWO_0000144">
-        <rdfs:label rdf:datatype="&xsd;string">FCS</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
     </owl:Class>
     
 
@@ -1535,6 +1540,37 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000061 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000061">
+        <rdfs:label xml:lang="en">Data File Standard for Flow Cytometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000042"/>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">FCS</obo:IAO_0000118>
+        <dc:creator>Allyson Lister</dc:creator>
+        <obo:IAO_0000115>The flow cytometry data file standard provides the specifications needed to completely describe flow cytometry data sets within the confines of the file containing the experimental data. The principal goal of the Standard is to provide a uniform file format allowing files created by one type of acquisition hardware and software to be analyzed by another type.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.bioconductor.org/packages/2.12/bioc/vignettes/prada/inst/doc/fcs3.html, accessed May 29. 2013.</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000062 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000062">
+        <rdfs:label xml:lang="en">FCS3.0</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000061"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_0004000"/>
+                <owl:hasValue rdf:resource="&ebi;swo/data/SWO_3000063"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>FCS3.0 is version 3.0 of the Data File Standard for Flow Cytometry. It contains a mechanism for handling data sets of 100 megabytes and larger, support for UNICODE text for keyword values, support for cyclic redundancy check (CRC) validation for each data set, a requirement for the inclusion of information describing the method of signal amplification and increased support for the inclusion of time as a measurement parameter.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.bioconductor.org/packages/2.12/bioc/vignettes/prada/inst/doc/fcs3.html, accessed May 29. 2013.</obo:IAO_0000119>
+        <dc:creator>Allyson Lister</dc:creator>
+    </owl:Class>
+    
+
+
     <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
 
     <owl:Class rdf:about="&snap;Role">
@@ -1557,6 +1593,15 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000023 -->
 
     <owl:NamedIndividual rdf:about="&ebi;efo/swo/SWO_0000023"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000063 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/data/SWO_3000063">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">FCS Data Standard Version 3.0</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
