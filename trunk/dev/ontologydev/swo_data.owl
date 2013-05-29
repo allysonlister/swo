@@ -54,6 +54,7 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
+
     
 
 
@@ -496,6 +497,9 @@
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000140">
         <rdfs:label rdf:datatype="&xsd;string">FACS data</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <obo:IAO_0000119>http://www.bioconductor.org/packages/2.12/bioc/vignettes/prada/inst/doc/fcs3.html, accessed 29 May 2013.</obo:IAO_0000119>
+        <dc:creator>Allyson Lister</dc:creator>
+        <obo:IAO_0000115>FACS data is data which describes flow cytometry data sets.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -980,8 +984,8 @@
         <obo:IAO_0000115>The Resource Description Framework (RDF) is a general-purpose language for representing information in the Web.</obo:IAO_0000115>
         <edamontology2:subset>edam</edamontology2:subset>
         <edamontology2:def>&quot;Resource Description Framework (RDF) format.&quot; [http://edamontology.org]</edamontology2:def>
-        <rdfs:comment>Data in RDF format can be serialised into XML, textual, or binary format.</rdfs:comment>
         <dc:creator>James Malone</dc:creator>
+        <rdfs:comment>Data in RDF format can be serialised into XML, textual, or binary format.</rdfs:comment>
         <edamontology2:namespace>format</edamontology2:namespace>
         <dc:creator>Jon Ison</dc:creator>
         <edamontology2:subset>bioinformatics</edamontology2:subset>
