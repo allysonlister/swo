@@ -1252,15 +1252,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     
 
 
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000380 -->
-
-    <owl:Class rdf:about="&efo;swo/SWO_0000380">
-        <rdfs:label rdf:datatype="&xsd;string">SBML model</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000386 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000386">
