@@ -1364,7 +1364,10 @@
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000046">
         <rdfs:label>Tab delimited file format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000043"/>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Tab-separated_values, accessed 6 June 2013.</obo:IAO_0000119>
+        <dc:creator>Allyson Lister</dc:creator>
+        <obo:IAO_0000115>Tab delimited file format is a plain text file format where each field value of a record is separated from the next by a tab stop character.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1445,14 +1448,14 @@
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
+                <owl:onProperty rdf:resource="&ebi;swo/data/SWO_3000054"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000055"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/data/SWO_3000054"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000055"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
