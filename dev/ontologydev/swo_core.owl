@@ -598,6 +598,14 @@
     
 
 
+    <!-- http://edamontology.org/operation_0004 -->
+
+    <rdf:Description rdf:about="&edamontology;operation_0004">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000003"/>
+    </rdf:Description>
+    
+
+
     <!-- http://edamontology.org/topic_0003 -->
 
     <rdf:Description rdf:about="&edamontology;topic_0003">
@@ -26325,6 +26333,23 @@ tiple samples</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/version/SWO_2000022 -->
 
     <owl:NamedIndividual rdf:about="&version;SWO_2000022"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&efo;swo/SWO_0000396">
+        <obo:IAO_0000115>An organization or legal entity (including single person) that is responsible for developing software. Developing includes aspects of design, coding and testing.</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="&efo;swo/SWO_0000397">
+        <obo:IAO_0000115>An organization or legal entity (including single person) that is responsible for publishing software. Publishing here includes tasks such as designing and producing physical products, technical customer support, licensing arrangements and marketing.</obo:IAO_0000115>
+    </rdf:Description>
 </rdf:RDF>
 
 
