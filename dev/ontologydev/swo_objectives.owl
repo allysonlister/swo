@@ -204,6 +204,8 @@ called clusters.</rdfs:comment>
     <owl:Class rdf:about="&obo;IAO_0000005">
         <rdfs:label>objective specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <rdfs:comment>For reference, the original IAO definition is: a directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.</rdfs:comment>
+        <obo:IAO_0000115>An objective is information that describes the intended outcome of running a process.</obo:IAO_0000115>
     </owl:Class>
     
 
