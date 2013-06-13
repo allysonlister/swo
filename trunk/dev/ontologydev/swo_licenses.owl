@@ -41,31 +41,60 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
         <rdfs:label>definition</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&dc;creator"/>
-    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
-    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119">
-        <rdfs:label>definition source</rdfs:label>
-    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000118">
         <rdfs:label>alternative term</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119">
+        <rdfs:label>definition source</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
     
 
 
@@ -101,7 +130,7 @@
         <rdf:type rdf:resource="&owl;SymmetricProperty"/>
         <rdfs:label xml:lang="en">is compatible license of</rdfs:label>
         <dc:creator>Allyson Lister</dc:creator>
-        <obo:IAO_0000115>&#39;is compatible license of&#39; provides a method of marking two software licenses as compatible and without conflicts, e.g. that the Apache License version 2 is compatible with GNU GPL version 3. If two licenses are connected with this property, it means code released under one license can be released with code from the other license in a larger program.</obo:IAO_0000115>
+        <obo:IAO_0000115>&apos;is compatible license of&apos; provides a method of marking two software licenses as compatible and without conflicts, e.g. that the Apache License version 2 is compatible with GNU GPL version 3. If two licenses are connected with this property, it means code released under one license can be released with code from the other license in a larger program.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.gnu.org/licenses/gpl-faq.html#WhatDoesCompatMean, accessed 12 June 2013.</obo:IAO_0000119>
         <rdfs:range rdf:resource="&ebi;swo/SWO_0000002"/>
         <rdfs:domain rdf:resource="&ebi;swo/SWO_0000002"/>
@@ -467,13 +496,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000037"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_1000045"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -485,13 +514,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000029"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000025"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_1000045"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -503,7 +526,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000030"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000037"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118>GNU General Public License</obo:IAO_0000118>
@@ -519,13 +548,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_9000059"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/license/SWO_1000048"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_1000046"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -537,11 +560,17 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000016"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_9000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:creator>Allyson Lister</dc:creator>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/license/SWO_1000048"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_1000046"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>This is a free software license under the definition of &quot;free&quot; by the GNU Project, and is compatible with version 3 of the GNU GPL.</obo:IAO_0000115>
+        <dc:creator>Allyson Lister</dc:creator>
         <obo:IAO_0000119>http://www.gnu.org/licenses/license-list.html, accessed 12 June 2013.</obo:IAO_0000119>
     </owl:Class>
     
@@ -561,13 +590,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000038"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000037"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000037"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
@@ -585,14 +614,14 @@
         <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_0000002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/license/SWO_1000048"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_1000046"/>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_9000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_9000059"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -609,8 +638,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
+                <owl:onProperty rdf:resource="&ebi;swo/license/SWO_1000048"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_1000046"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
@@ -680,7 +709,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_0000002"/>
         <dc:creator>Allyson Lister</dc:creator>
-        <obo:IAO_0000115> A program is free software if the program&#39;s users have the four essential freedoms:
+        <obo:IAO_0000115> A program is free software if the program&apos;s users have the four essential freedoms:
 
     The freedom to run the program, for any purpose (freedom 0).
     The freedom to study how the program works, and change it so it does your computing as you wish (freedom 1). Access to the source code is a precondition for this.
@@ -723,7 +752,7 @@ A program is free software if users have all of these freedoms. Thus, you should
     <owl:Class rdf:about="&ebi;swo/license/SWO_1000045">
         <rdfs:label xml:lang="en">Copyleft</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_9000019"/>
-        <obo:IAO_0000115>Copyleft requires that all derivative code uses the same license, but further limits the type of license to one which gives everyone the rights to use, modify, and redistribute the program&#39;s code, or any program derived from it, but only if the distribution terms are unchanged. To copyleft a program, we first state that it is copyrighted; then we add the distribution terms described above. This makes copyleft a legal instrument ensuring that the code and the freedoms become legally inseparable. </obo:IAO_0000115>
+        <obo:IAO_0000115>Copyleft requires that all derivative code uses the same license, but further limits the type of license to one which gives everyone the rights to use, modify, and redistribute the program&apos;s code, or any program derived from it, but only if the distribution terms are unchanged. To copyleft a program, we first state that it is copyrighted; then we add the distribution terms described above. This makes copyleft a legal instrument ensuring that the code and the freedoms become legally inseparable. </obo:IAO_0000115>
         <obo:IAO_0000119>Modified from http://www.gnu.org/copyleft/copyleft.html, accessed 12 June 2013.</obo:IAO_0000119>
         <dc:creator>Allyson Lister</dc:creator>
         <obo:IAO_0000115></obo:IAO_0000115>
@@ -759,19 +788,7 @@ A program is free software if users have all of these freedoms. Thus, you should
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000025"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000016"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000037"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -783,19 +800,31 @@ A program is free software if users have all of these freedoms. Thus, you should
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000027"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000037"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>http://www.gnu.org/licenses/license-list.html, accessed 12 June 2013.</obo:IAO_0000119>
@@ -814,13 +843,13 @@ A program is free software if users have all of these freedoms. Thus, you should
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000037"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_1000051"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000037"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -832,11 +861,11 @@ A program is free software if users have all of these freedoms. Thus, you should
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_1000051"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000119>Modified from http://www.gnu.org/licenses/license-list.html, accessed 12 June 2013; Modified from http://creativecommons.org/licenses/, accessed 12 June 2013.</obo:IAO_0000119>
         <obo:IAO_0000118>Creative Commons Attribution 2.0 license</obo:IAO_0000118>
+        <obo:IAO_0000119>Modified from http://www.gnu.org/licenses/license-list.html, accessed 12 June 2013; Modified from http://creativecommons.org/licenses/, accessed 12 June 2013.</obo:IAO_0000119>
         <dc:creator>Allyson Lister</dc:creator>
         <obo:IAO_0000115>CC BY 2.0 is a non-copyleft free (free by the definition of the GNU Project) license which lets others distribute, remix, tweak, and build upon your work, even commercially, as long as they credit you for the original creation. This is the most accommodating of Creative Commons licenses offered. Recommended for maximum dissemination and use of licensed materials. The GNU Project recommend this license for art, entertainment and educational works, but also recommend that it is not used for software or documentation, since it is incompatible with the GNU GPL and with the GNU FDL.</obo:IAO_0000115>
     </owl:Class>
@@ -860,12 +889,6 @@ A program is free software if users have all of these freedoms. Thus, you should
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_1000045"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -879,6 +902,12 @@ A program is free software if users have all of these freedoms. Thus, you should
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_1000051"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_1000045"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118>Creative Commons Attribution-Sharealike 2.0 license</obo:IAO_0000118>
@@ -916,9 +945,48 @@ A program is free software if users have all of these freedoms. Thus, you should
     <!-- http://www.ebi.ac.uk/swo/license/SWO_1000055 -->
 
     <owl:Class rdf:about="&ebi;swo/license/SWO_1000055">
-        <rdfs:label>Mozilla Public License Version 2.0</rdfs:label>
         <rdfs:label xml:lang="en">MPL v2.0</rdfs:label>
+        <rdfs:label>Mozilla Public License Version 2.0</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/license/SWO_9000088"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/license/SWO_1000048"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_1000046"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/license/SWO_1000048"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_1000047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>http://www.gnu.org/licenses/license-list.html, accessed 12 June 2013; http://en.wikipedia.org/wiki/Mozilla_Public_License, accessed 12 June 2013.</obo:IAO_0000119>
+        <obo:IAO_0000115>MPL v2.0 a free software license as defined by the GNU Project. Section 3.3 provides indirect compatibility between this license and the GNU GPL version 2.0, the GNU LGPL version 2.1, the GNU AGPL version 3.0, and all later versions of those licenses. The MPL allows covered source code to be mixed with other files under a different, even proprietary license. However, code files licensed under the MPL must remain under the MPL and freely available in source form.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_1000056 -->
+
+    <owl:Class rdf:about="&ebi;swo/license/SWO_1000056">
+        <rdfs:label>Artistic License</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_0000002"/>
+        <dc:creator>Allyson Lister</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_1000057 -->
+
+    <owl:Class rdf:about="&ebi;swo/license/SWO_1000057">
+        <rdfs:label>Artistic License v2.0</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/license/SWO_1000056"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/license/SWO_1000048"/>
@@ -931,8 +999,54 @@ A program is free software if users have all of these freedoms. Thus, you should
                 <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_1000046"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000119>http://www.gnu.org/licenses/license-list.html, accessed 12 June 2013; http://en.wikipedia.org/wiki/Mozilla_Public_License, accessed 12 June 2013.</obo:IAO_0000119>
-        <obo:IAO_0000115>MPL v2.0 a free software license as defined by the GNU Project. Section 3.3 provides indirect compatibility between this license and the GNU GPL version 2.0, the GNU LGPL version 2.1, the GNU AGPL version 3.0, and all later versions of those licenses. The MPL allows covered source code to be mixed with other files under a different, even proprietary license. However, code files licensed under the MPL must remain under the MPL and freely available in source form.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_9000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The Artistic License v 2.0 is a free software license by the definition of the GNU Project and compatible with the GPL thanks to the relicensing option in section 4(c)(ii) (as compared with the Artistic License 1.0).</obo:IAO_0000115>
+        <dc:creator>Allyson Lister</dc:creator>
+        <obo:IAO_0000119>http://www.gnu.org/licenses/license-list.html, accessed 12 June 2013.</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_1000058 -->
+
+    <owl:Class rdf:about="&ebi;swo/license/SWO_1000058">
+        <rdfs:label>Purchase cost</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_9000005"/>
+        <rdfs:comment>In some ways, purchase cost is similar to the already-extant usage clause hierarchy, which includes restricted and unrestricted usage. However, a usage limitation is not necessarily due to whether or not something costs money: even if the usage is academic only, it could still be either free or non-free. A license could have multiple usage clauses, e.g. academic only when free, and unrestricted if a fee is paid. Purchase cost was created which, together with a usage clause, defines both limitations and cost.</rdfs:comment>
+        <obo:IAO_0000115>Purchase cost is a license clause which states whether there is a cost involved with a particular usage or licensing of a piece of software.</obo:IAO_0000115>
+        <obo:IAO_0000119>Allyson Lister</obo:IAO_0000119>
+        <rdfs:comment>Allyson Lister</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_1000059 -->
+
+    <owl:Class rdf:about="&ebi;swo/license/SWO_1000059">
+        <rdfs:label>Free</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/license/SWO_1000058"/>
+        <rdfs:comment>This class refers only to the cost of the software, not to the definition of &quot;free software&quot; as provided by the GNU Project and which is commonly used to describe software that respects users&apos; freedom and community (http://www.gnu.org/philosophy/free-sw.html).</rdfs:comment>
+        <obo:IAO_0000115>Free is a type of license clause which, when applied, means that there is no cost for the users of the software to which the license is attached. This clause can be combined with other clauses (such as usage clauses) to specify that only certain usages are free.</obo:IAO_0000115>
+        <obo:IAO_0000119>Allyson Lister</obo:IAO_0000119>
+        <dc:creator>Allyson Lister</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_1000060 -->
+
+    <owl:Class rdf:about="&ebi;swo/license/SWO_1000060">
+        <rdfs:label>Not Free</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/license/SWO_1000058"/>
+        <dc:creator>Allyson Lister</dc:creator>
+        <obo:IAO_0000119>Allyson Lister</obo:IAO_0000119>
+        <rdfs:comment>This class refers only to the cost of the software, not to the definition of &quot;free software&quot; as provided by the GNU Project and which is commonly used to describe software that respects users&apos; freedom and community (http://www.gnu.org/philosophy/free-sw.html).</rdfs:comment>
+        <obo:IAO_0000115>Not Free is a type of license clause which, when applied, means that there is a cost for the users of the software to which the license is attached. This clause can be combined with other clauses (such as usage clauses) to specify that only certain usages incur a purchase cost.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -962,19 +1076,13 @@ A program is free software if users have all of these freedoms. Thus, you should
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_9000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000030"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000027"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -986,13 +1094,19 @@ A program is free software if users have all of these freedoms. Thus, you should
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_9000059"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000025"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1011,9 +1125,12 @@ A program is free software if users have all of these freedoms. Thus, you should
     <!-- http://www.ebi.ac.uk/swo/license/SWO_9000082 -->
 
     <owl:Class rdf:about="&ebi;swo/license/SWO_9000082">
-        <rdfs:label>The Artistic License 1.0</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_0000002"/>
-        <dc:contributor>Andy Brown</dc:contributor>
+        <rdfs:label>Artistic License v1.0</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/license/SWO_1000056"/>
+        <obo:IAO_0000119>http://www.gnu.org/licenses/license-list.html, accessed 13 June 2013.</obo:IAO_0000119>
+        <dc:creator>Andy Brown</dc:creator>
+        <obo:IAO_0000115>The Artistic License v1.0 is not considered a free software license by the definition of the GNU Project because it is too vague; some passages are &amp;quot;too clever for their own good&amp;quot;, and their meaning is not clear. The GNU Project recommends that it is not used except as part of the disjunctive license of Perl.</obo:IAO_0000115>
+        <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
     
 
@@ -1023,12 +1140,6 @@ A program is free software if users have all of these freedoms. Thus, you should
     <owl:Class rdf:about="&ebi;swo/license/SWO_9000084">
         <rdfs:label>EPL v1</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_0000002"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
@@ -1046,6 +1157,12 @@ A program is free software if users have all of these freedoms. Thus, you should
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118>Eclipse Public License Version 1.0</obo:IAO_0000118>
@@ -1066,6 +1183,12 @@ A program is free software if users have all of these freedoms. Thus, you should
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;swo/license/SWO_1000048"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_1000046"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_9000059"/>
             </owl:Restriction>
@@ -1076,14 +1199,8 @@ A program is free software if users have all of these freedoms. Thus, you should
                 <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/license/SWO_1000048"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_1000046"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <dc:creator>Allyson Lister</dc:creator>
         <obo:IAO_0000119>http://www.gnu.org/licenses/license-list.html, accessed June 12, 2013.</obo:IAO_0000119>
+        <dc:creator>Allyson Lister</dc:creator>
         <obo:IAO_0000115>The Modified BSD is a software license based on he original FreeBSD license, modified by removal of the advertising clause. It is a lax, permissive non-copyleft free software license, compatible with the GNU GPL.</obo:IAO_0000115>
         <obo:IAO_0000118>3 clause BSD License</obo:IAO_0000118>
     </owl:Class>
@@ -1098,7 +1215,7 @@ A program is free software if users have all of these freedoms. Thus, you should
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000037"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1110,7 +1227,7 @@ A program is free software if users have all of these freedoms. Thus, you should
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/SWO_9000016"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000037"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118>Latex Project Public License</obo:IAO_0000118>
@@ -1121,6 +1238,7 @@ A program is free software if users have all of these freedoms. Thus, you should
     <!-- http://www.ebi.ac.uk/swo/license/SWO_9000087 -->
 
     <owl:Class rdf:about="&ebi;swo/license/SWO_9000087">
+        <rdfs:label>OPL v1.0</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_0000002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1131,18 +1249,18 @@ A program is free software if users have all of these freedoms. Thus, you should
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000038"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000036"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000036"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/license/SWO_10000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>OPL v1.0 is not a free software license according to the definition of the GNU Project because it requires sending every published modified version to a specific initial developer. </obo:IAO_0000115>
         <obo:IAO_0000118>Open Public License Version 1.0</obo:IAO_0000118>
         <obo:IAO_0000119>http://www.gnu.org/licenses/license-list.html, accessed 12 June 2013.</obo:IAO_0000119>
-        <obo:IAO_0000119>OPL v1.0</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1187,5 +1305,5 @@ A program is free software if users have all of these freedoms. Thus, you should
 
 
 
-<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
 
