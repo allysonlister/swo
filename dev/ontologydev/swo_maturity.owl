@@ -35,21 +35,48 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118">
+        <rdfs:label>alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119">
+        <rdfs:label>definition source</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
     <owl:AnnotationProperty rdf:about="&dc;creator"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
-    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
     
 
 
@@ -141,7 +168,9 @@
     <owl:Class rdf:about="&swo;maturity/SWO_9000062">
         <rdfs:label rdf:datatype="&xsd;string">alpha</rdfs:label>
         <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
-        <rdfs:comment rdf:datatype="&xsd;string">Software has been designated &#39;alpha&#39; by the developer/publisher</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Alpha is a development status which is applied to software by the developer/publisher during initial development and testing. Software designated alpha is commonly unstable and prone to crashing. It may or may not be released publicly.</obo:IAO_0000115>
+        <obo:IAO_0000119>Modified from http://en.wikipedia.org/wiki/Software_release_life_cycle, accessed 11 June 2013.</obo:IAO_0000119>
+        <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
     
 
@@ -151,7 +180,9 @@
     <owl:Class rdf:about="&swo;maturity/SWO_9000063">
         <rdfs:label>beta</rdfs:label>
         <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
-        <rdfs:comment rdf:datatype="&xsd;string">Software has been designated &#39;beta&#39; by the develoer/publisher</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Beta is a development status which is generally applied to software by the developer/publisher once the majority of features have been implemented, but when the software may still contain bugs or cause crashes or data loss. Software designated beta is often released publicly, either on a general release or to a specific subset of users called beta testers. </obo:IAO_0000115>
+        <obo:IAO_0000119>Modified from http://en.wikipedia.org/wiki/Software_release_life_cycle, accessed 11 June 2013.</obo:IAO_0000119>
+        <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
     
 
@@ -170,7 +201,10 @@
     <owl:Class rdf:about="&swo;maturity/SWO_9000065">
         <rdfs:label>Live</rdfs:label>
         <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
-        <rdfs:comment rdf:datatype="&xsd;string">Software is available from the publisher as a completed product</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Live is a development status which is applied to software that has been designated as suitable for production environments by the developer/publisher. If a non-free product, software at this stage is available for purchase</obo:IAO_0000115>
+        <obo:IAO_0000119>Allyson Lister, Jon Ison, and Modified from http://en.wikipedia.org/wiki/Software_release_life_cycle, accessed 11 June 2013.</obo:IAO_0000119>
+        <dc:creator>Allyson Lister</dc:creator>
+        <obo:IAO_0000118>Production</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -201,7 +235,7 @@
 
     <owl:Class rdf:about="&swo;maturity/SWO_9000071">
         <rdfs:label>First release</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000065"/>
         <dc:creator>James Malone</dc:creator>
         <obo:IAO_0000115>The first release of a piece of software. A first release does not imply any particular levels of maturity other than is this is the first instance of this software to be considered released.</obo:IAO_0000115>
     </owl:Class>
@@ -212,7 +246,7 @@
 
     <owl:Class rdf:about="&swo;maturity/SWO_9000072">
         <rdfs:label>Latest release</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000065"/>
         <obo:IAO_0000115>The latest release of a piece of software. This does not imply any levels of maturity other than indicating this is the most recent release.</obo:IAO_0000115>
         <dc:creator>James Malone</dc:creator>
     </owl:Class>
@@ -252,5 +286,5 @@
 
 
 
-<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
 
