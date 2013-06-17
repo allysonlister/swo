@@ -41,9 +41,9 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
     
 
@@ -70,26 +70,15 @@
     
 
 
-    <!-- http://www.obofoundry.org/ro/ro.owl#preceded_by -->
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000131 -->
 
-    <owl:ObjectProperty rdf:about="&ro;preceded_by">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
-        <rdfs:label rdf:datatype="&xsd;string">preceded by</rdfs:label>
-        <rdfs:domain rdf:resource="&obo;IAO_0000129"/>
-        <rdfs:range rdf:resource="&obo;IAO_0000129"/>
-        <owl:inverseOf rdf:resource="&ro;precedes"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="&ebi;swo/SWO_0000131"/>
     
 
 
-    <!-- http://www.obofoundry.org/ro/ro.owl#precedes -->
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000132 -->
 
-    <owl:ObjectProperty rdf:about="&ro;precedes">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
-        <rdfs:label rdf:datatype="&xsd;string">followed by</rdfs:label>
-        <rdfs:range rdf:resource="&obo;IAO_0000129"/>
-        <rdfs:domain rdf:resource="&obo;IAO_0000129"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="&ebi;swo/SWO_0000132"/>
     
 
 
@@ -107,8 +96,8 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000129 -->
 
     <owl:Class rdf:about="&obo;IAO_0000129">
-        <rdfs:label>version name or number</rdfs:label>
-        <obo:IAO_0000115>A number or name assigned to a piece of software used to identify a specific state of software.</obo:IAO_0000115>
+        <rdfs:label>version number</rdfs:label>
+        <obo:IAO_0000115>A version number is an information content entity which is a sequence of characters borne by part of each of a class of manufactured products or its packaging and indicates its order within a set of other products having the same name.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -128,7 +117,7 @@
 
     <owl:NamedIndividual rdf:about="&ebi;swo/version/6.0">
         <rdf:type rdf:resource="&obo;IAO_0000129"/>
-        <rdfs:label>6.0</rdfs:label>
+        <rdfs:label>Windows 6.0</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -156,8 +145,8 @@
     <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000003">
         <rdf:type rdf:resource="&obo;IAO_0000129"/>
         <rdfs:label>Microsoft 98 version</rdfs:label>
-        <ro:precedes rdf:resource="&ebi;swo/version/SWO_2000004"/>
-        <ro:preceded_by rdf:resource="&ebi;swo/version/SWO_2000006"/>
+        <swo:SWO_0000132 rdf:resource="&ebi;swo/version/SWO_2000004"/>
+        <swo:SWO_0000131 rdf:resource="&ebi;swo/version/SWO_2000006"/>
     </owl:NamedIndividual>
     
 
@@ -166,9 +155,9 @@
 
     <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000004">
         <rdf:type rdf:resource="&obo;IAO_0000129"/>
-        <rdfs:label>Microsoft 2001 version</rdfs:label>
-        <ro:preceded_by rdf:resource="&ebi;swo/version/SWO_2000003"/>
-        <ro:precedes rdf:resource="&ebi;swo/version/SWO_2000005"/>
+        <rdfs:label>Microsoft 2002 version</rdfs:label>
+        <swo:SWO_0000131 rdf:resource="&ebi;swo/version/SWO_2000003"/>
+        <swo:SWO_0000132 rdf:resource="&ebi;swo/version/SWO_2000005"/>
     </owl:NamedIndividual>
     
 
@@ -178,8 +167,8 @@
     <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000005">
         <rdf:type rdf:resource="&obo;IAO_0000129"/>
         <rdfs:label>Microsoft 2003 version</rdfs:label>
-        <ro:preceded_by rdf:resource="&ebi;swo/version/SWO_2000004"/>
-        <ro:precedes rdf:resource="&ebi;swo/version/SWO_2000007"/>
+        <swo:SWO_0000131 rdf:resource="&ebi;swo/version/SWO_2000004"/>
+        <swo:SWO_0000132 rdf:resource="&ebi;swo/version/SWO_2000007"/>
     </owl:NamedIndividual>
     
 
@@ -189,7 +178,7 @@
     <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000006">
         <rdf:type rdf:resource="&obo;IAO_0000129"/>
         <rdfs:label>Microsoft 95 version</rdfs:label>
-        <ro:precedes rdf:resource="&ebi;swo/version/SWO_2000003"/>
+        <swo:SWO_0000132 rdf:resource="&ebi;swo/version/SWO_2000003"/>
     </owl:NamedIndividual>
     
 
@@ -199,8 +188,8 @@
     <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000007">
         <rdf:type rdf:resource="&obo;IAO_0000129"/>
         <rdfs:label>Microsoft 2007 version</rdfs:label>
-        <ro:preceded_by rdf:resource="&ebi;swo/version/SWO_2000005"/>
-        <ro:precedes rdf:resource="&ebi;swo/version/SWO_2000008"/>
+        <swo:SWO_0000131 rdf:resource="&ebi;swo/version/SWO_2000005"/>
+        <swo:SWO_0000132 rdf:resource="&ebi;swo/version/SWO_2000008"/>
     </owl:NamedIndividual>
     
 
@@ -210,7 +199,7 @@
     <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000008">
         <rdf:type rdf:resource="&obo;IAO_0000129"/>
         <rdfs:label>Microsoft 2010 version</rdfs:label>
-        <ro:preceded_by rdf:resource="&ebi;swo/version/SWO_2000007"/>
+        <swo:SWO_0000131 rdf:resource="&ebi;swo/version/SWO_2000007"/>
     </owl:NamedIndividual>
     
 
@@ -238,8 +227,8 @@
     <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000011">
         <rdf:type rdf:resource="&obo;IAO_0000129"/>
         <rdfs:label>Matlab R14</rdfs:label>
-        <ro:preceded_by rdf:resource="&ebi;swo/version/SWO_2000012"/>
-        <ro:precedes rdf:resource="&ebi;swo/version/SWO_2000013"/>
+        <swo:SWO_0000131 rdf:resource="&ebi;swo/version/SWO_2000012"/>
+        <swo:SWO_0000132 rdf:resource="&ebi;swo/version/SWO_2000013"/>
     </owl:NamedIndividual>
     
 
@@ -249,7 +238,7 @@
     <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000012">
         <rdf:type rdf:resource="&obo;IAO_0000129"/>
         <rdfs:label>Matlab R12</rdfs:label>
-        <ro:precedes rdf:resource="&ebi;swo/version/SWO_2000011"/>
+        <swo:SWO_0000132 rdf:resource="&ebi;swo/version/SWO_2000011"/>
     </owl:NamedIndividual>
     
 
@@ -259,7 +248,7 @@
     <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000013">
         <rdf:type rdf:resource="&obo;IAO_0000129"/>
         <rdfs:label>R2011a</rdfs:label>
-        <ro:preceded_by rdf:resource="&ebi;swo/version/SWO_2000011"/>
+        <swo:SWO_0000131 rdf:resource="&ebi;swo/version/SWO_2000011"/>
     </owl:NamedIndividual>
     
 
@@ -277,7 +266,7 @@
 
     <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000015">
         <rdf:type rdf:resource="&obo;IAO_0000129"/>
-        <rdfs:label>14</rdfs:label>
+        <rdfs:label>Excel 14</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -286,7 +275,7 @@
 
     <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000016">
         <rdf:type rdf:resource="&obo;IAO_0000129"/>
-        <rdfs:label>5.1</rdfs:label>
+        <rdfs:label>Windows 5.1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -304,7 +293,7 @@
 
     <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000018">
         <rdf:type rdf:resource="&obo;IAO_0000129"/>
-        <rdfs:label>10.1</rdfs:label>
+        <rdfs:label>Adobe Acrobat 10.1</rdfs:label>
     </owl:NamedIndividual>
     
 
