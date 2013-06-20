@@ -96,7 +96,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000129 -->
 
     <owl:Class rdf:about="&obo;IAO_0000129">
-        <rdfs:label>version number</rdfs:label>
+        <rdfs:label>version name</rdfs:label>
         <obo:IAO_0000115>A version number is an information content entity which is a sequence of characters borne by part of each of a class of manufactured products or its packaging and indicates its order within a set of other products having the same name.</obo:IAO_0000115>
     </owl:Class>
     
