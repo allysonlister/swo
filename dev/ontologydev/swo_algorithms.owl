@@ -85,15 +85,15 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000417 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000417"/>
-    
-
-
     <!-- http://www.ebi.ac.uk/swo/SWO_0000087 -->
 
     <owl:ObjectProperty rdf:about="&swo2;SWO_0000087"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0040005 -->
+
+    <owl:ObjectProperty rdf:about="&swo2;SWO_0040005"/>
     
 
 
