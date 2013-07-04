@@ -662,7 +662,7 @@
     <!-- http://edamontology.org/operation_0004 -->
 
     <rdf:Description rdf:about="&edamontology;operation_0004">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000003"/>
+        <owl:equivalentClass rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000003"/>
     </rdf:Description>
     
 
@@ -22310,7 +22310,7 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0040005"/>
-                <owl:someValuesFrom rdf:resource="&data;SWO_3000026"/>
+                <owl:someValuesFrom rdf:resource="&objective;SWO_4000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
