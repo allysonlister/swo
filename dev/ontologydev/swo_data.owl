@@ -55,72 +55,28 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://edamontology.org#created_in -->
-
-    <owl:AnnotationProperty rdf:about="&edamontology2;created_in"/>
-    
-
-
-    <!-- http://edamontology.org#def -->
-
-    <owl:AnnotationProperty rdf:about="&edamontology2;def"/>
-    
-
-
-    <!-- http://edamontology.org#namespace -->
-
-    <owl:AnnotationProperty rdf:about="&edamontology2;namespace"/>
-    
-
-
-    <!-- http://edamontology.org#subset -->
-
-    <owl:AnnotationProperty rdf:about="&edamontology2;subset"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
-
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
-
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
-
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/creator -->
-
     <owl:AnnotationProperty rdf:about="&dc;creator"/>
-    
-
-
-    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
-
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
+    <owl:AnnotationProperty rdf:about="&edamontology2;subset"/>
+    <owl:AnnotationProperty rdf:about="&edamontology2;namespace"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="&edamontology2;def"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&edamontology2;created_in"/>
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
     
 
 
-    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
-
-    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
     
 
 
@@ -189,6 +145,7 @@
 
     <owl:Class rdf:about="&edamontology;data_1636">
         <rdfs:label rdf:datatype="&xsd;string">Heatmap</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
     </owl:Class>
     
 
@@ -295,7 +252,7 @@
         <rdfs:label>SBML</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
         <obo:IAO_0000118>Systems Biology Markup Language</obo:IAO_0000118>
-        <obo:IAO_0000115>Systems Biology Markup Language (SBML) is a machine-readable format for representing models. It&apos;s oriented towards describing systems where biological entities are involved in, and modified by, processes that occur over time.</obo:IAO_0000115>
+        <obo:IAO_0000115>Systems Biology Markup Language (SBML) is a machine-readable format for representing models. It&#39;s oriented towards describing systems where biological entities are involved in, and modified by, processes that occur over time.</obo:IAO_0000115>
         <obo:IAO_0000119>http://sbml.org</obo:IAO_0000119>
     </owl:Class>
     
@@ -1005,8 +962,8 @@
         <rdfs:label>RDF-XML</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000006"/>
-        <obo:IAO_0000115>A serialisation of RDF into an XML format.</obo:IAO_0000115>
         <dc:creator>James Malone</dc:creator>
+        <obo:IAO_0000115>A serialisation of RDF into an XML format.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1103,7 +1060,7 @@
         <rdfs:label>TIFF</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000020"/>
         <obo:IAO_0000118>Tagged Image File Format</obo:IAO_0000118>
-        <obo:IAO_0000115>TIFF is a flexible, adaptable file format for handling images and data within a single file, by including the header tags (size, definition, image-data arrangement, applied image compression) defining the image&apos;s geometry.</obo:IAO_0000115>
+        <obo:IAO_0000115>TIFF is a flexible, adaptable file format for handling images and data within a single file, by including the header tags (size, definition, image-data arrangement, applied image compression) defining the image&#39;s geometry.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1135,8 +1092,8 @@
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000019">
         <rdfs:label>GIF</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000020"/>
-        <obo:IAO_0000115>The Graphics Interchange Format (GIF) is a bitmap image format. The format supports up to 8 bits per pixel thus allowing a single image to reference a palette of up to 256 distinct colors. The colors are chosen from the 24-bit RGB color space. It also supports animations and allows a separate palette of 256 colors for each frame. The color limitation makes the GIF format unsuitable for reproducing color photographs and other images with continuous color, but it is well-suited for simpler images such as graphics or logos with solid areas of color. [wikipedia]</obo:IAO_0000115>
         <obo:IAO_0000118>Graphics Interchange Format</obo:IAO_0000118>
+        <obo:IAO_0000115>The Graphics Interchange Format (GIF) is a bitmap image format. The format supports up to 8 bits per pixel thus allowing a single image to reference a palette of up to 256 distinct colors. The colors are chosen from the 24-bit RGB color space. It also supports animations and allows a separate palette of 256 colors for each frame. The color limitation makes the GIF format unsuitable for reproducing color photographs and other images with continuous color, but it is well-suited for simpler images such as graphics or logos with solid areas of color. [wikipedia]</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1448,14 +1405,14 @@
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/data/SWO_3000054"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000055"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
+                <owl:onProperty rdf:resource="&ebi;swo/data/SWO_3000054"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000055"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1473,8 +1430,8 @@
                 <owl:hasValue rdf:resource="&ebi;efo/swo/SWO_0000023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The CDF ASCII format is an ASCII data format specification created by Affymetrix similar to the Windows INI format. This format describes the layout for an Affymetrix GeneChip array. An array may contain Expression, Genotyping, CustomSeq, Copy Number and/or Tag probe sets. All probe set names within an array are unique. Multiple copies of a probe set may exist on a single array as long as each copy has a unique name.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.affymetrix.com/support/developer/powertools/changelog/gcos-agcc/cdf.html, accessed 22 May 2013</obo:IAO_0000119>
+        <obo:IAO_0000115>The CDF ASCII format is an ASCII data format specification created by Affymetrix similar to the Windows INI format. This format describes the layout for an Affymetrix GeneChip array. An array may contain Expression, Genotyping, CustomSeq, Copy Number and/or Tag probe sets. All probe set names within an array are unique. Multiple copies of a probe set may exist on a single array as long as each copy has a unique name.</obo:IAO_0000115>
         <dc:creator>Allyson Lister</dc:creator>
     </owl:Class>
     
@@ -1568,8 +1525,17 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>FCS3.0 is version 3.0 of the Data File Standard for Flow Cytometry. It contains a mechanism for handling data sets of 100 megabytes and larger, support for UNICODE text for keyword values, support for cyclic redundancy check (CRC) validation for each data set, a requirement for the inclusion of information describing the method of signal amplification and increased support for the inclusion of time as a measurement parameter.</obo:IAO_0000115>
-        <obo:IAO_0000119>http://www.bioconductor.org/packages/2.12/bioc/vignettes/prada/inst/doc/fcs3.html, accessed May 29. 2013.</obo:IAO_0000119>
         <dc:creator>Allyson Lister</dc:creator>
+        <obo:IAO_0000119>http://www.bioconductor.org/packages/2.12/bioc/vignettes/prada/inst/doc/fcs3.html, accessed May 29. 2013.</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000064 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000064">
+        <rdfs:label xml:lang="en">NONMEM data format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
 
@@ -1609,5 +1575,5 @@
 
 
 
-<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
 
