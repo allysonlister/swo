@@ -1038,7 +1038,19 @@ called clusters.</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&efo;swo/SWO_0000741"/>
+                <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000274"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&efo;swo/SWO_0000741"/>
+                <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -1050,18 +1062,6 @@ called clusters.</rdfs:comment>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&efo;swo/SWO_0000741"/>
-                <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000274"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&efo;swo/SWO_0000741"/>
-                <owl:someValuesFrom rdf:resource="&efo;swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">50-50 Manova is software in which the 50-50 MANOVA algorithm is implemented.</obo:IAO_0000115>
@@ -1338,7 +1338,7 @@ called clusters.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -1558,7 +1558,7 @@ called clusters.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -1788,7 +1788,7 @@ called clusters.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -1816,7 +1816,7 @@ called clusters.</rdfs:comment>
         <rdfs:label rdf:datatype="&xsd;string">Agilent Technologies Software</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -1909,7 +1909,7 @@ called clusters.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -1940,7 +1940,7 @@ Pipeline: complete integrated solutions for gene expression research including A
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -1970,7 +1970,7 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -2060,7 +2060,7 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -2108,7 +2108,7 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -2373,7 +2373,7 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -2452,7 +2452,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -2480,7 +2480,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -2508,7 +2508,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -2685,7 +2685,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -3287,7 +3287,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -3464,7 +3464,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -3493,7 +3493,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -3951,7 +3951,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -3979,7 +3979,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -4006,7 +4006,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -4428,7 +4428,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -4501,7 +4501,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -4532,7 +4532,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -4560,7 +4560,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -4589,7 +4589,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -4905,7 +4905,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -5183,7 +5183,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -5211,7 +5211,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -6313,7 +6313,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -8624,7 +8624,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -9118,7 +9118,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -9156,7 +9156,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -11707,7 +11707,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -22097,22 +22097,6 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&organization;SWO_9000055"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&organization;SWO_9000059"/>
-                                <owl:hasValue rdf:resource="&organization;SWO_9000003"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000087"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -22121,22 +22105,6 @@ tiple samples</obo:IAO_0000115>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004002"/>
                                 <owl:someValuesFrom rdf:resource="&data;SWO_3000038"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&organization;SWO_9000056"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&organization;SWO_9000059"/>
-                                <owl:hasValue rdf:resource="&organization;SWO_9000003"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -22185,6 +22153,22 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&organization;SWO_9000055"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&organization;SWO_9000059"/>
+                                <owl:hasValue rdf:resource="&organization;SWO_9000003"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000086"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -22231,6 +22215,22 @@ tiple samples</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&organization;SWO_9000056"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&organization;SWO_9000059"/>
+                                <owl:hasValue rdf:resource="&organization;SWO_9000003"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -22240,22 +22240,6 @@ tiple samples</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000007">
         <rdfs:label>OmniOutliner</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&organization;SWO_9000056"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&organization;SWO_9000059"/>
-                                <owl:hasValue rdf:resource="&organization;SWO_9000004"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000087"/>
@@ -22280,7 +22264,7 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -22306,6 +22290,22 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&license;SWO_1000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&organization;SWO_9000056"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&organization;SWO_9000059"/>
+                                <owl:hasValue rdf:resource="&organization;SWO_9000004"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>OmniOutliner is commercial outlining software for Mac OS X produced by The Omni Group</obo:IAO_0000115>
     </owl:Class>
     
@@ -22318,13 +22318,7 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000025"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
-                <owl:someValuesFrom rdf:resource="&license;SWO_1000004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -22336,6 +22330,12 @@ tiple samples</obo:IAO_0000115>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
+                <owl:someValuesFrom rdf:resource="&license;SWO_1000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Racket is a Scheme-based language interpreter and programming environment</obo:IAO_0000115>
@@ -23147,14 +23147,14 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000086"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;IAO_0000027"/>
+                            <rdf:Description rdf:about="&organization;SWO_9000056"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004002"/>
-                                <owl:someValuesFrom rdf:resource="&data;SWO_3000032"/>
+                                <owl:onProperty rdf:resource="&organization;SWO_9000059"/>
+                                <owl:hasValue rdf:resource="&organization;SWO_9000001"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -23163,14 +23163,14 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000086"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&organization;SWO_9000056"/>
+                            <rdf:Description rdf:about="&obo;IAO_0000027"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="&organization;SWO_9000059"/>
-                                <owl:hasValue rdf:resource="&organization;SWO_9000001"/>
+                                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004002"/>
+                                <owl:someValuesFrom rdf:resource="&data;SWO_3000032"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -23201,7 +23201,13 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004001"/>
+                <owl:someValuesFrom rdf:resource="&interface;SWO_9000052"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -23213,12 +23219,6 @@ tiple samples</obo:IAO_0000115>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004001"/>
-                <owl:someValuesFrom rdf:resource="&interface;SWO_9000052"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -23332,7 +23332,7 @@ tiple samples</obo:IAO_0000115>
         <rdfs:label>Microsoft developed software</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -23522,7 +23522,7 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -23572,7 +23572,7 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -23610,19 +23610,7 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004001"/>
-                <owl:allValuesFrom rdf:resource="&interface;SWO_9000052"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000043"/>
-                <owl:hasValue>http://dx.doi.org/10.1093/bioinformatics/btm404</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -23634,6 +23622,18 @@ tiple samples</obo:IAO_0000115>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004001"/>
+                <owl:allValuesFrom rdf:resource="&interface;SWO_9000052"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000043"/>
+                <owl:hasValue>http://dx.doi.org/10.1093/bioinformatics/btm404</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:creator>Allyson Lister</dc:creator>
@@ -23654,7 +23654,13 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000082"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000056"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -23666,12 +23672,6 @@ tiple samples</obo:IAO_0000115>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000082"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000056"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:creator>Allyson Lister</dc:creator>
@@ -23692,7 +23692,7 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -23746,13 +23746,7 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000082"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000062"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -23764,6 +23758,12 @@ tiple samples</obo:IAO_0000115>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000082"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000062"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:creator>Allyson Lister</dc:creator>
@@ -23818,7 +23818,7 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000060"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -23895,7 +23895,7 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -23922,6 +23922,22 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000064"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&organization;SWO_9000055"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&organization;SWO_9000059"/>
+                                <owl:hasValue rdf:resource="&organization;SWO_9000062"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000043"/>
                 <owl:hasValue>http://dx.doi.org/10.1093/nar/gkn278</owl:hasValue>
             </owl:Restriction>
@@ -23938,22 +23954,6 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&interface;SWO_5000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&organization;SWO_9000055"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&organization;SWO_9000059"/>
-                                <owl:hasValue rdf:resource="&organization;SWO_9000062"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000119>http://tcoffee.crg.cat/apps/tcoffee/index.html, Accessed 19 June 2012</obo:IAO_0000119>
         <obo:IAO_0000115>Aligns RNA sequences using predicted secondary structures by accessing the RCoffee mode of the underlying TCoffee software.</obo:IAO_0000115>
         <dc:creator>Allyson Lister</dc:creator>
@@ -23968,7 +23968,7 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000064"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -24020,7 +24020,7 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -24072,7 +24072,7 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -24118,7 +24118,13 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000082"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000072"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -24130,12 +24136,6 @@ tiple samples</obo:IAO_0000115>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000082"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000072"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Aligns distantly related proteins using homology extension (slow and accurate) by accessing the PSICoffee mode of the underlying TCoffee software.</obo:IAO_0000115>
@@ -24152,7 +24152,7 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000065"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -25036,6 +25036,22 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&organization;SWO_9000055"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&organization;SWO_9000059"/>
+                                <owl:hasValue rdf:resource="&organization;SWO_9000001"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0040005"/>
                 <owl:someValuesFrom rdf:resource="&objective;SWO_4000001"/>
             </owl:Restriction>
@@ -25070,23 +25086,7 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&organization;SWO_9000055"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&organization;SWO_9000059"/>
-                                <owl:hasValue rdf:resource="&organization;SWO_9000001"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -25150,6 +25150,22 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&organization;SWO_9000056"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&organization;SWO_9000059"/>
+                                <owl:hasValue rdf:resource="&organization;SWO_9000001"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004001"/>
                 <owl:someValuesFrom rdf:resource="&interface;SWO_9000052"/>
             </owl:Restriction>
@@ -25162,27 +25178,11 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="&organization;SWO_9000055"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&organization;SWO_9000059"/>
-                                <owl:hasValue rdf:resource="&organization;SWO_9000001"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&organization;SWO_9000056"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="&organization;SWO_9000059"/>
                                 <owl:hasValue rdf:resource="&organization;SWO_9000001"/>
@@ -25324,6 +25324,22 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&organization;SWO_9000055"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&organization;SWO_9000059"/>
+                                <owl:hasValue rdf:resource="&organization;SWO_9000009"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000086"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -25342,22 +25358,6 @@ tiple samples</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
                 <owl:hasValue rdf:datatype="&xsd;string">http://get.adobe.com/reader/</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&organization;SWO_9000055"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&organization;SWO_9000059"/>
-                                <owl:hasValue rdf:resource="&organization;SWO_9000009"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:contributor>Andy Brown</dc:contributor>
@@ -25646,7 +25646,7 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -25840,22 +25840,6 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&organization;SWO_9000055"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&organization;SWO_9000059"/>
-                                <owl:hasValue rdf:resource="&efo;swo/SWO_0000136"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0040005"/>
                 <owl:someValuesFrom rdf:resource="&objective;SWO_4000016"/>
             </owl:Restriction>
@@ -25886,6 +25870,22 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&organization;SWO_9000055"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&organization;SWO_9000059"/>
+                                <owl:hasValue rdf:resource="&efo;swo/SWO_0000136"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004001"/>
                 <owl:someValuesFrom rdf:resource="&interface;SWO_9000053"/>
             </owl:Restriction>
@@ -25901,7 +25901,7 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -25994,22 +25994,6 @@ tiple samples</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&organization;SWO_9000055"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&organization;SWO_9000059"/>
-                                <owl:hasValue rdf:resource="&organization;SWO_9000016"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000087"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -26018,6 +26002,22 @@ tiple samples</obo:IAO_0000115>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004002"/>
                                 <owl:someValuesFrom rdf:resource="&data;SWO_3000005"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&organization;SWO_9000055"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&organization;SWO_9000059"/>
+                                <owl:hasValue rdf:resource="&organization;SWO_9000016"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -26347,7 +26347,7 @@ tiple samples</obo:IAO_0000115>
     <owl:Class rdf:about="&license;SWO_1000004">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000089"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002353"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
