@@ -83,7 +83,7 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000304 -->
 
     <owl:ObjectProperty rdf:about="&obo;OBI_0000304">
-        <rdfs:label rdf:datatype="&xsd;string">is_manufactured_by</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">is manufactured by</rdfs:label>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">OBI</obo:IAO_0000119>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">c is_manufactured_by o means that there was a process p in which c was 
 built in which a person, or set of people or machines did the work(bore 
@@ -205,7 +205,7 @@ are made on behalf of the organization by the organization members.</obo:IAO_000
     <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000055 -->
 
     <owl:Class rdf:about="&ebi;swo/organization/SWO_9000055">
-        <rdfs:label rdf:datatype="&xsd;string">Software publishing process</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">software publishing process</rdfs:label>
     </owl:Class>
     
 
@@ -213,7 +213,7 @@ are made on behalf of the organization by the organization members.</obo:IAO_000
     <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000056 -->
 
     <owl:Class rdf:about="&ebi;swo/organization/SWO_9000056">
-        <rdfs:label rdf:datatype="&xsd;string">Software development process</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">software development process</rdfs:label>
     </owl:Class>
     
 
@@ -270,13 +270,13 @@ are made on behalf of the organization by the organization members.</obo:IAO_000
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
-                <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000260"/>
+                <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000392"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
-                <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000392"/>
+                <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000260"/>
             </owl:Restriction>
         </rdf:type>
         <rdfs:label rdf:datatype="&xsd;string">Affymetrix</rdfs:label>
