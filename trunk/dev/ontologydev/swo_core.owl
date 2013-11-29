@@ -67,13 +67,13 @@
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
     <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/">
         <dc:creator>James Malone</dc:creator>
+        <owl:versionInfo>1.1</owl:versionInfo>
         <dc:creator>Andy Brown</dc:creator>
-        <owl:versionInfo>1.0</owl:versionInfo>
+        <rdfs:comment>Date of release: 2nd December 2013</rdfs:comment>
         <dc:creator>Jon Ison</dc:creator>
         <dc:creator>Duncan Hull</dc:creator>
-        <dc:creator>Robert Stevens</dc:creator>
         <dc:creator>Nandini Badarinarayan</dc:creator>
-        <rdfs:comment>Date of release: 17th June 2013</rdfs:comment>
+        <dc:creator>Robert Stevens</dc:creator>
         <dc:creator>Allyson Lister</dc:creator>
         <dc:creator>Helen Parkinson</dc:creator>
         <owl:imports rdf:resource="http://edamontology.org"/>

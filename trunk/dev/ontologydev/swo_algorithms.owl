@@ -320,6 +320,7 @@ For example, bagging of decision trees algorithm includes the specification of a
     <owl:Class rdf:about="&obo;IAO_0000064">
         <rdfs:label>algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <obo:IAO_0000115>An algorithm is a set of instructions for performing a paticular calculation.</obo:IAO_0000115>
     </owl:Class>
     
 
