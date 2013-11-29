@@ -76,6 +76,7 @@
 
     <owl:Class rdf:about="&ebi;swo/SWO_9000050">
         <rdfs:label rdf:datatype="&xsd;string">software interface</rdfs:label>
+        <obo:IAO_0000115>The mode of interaction with a piece of software.</obo:IAO_0000115>
     </owl:Class>
     
 

@@ -206,6 +206,7 @@ are made on behalf of the organization by the organization members.</obo:IAO_000
 
     <owl:Class rdf:about="&ebi;swo/organization/SWO_9000055">
         <rdfs:label rdf:datatype="&xsd;string">software publishing process</rdfs:label>
+        <obo:IAO_0000115>The process of publishing software. Typically this process involves a software publisher performing acts such as licensing, marketing, publicising and/or providing support for a product.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -214,6 +215,7 @@ are made on behalf of the organization by the organization members.</obo:IAO_000
 
     <owl:Class rdf:about="&ebi;swo/organization/SWO_9000056">
         <rdfs:label rdf:datatype="&xsd;string">software development process</rdfs:label>
+        <obo:IAO_0000115>The process of developing software, typically involving the design, implementation and testing of software.</obo:IAO_0000115>
     </owl:Class>
     
 
