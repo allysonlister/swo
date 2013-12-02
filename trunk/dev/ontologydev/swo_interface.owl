@@ -161,7 +161,7 @@
     <!-- http://www.ebi.ac.uk/swo/interface/SWO_9000053 -->
 
     <owl:Class rdf:about="&ebi;swo/interface/SWO_9000053">
-        <rdfs:label>Command-line interface</rdfs:label>
+        <rdfs:label>command-line interface</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_9000050"/>
         <obo:IAO_0000118>Command-line</obo:IAO_0000118>
         <obo:IAO_0000118>Command line interface</obo:IAO_0000118>

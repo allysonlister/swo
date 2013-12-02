@@ -23502,12 +23502,6 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000054"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000043"/>
-                <owl:hasValue>http://www.ncbi.nlm.nih.gov/books/NBK1763</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004001"/>
                 <owl:someValuesFrom rdf:resource="&interface;SWO_9000053"/>
             </owl:Restriction>
@@ -25346,6 +25340,12 @@ tiple samples</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
                 <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
