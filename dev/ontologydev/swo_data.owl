@@ -229,7 +229,7 @@
     <!-- http://edamontology.org/format_2333 -->
 
     <owl:Class rdf:about="&edamontology;format_2333">
-        <rdfs:label>Binary format</rdfs:label>
+        <rdfs:label>binary format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
@@ -885,7 +885,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000001 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000001">
-        <rdfs:label rdf:datatype="&xsd;string">Spreadsheet</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">spreadsheet format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A spreadsheet data format is one in which data is organised into a matrix (or matrices) of columns and rows to form cells in which values are entered.</obo:IAO_0000115>
         <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
@@ -971,7 +971,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000008 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000008">
-        <rdfs:label>Image format</rdfs:label>
+        <rdfs:label>image format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
@@ -1028,7 +1028,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000013 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000013">
-        <rdfs:label>Web page specification</rdfs:label>
+        <rdfs:label>web page specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
@@ -1037,7 +1037,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000014 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000014">
-        <rdfs:label>Document exchange format</rdfs:label>
+        <rdfs:label>document exchange format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
@@ -1101,7 +1101,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000020 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000020">
-        <rdfs:label>Raster image format</rdfs:label>
+        <rdfs:label>raster image format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000008"/>
         <obo:IAO_0000115>A raster image is a format for representing a rectangular grid of dots (pixels) which contains information on the specific colour of each pixel.</obo:IAO_0000115>
     </owl:Class>
@@ -1111,7 +1111,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000021 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000021">
-        <rdfs:label>Vector image format</rdfs:label>
+        <rdfs:label>vector image format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000008"/>
         <obo:IAO_0000115>A vector image is a collection of connected lines and curves that produce objects. This geometric description enables the image to be displayed without loss at any size rendering.</obo:IAO_0000115>
     </owl:Class>
@@ -1162,7 +1162,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000026 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000026">
-        <rdfs:label>Outline document format</rdfs:label>
+        <rdfs:label>outline document format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
         <obo:IAO_0000115>A format specification for data used or produced by outliner software</obo:IAO_0000115>
     </owl:Class>
@@ -1203,7 +1203,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000030 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000030">
-        <rdfs:label>Word processing document format</rdfs:label>
+        <rdfs:label>word processing document format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
@@ -1231,7 +1231,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000033 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000033">
-        <rdfs:label>Programming language format</rdfs:label>
+        <rdfs:label>programming language format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
@@ -1293,7 +1293,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000041 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000041">
-        <rdfs:label>Text file format</rdfs:label>
+        <rdfs:label>text file format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
@@ -1311,7 +1311,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000043 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000043">
-        <rdfs:label>Plain text file format</rdfs:label>
+        <rdfs:label>plain text file format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
     </owl:Class>
     
@@ -1320,7 +1320,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000046 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000046">
-        <rdfs:label>Tab delimited file format</rdfs:label>
+        <rdfs:label>tab delimited file format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000043"/>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Tab-separated_values, accessed 6 June 2013.</obo:IAO_0000119>
         <dc:creator>Allyson Lister</dc:creator>
@@ -1536,6 +1536,16 @@
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000064">
         <rdfs:label xml:lang="en">NONMEM data format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000065 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000065">
+        <rdfs:label xml:lang="en">DNA neucleotide sequence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <obo:IAO_0000115>A nucleic acid sequence that indicate the order of nucleotides within some DNA.</obo:IAO_0000115>
     </owl:Class>
     
 
