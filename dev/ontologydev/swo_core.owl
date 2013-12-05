@@ -25260,6 +25260,8 @@ tiple samples</obo:IAO_0000115>
                 <owl:hasValue>http://www.postgresql.org/</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000118>Postgres</obo:IAO_0000118>
+        <obo:IAO_0000115>PostgreSQL, often simply Postgres, is an open source object-relational database management system (ORDBMS) with an emphasis on extensibility and standards compliance.</obo:IAO_0000115>
     </owl:Class>
     
 
