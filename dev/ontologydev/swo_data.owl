@@ -1544,8 +1544,28 @@
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000065">
         <rdfs:label xml:lang="en">DNA neucleotide sequence</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000066"/>
         <obo:IAO_0000115>A nucleic acid sequence that indicate the order of nucleotides within some DNA.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000066 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000066">
+        <rdfs:label>biological sequence data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <obo:IAO_0000115>Data about primary biological sequence information, such as DNA neucleotide sequences.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000067 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000067">
+        <rdfs:label>amino acid protein sequence data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000066"/>
+        <obo:IAO_0000115>Data which contains information about amino acid sequences of proteins.</obo:IAO_0000115>
     </owl:Class>
     
 
