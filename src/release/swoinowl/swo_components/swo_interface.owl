@@ -75,7 +75,8 @@
     <!-- http://www.ebi.ac.uk/swo/SWO_9000050 -->
 
     <owl:Class rdf:about="&ebi;swo/SWO_9000050">
-        <rdfs:label rdf:datatype="&xsd;string">Software interface</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">software interface</rdfs:label>
+        <obo:IAO_0000115>The mode of interaction with a piece of software.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -83,7 +84,7 @@
     <!-- http://www.ebi.ac.uk/swo/interface/SWO_5000002 -->
 
     <owl:Class rdf:about="&ebi;swo/interface/SWO_5000002">
-        <rdfs:label xml:lang="en">Web user interface</rdfs:label>
+        <rdfs:label xml:lang="en">web user interface</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/interface/SWO_9000052"/>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">WUI</obo:IAO_0000118>
         <dc:creator>Allyson Lister</dc:creator>
@@ -96,7 +97,7 @@
     <!-- http://www.ebi.ac.uk/swo/interface/SWO_5000003 -->
 
     <owl:Class rdf:about="&ebi;swo/interface/SWO_5000003">
-        <rdfs:label xml:lang="en">Desktop graphical user interface</rdfs:label>
+        <rdfs:label xml:lang="en">desktop graphical user interface</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/interface/SWO_9000052"/>
         <obo:IAO_0000118>Desktop GUI</obo:IAO_0000118>
         <dc:creator>Allyson Lister</dc:creator>
@@ -131,10 +132,20 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/interface/SWO_5000006 -->
+
+    <owl:Class rdf:about="&ebi;swo/interface/SWO_5000006">
+        <rdfs:label>JSON web service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/interface/SWO_9000051"/>
+        <obo:IAO_0000115>A web service in which calls invoked return JSON.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/swo/interface/SWO_9000051 -->
 
     <owl:Class rdf:about="&ebi;swo/interface/SWO_9000051">
-        <rdfs:label>Web service</rdfs:label>
+        <rdfs:label>web service</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_9000050"/>
         <obo:IAO_0000115>A web service is a software interface which works as a method of communication between two electronic devices over the World Wide Web and which is provided at a particular network address. There are two major classes of Web services: REST-compliant Web services, and arbitrary (or application-specific) Web services.</obo:IAO_0000115>
         <obo:IAO_0000119>Modified from http://www.w3.org/TR/ws-arch/, accessed 6 June 2013; Modified from http://en.wikipedia.org/wiki/Web_service, accessed 6 June 2013.</obo:IAO_0000119>
@@ -147,7 +158,7 @@
     <!-- http://www.ebi.ac.uk/swo/interface/SWO_9000052 -->
 
     <owl:Class rdf:about="&ebi;swo/interface/SWO_9000052">
-        <rdfs:label>Graphical user interface</rdfs:label>
+        <rdfs:label>graphical user interface</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_9000050"/>
         <obo:IAO_0000115>A Graphical user interface is a type of software interface that allows users to interact with electronic devices using images rather than text commands. A GUI represents the information and actions available to a user through graphical icons and visual indicators such as secondary notation, as opposed to text-based interfaces, typed command labels or text navigation.</obo:IAO_0000115>
         <obo:IAO_0000115>https://en.wikipedia.org/wiki/Graphical_user_interface, accessed 6 June 2013.</obo:IAO_0000115>
@@ -160,7 +171,7 @@
     <!-- http://www.ebi.ac.uk/swo/interface/SWO_9000053 -->
 
     <owl:Class rdf:about="&ebi;swo/interface/SWO_9000053">
-        <rdfs:label>Command-line interface</rdfs:label>
+        <rdfs:label>command-line interface</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_9000050"/>
         <obo:IAO_0000118>Command-line</obo:IAO_0000118>
         <obo:IAO_0000118>Command line interface</obo:IAO_0000118>
@@ -172,7 +183,7 @@
     <!-- http://www.ebi.ac.uk/swo/interface/SWO_9000054 -->
 
     <owl:Class rdf:about="&ebi;swo/interface/SWO_9000054">
-        <rdfs:label>Application programming interface</rdfs:label>
+        <rdfs:label>application programming interface</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_9000050"/>
         <obo:IAO_0000118>API</obo:IAO_0000118>
     </owl:Class>
