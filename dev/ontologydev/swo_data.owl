@@ -1543,7 +1543,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000065 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000065">
-        <rdfs:label xml:lang="en">DNA neucleotide sequence</rdfs:label>
+        <rdfs:label xml:lang="en">DNA nucleotide sequence</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000066"/>
         <obo:IAO_0000115>A nucleic acid sequence that indicate the order of nucleotides within some DNA.</obo:IAO_0000115>
     </owl:Class>
