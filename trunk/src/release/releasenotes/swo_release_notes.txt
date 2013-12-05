@@ -15,8 +15,8 @@ http://theswo.sourceforge.net
 
 RELEASE NOTES
 
-VERSION: 0.6
-DATE: 25th April 2013
+VERSION: 1.1
+DATE: 5th December 2013
 --------------------------------
 
 
@@ -35,7 +35,7 @@ Contents
 --------------------------------
 1. Summary
 
-Relase 0.6 contains some refactoring of object properties for connecting data to software and introduces an inverse to the implements object property - is implemented by.
+Relase 1.1 contains some additional top 50 biomedical software as published by BioNERDS. Some refactoring of the inputs and outputs between software development and publishing processes. Additional licenses and interfaces.
 
 
 --------------------------------
@@ -55,10 +55,8 @@ If you wish to perform a full diff between these versions please visit:
 
 http://wwww.ebi.ac.uk/efo/bubastis
 
-The two ontologies can be obtained from:
 
-Ontology 1: http://theswo.svn.sourceforge.net/viewvc/theswo/trunk/src/release/swoinowl/swo_merged/swo_merged.owl?revision=219
-Ontology 2: http://theswo.svn.sourceforge.net/viewvc/theswo/trunk/src/release/swoinowl/swo_merged/swo_merged.owl?revision=249
+
 
 
 --------------------------------
