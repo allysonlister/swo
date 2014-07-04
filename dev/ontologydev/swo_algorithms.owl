@@ -41,22 +41,42 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
-    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000144 -->
+
+    <owl:AnnotationProperty rdf:about="&swo2;SWO_0000144"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
     
 
 
@@ -322,6 +342,12 @@ For example, bagging of decision trees algorithm includes the specification of a
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <obo:IAO_0000115>An algorithm is a set of instructions for performing a paticular calculation.</obo:IAO_0000115>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>An algorithm is a set of instructions for performing a paticular calculation.</owl:annotatedTarget>
+        <swo2:SWO_0000144></swo2:SWO_0000144>
+        <owl:annotatedSource rdf:resource="&obo;IAO_0000064"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
     
 
 
@@ -337,7 +363,7 @@ For example, bagging of decision trees algorithm includes the specification of a
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000006 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000006">
-        <rdfs:label rdf:datatype="&xsd;string">&#39;ACME&#39;</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">&apos;ACME&apos;</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The ACME algorithm is quite straightforward. Using a user-dened quantile of the data,called the threshold, any probes in the data that are above that threshold are considered positive probes. A p-value is then assigned to each probe.</obo:IAO_0000115>
     </owl:Class>
@@ -375,7 +401,7 @@ For example, bagging of decision trees algorithm includes the specification of a
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000014 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000014">
-        <rdfs:label rdf:datatype="&xsd;string">&#39;ANOVA&#39;</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">&apos;ANOVA&apos;</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">ANNOVA</obo:IAO_0000118>
         <obo:IAO_0000115>ANOVA or Analysis of Variance is a hypothesis testing algorithm which a variable is partitioned into components attributable to different sources of variation.</obo:IAO_0000115>
@@ -417,7 +443,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <owl:Class rdf:about="&efo;swo/SWO_0000052">
         <rdfs:label rdf:datatype="&xsd;string">BGL</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">BGL implements Depth First Search, Breadth First Search,Dijkstra&#39;s, Bellman Ford&#39;s and DAG,Johnson&#39;s and Floyd Warshall&#39;s.Kruskal&#39;s algorithm and Prim&#39;s algorithm Cuthill-McKee&#39;s algorithm Minimum degree Ordering</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">BGL implements Depth First Search, Breadth First Search,Dijkstra&apos;s, Bellman Ford&apos;s and DAG,Johnson&apos;s and Floyd Warshall&apos;s.Kruskal&apos;s algorithm and Prim&apos;s algorithm Cuthill-McKee&apos;s algorithm Minimum degree Ordering</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -596,7 +622,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <owl:Class rdf:about="&efo;swo/SWO_0000127">
         <rdfs:label rdf:datatype="&xsd;string">Discriminant Fuzzy Pattern Algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A DFP version of a FP (fuzzy pattern) only includes those genes that can serve to differentiate it from the rest of the patterns.This algorithm is based on the discretization of float values (gene expression values) stored in an ExpressionSet object into labels combining &#39;Low&#39;, &#39;Medium&#39; and &#39;High&#39;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A DFP version of a FP (fuzzy pattern) only includes those genes that can serve to differentiate it from the rest of the patterns.This algorithm is based on the discretization of float values (gene expression values) stored in an ExpressionSet object into labels combining &apos;Low&apos;, &apos;Medium&apos; and &apos;High&apos;</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -649,7 +675,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000145 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000145">
-        <rdfs:label rdf:datatype="&xsd;string">&#39;FDR&#39;</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">&apos;FDR&apos;</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -667,7 +693,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000148 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000148">
-        <rdfs:label rdf:datatype="&xsd;string">Firth&#39;s bias reduction procedure</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Firth&apos;s bias reduction procedure</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -676,7 +702,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000149 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000149">
-        <rdfs:label rdf:datatype="&xsd;string">Fischer&#39;s Exact Test</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Fischer&apos;s Exact Test</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -857,7 +883,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000250 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000250">
-        <rdfs:label rdf:datatype="&xsd;string">&#39;KLD&#39;</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">&apos;KLD&apos;</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -985,7 +1011,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000281 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000281">
-        <rdfs:label rdf:datatype="&xsd;string">&#39;MI&#39;</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">&apos;MI&apos;</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1031,7 +1057,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000304 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000304">
-        <rdfs:label rdf:datatype="&xsd;string">&#39;Needleman-Wunsch&#39;</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">&apos;Needleman-Wunsch&apos;</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1077,7 +1103,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000318 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000318">
-        <rdfs:label rdf:datatype="&xsd;string">&#39;PLM&#39;</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">&apos;PLM&apos;</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">it is where we fit a model with probe level and chip level parameters on a probeset by probeset basis</obo:IAO_0000115>
     </owl:Class>
@@ -1304,7 +1330,7 @@ the graph structure of GO.</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000426 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000426">
-        <rdfs:label rdf:datatype="&xsd;string">&#39;Smith-Waterman&#39;</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">&apos;Smith-Waterman&apos;</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1512,7 +1538,7 @@ the graph structure of GO.</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000614 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000614">
-        <rdfs:label rdf:datatype="&xsd;string">&#39;MAS5&#39;</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">&apos;MAS5&apos;</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1649,7 +1675,7 @@ the graph structure of GO.</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000715 -->
 
     <owl:Class rdf:about="&efo;swo/SWO_0000715">
-        <rdfs:label rdf:datatype="&xsd;string">&#39;t-test&#39;</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">&apos;t-test&apos;</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
     </owl:Class>
     
@@ -1707,8 +1733,8 @@ to {1, . . . , k}, where k is the number of clusters, which has to obey k ≤ |S
     <owl:Class rdf:about="&swo2;algorithm/SWO_4000004">
         <rdfs:label xml:lang="en">SAEM</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <obo:IAO_0000115>A stochastic algorithm for population pharmacology modeling</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.math.u-bordeaux1.fr/MAS10/DOC/PDF-PRES/Lavielle.pdf</obo:IAO_0000119>
+        <obo:IAO_0000115>A stochastic algorithm for population pharmacology modeling</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1747,5 +1773,5 @@ to {1, . . . , k}, where k is the number of clusters, which has to obey k ≤ |S
 
 
 
-<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
 
