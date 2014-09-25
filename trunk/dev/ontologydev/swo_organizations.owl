@@ -5,7 +5,6 @@
     <!ENTITY ebi "http://www.ebi.ac.uk/" >
     <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
     <!ENTITY efo "http://www.ebi.ac.uk/efo/" >
-    <!ENTITY swo2 "http://www.ebi.ac.uk/efo/swo/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
@@ -21,7 +20,6 @@
 <rdf:RDF xmlns="&ebi;swo/organization/"
      xml:base="&ebi;swo/organization/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:swo2="&ebi;efo/swo/"
      xmlns:swo="&ebi;swo/"
      xmlns:efo="&ebi;efo/"
      xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"

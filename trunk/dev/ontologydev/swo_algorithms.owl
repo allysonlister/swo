@@ -2,9 +2,9 @@
 
 
 <!DOCTYPE rdf:RDF [
+    <!ENTITY ebi "http://www.ebi.ac.uk/" >
     <!ENTITY efo "http://www.ebi.ac.uk/efo/" >
-    <!ENTITY swo2 "http://www.ebi.ac.uk/swo/" >
-    <!ENTITY swo "http://www.ebi.ac.uk/efo/swo/" >
+    <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY OntoDM "http://kt.ijs.si/panovp/OntoDM#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
@@ -15,19 +15,18 @@
 ]>
 
 
-<rdf:RDF xmlns="&swo2;algorithm/"
-     xml:base="&swo2;algorithm/"
+<rdf:RDF xmlns="&ebi;swo/algorithm/"
+     xml:base="&ebi;swo/algorithm/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:swo2="http://www.ebi.ac.uk/swo/"
-     xmlns:swo="&efo;swo/"
+     xmlns:swo="&ebi;swo/"
      xmlns:efo="http://www.ebi.ac.uk/efo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:OntoDM="http://kt.ijs.si/panovp/OntoDM#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
-    <owl:Ontology rdf:about="&swo2;algorithm/">
+    <owl:Ontology rdf:about="&ebi;swo/algorithm/">
         <owl:versionInfo>0.4</owl:versionInfo>
     </owl:Ontology>
     
@@ -64,7 +63,7 @@
 
     <!-- http://www.ebi.ac.uk/swo/SWO_0000144 -->
 
-    <owl:AnnotationProperty rdf:about="&swo2;SWO_0000144"/>
+    <owl:AnnotationProperty rdf:about="&swo;SWO_0000144"/>
     
 
 
@@ -93,13 +92,13 @@
 
     <!-- http://www.ebi.ac.uk/swo/SWO_0000087 -->
 
-    <owl:ObjectProperty rdf:about="&swo2;SWO_0000087"/>
+    <owl:ObjectProperty rdf:about="&swo;SWO_0000087"/>
     
 
 
     <!-- http://www.ebi.ac.uk/swo/SWO_0040005 -->
 
-    <owl:ObjectProperty rdf:about="&swo2;SWO_0040005"/>
+    <owl:ObjectProperty rdf:about="&swo;SWO_0040005"/>
     
 
 
@@ -344,7 +343,7 @@ For example, bagging of decision trees algorithm includes the specification of a
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedTarget>An algorithm is a set of instructions for performing a paticular calculation.</owl:annotatedTarget>
-        <swo2:SWO_0000144></swo2:SWO_0000144>
+        <swo:SWO_0000144></swo:SWO_0000144>
         <owl:annotatedSource rdf:resource="&obo;IAO_0000064"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -1692,7 +1691,7 @@ the graph structure of GO.</obo:IAO_0000115>
 
     <!-- http://www.ebi.ac.uk/swo/algorithm/OntoDM_170075 -->
 
-    <owl:Class rdf:about="&swo2;algorithm/OntoDM_170075">
+    <owl:Class rdf:about="&swo;algorithm/OntoDM_170075">
         <rdfs:label>clustering algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_731692"/>
     </owl:Class>
@@ -1701,7 +1700,7 @@ the graph structure of GO.</obo:IAO_0000115>
 
     <!-- http://www.ebi.ac.uk/swo/algorithm/OntoDM_175260 -->
 
-    <owl:Class rdf:about="&swo2;algorithm/OntoDM_175260">
+    <owl:Class rdf:about="&swo;algorithm/OntoDM_175260">
         <rdfs:label>pattern discovery algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_731692"/>
     </owl:Class>
@@ -1710,7 +1709,7 @@ the graph structure of GO.</obo:IAO_0000115>
 
     <!-- http://www.ebi.ac.uk/swo/algorithm/OntoDM_382176 -->
 
-    <owl:Class rdf:about="&swo2;algorithm/OntoDM_382176">
+    <owl:Class rdf:about="&swo;algorithm/OntoDM_382176">
         <rdfs:label>predictive modeling algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_731692"/>
     </owl:Class>
@@ -1719,7 +1718,7 @@ the graph structure of GO.</obo:IAO_0000115>
 
     <!-- http://www.ebi.ac.uk/swo/algorithm/OntoDM_584946 -->
 
-    <owl:Class rdf:about="&swo2;algorithm/OntoDM_584946">
+    <owl:Class rdf:about="&swo;algorithm/OntoDM_584946">
         <rdfs:label>clustering specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_419460"/>
         <rdfs:comment>A clustering C on a set of objects S of type T specifies a function from S
@@ -1730,7 +1729,7 @@ to {1, . . . , k}, where k is the number of clusters, which has to obey k ≤ |S
 
     <!-- http://www.ebi.ac.uk/swo/algorithm/SWO_4000004 -->
 
-    <owl:Class rdf:about="&swo2;algorithm/SWO_4000004">
+    <owl:Class rdf:about="&swo;algorithm/SWO_4000004">
         <rdfs:label xml:lang="en">SAEM</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
         <obo:IAO_0000119>http://www.math.u-bordeaux1.fr/MAS10/DOC/PDF-PRES/Lavielle.pdf</obo:IAO_0000119>
@@ -1764,9 +1763,9 @@ to {1, . . . , k}, where k is the number of clusters, which has to obey k ≤ |S
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&swo2;algorithm/OntoDM_170075"/>
-            <rdf:Description rdf:about="&swo2;algorithm/OntoDM_175260"/>
-            <rdf:Description rdf:about="&swo2;algorithm/OntoDM_382176"/>
+            <rdf:Description rdf:about="&swo;algorithm/OntoDM_170075"/>
+            <rdf:Description rdf:about="&swo;algorithm/OntoDM_175260"/>
+            <rdf:Description rdf:about="&swo;algorithm/OntoDM_382176"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
