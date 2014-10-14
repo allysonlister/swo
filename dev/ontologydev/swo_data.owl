@@ -184,6 +184,9 @@
     <owl:ObjectProperty rdf:about="&ebi;swo/data/SWO_3000054">
         <rdf:type rdf:resource="&owl;SymmetricProperty"/>
         <rdfs:label xml:lang="en">is alternative format of</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">Allyson Lister</obo:IAO_0000119>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">The format for BioPAX Manchester OWL syntax is an alternative format of the BioPAX RDF/XML format.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">With both a domain and range of &apos;data format specification&apos;, this property provides a means of stating that two different data format specifications are valid specifications for the same type of data.</obo:IAO_0000115>
         <rdfs:domain rdf:resource="&obo;IAO_0000098"/>
         <rdfs:range rdf:resource="&obo;IAO_0000098"/>
     </owl:ObjectProperty>
@@ -395,8 +398,8 @@
         <obo:IAO_0000115>The syntax by which data is specified which renders it valid for a given format.</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
-        <swo:SWO_0000144></swo:SWO_0000144>
         <owl:annotatedTarget>The syntax by which data is specified which renders it valid for a given format.</owl:annotatedTarget>
+        <swo:SWO_0000144></swo:SWO_0000144>
         <owl:annotatedSource rdf:resource="&obo;IAO_0000098"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
