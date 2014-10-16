@@ -512,6 +512,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0004007">
         <rdfs:label>obsolete object property</rdfs:label>
+        <dc:contributor rdf:datatype="&xsd;string">Marked as obsolete by Allyson Lister</dc:contributor>
         <dc:creator>Allyson Lister</dc:creator>
         <obo:IAO_0000115>Stores those object properties which are no longer appropriate for use within SWO.</obo:IAO_0000115>
     </owl:ObjectProperty>
@@ -564,6 +565,18 @@
     <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000067 -->
 
     <owl:ObjectProperty rdf:about="&maturity;SWO_9000067"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000059 -->
+
+    <owl:ObjectProperty rdf:about="&organization;SWO_9000059">
+        <rdfs:label rdf:datatype="&xsd;string">obsolete_has_participant</rdfs:label>
+        <efo:obsoleted_in_version rdf:datatype="&xsd;string">1.4</efo:obsoleted_in_version>
+        <efo:reason_for_obsolescence rdf:datatype="&xsd;string">Exact equivalence with RO class http://purl.obolibrary.org/obo/RO_0000057, to the extent that the inverse of RO_0000057 was already present in this ontology as the inverse of this SWO class.</efo:reason_for_obsolescence>
+        <owl:deprecated rdf:datatype="&xsd;boolean">true</owl:deprecated>
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004007"/>
+    </owl:ObjectProperty>
     
 
 
