@@ -230,6 +230,7 @@
     <owl:ObjectProperty rdf:about="&obo;BFO_0000060">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label>preceded by</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Please note that, as stated on one of the RO documentation pages (https://code.google.com/p/obo-relations/wiki/ROAndBFO), some of the relations RO makes use are either uncontroversial (non-temporalized) parts of BFO2, or will be incorporated in the future. In the case of BFO_0000063, it is not currently in BFO2, but may be in the future. The RO ontologists assume this is the transitive form. For a full definition, refer to the inverse of this property, BFO_0000060. (Allyson Lister)</rdfs:comment>
         <dc:creator>OBO Foundry</dc:creator>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
@@ -242,6 +243,7 @@
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label>followed by</rdfs:label>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">Modified by Allyson Lister from the preceded_by (which is the inverse of precedes / &apos;followed by&apos;) definition within RO: http://www.obofoundry.org/ro/ro.owl</obo:IAO_0000119>
+        <rdfs:comment rdf:datatype="&xsd;string">Please note that, as stated on one of the RO documentation pages (https://code.google.com/p/obo-relations/wiki/ROAndBFO), some of the relations RO makes use are either uncontroversial (non-temporalized) parts of BFO2, or will be incorporated in the future. In the case of BFO_0000060, it is not currently in BFO2, but may be in the future. The RO ontologists assume this is the transitive form. (Allyson Lister)</rdfs:comment>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The assertion P &apos;followed by&apos; P1 tells us something about Ps in general: that is, it tells us something about what happened later, given what we know about what happened earlier. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be preceded by some instance of P. Note that assertions using this property only are rather weak. Typically we will be interested in stronger relations, for example in the relation &apos;directly followed by&apos;.</obo:IAO_0000115>
         <dc:creator>OBO Foundry</dc:creator>
         <owl:inverseOf rdf:resource="&obo;BFO_0000060"/>
