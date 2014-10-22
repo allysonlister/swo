@@ -2,7 +2,6 @@
 
 
 <!DOCTYPE rdf:RDF [
-    <!ENTITY ebi "http://www.ebi.ac.uk/" >
     <!ENTITY efo "http://www.ebi.ac.uk/efo/" >
     <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
@@ -15,18 +14,18 @@
 ]>
 
 
-<rdf:RDF xmlns="&ebi;swo/algorithm/"
-     xml:base="&ebi;swo/algorithm/"
+<rdf:RDF xmlns="&swo;algorithm/"
+     xml:base="&swo;algorithm/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:swo="&ebi;swo/"
+     xmlns:swo="http://www.ebi.ac.uk/swo/"
      xmlns:efo="http://www.ebi.ac.uk/efo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:OntoDM="http://kt.ijs.si/panovp/OntoDM#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
-    <owl:Ontology rdf:about="&ebi;swo/algorithm/">
+    <owl:Ontology rdf:about="&swo;algorithm/">
         <owl:versionInfo>0.4</owl:versionInfo>
     </owl:Ontology>
     
@@ -40,6 +39,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000112"/>
     
 
 
@@ -172,7 +177,7 @@
     <owl:Class rdf:about="&OntoDM;OntoDM-KDD_798363">
         <rdfs:label>data mining algorithm execution</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_147247"/>
-        <rdfs:comment>Data mining algorithm execution is a planned process that achieves planned objective a data mining task, realizes a data mining operator, has specified input a dataset, has specified output a generalization and has as agent computer.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Data mining algorithm execution is a planned process that achieves planned objective a data mining task, realizes a data mining operator, has specified input a dataset, has specified output a generalization and has as agent computer.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -191,8 +196,16 @@
     <owl:Class rdf:about="&OntoDM;OntoDM_000034">
         <rdfs:label>generalization specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
-        <rdfs:comment>A generalization is a broad name for an output of a execution of a data mining algorithm on a specific dataset. A generalization specification is an informational entity that specifies the type of the generalization such as: decision trees, decision rules, neural networks, itemsets etc.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A generalization is a broad name for an output of a execution of a data mining algorithm on a specific dataset. A generalization specification is an informational entity that specifies the type of the generalization such as: decision trees, decision rules, neural networks, itemsets etc.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Generalization specification of a directive informational entity class that specifies the type of generalization. It includes information about the types of data used to produced the generalization and the language in which the generalization is expressed.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">OntoDM</obo:IAO_0000119>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A generalization is a broad name for an output of a execution of a data mining algorithm on a specific dataset. A generalization specification is an informational entity that specifies the type of the generalization such as: decision trees, decision rules, neural networks, itemsets etc.</owl:annotatedTarget>
+        <swo:SWO_0000144></swo:SWO_0000144>
+        <owl:annotatedSource rdf:resource="&OntoDM;OntoDM_000034"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
     
 
 
@@ -201,9 +214,18 @@
     <owl:Class rdf:about="&OntoDM;OntoDM_000037">
         <rdfs:label>ensemble specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_000034"/>
-        <rdfs:comment>An ensemble specification denotes a type of generalization which is an output of an execution of a ensemble algorithm. 
-Ensembles are sets of generalizations (have as parts single generalizations) with a defined procedure of their combination into a single generalization when executed in a process.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A ensemble of generalizations specification is a generalization specification and denotes a type of generalization that is produced by a ensemble algorithm. This algorithm produces a set of generalizations at its output.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An ensemble specification denotes a type of generalization which is an output of an execution of a ensemble algorithm. 
+Ensembles are sets of generalizations (have as parts single generalizations) with a defined procedure of their combination into a single generalization when executed in a process.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">OntoDM</obo:IAO_0000119>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">An ensemble specification denotes a type of generalization which is an output of an execution of a ensemble algorithm. 
+Ensembles are sets of generalizations (have as parts single generalizations) with a defined procedure of their combination into a single generalization when executed in a process.</owl:annotatedTarget>
+        <swo:SWO_0000144></swo:SWO_0000144>
+        <owl:annotatedSource rdf:resource="&OntoDM;OntoDM_000037"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
     
 
 
@@ -222,15 +244,16 @@ Ensembles are sets of generalizations (have as parts single generalizations) wit
     <owl:Class rdf:about="&OntoDM;OntoDM_000078">
         <rdfs:label>pattern specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_419460"/>
-        <rdfs:comment>A pattern P on type T specifies a Boolean function on objects of type T, i.e., has
-the signature p :: T → bool. A pattern on type T is true or false on an object
-of type T. Frawley et al. (1991) define a pattern as a statement (expression) in
-a given language, that describes (relationships among) the facts in (a subset of)
-the data. In the broadest sense, the word pattern is used to describe the output
-of a variety of data mining algorithms and includes probability distributions,
-predictive models and clusters/clusterings; however, we restrict it here to the
-sense that it is most commonly used, i.e., in the sense of frequent pattern mining.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A patten specification is a single generalization specification and denotes a pattern P on type T which is a boolean funtion on objects of type T.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A pattern P on type T specifies a Boolean function on objects of type T, i.e., has the signature p :: T → bool. A pattern on type T is true or false on an object of type T. Frawley et al. (1991) define a pattern as a statement (expression) in a given language, that describes (relationships among) the facts in (a subset of) the data. In the broadest sense, the word pattern is used to describe the output of a variety of data mining algorithms and includes probability distributions, predictive models and clusters/clusterings; however, we restrict it here to the sense that it is most commonly used, i.e., in the sense of frequent pattern mining.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">OntoDM</obo:IAO_0000119>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A pattern P on type T specifies a Boolean function on objects of type T, i.e., has the signature p :: T → bool. A pattern on type T is true or false on an object of type T. Frawley et al. (1991) define a pattern as a statement (expression) in a given language, that describes (relationships among) the facts in (a subset of) the data. In the broadest sense, the word pattern is used to describe the output of a variety of data mining algorithms and includes probability distributions, predictive models and clusters/clusterings; however, we restrict it here to the sense that it is most commonly used, i.e., in the sense of frequent pattern mining.</owl:annotatedTarget>
+        <swo:SWO_0000144></swo:SWO_0000144>
+        <owl:annotatedSource rdf:resource="&OntoDM;OntoDM_000078"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
     
 
 
@@ -239,13 +262,16 @@ sense that it is most commonly used, i.e., in the sense of frequent pattern mini
     <owl:Class rdf:about="&OntoDM;OntoDM_000228">
         <rdfs:label>predictive model specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_419460"/>
-        <rdfs:comment>A predictive model M for types Td, Tc specifies a function that takes an object
-of type Td and returns one of type Tc, i.e., has the signature m :: Td → Tc. Most
-often, predictive modelling is concerned with classification, where Tc would be
-Boolean (for binary classification) or Discrete(S) (for multi-class classification),
-or regression, where Tc would be Real. In our case, we allow both Td (description)
-and Tc (class/target) to be arbitrarily complex data types.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A predictive model M for types Td, Tc specifies a function that takes an object of type Td and returns one of type Tc, i.e., has the signature m :: Td → Tc. Most often, predictive modelling is concerned with classification, where Tc would be Boolean (for binary classification) or Discrete(S) (for multi-class classification), or regression, where Tc would be Real. In our case, we allow both Td (description) and Tc (class/target) to be arbitrarily complex data types.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">OntoDM</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Predictive model specification is a single generalization specification and denotes a type of generalization that represents a mapping taking objects of type Td and returns objects of type To.</obo:IAO_0000115>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A predictive model M for types Td, Tc specifies a function that takes an object of type Td and returns one of type Tc, i.e., has the signature m :: Td → Tc. Most often, predictive modelling is concerned with classification, where Tc would be Boolean (for binary classification) or Discrete(S) (for multi-class classification), or regression, where Tc would be Real. In our case, we allow both Td (description) and Tc (class/target) to be arbitrarily complex data types.</owl:annotatedTarget>
+        <swo:SWO_0000144></swo:SWO_0000144>
+        <owl:annotatedSource rdf:resource="&OntoDM;OntoDM_000228"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
     
 
 
@@ -263,11 +289,16 @@ and Tc (class/target) to be arbitrarily complex data types.</rdfs:comment>
     <owl:Class rdf:about="&OntoDM;OntoDM_000285">
         <rdfs:label>probability distribution specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_419460"/>
-        <rdfs:comment>A probability distribution D on type T specifies a mapping from objects of type
-T to non-negative Reals, i.e., has the signature d :: T → R0+. For uncountably
-infinite types, probability densities are used instead. The sum of all probabilities
-(the integral of the probability densities) over T is constrained to amount to one.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A probability distribution D on type T specifies a mapping from objects of type T to non-negative Reals, i.e., has the signature d :: T → R0+. For uncountably infinite types, probability densities are used instead. The sum of all probabilities (the integral of the probability densities) over T is constrained to amount to one.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A probability distribution specification is a single generalization specification and denotes a type of generalization that is a mapping from objects of type T to non-negative reals. This generalization is an output of a probability distribution estimation algorithm.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">OntoDM</obo:IAO_0000119>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A probability distribution D on type T specifies a mapping from objects of type T to non-negative Reals, i.e., has the signature d :: T → R0+. For uncountably infinite types, probability densities are used instead. The sum of all probabilities (the integral of the probability densities) over T is constrained to amount to one.</owl:annotatedTarget>
+        <swo:SWO_0000144></swo:SWO_0000144>
+        <owl:annotatedSource rdf:resource="&OntoDM;OntoDM_000285"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
     
 
 
@@ -276,7 +307,7 @@ infinite types, probability densities are used instead. The sum of all probabili
     <owl:Class rdf:about="&OntoDM;OntoDM_147247">
         <rdfs:label>algorithm execution</rdfs:label>
         <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
-        <rdfs:comment>algorithm execution is a planned process (information processing process) that achieves some information processing objective , realizes an operator and has as agent computer</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">algorithm execution is a planned process (information processing process) that achieves some information processing objective , realizes an operator and has as agent computer</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -295,8 +326,9 @@ infinite types, probability densities are used instead. The sum of all probabili
     <owl:Class rdf:about="&OntoDM;OntoDM_419460">
         <rdfs:label>single generalization specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_000034"/>
-        <rdfs:comment>A single generalization specification denotes a type of generalization which is an output of an execution of a single generalization algorithm.
-Examples of such generalization types are: decision trees, desicion rules, neural networks, frequent itemsets, clusters etc.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A single generalization specification is a generalization specification and denotes a type of generalization that is produced by a single generalization data mining algorithm. This algorithm produces only one generalization at its output.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">Examples of such generalization types are: decision trees, desicion rules, neural networks, frequent itemsets, clusters etc.</obo:IAO_0000112>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">OntoDM</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -342,8 +374,8 @@ For example, bagging of decision trees algorithm includes the specification of a
         <obo:IAO_0000115>An algorithm is a set of instructions for performing a paticular calculation.</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget>An algorithm is a set of instructions for performing a paticular calculation.</owl:annotatedTarget>
         <swo:SWO_0000144></swo:SWO_0000144>
+        <owl:annotatedTarget>An algorithm is a set of instructions for performing a paticular calculation.</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;IAO_0000064"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -1721,8 +1753,8 @@ the graph structure of GO.</obo:IAO_0000115>
     <owl:Class rdf:about="&swo;algorithm/OntoDM_584946">
         <rdfs:label>clustering specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_419460"/>
-        <rdfs:comment>A clustering C on a set of objects S of type T specifies a function from S
-to {1, . . . , k}, where k is the number of clusters, which has to obey k ≤ |S|.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Clustering specification is a single generalization specification is a generalization specification and denotes a type of generalization that models the mapping of a set of objects S of type T from S to a set of natural numbers {1,...K}. This generalization is obtained by appliing a clustering algorithm on a set of data.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">OntoDM</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1732,8 +1764,8 @@ to {1, . . . , k}, where k is the number of clusters, which has to obey k ≤ |S
     <owl:Class rdf:about="&swo;algorithm/SWO_4000004">
         <rdfs:label xml:lang="en">SAEM</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <obo:IAO_0000119>http://www.math.u-bordeaux1.fr/MAS10/DOC/PDF-PRES/Lavielle.pdf</obo:IAO_0000119>
         <obo:IAO_0000115>A stochastic algorithm for population pharmacology modeling</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.math.u-bordeaux1.fr/MAS10/DOC/PDF-PRES/Lavielle.pdf</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1772,5 +1804,5 @@ to {1, . . . , k}, where k is the number of clusters, which has to obey k ≤ |S
 
 
 
-<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
 

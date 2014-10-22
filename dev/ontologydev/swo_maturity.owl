@@ -160,7 +160,7 @@
         <rdfs:label rdf:datatype="&xsd;string">Development status</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
-        <rdfs:comment rdf:datatype="&xsd;string">The maturity status of software</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Development status is an information content entity which indicates the maturity of a sofrware entity within the context of the software life cycle.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -217,7 +217,7 @@
         <rdfs:label>Obsolete</rdfs:label>
         <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
         <owl:disjointWith rdf:resource="&swo;maturity/SWO_9000073"/>
-        <rdfs:comment rdf:datatype="&xsd;string">Sofware is no longer being supplied by the developers/publishers</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Sofware is no longer being supplied by the developers/publishers</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -227,7 +227,7 @@
     <owl:Class rdf:about="&swo;maturity/SWO_9000069">
         <rdfs:label>Superseded</rdfs:label>
         <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
-        <rdfs:comment rdf:datatype="&xsd;string">An updated version of the software is available.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An updated version of the software is available.</obo:IAO_0000115>
         <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
     </owl:Class>
     
@@ -261,7 +261,7 @@
         <rdfs:label rdf:datatype="&xsd;string">Maintained</rdfs:label>
         <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
         <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
-        <rdfs:comment rdf:datatype="&xsd;string">Software has developers actively maintaining it (fixing bugs)</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Software has developers actively maintaining it (fixing bugs)</obo:IAO_0000115>
     </owl:Class>
     
 
