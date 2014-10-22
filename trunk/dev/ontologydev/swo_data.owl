@@ -375,7 +375,7 @@
                 <owl:someValuesFrom rdf:resource="&obo;IAO_0000098"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">Data is an information entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Data is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">IAO</obo:IAO_0000119>
     </owl:Class>
     
@@ -1485,14 +1485,14 @@
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
+                <owl:onProperty rdf:resource="&ebi;swo/data/SWO_3000054"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000055"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ebi;swo/data/SWO_3000054"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000055"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
