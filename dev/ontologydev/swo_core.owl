@@ -262,6 +262,8 @@
 
     <owl:ObjectProperty rdf:about="&obo;RO_0002352">
         <rdfs:label>input of</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">Allyson Lister</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An entity A is the &apos;input of&apos; another entity B if A was put into the system, entity or software represented by B.</obo:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&obo;RO_0000056"/>
     </owl:ObjectProperty>
     
@@ -271,6 +273,9 @@
 
     <owl:ObjectProperty rdf:about="&obo;RO_0002353">
         <rdfs:label>output of</rdfs:label>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">A piece of software can be the output of a particular software company via a software publishing process; data might be the output of a particular piece of data-producing software.</obo:IAO_0000112>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">Allyson Lister</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An entity A is the &apos;output of&apos; another entity B if it was produced as a result of  the functioning of entity B.</obo:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&obo;RO_0000056"/>
     </owl:ObjectProperty>
     
@@ -339,6 +344,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0000081">
         <rdfs:label xml:lang="en">is version of</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">&apos;is version of&apos; provides a link between a &apos;version name&apos; and the entity with that version.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="&xsd;string">For further information, please see http://softwareontology.wordpress.com/2012/06/20/versioning-in-swo/</rdfs:comment>
         <dc:creator>Allyson Lister</dc:creator>
         <rdfs:domain rdf:resource="&obo;IAO_0000129"/>
     </owl:ObjectProperty>
@@ -424,6 +431,9 @@
 
     <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0000131">
         <rdfs:label rdf:datatype="&xsd;string">directly preceded by</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">Allyson Lister</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Entity A is &apos;directly preceded by&apos; entity B if there are no intermediate entities temporally between the two entities. WIthin SWO this property is mainly used to describe versions of entities such as software.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">Microsoft version 2007 is directly preceded by Microsoft version 2003.</obo:IAO_0000112>
         <dc:creator rdf:datatype="&xsd;string">OBO Foundry</dc:creator>
         <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000060"/>
     </owl:ObjectProperty>
@@ -446,6 +456,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0004000">
         <rdfs:label>has version</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">For further information, please see http://softwareontology.wordpress.com/2012/06/20/versioning-in-swo/</rdfs:comment>
         <obo:IAO_0000115>relationship between an entity and a version name or number</obo:IAO_0000115>
         <rdfs:range rdf:resource="&obo;IAO_0000129"/>
         <owl:inverseOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000081"/>
