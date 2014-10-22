@@ -48,6 +48,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000112"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
@@ -129,20 +135,12 @@ or of directed by the organization to do this.</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000316 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000316">
-        <rdfs:label rdf:datatype="&xsd;string">has_role</rdfs:label>
-        <rdfs:range rdf:resource="&snap;Role"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
 
     <owl:ObjectProperty rdf:about="&obo;RO_0000056">
         <rdfs:label rdf:datatype="&xsd;string">participates in</rdfs:label>
         <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
+        <rdfs:comment rdf:datatype="&xsd;string">Please see the official RO definition for the inverse of this property, &apos;has participant.&apos;</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -152,7 +150,19 @@ or of directed by the organization to do this.</obo:IAO_0000115>
     <owl:ObjectProperty rdf:about="&obo;RO_0000057">
         <rdfs:label rdf:datatype="&xsd;string">has participant</rdfs:label>
         <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time.</obo:IAO_0000112>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://obo-relations.googlecode.com/svn/trunk/src/ontology/core.owl</obo:IAO_0000119>
         <owl:inverseOf rdf:resource="&obo;RO_0000056"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0000087">
+        <rdfs:label rdf:datatype="&xsd;string">has_role</rdfs:label>
+        <rdfs:range rdf:resource="&snap;Role"/>
     </owl:ObjectProperty>
     
 
@@ -208,7 +218,7 @@ or of directed by the organization to do this.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="&xsd;string">software developer organization</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000392"/>
             </owl:Restriction>
         </owl:equivalentClass>
@@ -223,7 +233,7 @@ or of directed by the organization to do this.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="&xsd;string">software publisher organization</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000260"/>
             </owl:Restriction>
         </owl:equivalentClass>
@@ -312,13 +322,13 @@ or of directed by the organization to do this.</obo:IAO_0000115>
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000260"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000392"/>
             </owl:Restriction>
         </rdf:type>
@@ -542,7 +552,7 @@ or of directed by the organization to do this.</obo:IAO_0000115>
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000260"/>
             </owl:Restriction>
         </rdf:type>
