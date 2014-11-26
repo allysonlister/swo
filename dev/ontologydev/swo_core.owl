@@ -356,8 +356,9 @@
 
     <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0000082">
         <rdfs:label xml:lang="en">uses software</rdfs:label>
-        <obo:IAO_0000115>This property allows the linkage of two different pieces of software such that one directly executes or uses the other. The has_part relationship should instead be used to describe related but independent members of a larger software package. For example, Cytoscape plugins would be linked to the Cytoscape application via uses software, while Microsoft Excel is linked to Microsoft Office via has_part.</obo:IAO_0000115>
-        <dc:creator>Allyson Lister</dc:creator>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">Cytoscape plugins would be linked to the Cytoscape application via uses software, while Microsoft Excel is linked to Microsoft Office via has_part.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">This property allows the linkage of two different pieces of software such that one directly executes or uses the other. The has_part relationship should instead be used to describe related but independent members of a larger software package.</obo:IAO_0000115>
+        <obo:IAO_0000119>Allyson Lister</obo:IAO_0000119>
         <rdfs:domain rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:range rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
     </owl:ObjectProperty>
@@ -613,10 +614,20 @@
     <owl:ObjectProperty rdf:about="&ro;part_of">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label rdf:datatype="&xsd;string">part of</rdfs:label>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">Cytoscape plugins would be linked to the Cytoscape application via uses software, while Microsoft Excel is linked to Microsoft Office via has_part.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">For continuants: C part_of C&apos; if and only if: given any c that instantiates C at a time t, there is some c&apos; such that c&apos; instantiates C&apos; at time t, and c *part_of* c&apos; at t. For processes: P part_of P&apos; if and only if: given any p that instantiates P at a time t, there is some p&apos; such that p&apos; instantiates P&apos; at time t, and p *part_of* p&apos; at t. (Here *part_of* is the instance-level part-relation.)</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">OBO Foundry RO</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">This property can be used to describe related but independent members of a larger software package. In other cases, where parts of a larger software package are independent of one another in development but one piece of software executes another directly, please use &quot;uses software&quot;.</obo:IAO_0000115>
         <owl:inverseOf rdf:resource="&ro;has_part"/>
     </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">This property can be used to describe related but independent members of a larger software package. In other cases, where parts of a larger software package are independent of one another in development but one piece of software executes another directly, please use &quot;uses software&quot;.</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&ro;part_of"/>
+        <SWO_0000144>
+            <rdf:Description/>
+        </SWO_0000144>
+    </owl:Axiom>
     
 
 
@@ -27362,6 +27373,9 @@ tiple samples</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/version/6.0 -->
 
     <owl:NamedIndividual rdf:about="&version;6.0"/>
+    <rdf:Description>
+        <SWO_0000144 rdf:datatype="&xsd;string"></SWO_0000144>
+    </rdf:Description>
     
 
 
