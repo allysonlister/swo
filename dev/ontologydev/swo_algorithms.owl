@@ -234,7 +234,7 @@ Ensembles are sets of generalizations (have as parts single generalizations) wit
     <owl:Class rdf:about="&OntoDM;OntoDM_000038">
         <rdfs:label>data mining algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
-        <rdfs:comment>A data mining algorithm is an algorithm, that has as its objective a data mining task and outputes as a result a generalization specified by a generalization specification.</rdfs:comment>
+        <rdfs:comment>A data mining algorithm is an algorithm that has as its objective a data mining task and outputs as a result a generalization specified by a generalization specification.</rdfs:comment>
     </owl:Class>
     
 
@@ -374,8 +374,8 @@ For example, bagging of decision trees algorithm includes the specification of a
         <obo:IAO_0000115>An algorithm is a set of instructions for performing a paticular calculation.</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
-        <swo:SWO_0000144></swo:SWO_0000144>
         <owl:annotatedTarget>An algorithm is a set of instructions for performing a paticular calculation.</owl:annotatedTarget>
+        <swo:SWO_0000144></swo:SWO_0000144>
         <owl:annotatedSource rdf:resource="&obo;IAO_0000064"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
