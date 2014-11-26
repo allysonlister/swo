@@ -127,24 +127,6 @@
     
 
 
-    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_521641 -->
-
-    <owl:Class rdf:about="&OntoDM;OntoDM-KDD_521641">
-        <rdfs:label>data visualization algorithm execution</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_147247"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_524003 -->
-
-    <owl:Class rdf:about="&OntoDM;OntoDM-KDD_524003">
-        <rdfs:label>data processing algorithm execution</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_147247"/>
-    </owl:Class>
-    
-
-
     <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_545286 -->
 
     <owl:Class rdf:about="&OntoDM;OntoDM-KDD_545286">
@@ -168,16 +150,6 @@
     <owl:Class rdf:about="&OntoDM;OntoDM-KDD_776185">
         <rdfs:label>data integration algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_361570"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_798363 -->
-
-    <owl:Class rdf:about="&OntoDM;OntoDM-KDD_798363">
-        <rdfs:label>data mining algorithm execution</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&OntoDM;OntoDM_147247"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">Data mining algorithm execution is a planned process that achieves planned objective a data mining task, realizes a data mining operator, has specified input a dataset, has specified output a generalization and has as agent computer.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -299,16 +271,6 @@ Ensembles are sets of generalizations (have as parts single generalizations) wit
         <owl:annotatedSource rdf:resource="&OntoDM;OntoDM_000285"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
-    
-
-
-    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_147247 -->
-
-    <owl:Class rdf:about="&OntoDM;OntoDM_147247">
-        <rdfs:label>algorithm execution</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">algorithm execution is a planned process (information processing process) that achieves some information processing objective , realizes an operator and has as agent computer</obo:IAO_0000115>
-    </owl:Class>
     
 
 
