@@ -27400,6 +27400,10 @@ tiple samples</obo:IAO_0000115>
     <rdf:Description rdf:about="&efo;swo/SWO_0000397">
         <obo:IAO_0000115>An organization or legal entity (including single person) that is responsible for publishing software. Publishing here includes tasks such as designing and producing physical products, technical customer support, licensing arrangements and marketing.</obo:IAO_0000115>
     </rdf:Description>
+    <rdf:Description rdf:about="&OntoDM;OntoDM_361570">
+        <rdfs:comment rdf:datatype="&xsd;string">A data processing algorithm is an algorithm that has as its objective a data processing task and has data items both as input and output.</rdfs:comment>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">Allyson Lister</obo:IAO_0000119>
+    </rdf:Description>
     
 
 
