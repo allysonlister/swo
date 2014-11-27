@@ -1732,6 +1732,17 @@ the graph structure of GO.</obo:IAO_0000115>
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/algorithm/SWO_4000005 -->
+
+    <owl:Class rdf:about="&swo;algorithm/SWO_4000005">
+        <rdfs:label xml:lang="en">dynamic Bayesian network model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A Dynamic Bayesian Network model is a Bayesian Network which relates variables to each other over adjacent time steps.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Dynamic_Bayesian_network, accessed 27 November 2014.</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
     <!-- http://www.ifomis.org/bfo/1.1/span#ProcessualEntity -->
 
     <owl:Class rdf:about="&span;ProcessualEntity">
