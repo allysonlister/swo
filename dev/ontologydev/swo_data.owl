@@ -1673,7 +1673,7 @@
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000071 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000071">
-        <rdfs:label xml:lang="en">genomedata</rdfs:label>
+        <rdfs:label xml:lang="en">genomedata format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
         <dc:creator rdf:datatype="&xsd;string">Allyson Lister</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Genomedata provides a way to store and access large-scale functional genomics data in a format which is both space-efficient and allows efficient random-access. Genomedata archives are implemented as one or more HDF5 files, either as single files or as directory archives. HDF5 archives are self describing, like XML, but may also contain more complex structures such contain binary data.</obo:IAO_0000115>
