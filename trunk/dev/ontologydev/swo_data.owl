@@ -1682,6 +1682,39 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000072 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000072">
+        <rdfs:label xml:lang="en">BedGraph</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <dc:creator rdf:datatype="&xsd;string">Allyson Lister</dc:creator>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The bedGraph format is a line-oriented text file format. Bedgraph data are preceeded by a track definition line, which adds a number of options for controlling the default display of this track. Following the track definition line are the track data in four column BED format. The bedGraph format allows display of continuous-valued data in track format. This display type is useful for probability scores and transcriptome data. This track type is similar to the wiggle (WIG) format, but unlike the wiggle format, data exported in the bedGraph format are preserved in their original state.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://genome.ucsc.edu/goldenpath/help/bedgraph.html, accessed December 3, 2014.</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000073 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000073">
+        <rdfs:label xml:lang="en">GMTK parameter data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">Allyson Lister</obo:IAO_0000119>
+        <dc:creator rdf:datatype="&xsd;string">Allyson Lister</dc:creator>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">GMTK parameter data is a type of data which contains the various parameter files required by GMTK to define a dynamic Bayesian network.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">Graphical Models Toolkit parameter data</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">These parameter files come in multiple types (e.g. structure files and master files), and therefore this is a data type rather than a single format.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://noble.gs.washington.edu/proj/philius/README, accessed 3 December 2014.</obo:IAO_0000119>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">These parameter files come in multiple types (e.g. structure files and master files), and therefore this is a data type rather than a single format.</owl:annotatedTarget>
+        <swo:SWO_0000144></swo:SWO_0000144>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&ebi;swo/data/SWO_3000073"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
 
     <owl:Class rdf:about="&snap;Role">
