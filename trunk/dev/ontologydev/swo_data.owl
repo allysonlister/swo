@@ -1715,6 +1715,46 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000074 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000074">
+        <rdfs:label rdf:datatype="&xsd;string">MathML 2.0</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <dc:creator rdf:datatype="&xsd;string">Allyson Lister</dc:creator>
+        <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">MathML 2.0 is an XML format which is a low-level specification for describing mathematics as a basis for machine to machine communication. It is a W3C Recommendation and was released on 21 Feb 2001. A product of the W3C Math working group, it provides a much needed foundation for the inclusion of mathematical expressions in Web pages.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.w3.org/Math/</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000075 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000075">
+        <rdfs:label xml:lang="en">FieldML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">FieldML is an XML-based language for describing time-varying and
+spatially-varying fields. The aims of the language design process are to
+keep the language concise, consistent, intuitive and flexible.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.physiomeproject.org/xml_languages/fieldml</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000076 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000076">
+        <rdfs:label xml:lang="en">WKn</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000001"/>
+        <dc:creator rdf:datatype="&xsd;string">Allyson Lister</dc:creator>
+        <rdfs:comment rdf:datatype="&xsd;string">Please note that this is a collective class for all versions of the WKn format, and the specific version required should be created as necessary and placed as a child of this class.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">WKn is a collective name for a spreadsheet format created for Lotus 1-2-3.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://support.sas.com/documentation/cdl/en/acpcref/63184/HTML/default/viewer.htm#a003103772.htm and http://en.wikipedia.org/wiki/Lotus_1-2-3, accessed 3 December 2014.</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
     <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
 
     <owl:Class rdf:about="&snap;Role">
