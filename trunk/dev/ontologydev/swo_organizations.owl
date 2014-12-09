@@ -178,12 +178,28 @@ or of directed by the organization to do this.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000040">
+        <rdfs:label rdf:datatype="&xsd;string">material entity</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A material entity is a real world physical object. It is an entity that exists in full during the length of time of its existence, persists through this time while maintaining its identity and has no temporal parts. For example a heart, a human, a fly, a microarray.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A material entity is a real world physical object. It is an entity that exists in full during the length of time of its existence, persists through this time while maintaining its identity and has no temporal parts. For example a heart, a human, a fly, a microarray.</owl:annotatedTarget>
+        <swo:SWO_0000144></swo:SWO_0000144>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000040"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
 
     <owl:Class rdf:about="&obo;OBI_0000245">
         <rdfs:label rdf:datatype="&xsd;string">organization</rdfs:label>
         <rdfs:label xml:lang="en">organization</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/OBI_0000245</obo:IAO_0000119>
     </owl:Class>
@@ -257,22 +273,6 @@ or of directed by the organization to do this.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="&xsd;string">software development process</rdfs:label>
         <obo:IAO_0000115>The process of developing software, typically involving the design, implementation and testing of software.</obo:IAO_0000115>
     </owl:Class>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#MaterialEntity -->
-
-    <owl:Class rdf:about="&snap;MaterialEntity">
-        <rdfs:label rdf:datatype="&xsd;string">material entity</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A material entity is a real world physical object. It is an entity that exists in full during the length of time of its existence, persists through this time while maintaining its identity and has no temporal parts. For example a heart, a human, a fly, a microarray.</obo:IAO_0000115>
-        <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">A material entity is a real world physical object. It is an entity that exists in full during the length of time of its existence, persists through this time while maintaining its identity and has no temporal parts. For example a heart, a human, a fly, a microarray.</owl:annotatedTarget>
-        <swo:SWO_0000144></swo:SWO_0000144>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-        <owl:annotatedSource rdf:resource="&snap;MaterialEntity"/>
-    </owl:Axiom>
     
 
 
