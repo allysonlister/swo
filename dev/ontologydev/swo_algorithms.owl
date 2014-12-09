@@ -320,6 +320,14 @@ For example, bagging of decision trees algorithm includes the specification of a
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000007 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000007">
+        <rdfs:label>process</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
     <owl:Class rdf:about="&obo;IAO_0000030">
@@ -1739,14 +1747,6 @@ the graph structure of GO.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="&efo;swo/SWO_0000064"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A Dynamic Bayesian Network model is a Bayesian Network which relates variables to each other over adjacent time steps.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Dynamic_Bayesian_network, accessed 27 November 2014.</obo:IAO_0000119>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/span#ProcessualEntity -->
-
-    <owl:Class rdf:about="&span;ProcessualEntity">
-        <rdfs:label>process</rdfs:label>
     </owl:Class>
     
 
