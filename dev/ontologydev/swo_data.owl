@@ -311,7 +311,6 @@
     <!-- http://edamontology.org/format_2585 -->
 
     <owl:Class rdf:about="&edamontology;format_2585">
-        <rdfs:label rdf:datatype="&xsd;string">SBML file</rdfs:label>
         <rdfs:label>SBML</rdfs:label>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
         <obo:IAO_0000118>Systems Biology Markup Language</obo:IAO_0000118>
@@ -398,8 +397,8 @@
         <obo:IAO_0000115>The syntax by which data is specified which renders it valid for a given format.</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget>The syntax by which data is specified which renders it valid for a given format.</owl:annotatedTarget>
         <swo:SWO_0000144></swo:SWO_0000144>
+        <owl:annotatedTarget>The syntax by which data is specified which renders it valid for a given format.</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;IAO_0000098"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
