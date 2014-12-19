@@ -254,7 +254,7 @@
 
     <owl:Class rdf:about="&edamontology;format_1910">
         <rdfs:label rdf:datatype="&xsd;string">newick</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
     </owl:Class>
     
 
@@ -263,7 +263,7 @@
 
     <owl:Class rdf:about="&edamontology;format_1929">
         <rdfs:label rdf:datatype="&xsd;string">FASTA format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
     </owl:Class>
     
 
@@ -272,7 +272,15 @@
 
     <owl:Class rdf:about="&edamontology;format_2305">
         <rdfs:label rdf:datatype="&xsd;string">GFF</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_2330 -->
+
+    <owl:Class rdf:about="&edamontology;format_2330">
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
 
@@ -302,7 +310,7 @@
 
     <owl:Class rdf:about="&edamontology;format_2549">
         <rdfs:label>OBO Flat File Format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
         <obo:IAO_0000115>OBO format is the text file format used by OBO-Edit, the open source, platform-independent application for viewing and editing ontologies. </obo:IAO_0000115>
     </owl:Class>
     
@@ -324,7 +332,7 @@
 
     <owl:Class rdf:about="&edamontology;format_3003">
         <rdfs:label rdf:datatype="&xsd;string">BED format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
     </owl:Class>
     
 
@@ -574,7 +582,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000157">
         <rdfs:label rdf:datatype="&xsd;string">GEO Matrix Series format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
     </owl:Class>
     
 
@@ -628,7 +636,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000363">
         <rdfs:label rdf:datatype="&xsd;string">Rnw</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
     </owl:Class>
     
 
@@ -637,7 +645,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000378">
         <rdfs:label rdf:datatype="&xsd;string">SBMLR format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
     </owl:Class>
     
 
@@ -646,7 +654,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000381">
         <rdfs:label rdf:datatype="&xsd;string">SDF format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
     </owl:Class>
     
 
@@ -673,7 +681,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000409">
         <rdfs:label rdf:datatype="&xsd;string">R data frame</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
     </owl:Class>
     
 
@@ -727,7 +735,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000498">
         <rdfs:label rdf:datatype="&xsd;string">cls</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
     </owl:Class>
     
 
@@ -754,7 +762,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000518">
         <rdfs:label rdf:datatype="&xsd;string">dcf</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
         <obo:IAO_0000118>debian control file format</obo:IAO_0000118>
     </owl:Class>
     
@@ -864,7 +872,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000615">
         <rdfs:label rdf:datatype="&xsd;string">mas5 format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
     </owl:Class>
     
 
@@ -936,7 +944,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000684">
         <rdfs:label rdf:datatype="&xsd;string">rda</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
     </owl:Class>
     
 
@@ -1376,15 +1384,6 @@
     
 
 
-    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000041 -->
-
-    <owl:Class rdf:about="&ebi;swo/data/SWO_3000041">
-        <rdfs:label>text file format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000042 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000042">
@@ -1398,7 +1397,7 @@
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000043">
         <rdfs:label>plain text file format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
     </owl:Class>
     
 
@@ -1419,7 +1418,7 @@
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000049">
         <rdfs:label xml:lang="en">SIF</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
         <obo:IAO_0000119>http://wiki.cytoscape.org/GettingStarted and http://wiki.cytoscape.org/Cytoscape_User_Manual/Network_Formats, accessed 20 June 2012</obo:IAO_0000119>
         <dc:creator>Allyson Lister</dc:creator>
         <obo:IAO_0000115>SIF stands for Simple Interaction Format, and is a text format invented for Cytoscape. If the file contains any tab characters, then tabs are used to delimit the fields and spaces are considered part of the name. If the file contains no tabs, then any spaces are delimiters that separate names (and names cannot contain spaces). </obo:IAO_0000115>
@@ -1490,17 +1489,17 @@
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000056">
         <rdfs:label xml:lang="en">BioPAX Manchester OWL Syntax format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ebi;swo/data/SWO_3000054"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000055"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1685,7 +1684,7 @@
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000072">
         <rdfs:label xml:lang="en">BedGraph</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
         <dc:creator rdf:datatype="&xsd;string">Allyson Lister</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The bedGraph format is a line-oriented text file format. Bedgraph data are preceeded by a track definition line, which adds a number of options for controlling the default display of this track. Following the track definition line are the track data in four column BED format. The bedGraph format allows display of continuous-valued data in track format. This display type is useful for probability scores and transcriptome data. This track type is similar to the wiggle (WIG) format, but unlike the wiggle format, data exported in the bedGraph format are preserved in their original state.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://genome.ucsc.edu/goldenpath/help/bedgraph.html, accessed December 3, 2014.</obo:IAO_0000119>
