@@ -1,3 +1,12 @@
+The folders are organised as follows:
+
+inferred_swo contains a merged version of the Software Ontology which includes inference over the axios, that is, inference has been saved as asserted axioms in this version. This is the version to use in viewing the ontology in applications.
+
+swo_components contains the individual owl modules that make up SWO. the swo_core file imports the others so should be considered the 'main file'. This includes the import of the EDAM ontology into SWO.
+
+swo_merged is a single owl with all of the separate owl modules placed into just one owl file
+
+
  ____  _   _  ____    ___  _____  ____  ____  _    _    __    ____  ____ 
 (_  _)( )_( )( ___)  / __)(  _  )( ___)(_  _)( \/\/ )  /__\  (  _ \( ___)
   )(   ) _ (  )__)   \__ \ )(_)(  )__)   )(   )    (  /(__)\  )   / )__) 
@@ -15,8 +24,8 @@ http://theswo.sourceforge.net
 
 RELEASE NOTES
 
-VERSION: 1.1
-DATE: 5th December 2013
+VERSION: 1.5
+DATE: 8th February 2015
 --------------------------------
 
 
@@ -25,7 +34,7 @@ Contents
 
 1. Summary
 2. Change log
-3. Obsolete Classses
+3. Obsolete Classes
 4. Release Policy
 
 --------------------------------
@@ -35,7 +44,10 @@ Contents
 --------------------------------
 1. Summary
 
-Relase 1.1 contains some additional top 50 biomedical software as published by BioNERDS. Some refactoring of the inputs and outputs between software development and publishing processes. Additional licenses and interfaces.
+Release 1.5 contains many new textual definitions, particularly for higher level terms used in classifying subclasses. Several refactoring decisions were made to reconcile some of the EDAM modelling that does not correspond with some of the OBO relations. See the following links for details:
+
+https://softwareontology.wordpress.com/2014/12/09/assorted-modifications-december-2014/
+https://softwareontology.wordpress.com/2014/10/16/definition-and-id-changes/
 
 
 --------------------------------
@@ -43,13 +55,6 @@ Relase 1.1 contains some additional top 50 biomedical software as published by B
 
 --------------------------------
 2. Change log
-
-The following is a compelte diff of this and the previous release as performed using Bubastis at http://www.ebi.ac.uk/efo/bubastis
-
-Number of classes that have changed: 449
-Number of classes that have been added: 2720
-Number of classes that have been deleted: 0
-
 
 If you wish to perform a full diff between these versions please visit:
 

@@ -4,8 +4,6 @@
 <!DOCTYPE rdf:RDF [
     <!ENTITY ebi "http://www.ebi.ac.uk/" >
     <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
-    <!ENTITY efo "http://www.ebi.ac.uk/efo/" >
-    <!ENTITY swo2 "http://www.ebi.ac.uk/efo/swo/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY OntoDM "http://kt.ijs.si/panovp/OntoDM#" >
@@ -21,9 +19,7 @@
 <rdf:RDF xmlns="&ebi;swo/objective/"
      xml:base="&ebi;swo/objective/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:swo2="&ebi;efo/swo/"
      xmlns:swo="&ebi;swo/"
-     xmlns:efo="&ebi;efo/"
      xmlns:OntoDM="http://kt.ijs.si/panovp/OntoDM#"
      xmlns:ebi="http://www.ebi.ac.uk/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
@@ -52,7 +48,6 @@
     <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
     <owl:AnnotationProperty rdf:about="&dc;contributor"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
-    <owl:AnnotationProperty rdf:about="&ebi;efo/example_of_usage"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
     
