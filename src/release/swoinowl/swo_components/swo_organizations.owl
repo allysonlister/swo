@@ -5,7 +5,6 @@
     <!ENTITY ebi "http://www.ebi.ac.uk/" >
     <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
     <!ENTITY efo "http://www.ebi.ac.uk/efo/" >
-    <!ENTITY swo2 "http://www.ebi.ac.uk/efo/swo/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
@@ -21,7 +20,6 @@
 <rdf:RDF xmlns="&ebi;swo/organization/"
      xml:base="&ebi;swo/organization/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:swo2="&ebi;efo/swo/"
      xmlns:swo="&ebi;swo/"
      xmlns:efo="&ebi;efo/"
      xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
@@ -47,25 +45,68 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
-    <owl:AnnotationProperty rdf:about="&dc;creator"/>
-    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
-    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
-    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000144 -->
+
+    <owl:AnnotationProperty rdf:about="&ebi;swo/SWO_0000144">
+        <rdfs:label>SWO definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
     
 
 
@@ -94,30 +135,34 @@ or of directed by the organization to do this.</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000316 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000316">
-        <rdfs:label rdf:datatype="&xsd;string">has_role</rdfs:label>
-        <rdfs:range rdf:resource="&snap;Role"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
 
     <owl:ObjectProperty rdf:about="&obo;RO_0000056">
         <rdfs:label rdf:datatype="&xsd;string">participates in</rdfs:label>
         <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
+        <rdfs:comment rdf:datatype="&xsd;string">Please see the official RO definition for the inverse of this property, &apos;has participant.&apos;</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000059 -->
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
 
-    <owl:ObjectProperty rdf:about="&ebi;swo/organization/SWO_9000059">
+    <owl:ObjectProperty rdf:about="&obo;RO_0000057">
         <rdfs:label rdf:datatype="&xsd;string">has participant</rdfs:label>
         <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time.</obo:IAO_0000112>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://obo-relations.googlecode.com/svn/trunk/src/ontology/core.owl</obo:IAO_0000119>
         <owl:inverseOf rdf:resource="&obo;RO_0000056"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0000087">
+        <rdfs:label rdf:datatype="&xsd;string">has_role</rdfs:label>
+        <rdfs:range rdf:resource="&snap;Role"/>
     </owl:ObjectProperty>
     
 
@@ -133,18 +178,29 @@ or of directed by the organization to do this.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000040">
+        <rdfs:label rdf:datatype="&xsd;string">material entity</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A material entity is a real world physical object. It is an entity that exists in full during the length of time of its existence, persists through this time while maintaining its identity and has no temporal parts. For example a heart, a human, a fly, a microarray.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A material entity is a real world physical object. It is an entity that exists in full during the length of time of its existence, persists through this time while maintaining its identity and has no temporal parts. For example a heart, a human, a fly, a microarray.</owl:annotatedTarget>
+        <swo:SWO_0000144></swo:SWO_0000144>
+        <owl:annotatedSource rdf:resource="&obo;BFO_0000040"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
 
     <owl:Class rdf:about="&obo;OBI_0000245">
         <rdfs:label rdf:datatype="&xsd;string">organization</rdfs:label>
         <rdfs:label xml:lang="en">organization</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">An organization is a continuant entity which can play roles,  has 
-members, and has a set of organization rules.  Members of organizations 
-are either organizations themselves or individual people. Members can 
-play specific organization member roles that are determined in the 
-organization rules. The organization rules also determine how decisions 
-are made on behalf of the organization by the organization members.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/OBI_0000245</obo:IAO_0000119>
     </owl:Class>
     
@@ -178,7 +234,7 @@ are made on behalf of the organization by the organization members.</obo:IAO_000
         <rdfs:label rdf:datatype="&xsd;string">software developer organization</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000392"/>
             </owl:Restriction>
         </owl:equivalentClass>
@@ -193,7 +249,7 @@ are made on behalf of the organization by the organization members.</obo:IAO_000
         <rdfs:label rdf:datatype="&xsd;string">software publisher organization</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000260"/>
             </owl:Restriction>
         </owl:equivalentClass>
@@ -220,23 +276,18 @@ are made on behalf of the organization by the organization members.</obo:IAO_000
     
 
 
-    <!-- http://www.ifomis.org/bfo/1.1/snap#MaterialEntity -->
-
-    <owl:Class rdf:about="&snap;MaterialEntity">
-        <rdfs:label rdf:datatype="&xsd;string">material entity</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A material entity is a real world physical object. It is an entity that exists in full during the length of time of its existence, persists through this time while maintaining its identity and has no temporal parts. For example a heart, a human, a fly, a microarray.</obo:IAO_0000115>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A material entity is an entity that exists in full during the length of time of its existence, persists through this time while maintaining its identity and has no temporal parts. For example a heart, a human, a fly, a microarray.</obo:IAO_0000115>
-        <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
-    </owl:Class>
-    
-
-
     <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
 
     <owl:Class rdf:about="&snap;Role">
         <rdfs:label rdf:datatype="&xsd;string">role</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A role is an entity which is borne in a material entity in some kinds of natural, social or institutional contexts, but which is not essential to the fundamental definition of that material entity (i.e. the material entity exists with or without the role). For example, the role of a person as a surgeon, the role of an artificial heart in pumping blood, the role of a chemical compound in an experiment, the role of a drug in the treatment of a disease.</obo:IAO_0000115>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A role is an entity which is borne in a material entity in some kinds of natural, social or institutional contexts, but which is not essential to the fundamental definition of that material entity (i.e. the material entity exists with or without the role). For example, the role of a person as a surgeon, the role of an artificial heart in pumping blood, the role of a chemical compound in an experiment, the role of a drug in the treatment of a disease.</owl:annotatedTarget>
+        <swo:SWO_0000144></swo:SWO_0000144>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&snap;Role"/>
+    </owl:Axiom>
     
 
 
@@ -271,14 +322,14 @@ are made on behalf of the organization by the organization members.</obo:IAO_000
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
-                <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000392"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000260"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
-                <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000260"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000392"/>
             </owl:Restriction>
         </rdf:type>
         <rdfs:label rdf:datatype="&xsd;string">Affymetrix</rdfs:label>
@@ -501,7 +552,7 @@ are made on behalf of the organization by the organization members.</obo:IAO_000
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="&ebi;efo/swo/SWO_0000260"/>
             </owl:Restriction>
         </rdf:type>
@@ -758,7 +809,7 @@ are made on behalf of the organization by the organization members.</obo:IAO_000
     <owl:NamedIndividual rdf:about="&ebi;swo/organization/SWO_9000010">
         <rdf:type rdf:resource="&obo;OBI_0000245"/>
         <rdfs:label>The Community</rdfs:label>
-        <rdfs:comment>An undefined, or ill-defined, group of people.  May be used, for example, to denote software development as being done by &#39;the community&#39;, with contributions by many individuals, but no over-arching organisation.</rdfs:comment>
+        <rdfs:comment>An undefined, or ill-defined, group of people.  May be used, for example, to denote software development as being done by &apos;the community&apos;, with contributions by many individuals, but no over-arching organisation.</rdfs:comment>
         <dc:contributor>Andy Brown</dc:contributor>
     </owl:NamedIndividual>
     
@@ -990,5 +1041,5 @@ are made on behalf of the organization by the organization members.</obo:IAO_000
 
 
 
-<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
 

@@ -7,7 +7,6 @@
     <!ENTITY edamontology "http://edamontology.org/" >
     <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
     <!ENTITY efo "http://www.ebi.ac.uk/efo/" >
-    <!ENTITY swo2 "http://www.ebi.ac.uk/efo/swo/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
@@ -26,7 +25,6 @@
      xml:base="&ebi;swo/data/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:edamontology="http://edamontology.org/"
-     xmlns:swo2="&ebi;efo/swo/"
      xmlns:Snap="http://www.ifomis.org/bfo/1.1/Snap#"
      xmlns:swo="&ebi;swo/"
      xmlns:efo="&ebi;efo/"
@@ -82,6 +80,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000112"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
@@ -103,6 +107,12 @@
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
     <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000144 -->
+
+    <owl:AnnotationProperty rdf:about="&ebi;swo/SWO_0000144"/>
     
 
 
@@ -135,11 +145,17 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000316 -->
+    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
 
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000316">
+    <owl:ObjectProperty rdf:about="&obo;RO_0000087">
         <rdfs:label>has_role</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000741 -->
+
+    <owl:ObjectProperty rdf:about="&ebi;efo/swo/SWO_0000741"/>
     
 
 
@@ -168,6 +184,9 @@
     <owl:ObjectProperty rdf:about="&ebi;swo/data/SWO_3000054">
         <rdf:type rdf:resource="&owl;SymmetricProperty"/>
         <rdfs:label xml:lang="en">is alternative format of</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">Allyson Lister</obo:IAO_0000119>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">The format for BioPAX Manchester OWL syntax is an alternative format of the BioPAX RDF/XML format.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">With both a domain and range of &apos;data format specification&apos;, this property provides a means of stating that two different data format specifications are valid specifications for the same type of data.</obo:IAO_0000115>
         <rdfs:domain rdf:resource="&obo;IAO_0000098"/>
         <rdfs:range rdf:resource="&obo;IAO_0000098"/>
     </owl:ObjectProperty>
@@ -216,7 +235,7 @@
 
     <owl:Class rdf:about="&edamontology;format_1478">
         <rdfs:label>PDBML</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2332"/>
     </owl:Class>
     
 
@@ -225,7 +244,7 @@
 
     <owl:Class rdf:about="&edamontology;format_1665">
         <rdfs:label>Taverna workflow format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2332"/>
         <obo:IAO_0000115>Format of Taverna workflows.</obo:IAO_0000115>
     </owl:Class>
     
@@ -235,7 +254,7 @@
 
     <owl:Class rdf:about="&edamontology;format_1910">
         <rdfs:label rdf:datatype="&xsd;string">newick</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
     </owl:Class>
     
 
@@ -244,7 +263,7 @@
 
     <owl:Class rdf:about="&edamontology;format_1929">
         <rdfs:label rdf:datatype="&xsd;string">FASTA format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
     </owl:Class>
     
 
@@ -253,7 +272,15 @@
 
     <owl:Class rdf:about="&edamontology;format_2305">
         <rdfs:label rdf:datatype="&xsd;string">GFF</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_2330 -->
+
+    <owl:Class rdf:about="&edamontology;format_2330">
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
 
@@ -266,6 +293,18 @@
         <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">html, or HyperText Markup Language in full, is a data format specification is a markup language for web pages and is the publishing language of the World Wide Web.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.w3.org/TR/html401/</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_2332 -->
+
+    <owl:Class rdf:about="&edamontology;format_2332">
+        <rdfs:label rdf:datatype="&xsd;string">XML</rdfs:label>
+        <rdfs:label>XML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <dc:creator>James Malone</dc:creator>
+        <obo:IAO_0000115>Extensible Markup Language (XML) is a standard set of rules for encoding documents in a machine-readable form defined by the W3C.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -283,7 +322,7 @@
 
     <owl:Class rdf:about="&edamontology;format_2549">
         <rdfs:label>OBO Flat File Format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
         <obo:IAO_0000115>OBO format is the text file format used by OBO-Edit, the open source, platform-independent application for viewing and editing ontologies. </obo:IAO_0000115>
     </owl:Class>
     
@@ -292,9 +331,8 @@
     <!-- http://edamontology.org/format_2585 -->
 
     <owl:Class rdf:about="&edamontology;format_2585">
-        <rdfs:label rdf:datatype="&xsd;string">SBML file</rdfs:label>
         <rdfs:label>SBML</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2332"/>
         <obo:IAO_0000118>Systems Biology Markup Language</obo:IAO_0000118>
         <obo:IAO_0000115>Systems Biology Markup Language (SBML) is a machine-readable format for representing models. It&apos;s oriented towards describing systems where biological entities are involved in, and modified by, processes that occur over time.</obo:IAO_0000115>
         <obo:IAO_0000119>http://sbml.org</obo:IAO_0000119>
@@ -306,7 +344,7 @@
 
     <owl:Class rdf:about="&edamontology;format_3003">
         <rdfs:label rdf:datatype="&xsd;string">BED format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
     </owl:Class>
     
 
@@ -314,7 +352,7 @@
     <!-- http://edamontology.org/format_3158 -->
 
     <owl:Class rdf:about="&edamontology;format_3158">
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2332"/>
         <obo:IAO_0000119>Modified from http://wiki.cytoscape.org/GettingStarted, accessed 20 June 2012.</obo:IAO_0000119>
         <obo:IAO_0000118>PSI-MIF</obo:IAO_0000118>
         <dc:creator>Allyson Lister</dc:creator>
@@ -328,7 +366,7 @@
 
     <owl:Class rdf:about="&edamontology;format_3161">
         <rdfs:label rdf:datatype="&xsd;string">MAGE-ML</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2332"/>
     </owl:Class>
     
 
@@ -350,7 +388,13 @@
     <owl:Class rdf:about="&obo;IAO_0000027">
         <rdfs:label rdf:datatype="&xsd;string">data</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">Data is an information entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ebi;efo/swo/SWO_0000741"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000098"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Data is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">IAO</obo:IAO_0000119>
     </owl:Class>
     
@@ -367,8 +411,17 @@
     <owl:Class rdf:about="&obo;IAO_0000098">
         <rdfs:label xml:lang="en">data format specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A data format specification is the information content borne by the document published defining the specification.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">IAO</obo:IAO_0000119>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">The ISO document specifying what encompasses an XML document; The instructions in a XSD file.</obo:IAO_0000112>
         <obo:IAO_0000115>The syntax by which data is specified which renders it valid for a given format.</obo:IAO_0000115>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>The syntax by which data is specified which renders it valid for a given format.</owl:annotatedTarget>
+        <swo:SWO_0000144></swo:SWO_0000144>
+        <owl:annotatedSource rdf:resource="&obo;IAO_0000098"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
     
 
 
@@ -376,6 +429,15 @@
 
     <owl:Class rdf:about="&obo;IAO_0000129">
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://urigen_local_uri/963a1b3b-49f2-4ef9-8f37-5e9cd5403b2a/http://www.ebi.ac.uk/swo/data/SWO_3000069 -->
+
+    <owl:Class rdf:about="http://urigen_local_uri/963a1b3b-49f2-4ef9-8f37-5e9cd5403b2a/&ebi;swo/data/SWO_3000069">
+        <rdfs:label>sequence feature format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
 
@@ -402,7 +464,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000017">
         <rdfs:label rdf:datatype="&xsd;string">ARR</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2332"/>
     </owl:Class>
     
 
@@ -532,7 +594,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000157">
         <rdfs:label rdf:datatype="&xsd;string">GEO Matrix Series format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
     </owl:Class>
     
 
@@ -550,7 +612,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000249">
         <rdfs:label rdf:datatype="&xsd;string">KGML</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2332"/>
     </owl:Class>
     
 
@@ -586,7 +648,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000363">
         <rdfs:label rdf:datatype="&xsd;string">Rnw</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
     </owl:Class>
     
 
@@ -595,7 +657,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000378">
         <rdfs:label rdf:datatype="&xsd;string">SBMLR format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
     </owl:Class>
     
 
@@ -604,7 +666,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000381">
         <rdfs:label rdf:datatype="&xsd;string">SDF format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
     </owl:Class>
     
 
@@ -631,7 +693,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000409">
         <rdfs:label rdf:datatype="&xsd;string">R data frame</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
     </owl:Class>
     
 
@@ -685,7 +747,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000498">
         <rdfs:label rdf:datatype="&xsd;string">cls</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
     </owl:Class>
     
 
@@ -712,7 +774,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000518">
         <rdfs:label rdf:datatype="&xsd;string">dcf</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
         <obo:IAO_0000118>debian control file format</obo:IAO_0000118>
     </owl:Class>
     
@@ -777,7 +839,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000570">
         <rdfs:label rdf:datatype="&xsd;string">gxl format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2332"/>
     </owl:Class>
     
 
@@ -822,7 +884,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000615">
         <rdfs:label rdf:datatype="&xsd;string">mas5 format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
     </owl:Class>
     
 
@@ -894,7 +956,7 @@
 
     <owl:Class rdf:about="&ebi;efo/swo/SWO_0000684">
         <rdfs:label rdf:datatype="&xsd;string">rda</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
     </owl:Class>
     
 
@@ -969,18 +1031,6 @@
     
 
 
-    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000005 -->
-
-    <owl:Class rdf:about="&ebi;swo/data/SWO_3000005">
-        <rdfs:label rdf:datatype="&xsd;string">XML</rdfs:label>
-        <rdfs:label>XML</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
-        <obo:IAO_0000115>Extensible Markup Language (XML) is a standard set of rules for encoding documents in a machine-readable form defined by the W3C.</obo:IAO_0000115>
-        <dc:creator>James Malone</dc:creator>
-    </owl:Class>
-    
-
-
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000006 -->
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000006">
@@ -1004,7 +1054,7 @@
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000007">
         <rdfs:label>RDF-XML</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2332"/>
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000006"/>
         <obo:IAO_0000115>A serialisation of RDF into an XML format.</obo:IAO_0000115>
         <dc:creator>James Malone</dc:creator>
@@ -1307,7 +1357,7 @@
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000036">
         <rdfs:label>CopasiML</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2332"/>
         <obo:IAO_0000118>.cps</obo:IAO_0000118>
         <obo:IAO_0000115>An XML-based file format for use with the COPASI software.</obo:IAO_0000115>
     </owl:Class>
@@ -1318,7 +1368,7 @@
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000038">
         <rdfs:label>OWL-XML</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2332"/>
         <obo:IAO_0000115>The Web Ontology Language (OWL) in XML serialization</obo:IAO_0000115>
     </owl:Class>
     
@@ -1328,17 +1378,8 @@
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000039">
         <rdfs:label>OWL2-XML</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2332"/>
         <obo:IAO_0000115>Web Ontology Language version 2 in XML Serialization</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000041 -->
-
-    <owl:Class rdf:about="&ebi;swo/data/SWO_3000041">
-        <rdfs:label>text file format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
     </owl:Class>
     
 
@@ -1356,7 +1397,7 @@
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000043">
         <rdfs:label>plain text file format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
     </owl:Class>
     
 
@@ -1377,7 +1418,7 @@
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000049">
         <rdfs:label xml:lang="en">SIF</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
         <obo:IAO_0000119>http://wiki.cytoscape.org/GettingStarted and http://wiki.cytoscape.org/Cytoscape_User_Manual/Network_Formats, accessed 20 June 2012</obo:IAO_0000119>
         <dc:creator>Allyson Lister</dc:creator>
         <obo:IAO_0000115>SIF stands for Simple Interaction Format, and is a text format invented for Cytoscape. If the file contains any tab characters, then tabs are used to delimit the fields and spaces are considered part of the name. If the file contains no tabs, then any spaces are delimiters that separate names (and names cannot contain spaces). </obo:IAO_0000115>
@@ -1389,7 +1430,7 @@
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000050">
         <rdfs:label xml:lang="en">GML</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2332"/>
         <obo:IAO_0000115>GML stands for Graph Markup Language, and is a standard network file format; supported by multiple generic network software packages </obo:IAO_0000115>
         <obo:IAO_0000119>http://wiki.cytoscape.org/GettingStarted, accessed 20 June 2012</obo:IAO_0000119>
     </owl:Class>
@@ -1400,7 +1441,7 @@
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000051">
         <rdfs:label xml:lang="en">XGMML</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000005"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2332"/>
         <obo:IAO_0000119>http://wiki.cytoscape.org/GettingStarted, accessed 20 June 2012</obo:IAO_0000119>
         <obo:IAO_0000115>XGMML stands for eXtensible Graph Markup and Modelling Language, and it is a XML standard; similar to but preferred over GML.</obo:IAO_0000115>
     </owl:Class>
@@ -1436,7 +1477,7 @@
         <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1448,10 +1489,10 @@
 
     <owl:Class rdf:about="&ebi;swo/data/SWO_3000056">
         <rdfs:label xml:lang="en">BioPAX Manchester OWL Syntax format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000041"/>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="&ebi;swo/data/SWO_3000053"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1616,6 +1657,102 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000070 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000070">
+        <rdfs:label>tabix file format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://urigen_local_uri/963a1b3b-49f2-4ef9-8f37-5e9cd5403b2a/&ebi;swo/data/SWO_3000069"/>
+        <obo:IAO_0000119>http://samtools.sourceforge.net/tabix.shtml</obo:IAO_0000119>
+        <obo:IAO_0000115>Tabix indexes a TAB-delimited genome position file and creates an index file when region is absent from the command-line. The input data file must be position sorted and compressed by bgzip which has a gzip like interface. After indexing, tabix is able to quickly retrieve data lines overlapping regions specified in the format &quot;chr:beginPos-endPos&quot;. Fast data retrieval also works over network if URI is given as a file name and in this case the index file will be downloaded if it is not present locally.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000071 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000071">
+        <rdfs:label xml:lang="en">genomedata format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <dc:creator rdf:datatype="&xsd;string">Allyson Lister</dc:creator>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Genomedata provides a way to store and access large-scale functional genomics data in a format which is both space-efficient and allows efficient random-access. Genomedata archives are implemented as one or more HDF5 files, either as single files or as directory archives. HDF5 archives are self describing, like XML, but may also contain more complex structures such contain binary data.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://pmgenomics.ca/hoffmanlab/proj/genomedata/doc/1.3.5/genomedata.html and http://www.hdfgroup.org/why_hdf/, accessed 27 November 2014.</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000072 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000072">
+        <rdfs:label xml:lang="en">BedGraph</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2330"/>
+        <dc:creator rdf:datatype="&xsd;string">Allyson Lister</dc:creator>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The bedGraph format is a line-oriented text file format. Bedgraph data are preceeded by a track definition line, which adds a number of options for controlling the default display of this track. Following the track definition line are the track data in four column BED format. The bedGraph format allows display of continuous-valued data in track format. This display type is useful for probability scores and transcriptome data. This track type is similar to the wiggle (WIG) format, but unlike the wiggle format, data exported in the bedGraph format are preserved in their original state.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://genome.ucsc.edu/goldenpath/help/bedgraph.html, accessed December 3, 2014.</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000073 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000073">
+        <rdfs:label xml:lang="en">GMTK parameter data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">Allyson Lister</obo:IAO_0000119>
+        <dc:creator rdf:datatype="&xsd;string">Allyson Lister</dc:creator>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">GMTK parameter data is a type of data which contains the various parameter files required by GMTK to define a dynamic Bayesian network.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">Graphical Models Toolkit parameter data</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">These parameter files come in multiple types (e.g. structure files and master files), and therefore this is a data type rather than a single format.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://noble.gs.washington.edu/proj/philius/README, accessed 3 December 2014.</obo:IAO_0000119>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">These parameter files come in multiple types (e.g. structure files and master files), and therefore this is a data type rather than a single format.</owl:annotatedTarget>
+        <swo:SWO_0000144></swo:SWO_0000144>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&ebi;swo/data/SWO_3000073"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000074 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000074">
+        <rdfs:label rdf:datatype="&xsd;string">MathML 2.0</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2332"/>
+        <dc:creator rdf:datatype="&xsd;string">Allyson Lister</dc:creator>
+        <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">MathML 2.0 is an XML format which is a low-level specification for describing mathematics as a basis for machine to machine communication. It is a W3C Recommendation and was released on 21 Feb 2001. A product of the W3C Math working group, it provides a much needed foundation for the inclusion of mathematical expressions in Web pages.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.w3.org/Math/</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000075 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000075">
+        <rdfs:label xml:lang="en">FieldML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&edamontology;format_2332"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">FieldML is an XML-based language for describing time-varying and
+spatially-varying fields. The aims of the language design process are to
+keep the language concise, consistent, intuitive and flexible.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="&xsd;string">James Malone</dc:creator>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.physiomeproject.org/xml_languages/fieldml</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000076 -->
+
+    <owl:Class rdf:about="&ebi;swo/data/SWO_3000076">
+        <rdfs:label xml:lang="en">WKn</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/data/SWO_3000001"/>
+        <dc:creator rdf:datatype="&xsd;string">Allyson Lister</dc:creator>
+        <rdfs:comment rdf:datatype="&xsd;string">Please note that this is a collective class for all versions of the WKn format, and the specific version required should be created as necessary and placed as a child of this class.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">WKn is a collective name for a spreadsheet format created for Lotus 1-2-3.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://support.sas.com/documentation/cdl/en/acpcref/63184/HTML/default/viewer.htm#a003103772.htm and http://en.wikipedia.org/wiki/Lotus_1-2-3, accessed 3 December 2014.</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
     <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
 
     <owl:Class rdf:about="&snap;Role">
@@ -1651,5 +1788,5 @@
 
 
 
-<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
 
