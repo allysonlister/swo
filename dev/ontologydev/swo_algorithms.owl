@@ -1796,6 +1796,32 @@ the graph structure of GO.</obo:IAO_0000115>
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/algorithm/SWO_4000009 -->
+
+    <owl:Class rdf:about="&swo;algorithm/SWO_4000009">
+        <rdfs:label rdf:datatype="&xsd;string">DAE Algorithm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
+        <dc:creator rdf:datatype="&xsd;string">Allyson Lister</dc:creator>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Differential Algebraic equations (DAEs) are a general form of (systems of) differential equations for vector–valued functions in one independent variable. In practical terms, the distinction between DAEs and ODEs is often that the solution of a DAE system depends on the derivatives of the input signal and not just the signal itself as in the case of ODEs.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Differential_algebraic_equation, accessed 26 March 2015.</obo:IAO_0000119>
+        <obo:IAO_0000118 xml:lang="en">Differential Algebraic Equation Algorithm</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/algorithm/SWO_4000010 -->
+
+    <owl:Class rdf:about="&swo;algorithm/SWO_4000010">
+        <rdfs:label xml:lang="en">PDE Algorithm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A partial differential equation (PDE) is a differential equation that contains unknown multivariable functions and their partial derivatives. This is in contrast to ordinary differential equations, which deal with functions of a single variable and their derivatives.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="&xsd;string">Allyson Lister</dc:creator>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">Partial Differential Equation Algorithm</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Partial_differential_equation, accessed 26 March 2015.</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
     <!-- http://www.w3.org/2002/07/owl#Thing -->
 
     <owl:Class rdf:about="&owl;Thing"/>
