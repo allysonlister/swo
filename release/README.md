@@ -1,8 +1,6 @@
-# The Software Ontology
+# The Software Ontology Release Notes
 
 http://theswo.sourceforge.net
-
-# RELEASE NOTES
 
 * VERSION: 1.6
 * DATE: XX October 2017

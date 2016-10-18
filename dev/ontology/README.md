@@ -1,3 +1,3 @@
-Development copies of the SWO will go into this folder, such as owl files.
+# Software Ontology Development Files
 
-swo_core.owl file imports the other components. To get the full software ontology get all the files in this folder and load in swo_core.owl and the other will be imported in (may require some import resolving in Protege 3).
+Within the `dev/ontology` subdirectory, you will find a number of OWL files. These are the modular files used to build SWO, and can all be loaded together in Protege by simply opening `swo_core.owl`, as this file imports all others in the directory.
