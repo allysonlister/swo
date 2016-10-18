@@ -27,6 +27,7 @@
         <dc:creator>Duncan Hull</dc:creator>
         <dc:creator>Andy Brown</dc:creator>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
+        <rdfs:comment>The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, provenance and associated data. It contains SWO-specific classes and axioms as well as imported information from a variety of sources including OBI, IAO, BFO and EDAM. Please note that EDAM is imported as a whole and as such, some comments in the ontology header directly relate to EDAM only.</rdfs:comment>
         <obo:date>12.05.2016 18:23 GMT</obo:date>
         <edamontology1:next_id>3751</edamontology1:next_id>
         <dc:creator>Matúš Kalaš</dc:creator>
@@ -3586,22 +3587,6 @@ or of directed by the organization to do this.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:comment>Feature qualifiers hold information about a feature beyond that provided by the feature key and location.</rdfs:comment>
         <rdfs:label>Sequence feature qualifier</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://edamontology.org/data_1022 -->
-
-    <owl:Class rdf:about="http://edamontology.org/data_1022">
-        <owl:equivalentClass rdf:resource="http://edamontology.org/operation_3200"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <edamontology1:created_in>beta12orEarlier</edamontology1:created_in>
-        <oboInOwl:hasDefinition>A name of a sequence feature, e.g. the name of a feature to be displayed to an end-user. Typically an EMBL or Swiss-Prot feature label.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Sequence feature name</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <rdfs:comment>A feature label identifies a feature of a sequence database entry. When used with the database name and the entry&apos;s primary accession number, it is a unique identifier of that feature.</rdfs:comment>
-        <rdfs:label>Sequence feature label</rdfs:label>
     </owl:Class>
     
 
@@ -21743,7 +21728,6 @@ or of directed by the organization to do this.</obo:IAO_0000115>
         <edamontology1:obsolete_since>1.15</edamontology1:obsolete_since>
         <oboInOwl:hasDefinition>A name of a sequence feature, e.g. the name of a feature to be displayed to an end-user.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
-        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_1022"/>
         <rdfs:label>Sequence feature name</rdfs:label>
         <owl:deprecated>true</owl:deprecated>
     </owl:Class>
@@ -41017,22 +41001,6 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Split read mapping</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://edamontology.org/operation_3200 -->
-
-    <owl:Class rdf:about="http://edamontology.org/operation_3200">
-        <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-        <edamontology1:created_in>1.1</edamontology1:created_in>
-        <oboInOwl:hasDefinition>Analyse DNA sequences in order to identify a DNA &apos;barcode&apos;; marker genes or any short fragment(s) of DNA that are useful to diagnose the taxa of biological organisms.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Sample barcoding</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym>DNA barcoding</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Community profiling</rdfs:label>
     </owl:Class>
     
 
@@ -63406,12 +63374,6 @@ According to the GNU project, the Apache 2.0 license is better for substantial p
     <!-- http://www.w3.org/2002/07/owl#DeprecatedClass -->
 
     <owl:Class rdf:about="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#Nothing -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
     <rdf:Description>
         <swo:SWO_0000144 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></swo:SWO_0000144>
     </rdf:Description>
@@ -64121,9 +64083,9 @@ According to the GNU project, the Apache 2.0 license is better for substantial p
     <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#part_of">
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO Foundry RO</obo:IAO_0000119>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For continuants: C part_of C&apos; if and only if: given any c that instantiates C at a time t, there is some c&apos; such that c&apos; instantiates C&apos; at time t, and c *part_of* c&apos; at t. For processes: P part_of P&apos; if and only if: given any p that instantiates P at a time t, there is some p&apos; such that p&apos; instantiates P&apos; at time t, and p *part_of* p&apos; at t. (Here *part_of* is the instance-level part-relation.)</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This property can be used to describe related but independent members of a larger software package. In other cases, where parts of a larger software package are independent of one another in development but one piece of software executes another directly, please use &quot;uses software&quot;.</obo:IAO_0000115>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cytoscape plugins would be linked to the Cytoscape application via uses software, while Microsoft Excel is linked to Microsoft Office via has_part.</obo:IAO_0000112>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part of</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This property can be used to describe related but independent members of a larger software package. In other cases, where parts of a larger software package are independent of one another in development but one piece of software executes another directly, please use &quot;uses software&quot;.</obo:IAO_0000115>
     </rdf:Description>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
