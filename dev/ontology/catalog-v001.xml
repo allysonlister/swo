@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1479212220220" name="http://edamontology.org/" uri="edam.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479212220220" name="http://www.ebi.ac.uk/swo/" uri="swo_core.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479212220220" name="http://www.ebi.ac.uk/swo/algorithm/" uri="swo_algorithms.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479212220220" name="http://www.ebi.ac.uk/swo/data/" uri="swo_data.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479212220220" name="http://www.ebi.ac.uk/swo/interface/" uri="swo_interface.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479212220220" name="http://www.ebi.ac.uk/swo/license/" uri="swo_licenses.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479212220220" name="http://www.ebi.ac.uk/swo/maturity/" uri="swo_maturity.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479212220220" name="http://www.ebi.ac.uk/swo/objective/" uri="swo_objectives.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479212220220" name="http://www.ebi.ac.uk/swo/organization/" uri="swo_organizations.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479212220220" name="http://www.ebi.ac.uk/swo/version/" uri="swo_versions.owl"/>
+    </group>
+</catalog>
