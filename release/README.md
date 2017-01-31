@@ -3,7 +3,7 @@
 http://theswo.sourceforge.net
 
 * VERSION: 1.6
-* DATE: XX October 2017
+* DATE: 12 October 2016
 
 # Summary
 

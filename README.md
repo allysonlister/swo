@@ -1,6 +1,6 @@
 --------------------------------
 # The Software Ontology
-The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, provenance and associated data.
+The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, provenance and associated data. The latest version is 1.6, released October 2016.
 
 # Files
 
@@ -23,7 +23,7 @@ Within the release/ subdirectory are the various files that are published with e
 * swo_inferred.owl - a merged version of the Software Ontology which includes inferences over the axioms. That is, all inferences have been saved as asserted axioms in this version. This is the version to use in viewing the ontology in applications.
 * swo_merged.owl - a merged version of the Software Ontology in a single file, with no additional inferences. All SWO modules are simply concatenated into one file.
 
-In addition to this, each release is tagged with its release number using the `git tag` command and therefore you can access the individual modules as they were during a release simply by 
+In addition to this, each release is tagged with its release number using the `git tag` command and therefore you can access the individual modules as they were during a release. For more information on retrieving particular tagged versions, please see the section below, "Downloading a particular version of SWO". 
 
 # Release Policy
 
@@ -47,7 +47,7 @@ Simply clone the repository with `git clone` and then navigate to `swo/release`.
 
 ## Downloading a particular version of SWO
 
-In October 2016, the working version of SWO was moved from Sourceforge to GitHub. From this point on, each release was tagged. This section will show you how to retrieve releases from 1.5 onwards.
+In October 2016, the working version of SWO was moved from Sourceforge to GitHub (Release 1.6). From this point on, each release was tagged. This section will show you how to retrieve releases from 1.5 onwards.
 
 1. A list of tagged version can be found with the command
 
