@@ -1,6 +1,6 @@
 --------------------------------
 # The Software Ontology
-The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, provenance and associated data. The latest version is 1.6, released October 2016.
+The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, provenance and associated data. The latest version is 1.6, released 1 February 2017.
 
 # Files
 
