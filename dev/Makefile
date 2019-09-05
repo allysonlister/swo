@@ -24,39 +24,39 @@ robot_diff:
 # Creates a diff between RELNUM and PREVIOUS_RELNUM
 diff_release: check_relnum
 	test $(PREVIOUS_RELNUM)
-	robot_diff LEFT=$(RELEASE_TOP_DIR)/$(PREVIOUS_RELNUM)/SWO-$(PREVIOUS_RELNUM).owl RIGHT=$(RELEASE_FILE)
+	robot_diff LEFT=$(RELEASE_TOP_DIR)/$(PREVIOUS_RELNUM)/swo-$(PREVIOUS_RELNUM).owl RIGHT=$(RELEASE_FILE)
 
 ##
 ## Variables
 ##
 
 # ROBOT_REMOTE_LOCATION := https://build.berkeleybop.org/job/robot/lastSuccessfulBuild/artifact/bin/robot.jar
-ROBOT_REMOTE_LOCATION := https://github.com/ontodev/robot/releases/download/v1.4.0/robot.jar
+ROBOT_REMOTE_LOCATION := https://github.com/ontodev/robot/releases/download/v1.4.1/robot.jar
 ROBOT := java -jar build/robot.jar
 
 # The development file
-DEV_FILE := SRAO.owl
+DEV_FILE := ontology/swo_core.owl
 
 # Where all the files created by this makefile should go
 BUILD_DIR := build
 
 # The release name
-RELEASE_NAME := SRAO-$(RELNUM).owl
+RELEASE_NAME := swo-$(RELNUM).owl
 # The release directory
 RELEASE_TOP_DIR := ../release
 RELEASE_DIR := $(RELEASE_TOP_DIR)/$(RELNUM)
 
 # The standalone OWL file
-MERGE_FILE := $(BUILD_DIR)/SWO-merged.owl
+MERGE_FILE := $(BUILD_DIR)/swo-merged.owl
 # The standalone OWL file with release numbers added
 BUILD_RELFILE := $(BUILD_DIR)/$(RELEASE_NAME)
 # The release file in the release directory
 RELEASE_FILE := $(RELEASE_DIR)/$(RELEASE_NAME)
 
 # Various IRIs for the OWL files created within this Makefile
-MERGE_IRI := "http://www.fairsharing.org/ontology/SRAO-merged.owl"
-RELEASE_IRI := "http://www.fairsharing.org/ontology/SRAO.owl"
-RELEASE_VERSION_IRI := "http://www.fairsharing.org/ontology/$(RELEASE_NAME)"
+MERGE_IRI := "http://www.ebi.ac.uk/swo/swo-merged.owl"
+RELEASE_IRI := "http://www.ebi.ac.uk/swo/swo.owl"
+RELEASE_VERSION_IRI := "http://www.ebi.ac.uk/swo/$(RELEASE_NAME)"
 
 ##
 ## Targets

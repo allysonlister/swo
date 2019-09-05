@@ -23,7 +23,7 @@ Within the release/ subdirectory are the various files that are published with e
 * swo_inferred.owl - a merged version of the Software Ontology which includes inferences over the axioms. That is, all inferences have been saved as asserted axioms in this version. This is the version to use in viewing the ontology in applications.
 * swo_merged.owl - a merged version of the Software Ontology in a single file, with no additional inferences. All SWO modules are simply concatenated into one file.
 
-In addition to this, each release is tagged with its release number using the `git tag` command and therefore you can access the individual modules as they were during a release. For more information on retrieving particular tagged versions, please see the section below, "Downloading a particular version of SWO". 
+In addition to this, each release is tagged with its release number using the `git tag` command and therefore you can access the individual modules as they were during a release. For more information on retrieving particular tagged versions, please see the section below, "Downloading a particular version of SWO".
 
 # Release Policy
 
@@ -34,6 +34,8 @@ In addition to this, each release is tagged with its release number using the `g
 3. Classes that change their intended meaning significantly (i.e. they denote a new entity) will be assigned a new URI and the old URI will be made obsolete as per the above.
 
 4. A release notes file will be attached to each release as swo/release/README.md and will outline major changes to the ontology.
+
+Release files are created using [ROBOT](http://robot.obolibrary.org/) via a controlling [Makefile](development/Makefile).
 
 # Downloading Files
 
@@ -51,9 +53,9 @@ In October 2016, the working version of SWO was moved from Sourceforge to GitHub
 
 1. A list of tagged version can be found with the command
 
-> git tag -l 
+> git tag -l
 
-(The rest of this section is based on http://stackoverflow.com/questions/791959/download-a-specific-tag-with-git) 
+(The rest of this section is based on http://stackoverflow.com/questions/791959/download-a-specific-tag-with-git)
 
 If you wish to checkout a particular release, then you can clone the whole repository
 
