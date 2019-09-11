@@ -36,7 +36,6 @@
      xmlns:organization="http://www.ebi.ac.uk/swo/organization/"
      xmlns:edamontology1="http://edamontology.org#">
     <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/">
-        <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/algorithm/"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/interface/"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/license/"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/maturity/"/>
@@ -1409,15 +1408,51 @@ called clusters.</rdfs:comment>
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000010 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000010"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000011 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000011"/>
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000012 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000012"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000013 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000013"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000014 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000014"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000015 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000015"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000016 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000016"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000018 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000018"/>
     
 
 
@@ -2258,6 +2293,12 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000049 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000049"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000050 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000050">
@@ -2324,6 +2365,12 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
         <rdfs:label>obsolete_BED format</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000052 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000052"/>
     
 
 
@@ -2454,6 +2501,18 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000055 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000055"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000056 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000056"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000057 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000057"/>
@@ -2567,6 +2626,12 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000062 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000062"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000063 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000063">
@@ -2592,6 +2657,12 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BasReader 3.01</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000064 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000064"/>
     
 
 
@@ -3050,6 +3121,12 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000082 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000082"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000083 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000083"/>
@@ -3262,6 +3339,12 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000089 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000089"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000090 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000090">
@@ -3386,6 +3469,18 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000094 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000094"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000095 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000095"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000096 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000096">
@@ -3413,6 +3508,12 @@ The analysis includes normalization and data preprocessing, detection for differ
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARMAweb</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000097 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000097"/>
     
 
 
@@ -3829,6 +3930,12 @@ The analysis includes normalization and data preprocessing, detection for differ
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000106 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000106"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000107 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000107">
@@ -3842,6 +3949,12 @@ The analysis includes normalization and data preprocessing, detection for differ
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feature Extraction Software</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000108 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000108"/>
     
 
 
@@ -3950,6 +4063,18 @@ The analysis includes normalization and data preprocessing, detection for differ
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000113 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000113"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000114 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000114"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000115 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000115">
@@ -3985,6 +4110,12 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000117 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000117"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000118 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000118"/>
     
 
 
@@ -4114,6 +4245,12 @@ The analysis includes normalization and data preprocessing, detection for differ
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CodeLink Expression Scanning Software</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000123 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000123"/>
     
 
 
@@ -4290,6 +4427,18 @@ The analysis includes normalization and data preprocessing, detection for differ
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;DFP&apos;</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000127 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000127"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000128 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000128"/>
     
 
 
@@ -4545,6 +4694,18 @@ The analysis includes normalization and data preprocessing, detection for differ
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000135 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000135"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000137 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000137"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000138 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000138">
@@ -4592,6 +4753,12 @@ The analysis includes normalization and data preprocessing, detection for differ
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000141 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000141"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000142 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000142">
@@ -4605,6 +4772,12 @@ The analysis includes normalization and data preprocessing, detection for differ
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000143 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000143"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000144 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000144">
@@ -4615,6 +4788,18 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:label>obsolete_FCS</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000145 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000145"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000146 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000146"/>
     
 
 
@@ -4655,6 +4840,12 @@ The analysis includes normalization and data preprocessing, detection for differ
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000150 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000150"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000152 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000152">
@@ -4680,6 +4871,12 @@ The analysis includes normalization and data preprocessing, detection for differ
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GACK</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000153 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000153"/>
     
 
 
@@ -4896,6 +5093,12 @@ The analysis includes normalization and data preprocessing, detection for differ
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000162 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000162"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000163 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000163">
@@ -5031,6 +5234,12 @@ The analysis includes normalization and data preprocessing, detection for differ
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GLAD</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000165 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000165"/>
     
 
 
@@ -5172,6 +5381,12 @@ The analysis includes normalization and data preprocessing, detection for differ
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000169 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000169"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000170 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000170">
@@ -5309,6 +5524,24 @@ The analysis includes normalization and data preprocessing, detection for differ
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GSEAlm</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000172 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000172"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000173 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000173"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000174 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000174"/>
     
 
 
@@ -6470,6 +6703,12 @@ The analysis includes normalization and data preprocessing, detection for differ
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000212 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000212"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000213 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000213">
@@ -6654,6 +6893,48 @@ The analysis includes normalization and data preprocessing, detection for differ
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HEM</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000215 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000215"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000216 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000216"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000217 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000217"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000218 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000218"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000219 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000219"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000220 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000220"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000221 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000221"/>
     
 
 
@@ -6925,6 +7206,12 @@ The analysis includes normalization and data preprocessing, detection for differ
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000227 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000227"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000228 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000228">
@@ -6948,6 +7235,12 @@ The analysis includes normalization and data preprocessing, detection for differ
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICS-501 (version 2.3) Image Capture System</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000229 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000229"/>
     
 
 
@@ -7220,6 +7513,12 @@ The analysis includes normalization and data preprocessing, detection for differ
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000243 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000243"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000245 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000245">
@@ -7443,6 +7742,18 @@ The analysis includes normalization and data preprocessing, detection for differ
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000250 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000250"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000251 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000251"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000252 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000252">
@@ -7592,6 +7903,24 @@ The analysis includes normalization and data preprocessing, detection for differ
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LMGene</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000255 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000255"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000256 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000256"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000257 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000257"/>
     
 
 
@@ -7771,6 +8100,36 @@ The analysis includes normalization and data preprocessing, detection for differ
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000261 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000261"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000262 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000262"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000263 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000263"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000264 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000264"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000265 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000265"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000266 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000266">
@@ -7780,6 +8139,12 @@ The analysis includes normalization and data preprocessing, detection for differ
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAANOVA v1.2 package for MATLAB</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000267 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000267"/>
     
 
 
@@ -7933,6 +8298,24 @@ The analysis includes normalization and data preprocessing, detection for differ
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000276 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000276"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000277 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000277"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000278 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000278"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000279 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000279">
@@ -8033,6 +8416,12 @@ The analysis includes normalization and data preprocessing, detection for differ
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000281 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000281"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000282 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000282"/>
@@ -8095,6 +8484,12 @@ The analysis includes normalization and data preprocessing, detection for differ
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000284 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000284"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000285 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000285">
@@ -8148,6 +8543,12 @@ The analysis includes normalization and data preprocessing, detection for differ
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MVCClass</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000287 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000287"/>
     
 
 
@@ -8559,6 +8960,12 @@ The analysis includes normalization and data preprocessing, detection for differ
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000296 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000296"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000297 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000297">
@@ -8566,6 +8973,30 @@ The analysis includes normalization and data preprocessing, detection for differ
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MicroArraySuite 4.0</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000298 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000298"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000304 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000304"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000305 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000305"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000306 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000306"/>
     
 
 
@@ -8935,6 +9366,12 @@ The analysis includes normalization and data preprocessing, detection for differ
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000313 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000313"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000314 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000314">
@@ -8982,6 +9419,12 @@ The analysis includes normalization and data preprocessing, detection for differ
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PAnnBuilder</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000315 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000315"/>
     
 
 
@@ -9141,6 +9584,12 @@ The analysis includes normalization and data preprocessing, detection for differ
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000318 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000318"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000319 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000319">
@@ -9206,6 +9655,18 @@ The analysis includes normalization and data preprocessing, detection for differ
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PLPE</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000320 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000320"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000321 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000321"/>
     
 
 
@@ -9277,6 +9738,12 @@ The analysis includes normalization and data preprocessing, detection for differ
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000323 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000323"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000324 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000324">
@@ -9305,6 +9772,12 @@ The analysis includes normalization and data preprocessing, detection for differ
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000326 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000326"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000327 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000327">
@@ -9312,6 +9785,12 @@ The analysis includes normalization and data preprocessing, detection for differ
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Probe Cell Analysis</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000328 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000328"/>
     
 
 
@@ -9362,6 +9841,12 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QuantArray version 2</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000332 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000332"/>
     
 
 
@@ -9449,6 +9934,12 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000334 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000334"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000335 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000335">
@@ -9502,6 +9993,18 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RBioinf</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000336 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000336"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000337 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000337"/>
     
 
 
@@ -9562,6 +10065,18 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RLMM</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000339 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000339"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000340 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000340"/>
     
 
 
@@ -10310,6 +10825,12 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000364 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000364"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000365 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000365">
@@ -10528,6 +11049,18 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000371 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000371"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000372 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000372"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000373 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000373">
@@ -10583,9 +11116,9 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
 
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000374 -->
 
-    <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000374">
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000374">
         <rdfs:comment>Note: It is unclear from just the label what is meant by a SAM algorithm. It may or may not be related to the SAM sequence alignment software described by the class SWO_0000077 (Allyson Lister)</rdfs:comment>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -10929,6 +11462,12 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000386 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000386"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000387 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000387">
@@ -11062,6 +11601,12 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000389 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000389"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000390 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000390">
@@ -11108,6 +11653,12 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000391 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000391"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000393 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000393">
@@ -11120,6 +11671,12 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete_Information processing</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000398 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000398"/>
     
 
 
@@ -11440,6 +11997,12 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000423 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000423"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000424 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000424">
@@ -11456,6 +12019,18 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silicon Genetics Genespring</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000425 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000425"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000426 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000426"/>
     
 
 
@@ -11602,6 +12177,12 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000437 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000437"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000438 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000438">
@@ -11655,6 +12236,12 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TypeInfo</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000441 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000441"/>
     
 
 
@@ -11712,6 +12299,18 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VanillaICE</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000444 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000444"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000445 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000445"/>
     
 
 
@@ -12984,6 +13583,18 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000477 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000477"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000478 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000478"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000479 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000479">
@@ -13378,6 +13989,12 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000490 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000490"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000491 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000491">
@@ -13735,6 +14352,12 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000003"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dataset comparison</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000503 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000503"/>
     
 
 
@@ -14477,6 +15100,12 @@ tiple samples</obo:IAO_0000115>
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000524 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000524"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000525 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000525">
@@ -14797,6 +15426,12 @@ tiple samples</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;externalVector&apos;</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000531 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000531"/>
     
 
 
@@ -15816,6 +16451,12 @@ tiple samples</obo:IAO_0000115>
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000552 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000552"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000553 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000553">
@@ -16033,6 +16674,12 @@ tiple samples</obo:IAO_0000115>
         <rdfs:label>obsolete_gff format</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000560 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000560"/>
     
 
 
@@ -16399,6 +17046,12 @@ tiple samples</obo:IAO_0000115>
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000573 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000573"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000574 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000574">
@@ -16468,6 +17121,12 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000576 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000576"/>
     
 
 
@@ -16755,6 +17414,12 @@ tiple samples</obo:IAO_0000115>
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000584 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000584"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000585 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000585">
@@ -16778,6 +17443,24 @@ tiple samples</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete_jpeg</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000587 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000587"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000588 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000588"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000589 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000589"/>
     
 
 
@@ -16878,6 +17561,12 @@ tiple samples</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lapmix</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000592 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000592"/>
     
 
 
@@ -16988,6 +17677,18 @@ tiple samples</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">limmaGUI</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000595 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000595"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000597 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000597"/>
     
 
 
@@ -17129,6 +17830,12 @@ tiple samples</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">logitT</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000602 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000602"/>
     
 
 
@@ -17774,6 +18481,12 @@ tiple samples</obo:IAO_0000115>
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000614 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000614"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000615 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000615"/>
@@ -17881,6 +18594,12 @@ tiple samples</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mdqc</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000618 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000618"/>
     
 
 
@@ -18169,6 +18888,30 @@ tiple samples</obo:IAO_0000115>
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000626 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000626"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000627 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000627"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000628 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000628"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000629 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000629"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000630 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000630">
@@ -18222,6 +18965,12 @@ tiple samples</obo:IAO_0000115>
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000631 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000631"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000632 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000632">
@@ -18269,6 +19018,12 @@ tiple samples</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nem</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000633 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000633"/>
     
 
 
@@ -19548,6 +20303,12 @@ tiple samples</obo:IAO_0000115>
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000664 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000664"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000665 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000665">
@@ -19920,6 +20681,18 @@ tiple samples</obo:IAO_0000115>
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000673 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000673"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000674 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000674"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000675 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000675">
@@ -20205,6 +20978,18 @@ tiple samples</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rama</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000680 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000680"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000681 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000681"/>
     
 
 
@@ -20740,6 +21525,12 @@ tiple samples</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">siggenes</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000695 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000695"/>
     
 
 
@@ -21535,9 +22326,9 @@ tiple samples</obo:IAO_0000115>
 
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000713 -->
 
-    <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000713">
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000713">
         <obo:IAO_0000119>Modified from http://en.wikipedia.org/wiki/Statistical_test, accessed 9 May 2013; http://www.itl.nist.gov/div898/handbook/prc/section1/prc13.htm, accessed 9 May 2013.</obo:IAO_0000119>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -21574,6 +22365,12 @@ tiple samples</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stepNorm</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000715 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000715"/>
     
 
 
@@ -21881,6 +22678,12 @@ tiple samples</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nandini Badarinarayan</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">twilight</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000722 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000722"/>
     
 
 
@@ -27460,6 +28263,54 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:label>software before Microsoft 2007</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/algorithm/OntoDM_170075 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_170075"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/algorithm/SWO_4000004 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/SWO_4000004"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/algorithm/SWO_4000005 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/SWO_4000005"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/algorithm/SWO_4000006 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/SWO_4000006"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/algorithm/SWO_4000007 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/SWO_4000007"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/algorithm/SWO_4000008 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/SWO_4000008"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/algorithm/SWO_4000009 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/SWO_4000009"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/algorithm/SWO_4000010 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/SWO_4000010"/>
     
 
 
