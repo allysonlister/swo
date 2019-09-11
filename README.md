@@ -1,6 +1,6 @@
 --------------------------------
 # The Software Ontology
-The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, provenance and associated data. A new release (1.8) is currently in progress, and can be monitored at https://github.com/allysonlister/swo/milestone/1
+The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, provenance and associated data. A new release (1.7) is currently in progress, and can be monitored at https://github.com/allysonlister/swo/milestone/1
 
 # Files
 
@@ -34,4 +34,4 @@ Within the release/ subdirectory are the various files that are published with e
 
 Release files are created using [ROBOT](http://robot.obolibrary.org/) via a controlling [Makefile](development/Makefile).
 
-# Restructuring Prior to Release 1.8
+# Restructuring Prior to Release 1.7
