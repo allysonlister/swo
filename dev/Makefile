@@ -35,7 +35,7 @@ ROBOT_REMOTE_LOCATION := https://github.com/ontodev/robot/releases/download/v1.4
 ROBOT := java -jar build/robot.jar
 
 # The development file
-DEV_FILE := ontology/swo_core.owl
+DEV_FILE := ontology/swo.owl
 
 # Where all the files created by this makefile should go
 BUILD_DIR := build
