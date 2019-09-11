@@ -1,0 +1,483 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY ebi "http://www.ebi.ac.uk/" >
+    <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="&ebi;swo/version/"
+     xml:base="&ebi;swo/version/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:swo="&ebi;swo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ebi="http://www.ebi.ac.uk/">
+    <owl:Ontology rdf:about="&ebi;swo/version/">
+        <owl:versionInfo>0.4</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000131 -->
+
+    <owl:ObjectProperty rdf:about="&ebi;swo/SWO_0000131"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000132 -->
+
+    <owl:ObjectProperty rdf:about="&ebi;swo/SWO_0000132"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000129 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000129">
+        <rdfs:label>version name</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">IAO</obo:IAO_0000119>
+        <obo:IAO_0000115>A version number is an information content entity which is a sequence of characters borne by part of each of a class of manufactured products or its packaging and indicates its order within a set of other products having the same name.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000001 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000001">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>beta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000002 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000002">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>alpha</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000003 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000003">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>Microsoft 98 version</rdfs:label>
+        <swo:SWO_0000132 rdf:resource="&ebi;swo/version/SWO_2000004"/>
+        <swo:SWO_0000131 rdf:resource="&ebi;swo/version/SWO_2000006"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000004 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000004">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>Microsoft 2002 version</rdfs:label>
+        <swo:SWO_0000131 rdf:resource="&ebi;swo/version/SWO_2000003"/>
+        <swo:SWO_0000132 rdf:resource="&ebi;swo/version/SWO_2000005"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000005 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000005">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>Microsoft 2003 version</rdfs:label>
+        <swo:SWO_0000131 rdf:resource="&ebi;swo/version/SWO_2000004"/>
+        <swo:SWO_0000132 rdf:resource="&ebi;swo/version/SWO_2000007"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000006 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000006">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>Microsoft 95 version</rdfs:label>
+        <swo:SWO_0000132 rdf:resource="&ebi;swo/version/SWO_2000003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000007 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000007">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>Microsoft 2007 version</rdfs:label>
+        <swo:SWO_0000131 rdf:resource="&ebi;swo/version/SWO_2000005"/>
+        <swo:SWO_0000132 rdf:resource="&ebi;swo/version/SWO_2000008"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000008 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000008">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>Microsoft 2010 version</rdfs:label>
+        <swo:SWO_0000131 rdf:resource="&ebi;swo/version/SWO_2000007"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000009 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000009">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>version 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000010 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000010">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>version 4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000011 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000011">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>Matlab R14</rdfs:label>
+        <swo:SWO_0000131 rdf:resource="&ebi;swo/version/SWO_2000012"/>
+        <swo:SWO_0000132 rdf:resource="&ebi;swo/version/SWO_2000013"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000012 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000012">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>Matlab R12</rdfs:label>
+        <swo:SWO_0000132 rdf:resource="&ebi;swo/version/SWO_2000011"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000013 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000013">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>R2011a</rdfs:label>
+        <swo:SWO_0000131 rdf:resource="&ebi;swo/version/SWO_2000011"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000014 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000014">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>Microsoft XP</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000015 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000015">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>Excel 14</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000016 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000016">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>Windows 5.1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000017 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000017">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>3.5.1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000018 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000018">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>Adobe Acrobat 10.1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000019 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000019">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000020 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000020">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>3.0.1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000021 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000021">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>1.6.9</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000022 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000022">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>6.02</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000023 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000023">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>Helios Service Release 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000024 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000024">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>6.3.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000025 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000025">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>2.0.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000027 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000027">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">BLAST+ version 2.2.26</rdfs:label>
+        <dc:creator>Allyson Lister</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000028 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000028">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">ClustalW version 2.1</rdfs:label>
+        <dc:creator>Allyson Lister</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000029 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000029">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">ClustalX version 2.1</rdfs:label>
+        <dc:creator>Allyson Lister</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000030 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000030">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">Clustal Omega version 1.1</rdfs:label>
+        <dc:creator>Allyson Lister</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000031 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000031">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">MUSCLE version 3.8.31</rdfs:label>
+        <dc:creator>Allyson Lister</dc:creator>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000032 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000032">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">CRG TCoffee version 9.02.r1228</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000033 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000033">
+        <rdfs:label xml:lang="en">Python version 2.6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000034 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000034">
+        <rdfs:label xml:lang="en">Python version 2.7</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000035 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000035">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">4.2.2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000036 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000036">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">7.2.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/SWO_2000037 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/SWO_2000037">
+        <rdfs:label xml:lang="en">Segway version 1.2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/version/6.0 -->
+
+    <owl:NamedIndividual rdf:about="&ebi;swo/version/6.0">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label>Windows 6.0</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

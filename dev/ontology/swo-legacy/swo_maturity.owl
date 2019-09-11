@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="&swo;maturity/"
+     xml:base="&swo;maturity/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swo="http://www.ebi.ac.uk/swo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="&swo;maturity/">
+        <owl:versionInfo>0.4</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118">
+        <rdfs:label>alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119">
+        <rdfs:label>definition source</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000067 -->
+
+    <owl:ObjectProperty rdf:about="&swo;maturity/SWO_9000067">
+        <rdfs:label rdf:datatype="&xsd;string">has declared status</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">&apos;has declared status&apos; provides a way to assert the developmental status of a class, such as whether it is stable or under development. Is especially useful for software that might not be complete or stable yet, and when combined with version information.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">Allyson Lister</obo:IAO_0000119>
+        <rdfs:range rdf:resource="&swo;maturity/SWO_9000061"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000068 -->
+
+    <owl:DatatypeProperty rdf:about="&swo;maturity/SWO_9000068">
+        <rdfs:label>has release date</rdfs:label>
+        <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
+        <rdfs:comment rdf:datatype="&xsd;string">The official date of release of software</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000070 -->
+
+    <owl:DatatypeProperty rdf:about="&swo;maturity/SWO_9000070">
+        <rdfs:label>has support URL</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">A URL for a source of support information about software</rdfs:comment>
+        <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000030">
+        <rdfs:label>information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000061 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000061">
+        <rdfs:label rdf:datatype="&xsd;string">Development status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Development status is an information content entity which indicates the maturity of a sofrware entity within the context of the software life cycle.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000062 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000062">
+        <rdfs:label rdf:datatype="&xsd;string">alpha</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Alpha is a development status which is applied to software by the developer/publisher during initial development and testing. Software designated alpha is commonly unstable and prone to crashing. It may or may not be released publicly.</obo:IAO_0000115>
+        <obo:IAO_0000119>Modified from http://en.wikipedia.org/wiki/Software_release_life_cycle, accessed 11 June 2013.</obo:IAO_0000119>
+        <dc:creator>Allyson Lister</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000063 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000063">
+        <rdfs:label>beta</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Beta is a development status which is generally applied to software by the developer/publisher once the majority of features have been implemented, but when the software may still contain bugs or cause crashes or data loss. Software designated beta is often released publicly, either on a general release or to a specific subset of users called beta testers. </obo:IAO_0000115>
+        <obo:IAO_0000119>Modified from http://en.wikipedia.org/wiki/Software_release_life_cycle, accessed 11 June 2013.</obo:IAO_0000119>
+        <dc:creator>Allyson Lister</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000064 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000064">
+        <rdfs:label>Release candidate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000065 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000065">
+        <rdfs:label>Live</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Live is a development status which is applied to software that has been designated as suitable for production environments by the developer/publisher. If a non-free product, software at this stage is available for purchase</obo:IAO_0000115>
+        <obo:IAO_0000119>Allyson Lister, Jon Ison, and Modified from http://en.wikipedia.org/wiki/Software_release_life_cycle, accessed 11 June 2013.</obo:IAO_0000119>
+        <dc:creator>Allyson Lister</dc:creator>
+        <obo:IAO_0000118>Production</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000066 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000066">
+        <rdfs:label>Obsolete</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+        <owl:disjointWith rdf:resource="&swo;maturity/SWO_9000073"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Sofware is no longer being supplied by the developers/publishers</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000069 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000069">
+        <rdfs:label>Superseded</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An updated version of the software is available.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000071 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000071">
+        <rdfs:label>First release</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000065"/>
+        <dc:creator>James Malone</dc:creator>
+        <obo:IAO_0000115>The first release of a piece of software. A first release does not imply any particular levels of maturity other than is this is the first instance of this software to be considered released.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000072 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000072">
+        <rdfs:label>Latest release</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000065"/>
+        <obo:IAO_0000115>The latest release of a piece of software. This does not imply any levels of maturity other than indicating this is the most recent release.</obo:IAO_0000115>
+        <dc:creator>James Malone</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000073 -->
+
+    <owl:Class rdf:about="&swo;maturity/SWO_9000073">
+        <rdfs:label rdf:datatype="&xsd;string">Maintained</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo;maturity/SWO_9000061"/>
+        <dc:creator rdf:datatype="&xsd;string">Andy Brown</dc:creator>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Software has developers actively maintaining it (fixing bugs)</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&swo;maturity/SWO_9000062"/>
+            <rdf:Description rdf:about="&swo;maturity/SWO_9000063"/>
+            <rdf:Description rdf:about="&swo;maturity/SWO_9000064"/>
+            <rdf:Description rdf:about="&swo;maturity/SWO_9000065"/>
+            <rdf:Description rdf:about="&swo;maturity/SWO_9000066"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

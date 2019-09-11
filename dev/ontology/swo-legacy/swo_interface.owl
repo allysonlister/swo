@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY ebi "http://www.ebi.ac.uk/" >
+    <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="&ebi;swo/interface/"
+     xml:base="&ebi;swo/interface/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:swo="&ebi;swo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ebi="http://www.ebi.ac.uk/">
+    <owl:Ontology rdf:about="&ebi;swo/interface/">
+        <owl:versionInfo>0.4</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119">
+        <rdfs:label>definition source</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_9000050 -->
+
+    <owl:Class rdf:about="&ebi;swo/SWO_9000050">
+        <rdfs:label rdf:datatype="&xsd;string">software interface</rdfs:label>
+        <obo:IAO_0000115>The mode of interaction with a piece of software.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/interface/SWO_5000002 -->
+
+    <owl:Class rdf:about="&ebi;swo/interface/SWO_5000002">
+        <rdfs:label xml:lang="en">web user interface</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/interface/SWO_9000052"/>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">WUI</obo:IAO_0000118>
+        <dc:creator>Allyson Lister</dc:creator>
+        <obo:IAO_0000115>A Web User interface is a Graphical User Interface which is loaded and run via a Web browser rather than within the user&apos;s operating system.</obo:IAO_0000115>
+        <obo:IAO_0000118>Web UI</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/interface/SWO_5000003 -->
+
+    <owl:Class rdf:about="&ebi;swo/interface/SWO_5000003">
+        <rdfs:label xml:lang="en">desktop graphical user interface</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/interface/SWO_9000052"/>
+        <obo:IAO_0000118>Desktop GUI</obo:IAO_0000118>
+        <dc:creator>Allyson Lister</dc:creator>
+        <obo:IAO_0000115>A Desktop Graphical User interface is a Graphical User Interface which is loaded and run within the user&apos;s operating system rather than via a Web browser.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/interface/SWO_5000004 -->
+
+    <owl:Class rdf:about="&ebi;swo/interface/SWO_5000004">
+        <rdfs:label xml:lang="en">SOAP service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/interface/SWO_9000051"/>
+        <obo:IAO_0000119>Modified from http://en.wikipedia.org/wiki/SOAP, accessed 6 June 2013; modified from http://www.w3.org/TR/ws-arch, accessed 6 June 2013.</obo:IAO_0000119>
+        <dc:creator>Allyson Lister</dc:creator>
+        <obo:IAO_0000115>A SOAP service is a Web service which provides a standard, extensible, composable framework for packaging and exchanging XML messages. The service may expose an arbitrary, application-specific set of operations.</obo:IAO_0000115>
+        <obo:IAO_0000118>SOAP Service</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/interface/SWO_5000005 -->
+
+    <owl:Class rdf:about="&ebi;swo/interface/SWO_5000005">
+        <rdfs:label xml:lang="en">REST service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/interface/SWO_9000051"/>
+        <obo:IAO_0000119>Modified from http://www.w3.org/TR/ws-arch, accessed 6 June 2013, Modified from http://en.wikipedia.org/wiki/Web_service, accessed 6 June 2013.</obo:IAO_0000119>
+        <dc:creator>Allyson Lister</dc:creator>
+        <obo:IAO_0000115>A REST service is a Web service in which the primary purpose of the service is to manipulate XML representations of Web resources using a uniform set of &quot;stateless&quot; operations. RESTful APIs do not require XML-based web service protocols (SOAP and WSDL) to support their light-weight interfaces.</obo:IAO_0000115>
+        <obo:IAO_0000118>REST Service</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/interface/SWO_5000006 -->
+
+    <owl:Class rdf:about="&ebi;swo/interface/SWO_5000006">
+        <rdfs:label>JSON web service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/interface/SWO_9000051"/>
+        <obo:IAO_0000115>A web service in which calls invoked return JSON.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/interface/SWO_9000051 -->
+
+    <owl:Class rdf:about="&ebi;swo/interface/SWO_9000051">
+        <rdfs:label>web service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_9000050"/>
+        <obo:IAO_0000115>A web service is a software interface which works as a method of communication between two electronic devices over the World Wide Web and which is provided at a particular network address. There are two major classes of Web services: REST-compliant Web services, and arbitrary (or application-specific) Web services.</obo:IAO_0000115>
+        <obo:IAO_0000119>Modified from http://www.w3.org/TR/ws-arch/, accessed 6 June 2013; Modified from http://en.wikipedia.org/wiki/Web_service, accessed 6 June 2013.</obo:IAO_0000119>
+        <obo:IAO_0000118>Web Service</obo:IAO_0000118>
+        <dc:creator>Allyson Lister</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/interface/SWO_9000052 -->
+
+    <owl:Class rdf:about="&ebi;swo/interface/SWO_9000052">
+        <rdfs:label>graphical user interface</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_9000050"/>
+        <obo:IAO_0000115>A Graphical user interface is a type of software interface that allows users to interact with electronic devices using images rather than text commands. A GUI represents the information and actions available to a user through graphical icons and visual indicators such as secondary notation, as opposed to text-based interfaces, typed command labels or text navigation.</obo:IAO_0000115>
+        <obo:IAO_0000115>https://en.wikipedia.org/wiki/Graphical_user_interface, accessed 6 June 2013.</obo:IAO_0000115>
+        <dc:creator>Allyson Lister</dc:creator>
+        <obo:IAO_0000118>GUI</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/interface/SWO_9000053 -->
+
+    <owl:Class rdf:about="&ebi;swo/interface/SWO_9000053">
+        <rdfs:label>command-line interface</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_9000050"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A command-line interface is a means of interacting with a computer program where the user (or client) issues commands to the program in the form of successive lines of text (command lines).</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Command-line_interface, accessed 25 November 2014.</obo:IAO_0000119>
+        <obo:IAO_0000118>Command-line</obo:IAO_0000118>
+        <obo:IAO_0000118>Command line interface</obo:IAO_0000118>
+        <obo:IAO_0000118>Command line</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/interface/SWO_9000054 -->
+
+    <owl:Class rdf:about="&ebi;swo/interface/SWO_9000054">
+        <rdfs:label>application programming interface</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ebi;swo/SWO_9000050"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An application programming interface is a set of routines, protocols, and tools for building software applications. An API expresses a software component in terms of its operations, inputs, outputs, and underlying types. An API defines functionalities that are independent of their respective implementations, which allows definitions and implementations to vary without compromising each other. The API specifies how software components should interact.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Application_programming_interface, accessed 25 November 2014.</obo:IAO_0000119>
+        <obo:IAO_0000118>API</obo:IAO_0000118>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
