@@ -10,7 +10,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:edamontology="http://edamontology.org#">
-    <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/swo.owl">
+    <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/swo-merged.owl">
         <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/swo-external.owl"/>
     </owl:Ontology>
     
@@ -87,6 +87,12 @@
     
 
 
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#type -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    
+
+
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
@@ -130,6 +136,12 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000087 -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0000087"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/swo/SWO_0004000 -->
 
     <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0004000"/>
@@ -147,6 +159,12 @@
     <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0004004">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0040005 -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/swo/SWO_0040005"/>
     
 
 
@@ -353,6 +371,208 @@
     
 
 
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_511616 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_511616">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label>data visualization algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_545286 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_545286">
+        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_361570"/>
+        <rdfs:label>data cleaning algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_573276 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_573276">
+        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_361570"/>
+        <rdfs:label>data selection algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_776185 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_776185">
+        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_361570"/>
+        <rdfs:label>data integration algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_806059 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_806059">
+        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_361570"/>
+        <rdfs:label>data construction algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000034 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A generalization is a broad name for an output of a execution of a data mining algorithm on a specific dataset. A generalization specification is an informational entity that specifies the type of the generalization such as: decision trees, decision rules, neural networks, itemsets etc.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generalization specification of a directive informational entity class that specifies the type of generalization. It includes information about the types of data used to produced the generalization and the language in which the generalization is expressed.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OntoDM</obo:IAO_0000119>
+        <rdfs:label>generalization specification</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000034"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A generalization is a broad name for an output of a execution of a data mining algorithm on a specific dataset. A generalization specification is an informational entity that specifies the type of the generalization such as: decision trees, decision rules, neural networks, itemsets etc.</owl:annotatedTarget>
+        <swo:SWO_0000144></swo:SWO_0000144>
+    </owl:Axiom>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000037 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000037">
+        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000034"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A ensemble of generalizations specification is a generalization specification and denotes a type of generalization that is produced by a ensemble algorithm. This algorithm produces a set of generalizations at its output.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ensemble specification denotes a type of generalization which is an output of an execution of a ensemble algorithm. 
+Ensembles are sets of generalizations (have as parts single generalizations) with a defined procedure of their combination into a single generalization when executed in a process.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OntoDM</obo:IAO_0000119>
+        <rdfs:label>ensemble specification</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000037"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ensemble specification denotes a type of generalization which is an output of an execution of a ensemble algorithm. 
+Ensembles are sets of generalizations (have as parts single generalizations) with a defined procedure of their combination into a single generalization when executed in a process.</owl:annotatedTarget>
+        <swo:SWO_0000144></swo:SWO_0000144>
+    </owl:Axiom>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000038 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:comment>A data mining algorithm is an algorithm that has as its objective a data mining task and outputs as a result a generalization specified by a generalization specification.</rdfs:comment>
+        <rdfs:label>data mining algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000078 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000078">
+        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_419460"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A patten specification is a single generalization specification and denotes a pattern P on type T which is a boolean funtion on objects of type T.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pattern P on type T specifies a Boolean function on objects of type T, i.e., has the signature p :: T → bool. A pattern on type T is true or false on an object of type T. Frawley et al. (1991) define a pattern as a statement (expression) in a given language, that describes (relationships among) the facts in (a subset of) the data. In the broadest sense, the word pattern is used to describe the output of a variety of data mining algorithms and includes probability distributions, predictive models and clusters/clusterings; however, we restrict it here to the sense that it is most commonly used, i.e., in the sense of frequent pattern mining.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OntoDM</obo:IAO_0000119>
+        <rdfs:label>pattern specification</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000078"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pattern P on type T specifies a Boolean function on objects of type T, i.e., has the signature p :: T → bool. A pattern on type T is true or false on an object of type T. Frawley et al. (1991) define a pattern as a statement (expression) in a given language, that describes (relationships among) the facts in (a subset of) the data. In the broadest sense, the word pattern is used to describe the output of a variety of data mining algorithms and includes probability distributions, predictive models and clusters/clusterings; however, we restrict it here to the sense that it is most commonly used, i.e., in the sense of frequent pattern mining.</owl:annotatedTarget>
+        <swo:SWO_0000144></swo:SWO_0000144>
+    </owl:Axiom>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000228 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000228">
+        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_419460"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OntoDM</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A predictive model M for types Td, Tc specifies a function that takes an object of type Td and returns one of type Tc, i.e., has the signature m :: Td → Tc. Most often, predictive modelling is concerned with classification, where Tc would be Boolean (for binary classification) or Discrete(S) (for multi-class classification), or regression, where Tc would be Real. In our case, we allow both Td (description) and Tc (class/target) to be arbitrarily complex data types.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predictive model specification is a single generalization specification and denotes a type of generalization that represents a mapping taking objects of type Td and returns objects of type To.</obo:IAO_0000115>
+        <rdfs:label>predictive model specification</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000228"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A predictive model M for types Td, Tc specifies a function that takes an object of type Td and returns one of type Tc, i.e., has the signature m :: Td → Tc. Most often, predictive modelling is concerned with classification, where Tc would be Boolean (for binary classification) or Discrete(S) (for multi-class classification), or regression, where Tc would be Real. In our case, we allow both Td (description) and Tc (class/target) to be arbitrarily complex data types.</owl:annotatedTarget>
+        <swo:SWO_0000144></swo:SWO_0000144>
+    </owl:Axiom>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000253 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000253">
+        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_731692"/>
+        <rdfs:label>probability distribution estimation algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000285 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000285">
+        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_419460"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A probability distribution D on type T specifies a mapping from objects of type T to non-negative Reals, i.e., has the signature d :: T → R0+. For uncountably infinite types, probability densities are used instead. The sum of all probabilities (the integral of the probability densities) over T is constrained to amount to one.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A probability distribution specification is a single generalization specification and denotes a type of generalization that is a mapping from objects of type T to non-negative reals. This generalization is an output of a probability distribution estimation algorithm.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OntoDM</obo:IAO_0000119>
+        <rdfs:label>probability distribution specification</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000285"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A probability distribution D on type T specifies a mapping from objects of type T to non-negative Reals, i.e., has the signature d :: T → R0+. For uncountably infinite types, probability densities are used instead. The sum of all probabilities (the integral of the probability densities) over T is constrained to amount to one.</owl:annotatedTarget>
+        <swo:SWO_0000144></swo:SWO_0000144>
+    </owl:Axiom>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_361570 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_361570">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label>data processing algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_419460 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_419460">
+        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000034"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Examples of such generalization types are: decision trees, desicion rules, neural networks, frequent itemsets, clusters etc.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A single generalization specification is a generalization specification and denotes a type of generalization that is produced by a single generalization data mining algorithm. This algorithm produces only one generalization at its output.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OntoDM</obo:IAO_0000119>
+        <rdfs:label>single generalization specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_530819 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_530819">
+        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000038"/>
+        <owl:disjointWith rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_731692"/>
+        <rdfs:comment>Ensemble algorithms are algorithms that generate an ensemble when executed on a dataset. The ensemble algorithms include a specification of  single generalization algorithms which are executed in oreder to produce the single generalizations that compose the ensemble.
+
+Examples of ensemble algorithms include bagging, boosting, stacking, random forests, random subspaces,bagging of random subspaces etc.
+
+For example, bagging of decision trees algorithm includes the specification of a bagging algorithm and having a decision tree algorithm for generating the base models composing the ensemble.</rdfs:comment>
+        <rdfs:label>ensemble algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_731692 -->
+
+    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_731692">
+        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000038"/>
+        <rdfs:comment>single generalization algorithms are data mining algorithms that given a dataset on input produce a generalization at the output.</rdfs:comment>
+        <rdfs:label>single generalization algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
@@ -376,6 +596,21 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>An algorithm is a set of instructions for performing a paticular calculation.</obo:IAO_0000115>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An algorithm is a set of instructions for performing a paticular calculation.</owl:annotatedTarget>
+        <swo:SWO_0000144></swo:SWO_0000144>
+    </owl:Axiom>
     
 
 
@@ -409,11 +644,69 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000003 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-sample pooled t-test</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000006 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ACME algorithm is quite straightforward. Using a user-dened quantile of the data,called the threshold, any probes in the data that are above that threshold are considered positive probes. A p-value is then assigned to each probe.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;ACME&apos;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000010 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Average log expression across arrays (ALE)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000011 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALL/AML data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000012 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AMDIS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000013 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ANCOVA global test is a test for the association between expression values and clinical entities. The test is carried out by comparison of linear models via the extra sum of squares principle. If the mean expression level for at least one gene diers between corresponding models the global null hypothesis, which is the intersection of all single gene null hypotheses, is violated. FDR</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANCOVA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000014 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115>ANOVA or Analysis of Variance is a hypothesis testing algorithm which a variable is partitioned into components attributable to different sources of variation.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANNOVA</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;ANOVA&apos;</rdfs:label>
     </owl:Class>
     
 
@@ -427,11 +720,68 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000016 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARACNE algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000017 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000017">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000018 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AWS algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000049 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">binning clustering method- The algorithm uses single-linkage clustering to join compounds into similarity groups, where every member in a cluster shares with at least one other member a similarity value above a user-specified threshold. The algorithm is optimized for speed and memory
+eciency by avoiding the calculation of an all-against-all distance matrix.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Binning clustering method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000052 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BGL implements Depth First Search, Breadth First Search,Dijkstra&apos;s, Bellman Ford&apos;s and DAG,Johnson&apos;s and Floyd Warshall&apos;s.Kruskal&apos;s algorithm and Prim&apos;s algorithm Cuthill-McKee&apos;s algorithm Minimum degree Ordering</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BGL</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000055 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iterative Bayesian Model Averaging (BMA)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000056 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Base-Pair-Distance Kernel</rdfs:label>
     </owl:Class>
     
 
@@ -450,6 +800,43 @@
         <obo:IAO_0000119>http://www.affymetrix.com/support/developer/powertools/changelog/gcos-agcc/bpmap.html, accessed 22 May 2013.</obo:IAO_0000119>
         <dc:creator>Allyson Lister</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BPMAP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000062 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BaldiLongT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000064 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bayesian Model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000081 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The circular binary segmentation (CBS) algorithm divides the genome into regions of equal copy number . The algorithm tests for change-points using a maximal t-statistic with a permutation reference distribution to obtain the corresponding p-value. The number of computations required for the maximal test statistic is O(N^2),where N is the number of markers. This makes the full permutation approach computationally prohibitive for the newer arrays that contain tens of thousands markers and highlights the need for a faster algorithm.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CBS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000082 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CBS algorithm</rdfs:label>
     </owl:Class>
     
 
@@ -509,6 +896,101 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000089 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLR algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000091 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMA- it implements k-fold cross validation, MCMC cross validation, bootstrap and (t.test or welch.test or wilcox.test or f.test or kruskal.test or One-step Recursive Feature Elimination or random forest variable importance measure or lasso or elastic net or componentwise boosting)</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000094 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This algorithm offers improved confidence scores, quality scores for SNP’s and batches, higher accuracy on different datasets and better performance.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CRLMM algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000095 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000095">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Continuous Wavelet Transform (CWT)-based peak detection algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000097 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000097">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Category analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000106 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCMG- a bipartite graph in which one set of nodes represents proteins, the other set represents complexes, and an edge from a protein node to a complex node represents membership of the protein in that complex.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCMG</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000108 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chi-square</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000112 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCRANK is a method that takes a ranked list of genomic regions as input and outputs short DNA sequences that are overrepresented in some part of the list.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCRANK</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000113 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cosmo allows the user to target the motif search by specifying a set of constraints that the unknown position weight matrix must satisfy. The algorithm is based on a probabilistic model that describes the DNA sequences of interest through a two- component multinomial mixture model with estimates of the position weight matrix entries obtained by maximizing the observed data likelihood over the smaller parameter space corresponding to the imposed constraints. It includes methods such as Probabilistic models and one-occurrence-per-sequence and zero-or-one-occurrence-per-sequence and two-component mixture</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cosmo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000114 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F test</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000116 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000116">
@@ -527,11 +1009,67 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000118 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-linear functional regression model with both additive and multiplicative error terms</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non-linear functional regression model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000123 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Complex Estimation Algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000127 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000127">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A DFP version of a FP (fuzzy pattern) only includes those genes that can serve to differentiate it from the rest of the patterns.This algorithm is based on the discretization of float values (gene expression values) stored in an ExpressionSet object into labels combining &apos;Low&apos;, &apos;Medium&apos; and &apos;High&apos;</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discriminant Fuzzy Pattern Algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000128 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000128">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DFW</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000129 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000129">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digital gene expression (DGE) datasets</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000135 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000135">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expectation-Maximization(EM) algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000137 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000137">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Empirical Bayes rule</rdfs:label>
     </owl:Class>
     
 
@@ -544,6 +1082,78 @@
         <obo:IAO_0000119>http://www.bioconductor.org/packages/2.12/bioc/vignettes/prada/inst/doc/fcs3.html, accessed 29 May 2013.</obo:IAO_0000119>
         <dc:creator>Allyson Lister</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FACS data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000141 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FARMS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000143 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000143">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FC</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000145 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000145">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;FDR&apos;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000146 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000146">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fixed effect model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000148 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000148">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Firth&apos;s bias reduction procedure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000149 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000149">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fischer&apos;s Exact Test</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000150 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FoxDimmicT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000153 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000153">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GASSCO method</rdfs:label>
     </owl:Class>
     
 
@@ -566,11 +1176,165 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000162 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000162">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gamma Gamma Model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000165 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000165">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Modified version of the GLAD algorithm (Gain and Loss Analysis of DNA)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000169 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000169">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene Recommender algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000172 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000172">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gamma-Gamma hierarchical model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000173 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000173">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gaussian locally weighted regression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000174 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000174">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene-Set Enrichment Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000212 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000212">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hexagon binning algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000215 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000215">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heterogeneous Error Model (HEM)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000216 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000216">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hubert’s gamma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000217 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000217">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hidden Markov Model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000218 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000218">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hierarchical Ordered Partitioning and Collapsing Hybrid (HOPACH) algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000219 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000219">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Technique which predicts a given transcription factor activity and then uses this infor- mation to predict its targets.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hidden Variable Dynamic Modelling HVDM)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000220 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000220">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HaarSeg algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000221 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000221">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hardy-Weinberg equilibrium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000227 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000227">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypergeometric probability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000229 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000229">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iteratively ReWeighted Least Squares</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000233 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000233">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ILLUMINA data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000243 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000243">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jaccard’s index</rdfs:label>
     </owl:Class>
     
 
@@ -584,11 +1348,111 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000250 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000250">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;KLD&apos;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000251 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000251">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KS measures how biased the ranks of a subset of items are among the ranks of the entire set</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolmogorov Smirnov rank-sum based algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000253 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000253">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LC-MS data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000255 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000255">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Locally Moderated Weighted-t (LMW) method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000256 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000256">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lognormal Normal Model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000257 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000257">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lognormal Normal with Modied Variance Model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000261 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000261">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Langmuir Isotherm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000262 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000262">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laplace mixture model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000263 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000263">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Library Search Algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000264 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000264">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Loess algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000265 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000265">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Logic regression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000267 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000267">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Median Average Difference Algorithm</rdfs:label>
     </owl:Class>
     
 
@@ -602,6 +1466,43 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000276 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000276">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multivariate correlation estimator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000277 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000277">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Markov Chain Monte Carlo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000278 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000278">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">minimum common regions (MCR) algorithm- Minimal common regions (MCRs) are dened as contiguous spans having at least a recurrence rate dened by a parameter (recurrence) across samples.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCR algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000281 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000281">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;MI&apos;</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000282 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000282">
@@ -611,11 +1512,259 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000284 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000284">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MMD describes the distributions of gene expression levels directly via the marginal distributions. It includes EM algorithm, FDR, it is the percentage of nondifferentially expressed genes among selected genes), false non-discovery rate (denoted as FNDR; it is the percentage of differentially expressed genes among unselected genes),false positive rate (denoted as FPR; it is the percentage of selected genes among nondifferentially expressed genes), and false negative rate (denoted as FNR; it is the percentage of un-selected genes among differentially expressed genes),</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MMD</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000287 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000287">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mahalanobis distance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000296 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000296">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Misclassification-Penalized Posteriors (MiPP)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000298 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000298">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mixed model equations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000304 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000304">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Needleman-Wunsch&apos;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000305 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000305">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This includes exhaustive enumeration, triple-based inference,pairwise heuristic,  module based inference, greedy hillclimbing</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nested Effects Models</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000306 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000306">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nonlinear Estimation by Iterative Partial Least Squares</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000313 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000313">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Presence-Absence calls with Negative Probesets (PANP)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000315 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000315">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pearson correlation estimator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000318 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000318">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">it is where we fit a model with probe level and chip level parameters on a probeset by probeset basis</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;PLM&apos;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000320 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000320">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Probe level Locally moderated Weighted median-t (PLW) method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000321 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000321">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PPC algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000323 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000323">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Included are summarisation, differential expression detection, clustering and PCA methods, together with useful plotting and data manipulation functions</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Propagation of uncertainty in microarray analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000326 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000326">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Power Law Global Error Model (PLGEM) analysis method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000328 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000328">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PLIER (Probe Logarithmic Error Intensity Estimate) method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000332 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000332">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radial basis function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000334 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000334">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R interface to boost graph library algorithm (RBGL)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000336 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000336">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Random effects model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000337 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000337">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">for the Support Vector Machine (SVM), as presented in [3] and the Nearest Shrunken Centroid (NSC)</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recursive Feature Elimination (RFE)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000339 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000339">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regression model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000340 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000340">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RMA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000341 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000341">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RMA+</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000342 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000342">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RMA++</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000363 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000363">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rnw</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000364 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000364">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robust likelihood-based survival modeling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000371 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000371">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S-Score algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000372 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000372">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Serial Analysis of Gene Expression (SAGE)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000374 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000374">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAM</rdfs:label>
     </owl:Class>
     
 
@@ -634,6 +1783,50 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000381">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDF format</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000386 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000386">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNPRMA algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000389 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000389">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semantic Similarity Measures- Four methods proposed by Resnik[Philip, 1999], Jiang[Jiang and Conrath,
+1997], Lin[Lin, 1998] and Schlicker[Schlicker et al., 2006] respectively have
+presented to determine the semantic similarities of two GO terms based
+on the annotation statistics of their common ancestor terms. Wang [Wang
+et al., 2007] proposed a new method to measure the similarities based on
+the graph structure of GO.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semantic Similarity Measures</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000391 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000391">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SVDimpute algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000398 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000398">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classical multivariate analysis-of-variance tests perform poorly in cases with several highly correlated responses and the tests collapse when the number of responses exceeds the number of observations. This paper presents a new method which handles this problem. The dimensionality of the data is reduced by using principal component decompositions and the final tests are still based on the classical test statistics and their distributions. The methodology is illustrated with an example from the production of sausages with responses from near infrared reflectance spectroscopy. A closely related method for testing relationships in uniresponse regression with collinear explanatory variables is also presented. The new test, which is called the 50-50 F-test, uses the first k components to calculate SSMODEL. The next d components are not involved in SSERROR and they are called buffer components.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Langsrud, &amp;Oslash. (2002), 50-50 Multivariate Analysis of Variance for Collinear Responses, The Statistician, 51, 305-317.</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50-50 MANOVA algorithm</rdfs:label>
     </owl:Class>
     
 
@@ -665,6 +1858,69 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000423 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000423">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Signaling Pathway Impact Analysis (SPIA) algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000425 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000425">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Similarity score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000426 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000426">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Smith-Waterman&apos;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000437 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000437">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Theodore Ts’o’s</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000441 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000441">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Variance-stabilizing transformation (VST) algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000444 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000444">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WilcEbam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000445 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000445">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wilcoxon</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000449 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000449">
@@ -683,11 +1939,38 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000477 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000477">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Associative T method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000478 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000478">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AvgNRRs</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000484 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000484">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bitmap object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000490 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000490">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bootstrap</rdfs:label>
     </owl:Class>
     
 
@@ -715,6 +1998,15 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000498">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cls</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000503 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000503">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Concordance</rdfs:label>
     </owl:Class>
     
 
@@ -756,6 +2048,24 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000524 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000524">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dynamic programming algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000531 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000531">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">f-test</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000548 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000548">
@@ -765,11 +2075,30 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000552 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000552">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene array analysis algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000554 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000554">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene expression dataset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000560 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000560">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">global test allows the unit of analysis of the microarray experiment to be shifted from the single gene level to the pathway level, where a ‘pathway’ may be any set of genes, e.g. chosen using the Gene Ontology database or from earlier experiments.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Global test</rdfs:label>
     </owl:Class>
     
 
@@ -811,6 +2140,15 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000573 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000573">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hierarchical clustering</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000575 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000575">
@@ -820,11 +2158,83 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000576 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000576">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypergeometric enrichment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000584 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000584">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iterative local regression and model selection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000587 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000587">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">k-cores</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000588 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000588">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">k-means</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000589 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000589">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">k-nearest neighbour classification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000592 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000592">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Likelihood method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000595 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000595">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linear modelling</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000596 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000596">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000597 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000597">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Local-pooled-error</rdfs:label>
     </owl:Class>
     
 
@@ -847,6 +2257,24 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000602 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000602">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Logit-t algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000614 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000614">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;MAS5&apos;</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000615 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000615">
@@ -856,11 +2284,75 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000618 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000618">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M-estimation regression</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000620 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000620">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meta data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000626 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000626">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mrnet algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000627 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000627">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multinomial probit regression with Gaussian Process priors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000628 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000628">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multiple testing which includes controlling the family-wise error rate (FWER), generalized family-wise error rate (gFWER), tail probability of the proportion of false positives (TPPFP), and false discovery rate (FDR). Tests based on a variety of t- and F-statistics (including t-statistics based on regression parameters from linear and survival models as well as those based on correlation parameters) are included.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multiple testing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000629 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000629">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multivariate t mixture models</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000631 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000631">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Negative binomial distribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000633 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000633">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neural networks models</rdfs:label>
     </owl:Class>
     
 
@@ -901,11 +2393,56 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000664 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000664">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Position weight matrix (PWM )</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000670 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000670">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">qPCR data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000673 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000673">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quantile normalization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000674 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000674">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quantile regression techniques</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000680 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000680">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rank-invariant set normalization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000681 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000681">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rank product non-parametric method</rdfs:label>
     </owl:Class>
     
 
@@ -937,6 +2474,15 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000695 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000695">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sim method</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000708 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000708">
@@ -951,6 +2497,157 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000709">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000098"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sqlite</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000713 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000713">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A statistical test is an algorithm for making quantitative decisions to determine which outcomes of a study would lead to a rejection of the null hypothesis for a pre-specified level of significance.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistical tests</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000715 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000715">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;t-test&apos;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000722 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000722">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two-stage measurement error model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/algorithm/OntoDM_170075 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_170075">
+        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_731692"/>
+        <rdfs:label>clustering algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/algorithm/OntoDM_175260 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_175260">
+        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_731692"/>
+        <rdfs:label>pattern discovery algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/algorithm/OntoDM_382176 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_382176">
+        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_731692"/>
+        <rdfs:label>predictive modeling algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/algorithm/OntoDM_584946 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_584946">
+        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_419460"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clustering specification is a single generalization specification is a generalization specification and denotes a type of generalization that models the mapping of a set of objects S of type T from S to a set of natural numbers {1,...K}. This generalization is obtained by appliing a clustering algorithm on a set of data.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OntoDM</obo:IAO_0000119>
+        <rdfs:label>clustering specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/algorithm/SWO_4000004 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/SWO_4000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115>A stochastic algorithm for population pharmacology modeling</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.math.u-bordeaux1.fr/MAS10/DOC/PDF-PRES/Lavielle.pdf</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">SAEM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/algorithm/SWO_4000005 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/SWO_4000005">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Dynamic Bayesian Network model is a Bayesian Network which relates variables to each other over adjacent time steps.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Dynamic_Bayesian_network, accessed 27 November 2014.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">dynamic Bayesian network model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/algorithm/SWO_4000006 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/SWO_4000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, an ordinary differential equation or ODE is an equation containing a function of one independent variable and its derivatives. The term &quot;ordinary&quot; is used in contrast with the term partial differential equation which may be with respect to more than one independent variable.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ordinary Differential Equation Algorithm</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Ordinary_differential_equation, accessed 25 March 2015.</obo:IAO_0000119>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:creator>
+        <rdfs:label xml:lang="en">ODE Algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/algorithm/SWO_4000007 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/SWO_4000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gillespie&apos;s Stochastic Simulation Algorithm is an algorithm which generates a statistically correct trajectory (possible solution) of a stochastic equation. It can be used to simulate chemical or biochemical systems of reactions efficiently and accurately using limited computational power. The algorithm is particularly useful for simulating reactions within cells where the number of reagents typically number in the tens of molecules (or less). Mathematically, it is a variety of a dynamic Monte Carlo method and similar to the kinetic Monte Carlo methods. It is used heavily in computational systems biology</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Gillespie_algorithm, accessed 25 March 2015.</obo:IAO_0000119>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:creator>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gillespie&apos;s Stochastic Simulation Algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/algorithm/SWO_4000008 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/SWO_4000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monte Carlo is a discrete stochastic simulation algorithm and an estimation procedure algorithm. If it is necessary to know the average value of some random variable and its distribution can not be stated, and if it is possible to take samples from the distribution, we can estimate it by taking the samples, independently, and averaging them. If there are sufficiently enough samples, then the law of large numbers says the average must be close to the true value. The central limit theorem says that the average has a Gaussian distribution around the true value.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Stochastic_simulation#Monte_Carlo_simulation, accessed 25 March 2015, and http://www.async.ece.utah.edu/iBioSim/docs/iBioSim.html, accessed 25 March 2015.</obo:IAO_0000119>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:creator>
+        <rdfs:label xml:lang="en">Monte Carlo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/algorithm/SWO_4000009 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/SWO_4000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Differential Algebraic equations (DAEs) are a general form of (systems of) differential equations for vector–valued functions in one independent variable. In practical terms, the distinction between DAEs and ODEs is often that the solution of a DAE system depends on the derivatives of the input signal and not just the signal itself as in the case of ODEs.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">Differential Algebraic Equation Algorithm</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Differential_algebraic_equation, accessed 26 March 2015.</obo:IAO_0000119>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:creator>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DAE Algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/algorithm/SWO_4000010 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/SWO_4000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A partial differential equation (PDE) is a differential equation that contains unknown multivariable functions and their partial derivatives. This is in contrast to ordinary differential equations, which deal with functions of a single variable and their derivatives.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Partial Differential Equation Algorithm</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Partial_differential_equation, accessed 26 March 2015.</obo:IAO_0000119>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:creator>
+        <rdfs:label xml:lang="en">PDE Algorithm</rdfs:label>
     </owl:Class>
     
 
@@ -1809,6 +3506,12 @@ keep the language concise, consistent, intuitive and flexible.</obo:IAO_0000115>
     
 
 
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1855,6 +3558,25 @@ keep the language concise, consistent, intuitive and flexible.</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://edamontology.org/format_3008">
         <obo:IAO_0000118>.maf</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_170075"/>
+            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_175260"/>
+            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_382176"/>
+        </owl:members>
     </rdf:Description>
 </rdf:RDF>
 
