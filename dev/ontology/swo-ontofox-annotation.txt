@@ -1,0 +1,95 @@
+[URI of the OWL(RDF/XML) output file]
+http://www.ebi.ac.uk/swo/swo-external.owl
+
+
+[Source ontology]
+BFO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/BFO_0000023 # role
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001 # entity
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+## http://www.w3.org/2000/01/rdf-schema#label
+## http://purl.obolibrary.org/obo/IAO_0000115
+
+
+[Source ontology]
+IAO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/IAO_0000027 # data
+http://purl.obolibrary.org/obo/IAO_0000098 # data format specification
+http://purl.obolibrary.org/obo/IAO_0000064 # algorithm
+http://purl.obolibrary.org/obo/IAO_0000129 # version number
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001 # entity
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+## http://www.w3.org/2000/01/rdf-schema#label
+## http://purl.obolibrary.org/obo/IAO_0000115
+
+
+#### NOTES ON EDAM IMPORT ####
+##
+## This file contains the information required to pull out partial hierarchies
+## of EDAM for use within SWO.
+##
+##
+## General Note:
+## Please note that the use of includeComputedIntermediates means
+## that a cut-down hierarchy will be imported, where intermediate
+## parent classes with only one child are not included. However,
+## this may cause issues in future if other ontologies wish to import
+## both this ontology and others using EDAM. Therefore we will include the
+## complete hierarchy (via includeAllIntermediates) to align more completely
+## with EDAM's native structure.
+##
+## Where EDAM terms have been used in preference to now-obsolete SWO terms
+## (such as with Image data_2968) we have placed the EDAM terms within
+## the IAO hierarchy, as this is the hierarchy we use within SWO and we would
+## like to retain a single hierachy for similar concepts.
+##
+##
+
+[Source ontology]
+EDAM
+
+[Low level source term URIs]
+http://edamontology.org/data_2968 # Image
+http://edamontology.org/data_1636 # Heat map
+http://edamontology.org/data_2603 # Expression data
+http://edamontology.org/data_0582 # Ontology
+
+[Top level source term URIs and target direct superclass URIs]
+http://edamontology.org/data_2968 # Image
+subClassOf http://purl.obolibrary.org/obo/IAO_0000027 # IAO's (not EDAM's) Data
+http://edamontology.org/data_2603 # Expression data
+subClassOf http://purl.obolibrary.org/obo/IAO_0000027 # IAO's (not EDAM's) Data
+http://edamontology.org/data_0582 # Ontology
+subClassOf http://purl.obolibrary.org/obo/IAO_0000027 # IAO's (not EDAM's) Data
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+## includeAllAnnotationProperties
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+mapTo http://purl.obolibrary.org/obo/IAO_0000118
+http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym
+mapTo http://purl.obolibrary.org/obo/IAO_0000118
+http://www.geneontology.org/formats/oboInOwl#hasDefinition
+mapTo http://purl.obolibrary.org/obo/IAO_0000115
+## deliberately not including has_related_synonym as might be too broad
