@@ -36,7 +36,6 @@
      xmlns:organization="http://www.ebi.ac.uk/swo/organization/"
      xmlns:edamontology1="http://edamontology.org#">
     <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/">
-        <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/interface/"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/license/"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/maturity/"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/organization/"/>
@@ -28693,6 +28692,18 @@ tiple samples</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000073 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000073"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/interface/SWO_5000002 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/interface/SWO_5000002"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/interface/SWO_9000051 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/interface/SWO_9000051"/>
     
 
 
