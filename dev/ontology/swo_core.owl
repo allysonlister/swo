@@ -36,7 +36,6 @@
      xmlns:organization="http://www.ebi.ac.uk/swo/organization/"
      xmlns:edamontology1="http://edamontology.org#">
     <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/">
-        <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/maturity/"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/organization/"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/version/"/>
         <dc:creator>Allyson Lister</dc:creator>
@@ -691,6 +690,12 @@
     <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000068 -->
 
     <owl:DatatypeProperty rdf:about="http://www.ebi.ac.uk/swo/maturity/SWO_9000068"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/maturity/SWO_9000070 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ebi.ac.uk/swo/maturity/SWO_9000070"/>
     
 
 
