@@ -2588,10 +2588,11 @@ the graph structure of GO.</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_0000002 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000002">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A license is a legal instrument (usually by way of contract law, with or without printed material) governing the use or redistribution of the resource containing the license.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A licence is a legal instrument (usually by way of contract law, with or without printed material) governing the use or redistribution of the resource containing the licence.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Modified from http://en.wikipedia.org/wiki/Software_license</obo:IAO_0000119>
         <dc:creator>James Malone</dc:creator>
-        <rdfs:label xml:lang="en">license</rdfs:label>
+        <rdfs:label xml:lang="en">licence</rdfs:label>
     </owl:Class>
     
 
@@ -2600,9 +2601,9 @@ the graph structure of GO.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115>A licence clause is a component of a license which defines some aspect of a restriction or conversely permission in how something corresponding to a license may be legally redistributed, partially redistrubed, extended, modified or otherwise used in some way. </obo:IAO_0000115>
+        <obo:IAO_0000115>A licence clause is a component of a licence which defines some aspect of a restriction or conversely permission in how something corresponding to a licence may be legally redistributed, partially redistrubed, extended, modified or otherwise used in some way.</obo:IAO_0000115>
         <dc:creator>James Malone</dc:creator>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">license clause</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">licence clause</rdfs:label>
     </owl:Class>
     
 
