@@ -36,7 +36,6 @@
      xmlns:organization="http://www.ebi.ac.uk/swo/organization/"
      xmlns:edamontology1="http://edamontology.org#">
     <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/">
-        <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/license/"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/maturity/"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/organization/"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/version/"/>
@@ -28791,6 +28790,24 @@ tiple samples</obo:IAO_0000115>
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_1000047 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_1000047"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_1000057 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_1000057"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_1000061 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_1000061"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/swo/license/SWO_1000064 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_1000064">
@@ -28860,6 +28877,18 @@ According to the GNU project, the Apache 2.0 license is better for substantial p
     <!-- http://www.ebi.ac.uk/swo/license/SWO_9000082 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_9000082"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_9000084 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_9000084"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_9000085 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_9000085"/>
     
 
 
