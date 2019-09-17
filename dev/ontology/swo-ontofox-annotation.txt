@@ -7,6 +7,7 @@ BFO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/BFO_0000023 # role
+http://purl.obolibrary.org/obo/BFO_0000015 # process
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000001 # entity
@@ -93,3 +94,19 @@ mapTo http://purl.obolibrary.org/obo/IAO_0000118
 http://www.geneontology.org/formats/oboInOwl#hasDefinition
 mapTo http://purl.obolibrary.org/obo/IAO_0000115
 ## deliberately not including has_related_synonym as might be too broad
+
+
+[Source ontology]
+OBI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OBI_0000245 # organization
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001 # entity
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
