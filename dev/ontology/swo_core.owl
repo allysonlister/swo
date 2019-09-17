@@ -36,7 +36,6 @@
      xmlns:organization="http://www.ebi.ac.uk/swo/organization/"
      xmlns:edamontology1="http://edamontology.org#">
     <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/">
-        <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/organization/"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/version/"/>
         <dc:creator>Allyson Lister</dc:creator>
         <dc:creator>Andy Brown</dc:creator>
@@ -214,6 +213,12 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Please note that, as stated on one of the RO documentation pages (https://code.google.com/p/obo-relations/wiki/ROAndBFO), some of the relations RO makes use are either uncontroversial (non-temporalized) parts of BFO2, or will be incorporated in the future. In the case of BFO_0000060, it is not currently in BFO2, but may be in the future. The RO ontologists assume this is the transitive form. (Allyson Lister)</rdfs:comment>
         <rdfs:label>followed by</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056"/>
     
 
 
@@ -29329,6 +29334,156 @@ According to the GNU project, the Apache 2.0 license is better for substantial p
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000023 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000023"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000033 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000033"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000036 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000036"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000038 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000038"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000061 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000061"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000067 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000067"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000069 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000069"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000073 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000073"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000074 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000074"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000093 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000093"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000119 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000119"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000131 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000131"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000136 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000136"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000151 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000151"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000160 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000160"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000198 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000198"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000204 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000204"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000211 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000211"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000223 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000223"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000232 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000232"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000240 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000240"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000242 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000242"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000244 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000244"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000286 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000286"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000290 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000290"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000291 -->
 
     <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000291">
@@ -29341,6 +29496,66 @@ According to the GNU project, the Apache 2.0 license is better for substantial p
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000299 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000299"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000300 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000300"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000301 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000301"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000302 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000302"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000303 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000303"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000325 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000325"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000351 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000351"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000357 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000357"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000366 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000366"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000376 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000376"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000431 -->
 
     <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000431">
@@ -29350,6 +29565,48 @@ According to the GNU project, the Apache 2.0 license is better for substantial p
         <efo:reason_for_obsolescence>Stanford University (SWO_0000431 and SWO_9000003). SWO_9000003 was retained, while SWO_0000431 became an instance of obsolete class. Please use SWO_9000003 instead.</efo:reason_for_obsolescence>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete_Stanford University</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000433 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000433"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000436 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000436"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000439 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000439"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000440 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000440"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000443 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000443"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000492 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000492"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000743 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000743"/>
     
 
 
@@ -29425,9 +29682,75 @@ According to the GNU project, the Apache 2.0 license is better for substantial p
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000013 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000013"/>
+    
+
+
     <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000014 -->
 
     <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000014"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000015 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000015"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000016 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000016"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000017 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000017"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000019 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000019"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000060 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000060"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000061 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000061"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000062 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000062"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000063 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000063"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000064 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000064"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000065 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000065"/>
     
 
 
