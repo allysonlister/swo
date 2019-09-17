@@ -72,6 +72,9 @@ http://edamontology.org/data_2968 # Image
 http://edamontology.org/data_1636 # Heat map
 http://edamontology.org/data_2603 # Expression data
 http://edamontology.org/data_0582 # Ontology
+http://edamontology.org/operation_0224 # Query and retrieval
+http://edamontology.org/format_1936 # GenBank format
+http://edamontology.org/format_3239 # CopasiML
 
 [Top level source term URIs and target direct superclass URIs]
 http://edamontology.org/data_2968 # Image
@@ -80,6 +83,12 @@ http://edamontology.org/data_2603 # Expression data
 subClassOf http://purl.obolibrary.org/obo/IAO_0000027 # IAO's (not EDAM's) Data
 http://edamontology.org/data_0582 # Ontology
 subClassOf http://purl.obolibrary.org/obo/IAO_0000027 # IAO's (not EDAM's) Data
+http://edamontology.org/operation_0004 # operation (parent of Query and retrieval)
+subClassOf http://purl.obolibrary.org/obo/OBI_0200000 # data transformation
+http://edamontology.org/format_1936 # GenBank format
+subClassOf http://purl.obolibrary.org/obo/IAO_0000098 # data format specification
+http://edamontology.org/format_3239 # CopasiML
+subClassOf http://edamontology.org/format_2332 # XML
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -101,6 +110,7 @@ OBI
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/OBI_0000245 # organization
+http://purl.obolibrary.org/obo/OBI_0200000 # data transformation
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000001 # entity

@@ -961,15 +961,9 @@ called clusters.</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000007 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000007">
-        <owl:disjointWith rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the life of an organism, the process of sleeping, the process of cell-division</obo:IAO_0000112>
-        <obo:IAO_0000115>A processual entity that is a maximally connected spatiotemporal whole and has bona fide beginnings and endings corresponding to real discontinuities.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">process</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
     
 
 
@@ -1063,6 +1057,12 @@ called clusters.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organization</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200000"/>
     
 
 
@@ -23095,7 +23095,7 @@ tiple samples</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_0000003 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
         <obo:IAO_0000115>Information processing is a process in which input information is analysed or transformed in order to produce information as output.</obo:IAO_0000115>
         <obo:IAO_0000119>James Malone</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">information processing</rdfs:label>
@@ -25765,7 +25765,7 @@ tiple samples</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_0000083 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000083">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000115>This role can be borne by any software which is a plugin for another piece of software. It can be used, for example, with an axiom such as &quot;ParentSoftware &apos;uses software&apos; some (PluginSoftware has_role some Plugin)&quot;</obo:IAO_0000115>
         <dc:creator>Allyson Lister</dc:creator>
         <rdfs:label xml:lang="en">Plugin</rdfs:label>
@@ -29280,7 +29280,6 @@ According to the GNU project, the Apache 2.0 license is better for substantial p
     <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000055 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000055">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andy Brown</dc:creator>
     </owl:Class>
     
@@ -29289,7 +29288,6 @@ According to the GNU project, the Apache 2.0 license is better for substantial p
     <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000056 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000056">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andy Brown</dc:creator>
     </owl:Class>
     
@@ -29299,19 +29297,7 @@ According to the GNU project, the Apache 2.0 license is better for substantial p
 
     <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
-        <owl:disjointWith rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete SWO class</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Role">
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the role of a person as a surgeon, the role of a chemical compound in an experiment, the role of a patient relative as defined by a hospital administrative form, the role of a woman as a legal mother in the context of system of laws, the role of a biological grandfather as legal guardian in the context of a system of laws, the role of ingested matter in digestion, the role of a student in a university</obo:IAO_0000112>
-        <obo:IAO_0000115>A realizable entity the manifestation of which brings about some result or end that is not essential to a continuant in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant in some kinds of natural, social or institutional contexts.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">role</rdfs:label>
     </owl:Class>
     
 

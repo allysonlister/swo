@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://www.ebi.ac.uk/swo/swo-merged.owl#"
      xml:base="http://www.ebi.ac.uk/swo/swo-merged.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -11,6 +12,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:edamontology="http://edamontology.org#">
     <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/swo.owl">
+        <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/"/>
         <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/swo-external.owl"/>
     </owl:Ontology>
     
@@ -3560,10 +3562,12 @@ the graph structure of GO.</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/data/SWO_3000036 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000036">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115>An XML-based file format for use with the COPASI software.</obo:IAO_0000115>
         <obo:IAO_0000118>.cps</obo:IAO_0000118>
-        <rdfs:label>CopasiML</rdfs:label>
+        <efo:reason_for_obsolescence>AL 17.9.2019: The EDAM CopasiML (format_3239) was used elsewhere in SWO and therefore this class was no longer required.</efo:reason_for_obsolescence>
+        <rdfs:label>obsolete CopasiML</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
