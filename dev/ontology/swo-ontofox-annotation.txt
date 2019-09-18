@@ -68,11 +68,13 @@ includeAllAnnotationProperties
 EDAM
 
 [Low level source term URIs]
-http://edamontology.org/data_2968 # Image
+http://edamontology.org/data_0582 # Ontology
 http://edamontology.org/data_1636 # Heat map
 http://edamontology.org/data_2603 # Expression data
-http://edamontology.org/data_0582 # Ontology
+http://edamontology.org/data_2968 # Image
 http://edamontology.org/operation_0224 # Query and retrieval
+http://edamontology.org/operation_0362 # Genome annotation
+http://edamontology.org/operation_2426 # Modelling and simulation
 http://edamontology.org/format_1936 # GenBank format
 http://edamontology.org/format_3239 # CopasiML
 
@@ -83,8 +85,14 @@ http://edamontology.org/data_2603 # Expression data
 subClassOf http://purl.obolibrary.org/obo/IAO_0000027 # IAO's (not EDAM's) Data
 http://edamontology.org/data_0582 # Ontology
 subClassOf http://purl.obolibrary.org/obo/IAO_0000027 # IAO's (not EDAM's) Data
-http://edamontology.org/operation_0004 # operation (parent of Query and retrieval)
+
+http://edamontology.org/operation_0224 # Query and retrieval
 subClassOf http://purl.obolibrary.org/obo/OBI_0200000 # data transformation
+http://edamontology.org/operation_0362 # Genome annotation
+subClassOf http://purl.obolibrary.org/obo/OBI_0200000 # data transformation
+http://edamontology.org/operation_2426 # Modelling and simulation
+subClassOf http://purl.obolibrary.org/obo/OBI_0200000 # data transformation
+
 http://edamontology.org/format_1936 # GenBank format
 subClassOf http://purl.obolibrary.org/obo/IAO_0000098 # data format specification
 http://edamontology.org/format_3239 # CopasiML
