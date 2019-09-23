@@ -13,7 +13,7 @@ For example, the CC BY 4.0 licence contains the following axioms:
 ![CC BY 4.0 Axioms](images/cc-by-4.png)
 
 
-In addition to the licence classes and licence clause classes, we have created a number of defined classes which will group licenses according to the types of clauses they have upon inference with a reasoner. This allows multiple inferred hierarchies that group licences according to any number of axes such as open source licences, fee-based licences, and more. Additional defined classes to suit users can be added as required. 
+In addition to the licence classes and licence clause classes, we have created a number of defined classes which will group licenses according their clauses upon inference with a reasoner. This allows multiple inferred hierarchies that group licences according to any number of axes such as open source licences, fee-based licences, and more. Additional defined classes to suit users can be added as required. 
 
 ![Example Defined Classes](images/DefinedClasses.png)
 
