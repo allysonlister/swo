@@ -1,6 +1,10 @@
 --------------------------------
 # The Software Ontology
-The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, provenance and associated data. A new release (1.7) is currently in progress, and can be monitored at https://github.com/allysonlister/swo/milestone/1
+The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, licensing, provenance and associated data. A new release (1.7) is currently in progress, and can be monitored at https://github.com/allysonlister/swo/milestone/1
+
+# Licenses in SWO
+
+As part of SWO, we have developed a hierarchy of license types which can organize licenses based on their clauses. For more information on this work, please see the [LicenceHierarchy](LicenceHierarchy.md) page.
 
 # Files
 
@@ -14,13 +18,11 @@ Each directory contains a README describing its contents. Broadly, the `dev` dir
 
 ## Development files
 
-Within the `dev/ontology` subdirectory, you will find a number of OWL files. These are the modular files used to build SWO, and can all be loaded together in Protege by simply opening `swo.owl`, as this file imports all others in the directory.
+Within the `dev/ontology` subdirectory, you will find a number of OWL files. Details of these files can be found in the [ontology directory's README](dev/ontology/README.md).
 
 ## Release files
 
-Within the release/ subdirectory are the various files that are published with each SWO release. These include:
-
-*
+Within the release/ subdirectory are the various files that are published with each SWO release. This will change with the 1.7 release and this section will be updated at that time.
 
 # Release Policy
 
