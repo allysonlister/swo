@@ -1090,7 +1090,7 @@ or of directed by the organization to do this.</obo:IAO_0000115>
     <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000034 -->
 
     <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000034">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A generalization is a broad name for an output of a execution of a data mining algorithm on a specific dataset. A generalization specification is an informational entity that specifies the type of the generalization such as: decision trees, decision rules, neural networks, itemsets etc.</obo:IAO_0000115>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generalization specification of a directive informational entity class that specifies the type of generalization. It includes information about the types of data used to produced the generalization and the language in which the generalization is expressed.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OntoDM</obo:IAO_0000119>
