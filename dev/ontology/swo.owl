@@ -102,6 +102,16 @@ SWO is provided under a Creative Commons Attribution 4.0 International (CC BY 4.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001">
+        <obo:IAO_0000115 xml:lang="en">Use on obsolete terms, relating the term to another term that can be used as a substitute</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
+        <rdfs:label>term replaced by</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
@@ -24320,6 +24330,8 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115>Information processing is a process in which input information is analysed or transformed in order to produce information as output.</obo:IAO_0000115>
         <obo:IAO_0000119>James Malone</obo:IAO_0000119>
+        <obo:IAO_0100001 xml:lang="en">http://purl.obolibrary.org/obo/OBI_0200000</obo:IAO_0100001>
+        <efo:obsoleted_in_version xml:lang="en">1.7</efo:obsoleted_in_version>
         <efo:reason_for_obsolescence>AL 18.9.2019: This class is identical (based on its definition) with OBI &apos;data transformation&apos; and is no longer required.</efo:reason_for_obsolescence>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete information processing</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -24993,7 +25005,7 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0040005"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/objective/SWO_4000007"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/organization/SWO_9000056"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -29495,7 +29507,7 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0040005"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/objective/SWO_4000007"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/organization/SWO_9000056"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -30276,6 +30288,8 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115>An XML-based file format for use with the COPASI software.</obo:IAO_0000115>
         <obo:IAO_0000118>.cps</obo:IAO_0000118>
+        <obo:IAO_0100001 xml:lang="en">http://edamontology.org/format_3239</obo:IAO_0100001>
+        <efo:obsoleted_in_version xml:lang="en">1.7</efo:obsoleted_in_version>
         <efo:reason_for_obsolescence>AL 17.9.2019: The EDAM CopasiML (format_3239) was used elsewhere in SWO and therefore this class was no longer required.</efo:reason_for_obsolescence>
         <rdfs:label>obsolete CopasiML</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -36974,8 +36988,12 @@ According to the GNU project, the Apache 2.0 license is better for substantial p
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_4000007 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_4000007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
-        <rdfs:label>software development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0100001 xml:lang="en">http://www.ebi.ac.uk/swo/organization/SWO_9000056</obo:IAO_0100001>
+        <efo:obsoleted_in_version xml:lang="en">1.7</efo:obsoleted_in_version>
+        <efo:reason_for_obsolescence xml:lang="en">AL 24.9.2019: Duplicate of http://www.ebi.ac.uk/swo/organization/SWO_9000056</efo:reason_for_obsolescence>
+        <rdfs:label xml:lang="en">obsolete software development</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -37051,6 +37069,8 @@ According to the GNU project, the Apache 2.0 license is better for substantial p
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_4000015">
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0100001 xml:lang="en">http://edamontology.org/operation_2426</obo:IAO_0100001>
+        <efo:obsoleted_in_version xml:lang="en">1.7</efo:obsoleted_in_version>
         <efo:reason_for_obsolescence>AL 18.9.2019: Redundant with EDAM &apos;Modelling and simulation&apos;.</efo:reason_for_obsolescence>
         <rdfs:label>obsolete modelling</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -37285,10 +37305,11 @@ According to the GNU project, the Apache 2.0 license is better for substantial p
     <!-- http://www.ebi.ac.uk/swo/organization/SWO_9000056 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000056">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
         <obo:IAO_0000115>The process of developing software, typically involving the design, implementation and testing of software.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andy Brown</dc:creator>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">software development process</rdfs:label>
+        <rdfs:comment xml:lang="en">AL 24.9.19: Merged the now-obsolete http://www.ebi.ac.uk/swo/objective/SWO_4000007 into this class as they were describing the same concept. See also https://github.com/allysonlister/swo/issues/2</rdfs:comment>
+        <rdfs:label>software development</rdfs:label>
     </owl:Class>
     
 
