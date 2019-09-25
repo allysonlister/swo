@@ -1338,9 +1338,13 @@ For example, bagging of decision trees algorithm includes the specification of a
     <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_953101 -->
 
     <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_953101">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
+        <obo:IAO_0100001>http://purl.obolibrary.org/obo/OBI_0200111</obo:IAO_0100001>
+        <efo:obsoleted_in_version rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.7</efo:obsoleted_in_version>
+        <efo:reason_for_obsolescence>AL 25.9.19: Already obsoleted in originating ontology (OntoDM) so added here so people could see the history of the term.</efo:reason_for_obsolescence>
         <rdfs:comment>data visualization task is information processing objective achieved by a data visualization algorithm execution process.</rdfs:comment>
         <rdfs:label>data visualization task</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23987,8 +23991,11 @@ tiple samples</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000724 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000724">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data visualization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0100001 xml:lang="en">http://purl.obolibrary.org/obo/OBI_0200111</obo:IAO_0100001>
+        <efo:reason_for_obsolescence xml:lang="en">AL 25.9.19: Redundant with the OBI class of the same name</efo:reason_for_obsolescence>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete data visualization</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
