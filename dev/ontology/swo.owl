@@ -1483,6 +1483,12 @@ For example, bagging of decision trees algorithm includes the specification of a
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0200111 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200111"/>
+    
+
+
     <!-- http://urigen_local_uri/963a1b3b-49f2-4ef9-8f37-5e9cd5403b2a/http://www.ebi.ac.uk/swo/data/SWO_3000069 -->
 
     <owl:Class rdf:about="http://urigen_local_uri/963a1b3b-49f2-4ef9-8f37-5e9cd5403b2a/http://www.ebi.ac.uk/swo/data/SWO_3000069">
@@ -7520,7 +7526,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0040005"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200111"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -7788,7 +7794,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0040005"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200111"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Add an extra graphical display at the bottom of a heat map, indicating for each column a) whether it has one of several binary properties or not, and b) the value of a quantitative variable. A cutting threshold for the sample dendrogram can also be specified, and the resulting clustering of the columns is indicated by coloring both the dendrogram and the extra variable display.</obo:IAO_0000115>
@@ -7860,7 +7866,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0040005"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200111"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -7938,7 +7944,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0040005"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200111"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interactive tool to visualize long vectors of integer data by means of Hilbert curves</obo:IAO_0000115>
@@ -9007,7 +9013,7 @@ The analysis includes normalization and data preprocessing, detection for differ
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200111"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000015"/>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -9364,7 +9370,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0040005"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200111"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creates classes used in model-view-controller (MVC) design</obo:IAO_0000115>
@@ -10039,7 +10045,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0040005"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200111"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -10794,7 +10800,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0040005"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200111"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11608,7 +11614,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200111"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000015"/>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -12372,7 +12378,7 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200111"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000017"/>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -12418,8 +12424,8 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200111"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000467"/>
-                            <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000017"/>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -17868,7 +17874,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200111"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000017"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000018"/>
                         </owl:intersectionOf>
@@ -18128,7 +18134,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200111"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000015"/>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -18199,8 +18205,8 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200111"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000110"/>
-                            <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000005"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000016"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000018"/>
@@ -19076,7 +19082,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200111"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000011"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000015"/>
                         </owl:intersectionOf>
@@ -19136,7 +19142,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200111"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000018"/>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -19335,8 +19341,8 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200111"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000110"/>
-                            <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000017"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000018"/>
                         </owl:intersectionOf>
@@ -20556,7 +20562,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200111"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000011"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000015"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000016"/>
@@ -20856,7 +20862,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200111"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000018"/>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -20919,7 +20925,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200111"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000013"/>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -21930,7 +21936,7 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0040005"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200111"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quantile smoothing and genomic visualization of array data</obo:IAO_0000115>
@@ -22464,7 +22470,7 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0040005"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200111"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -23034,7 +23040,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200111"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000010"/>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -23104,7 +23110,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200111"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000017"/>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -23305,7 +23311,7 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0040005"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200111"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -23486,7 +23492,7 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0040005"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200111"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -23652,7 +23658,7 @@ tiple samples</obo:IAO_0000115>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000724"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200111"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000011"/>
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000015"/>
                         </owl:intersectionOf>
@@ -23993,8 +23999,9 @@ tiple samples</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000724">
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0100001 xml:lang="en">http://purl.obolibrary.org/obo/OBI_0200111</obo:IAO_0100001>
-        <efo:reason_for_obsolescence xml:lang="en">AL 25.9.19: Redundant with the OBI class of the same name</efo:reason_for_obsolescence>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete data visualization</rdfs:label>
+        <efo:obsoleted_in_version xml:lang="en">1.7</efo:obsoleted_in_version>
+        <efo:reason_for_obsolescence xml:lang="en">AL 25.9.19: Redundant with http://purl.obolibrary.org/obo/OBI_0200111</efo:reason_for_obsolescence>
+        <rdfs:label xml:lang="en">obsolete data visualization</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -26781,7 +26788,7 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0040005"/>
-                <owl:someValuesFrom rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_953101"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200111"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Data analysis software which performs a variety of statistical, summarising, analytical and visualization tasks. </obo:IAO_0000115>
@@ -26841,7 +26848,7 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0040005"/>
-                <owl:someValuesFrom rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_953101"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200111"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Data analysis software which performs a variety of statistical, summarising, analytical and visualization tasks. </obo:IAO_0000115>
@@ -26940,7 +26947,7 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0040005"/>
-                <owl:someValuesFrom rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_953101"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200111"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
