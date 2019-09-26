@@ -1105,188 +1105,6 @@ or of directed by the organization to do this.</obo:IAO_0000115>
     
 
 
-    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000037 -->
-
-    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000037">
-        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000034"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A ensemble of generalizations specification is a generalization specification and denotes a type of generalization that is produced by a ensemble algorithm. This algorithm produces a set of generalizations at its output.</obo:IAO_0000115>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ensemble specification denotes a type of generalization which is an output of an execution of a ensemble algorithm. 
-Ensembles are sets of generalizations (have as parts single generalizations) with a defined procedure of their combination into a single generalization when executed in a process.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OntoDM</obo:IAO_0000119>
-        <rdfs:label>ensemble specification</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000037"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ensemble specification denotes a type of generalization which is an output of an execution of a ensemble algorithm. 
-Ensembles are sets of generalizations (have as parts single generalizations) with a defined procedure of their combination into a single generalization when executed in a process.</owl:annotatedTarget>
-        <swo:SWO_0000144></swo:SWO_0000144>
-    </owl:Axiom>
-    
-
-
-    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000038 -->
-
-    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000038">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
-        <rdfs:comment>A data mining algorithm is an algorithm that has as its objective a data mining task and outputs as a result a generalization specified by a generalization specification.</rdfs:comment>
-        <rdfs:label>data mining algorithm</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000078 -->
-
-    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000078">
-        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_419460"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A patten specification is a single generalization specification and denotes a pattern P on type T which is a boolean funtion on objects of type T.</obo:IAO_0000115>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pattern P on type T specifies a Boolean function on objects of type T, i.e., has the signature p :: T → bool. A pattern on type T is true or false on an object of type T. Frawley et al. (1991) define a pattern as a statement (expression) in a given language, that describes (relationships among) the facts in (a subset of) the data. In the broadest sense, the word pattern is used to describe the output of a variety of data mining algorithms and includes probability distributions, predictive models and clusters/clusterings; however, we restrict it here to the sense that it is most commonly used, i.e., in the sense of frequent pattern mining.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OntoDM</obo:IAO_0000119>
-        <rdfs:label>pattern specification</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000078"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pattern P on type T specifies a Boolean function on objects of type T, i.e., has the signature p :: T → bool. A pattern on type T is true or false on an object of type T. Frawley et al. (1991) define a pattern as a statement (expression) in a given language, that describes (relationships among) the facts in (a subset of) the data. In the broadest sense, the word pattern is used to describe the output of a variety of data mining algorithms and includes probability distributions, predictive models and clusters/clusterings; however, we restrict it here to the sense that it is most commonly used, i.e., in the sense of frequent pattern mining.</owl:annotatedTarget>
-        <swo:SWO_0000144></swo:SWO_0000144>
-    </owl:Axiom>
-    
-
-
-    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000087 -->
-
-    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000087">
-        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000098"/>
-        <rdfs:comment>Estimating the (Joint) Probability Distribution. A set of data (of type
-T) is often assumed to be a sample taken from a population according to a
-probability distribution. A probability distribution/density function assigns a
-non-negative probability/density to each object of type T. Probably the most
-general data mining task (Hand et al. 2001) is the task of estimating the (joint)
-probability distribution D over type T from a set of data items or a sample
-drawn from that distribution.
-As mentioned above, in the most typical case we would have T = Tuple(T1,
-. . ., Tk), where each of T1, . . ., Tk is Boolean, Discrete(S) or Real. We talk about
-the joint probability distribution to emphasize the difference to the marginal
-distributions of each of the variables of type T1, . . ., Tk: the joint distribution
-captures the interactions among the variables.
-Representing multi-variate distributions is a non-trivial task. Two approaches
-are commonly used in data mining. In the density-based clustering paradigm,
-mixtures of multi-variate Gaussian distributions are typically considered (Hand
-et al. 2001). Probabilistic graphical models, most notably Bayesian networks,
-represent graphically the (in)dependencies between the variables: Learning their
-structure and parameters is an important approach to the problem of estimating
-the joint probability distribution.</rdfs:comment>
-        <rdfs:label>probability distribution estimation task</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000092 -->
-
-    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000092">
-        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000098"/>
-        <rdfs:comment>the task of pattern discovery is to find all local patterns from a given
-pattern language that satisfy the required conditions. A prototypical instantiation
-of this task is the task of finding frequent itemsets (sets of items, such as
-{bread, butter}), which are often found together in a transaction (e.g., a market
-basket) (Aggrawal et al 1993). The condition that a pattern (itemset) has to
-satisfy in this case is to appear in (hold true for) a sufficiently high proportion
-(called support and denoted by s) of the transactions in the input dataset.
-With the increasing interest in mining complex data, mining frequent patterns
-is also considered for structured data. We can thus talk about mining frequent
-subsequences or mining frequent subgraphs in sequence or graph data. We can
-consider as frequency the multiple occurrences of a pattern in a single data
-structure (e.g., sequence or graph) or the single occurrences of a pattern in
-multiple data structures.</rdfs:comment>
-        <rdfs:label>pattern discovery task</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000098 -->
-
-    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000098">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
-        <rdfs:comment>A data mining task is an objective specification that specifies the objective that a data mining algorithm needs to achieve when executed on a dataset to produce as output a generalization.</rdfs:comment>
-        <rdfs:label>data mining task</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000228 -->
-
-    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000228">
-        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_419460"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OntoDM</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A predictive model M for types Td, Tc specifies a function that takes an object of type Td and returns one of type Tc, i.e., has the signature m :: Td → Tc. Most often, predictive modelling is concerned with classification, where Tc would be Boolean (for binary classification) or Discrete(S) (for multi-class classification), or regression, where Tc would be Real. In our case, we allow both Td (description) and Tc (class/target) to be arbitrarily complex data types.</obo:IAO_0000115>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predictive model specification is a single generalization specification and denotes a type of generalization that represents a mapping taking objects of type Td and returns objects of type To.</obo:IAO_0000115>
-        <rdfs:label>predictive model specification</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000228"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A predictive model M for types Td, Tc specifies a function that takes an object of type Td and returns one of type Tc, i.e., has the signature m :: Td → Tc. Most often, predictive modelling is concerned with classification, where Tc would be Boolean (for binary classification) or Discrete(S) (for multi-class classification), or regression, where Tc would be Real. In our case, we allow both Td (description) and Tc (class/target) to be arbitrarily complex data types.</owl:annotatedTarget>
-        <swo:SWO_0000144></swo:SWO_0000144>
-    </owl:Axiom>
-    
-
-
-    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000235 -->
-
-    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000235">
-        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000098"/>
-        <rdfs:comment>Learning a (Probabilistic) Predictive Model. In this task, we are given
-a dataset that consists of examples of the form (d, c), where each d is of type
-Td and each c is of type Tc. We will refer to d as the description and c as the
-class or target. To learn a predictive model means to find a mapping from the
-description to the target, m :: Td → Tc, that fits the data closely. This means
-that the observed target values and the target values predicted by the model,
-i.e., c and ˆc = m(d), have to match closely.</rdfs:comment>
-        <rdfs:label>predictive modeling task</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000253 -->
-
-    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000253">
-        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_731692"/>
-        <rdfs:label>probability distribution estimation algorithm</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000264 -->
-
-    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000264">
-        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000098"/>
-        <rdfs:comment>Clustering. Clustering in general is concerned with grouping objects into classes
-of similar objects (Kaufman and Rousseeuw 1990). Given a set of examples (object
-descriptions), the task of clustering is to partition these examples into subsets,
-called clusters.</rdfs:comment>
-        <rdfs:label>clustering task</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_000285 -->
-
-    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000285">
-        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_419460"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A probability distribution D on type T specifies a mapping from objects of type T to non-negative Reals, i.e., has the signature d :: T → R0+. For uncountably infinite types, probability densities are used instead. The sum of all probabilities (the integral of the probability densities) over T is constrained to amount to one.</obo:IAO_0000115>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A probability distribution specification is a single generalization specification and denotes a type of generalization that is a mapping from objects of type T to non-negative reals. This generalization is an output of a probability distribution estimation algorithm.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OntoDM</obo:IAO_0000119>
-        <rdfs:label>probability distribution specification</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000285"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A probability distribution D on type T specifies a mapping from objects of type T to non-negative Reals, i.e., has the signature d :: T → R0+. For uncountably infinite types, probability densities are used instead. The sum of all probabilities (the integral of the probability densities) over T is constrained to amount to one.</owl:annotatedTarget>
-        <swo:SWO_0000144></swo:SWO_0000144>
-    </owl:Axiom>
-    
-
-
     <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_361570 -->
 
     <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_361570">
@@ -1294,43 +1112,6 @@ called clusters.</rdfs:comment>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</obo:IAO_0000119>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data processing algorithm is an algorithm that has as its objective a data processing task and has data items both as input and output.</rdfs:comment>
         <rdfs:label>data processing algorithm</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_419460 -->
-
-    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_419460">
-        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000034"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Examples of such generalization types are: decision trees, desicion rules, neural networks, frequent itemsets, clusters etc.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A single generalization specification is a generalization specification and denotes a type of generalization that is produced by a single generalization data mining algorithm. This algorithm produces only one generalization at its output.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OntoDM</obo:IAO_0000119>
-        <rdfs:label>single generalization specification</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_530819 -->
-
-    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_530819">
-        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000038"/>
-        <owl:disjointWith rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_731692"/>
-        <rdfs:comment>Ensemble algorithms are algorithms that generate an ensemble when executed on a dataset. The ensemble algorithms include a specification of  single generalization algorithms which are executed in oreder to produce the single generalizations that compose the ensemble.
-
-Examples of ensemble algorithms include bagging, boosting, stacking, random forests, random subspaces,bagging of random subspaces etc.
-
-For example, bagging of decision trees algorithm includes the specification of a bagging algorithm and having a decision tree algorithm for generating the base models composing the ensemble.</rdfs:comment>
-        <rdfs:label>ensemble algorithm</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://kt.ijs.si/panovp/OntoDM#OntoDM_731692 -->
-
-    <owl:Class rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_731692">
-        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000038"/>
-        <rdfs:comment>single generalization algorithms are data mining algorithms that given a dataset on input produce a generalization at the output.</rdfs:comment>
-        <rdfs:label>single generalization algorithm</rdfs:label>
     </owl:Class>
     
 
@@ -9671,7 +9452,7 @@ The analysis includes normalization and data preprocessing, detection for differ
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000740"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/algorithm/OntoDM_170075"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_000072"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -19364,7 +19145,7 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000740"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/algorithm/OntoDM_170075"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_000072"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -19720,7 +19501,7 @@ tiple samples</obo:IAO_0000115>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000276"/>
-                            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_170075"/>
+                            <rdf:Description rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000072"/>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -23335,7 +23116,7 @@ tiple samples</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000740"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/algorithm/OntoDM_170075"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_000072"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -29790,44 +29571,6 @@ tiple samples</obo:IAO_0000115>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:label>software before Microsoft 2007</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/algorithm/OntoDM_170075 -->
-
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_170075">
-        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_731692"/>
-        <rdfs:label>clustering algorithm</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/algorithm/OntoDM_175260 -->
-
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_175260">
-        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_731692"/>
-        <rdfs:label>pattern discovery algorithm</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/algorithm/OntoDM_382176 -->
-
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_382176">
-        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_731692"/>
-        <rdfs:label>predictive modeling algorithm</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/swo/algorithm/OntoDM_584946 -->
-
-    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_584946">
-        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_419460"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clustering specification is a single generalization specification is a generalization specification and denotes a type of generalization that models the mapping of a set of objects S of type T from S to a set of natural numbers {1,...K}. This generalization is obtained by appliing a clustering algorithm on a set of data.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OntoDM</obo:IAO_0000119>
-        <rdfs:label>clustering specification</rdfs:label>
     </owl:Class>
     
 
@@ -37114,7 +36857,7 @@ According to the GNU project, the Apache 2.0 license is better for substantial p
     <!-- http://www.ebi.ac.uk/swo/objective/SWO_7000002 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/objective/SWO_7000002">
-        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000092"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_000092"/>
         <dc:creator>Allyson Lister</dc:creator>
         <rdfs:label xml:lang="en">sequence alignment</rdfs:label>
     </owl:Class>
@@ -37333,6 +37076,266 @@ According to the GNU project, the Apache 2.0 license is better for substantial p
     <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete SWO class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontodm.com/OntoDM-core/OntoDM_000037 -->
+
+    <owl:Class rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000037">
+        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000034"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A ensemble of generalizations specification is a generalization specification and denotes a type of generalization that is produced by a ensemble algorithm. This algorithm produces a set of generalizations at its output.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ensemble specification denotes a type of generalization which is an output of an execution of a ensemble algorithm. 
+Ensembles are sets of generalizations (have as parts single generalizations) with a defined procedure of their combination into a single generalization when executed in a process.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OntoDM</obo:IAO_0000119>
+        <rdfs:label>ensemble specification</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_000037"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ensemble specification denotes a type of generalization which is an output of an execution of a ensemble algorithm. 
+Ensembles are sets of generalizations (have as parts single generalizations) with a defined procedure of their combination into a single generalization when executed in a process.</owl:annotatedTarget>
+        <swo:SWO_0000144></swo:SWO_0000144>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.ontodm.com/OntoDM-core/OntoDM_000038 -->
+
+    <owl:Class rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <rdfs:comment>A data mining algorithm is an algorithm that has as its objective a data mining task and outputs as a result a generalization specified by a generalization specification.</rdfs:comment>
+        <rdfs:label>data mining algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontodm.com/OntoDM-core/OntoDM_000072 -->
+
+    <owl:Class rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000072">
+        <rdfs:subClassOf rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_731692"/>
+        <obo:IAO_0000115>Clustering algorithm is a data mining algorithm that solves a clustering task and as a result produces a clustering.</obo:IAO_0000115>
+        <rdfs:label>clustering algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontodm.com/OntoDM-core/OntoDM_000078 -->
+
+    <owl:Class rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000078">
+        <rdfs:subClassOf rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_419460"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A patten specification is a single generalization specification and denotes a pattern P on type T which is a boolean funtion on objects of type T.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pattern P on type T specifies a Boolean function on objects of type T, i.e., has the signature p :: T → bool. A pattern on type T is true or false on an object of type T. Frawley et al. (1991) define a pattern as a statement (expression) in a given language, that describes (relationships among) the facts in (a subset of) the data. In the broadest sense, the word pattern is used to describe the output of a variety of data mining algorithms and includes probability distributions, predictive models and clusters/clusterings; however, we restrict it here to the sense that it is most commonly used, i.e., in the sense of frequent pattern mining.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OntoDM</obo:IAO_0000119>
+        <rdfs:label>pattern specification</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_000078"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pattern P on type T specifies a Boolean function on objects of type T, i.e., has the signature p :: T → bool. A pattern on type T is true or false on an object of type T. Frawley et al. (1991) define a pattern as a statement (expression) in a given language, that describes (relationships among) the facts in (a subset of) the data. In the broadest sense, the word pattern is used to describe the output of a variety of data mining algorithms and includes probability distributions, predictive models and clusters/clusterings; however, we restrict it here to the sense that it is most commonly used, i.e., in the sense of frequent pattern mining.</owl:annotatedTarget>
+        <swo:SWO_0000144></swo:SWO_0000144>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.ontodm.com/OntoDM-core/OntoDM_000087 -->
+
+    <owl:Class rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000087">
+        <rdfs:subClassOf rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_000098"/>
+        <rdfs:comment>Estimating the (Joint) Probability Distribution. A set of data (of type
+T) is often assumed to be a sample taken from a population according to a
+probability distribution. A probability distribution/density function assigns a
+non-negative probability/density to each object of type T. Probably the most
+general data mining task (Hand et al. 2001) is the task of estimating the (joint)
+probability distribution D over type T from a set of data items or a sample
+drawn from that distribution.
+As mentioned above, in the most typical case we would have T = Tuple(T1,
+. . ., Tk), where each of T1, . . ., Tk is Boolean, Discrete(S) or Real. We talk about
+the joint probability distribution to emphasize the difference to the marginal
+distributions of each of the variables of type T1, . . ., Tk: the joint distribution
+captures the interactions among the variables.
+Representing multi-variate distributions is a non-trivial task. Two approaches
+are commonly used in data mining. In the density-based clustering paradigm,
+mixtures of multi-variate Gaussian distributions are typically considered (Hand
+et al. 2001). Probabilistic graphical models, most notably Bayesian networks,
+represent graphically the (in)dependencies between the variables: Learning their
+structure and parameters is an important approach to the problem of estimating
+the joint probability distribution.</rdfs:comment>
+        <rdfs:label>probability distribution estimation task</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontodm.com/OntoDM-core/OntoDM_000092 -->
+
+    <owl:Class rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000092">
+        <rdfs:subClassOf rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_000098"/>
+        <rdfs:comment>the task of pattern discovery is to find all local patterns from a given
+pattern language that satisfy the required conditions. A prototypical instantiation
+of this task is the task of finding frequent itemsets (sets of items, such as
+{bread, butter}), which are often found together in a transaction (e.g., a market
+basket) (Aggrawal et al 1993). The condition that a pattern (itemset) has to
+satisfy in this case is to appear in (hold true for) a sufficiently high proportion
+(called support and denoted by s) of the transactions in the input dataset.
+With the increasing interest in mining complex data, mining frequent patterns
+is also considered for structured data. We can thus talk about mining frequent
+subsequences or mining frequent subgraphs in sequence or graph data. We can
+consider as frequency the multiple occurrences of a pattern in a single data
+structure (e.g., sequence or graph) or the single occurrences of a pattern in
+multiple data structures.</rdfs:comment>
+        <rdfs:label>pattern discovery task</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontodm.com/OntoDM-core/OntoDM_000098 -->
+
+    <owl:Class rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000098">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:comment>A data mining task is an objective specification that specifies the objective that a data mining algorithm needs to achieve when executed on a dataset to produce as output a generalization.</rdfs:comment>
+        <rdfs:label>data mining task</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontodm.com/OntoDM-core/OntoDM_000112 -->
+
+    <owl:Class rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000112">
+        <rdfs:subClassOf rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_419460"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clustering specification is a single generalization specification is a generalization specification and denotes a type of generalization that models the mapping of a set of objects S of type T from S to a set of natural numbers {1,...K}. This generalization is obtained by appliing a clustering algorithm on a set of data.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OntoDM</obo:IAO_0000119>
+        <rdfs:label>clustering specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontodm.com/OntoDM-core/OntoDM_000160 -->
+
+    <owl:Class rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000160">
+        <rdfs:subClassOf rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_731692"/>
+        <obo:IAO_0000115>Predictive modeling algorithm is a data mining algorithm that solves a predictive modeling task and as a result produces a predictive model.</obo:IAO_0000115>
+        <rdfs:label>predictive modeling algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontodm.com/OntoDM-core/OntoDM_000192 -->
+
+    <owl:Class rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000192">
+        <rdfs:subClassOf rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_731692"/>
+        <obo:IAO_0000115>Pattern discovery algorithm is a data mining algorithm that solves a pattern discovery task and as a result produces a set of patterns.</obo:IAO_0000115>
+        <rdfs:label>pattern discovery algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontodm.com/OntoDM-core/OntoDM_000228 -->
+
+    <owl:Class rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000228">
+        <rdfs:subClassOf rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_419460"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OntoDM</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A predictive model M for types Td, Tc specifies a function that takes an object of type Td and returns one of type Tc, i.e., has the signature m :: Td → Tc. Most often, predictive modelling is concerned with classification, where Tc would be Boolean (for binary classification) or Discrete(S) (for multi-class classification), or regression, where Tc would be Real. In our case, we allow both Td (description) and Tc (class/target) to be arbitrarily complex data types.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predictive model specification is a single generalization specification and denotes a type of generalization that represents a mapping taking objects of type Td and returns objects of type To.</obo:IAO_0000115>
+        <rdfs:label>predictive model specification</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_000228"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A predictive model M for types Td, Tc specifies a function that takes an object of type Td and returns one of type Tc, i.e., has the signature m :: Td → Tc. Most often, predictive modelling is concerned with classification, where Tc would be Boolean (for binary classification) or Discrete(S) (for multi-class classification), or regression, where Tc would be Real. In our case, we allow both Td (description) and Tc (class/target) to be arbitrarily complex data types.</owl:annotatedTarget>
+        <swo:SWO_0000144></swo:SWO_0000144>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.ontodm.com/OntoDM-core/OntoDM_000235 -->
+
+    <owl:Class rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000235">
+        <rdfs:subClassOf rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_000098"/>
+        <rdfs:comment>Learning a (Probabilistic) Predictive Model. In this task, we are given
+a dataset that consists of examples of the form (d, c), where each d is of type
+Td and each c is of type Tc. We will refer to d as the description and c as the
+class or target. To learn a predictive model means to find a mapping from the
+description to the target, m :: Td → Tc, that fits the data closely. This means
+that the observed target values and the target values predicted by the model,
+i.e., c and ˆc = m(d), have to match closely.</rdfs:comment>
+        <rdfs:label>predictive modeling task</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontodm.com/OntoDM-core/OntoDM_000253 -->
+
+    <owl:Class rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000253">
+        <rdfs:subClassOf rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_731692"/>
+        <rdfs:label>probability distribution estimation algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontodm.com/OntoDM-core/OntoDM_000264 -->
+
+    <owl:Class rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000264">
+        <rdfs:subClassOf rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_000098"/>
+        <rdfs:comment>Clustering. Clustering in general is concerned with grouping objects into classes
+of similar objects (Kaufman and Rousseeuw 1990). Given a set of examples (object
+descriptions), the task of clustering is to partition these examples into subsets,
+called clusters.</rdfs:comment>
+        <rdfs:label>clustering task</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontodm.com/OntoDM-core/OntoDM_000285 -->
+
+    <owl:Class rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000285">
+        <rdfs:subClassOf rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_419460"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A probability distribution D on type T specifies a mapping from objects of type T to non-negative Reals, i.e., has the signature d :: T → R0+. For uncountably infinite types, probability densities are used instead. The sum of all probabilities (the integral of the probability densities) over T is constrained to amount to one.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A probability distribution specification is a single generalization specification and denotes a type of generalization that is a mapping from objects of type T to non-negative reals. This generalization is an output of a probability distribution estimation algorithm.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OntoDM</obo:IAO_0000119>
+        <rdfs:label>probability distribution specification</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_000285"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A probability distribution D on type T specifies a mapping from objects of type T to non-negative Reals, i.e., has the signature d :: T → R0+. For uncountably infinite types, probability densities are used instead. The sum of all probabilities (the integral of the probability densities) over T is constrained to amount to one.</owl:annotatedTarget>
+        <swo:SWO_0000144></swo:SWO_0000144>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.ontodm.com/OntoDM-core/OntoDM_419460 -->
+
+    <owl:Class rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_419460">
+        <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000034"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Examples of such generalization types are: decision trees, desicion rules, neural networks, frequent itemsets, clusters etc.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A single generalization specification is a generalization specification and denotes a type of generalization that is produced by a single generalization data mining algorithm. This algorithm produces only one generalization at its output.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OntoDM</obo:IAO_0000119>
+        <rdfs:label>single generalization specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontodm.com/OntoDM-core/OntoDM_530819 -->
+
+    <owl:Class rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_530819">
+        <rdfs:subClassOf rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_000038"/>
+        <owl:disjointWith rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_731692"/>
+        <rdfs:comment>Ensemble algorithms are algorithms that generate an ensemble when executed on a dataset. The ensemble algorithms include a specification of  single generalization algorithms which are executed in oreder to produce the single generalizations that compose the ensemble.
+
+Examples of ensemble algorithms include bagging, boosting, stacking, random forests, random subspaces,bagging of random subspaces etc.
+
+For example, bagging of decision trees algorithm includes the specification of a bagging algorithm and having a decision tree algorithm for generating the base models composing the ensemble.</rdfs:comment>
+        <rdfs:label>ensemble algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontodm.com/OntoDM-core/OntoDM_731692 -->
+
+    <owl:Class rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_731692">
+        <rdfs:subClassOf rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_000038"/>
+        <rdfs:comment>single generalization algorithms are data mining algorithms that given a dataset on input produce a generalization at the output.</rdfs:comment>
+        <rdfs:label>single generalization algorithm</rdfs:label>
     </owl:Class>
     
 
@@ -38512,28 +38515,28 @@ According to the GNU project, the Apache 2.0 license is better for substantial p
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000087"/>
-            <rdf:Description rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000092"/>
-            <rdf:Description rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000235"/>
-            <rdf:Description rdf:about="http://kt.ijs.si/panovp/OntoDM#OntoDM_000264"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_170075"/>
-            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_175260"/>
-            <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/algorithm/OntoDM_382176"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/maturity/SWO_9000062"/>
             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/maturity/SWO_9000063"/>
             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/maturity/SWO_9000064"/>
             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/maturity/SWO_9000065"/>
             <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/maturity/SWO_9000066"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000072"/>
+            <rdf:Description rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000160"/>
+            <rdf:Description rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000192"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000087"/>
+            <rdf:Description rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000092"/>
+            <rdf:Description rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000235"/>
+            <rdf:Description rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000264"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
