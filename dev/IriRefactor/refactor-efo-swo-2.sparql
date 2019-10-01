@@ -1,0 +1,20 @@
+# Step 2 of the work in response to https://github.com/allysonlister/swo/issues/10
+#
+# List all URIs of the type http://www.ebi.ac.uk/swo/ that are either active or obsolete
+# We need the obsolete ones for the http://www.ebi.ac.uk/swo/ namespace to make sure we don't
+# reuse the IRIs.
+#
+# Get IDs (if required) from this file with
+# cat efo-swo-2.txt | awk '{n = split($0, a, "/"); print a[n]}' | sort > efo-swo-2-ids.txt
+#
+# Run with:
+# java -jar ../build/robot.jar query --input ../ontology/swo-merged.owl --query refactor-efo-swo-2.sparql  efo-swo-2.txt
+
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?class
+WHERE {
+    ?class rdf:type owl:Class
+    FILTER (regex(str(?class),"http://www.ebi.ac.uk/swo/")).
+}

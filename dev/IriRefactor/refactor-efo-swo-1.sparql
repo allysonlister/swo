@@ -1,0 +1,21 @@
+# Step 1 of the work in response to https://github.com/allysonlister/swo/issues/10
+#
+# List all URIs of the type http://www.ebi.ac.uk/efo/swo/ that are not obsolete already.
+#
+# Get IDs (if required) from this file with
+# cat efo-swo-1.txt | awk '{n = split($0, a, "/"); print a[n]}' | sort > efo-swo-1-ids.txt
+#
+# Run with:
+# java -jar ../build/robot.jar query --input ../ontology/swo-merged.owl --query refactor-efo-swo-1.sparql  efo-swo-1.txt
+
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+
+SELECT DISTINCT ?class
+WHERE {
+    ?class rdf:type owl:Class
+    FILTER NOT EXISTS {?class rdfs:subClassOf oboInOwl:ObsoleteClass } .
+    FILTER (regex(str(?class),"http://www.ebi.ac.uk/efo/swo/")).
+}
