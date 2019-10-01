@@ -1,4 +1,3 @@
-class
 http://www.ebi.ac.uk/swo/SWO_9000016
 http://www.ebi.ac.uk/swo/SWO_0000096
 http://www.ebi.ac.uk/swo/data/SWO_3000052

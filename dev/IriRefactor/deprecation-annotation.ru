@@ -7,45 +7,45 @@ prefix efoswo: <http://www.ebi.ac.uk/efo/swo/>
 prefix swo: <http://www.ebi.ac.uk/swo/>
 
 INSERT {
-efoswo:SWO_0000554 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000554 oboInOwl:deprecated true .
-efoswo:SWO_0000554 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000554 obo:IAO_0100001 swo:SWO_0000554 .
-
-efoswo:SWO_0000340 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000340 oboInOwl:deprecated true .
-efoswo:SWO_0000340 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000340 obo:IAO_0100001 swo:SWO_0000340 .
-
-efoswo:SWO_0000661 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000661 oboInOwl:deprecated true .
-efoswo:SWO_0000661 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000661 obo:IAO_0100001 swo:SWO_0000661 .
-
-efoswo:SWO_0000409 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000409 oboInOwl:deprecated true .
-efoswo:SWO_0000409 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000409 obo:IAO_0100001 swo:SWO_0000409 .
-
-efoswo:SWO_0000690 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000690 oboInOwl:deprecated true .
-efoswo:SWO_0000690 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000690 obo:IAO_0100001 swo:SWO_0000690 .
+efoswo:SWO_0000469 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000469 oboInOwl:deprecated true .
+efoswo:SWO_0000469 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000469 obo:IAO_0100001 swo:SWO_0000469 .
 
 efoswo:SWO_0000415 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000415 oboInOwl:deprecated true .
 efoswo:SWO_0000415 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000415 obo:IAO_0100001 swo:SWO_0000415 .
 
-efoswo:SWO_0000049 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000049 oboInOwl:deprecated true .
-efoswo:SWO_0000049 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000049 obo:IAO_0100001 swo:SWO_0000049 .
+efoswo:SWO_0000408 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000408 oboInOwl:deprecated true .
+efoswo:SWO_0000408 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000408 obo:IAO_0100001 swo:SWO_0000408 .
 
-efoswo:SWO_0000117 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000117 oboInOwl:deprecated true .
-efoswo:SWO_0000117 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000117 obo:IAO_0100001 swo:SWO_0000117 .
+efoswo:SWO_0000116 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000116 oboInOwl:deprecated true .
+efoswo:SWO_0000116 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000116 obo:IAO_0100001 swo:SWO_0000116 .
+
+efoswo:SWO_0000690 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000690 oboInOwl:deprecated true .
+efoswo:SWO_0000690 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000690 obo:IAO_0100001 swo:SWO_0000690 .
+
+efoswo:SWO_0000561 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000561 oboInOwl:deprecated true .
+efoswo:SWO_0000561 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000561 obo:IAO_0100001 swo:SWO_0000561 .
+
+efoswo:SWO_0000661 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000661 oboInOwl:deprecated true .
+efoswo:SWO_0000661 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000661 obo:IAO_0100001 swo:SWO_0000661 .
+
+efoswo:SWO_0000251 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000251 oboInOwl:deprecated true .
+efoswo:SWO_0000251 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000251 obo:IAO_0100001 swo:SWO_0000251 .
 
 efoswo:SWO_0000101 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000101 oboInOwl:deprecated true .
@@ -62,10 +62,25 @@ efoswo:SWO_0000463 oboInOwl:deprecated true .
 efoswo:SWO_0000463 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000463 obo:IAO_0100001 swo:SWO_0000463 .
 
+efoswo:SWO_0000409 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000409 oboInOwl:deprecated true .
+efoswo:SWO_0000409 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000409 obo:IAO_0100001 swo:SWO_0000409 .
+
 efoswo:SWO_0000083 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000083 oboInOwl:deprecated true .
 efoswo:SWO_0000083 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000083 obo:IAO_0100001 swo:SWO_0000083 .
+
+efoswo:SWO_0000648 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000648 oboInOwl:deprecated true .
+efoswo:SWO_0000648 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000648 obo:IAO_0100001 swo:SWO_0000648 .
+
+efoswo:SWO_0000318 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000318 oboInOwl:deprecated true .
+efoswo:SWO_0000318 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000318 obo:IAO_0100001 swo:SWO_0000318 .
 
 efoswo:SWO_0000616 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000616 oboInOwl:deprecated true .
@@ -77,50 +92,45 @@ efoswo:SWO_0000426 oboInOwl:deprecated true .
 efoswo:SWO_0000426 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000426 obo:IAO_0100001 swo:SWO_0000426 .
 
-efoswo:SWO_0000012 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000012 oboInOwl:deprecated true .
-efoswo:SWO_0000012 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000012 obo:IAO_0100001 swo:SWO_0000012 .
-
 efoswo:SWO_0000236 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000236 oboInOwl:deprecated true .
 efoswo:SWO_0000236 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000236 obo:IAO_0100001 swo:SWO_0000236 .
-
-efoswo:SWO_0000575 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000575 oboInOwl:deprecated true .
-efoswo:SWO_0000575 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000575 obo:IAO_0100001 swo:SWO_0000575 .
 
 efoswo:SWO_0000046 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000046 oboInOwl:deprecated true .
 efoswo:SWO_0000046 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000046 obo:IAO_0100001 swo:SWO_0000046 .
 
-efoswo:SWO_0000116 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000116 oboInOwl:deprecated true .
-efoswo:SWO_0000116 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000116 obo:IAO_0100001 swo:SWO_0000116 .
+efoswo:SWO_0000014 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000014 oboInOwl:deprecated true .
+efoswo:SWO_0000014 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000014 obo:IAO_0100001 swo:SWO_0000014 .
 
 efoswo:SWO_0000598 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000598 oboInOwl:deprecated true .
 efoswo:SWO_0000598 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000598 obo:IAO_0100001 swo:SWO_0000598 .
 
-efoswo:SWO_0000253 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000253 oboInOwl:deprecated true .
-efoswo:SWO_0000253 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000253 obo:IAO_0100001 swo:SWO_0000253 .
+efoswo:SWO_0000575 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000575 oboInOwl:deprecated true .
+efoswo:SWO_0000575 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000575 obo:IAO_0100001 swo:SWO_0000575 .
+
+efoswo:SWO_0000554 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000554 oboInOwl:deprecated true .
+efoswo:SWO_0000554 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000554 obo:IAO_0100001 swo:SWO_0000554 .
 
 efoswo:SWO_0000009 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000009 oboInOwl:deprecated true .
 efoswo:SWO_0000009 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000009 obo:IAO_0100001 swo:SWO_0000009 .
 
-efoswo:SWO_0000153 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000153 oboInOwl:deprecated true .
-efoswo:SWO_0000153 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000153 obo:IAO_0100001 swo:SWO_0000153 .
+efoswo:SWO_0000633 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000633 oboInOwl:deprecated true .
+efoswo:SWO_0000633 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000633 obo:IAO_0100001 swo:SWO_0000633 .
 
 efoswo:SWO_0000611 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000611 oboInOwl:deprecated true .
@@ -142,75 +152,50 @@ efoswo:SWO_0000231 oboInOwl:deprecated true .
 efoswo:SWO_0000231 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000231 obo:IAO_0100001 swo:SWO_0000231 .
 
-efoswo:SWO_0000263 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000263 oboInOwl:deprecated true .
-efoswo:SWO_0000263 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000263 obo:IAO_0100001 swo:SWO_0000263 .
-
 efoswo:SWO_0000041 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000041 oboInOwl:deprecated true .
 efoswo:SWO_0000041 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000041 obo:IAO_0100001 swo:SWO_0000041 .
 
-efoswo:SWO_0000332 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000332 oboInOwl:deprecated true .
-efoswo:SWO_0000332 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000332 obo:IAO_0100001 swo:SWO_0000332 .
-
-efoswo:SWO_0000715 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000715 oboInOwl:deprecated true .
-efoswo:SWO_0000715 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000715 obo:IAO_0100001 swo:SWO_0000715 .
-
-efoswo:SWO_0000145 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000145 oboInOwl:deprecated true .
-efoswo:SWO_0000145 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000145 obo:IAO_0100001 swo:SWO_0000145 .
+efoswo:SWO_0000336 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000336 oboInOwl:deprecated true .
+efoswo:SWO_0000336 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000336 obo:IAO_0100001 swo:SWO_0000336 .
 
 efoswo:SWO_0000593 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000593 oboInOwl:deprecated true .
 efoswo:SWO_0000593 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000593 obo:IAO_0100001 swo:SWO_0000593 .
 
-efoswo:SWO_0000614 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000614 oboInOwl:deprecated true .
-efoswo:SWO_0000614 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000614 obo:IAO_0100001 swo:SWO_0000614 .
+efoswo:SWO_0000011 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000011 oboInOwl:deprecated true .
+efoswo:SWO_0000011 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000011 obo:IAO_0100001 swo:SWO_0000011 .
+
+efoswo:SWO_0000264 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000264 oboInOwl:deprecated true .
+efoswo:SWO_0000264 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000264 obo:IAO_0100001 swo:SWO_0000264 .
 
 efoswo:SWO_0000004 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000004 oboInOwl:deprecated true .
 efoswo:SWO_0000004 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000004 obo:IAO_0100001 swo:SWO_0000004 .
 
-efoswo:SWO_0000110 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000110 oboInOwl:deprecated true .
-efoswo:SWO_0000110 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000110 obo:IAO_0100001 swo:SWO_0000110 .
-
-efoswo:SWO_0000084 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000084 oboInOwl:deprecated true .
-efoswo:SWO_0000084 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000084 obo:IAO_0100001 swo:SWO_0000084 .
+efoswo:SWO_0000339 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000339 oboInOwl:deprecated true .
+efoswo:SWO_0000339 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000339 obo:IAO_0100001 swo:SWO_0000339 .
 
 efoswo:SWO_0000556 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000556 oboInOwl:deprecated true .
 efoswo:SWO_0000556 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000556 obo:IAO_0100001 swo:SWO_0000556 .
 
-efoswo:SWO_0000339 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000339 oboInOwl:deprecated true .
-efoswo:SWO_0000339 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000339 obo:IAO_0100001 swo:SWO_0000339 .
-
 efoswo:SWO_0000176 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000176 oboInOwl:deprecated true .
 efoswo:SWO_0000176 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000176 obo:IAO_0100001 swo:SWO_0000176 .
-
-efoswo:SWO_0000282 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000282 oboInOwl:deprecated true .
-efoswo:SWO_0000282 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000282 obo:IAO_0100001 swo:SWO_0000282 .
 
 efoswo:SWO_0000709 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000709 oboInOwl:deprecated true .
@@ -227,20 +212,15 @@ efoswo:SWO_0000329 oboInOwl:deprecated true .
 efoswo:SWO_0000329 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000329 obo:IAO_0100001 swo:SWO_0000329 .
 
-efoswo:SWO_0000139 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000139 oboInOwl:deprecated true .
-efoswo:SWO_0000139 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000139 obo:IAO_0100001 swo:SWO_0000139 .
+efoswo:SWO_0000174 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000174 oboInOwl:deprecated true .
+efoswo:SWO_0000174 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000174 obo:IAO_0100001 swo:SWO_0000174 .
 
 efoswo:SWO_0000551 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000551 oboInOwl:deprecated true .
 efoswo:SWO_0000551 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000551 obo:IAO_0100001 swo:SWO_0000551 .
-
-efoswo:SWO_0000129 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000129 oboInOwl:deprecated true .
-efoswo:SWO_0000129 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000129 obo:IAO_0100001 swo:SWO_0000129 .
 
 efoswo:SWO_0000361 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000361 oboInOwl:deprecated true .
@@ -252,10 +232,20 @@ efoswo:SWO_0000171 oboInOwl:deprecated true .
 efoswo:SWO_0000171 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000171 obo:IAO_0100001 swo:SWO_0000171 .
 
-efoswo:SWO_0000524 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000524 oboInOwl:deprecated true .
-efoswo:SWO_0000524 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000524 obo:IAO_0100001 swo:SWO_0000524 .
+efoswo:SWO_0000084 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000084 oboInOwl:deprecated true .
+efoswo:SWO_0000084 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000084 obo:IAO_0100001 swo:SWO_0000084 .
+
+efoswo:SWO_0000340 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000340 oboInOwl:deprecated true .
+efoswo:SWO_0000340 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000340 obo:IAO_0100001 swo:SWO_0000340 .
+
+efoswo:SWO_0000135 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000135 oboInOwl:deprecated true .
+efoswo:SWO_0000135 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000135 obo:IAO_0100001 swo:SWO_0000135 .
 
 efoswo:SWO_0000704 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000704 oboInOwl:deprecated true .
@@ -267,11 +257,6 @@ efoswo:SWO_0000514 oboInOwl:deprecated true .
 efoswo:SWO_0000514 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000514 obo:IAO_0100001 swo:SWO_0000514 .
 
-efoswo:SWO_0000378 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000378 oboInOwl:deprecated true .
-efoswo:SWO_0000378 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000378 obo:IAO_0100001 swo:SWO_0000378 .
-
 efoswo:SWO_0000324 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000324 oboInOwl:deprecated true .
 efoswo:SWO_0000324 efo:obsoleted_in_version "1.7" .
@@ -281,6 +266,16 @@ efoswo:SWO_0000134 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000134 oboInOwl:deprecated true .
 efoswo:SWO_0000134 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000134 obo:IAO_0100001 swo:SWO_0000134 .
+
+efoswo:SWO_0000374 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000374 oboInOwl:deprecated true .
+efoswo:SWO_0000374 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000374 obo:IAO_0100001 swo:SWO_0000374 .
+
+efoswo:SWO_0000169 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000169 oboInOwl:deprecated true .
+efoswo:SWO_0000169 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000169 obo:IAO_0100001 swo:SWO_0000169 .
 
 efoswo:SWO_0000686 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000686 oboInOwl:deprecated true .
@@ -292,15 +287,20 @@ efoswo:SWO_0000496 oboInOwl:deprecated true .
 efoswo:SWO_0000496 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000496 obo:IAO_0100001 swo:SWO_0000496 .
 
-efoswo:SWO_0000615 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000615 oboInOwl:deprecated true .
-efoswo:SWO_0000615 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000615 obo:IAO_0100001 swo:SWO_0000615 .
+efoswo:SWO_0000708 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000708 oboInOwl:deprecated true .
+efoswo:SWO_0000708 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000708 obo:IAO_0100001 swo:SWO_0000708 .
 
-efoswo:SWO_0000589 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000589 oboInOwl:deprecated true .
-efoswo:SWO_0000589 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000589 obo:IAO_0100001 swo:SWO_0000589 .
+efoswo:SWO_0000502 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000502 oboInOwl:deprecated true .
+efoswo:SWO_0000502 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000502 obo:IAO_0100001 swo:SWO_0000502 .
+
+efoswo:SWO_0000106 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000106 oboInOwl:deprecated true .
+efoswo:SWO_0000106 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000106 obo:IAO_0100001 swo:SWO_0000106 .
 
 efoswo:SWO_0000649 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000649 oboInOwl:deprecated true .
@@ -312,6 +312,11 @@ efoswo:SWO_0000459 oboInOwl:deprecated true .
 efoswo:SWO_0000459 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000459 obo:IAO_0100001 swo:SWO_0000459 .
 
+efoswo:SWO_0000145 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000145 oboInOwl:deprecated true .
+efoswo:SWO_0000145 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000145 obo:IAO_0100001 swo:SWO_0000145 .
+
 efoswo:SWO_0000269 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000269 oboInOwl:deprecated true .
 efoswo:SWO_0000269 efo:obsoleted_in_version "1.7" .
@@ -321,16 +326,6 @@ efoswo:SWO_0000079 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000079 oboInOwl:deprecated true .
 efoswo:SWO_0000079 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000079 obo:IAO_0100001 swo:SWO_0000079 .
-
-efoswo:SWO_0000217 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000217 oboInOwl:deprecated true .
-efoswo:SWO_0000217 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000217 obo:IAO_0100001 swo:SWO_0000217 .
-
-efoswo:SWO_0000467 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000467 oboInOwl:deprecated true .
-efoswo:SWO_0000467 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000467 obo:IAO_0100001 swo:SWO_0000467 .
 
 efoswo:SWO_0000681 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000681 oboInOwl:deprecated true .
@@ -342,15 +337,10 @@ efoswo:SWO_0000491 oboInOwl:deprecated true .
 efoswo:SWO_0000491 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000491 obo:IAO_0100001 swo:SWO_0000491 .
 
-efoswo:SWO_0000406 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000406 oboInOwl:deprecated true .
-efoswo:SWO_0000406 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000406 obo:IAO_0100001 swo:SWO_0000406 .
-
-efoswo:SWO_0000648 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000648 oboInOwl:deprecated true .
-efoswo:SWO_0000648 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000648 obo:IAO_0100001 swo:SWO_0000648 .
+efoswo:SWO_0000391 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000391 oboInOwl:deprecated true .
+efoswo:SWO_0000391 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000391 obo:IAO_0100001 swo:SWO_0000391 .
 
 efoswo:SWO_0000644 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000644 oboInOwl:deprecated true .
@@ -362,30 +352,10 @@ efoswo:SWO_0000454 oboInOwl:deprecated true .
 efoswo:SWO_0000454 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000454 obo:IAO_0100001 swo:SWO_0000454 .
 
-efoswo:SWO_0000137 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000137 oboInOwl:deprecated true .
-efoswo:SWO_0000137 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000137 obo:IAO_0100001 swo:SWO_0000137 .
-
-efoswo:SWO_0000264 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000264 oboInOwl:deprecated true .
-efoswo:SWO_0000264 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000264 obo:IAO_0100001 swo:SWO_0000264 .
-
-efoswo:SWO_0000256 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000256 oboInOwl:deprecated true .
-efoswo:SWO_0000256 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000256 obo:IAO_0100001 swo:SWO_0000256 .
-
 efoswo:SWO_0000607 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000607 oboInOwl:deprecated true .
 efoswo:SWO_0000607 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000607 obo:IAO_0100001 swo:SWO_0000607 .
-
-efoswo:SWO_0000576 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000576 oboInOwl:deprecated true .
-efoswo:SWO_0000576 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000576 obo:IAO_0100001 swo:SWO_0000576 .
 
 efoswo:SWO_0000417 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000417 oboInOwl:deprecated true .
@@ -402,35 +372,25 @@ efoswo:SWO_0000037 oboInOwl:deprecated true .
 efoswo:SWO_0000037 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000037 obo:IAO_0100001 swo:SWO_0000037 .
 
-efoswo:SWO_0000389 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000389 oboInOwl:deprecated true .
-efoswo:SWO_0000389 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000389 obo:IAO_0100001 swo:SWO_0000389 .
+efoswo:SWO_0000064 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000064 oboInOwl:deprecated true .
+efoswo:SWO_0000064 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000064 obo:IAO_0100001 swo:SWO_0000064 .
 
-efoswo:SWO_0000399 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000399 oboInOwl:deprecated true .
-efoswo:SWO_0000399 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000399 obo:IAO_0100001 swo:SWO_0000399 .
+efoswo:SWO_0000113 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000113 oboInOwl:deprecated true .
+efoswo:SWO_0000113 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000113 obo:IAO_0100001 swo:SWO_0000113 .
 
-efoswo:SWO_0000560 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000560 oboInOwl:deprecated true .
-efoswo:SWO_0000560 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000560 obo:IAO_0100001 swo:SWO_0000560 .
-
-efoswo:SWO_0000509 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000509 oboInOwl:deprecated true .
-efoswo:SWO_0000509 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000509 obo:IAO_0100001 swo:SWO_0000509 .
+efoswo:SWO_0000589 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000589 oboInOwl:deprecated true .
+efoswo:SWO_0000589 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000589 obo:IAO_0100001 swo:SWO_0000589 .
 
 efoswo:SWO_0000602 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000602 oboInOwl:deprecated true .
 efoswo:SWO_0000602 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000602 obo:IAO_0100001 swo:SWO_0000602 .
-
-efoswo:SWO_0000570 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000570 oboInOwl:deprecated true .
-efoswo:SWO_0000570 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000570 obo:IAO_0100001 swo:SWO_0000570 .
 
 efoswo:SWO_0000222 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000222 oboInOwl:deprecated true .
@@ -447,30 +407,45 @@ efoswo:SWO_0000584 oboInOwl:deprecated true .
 efoswo:SWO_0000584 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000584 obo:IAO_0100001 swo:SWO_0000584 .
 
+efoswo:SWO_0000595 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000595 oboInOwl:deprecated true .
+efoswo:SWO_0000595 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000595 obo:IAO_0100001 swo:SWO_0000595 .
+
+efoswo:SWO_0000406 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000406 oboInOwl:deprecated true .
+efoswo:SWO_0000406 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000406 obo:IAO_0100001 swo:SWO_0000406 .
+
 efoswo:SWO_0000547 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000547 oboInOwl:deprecated true .
 efoswo:SWO_0000547 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000547 obo:IAO_0100001 swo:SWO_0000547 .
 
-efoswo:SWO_0000215 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000215 oboInOwl:deprecated true .
-efoswo:SWO_0000215 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000215 obo:IAO_0100001 swo:SWO_0000215 .
+efoswo:SWO_0000117 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000117 oboInOwl:deprecated true .
+efoswo:SWO_0000117 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000117 obo:IAO_0100001 swo:SWO_0000117 .
 
 efoswo:SWO_0000167 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000167 oboInOwl:deprecated true .
 efoswo:SWO_0000167 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000167 obo:IAO_0100001 swo:SWO_0000167 .
 
-efoswo:SWO_0000108 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000108 oboInOwl:deprecated true .
-efoswo:SWO_0000108 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000108 obo:IAO_0100001 swo:SWO_0000108 .
+efoswo:SWO_0000050 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000050 oboInOwl:deprecated true .
+efoswo:SWO_0000050 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000050 obo:IAO_0100001 swo:SWO_0000050 .
 
 efoswo:SWO_0000542 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000542 oboInOwl:deprecated true .
 efoswo:SWO_0000542 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000542 obo:IAO_0100001 swo:SWO_0000542 .
+
+efoswo:SWO_0000097 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000097 oboInOwl:deprecated true .
+efoswo:SWO_0000097 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000097 obo:IAO_0100001 swo:SWO_0000097 .
 
 efoswo:SWO_0000352 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000352 oboInOwl:deprecated true .
@@ -481,6 +456,11 @@ efoswo:SWO_0000162 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000162 oboInOwl:deprecated true .
 efoswo:SWO_0000162 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000162 obo:IAO_0100001 swo:SWO_0000162 .
+
+efoswo:SWO_0000378 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000378 oboInOwl:deprecated true .
+efoswo:SWO_0000378 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000378 obo:IAO_0100001 swo:SWO_0000378 .
 
 efoswo:SWO_0000505 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000505 oboInOwl:deprecated true .
@@ -496,11 +476,6 @@ efoswo:SWO_0000125 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000125 oboInOwl:deprecated true .
 efoswo:SWO_0000125 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000125 obo:IAO_0100001 swo:SWO_0000125 .
-
-efoswo:SWO_0000334 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000334 oboInOwl:deprecated true .
-efoswo:SWO_0000334 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000334 obo:IAO_0100001 swo:SWO_0000334 .
 
 efoswo:SWO_0000677 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000677 oboInOwl:deprecated true .
@@ -522,30 +497,35 @@ efoswo:SWO_0000271 oboInOwl:deprecated true .
 efoswo:SWO_0000271 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000271 obo:IAO_0100001 swo:SWO_0000271 .
 
-efoswo:SWO_0000684 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000684 oboInOwl:deprecated true .
-efoswo:SWO_0000684 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000684 obo:IAO_0100001 swo:SWO_0000684 .
+efoswo:SWO_0000664 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000664 oboInOwl:deprecated true .
+efoswo:SWO_0000664 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000664 obo:IAO_0100001 swo:SWO_0000664 .
 
-efoswo:SWO_0000500 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000500 oboInOwl:deprecated true .
-efoswo:SWO_0000500 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000500 obo:IAO_0100001 swo:SWO_0000500 .
+efoswo:SWO_0000493 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000493 oboInOwl:deprecated true .
+efoswo:SWO_0000493 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000493 obo:IAO_0100001 swo:SWO_0000493 .
 
 efoswo:SWO_0000310 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000310 oboInOwl:deprecated true .
 efoswo:SWO_0000310 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000310 obo:IAO_0100001 swo:SWO_0000310 .
 
+efoswo:SWO_0000220 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000220 oboInOwl:deprecated true .
+efoswo:SWO_0000220 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000220 obo:IAO_0100001 swo:SWO_0000220 .
+
 efoswo:SWO_0000120 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000120 oboInOwl:deprecated true .
 efoswo:SWO_0000120 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000120 obo:IAO_0100001 swo:SWO_0000120 .
 
-efoswo:SWO_0000097 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000097 oboInOwl:deprecated true .
-efoswo:SWO_0000097 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000097 obo:IAO_0100001 swo:SWO_0000097 .
+efoswo:SWO_0000614 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000614 oboInOwl:deprecated true .
+efoswo:SWO_0000614 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000614 obo:IAO_0100001 swo:SWO_0000614 .
 
 efoswo:SWO_0000672 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000672 oboInOwl:deprecated true .
@@ -557,15 +537,35 @@ efoswo:SWO_0000482 oboInOwl:deprecated true .
 efoswo:SWO_0000482 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000482 obo:IAO_0100001 swo:SWO_0000482 .
 
+efoswo:SWO_0000334 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000334 oboInOwl:deprecated true .
+efoswo:SWO_0000334 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000334 obo:IAO_0100001 swo:SWO_0000334 .
+
 efoswo:SWO_0000292 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000292 oboInOwl:deprecated true .
 efoswo:SWO_0000292 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000292 obo:IAO_0100001 swo:SWO_0000292 .
 
+efoswo:SWO_0000150 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000150 oboInOwl:deprecated true .
+efoswo:SWO_0000150 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000150 obo:IAO_0100001 swo:SWO_0000150 .
+
+efoswo:SWO_0000277 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000277 oboInOwl:deprecated true .
+efoswo:SWO_0000277 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000277 obo:IAO_0100001 swo:SWO_0000277 .
+
 efoswo:SWO_0000635 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000635 oboInOwl:deprecated true .
 efoswo:SWO_0000635 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000635 obo:IAO_0100001 swo:SWO_0000635 .
+
+efoswo:SWO_0000057 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000057 oboInOwl:deprecated true .
+efoswo:SWO_0000057 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000057 obo:IAO_0100001 swo:SWO_0000057 .
 
 efoswo:SWO_0000445 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000445 oboInOwl:deprecated true .
@@ -582,20 +582,10 @@ efoswo:SWO_0000065 oboInOwl:deprecated true .
 efoswo:SWO_0000065 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000065 obo:IAO_0100001 swo:SWO_0000065 .
 
-efoswo:SWO_0000257 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000257 oboInOwl:deprecated true .
-efoswo:SWO_0000257 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000257 obo:IAO_0100001 swo:SWO_0000257 .
-
-efoswo:SWO_0000408 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000408 oboInOwl:deprecated true .
-efoswo:SWO_0000408 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000408 obo:IAO_0100001 swo:SWO_0000408 .
-
-efoswo:SWO_0000633 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000633 oboInOwl:deprecated true .
-efoswo:SWO_0000633 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000633 obo:IAO_0100001 swo:SWO_0000633 .
+efoswo:SWO_0000326 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000326 oboInOwl:deprecated true .
+efoswo:SWO_0000326 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000326 obo:IAO_0100001 swo:SWO_0000326 .
 
 efoswo:SWO_0000218 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000218 oboInOwl:deprecated true .
@@ -612,20 +602,25 @@ efoswo:SWO_0000147 oboInOwl:deprecated true .
 efoswo:SWO_0000147 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000147 obo:IAO_0100001 swo:SWO_0000147 .
 
-efoswo:SWO_0000670 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000670 oboInOwl:deprecated true .
-efoswo:SWO_0000670 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000670 obo:IAO_0100001 swo:SWO_0000670 .
+efoswo:SWO_0000110 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000110 oboInOwl:deprecated true .
+efoswo:SWO_0000110 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000110 obo:IAO_0100001 swo:SWO_0000110 .
 
 efoswo:SWO_0000630 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000630 oboInOwl:deprecated true .
 efoswo:SWO_0000630 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000630 obo:IAO_0100001 swo:SWO_0000630 .
 
-efoswo:SWO_0000569 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000569 oboInOwl:deprecated true .
-efoswo:SWO_0000569 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000569 obo:IAO_0100001 swo:SWO_0000569 .
+efoswo:SWO_0000553 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000553 oboInOwl:deprecated true .
+efoswo:SWO_0000553 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000553 obo:IAO_0100001 swo:SWO_0000553 .
+
+efoswo:SWO_0000573 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000573 oboInOwl:deprecated true .
+efoswo:SWO_0000573 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000573 obo:IAO_0100001 swo:SWO_0000573 .
 
 efoswo:SWO_0000250 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000250 oboInOwl:deprecated true .
@@ -637,20 +632,25 @@ efoswo:SWO_0000060 oboInOwl:deprecated true .
 efoswo:SWO_0000060 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000060 obo:IAO_0100001 swo:SWO_0000060 .
 
+efoswo:SWO_0000313 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000313 oboInOwl:deprecated true .
+efoswo:SWO_0000313 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000313 obo:IAO_0100001 swo:SWO_0000313 .
+
+efoswo:SWO_0000497 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000497 oboInOwl:deprecated true .
+efoswo:SWO_0000497 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000497 obo:IAO_0100001 swo:SWO_0000497 .
+
+efoswo:SWO_0000467 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000467 oboInOwl:deprecated true .
+efoswo:SWO_0000467 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000467 obo:IAO_0100001 swo:SWO_0000467 .
+
 efoswo:SWO_0000213 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000213 oboInOwl:deprecated true .
 efoswo:SWO_0000213 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000213 obo:IAO_0100001 swo:SWO_0000213 .
-
-efoswo:SWO_0000220 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000220 oboInOwl:deprecated true .
-efoswo:SWO_0000220 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000220 obo:IAO_0100001 swo:SWO_0000220 .
-
-efoswo:SWO_0000015 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000015 oboInOwl:deprecated true .
-efoswo:SWO_0000015 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000015 obo:IAO_0100001 swo:SWO_0000015 .
 
 efoswo:SWO_0000385 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000385 oboInOwl:deprecated true .
@@ -661,11 +661,6 @@ efoswo:SWO_0000195 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000195 oboInOwl:deprecated true .
 efoswo:SWO_0000195 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000195 obo:IAO_0100001 swo:SWO_0000195 .
-
-efoswo:SWO_0000143 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000143 oboInOwl:deprecated true .
-efoswo:SWO_0000143 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000143 obo:IAO_0100001 swo:SWO_0000143 .
 
 efoswo:SWO_0000728 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000728 oboInOwl:deprecated true .
@@ -687,25 +682,25 @@ efoswo:SWO_0000158 oboInOwl:deprecated true .
 efoswo:SWO_0000158 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000158 obo:IAO_0100001 swo:SWO_0000158 .
 
-efoswo:SWO_0000380 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000380 oboInOwl:deprecated true .
-efoswo:SWO_0000380 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000380 obo:IAO_0100001 swo:SWO_0000380 .
+efoswo:SWO_0000570 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000570 oboInOwl:deprecated true .
+efoswo:SWO_0000570 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000570 obo:IAO_0100001 swo:SWO_0000570 .
 
 efoswo:SWO_0000190 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000190 oboInOwl:deprecated true .
 efoswo:SWO_0000190 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000190 obo:IAO_0100001 swo:SWO_0000190 .
 
+efoswo:SWO_0000056 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000056 oboInOwl:deprecated true .
+efoswo:SWO_0000056 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000056 obo:IAO_0100001 swo:SWO_0000056 .
+
 efoswo:SWO_0000723 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000723 oboInOwl:deprecated true .
 efoswo:SWO_0000723 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000723 obo:IAO_0100001 swo:SWO_0000723 .
-
-efoswo:SWO_0000502 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000502 oboInOwl:deprecated true .
-efoswo:SWO_0000502 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000502 obo:IAO_0100001 swo:SWO_0000502 .
 
 efoswo:SWO_0000533 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000533 oboInOwl:deprecated true .
@@ -717,25 +712,20 @@ efoswo:SWO_0000343 oboInOwl:deprecated true .
 efoswo:SWO_0000343 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000343 obo:IAO_0100001 swo:SWO_0000343 .
 
-efoswo:SWO_0000305 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000305 oboInOwl:deprecated true .
-efoswo:SWO_0000305 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000305 obo:IAO_0100001 swo:SWO_0000305 .
-
-efoswo:SWO_0000374 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000374 oboInOwl:deprecated true .
-efoswo:SWO_0000374 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000374 obo:IAO_0100001 swo:SWO_0000374 .
+efoswo:SWO_0000153 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000153 oboInOwl:deprecated true .
+efoswo:SWO_0000153 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000153 obo:IAO_0100001 swo:SWO_0000153 .
 
 efoswo:SWO_0000306 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000306 oboInOwl:deprecated true .
 efoswo:SWO_0000306 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000306 obo:IAO_0100001 swo:SWO_0000306 .
 
-efoswo:SWO_0000668 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000668 oboInOwl:deprecated true .
-efoswo:SWO_0000668 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000668 obo:IAO_0100001 swo:SWO_0000668 .
+efoswo:SWO_0000371 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000371 oboInOwl:deprecated true .
+efoswo:SWO_0000371 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000371 obo:IAO_0100001 swo:SWO_0000371 .
 
 efoswo:SWO_0000478 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000478 oboInOwl:deprecated true .
@@ -752,50 +742,40 @@ efoswo:SWO_0000098 oboInOwl:deprecated true .
 efoswo:SWO_0000098 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000098 obo:IAO_0100001 swo:SWO_0000098 .
 
+efoswo:SWO_0000372 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000372 oboInOwl:deprecated true .
+efoswo:SWO_0000372 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000372 obo:IAO_0100001 swo:SWO_0000372 .
+
+efoswo:SWO_0000304 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000304 oboInOwl:deprecated true .
+efoswo:SWO_0000304 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000304 obo:IAO_0100001 swo:SWO_0000304 .
+
+efoswo:SWO_0000015 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000015 oboInOwl:deprecated true .
+efoswo:SWO_0000015 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000015 obo:IAO_0100001 swo:SWO_0000015 .
+
 efoswo:SWO_0000111 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000111 oboInOwl:deprecated true .
 efoswo:SWO_0000111 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000111 obo:IAO_0100001 swo:SWO_0000111 .
 
-efoswo:SWO_0000663 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000663 oboInOwl:deprecated true .
-efoswo:SWO_0000663 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000663 obo:IAO_0100001 swo:SWO_0000663 .
-
-efoswo:SWO_0000165 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000165 oboInOwl:deprecated true .
-efoswo:SWO_0000165 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000165 obo:IAO_0100001 swo:SWO_0000165 .
+efoswo:SWO_0000260 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000260 oboInOwl:deprecated true .
+efoswo:SWO_0000260 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000260 obo:IAO_0100001 swo:SWO_0000260 .
 
 efoswo:SWO_0000473 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000473 oboInOwl:deprecated true .
 efoswo:SWO_0000473 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000473 obo:IAO_0100001 swo:SWO_0000473 .
 
-efoswo:SWO_0000298 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000298 oboInOwl:deprecated true .
-efoswo:SWO_0000298 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000298 obo:IAO_0100001 swo:SWO_0000298 .
-
 efoswo:SWO_0000283 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000283 oboInOwl:deprecated true .
 efoswo:SWO_0000283 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000283 obo:IAO_0100001 swo:SWO_0000283 .
-
-efoswo:SWO_0000313 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000313 oboInOwl:deprecated true .
-efoswo:SWO_0000313 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000313 obo:IAO_0100001 swo:SWO_0000313 .
-
-efoswo:SWO_0000381 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000381 oboInOwl:deprecated true .
-efoswo:SWO_0000381 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000381 obo:IAO_0100001 swo:SWO_0000381 .
-
-efoswo:SWO_0000140 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000140 oboInOwl:deprecated true .
-efoswo:SWO_0000140 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000140 obo:IAO_0100001 swo:SWO_0000140 .
 
 efoswo:SWO_0000626 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000626 oboInOwl:deprecated true .
@@ -807,10 +787,10 @@ efoswo:SWO_0000246 oboInOwl:deprecated true .
 efoswo:SWO_0000246 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000246 obo:IAO_0100001 swo:SWO_0000246 .
 
-efoswo:SWO_0000056 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000056 oboInOwl:deprecated true .
-efoswo:SWO_0000056 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000056 obo:IAO_0100001 swo:SWO_0000056 .
+efoswo:SWO_0000655 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000655 oboInOwl:deprecated true .
+efoswo:SWO_0000655 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000655 obo:IAO_0100001 swo:SWO_0000655 .
 
 efoswo:SWO_0000209 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000209 oboInOwl:deprecated true .
@@ -822,11 +802,6 @@ efoswo:SWO_0000019 oboInOwl:deprecated true .
 efoswo:SWO_0000019 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000019 obo:IAO_0100001 swo:SWO_0000019 .
 
-efoswo:SWO_0000553 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000553 oboInOwl:deprecated true .
-efoswo:SWO_0000553 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000553 obo:IAO_0100001 swo:SWO_0000553 .
-
 efoswo:SWO_0000621 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000621 oboInOwl:deprecated true .
 efoswo:SWO_0000621 efo:obsoleted_in_version "1.7" .
@@ -837,25 +812,10 @@ efoswo:SWO_0000241 oboInOwl:deprecated true .
 efoswo:SWO_0000241 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000241 obo:IAO_0100001 swo:SWO_0000241 .
 
-efoswo:SWO_0000051 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000051 oboInOwl:deprecated true .
-efoswo:SWO_0000051 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000051 obo:IAO_0100001 swo:SWO_0000051 .
-
-efoswo:SWO_0000573 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000573 oboInOwl:deprecated true .
-efoswo:SWO_0000573 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000573 obo:IAO_0100001 swo:SWO_0000573 .
-
-efoswo:SWO_0000014 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000014 oboInOwl:deprecated true .
-efoswo:SWO_0000014 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000014 obo:IAO_0100001 swo:SWO_0000014 .
-
-efoswo:SWO_0000595 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000595 oboInOwl:deprecated true .
-efoswo:SWO_0000595 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000595 obo:IAO_0100001 swo:SWO_0000595 .
+efoswo:SWO_0000261 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000261 oboInOwl:deprecated true .
+efoswo:SWO_0000261 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000261 obo:IAO_0100001 swo:SWO_0000261 .
 
 efoswo:SWO_0000566 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000566 oboInOwl:deprecated true .
@@ -877,11 +837,6 @@ efoswo:SWO_0000719 oboInOwl:deprecated true .
 efoswo:SWO_0000719 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000719 obo:IAO_0100001 swo:SWO_0000719 .
 
-efoswo:SWO_0000260 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000260 oboInOwl:deprecated true .
-efoswo:SWO_0000260 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000260 obo:IAO_0100001 swo:SWO_0000260 .
-
 efoswo:SWO_0000529 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000529 oboInOwl:deprecated true .
 efoswo:SWO_0000529 efo:obsoleted_in_version "1.7" .
@@ -891,31 +846,6 @@ efoswo:SWO_0000149 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000149 oboInOwl:deprecated true .
 efoswo:SWO_0000149 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000149 obo:IAO_0100001 swo:SWO_0000149 .
-
-efoswo:SWO_0000490 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000490 oboInOwl:deprecated true .
-efoswo:SWO_0000490 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000490 obo:IAO_0100001 swo:SWO_0000490 .
-
-efoswo:SWO_0000682 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000682 oboInOwl:deprecated true .
-efoswo:SWO_0000682 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000682 obo:IAO_0100001 swo:SWO_0000682 .
-
-efoswo:SWO_0000561 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000561 oboInOwl:deprecated true .
-efoswo:SWO_0000561 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000561 obo:IAO_0100001 swo:SWO_0000561 .
-
-efoswo:SWO_0000011 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000011 oboInOwl:deprecated true .
-efoswo:SWO_0000011 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000011 obo:IAO_0100001 swo:SWO_0000011 .
-
-efoswo:SWO_0000371 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000371 oboInOwl:deprecated true .
-efoswo:SWO_0000371 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000371 obo:IAO_0100001 swo:SWO_0000371 .
 
 efoswo:SWO_0000181 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000181 oboInOwl:deprecated true .
@@ -927,20 +857,15 @@ efoswo:SWO_0000714 oboInOwl:deprecated true .
 efoswo:SWO_0000714 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000714 obo:IAO_0100001 swo:SWO_0000714 .
 
-efoswo:SWO_0000144 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000144 oboInOwl:deprecated true .
-efoswo:SWO_0000144 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000144 obo:IAO_0100001 swo:SWO_0000144 .
+efoswo:SWO_0000524 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000524 oboInOwl:deprecated true .
+efoswo:SWO_0000524 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000524 obo:IAO_0100001 swo:SWO_0000524 .
 
 efoswo:SWO_0000696 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000696 oboInOwl:deprecated true .
 efoswo:SWO_0000696 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000696 obo:IAO_0100001 swo:SWO_0000696 .
-
-efoswo:SWO_0000629 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000629 oboInOwl:deprecated true .
-efoswo:SWO_0000629 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000629 obo:IAO_0100001 swo:SWO_0000629 .
 
 efoswo:SWO_0000107 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000107 oboInOwl:deprecated true .
@@ -952,35 +877,20 @@ efoswo:SWO_0000025 oboInOwl:deprecated true .
 efoswo:SWO_0000025 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000025 obo:IAO_0100001 swo:SWO_0000025 .
 
-efoswo:SWO_0000597 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000597 oboInOwl:deprecated true .
-efoswo:SWO_0000597 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000597 obo:IAO_0100001 swo:SWO_0000597 .
-
-efoswo:SWO_0000508 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000508 oboInOwl:deprecated true .
-efoswo:SWO_0000508 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000508 obo:IAO_0100001 swo:SWO_0000508 .
-
 efoswo:SWO_0000659 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000659 oboInOwl:deprecated true .
 efoswo:SWO_0000659 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000659 obo:IAO_0100001 swo:SWO_0000659 .
 
-efoswo:SWO_0000221 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000221 oboInOwl:deprecated true .
-efoswo:SWO_0000221 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000221 obo:IAO_0100001 swo:SWO_0000221 .
-
-efoswo:SWO_0000469 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000469 oboInOwl:deprecated true .
-efoswo:SWO_0000469 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000469 obo:IAO_0100001 swo:SWO_0000469 .
-
 efoswo:SWO_0000279 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000279 oboInOwl:deprecated true .
 efoswo:SWO_0000279 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000279 obo:IAO_0100001 swo:SWO_0000279 .
+
+efoswo:SWO_0000253 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000253 oboInOwl:deprecated true .
+efoswo:SWO_0000253 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000253 obo:IAO_0100001 swo:SWO_0000253 .
 
 efoswo:SWO_0000089 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000089 oboInOwl:deprecated true .
@@ -992,6 +902,11 @@ efoswo:SWO_0000691 oboInOwl:deprecated true .
 efoswo:SWO_0000691 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000691 obo:IAO_0100001 swo:SWO_0000691 .
 
+efoswo:SWO_0000018 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000018 oboInOwl:deprecated true .
+efoswo:SWO_0000018 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000018 obo:IAO_0100001 swo:SWO_0000018 .
+
 efoswo:SWO_0000102 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000102 oboInOwl:deprecated true .
 efoswo:SWO_0000102 efo:obsoleted_in_version "1.7" .
@@ -1002,20 +917,15 @@ efoswo:SWO_0000654 oboInOwl:deprecated true .
 efoswo:SWO_0000654 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000654 obo:IAO_0100001 swo:SWO_0000654 .
 
-efoswo:SWO_0000090 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000090 oboInOwl:deprecated true .
-efoswo:SWO_0000090 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000090 obo:IAO_0100001 swo:SWO_0000090 .
-
 efoswo:SWO_0000274 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000274 oboInOwl:deprecated true .
 efoswo:SWO_0000274 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000274 obo:IAO_0100001 swo:SWO_0000274 .
 
-efoswo:SWO_0000064 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000064 oboInOwl:deprecated true .
-efoswo:SWO_0000064 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000064 obo:IAO_0100001 swo:SWO_0000064 .
+efoswo:SWO_0000615 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000615 oboInOwl:deprecated true .
+efoswo:SWO_0000615 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000615 obo:IAO_0100001 swo:SWO_0000615 .
 
 efoswo:SWO_0000617 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000617 oboInOwl:deprecated true .
@@ -1037,10 +947,15 @@ efoswo:SWO_0000599 oboInOwl:deprecated true .
 efoswo:SWO_0000599 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000599 obo:IAO_0100001 swo:SWO_0000599 .
 
-efoswo:SWO_0000708 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000708 oboInOwl:deprecated true .
-efoswo:SWO_0000708 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000708 obo:IAO_0100001 swo:SWO_0000708 .
+efoswo:SWO_0000114 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000114 oboInOwl:deprecated true .
+efoswo:SWO_0000114 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000114 obo:IAO_0100001 swo:SWO_0000114 .
+
+efoswo:SWO_0000715 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000715 oboInOwl:deprecated true .
+efoswo:SWO_0000715 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000715 obo:IAO_0100001 swo:SWO_0000715 .
 
 efoswo:SWO_0000612 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000612 oboInOwl:deprecated true .
@@ -1057,15 +972,15 @@ efoswo:SWO_0000042 oboInOwl:deprecated true .
 efoswo:SWO_0000042 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000042 obo:IAO_0100001 swo:SWO_0000042 .
 
-efoswo:SWO_0000318 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000318 oboInOwl:deprecated true .
-efoswo:SWO_0000318 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000318 obo:IAO_0100001 swo:SWO_0000318 .
-
 efoswo:SWO_0000594 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000594 oboInOwl:deprecated true .
 efoswo:SWO_0000594 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000594 obo:IAO_0100001 swo:SWO_0000594 .
+
+efoswo:SWO_0000398 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000398 oboInOwl:deprecated true .
+efoswo:SWO_0000398 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000398 obo:IAO_0100001 swo:SWO_0000398 .
 
 efoswo:SWO_0000005 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000005 oboInOwl:deprecated true .
@@ -1092,21 +1007,6 @@ efoswo:SWO_0000054 oboInOwl:deprecated true .
 efoswo:SWO_0000054 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000054 obo:IAO_0100001 swo:SWO_0000054 .
 
-efoswo:SWO_0000018 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000018 oboInOwl:deprecated true .
-efoswo:SWO_0000018 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000018 obo:IAO_0100001 swo:SWO_0000018 .
-
-efoswo:SWO_0000277 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000277 oboInOwl:deprecated true .
-efoswo:SWO_0000277 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000277 obo:IAO_0100001 swo:SWO_0000277 .
-
-efoswo:SWO_0000713 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000713 oboInOwl:deprecated true .
-efoswo:SWO_0000713 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000713 obo:IAO_0100001 swo:SWO_0000713 .
-
 efoswo:SWO_0000552 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000552 oboInOwl:deprecated true .
 efoswo:SWO_0000552 efo:obsoleted_in_version "1.7" .
@@ -1122,35 +1022,30 @@ efoswo:SWO_0000172 oboInOwl:deprecated true .
 efoswo:SWO_0000172 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000172 obo:IAO_0100001 swo:SWO_0000172 .
 
-efoswo:SWO_0000174 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000174 oboInOwl:deprecated true .
-efoswo:SWO_0000174 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000174 obo:IAO_0100001 swo:SWO_0000174 .
-
-efoswo:SWO_0000695 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000695 oboInOwl:deprecated true .
-efoswo:SWO_0000695 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000695 obo:IAO_0100001 swo:SWO_0000695 .
-
 efoswo:SWO_0000705 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000705 oboInOwl:deprecated true .
 efoswo:SWO_0000705 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000705 obo:IAO_0100001 swo:SWO_0000705 .
 
-efoswo:SWO_0000135 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000135 oboInOwl:deprecated true .
-efoswo:SWO_0000135 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000135 obo:IAO_0100001 swo:SWO_0000135 .
+efoswo:SWO_0000490 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000490 oboInOwl:deprecated true .
+efoswo:SWO_0000490 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000490 obo:IAO_0100001 swo:SWO_0000490 .
+
+efoswo:SWO_0000531 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000531 oboInOwl:deprecated true .
+efoswo:SWO_0000531 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000531 obo:IAO_0100001 swo:SWO_0000531 .
 
 efoswo:SWO_0000687 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000687 oboInOwl:deprecated true .
 efoswo:SWO_0000687 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000687 obo:IAO_0100001 swo:SWO_0000687 .
 
-efoswo:SWO_0000497 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000497 oboInOwl:deprecated true .
-efoswo:SWO_0000497 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000497 obo:IAO_0100001 swo:SWO_0000497 .
+efoswo:SWO_0000363 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000363 oboInOwl:deprecated true .
+efoswo:SWO_0000363 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000363 obo:IAO_0100001 swo:SWO_0000363 .
 
 efoswo:SWO_0000700 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000700 oboInOwl:deprecated true .
@@ -1171,6 +1066,21 @@ efoswo:SWO_0000130 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000130 oboInOwl:deprecated true .
 efoswo:SWO_0000130 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000130 obo:IAO_0100001 swo:SWO_0000130 .
+
+efoswo:SWO_0000108 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000108 oboInOwl:deprecated true .
+efoswo:SWO_0000108 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000108 obo:IAO_0100001 swo:SWO_0000108 .
+
+efoswo:SWO_0000682 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000682 oboInOwl:deprecated true .
+efoswo:SWO_0000682 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000682 obo:IAO_0100001 swo:SWO_0000682 .
+
+efoswo:SWO_0000597 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000597 oboInOwl:deprecated true .
+efoswo:SWO_0000597 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000597 obo:IAO_0100001 swo:SWO_0000597 .
 
 efoswo:SWO_0000645 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000645 oboInOwl:deprecated true .
@@ -1196,16 +1106,6 @@ efoswo:SWO_0000075 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000075 oboInOwl:deprecated true .
 efoswo:SWO_0000075 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000075 obo:IAO_0100001 swo:SWO_0000075 .
-
-efoswo:SWO_0000437 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000437 oboInOwl:deprecated true .
-efoswo:SWO_0000437 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000437 obo:IAO_0100001 swo:SWO_0000437 .
-
-efoswo:SWO_0000284 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000284 oboInOwl:deprecated true .
-efoswo:SWO_0000284 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000284 obo:IAO_0100001 swo:SWO_0000284 .
 
 efoswo:SWO_0000608 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000608 oboInOwl:deprecated true .
@@ -1242,15 +1142,10 @@ efoswo:SWO_0000603 oboInOwl:deprecated true .
 efoswo:SWO_0000603 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000603 obo:IAO_0100001 swo:SWO_0000603 .
 
-efoswo:SWO_0000627 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000627 oboInOwl:deprecated true .
-efoswo:SWO_0000627 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000627 obo:IAO_0100001 swo:SWO_0000627 .
-
-efoswo:SWO_0000585 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000585 oboInOwl:deprecated true .
-efoswo:SWO_0000585 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000585 obo:IAO_0100001 swo:SWO_0000585 .
+efoswo:SWO_0000389 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000389 oboInOwl:deprecated true .
+efoswo:SWO_0000389 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000389 obo:IAO_0100001 swo:SWO_0000389 .
 
 efoswo:Class_6 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:Class_6 oboInOwl:deprecated true .
@@ -1272,20 +1167,15 @@ efoswo:SWO_0000168 oboInOwl:deprecated true .
 efoswo:SWO_0000168 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000168 obo:IAO_0100001 swo:SWO_0000168 .
 
-efoswo:SWO_0000580 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000580 oboInOwl:deprecated true .
-efoswo:SWO_0000580 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000580 obo:IAO_0100001 swo:SWO_0000580 .
+efoswo:SWO_0000560 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000560 oboInOwl:deprecated true .
+efoswo:SWO_0000560 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000560 obo:IAO_0100001 swo:SWO_0000560 .
 
 efoswo:SWO_0000390 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000390 oboInOwl:deprecated true .
 efoswo:SWO_0000390 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000390 obo:IAO_0100001 swo:SWO_0000390 .
-
-efoswo:SWO_0000082 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000082 oboInOwl:deprecated true .
-efoswo:SWO_0000082 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000082 obo:IAO_0100001 swo:SWO_0000082 .
 
 efoswo:SWO_0000543 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000543 oboInOwl:deprecated true .
@@ -1302,20 +1192,15 @@ efoswo:SWO_0000163 oboInOwl:deprecated true .
 efoswo:SWO_0000163 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000163 obo:IAO_0100001 swo:SWO_0000163 .
 
-efoswo:SWO_0000628 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000628 oboInOwl:deprecated true .
-efoswo:SWO_0000628 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000628 obo:IAO_0100001 swo:SWO_0000628 .
+efoswo:SWO_0000243 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000243 oboInOwl:deprecated true .
+efoswo:SWO_0000243 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000243 obo:IAO_0100001 swo:SWO_0000243 .
 
 efoswo:SWO_0000506 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000506 oboInOwl:deprecated true .
 efoswo:SWO_0000506 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000506 obo:IAO_0100001 swo:SWO_0000506 .
-
-efoswo:SWO_0000493 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000493 oboInOwl:deprecated true .
-efoswo:SWO_0000493 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000493 obo:IAO_0100001 swo:SWO_0000493 .
 
 efoswo:SWO_0000316 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000316 oboInOwl:deprecated true .
@@ -1327,11 +1212,6 @@ efoswo:SWO_0000126 oboInOwl:deprecated true .
 efoswo:SWO_0000126 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000126 obo:IAO_0100001 swo:SWO_0000126 .
 
-efoswo:SWO_0000267 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000267 oboInOwl:deprecated true .
-efoswo:SWO_0000267 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000267 obo:IAO_0100001 swo:SWO_0000267 .
-
 efoswo:SWO_0000678 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000678 oboInOwl:deprecated true .
 efoswo:SWO_0000678 efo:obsoleted_in_version "1.7" .
@@ -1342,15 +1222,15 @@ efoswo:SWO_0000488 oboInOwl:deprecated true .
 efoswo:SWO_0000488 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000488 obo:IAO_0100001 swo:SWO_0000488 .
 
-efoswo:SWO_0000587 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000587 oboInOwl:deprecated true .
-efoswo:SWO_0000587 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000587 obo:IAO_0100001 swo:SWO_0000587 .
+efoswo:SWO_0000298 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000298 oboInOwl:deprecated true .
+efoswo:SWO_0000298 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000298 obo:IAO_0100001 swo:SWO_0000298 .
 
-efoswo:SWO_0000270 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000270 oboInOwl:deprecated true .
-efoswo:SWO_0000270 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000270 obo:IAO_0100001 swo:SWO_0000270 .
+efoswo:SWO_0000684 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000684 oboInOwl:deprecated true .
+efoswo:SWO_0000684 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000684 obo:IAO_0100001 swo:SWO_0000684 .
 
 efoswo:SWO_0000501 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000501 oboInOwl:deprecated true .
@@ -1367,15 +1247,15 @@ efoswo:SWO_0000121 oboInOwl:deprecated true .
 efoswo:SWO_0000121 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000121 obo:IAO_0100001 swo:SWO_0000121 .
 
+efoswo:SWO_0000722 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000722 oboInOwl:deprecated true .
+efoswo:SWO_0000722 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000722 obo:IAO_0100001 swo:SWO_0000722 .
+
 efoswo:SWO_0000673 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000673 oboInOwl:deprecated true .
 efoswo:SWO_0000673 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000673 obo:IAO_0100001 swo:SWO_0000673 .
-
-efoswo:SWO_0000106 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000106 oboInOwl:deprecated true .
-efoswo:SWO_0000106 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000106 obo:IAO_0100001 swo:SWO_0000106 .
 
 efoswo:SWO_0000483 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000483 oboInOwl:deprecated true .
@@ -1387,16 +1267,6 @@ efoswo:SWO_0000293 oboInOwl:deprecated true .
 efoswo:SWO_0000293 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000293 obo:IAO_0100001 swo:SWO_0000293 .
 
-efoswo:SWO_0000722 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000722 oboInOwl:deprecated true .
-efoswo:SWO_0000722 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000722 obo:IAO_0100001 swo:SWO_0000722 .
-
-efoswo:SWO_0000498 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000498 oboInOwl:deprecated true .
-efoswo:SWO_0000498 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000498 obo:IAO_0100001 swo:SWO_0000498 .
-
 efoswo:SWO_0000636 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000636 oboInOwl:deprecated true .
 efoswo:SWO_0000636 efo:obsoleted_in_version "1.7" .
@@ -1407,30 +1277,20 @@ efoswo:SWO_0000446 oboInOwl:deprecated true .
 efoswo:SWO_0000446 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000446 obo:IAO_0100001 swo:SWO_0000446 .
 
+efoswo:SWO_0000256 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000256 oboInOwl:deprecated true .
+efoswo:SWO_0000256 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000256 obo:IAO_0100001 swo:SWO_0000256 .
+
 efoswo:SWO_0000066 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000066 oboInOwl:deprecated true .
 efoswo:SWO_0000066 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000066 obo:IAO_0100001 swo:SWO_0000066 .
 
-efoswo:SWO_0000321 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000321 oboInOwl:deprecated true .
-efoswo:SWO_0000321 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000321 obo:IAO_0100001 swo:SWO_0000321 .
-
-efoswo:SWO_0000423 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000423 oboInOwl:deprecated true .
-efoswo:SWO_0000423 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000423 obo:IAO_0100001 swo:SWO_0000423 .
-
 efoswo:SWO_0000219 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000219 oboInOwl:deprecated true .
 efoswo:SWO_0000219 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000219 obo:IAO_0100001 swo:SWO_0000219 .
-
-efoswo:SWO_0000016 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000016 oboInOwl:deprecated true .
-efoswo:SWO_0000016 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000016 obo:IAO_0100001 swo:SWO_0000016 .
 
 efoswo:SWO_0000029 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000029 oboInOwl:deprecated true .
@@ -1447,16 +1307,6 @@ efoswo:SWO_0000441 oboInOwl:deprecated true .
 efoswo:SWO_0000441 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000441 obo:IAO_0100001 swo:SWO_0000441 .
 
-efoswo:SWO_0000251 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000251 oboInOwl:deprecated true .
-efoswo:SWO_0000251 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000251 obo:IAO_0100001 swo:SWO_0000251 .
-
-efoswo:SWO_0000057 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000057 oboInOwl:deprecated true .
-efoswo:SWO_0000057 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000057 obo:IAO_0100001 swo:SWO_0000057 .
-
 efoswo:SWO_0000214 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000214 oboInOwl:deprecated true .
 efoswo:SWO_0000214 efo:obsoleted_in_version "1.7" .
@@ -1466,6 +1316,21 @@ efoswo:SWO_0000024 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000024 oboInOwl:deprecated true .
 efoswo:SWO_0000024 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000024 obo:IAO_0100001 swo:SWO_0000024 .
+
+efoswo:SWO_0000095 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000095 oboInOwl:deprecated true .
+efoswo:SWO_0000095 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000095 obo:IAO_0100001 swo:SWO_0000095 .
+
+efoswo:SWO_0000055 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000055 oboInOwl:deprecated true .
+efoswo:SWO_0000055 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000055 obo:IAO_0100001 swo:SWO_0000055 .
+
+efoswo:SWO_0000576 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000576 oboInOwl:deprecated true .
+efoswo:SWO_0000576 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000576 obo:IAO_0100001 swo:SWO_0000576 .
 
 efoswo:SWO_0000386 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000386 oboInOwl:deprecated true .
@@ -1482,11 +1347,6 @@ efoswo:SWO_0000729 oboInOwl:deprecated true .
 efoswo:SWO_0000729 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000729 obo:IAO_0100001 swo:SWO_0000729 .
 
-efoswo:SWO_0000128 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000128 oboInOwl:deprecated true .
-efoswo:SWO_0000128 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000128 obo:IAO_0100001 swo:SWO_0000128 .
-
 efoswo:SWO_0000539 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000539 oboInOwl:deprecated true .
 efoswo:SWO_0000539 efo:obsoleted_in_version "1.7" .
@@ -1502,25 +1362,15 @@ efoswo:SWO_0000159 oboInOwl:deprecated true .
 efoswo:SWO_0000159 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000159 obo:IAO_0100001 swo:SWO_0000159 .
 
-efoswo:SWO_0000571 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000571 oboInOwl:deprecated true .
-efoswo:SWO_0000571 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000571 obo:IAO_0100001 swo:SWO_0000571 .
+efoswo:SWO_0000381 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000381 oboInOwl:deprecated true .
+efoswo:SWO_0000381 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000381 obo:IAO_0100001 swo:SWO_0000381 .
 
 efoswo:SWO_0000191 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000191 oboInOwl:deprecated true .
 efoswo:SWO_0000191 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000191 obo:IAO_0100001 swo:SWO_0000191 .
-
-efoswo:SWO_0000216 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000216 oboInOwl:deprecated true .
-efoswo:SWO_0000216 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000216 obo:IAO_0100001 swo:SWO_0000216 .
-
-efoswo:SWO_0000724 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000724 oboInOwl:deprecated true .
-efoswo:SWO_0000724 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000724 obo:IAO_0100001 swo:SWO_0000724 .
 
 efoswo:SWO_0000534 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000534 oboInOwl:deprecated true .
@@ -1536,6 +1386,11 @@ efoswo:SWO_0000154 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000154 oboInOwl:deprecated true .
 efoswo:SWO_0000154 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000154 obo:IAO_0100001 swo:SWO_0000154 .
+
+efoswo:SWO_0000146 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000146 oboInOwl:deprecated true .
+efoswo:SWO_0000146 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000146 obo:IAO_0100001 swo:SWO_0000146 .
 
 efoswo:SWO_0000307 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000307 oboInOwl:deprecated true .
@@ -1567,45 +1422,70 @@ efoswo:SWO_0000112 oboInOwl:deprecated true .
 efoswo:SWO_0000112 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000112 obo:IAO_0100001 swo:SWO_0000112 .
 
-efoswo:SWO_0000664 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000664 oboInOwl:deprecated true .
-efoswo:SWO_0000664 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000664 obo:IAO_0100001 swo:SWO_0000664 .
+efoswo:SWO_0000323 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000323 oboInOwl:deprecated true .
+efoswo:SWO_0000323 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000323 obo:IAO_0100001 swo:SWO_0000323 .
 
 efoswo:SWO_0000474 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000474 oboInOwl:deprecated true .
 efoswo:SWO_0000474 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000474 obo:IAO_0100001 swo:SWO_0000474 .
 
+efoswo:SWO_0000284 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000284 oboInOwl:deprecated true .
+efoswo:SWO_0000284 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000284 obo:IAO_0100001 swo:SWO_0000284 .
+
 efoswo:SWO_0000094 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000094 oboInOwl:deprecated true .
 efoswo:SWO_0000094 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000094 obo:IAO_0100001 swo:SWO_0000094 .
 
-efoswo:SWO_0000363 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000363 oboInOwl:deprecated true .
-efoswo:SWO_0000363 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000363 obo:IAO_0100001 swo:SWO_0000363 .
+efoswo:SWO_0000016 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000016 oboInOwl:deprecated true .
+efoswo:SWO_0000016 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000016 obo:IAO_0100001 swo:SWO_0000016 .
 
-efoswo:SWO_0000127 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000127 oboInOwl:deprecated true .
-efoswo:SWO_0000127 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000127 obo:IAO_0100001 swo:SWO_0000127 .
+efoswo:SWO_0000627 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000627 oboInOwl:deprecated true .
+efoswo:SWO_0000627 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000627 obo:IAO_0100001 swo:SWO_0000627 .
+
+efoswo:SWO_0000437 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000437 oboInOwl:deprecated true .
+efoswo:SWO_0000437 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000437 obo:IAO_0100001 swo:SWO_0000437 .
 
 efoswo:SWO_0000247 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000247 oboInOwl:deprecated true .
 efoswo:SWO_0000247 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000247 obo:IAO_0100001 swo:SWO_0000247 .
 
-efoswo:SWO_0000052 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000052 oboInOwl:deprecated true .
-efoswo:SWO_0000052 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000052 obo:IAO_0100001 swo:SWO_0000052 .
+efoswo:SWO_0000423 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000423 oboInOwl:deprecated true .
+efoswo:SWO_0000423 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000423 obo:IAO_0100001 swo:SWO_0000423 .
 
-efoswo:SWO_0000592 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000592 oboInOwl:deprecated true .
-efoswo:SWO_0000592 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000592 obo:IAO_0100001 swo:SWO_0000592 .
+efoswo:SWO_0000157 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000157 oboInOwl:deprecated true .
+efoswo:SWO_0000157 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000157 obo:IAO_0100001 swo:SWO_0000157 .
+
+efoswo:SWO_0000140 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000140 oboInOwl:deprecated true .
+efoswo:SWO_0000140 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000140 obo:IAO_0100001 swo:SWO_0000140 .
+
+efoswo:SWO_0000278 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000278 oboInOwl:deprecated true .
+efoswo:SWO_0000278 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000278 obo:IAO_0100001 swo:SWO_0000278 .
+
+efoswo:SWO_0000276 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000276 oboInOwl:deprecated true .
+efoswo:SWO_0000276 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000276 obo:IAO_0100001 swo:SWO_0000276 .
 
 efoswo:SWO_0000622 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000622 oboInOwl:deprecated true .
@@ -1616,6 +1496,11 @@ efoswo:SWO_0000432 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000432 oboInOwl:deprecated true .
 efoswo:SWO_0000432 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000432 obo:IAO_0100001 swo:SWO_0000432 .
+
+efoswo:SWO_0000052 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000052 oboInOwl:deprecated true .
+efoswo:SWO_0000052 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000052 obo:IAO_0100001 swo:SWO_0000052 .
 
 efoswo:SWO_0000205 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000205 oboInOwl:deprecated true .
@@ -1631,6 +1516,11 @@ efoswo:SWO_0000377 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000377 oboInOwl:deprecated true .
 efoswo:SWO_0000377 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000377 obo:IAO_0100001 swo:SWO_0000377 .
+
+efoswo:SWO_0000257 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000257 oboInOwl:deprecated true .
+efoswo:SWO_0000257 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000257 obo:IAO_0100001 swo:SWO_0000257 .
 
 efoswo:SWO_0000182 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000182 oboInOwl:deprecated true .
@@ -1652,10 +1542,10 @@ efoswo:SWO_0000562 oboInOwl:deprecated true .
 efoswo:SWO_0000562 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000562 obo:IAO_0100001 swo:SWO_0000562 .
 
-efoswo:SWO_0000372 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000372 oboInOwl:deprecated true .
-efoswo:SWO_0000372 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000372 obo:IAO_0100001 swo:SWO_0000372 .
+efoswo:SWO_0000587 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000587 oboInOwl:deprecated true .
+efoswo:SWO_0000587 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000587 obo:IAO_0100001 swo:SWO_0000587 .
 
 efoswo:SWO_0000525 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000525 oboInOwl:deprecated true .
@@ -1667,10 +1557,25 @@ efoswo:SWO_0000335 oboInOwl:deprecated true .
 efoswo:SWO_0000335 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000335 obo:IAO_0100001 swo:SWO_0000335 .
 
+efoswo:SWO_0000062 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000062 oboInOwl:deprecated true .
+efoswo:SWO_0000062 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000062 obo:IAO_0100001 swo:SWO_0000062 .
+
 efoswo:SWO_0000697 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000697 oboInOwl:deprecated true .
 efoswo:SWO_0000697 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000697 obo:IAO_0100001 swo:SWO_0000697 .
+
+efoswo:SWO_0000082 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000082 oboInOwl:deprecated true .
+efoswo:SWO_0000082 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000082 obo:IAO_0100001 swo:SWO_0000082 .
+
+efoswo:SWO_0000217 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000217 oboInOwl:deprecated true .
+efoswo:SWO_0000217 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000217 obo:IAO_0100001 swo:SWO_0000217 .
 
 efoswo:SWO_0000710 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000710 oboInOwl:deprecated true .
@@ -1687,35 +1592,20 @@ efoswo:SWO_0000330 oboInOwl:deprecated true .
 efoswo:SWO_0000330 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000330 obo:IAO_0100001 swo:SWO_0000330 .
 
-efoswo:SWO_0000304 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000304 oboInOwl:deprecated true .
-efoswo:SWO_0000304 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000304 obo:IAO_0100001 swo:SWO_0000304 .
-
-efoswo:SWO_0000062 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000062 oboInOwl:deprecated true .
-efoswo:SWO_0000062 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000062 obo:IAO_0100001 swo:SWO_0000062 .
-
 efoswo:SWO_0000692 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000692 oboInOwl:deprecated true .
 efoswo:SWO_0000692 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000692 obo:IAO_0100001 swo:SWO_0000692 .
-
-efoswo:SWO_0000337 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000337 oboInOwl:deprecated true .
-efoswo:SWO_0000337 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000337 obo:IAO_0100001 swo:SWO_0000337 .
 
 efoswo:SWO_0000103 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000103 oboInOwl:deprecated true .
 efoswo:SWO_0000103 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000103 obo:IAO_0100001 swo:SWO_0000103 .
 
-efoswo:SWO_0000655 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000655 oboInOwl:deprecated true .
-efoswo:SWO_0000655 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000655 obo:IAO_0100001 swo:SWO_0000655 .
+efoswo:SWO_0000713 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000713 oboInOwl:deprecated true .
+efoswo:SWO_0000713 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000713 obo:IAO_0100001 swo:SWO_0000713 .
 
 efoswo:SWO_0000465 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000465 oboInOwl:deprecated true .
@@ -1732,10 +1622,10 @@ efoswo:SWO_0000085 oboInOwl:deprecated true .
 efoswo:SWO_0000085 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000085 obo:IAO_0100001 swo:SWO_0000085 .
 
-efoswo:SWO_0000113 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000113 oboInOwl:deprecated true .
-efoswo:SWO_0000113 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000113 obo:IAO_0100001 swo:SWO_0000113 .
+efoswo:SWO_0000281 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000281 oboInOwl:deprecated true .
+efoswo:SWO_0000281 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000281 obo:IAO_0100001 swo:SWO_0000281 .
 
 efoswo:SWO_0000618 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000618 oboInOwl:deprecated true .
@@ -1746,11 +1636,6 @@ efoswo:SWO_0000428 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000428 oboInOwl:deprecated true .
 efoswo:SWO_0000428 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000428 obo:IAO_0100001 swo:SWO_0000428 .
-
-efoswo:SWO_0000114 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000114 oboInOwl:deprecated true .
-efoswo:SWO_0000114 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000114 obo:IAO_0100001 swo:SWO_0000114 .
 
 efoswo:SWO_0000238 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000238 oboInOwl:deprecated true .
@@ -1772,6 +1657,11 @@ efoswo:SWO_0000460 oboInOwl:deprecated true .
 efoswo:SWO_0000460 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000460 obo:IAO_0100001 swo:SWO_0000460 .
 
+efoswo:SWO_0000270 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000270 oboInOwl:deprecated true .
+efoswo:SWO_0000270 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000270 obo:IAO_0100001 swo:SWO_0000270 .
+
 efoswo:SWO_0000080 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000080 oboInOwl:deprecated true .
 efoswo:SWO_0000080 efo:obsoleted_in_version "1.7" .
@@ -1787,10 +1677,15 @@ efoswo:SWO_0000233 oboInOwl:deprecated true .
 efoswo:SWO_0000233 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000233 obo:IAO_0100001 swo:SWO_0000233 .
 
-efoswo:SWO_0000296 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000296 oboInOwl:deprecated true .
-efoswo:SWO_0000296 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000296 obo:IAO_0100001 swo:SWO_0000296 .
+efoswo:SWO_0000620 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000620 oboInOwl:deprecated true .
+efoswo:SWO_0000620 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000620 obo:IAO_0100001 swo:SWO_0000620 .
+
+efoswo:SWO_0000508 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000508 oboInOwl:deprecated true .
+efoswo:SWO_0000508 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000508 obo:IAO_0100001 swo:SWO_0000508 .
 
 efoswo:SWO_0000006 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000006 oboInOwl:deprecated true .
@@ -1812,25 +1707,20 @@ efoswo:SWO_0000178 oboInOwl:deprecated true .
 efoswo:SWO_0000178 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000178 obo:IAO_0100001 swo:SWO_0000178 .
 
-efoswo:SWO_0000141 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000141 oboInOwl:deprecated true .
-efoswo:SWO_0000141 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000141 obo:IAO_0100001 swo:SWO_0000141 .
-
 efoswo:SWO_0000590 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000590 oboInOwl:deprecated true .
 efoswo:SWO_0000590 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000590 obo:IAO_0100001 swo:SWO_0000590 .
 
-efoswo:SWO_0000674 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000674 oboInOwl:deprecated true .
-efoswo:SWO_0000674 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000674 obo:IAO_0100001 swo:SWO_0000674 .
-
 efoswo:SWO_0000173 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000173 oboInOwl:deprecated true .
 efoswo:SWO_0000173 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000173 obo:IAO_0100001 swo:SWO_0000173 .
+
+efoswo:SWO_0000007 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000007 oboInOwl:deprecated true .
+efoswo:SWO_0000007 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000007 obo:IAO_0100001 swo:SWO_0000007 .
 
 efoswo:SWO_0000706 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000706 oboInOwl:deprecated true .
@@ -1842,25 +1732,30 @@ efoswo:SWO_0000516 oboInOwl:deprecated true .
 efoswo:SWO_0000516 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000516 obo:IAO_0100001 swo:SWO_0000516 .
 
-efoswo:SWO_0000326 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000326 oboInOwl:deprecated true .
-efoswo:SWO_0000326 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000326 obo:IAO_0100001 swo:SWO_0000326 .
-
 efoswo:SWO_0000688 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000688 oboInOwl:deprecated true .
 efoswo:SWO_0000688 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000688 obo:IAO_0100001 swo:SWO_0000688 .
+
+efoswo:SWO_0000498 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000498 oboInOwl:deprecated true .
+efoswo:SWO_0000498 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000498 obo:IAO_0100001 swo:SWO_0000498 .
 
 efoswo:SWO_0000701 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000701 oboInOwl:deprecated true .
 efoswo:SWO_0000701 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000701 obo:IAO_0100001 swo:SWO_0000701 .
 
-efoswo:SWO_0000588 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000588 oboInOwl:deprecated true .
-efoswo:SWO_0000588 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000588 obo:IAO_0100001 swo:SWO_0000588 .
+efoswo:SWO_0000321 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000321 oboInOwl:deprecated true .
+efoswo:SWO_0000321 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000321 obo:IAO_0100001 swo:SWO_0000321 .
+
+efoswo:SWO_0000137 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000137 oboInOwl:deprecated true .
+efoswo:SWO_0000137 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000137 obo:IAO_0100001 swo:SWO_0000137 .
 
 efoswo:SWO_0000683 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000683 oboInOwl:deprecated true .
@@ -1892,6 +1787,16 @@ efoswo:SWO_0000609 oboInOwl:deprecated true .
 efoswo:SWO_0000609 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000609 obo:IAO_0100001 swo:SWO_0000609 .
 
+efoswo:SWO_0000049 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000049 oboInOwl:deprecated true .
+efoswo:SWO_0000049 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000049 obo:IAO_0100001 swo:SWO_0000049 .
+
+efoswo:SWO_0000165 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000165 oboInOwl:deprecated true .
+efoswo:SWO_0000165 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000165 obo:IAO_0100001 swo:SWO_0000165 .
+
 efoswo:SWO_0000419 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000419 oboInOwl:deprecated true .
 efoswo:SWO_0000419 efo:obsoleted_in_version "1.7" .
@@ -1917,11 +1822,6 @@ efoswo:SWO_0000451 oboInOwl:deprecated true .
 efoswo:SWO_0000451 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000451 obo:IAO_0100001 swo:SWO_0000451 .
 
-efoswo:SWO_0000261 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000261 oboInOwl:deprecated true .
-efoswo:SWO_0000261 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000261 obo:IAO_0100001 swo:SWO_0000261 .
-
 efoswo:SWO_0000071 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000071 oboInOwl:deprecated true .
 efoswo:SWO_0000071 efo:obsoleted_in_version "1.7" .
@@ -1942,11 +1842,6 @@ efoswo:SWO_0000034 oboInOwl:deprecated true .
 efoswo:SWO_0000034 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000034 obo:IAO_0100001 swo:SWO_0000034 .
 
-efoswo:SWO_0000586 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000586 oboInOwl:deprecated true .
-efoswo:SWO_0000586 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000586 obo:IAO_0100001 swo:SWO_0000586 .
-
 efoswo:SWO_0000396 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000396 oboInOwl:deprecated true .
 efoswo:SWO_0000396 efo:obsoleted_in_version "1.7" .
@@ -1962,25 +1857,10 @@ efoswo:SWO_0000359 oboInOwl:deprecated true .
 efoswo:SWO_0000359 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000359 obo:IAO_0100001 swo:SWO_0000359 .
 
-efoswo:SWO_0000169 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000169 oboInOwl:deprecated true .
-efoswo:SWO_0000169 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000169 obo:IAO_0100001 swo:SWO_0000169 .
-
 efoswo:SWO_0000581 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000581 oboInOwl:deprecated true .
 efoswo:SWO_0000581 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000581 obo:IAO_0100001 swo:SWO_0000581 .
-
-efoswo:SWO_0000477 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000477 oboInOwl:deprecated true .
-efoswo:SWO_0000477 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000477 obo:IAO_0100001 swo:SWO_0000477 .
-
-efoswo:SWO_0000391 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000391 oboInOwl:deprecated true .
-efoswo:SWO_0000391 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000391 obo:IAO_0100001 swo:SWO_0000391 .
 
 efoswo:SWO_0000544 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000544 oboInOwl:deprecated true .
@@ -1997,10 +1877,10 @@ efoswo:SWO_0000164 oboInOwl:deprecated true .
 efoswo:SWO_0000164 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000164 obo:IAO_0100001 swo:SWO_0000164 .
 
-efoswo:SWO_0000212 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000212 oboInOwl:deprecated true .
-efoswo:SWO_0000212 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000212 obo:IAO_0100001 swo:SWO_0000212 .
+efoswo:SWO_0000088 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000088 oboInOwl:deprecated true .
+efoswo:SWO_0000088 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000088 obo:IAO_0100001 swo:SWO_0000088 .
 
 efoswo:SWO_0000507 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000507 oboInOwl:deprecated true .
@@ -2012,6 +1892,21 @@ efoswo:SWO_0000317 oboInOwl:deprecated true .
 efoswo:SWO_0000317 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000317 obo:IAO_0100001 swo:SWO_0000317 .
 
+efoswo:SWO_0000127 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000127 oboInOwl:deprecated true .
+efoswo:SWO_0000127 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000127 obo:IAO_0100001 swo:SWO_0000127 .
+
+efoswo:SWO_0000129 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000129 oboInOwl:deprecated true .
+efoswo:SWO_0000129 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000129 obo:IAO_0100001 swo:SWO_0000129 .
+
+efoswo:SWO_0000337 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000337 oboInOwl:deprecated true .
+efoswo:SWO_0000337 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000337 obo:IAO_0100001 swo:SWO_0000337 .
+
 efoswo:SWO_0000679 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000679 oboInOwl:deprecated true .
 efoswo:SWO_0000679 efo:obsoleted_in_version "1.7" .
@@ -2022,11 +1917,6 @@ efoswo:SWO_0000489 oboInOwl:deprecated true .
 efoswo:SWO_0000489 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000489 obo:IAO_0100001 swo:SWO_0000489 .
 
-efoswo:SWO_0000449 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000449 oboInOwl:deprecated true .
-efoswo:SWO_0000449 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000449 obo:IAO_0100001 swo:SWO_0000449 .
-
 efoswo:SWO_0000312 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000312 oboInOwl:deprecated true .
 efoswo:SWO_0000312 efo:obsoleted_in_version "1.7" .
@@ -2036,6 +1926,11 @@ efoswo:SWO_0000122 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000122 oboInOwl:deprecated true .
 efoswo:SWO_0000122 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000122 obo:IAO_0100001 swo:SWO_0000122 .
+
+efoswo:SWO_0000674 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000674 oboInOwl:deprecated true .
+efoswo:SWO_0000674 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000674 obo:IAO_0100001 swo:SWO_0000674 .
 
 efoswo:SWO_0000484 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000484 oboInOwl:deprecated true .
@@ -2057,11 +1952,6 @@ efoswo:SWO_0000447 oboInOwl:deprecated true .
 efoswo:SWO_0000447 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000447 obo:IAO_0100001 swo:SWO_0000447 .
 
-efoswo:SWO_0000392 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000392 oboInOwl:deprecated true .
-efoswo:SWO_0000392 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000392 obo:IAO_0100001 swo:SWO_0000392 .
-
 efoswo:SWO_0000632 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000632 oboInOwl:deprecated true .
 efoswo:SWO_0000632 efo:obsoleted_in_version "1.7" .
@@ -2077,10 +1967,20 @@ efoswo:SWO_0000252 oboInOwl:deprecated true .
 efoswo:SWO_0000252 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000252 obo:IAO_0100001 swo:SWO_0000252 .
 
+efoswo:SWO_0000282 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000282 oboInOwl:deprecated true .
+efoswo:SWO_0000282 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000282 obo:IAO_0100001 swo:SWO_0000282 .
+
 efoswo:SWO_0000405 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000405 oboInOwl:deprecated true .
 efoswo:SWO_0000405 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000405 obo:IAO_0100001 swo:SWO_0000405 .
+
+efoswo:SWO_0000215 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000215 oboInOwl:deprecated true .
+efoswo:SWO_0000215 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000215 obo:IAO_0100001 swo:SWO_0000215 .
 
 efoswo:SWO_0000577 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000577 oboInOwl:deprecated true .
@@ -2092,10 +1992,10 @@ efoswo:SWO_0000387 oboInOwl:deprecated true .
 efoswo:SWO_0000387 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000387 obo:IAO_0100001 swo:SWO_0000387 .
 
-efoswo:SWO_0000243 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000243 oboInOwl:deprecated true .
-efoswo:SWO_0000243 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000243 obo:IAO_0100001 swo:SWO_0000243 .
+efoswo:SWO_0000012 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000012 oboInOwl:deprecated true .
+efoswo:SWO_0000012 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000012 obo:IAO_0100001 swo:SWO_0000012 .
 
 efoswo:SWO_0000210 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000210 oboInOwl:deprecated true .
@@ -2121,6 +2021,11 @@ efoswo:SWO_0000382 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000382 oboInOwl:deprecated true .
 efoswo:SWO_0000382 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000382 obo:IAO_0100001 swo:SWO_0000382 .
+
+efoswo:SWO_0000267 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000267 oboInOwl:deprecated true .
+efoswo:SWO_0000267 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000267 obo:IAO_0100001 swo:SWO_0000267 .
 
 efoswo:SWO_0000192 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000192 oboInOwl:deprecated true .
@@ -2162,10 +2067,10 @@ efoswo:SWO_0000530 oboInOwl:deprecated true .
 efoswo:SWO_0000530 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000530 obo:IAO_0100001 swo:SWO_0000530 .
 
-efoswo:SWO_0000150 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000150 oboInOwl:deprecated true .
-efoswo:SWO_0000150 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000150 obo:IAO_0100001 swo:SWO_0000150 .
+efoswo:SWO_0000013 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000013 oboInOwl:deprecated true .
+efoswo:SWO_0000013 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000013 obo:IAO_0100001 swo:SWO_0000013 .
 
 efoswo:SWO_0000665 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000665 oboInOwl:deprecated true .
@@ -2187,15 +2092,10 @@ efoswo:SWO_0000285 oboInOwl:deprecated true .
 efoswo:SWO_0000285 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000285 obo:IAO_0100001 swo:SWO_0000285 .
 
-efoswo:SWO_0000095 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000095 oboInOwl:deprecated true .
-efoswo:SWO_0000095 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000095 obo:IAO_0100001 swo:SWO_0000095 .
-
-efoswo:SWO_0000287 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000287 oboInOwl:deprecated true .
-efoswo:SWO_0000287 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000287 obo:IAO_0100001 swo:SWO_0000287 .
+efoswo:SWO_0000628 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000628 oboInOwl:deprecated true .
+efoswo:SWO_0000628 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000628 obo:IAO_0100001 swo:SWO_0000628 .
 
 efoswo:SWO_0000438 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000438 oboInOwl:deprecated true .
@@ -2227,6 +2127,11 @@ efoswo:SWO_0000280 oboInOwl:deprecated true .
 efoswo:SWO_0000280 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000280 obo:IAO_0100001 swo:SWO_0000280 .
 
+efoswo:SWO_0000090 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000090 oboInOwl:deprecated true .
+efoswo:SWO_0000090 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000090 obo:IAO_0100001 swo:SWO_0000090 .
+
 efoswo:SWO_0000623 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000623 oboInOwl:deprecated true .
 efoswo:SWO_0000623 efo:obsoleted_in_version "1.7" .
@@ -2237,6 +2142,11 @@ efoswo:SWO_0000053 oboInOwl:deprecated true .
 efoswo:SWO_0000053 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000053 obo:IAO_0100001 swo:SWO_0000053 .
 
+efoswo:SWO_0000509 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000509 oboInOwl:deprecated true .
+efoswo:SWO_0000509 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000509 obo:IAO_0100001 swo:SWO_0000509 .
+
 efoswo:SWO_0000206 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000206 oboInOwl:deprecated true .
 efoswo:SWO_0000206 efo:obsoleted_in_version "1.7" .
@@ -2246,11 +2156,6 @@ efoswo:SWO_0000188 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000188 oboInOwl:deprecated true .
 efoswo:SWO_0000188 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000188 obo:IAO_0100001 swo:SWO_0000188 .
-
-efoswo:SWO_0000328 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000328 oboInOwl:deprecated true .
-efoswo:SWO_0000328 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000328 obo:IAO_0100001 swo:SWO_0000328 .
 
 efoswo:SWO_0000201 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000201 oboInOwl:deprecated true .
@@ -2282,16 +2187,6 @@ efoswo:SWO_0000526 oboInOwl:deprecated true .
 efoswo:SWO_0000526 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000526 obo:IAO_0100001 swo:SWO_0000526 .
 
-efoswo:SWO_0000336 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000336 oboInOwl:deprecated true .
-efoswo:SWO_0000336 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000336 obo:IAO_0100001 swo:SWO_0000336 .
-
-efoswo:SWO_0000146 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000146 oboInOwl:deprecated true .
-efoswo:SWO_0000146 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000146 obo:IAO_0100001 swo:SWO_0000146 .
-
 efoswo:SWO_0000698 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000698 oboInOwl:deprecated true .
 efoswo:SWO_0000698 efo:obsoleted_in_version "1.7" .
@@ -2317,6 +2212,11 @@ efoswo:SWO_0000331 oboInOwl:deprecated true .
 efoswo:SWO_0000331 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000331 obo:IAO_0100001 swo:SWO_0000331 .
 
+efoswo:SWO_0000141 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000141 oboInOwl:deprecated true .
+efoswo:SWO_0000141 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000141 obo:IAO_0100001 swo:SWO_0000141 .
+
 efoswo:SWO_0000693 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000693 oboInOwl:deprecated true .
 efoswo:SWO_0000693 efo:obsoleted_in_version "1.7" .
@@ -2337,15 +2237,15 @@ efoswo:SWO_0000466 oboInOwl:deprecated true .
 efoswo:SWO_0000466 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000466 obo:IAO_0100001 swo:SWO_0000466 .
 
-efoswo:SWO_0000276 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000276 oboInOwl:deprecated true .
-efoswo:SWO_0000276 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000276 obo:IAO_0100001 swo:SWO_0000276 .
-
 efoswo:SWO_0000086 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000086 oboInOwl:deprecated true .
 efoswo:SWO_0000086 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000086 obo:IAO_0100001 swo:SWO_0000086 .
+
+efoswo:SWO_0000670 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000670 oboInOwl:deprecated true .
+efoswo:SWO_0000670 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000670 obo:IAO_0100001 swo:SWO_0000670 .
 
 efoswo:SWO_0000619 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000619 oboInOwl:deprecated true .
@@ -2392,16 +2292,6 @@ efoswo:SWO_0000596 oboInOwl:deprecated true .
 efoswo:SWO_0000596 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000596 obo:IAO_0100001 swo:SWO_0000596 .
 
-efoswo:SWO_0000007 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000007 oboInOwl:deprecated true .
-efoswo:SWO_0000007 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000007 obo:IAO_0100001 swo:SWO_0000007 .
-
-efoswo:SWO_0000559 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000559 oboInOwl:deprecated true .
-efoswo:SWO_0000559 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000559 obo:IAO_0100001 swo:SWO_0000559 .
-
 efoswo:SWO_0000369 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000369 oboInOwl:deprecated true .
 efoswo:SWO_0000369 efo:obsoleted_in_version "1.7" .
@@ -2412,20 +2302,10 @@ efoswo:SWO_0000179 oboInOwl:deprecated true .
 efoswo:SWO_0000179 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000179 obo:IAO_0100001 swo:SWO_0000179 .
 
-efoswo:SWO_0000249 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000249 oboInOwl:deprecated true .
-efoswo:SWO_0000249 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000249 obo:IAO_0100001 swo:SWO_0000249 .
-
 efoswo:SWO_0000591 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000591 oboInOwl:deprecated true .
 efoswo:SWO_0000591 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000591 obo:IAO_0100001 swo:SWO_0000591 .
-
-efoswo:SWO_0000055 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000055 oboInOwl:deprecated true .
-efoswo:SWO_0000055 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000055 obo:IAO_0100001 swo:SWO_0000055 .
 
 efoswo:SWO_0000364 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000364 oboInOwl:deprecated true .
@@ -2442,11 +2322,6 @@ efoswo:SWO_0000327 oboInOwl:deprecated true .
 efoswo:SWO_0000327 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000327 obo:IAO_0100001 swo:SWO_0000327 .
 
-efoswo:SWO_0000620 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000620 oboInOwl:deprecated true .
-efoswo:SWO_0000620 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000620 obo:IAO_0100001 swo:SWO_0000620 .
-
 efoswo:SWO_0000689 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000689 oboInOwl:deprecated true .
 efoswo:SWO_0000689 efo:obsoleted_in_version "1.7" .
@@ -2461,11 +2336,6 @@ efoswo:SWO_0000512 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000512 oboInOwl:deprecated true .
 efoswo:SWO_0000512 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000512 obo:IAO_0100001 swo:SWO_0000512 .
-
-efoswo:SWO_0000281 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000281 oboInOwl:deprecated true .
-efoswo:SWO_0000281 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000281 obo:IAO_0100001 swo:SWO_0000281 .
 
 efoswo:SWO_0000322 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000322 oboInOwl:deprecated true .
@@ -2496,6 +2366,11 @@ efoswo:SWO_0000077 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000077 oboInOwl:deprecated true .
 efoswo:SWO_0000077 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000077 obo:IAO_0100001 swo:SWO_0000077 .
+
+efoswo:SWO_0000477 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000477 oboInOwl:deprecated true .
+efoswo:SWO_0000477 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000477 obo:IAO_0100001 swo:SWO_0000477 .
 
 efoswo:SWO_0000642 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000642 oboInOwl:deprecated true .
@@ -2552,6 +2427,11 @@ efoswo:SWO_0000582 oboInOwl:deprecated true .
 efoswo:SWO_0000582 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000582 obo:IAO_0100001 swo:SWO_0000582 .
 
+efoswo:SWO_0000392 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000392 oboInOwl:deprecated true .
+efoswo:SWO_0000392 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000392 obo:IAO_0100001 swo:SWO_0000392 .
+
 efoswo:SWO_0000545 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000545 oboInOwl:deprecated true .
 efoswo:SWO_0000545 efo:obsoleted_in_version "1.7" .
@@ -2561,6 +2441,21 @@ efoswo:SWO_0000355 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000355 oboInOwl:deprecated true .
 efoswo:SWO_0000355 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000355 obo:IAO_0100001 swo:SWO_0000355 .
+
+efoswo:SWO_0000221 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000221 oboInOwl:deprecated true .
+efoswo:SWO_0000221 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000221 obo:IAO_0100001 swo:SWO_0000221 .
+
+efoswo:SWO_0000128 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000128 oboInOwl:deprecated true .
+efoswo:SWO_0000128 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000128 obo:IAO_0100001 swo:SWO_0000128 .
+
+efoswo:SWO_0000569 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000569 oboInOwl:deprecated true .
+efoswo:SWO_0000569 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000569 obo:IAO_0100001 swo:SWO_0000569 .
 
 efoswo:SWO_0000730 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000730 oboInOwl:deprecated true .
@@ -2607,11 +2502,6 @@ efoswo:SWO_0000638 oboInOwl:deprecated true .
 efoswo:SWO_0000638 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000638 obo:IAO_0100001 swo:SWO_0000638 .
 
-efoswo:SWO_0000448 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000448 oboInOwl:deprecated true .
-efoswo:SWO_0000448 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000448 obo:IAO_0100001 swo:SWO_0000448 .
-
 efoswo:SWO_0000258 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000258 oboInOwl:deprecated true .
 efoswo:SWO_0000258 efo:obsoleted_in_version "1.7" .
@@ -2627,20 +2517,25 @@ efoswo:SWO_0000480 oboInOwl:deprecated true .
 efoswo:SWO_0000480 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000480 obo:IAO_0100001 swo:SWO_0000480 .
 
+efoswo:SWO_0000212 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000212 oboInOwl:deprecated true .
+efoswo:SWO_0000212 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000212 obo:IAO_0100001 swo:SWO_0000212 .
+
+efoswo:SWO_0000305 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000305 oboInOwl:deprecated true .
+efoswo:SWO_0000305 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000305 obo:IAO_0100001 swo:SWO_0000305 .
+
 efoswo:SWO_0000063 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000063 oboInOwl:deprecated true .
 efoswo:SWO_0000063 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000063 obo:IAO_0100001 swo:SWO_0000063 .
 
-efoswo:SWO_0000531 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000531 oboInOwl:deprecated true .
-efoswo:SWO_0000531 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000531 obo:IAO_0100001 swo:SWO_0000531 .
-
-efoswo:SWO_0000398 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000398 oboInOwl:deprecated true .
-efoswo:SWO_0000398 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000398 obo:IAO_0100001 swo:SWO_0000398 .
+efoswo:SWO_0000216 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000216 oboInOwl:deprecated true .
+efoswo:SWO_0000216 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000216 obo:IAO_0100001 swo:SWO_0000216 .
 
 efoswo:SWO_0000026 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000026 oboInOwl:deprecated true .
@@ -2672,11 +2567,6 @@ efoswo:SWO_0000193 oboInOwl:deprecated true .
 efoswo:SWO_0000193 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000193 obo:IAO_0100001 swo:SWO_0000193 .
 
-efoswo:SWO_0000157 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000157 oboInOwl:deprecated true .
-efoswo:SWO_0000157 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000157 obo:IAO_0100001 swo:SWO_0000157 .
-
 efoswo:SWO_0000726 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000726 oboInOwl:deprecated true .
 efoswo:SWO_0000726 efo:obsoleted_in_version "1.7" .
@@ -2697,6 +2587,11 @@ efoswo:SWO_0000156 oboInOwl:deprecated true .
 efoswo:SWO_0000156 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000156 obo:IAO_0100001 swo:SWO_0000156 .
 
+efoswo:SWO_0000444 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000444 oboInOwl:deprecated true .
+efoswo:SWO_0000444 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000444 obo:IAO_0100001 swo:SWO_0000444 .
+
 efoswo:SWO_0000309 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000309 oboInOwl:deprecated true .
 efoswo:SWO_0000309 efo:obsoleted_in_version "1.7" .
@@ -2706,11 +2601,6 @@ efoswo:SWO_0000721 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000721 oboInOwl:deprecated true .
 efoswo:SWO_0000721 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000721 obo:IAO_0100001 swo:SWO_0000721 .
-
-efoswo:SWO_0000425 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000425 oboInOwl:deprecated true .
-efoswo:SWO_0000425 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000425 obo:IAO_0100001 swo:SWO_0000425 .
 
 efoswo:SWO_0000341 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000341 oboInOwl:deprecated true .
@@ -2727,10 +2617,30 @@ efoswo:SWO_0000096 oboInOwl:deprecated true .
 efoswo:SWO_0000096 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000096 obo:IAO_0100001 swo:SWO_0000096 .
 
+efoswo:SWO_0000695 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000695 oboInOwl:deprecated true .
+efoswo:SWO_0000695 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000695 obo:IAO_0100001 swo:SWO_0000695 .
+
+efoswo:SWO_0000629 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000629 oboInOwl:deprecated true .
+efoswo:SWO_0000629 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000629 obo:IAO_0100001 swo:SWO_0000629 .
+
+efoswo:SWO_0000249 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000249 oboInOwl:deprecated true .
+efoswo:SWO_0000249 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000249 obo:IAO_0100001 swo:SWO_0000249 .
+
 efoswo:SWO_0000059 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000059 oboInOwl:deprecated true .
 efoswo:SWO_0000059 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000059 obo:IAO_0100001 swo:SWO_0000059 .
+
+efoswo:SWO_0000332 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000332 oboInOwl:deprecated true .
+efoswo:SWO_0000332 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000332 obo:IAO_0100001 swo:SWO_0000332 .
 
 efoswo:SWO_0000471 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000471 oboInOwl:deprecated true .
@@ -2742,20 +2652,20 @@ efoswo:SWO_0000091 oboInOwl:deprecated true .
 efoswo:SWO_0000091 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000091 obo:IAO_0100001 swo:SWO_0000091 .
 
-efoswo:SWO_0000624 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000624 oboInOwl:deprecated true .
-efoswo:SWO_0000624 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000624 obo:IAO_0100001 swo:SWO_0000624 .
+efoswo:SWO_0000518 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000518 oboInOwl:deprecated true .
+efoswo:SWO_0000518 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000518 obo:IAO_0100001 swo:SWO_0000518 .
 
-efoswo:SWO_0000434 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000434 oboInOwl:deprecated true .
-efoswo:SWO_0000434 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000434 obo:IAO_0100001 swo:SWO_0000434 .
+efoswo:SWO_0000328 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000328 oboInOwl:deprecated true .
+efoswo:SWO_0000328 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000328 obo:IAO_0100001 swo:SWO_0000328 .
 
-efoswo:SWO_0000050 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000050 oboInOwl:deprecated true .
-efoswo:SWO_0000050 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000050 obo:IAO_0100001 swo:SWO_0000050 .
+efoswo:SWO_0000588 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000588 oboInOwl:deprecated true .
+efoswo:SWO_0000588 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000588 obo:IAO_0100001 swo:SWO_0000588 .
 
 efoswo:SWO_0000207 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000207 oboInOwl:deprecated true .
@@ -2766,16 +2676,6 @@ efoswo:SWO_0000017 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000017 oboInOwl:deprecated true .
 efoswo:SWO_0000017 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000017 obo:IAO_0100001 swo:SWO_0000017 .
-
-efoswo:SWO_0000278 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000278 oboInOwl:deprecated true .
-efoswo:SWO_0000278 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000278 obo:IAO_0100001 swo:SWO_0000278 .
-
-efoswo:SWO_0000379 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000379 oboInOwl:deprecated true .
-efoswo:SWO_0000379 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000379 obo:IAO_0100001 swo:SWO_0000379 .
 
 efoswo:SWO_0000189 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000189 oboInOwl:deprecated true .
@@ -2822,11 +2722,6 @@ efoswo:SWO_0000522 oboInOwl:deprecated true .
 efoswo:SWO_0000522 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000522 obo:IAO_0100001 swo:SWO_0000522 .
 
-efoswo:SWO_0000142 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000142 oboInOwl:deprecated true .
-efoswo:SWO_0000142 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000142 obo:IAO_0100001 swo:SWO_0000142 .
-
 efoswo:SWO_0000694 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000694 oboInOwl:deprecated true .
 efoswo:SWO_0000694 efo:obsoleted_in_version "1.7" .
@@ -2842,25 +2737,35 @@ efoswo:SWO_0000657 oboInOwl:deprecated true .
 efoswo:SWO_0000657 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000657 obo:IAO_0100001 swo:SWO_0000657 .
 
+efoswo:SWO_0000449 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000449 oboInOwl:deprecated true .
+efoswo:SWO_0000449 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000449 obo:IAO_0100001 swo:SWO_0000449 .
+
 efoswo:SWO_0000087 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000087 oboInOwl:deprecated true .
 efoswo:SWO_0000087 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000087 obo:IAO_0100001 swo:SWO_0000087 .
+
+efoswo:SWO_0000296 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000296 oboInOwl:deprecated true .
+efoswo:SWO_0000296 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000296 obo:IAO_0100001 swo:SWO_0000296 .
+
+efoswo:SWO_0000143 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000143 oboInOwl:deprecated true .
+efoswo:SWO_0000143 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000143 obo:IAO_0100001 swo:SWO_0000143 .
 
 efoswo:SWO_0000100 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000100 oboInOwl:deprecated true .
 efoswo:SWO_0000100 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000100 obo:IAO_0100001 swo:SWO_0000100 .
 
-efoswo:SWO_0000652 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000652 oboInOwl:deprecated true .
-efoswo:SWO_0000652 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000652 obo:IAO_0100001 swo:SWO_0000652 .
-
-efoswo:SWO_0000323 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000323 oboInOwl:deprecated true .
-efoswo:SWO_0000323 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000323 obo:IAO_0100001 swo:SWO_0000323 .
+efoswo:SWO_0000425 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000425 oboInOwl:deprecated true .
+efoswo:SWO_0000425 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000425 obo:IAO_0100001 swo:SWO_0000425 .
 
 efoswo:SWO_0000235 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000235 oboInOwl:deprecated true .
@@ -2892,6 +2797,11 @@ efoswo:SWO_0000040 oboInOwl:deprecated true .
 efoswo:SWO_0000040 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000040 obo:IAO_0100001 swo:SWO_0000040 .
 
+efoswo:SWO_0000592 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000592 oboInOwl:deprecated true .
+efoswo:SWO_0000592 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000592 obo:IAO_0100001 swo:SWO_0000592 .
+
 efoswo:SWO_0000003 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000003 oboInOwl:deprecated true .
 efoswo:SWO_0000003 efo:obsoleted_in_version "1.7" .
@@ -2911,11 +2821,6 @@ efoswo:SWO_0000175 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000175 oboInOwl:deprecated true .
 efoswo:SWO_0000175 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000175 obo:IAO_0100001 swo:SWO_0000175 .
-
-efoswo:SWO_0000518 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000518 oboInOwl:deprecated true .
-efoswo:SWO_0000518 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000518 obo:IAO_0100001 swo:SWO_0000518 .
 
 efoswo:SWO_0000138 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000138 oboInOwl:deprecated true .
@@ -2967,11 +2872,6 @@ efoswo:SWO_0000458 oboInOwl:deprecated true .
 efoswo:SWO_0000458 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000458 obo:IAO_0100001 swo:SWO_0000458 .
 
-efoswo:SWO_0000268 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000268 oboInOwl:deprecated true .
-efoswo:SWO_0000268 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000268 obo:IAO_0100001 swo:SWO_0000268 .
-
 efoswo:SWO_0000078 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000078 oboInOwl:deprecated true .
 efoswo:SWO_0000078 efo:obsoleted_in_version "1.7" .
@@ -2986,6 +2886,11 @@ efoswo:SWO_0000453 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000453 oboInOwl:deprecated true .
 efoswo:SWO_0000453 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000453 obo:IAO_0100001 swo:SWO_0000453 .
+
+efoswo:SWO_0000263 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000263 oboInOwl:deprecated true .
+efoswo:SWO_0000263 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000263 obo:IAO_0100001 swo:SWO_0000263 .
 
 efoswo:SWO_0000606 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000606 oboInOwl:deprecated true .
@@ -3016,11 +2921,6 @@ efoswo:SWO_0000583 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000583 oboInOwl:deprecated true .
 efoswo:SWO_0000583 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000583 obo:IAO_0100001 swo:SWO_0000583 .
-
-efoswo:SWO_0000393 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000393 oboInOwl:deprecated true .
-efoswo:SWO_0000393 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000393 obo:IAO_0100001 swo:SWO_0000393 .
 
 efoswo:SWO_0000546 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000546 oboInOwl:deprecated true .
@@ -3056,6 +2956,11 @@ efoswo:SWO_0000161 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000161 oboInOwl:deprecated true .
 efoswo:SWO_0000161 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000161 obo:IAO_0100001 swo:SWO_0000161 .
+
+efoswo:SWO_0000287 rdfs:subClassOf obo:ObsoleteClass .
+efoswo:SWO_0000287 oboInOwl:deprecated true .
+efoswo:SWO_0000287 efo:obsoleted_in_version "1.7" .
+efoswo:SWO_0000287 obo:IAO_0100001 swo:SWO_0000287 .
 
 efoswo:SWO_0000504 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000504 oboInOwl:deprecated true .
@@ -3101,16 +3006,6 @@ efoswo:SWO_0000481 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000481 oboInOwl:deprecated true .
 efoswo:SWO_0000481 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000481 obo:IAO_0100001 swo:SWO_0000481 .
-
-efoswo:SWO_0000634 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000634 oboInOwl:deprecated true .
-efoswo:SWO_0000634 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000634 obo:IAO_0100001 swo:SWO_0000634 .
-
-efoswo:SWO_0000444 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000444 oboInOwl:deprecated true .
-efoswo:SWO_0000444 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000444 obo:IAO_0100001 swo:SWO_0000444 .
 
 efoswo:SWO_0000254 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000254 oboInOwl:deprecated true .
@@ -3182,11 +3077,6 @@ efoswo:SWO_0000152 oboInOwl:deprecated true .
 efoswo:SWO_0000152 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000152 obo:IAO_0100001 swo:SWO_0000152 .
 
-efoswo:SWO_0000013 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000013 oboInOwl:deprecated true .
-efoswo:SWO_0000013 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000013 obo:IAO_0100001 swo:SWO_0000013 .
-
 efoswo:SWO_0000115 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000115 oboInOwl:deprecated true .
 efoswo:SWO_0000115 efo:obsoleted_in_version "1.7" .
@@ -3236,11 +3126,6 @@ efoswo:SWO_0000430 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000430 oboInOwl:deprecated true .
 efoswo:SWO_0000430 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000430 obo:IAO_0100001 swo:SWO_0000430 .
-
-efoswo:SWO_0000088 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000088 oboInOwl:deprecated true .
-efoswo:SWO_0000088 efo:obsoleted_in_version "1.7" .
-efoswo:SWO_0000088 obo:IAO_0100001 swo:SWO_0000088 .
 
 efoswo:SWO_0000203 rdfs:subClassOf obo:ObsoleteClass .
 efoswo:SWO_0000203 oboInOwl:deprecated true .

@@ -1,7 +1,7 @@
 # Read in a list of IRIs and generate deprecation annotation for all of them.
 # output as SPARQL update code (deprecation-annotation.ru)
 
-infile = open("deprecation-iris.txt", "r")
+infile = open("efo-swo-1.txt", "r")
 outfile = open("deprecation-annotation.ru", "w")
 
 outfile.write("prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>\n")
