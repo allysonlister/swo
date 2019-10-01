@@ -1,0 +1,21 @@
+# Step 3 of the work in response to https://github.com/allysonlister/swo/issues/10
+#
+# List all IRIs and labels of the type http://www.ebi.ac.uk/efo/swo/ that are not obsolete already.
+#
+# Other than the fact that this is pulling labels as well as IRIs, it should always match the sparql found in refactor-efo-swo-1.sparql
+#
+# Run with:
+# java -jar ../build/robot.jar query --input ../ontology/swo-merged.owl --query refactor-efo-swo-3.sparql  efo-swo-3.txt
+
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+
+SELECT DISTINCT ?class ?label
+WHERE {
+    ?class rdf:type owl:Class .
+    ?class rdfs:label ?label .
+    FILTER NOT EXISTS {?class rdfs:subClassOf oboInOwl:ObsoleteClass } .
+    FILTER (regex(str(?class),"http://www.ebi.ac.uk/efo/swo/")).
+}

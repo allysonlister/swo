@@ -1,0 +1,638 @@
+http://www.ebi.ac.uk/efo/swo/SWO_0000337,Recursive Feature Elimination (RFE)
+http://www.ebi.ac.uk/efo/swo/SWO_0000573,Hierarchical clustering
+http://www.ebi.ac.uk/efo/swo/SWO_0000415,R language
+http://www.ebi.ac.uk/efo/swo/SWO_0000690,safe
+http://www.ebi.ac.uk/efo/swo/SWO_0000116,Text data set
+http://www.ebi.ac.uk/efo/swo/SWO_0000055,Iterative Bayesian Model Averaging (BMA)
+http://www.ebi.ac.uk/efo/swo/SWO_0000409,R data frame
+http://www.ebi.ac.uk/efo/swo/SWO_0000661,Graph plot
+http://www.ebi.ac.uk/efo/swo/SWO_0000101,ChipSkipper
+http://www.ebi.ac.uk/efo/swo/SWO_0000135,Expectation-Maximization(EM) algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000278,MCR algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000334,R interface to boost graph library algorithm (RBGL)
+http://www.ebi.ac.uk/efo/swo/SWO_0000554,Gene expression dataset
+http://www.ebi.ac.uk/efo/swo/SWO_0000406,Gene list
+http://www.ebi.ac.uk/efo/swo/SWO_0000653,pdInfoBuilder
+http://www.ebi.ac.uk/efo/swo/SWO_0000463,altcdfenvs
+http://www.ebi.ac.uk/efo/swo/SWO_0000220,HaarSeg algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000083,CDF binary format
+http://www.ebi.ac.uk/efo/swo/SWO_0000084,CEL binary format
+http://www.ebi.ac.uk/efo/swo/SWO_0000614,'MAS5'
+http://www.ebi.ac.uk/efo/swo/SWO_0000616,matchprobes
+http://www.ebi.ac.uk/efo/swo/SWO_0000426,'Smith-Waterman'
+http://www.ebi.ac.uk/efo/swo/SWO_0000236,ImageQuant
+http://www.ebi.ac.uk/efo/swo/SWO_0000046,AtlasImage
+http://www.ebi.ac.uk/efo/swo/SWO_0000575,HTML report
+http://www.ebi.ac.uk/efo/swo/SWO_0000598,log file
+http://www.ebi.ac.uk/efo/swo/SWO_0000648,parse
+http://www.ebi.ac.uk/efo/swo/SWO_0000009,AIDA
+http://www.ebi.ac.uk/efo/swo/SWO_0000328,PLIER (Probe Logarithmic Error Intensity Estimate) method
+http://www.ebi.ac.uk/efo/swo/SWO_0000137,Empirical Bayes rule
+http://www.ebi.ac.uk/efo/swo/SWO_0000611,makePlatformDesign
+http://www.ebi.ac.uk/efo/swo/SWO_0000421,Scanning software G2565AA version A6.3.1
+http://www.ebi.ac.uk/efo/swo/SWO_0000420,scanning software
+http://www.ebi.ac.uk/efo/swo/SWO_0000231,ITALICS
+http://www.ebi.ac.uk/efo/swo/SWO_0000270,MAQC data
+http://www.ebi.ac.uk/efo/swo/SWO_0000041,'ArrayTools'
+http://www.ebi.ac.uk/efo/swo/SWO_0000467,data annotation
+http://www.ebi.ac.uk/efo/swo/SWO_0000593,limma
+http://www.ebi.ac.uk/efo/swo/SWO_0000011,ALL/AML data set
+http://www.ebi.ac.uk/efo/swo/SWO_0000595,Linear modelling
+http://www.ebi.ac.uk/efo/swo/SWO_0000145,'FDR'
+http://www.ebi.ac.uk/efo/swo/SWO_0000004,50-50 MANOVA
+http://www.ebi.ac.uk/efo/swo/SWO_0000588,k-means
+http://www.ebi.ac.uk/efo/swo/SWO_0000556,genemeta
+http://www.ebi.ac.uk/efo/swo/SWO_0000176,Gene Pix
+http://www.ebi.ac.uk/efo/swo/SWO_0000508,covdesc file
+http://www.ebi.ac.uk/efo/swo/SWO_0000709,sqlite
+http://www.ebi.ac.uk/efo/swo/SWO_0000519,design file
+http://www.ebi.ac.uk/efo/swo/SWO_0000329,QuantArray scanner software
+http://www.ebi.ac.uk/efo/swo/SWO_0000551,geneRecommender
+http://www.ebi.ac.uk/efo/swo/SWO_0000361,Rintact
+http://www.ebi.ac.uk/efo/swo/SWO_0000171,GSEAlm
+http://www.ebi.ac.uk/efo/swo/SWO_0000449,Xba.CQV and Xba.regions
+http://www.ebi.ac.uk/efo/swo/SWO_0000704,spkTools
+http://www.ebi.ac.uk/efo/swo/SWO_0000233,ILLUMINA data
+http://www.ebi.ac.uk/efo/swo/SWO_0000514,daMA
+http://www.ebi.ac.uk/efo/swo/SWO_0000324,Pathways 2.01 software
+http://www.ebi.ac.uk/efo/swo/SWO_0000134,'EBarrays'
+http://www.ebi.ac.uk/efo/swo/SWO_0000686,rflowcyt
+http://www.ebi.ac.uk/efo/swo/SWO_0000496,cghMCR
+http://www.ebi.ac.uk/efo/swo/SWO_0000597,Local-pooled-error
+http://www.ebi.ac.uk/efo/swo/SWO_0000649,pathRender
+http://www.ebi.ac.uk/efo/swo/SWO_0000363,Rnw
+http://www.ebi.ac.uk/efo/swo/SWO_0000459,'affycoretools'
+http://www.ebi.ac.uk/efo/swo/SWO_0000269,MANOR
+http://www.ebi.ac.uk/efo/swo/SWO_0000079,'CALIB'
+http://www.ebi.ac.uk/efo/swo/SWO_0000018,AWS algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000681,Rank product non-parametric method
+http://www.ebi.ac.uk/efo/swo/SWO_0000491,'bridge'
+http://www.ebi.ac.uk/efo/swo/SWO_0000217,Hidden Markov Model
+http://www.ebi.ac.uk/efo/swo/SWO_0000553,gene expression analysis
+http://www.ebi.ac.uk/efo/swo/SWO_0000281,'MI'
+http://www.ebi.ac.uk/efo/swo/SWO_0000644,pair file
+http://www.ebi.ac.uk/efo/swo/SWO_0000277,Markov Chain Monte Carlo
+http://www.ebi.ac.uk/efo/swo/SWO_0000454,affyImGUI
+http://www.ebi.ac.uk/efo/swo/SWO_0000264,Loess algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000049,Binning clustering method
+http://www.ebi.ac.uk/efo/swo/SWO_0000318,'PLM'
+http://www.ebi.ac.uk/efo/swo/SWO_0000607,maanova
+http://www.ebi.ac.uk/efo/swo/SWO_0000417,ScanAlyze
+http://www.ebi.ac.uk/efo/swo/SWO_0000227,Hypergeometric probability
+http://www.ebi.ac.uk/efo/swo/SWO_0000037,Applied Biosystems 1700 Expression Array System Software
+http://www.ebi.ac.uk/efo/swo/SWO_0000408,Clustered data set
+http://www.ebi.ac.uk/efo/swo/SWO_0000589,k-nearest neighbour classification
+http://www.ebi.ac.uk/efo/swo/SWO_0000014,'ANOVA'
+http://www.ebi.ac.uk/efo/swo/SWO_0000306,Nonlinear Estimation by Iterative Partial Least Squares
+http://www.ebi.ac.uk/efo/swo/SWO_0000602,Logit-t algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000128,DFW
+http://www.ebi.ac.uk/efo/swo/SWO_0000222,Harshlight
+http://www.ebi.ac.uk/efo/swo/SWO_0000374,SAM
+http://www.ebi.ac.uk/efo/swo/SWO_0000032,Agilent Scan Control
+http://www.ebi.ac.uk/efo/swo/SWO_0000584,Iterative local regression and model selection
+http://www.ebi.ac.uk/efo/swo/SWO_0000229,Iteratively ReWeighted Least Squares
+http://www.ebi.ac.uk/efo/swo/SWO_0000547,gcrma
+http://www.ebi.ac.uk/efo/swo/SWO_0000167,GMS
+http://www.ebi.ac.uk/efo/swo/SWO_0000542,flowUtils
+http://www.ebi.ac.uk/efo/swo/SWO_0000352,RbcBook1
+http://www.ebi.ac.uk/efo/swo/SWO_0000162,Gamma Gamma Model
+http://www.ebi.ac.uk/efo/swo/SWO_0000618,M-estimation regression
+http://www.ebi.ac.uk/efo/swo/SWO_0000505,copa
+http://www.ebi.ac.uk/efo/swo/SWO_0000315,Pearson correlation estimator
+http://www.ebi.ac.uk/efo/swo/SWO_0000125,'DEDS'
+http://www.ebi.ac.uk/efo/swo/SWO_0000677,rHVDM
+http://www.ebi.ac.uk/efo/swo/SWO_0000487,'biocGraph'
+http://www.ebi.ac.uk/efo/swo/SWO_0000297,MicroArraySuite 4.0
+http://www.ebi.ac.uk/efo/swo/SWO_0000271,MIcroarray Analysis Suite
+http://www.ebi.ac.uk/efo/swo/SWO_0000015,AP-MS data
+http://www.ebi.ac.uk/efo/swo/SWO_0000310,Optiquant
+http://www.ebi.ac.uk/efo/swo/SWO_0000120,'CoCiteStats'
+http://www.ebi.ac.uk/efo/swo/SWO_0000672,qpgraph
+http://www.ebi.ac.uk/efo/swo/SWO_0000482,bgafun
+http://www.ebi.ac.uk/efo/swo/SWO_0000292,MeasurementError.cor
+http://www.ebi.ac.uk/efo/swo/SWO_0000635,nnNorm
+http://www.ebi.ac.uk/efo/swo/SWO_0000445,Wilcoxon
+http://www.ebi.ac.uk/efo/swo/SWO_0000255,Locally Moderated Weighted-t (LMW) method
+http://www.ebi.ac.uk/efo/swo/SWO_0000065,Beadstudio
+http://www.ebi.ac.uk/efo/swo/SWO_0000339,Regression model
+http://www.ebi.ac.uk/efo/swo/SWO_0000218,Hierarchical Ordered Partitioning and Collapsing Hybrid (HOPACH) algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000028,Agilent Feature Extraction 5.1.1
+http://www.ebi.ac.uk/efo/swo/SWO_0000147,Agilent Feature Extraction Software
+http://www.ebi.ac.uk/efo/swo/SWO_0000469,Annotation data packages
+http://www.ebi.ac.uk/efo/swo/SWO_0000630,multtest
+http://www.ebi.ac.uk/efo/swo/SWO_0000250,'KLD'
+http://www.ebi.ac.uk/efo/swo/SWO_0000060,BZScan
+http://www.ebi.ac.uk/efo/swo/SWO_0000213,HELP
+http://www.ebi.ac.uk/efo/swo/SWO_0000506,cosmo
+http://www.ebi.ac.uk/efo/swo/SWO_0000385,SMAP
+http://www.ebi.ac.uk/efo/swo/SWO_0000195,GeneTac Analyser
+http://www.ebi.ac.uk/efo/swo/SWO_0000728,widgetTools
+http://www.ebi.ac.uk/efo/swo/SWO_0000538,flowCore
+http://www.ebi.ac.uk/efo/swo/SWO_0000348,ROC
+http://www.ebi.ac.uk/efo/swo/SWO_0000158,GEOmetadb
+http://www.ebi.ac.uk/efo/swo/SWO_0000219,Hidden Variable Dynamic Modelling HVDM)
+http://www.ebi.ac.uk/efo/swo/SWO_0000490,Bootstrap
+http://www.ebi.ac.uk/efo/swo/SWO_0000570,gxl format
+http://www.ebi.ac.uk/efo/swo/SWO_0000190,GeneRfold
+http://www.ebi.ac.uk/efo/swo/SWO_0000723,vbmp
+http://www.ebi.ac.uk/efo/swo/SWO_0000533,fbat
+http://www.ebi.ac.uk/efo/swo/SWO_0000343,RMAExpress
+http://www.ebi.ac.uk/efo/swo/SWO_0000153,GASSCO method
+http://www.ebi.ac.uk/efo/swo/SWO_0000110,distance calculation
+http://www.ebi.ac.uk/efo/swo/SWO_0000340,RMA
+http://www.ebi.ac.uk/efo/swo/SWO_0000260,publisher role
+http://www.ebi.ac.uk/efo/swo/SWO_0000010,Average log expression across arrays (ALE)
+http://www.ebi.ac.uk/efo/swo/SWO_0000123,Complex Estimation Algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000478,AvgNRRs
+http://www.ebi.ac.uk/efo/swo/SWO_0000288,MantelCorr
+http://www.ebi.ac.uk/efo/swo/SWO_0000098,Category
+http://www.ebi.ac.uk/efo/swo/SWO_0000378,SBMLR format
+http://www.ebi.ac.uk/efo/swo/SWO_0000336,Random effects model
+http://www.ebi.ac.uk/efo/swo/SWO_0000493,cdt
+http://www.ebi.ac.uk/efo/swo/SWO_0000111,R software
+http://www.ebi.ac.uk/efo/swo/SWO_0000473,arrayQuality
+http://www.ebi.ac.uk/efo/swo/SWO_0000283,MLInterfaces
+http://www.ebi.ac.uk/efo/swo/SWO_0000715,'t-test'
+http://www.ebi.ac.uk/efo/swo/SWO_0000626,mrnet algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000246,KCsmart
+http://www.ebi.ac.uk/efo/swo/SWO_0000056,Base-Pair-Distance Kernel
+http://www.ebi.ac.uk/efo/swo/SWO_0000209,GraphAlignment
+http://www.ebi.ac.uk/efo/swo/SWO_0000019,Absolute Expression Analysis
+http://www.ebi.ac.uk/efo/swo/SWO_0000621,metahdep
+http://www.ebi.ac.uk/efo/swo/SWO_0000241,"Initial microarray data processing (data filtering, local normalisation and quality control)"
+http://www.ebi.ac.uk/efo/swo/SWO_0000640,OMICS data
+http://www.ebi.ac.uk/efo/swo/SWO_0000566,gpr format
+http://www.ebi.ac.uk/efo/swo/SWO_0000186,GenePix Pro 6 [Axon Instruments]
+http://www.ebi.ac.uk/efo/swo/SWO_0000187,GenePix Pro [Axon Instruments]
+http://www.ebi.ac.uk/efo/swo/SWO_0000587,k-cores
+http://www.ebi.ac.uk/efo/swo/SWO_0000719,topGO
+http://www.ebi.ac.uk/efo/swo/SWO_0000529,'explorase'
+http://www.ebi.ac.uk/efo/swo/SWO_0000149,Fischer's Exact Test
+http://www.ebi.ac.uk/efo/swo/SWO_0000561,globaltest
+http://www.ebi.ac.uk/efo/swo/SWO_0000371,S-Score algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000181,GenePix
+http://www.ebi.ac.uk/efo/swo/SWO_0000117,CSV data set
+http://www.ebi.ac.uk/efo/swo/SWO_0000392,software developer role
+http://www.ebi.ac.uk/efo/swo/SWO_0000552,Gene array analysis algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000714,stepNorm
+http://www.ebi.ac.uk/efo/swo/SWO_0000524,Dynamic programming algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000696,simpleaffy
+http://www.ebi.ac.uk/efo/swo/SWO_0000107,Feature Extraction Software
+http://www.ebi.ac.uk/efo/swo/SWO_0000025,Affymetrix GeneChip Operating Software
+http://www.ebi.ac.uk/efo/swo/SWO_0000659,plgem
+http://www.ebi.ac.uk/efo/swo/SWO_0000279,MCRestimate
+http://www.ebi.ac.uk/efo/swo/SWO_0000089,CLR algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000691,sagenhaft
+http://www.ebi.ac.uk/efo/swo/SWO_0000102,ChipSkipper V0.99
+http://www.ebi.ac.uk/efo/swo/SWO_0000654,pdmclass
+http://www.ebi.ac.uk/efo/swo/SWO_0000274,MATLAB language
+http://www.ebi.ac.uk/efo/swo/SWO_0000287,Mahalanobis distance
+http://www.ebi.ac.uk/efo/swo/SWO_0000617,mdqc
+http://www.ebi.ac.uk/efo/swo/SWO_0000237,ImageReader
+http://www.ebi.ac.uk/efo/swo/SWO_0000047,Axon GenePix Pro 3
+http://www.ebi.ac.uk/efo/swo/SWO_0000599,logicFS
+http://www.ebi.ac.uk/efo/swo/SWO_0000628,Multiple testing
+http://www.ebi.ac.uk/efo/swo/SWO_0000612,makecdfenv
+http://www.ebi.ac.uk/efo/swo/SWO_0000422,ShortRead
+http://www.ebi.ac.uk/efo/swo/SWO_0000042,ArrayVision
+http://www.ebi.ac.uk/efo/swo/SWO_0000594,limmaGUI
+http://www.ebi.ac.uk/efo/swo/SWO_0000261,Langmuir Isotherm
+http://www.ebi.ac.uk/efo/swo/SWO_0000005,ABarray
+http://www.ebi.ac.uk/efo/swo/SWO_0000557,geneplotter
+http://www.ebi.ac.uk/efo/swo/SWO_0000064,Bayesian Model
+http://www.ebi.ac.uk/efo/swo/SWO_0000367,RpsiXML
+http://www.ebi.ac.uk/efo/swo/SWO_0000177,GenePix 3.0.6
+http://www.ebi.ac.uk/efo/swo/SWO_0000054,BLAST
+http://www.ebi.ac.uk/efo/swo/SWO_0000389,Semantic Similarity Measures
+http://www.ebi.ac.uk/efo/swo/SWO_0000364,Robust likelihood-based survival modeling
+http://www.ebi.ac.uk/efo/swo/SWO_0000362,Rmagpie
+http://www.ebi.ac.uk/efo/swo/SWO_0000172,Gamma-Gamma hierarchical model
+http://www.ebi.ac.uk/efo/swo/SWO_0000502,dataset comparison
+http://www.ebi.ac.uk/efo/swo/SWO_0000705,splicegear
+http://www.ebi.ac.uk/efo/swo/SWO_0000088,CHP binary format
+http://www.ebi.ac.uk/efo/swo/SWO_0000687,.rma format
+http://www.ebi.ac.uk/efo/swo/SWO_0000497,chamber slide format
+http://www.ebi.ac.uk/efo/swo/SWO_0000305,Nested Effects Models
+http://www.ebi.ac.uk/efo/swo/SWO_0000560,Global test
+http://www.ebi.ac.uk/efo/swo/SWO_0000700,snapCGH
+http://www.ebi.ac.uk/efo/swo/SWO_0000510,crlmm
+http://www.ebi.ac.uk/efo/swo/SWO_0000320,Probe level Locally moderated Weighted median-t (PLW) method
+http://www.ebi.ac.uk/efo/swo/SWO_0000130,'DNAcopy'
+http://www.ebi.ac.uk/efo/swo/SWO_0000695,Sim method
+http://www.ebi.ac.uk/efo/swo/SWO_0000682,.raw files
+http://www.ebi.ac.uk/efo/swo/SWO_0000645,pamr
+http://www.ebi.ac.uk/efo/swo/SWO_0000455,'affyPLM'
+http://www.ebi.ac.uk/efo/swo/SWO_0000461,affypdnn
+http://www.ebi.ac.uk/efo/swo/SWO_0000265,Logic regression
+http://www.ebi.ac.uk/efo/swo/SWO_0000075,'Biostrings'
+http://www.ebi.ac.uk/efo/swo/SWO_0000608,macat
+http://www.ebi.ac.uk/efo/swo/SWO_0000418,ScanArray
+http://www.ebi.ac.uk/efo/swo/SWO_0000228,ICS-501 (version 2.3) Image Capture System
+http://www.ebi.ac.uk/efo/swo/SWO_0000169,Gene Recommender algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000450,Array Comparative Genomic Hybridization
+http://www.ebi.ac.uk/efo/swo/SWO_0000070,'Biobase'
+http://www.ebi.ac.uk/efo/swo/SWO_0000425,Similarity score
+http://www.ebi.ac.uk/efo/swo/SWO_0000603,lumi
+http://www.ebi.ac.uk/efo/swo/SWO_0000057,BPMAP
+http://www.ebi.ac.uk/efo/swo/SWO_0000592,Likelihood method
+http://www.ebi.ac.uk/efo/swo/Class_6,matlab software
+http://www.ebi.ac.uk/efo/swo/SWO_0000548,gct
+http://www.ebi.ac.uk/efo/swo/SWO_0000358,Resourcerer
+http://www.ebi.ac.uk/efo/swo/SWO_0000168,GOstats
+http://www.ebi.ac.uk/efo/swo/SWO_0000390,SSPA
+http://www.ebi.ac.uk/efo/swo/SWO_0000543,flowViz
+http://www.ebi.ac.uk/efo/swo/SWO_0000353,Rdbi
+http://www.ebi.ac.uk/efo/swo/SWO_0000655,pedigree data file
+http://www.ebi.ac.uk/efo/swo/SWO_0000163,GGtools
+http://www.ebi.ac.uk/efo/swo/SWO_0000316,PCpheno
+http://www.ebi.ac.uk/efo/swo/SWO_0000126,'DFP'
+http://www.ebi.ac.uk/efo/swo/SWO_0000678,rMAT
+http://www.ebi.ac.uk/efo/swo/SWO_0000488,'biocViews'
+http://www.ebi.ac.uk/efo/swo/SWO_0000298,Mixed model equations
+http://www.ebi.ac.uk/efo/swo/SWO_0000296,Misclassification-Penalized Posteriors (MiPP)
+http://www.ebi.ac.uk/efo/swo/SWO_0000253,LC-MS data
+http://www.ebi.ac.uk/efo/swo/SWO_0000165,Modified version of the GLAD algorithm (Gain and Loss Analysis of DNA)
+http://www.ebi.ac.uk/efo/swo/SWO_0000501,'codelink'
+http://www.ebi.ac.uk/efo/swo/SWO_0000311,OrderedList
+http://www.ebi.ac.uk/efo/swo/SWO_0000121,CodeLink Expression Analysis Software
+http://www.ebi.ac.uk/efo/swo/SWO_0000673,Quantile normalization
+http://www.ebi.ac.uk/efo/swo/SWO_0000483,bgx
+http://www.ebi.ac.uk/efo/swo/SWO_0000293,MergeMaid
+http://www.ebi.ac.uk/efo/swo/SWO_0000636,nudge
+http://www.ebi.ac.uk/efo/swo/SWO_0000446,XDE
+http://www.ebi.ac.uk/efo/swo/SWO_0000256,Lognormal Normal Model
+http://www.ebi.ac.uk/efo/swo/SWO_0000066,'BicARE'
+http://www.ebi.ac.uk/efo/swo/SWO_0000029,Agilent Feature Extraction software version 7.1
+http://www.ebi.ac.uk/efo/swo/SWO_0000631,Negative binomial distribution
+http://www.ebi.ac.uk/efo/swo/SWO_0000441,Variance-stabilizing transformation (VST) algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000251,Kolmogorov Smirnov rank-sum based algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000214,HEM
+http://www.ebi.ac.uk/efo/swo/SWO_0000024,Affymetrix GCOS v1.2
+http://www.ebi.ac.uk/efo/swo/SWO_0000576,Hypergeometric enrichment
+http://www.ebi.ac.uk/efo/swo/SWO_0000386,SNPRMA algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000196,GeneTraffic
+http://www.ebi.ac.uk/efo/swo/SWO_0000140,FACS data
+http://www.ebi.ac.uk/efo/swo/SWO_0000097,Category analysis
+http://www.ebi.ac.uk/efo/swo/SWO_0000729,xcms
+http://www.ebi.ac.uk/efo/swo/SWO_0000539,flowFlowJo
+http://www.ebi.ac.uk/efo/swo/SWO_0000349,RWebServices
+http://www.ebi.ac.uk/efo/swo/SWO_0000159,GEOquery
+http://www.ebi.ac.uk/efo/swo/SWO_0000381,SDF format
+http://www.ebi.ac.uk/efo/swo/SWO_0000191,GeneSelectMMD
+http://www.ebi.ac.uk/efo/swo/SWO_0000534,fdrame
+http://www.ebi.ac.uk/efo/swo/SWO_0000344,RMAExpress 2.0
+http://www.ebi.ac.uk/efo/swo/SWO_0000154,GC-RMA Quantification
+http://www.ebi.ac.uk/efo/swo/SWO_0000307,OCplus
+http://www.ebi.ac.uk/efo/swo/SWO_0000669,puma
+http://www.ebi.ac.uk/efo/swo/SWO_0000479,'beadarray'
+http://www.ebi.ac.uk/efo/swo/SWO_0000289,MassSpecWavelet
+http://www.ebi.ac.uk/efo/swo/SWO_0000099,'ChemmineR'
+http://www.ebi.ac.uk/efo/swo/SWO_0000112,BCRANK
+http://www.ebi.ac.uk/efo/swo/SWO_0000664,Position weight matrix (PWM )
+http://www.ebi.ac.uk/efo/swo/SWO_0000474,arrayQualityMetrics
+http://www.ebi.ac.uk/efo/swo/SWO_0000284,MMD
+http://www.ebi.ac.uk/efo/swo/SWO_0000094,CRLMM algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000627,Multinomial probit regression with Gaussian Process priors
+http://www.ebi.ac.uk/efo/swo/SWO_0000437,Theodore Ts’o’s
+http://www.ebi.ac.uk/efo/swo/SWO_0000247,KEGGSOAP
+http://www.ebi.ac.uk/efo/swo/SWO_0000174,Gene-Set Enrichment Analysis
+http://www.ebi.ac.uk/efo/swo/SWO_0000518,dcf
+http://www.ebi.ac.uk/efo/swo/SWO_0000622,miRNApath
+http://www.ebi.ac.uk/efo/swo/SWO_0000432,TAS Software
+http://www.ebi.ac.uk/efo/swo/SWO_0000052,BGL
+http://www.ebi.ac.uk/efo/swo/SWO_0000205,GenomeGraphs
+http://www.ebi.ac.uk/efo/swo/SWO_0000567,graph
+http://www.ebi.ac.uk/efo/swo/SWO_0000377,SBMLR
+http://www.ebi.ac.uk/efo/swo/SWO_0000182,GenePix Pro
+http://www.ebi.ac.uk/efo/swo/SWO_0000569,gtr
+http://www.ebi.ac.uk/efo/swo/SWO_0000200,GenePix Pro 3.0
+http://www.ebi.ac.uk/efo/swo/SWO_0000082,CBS algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000562,gmt format
+http://www.ebi.ac.uk/efo/swo/SWO_0000372,Serial Analysis of Gene Expression (SAGE)
+http://www.ebi.ac.uk/efo/swo/SWO_0000525,ecolitk
+http://www.ebi.ac.uk/efo/swo/SWO_0000335,RBioinf
+http://www.ebi.ac.uk/efo/swo/SWO_0000684,rda
+http://www.ebi.ac.uk/efo/swo/SWO_0000697,simulatorAPMS
+http://www.ebi.ac.uk/efo/swo/SWO_0000108,Chi-square
+http://www.ebi.ac.uk/efo/swo/SWO_0000710,sscore
+http://www.ebi.ac.uk/efo/swo/SWO_0000520,'diffGeneAnalysis'
+http://www.ebi.ac.uk/efo/swo/SWO_0000330,"QuantArray, PackaardBiochip technologies"
+http://www.ebi.ac.uk/efo/swo/SWO_0000674,Quantile regression techniques
+http://www.ebi.ac.uk/efo/swo/SWO_0000692,seqLogo
+http://www.ebi.ac.uk/efo/swo/SWO_0000216,Hubert’s gamma
+http://www.ebi.ac.uk/efo/swo/SWO_0000103,multiscan
+http://www.ebi.ac.uk/efo/swo/SWO_0000146,Fixed effect model
+http://www.ebi.ac.uk/efo/swo/SWO_0000503,Concordance
+http://www.ebi.ac.uk/efo/swo/SWO_0000465,annaffy
+http://www.ebi.ac.uk/efo/swo/SWO_0000275,MAVI Pro
+http://www.ebi.ac.uk/efo/swo/SWO_0000085,'CGHbase'
+http://www.ebi.ac.uk/efo/swo/SWO_0000713,Statistical tests
+http://www.ebi.ac.uk/efo/swo/SWO_0000428,Spot quantification
+http://www.ebi.ac.uk/efo/swo/SWO_0000238,ImaGene
+http://www.ebi.ac.uk/efo/swo/SWO_0000048,BAC
+http://www.ebi.ac.uk/efo/swo/SWO_0000650,pcaMethods
+http://www.ebi.ac.uk/efo/swo/SWO_0000460,affyio
+http://www.ebi.ac.uk/efo/swo/SWO_0000080,'CAMERA'
+http://www.ebi.ac.uk/efo/swo/SWO_0000613,marray
+http://www.ebi.ac.uk/efo/swo/SWO_0000423,Signaling Pathway Impact Analysis (SPIA) algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000212,Hexagon binning algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000516,.data
+http://www.ebi.ac.uk/efo/swo/SWO_0000620,Meta data
+http://www.ebi.ac.uk/efo/swo/SWO_0000006,'ACME'
+http://www.ebi.ac.uk/efo/swo/SWO_0000558,genomeIntervals
+http://www.ebi.ac.uk/efo/swo/SWO_0000368,Rredland
+http://www.ebi.ac.uk/efo/swo/SWO_0000257,Lognormal Normal with Modied Variance Model
+http://www.ebi.ac.uk/efo/swo/SWO_0000178,GenePix 4.1
+http://www.ebi.ac.uk/efo/swo/SWO_0000590,keggorth
+http://www.ebi.ac.uk/efo/swo/SWO_0000173,Gaussian locally weighted regression
+http://www.ebi.ac.uk/efo/swo/SWO_0000633,Neural networks models
+http://www.ebi.ac.uk/efo/swo/SWO_0000706,splots
+http://www.ebi.ac.uk/efo/swo/SWO_0000326,Power Law Global Error Model (PLGEM) analysis method
+http://www.ebi.ac.uk/efo/swo/SWO_0000688,rsbml
+http://www.ebi.ac.uk/efo/swo/SWO_0000498,cls
+http://www.ebi.ac.uk/efo/swo/SWO_0000701,snpMatrix
+http://www.ebi.ac.uk/efo/swo/SWO_0000321,PPC algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000249,KGML
+http://www.ebi.ac.uk/efo/swo/SWO_0000683,rbsurv
+http://www.ebi.ac.uk/efo/swo/SWO_0000646,panp
+http://www.ebi.ac.uk/efo/swo/SWO_0000456,affyPara
+http://www.ebi.ac.uk/efo/swo/SWO_0000266,MAANOVA v1.2 package for MATLAB
+http://www.ebi.ac.uk/efo/swo/SWO_0000076,BlueFuse
+http://www.ebi.ac.uk/efo/swo/SWO_0000609,made4
+http://www.ebi.ac.uk/efo/swo/SWO_0000419,ScanArray v3.1 software
+http://www.ebi.ac.uk/efo/swo/SWO_0000039,ArrayGauge
+http://www.ebi.ac.uk/efo/swo/SWO_0000641,oneChannelGUI
+http://www.ebi.ac.uk/efo/swo/SWO_0000451,Acuity
+http://www.ebi.ac.uk/efo/swo/SWO_0000071,'BiocCaseStudies'
+http://www.ebi.ac.uk/efo/swo/SWO_0000604,maCorrPlot
+http://www.ebi.ac.uk/efo/swo/SWO_0000224,Heatplus
+http://www.ebi.ac.uk/efo/swo/SWO_0000034,Agilent Technologies Software
+http://www.ebi.ac.uk/efo/swo/SWO_0000396,software developer organization
+http://www.ebi.ac.uk/efo/swo/SWO_0000113,Cosmo
+http://www.ebi.ac.uk/efo/swo/SWO_0000549,'genArise'
+http://www.ebi.ac.uk/efo/swo/SWO_0000359,Rgraphviz
+http://www.ebi.ac.uk/efo/swo/SWO_0000581,impute
+http://www.ebi.ac.uk/efo/swo/SWO_0000391,SVDimpute algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000544,gaga
+http://www.ebi.ac.uk/efo/swo/SWO_0000354,RdbiPgSQL
+http://www.ebi.ac.uk/efo/swo/SWO_0000164,GLAD
+http://www.ebi.ac.uk/efo/swo/SWO_0000050,'BCRANK'
+http://www.ebi.ac.uk/efo/swo/SWO_0000507,cosmoGUI
+http://www.ebi.ac.uk/efo/swo/SWO_0000317,PGSEA
+http://www.ebi.ac.uk/efo/swo/SWO_0000127,Discriminant Fuzzy Pattern Algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000679,rama
+http://www.ebi.ac.uk/efo/swo/SWO_0000489,biomaRT
+http://www.ebi.ac.uk/efo/swo/SWO_0000312,OutlierD
+http://www.ebi.ac.uk/efo/swo/SWO_0000122,CodeLink Expression Scanning Software
+http://www.ebi.ac.uk/efo/swo/SWO_0000095,Continuous Wavelet Transform (CWT)-based peak detection algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000484,Bitmap object
+http://www.ebi.ac.uk/efo/swo/SWO_0000294,Mfuzz
+http://www.ebi.ac.uk/efo/swo/SWO_0000637,occugene
+http://www.ebi.ac.uk/efo/swo/SWO_0000447,XDotsReader
+http://www.ebi.ac.uk/efo/swo/SWO_0000632,nem
+http://www.ebi.ac.uk/efo/swo/SWO_0000442,VanillaICE
+http://www.ebi.ac.uk/efo/swo/SWO_0000252,LBE
+http://www.ebi.ac.uk/efo/swo/SWO_0000062,BaldiLongT
+http://www.ebi.ac.uk/efo/swo/SWO_0000405,ArrayExpress Bioconductor
+http://www.ebi.ac.uk/efo/swo/SWO_0000215,Heterogeneous Error Model (HEM)
+http://www.ebi.ac.uk/efo/swo/SWO_0000577,hypergraph
+http://www.ebi.ac.uk/efo/swo/SWO_0000398,50-50 MANOVA algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000629,Multivariate t mixture models
+http://www.ebi.ac.uk/efo/swo/SWO_0000387,SNPchip
+http://www.ebi.ac.uk/efo/swo/SWO_0000210,GridGrinder
+http://www.ebi.ac.uk/efo/swo/SWO_0000020,Absolute Expression Analysis
+http://www.ebi.ac.uk/efo/swo/SWO_0000272,MicroArraySuite 5.0
+http://www.ebi.ac.uk/efo/swo/SWO_0000572,hexbin
+http://www.ebi.ac.uk/efo/swo/SWO_0000382,SIM
+http://www.ebi.ac.uk/efo/swo/SWO_0000192,GeneSelector
+http://www.ebi.ac.uk/efo/swo/SWO_0000725,vsn
+http://www.ebi.ac.uk/efo/swo/SWO_0000345,RMAExpress quantification
+http://www.ebi.ac.uk/efo/swo/SWO_0000155,GEMTools 2.4
+http://www.ebi.ac.uk/efo/swo/SWO_0000012,AMDIS
+http://www.ebi.ac.uk/efo/swo/SWO_0000308,OLIN
+http://www.ebi.ac.uk/efo/swo/SWO_0000118,Non-linear functional regression model
+http://www.ebi.ac.uk/efo/swo/SWO_0000670,qPCR data
+http://www.ebi.ac.uk/efo/swo/SWO_0000720,tspair
+http://www.ebi.ac.uk/efo/swo/SWO_0000530,'externalVector'
+http://www.ebi.ac.uk/efo/swo/SWO_0000150,FoxDimmicT
+http://www.ebi.ac.uk/efo/swo/SWO_0000665,ppiStats
+http://www.ebi.ac.uk/efo/swo/SWO_0000475,arrayWoRx 2.0
+http://www.ebi.ac.uk/efo/swo/SWO_0000476,arrayWoRx
+http://www.ebi.ac.uk/efo/swo/SWO_0000285,MVCClass
+http://www.ebi.ac.uk/efo/swo/SWO_0000438,TypeInfo
+http://www.ebi.ac.uk/efo/swo/SWO_0000248,KEGGgraph
+http://www.ebi.ac.uk/efo/swo/SWO_0000058,BRB-ArrayTools
+http://www.ebi.ac.uk/efo/swo/SWO_0000660,plier
+http://www.ebi.ac.uk/efo/swo/SWO_0000470,'apComplex'
+http://www.ebi.ac.uk/efo/swo/SWO_0000280,MEDME
+http://www.ebi.ac.uk/efo/swo/SWO_0000267,Median Average Difference Algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000090,'CMA'
+http://www.ebi.ac.uk/efo/swo/SWO_0000623,microRNA
+http://www.ebi.ac.uk/efo/swo/SWO_0000243,Jaccard’s index
+http://www.ebi.ac.uk/efo/swo/SWO_0000053,'BGmix'
+http://www.ebi.ac.uk/efo/swo/SWO_0000615,mas5 format
+http://www.ebi.ac.uk/efo/swo/SWO_0000206,GlobalAncova
+http://www.ebi.ac.uk/efo/swo/SWO_0000016,ARACNE algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000188,GeneR
+http://www.ebi.ac.uk/efo/swo/SWO_0000263,Library Search Algorithm
+http://www.ebi.ac.uk/efo/swo/SWO_0000680,Rank-invariant set normalization
+http://www.ebi.ac.uk/efo/swo/SWO_0000201,GeneticsBase
+http://www.ebi.ac.uk/efo/swo/SWO_0000563,goProfiles
+http://www.ebi.ac.uk/efo/swo/SWO_0000373,SAGx
+http://www.ebi.ac.uk/efo/swo/SWO_0000183,GenePix Pro 3
+http://www.ebi.ac.uk/efo/swo/SWO_0000106,PCMG
+http://www.ebi.ac.uk/efo/swo/SWO_0000716,tilingArray
+http://www.ebi.ac.uk/efo/swo/SWO_0000526,edd
+http://www.ebi.ac.uk/efo/swo/SWO_0000698,sizepower
+http://www.ebi.ac.uk/efo/swo/SWO_0000109,Annotation-Driven Clustering
+http://www.ebi.ac.uk/efo/swo/SWO_0000711,ssize
+http://www.ebi.ac.uk/efo/swo/SWO_0000521,'domainsignatures'
+http://www.ebi.ac.uk/efo/swo/SWO_0000331,QuantArray version 2
+http://www.ebi.ac.uk/efo/swo/SWO_0000141,FARMS
+http://www.ebi.ac.uk/efo/swo/SWO_0000693,sigPathway
+http://www.ebi.ac.uk/efo/swo/SWO_0000104,affy
+http://www.ebi.ac.uk/efo/swo/SWO_0000656,pgUtils
+http://www.ebi.ac.uk/efo/swo/SWO_0000466,'annotate'
+http://www.ebi.ac.uk/efo/swo/SWO_0000276,Multivariate correlation estimator
+http://www.ebi.ac.uk/efo/swo/SWO_0000086,'CGHcall'
+http://www.ebi.ac.uk/efo/swo/SWO_0000531,f-test
+http://www.ebi.ac.uk/efo/swo/SWO_0000313,Presence-Absence calls with Negative Probesets (PANP)
+http://www.ebi.ac.uk/efo/swo/SWO_0000619,metaArray
+http://www.ebi.ac.uk/efo/swo/SWO_0000429,Spotfinder [TIGR]
+http://www.ebi.ac.uk/efo/swo/SWO_0000239,Imagene v4.0
+http://www.ebi.ac.uk/efo/swo/SWO_0000651,pcot2
+http://www.ebi.ac.uk/efo/swo/SWO_0000081,CBS
+http://www.ebi.ac.uk/efo/swo/SWO_0000424,Silicon Genetics Genespring
+http://www.ebi.ac.uk/efo/swo/SWO_0000234,ImaGene4.1 software
+http://www.ebi.ac.uk/efo/swo/SWO_0000044,ArrayVision 6.0 (Imaging Research Inc.)
+http://www.ebi.ac.uk/efo/swo/SWO_0000596,lma
+http://www.ebi.ac.uk/efo/swo/SWO_0000007,Algorithms for Calculating Microarray Enrichment
+http://www.ebi.ac.uk/efo/swo/SWO_0000369,Rtreemix
+http://www.ebi.ac.uk/efo/swo/SWO_0000179,GenePix 4100A
+http://www.ebi.ac.uk/efo/swo/SWO_0000591,lapmix
+http://www.ebi.ac.uk/efo/swo/SWO_0000707,spotSegmentation
+http://www.ebi.ac.uk/efo/swo/SWO_0000327,Probe Cell Analysis
+http://www.ebi.ac.uk/efo/swo/SWO_0000689,rtracklayer
+http://www.ebi.ac.uk/efo/swo/SWO_0000499,'clusterStab'
+http://www.ebi.ac.uk/efo/swo/SWO_0000512,ctc
+http://www.ebi.ac.uk/efo/swo/SWO_0000322,PROcess
+http://www.ebi.ac.uk/efo/swo/SWO_0000132,'DynDoc'
+http://www.ebi.ac.uk/efo/swo/SWO_0000494,'cellHTS'
+http://www.ebi.ac.uk/efo/swo/SWO_0000647,parody
+http://www.ebi.ac.uk/efo/swo/SWO_0000457,affyQCReport
+http://www.ebi.ac.uk/efo/swo/SWO_0000077,'BufferedMatrix'
+http://www.ebi.ac.uk/efo/swo/SWO_0000509,database creation
+http://www.ebi.ac.uk/efo/swo/SWO_0000642,ontoTools
+http://www.ebi.ac.uk/efo/swo/SWO_0000452,affxparser
+http://www.ebi.ac.uk/efo/swo/SWO_0000262,Laplace mixture model
+http://www.ebi.ac.uk/efo/swo/SWO_0000072,BioConductor Software
+http://www.ebi.ac.uk/efo/swo/SWO_0000605,maDB
+http://www.ebi.ac.uk/efo/swo/SWO_0000225,HilbertVis
+http://www.ebi.ac.uk/efo/swo/SWO_0000035,'AnnotationDbi'
+http://www.ebi.ac.uk/efo/swo/SWO_0000397,software publisher organization
+http://www.ebi.ac.uk/efo/swo/SWO_0000600,logicFS dataset
+http://www.ebi.ac.uk/efo/swo/SWO_0000030,Agilent Feature Extraction software version 7.5
+http://www.ebi.ac.uk/efo/swo/SWO_0000282,Mutual information matrix (MIM)
+http://www.ebi.ac.uk/efo/swo/SWO_0000582,iterativeBMA
+http://www.ebi.ac.uk/efo/swo/SWO_0000545,'gaggle'
+http://www.ebi.ac.uk/efo/swo/SWO_0000355,Rdisop
+http://www.ebi.ac.uk/efo/swo/SWO_0000730,xps
+http://www.ebi.ac.uk/efo/swo/SWO_0000540,flowQ
+http://www.ebi.ac.uk/efo/swo/SWO_0000350,RankProd
+http://www.ebi.ac.uk/efo/swo/SWO_0000675,quantsmooth
+http://www.ebi.ac.uk/efo/swo/SWO_0000485,bioDist
+http://www.ebi.ac.uk/efo/swo/SWO_0000295,MiPP
+http://www.ebi.ac.uk/efo/swo/SWO_0000304,'Needleman-Wunsch'
+http://www.ebi.ac.uk/efo/swo/SWO_0000638,oligo
+http://www.ebi.ac.uk/efo/swo/SWO_0000258,LPE
+http://www.ebi.ac.uk/efo/swo/SWO_0000068,'BioMVCClass'
+http://www.ebi.ac.uk/efo/swo/SWO_0000480,'beadarraySNP'
+http://www.ebi.ac.uk/efo/swo/SWO_0000063,BasReader 3.01
+http://www.ebi.ac.uk/efo/swo/SWO_0000026,Affymetrix Software
+http://www.ebi.ac.uk/efo/swo/SWO_0000578,Icens
+http://www.ebi.ac.uk/efo/swo/SWO_0000388,SPIA
+http://www.ebi.ac.uk/efo/swo/SWO_0000021,'AffyCompatible'
+http://www.ebi.ac.uk/efo/swo/SWO_0000383,SLGI
+http://www.ebi.ac.uk/efo/swo/SWO_0000193,GeneSpring
+http://www.ebi.ac.uk/efo/swo/SWO_0000726,weaver
+http://www.ebi.ac.uk/efo/swo/SWO_0000536,flagme
+http://www.ebi.ac.uk/efo/swo/SWO_0000346,RMAGEML
+http://www.ebi.ac.uk/efo/swo/SWO_0000156,GEO data type
+http://www.ebi.ac.uk/efo/swo/SWO_0000309,OLINgui
+http://www.ebi.ac.uk/efo/swo/SWO_0000721,twilight
+http://www.ebi.ac.uk/efo/swo/SWO_0000341,RMA+
+http://www.ebi.ac.uk/efo/swo/SWO_0000114,F test
+http://www.ebi.ac.uk/efo/swo/SWO_0000477,Associative T method
+http://www.ebi.ac.uk/efo/swo/SWO_0000666,prada
+http://www.ebi.ac.uk/efo/swo/SWO_0000096,CARMAweb
+http://www.ebi.ac.uk/efo/swo/SWO_0000323,Propagation of uncertainty in microarray analysis
+http://www.ebi.ac.uk/efo/swo/SWO_0000059,'BSgenome'
+http://www.ebi.ac.uk/efo/swo/SWO_0000143,FC
+http://www.ebi.ac.uk/efo/swo/SWO_0000471,aroma.light
+http://www.ebi.ac.uk/efo/swo/SWO_0000091,CMA
+http://www.ebi.ac.uk/efo/swo/SWO_0000207,GOSemSim
+http://www.ebi.ac.uk/efo/swo/SWO_0000017,ARR
+http://www.ebi.ac.uk/efo/swo/SWO_0000221,Hardy-Weinberg equilibrium
+http://www.ebi.ac.uk/efo/swo/SWO_0000189,GeneRegionScan
+http://www.ebi.ac.uk/efo/swo/SWO_0000708,sproc
+http://www.ebi.ac.uk/efo/swo/SWO_0000202,GeneticsDesign
+http://www.ebi.ac.uk/efo/swo/SWO_0000157,GEO Matrix Series format
+http://www.ebi.ac.uk/efo/swo/SWO_0000564,goTools
+http://www.ebi.ac.uk/efo/swo/SWO_0000184,GenePix Pro 5.0
+http://www.ebi.ac.uk/efo/swo/SWO_0000717,timecourse
+http://www.ebi.ac.uk/efo/swo/SWO_0000527,'edgeR'
+http://www.ebi.ac.uk/efo/swo/SWO_0000699,xmapbridge
+http://www.ebi.ac.uk/efo/swo/SWO_0000712,stam
+http://www.ebi.ac.uk/efo/swo/SWO_0000522,'dualKS'
+http://www.ebi.ac.uk/efo/swo/SWO_0000332,Radial basis function
+http://www.ebi.ac.uk/efo/swo/SWO_0000694,siggenes
+http://www.ebi.ac.uk/efo/swo/SWO_0000105,affycomp
+http://www.ebi.ac.uk/efo/swo/SWO_0000657,pickgene
+http://www.ebi.ac.uk/efo/swo/SWO_0000087,'CGHregions'
+http://www.ebi.ac.uk/efo/swo/SWO_0000100,ChipReader 3.1
+http://www.ebi.ac.uk/efo/swo/SWO_0000235,ImaGene 3.0
+http://www.ebi.ac.uk/efo/swo/SWO_0000045,Array_vision_(Interfocus)
+http://www.ebi.ac.uk/efo/swo/SWO_0000008,Affymetrix Expression Console
+http://www.ebi.ac.uk/efo/swo/SWO_0000610,maigesPack
+http://www.ebi.ac.uk/efo/swo/SWO_0000230,IRanges
+http://www.ebi.ac.uk/efo/swo/SWO_0000040,ArrayNorm
+http://www.ebi.ac.uk/efo/swo/SWO_0000003,2-sample pooled t-test
+http://www.ebi.ac.uk/efo/swo/SWO_0000555,genefilter
+http://www.ebi.ac.uk/efo/swo/SWO_0000365,Rosetta Resolver
+http://www.ebi.ac.uk/efo/swo/SWO_0000175,GeneData Expressionist Analyst v4.0.5
+http://www.ebi.ac.uk/efo/swo/SWO_0000138,Expert 2100
+http://www.ebi.ac.uk/efo/swo/SWO_0000550,gene2pathway
+http://www.ebi.ac.uk/efo/swo/SWO_0000360,Ringo
+http://www.ebi.ac.uk/efo/swo/SWO_0000170,GSEABase
+http://www.ebi.ac.uk/efo/swo/SWO_0000703,spikeLI
+http://www.ebi.ac.uk/efo/swo/SWO_0000513,dChip
+http://www.ebi.ac.uk/efo/swo/SWO_0000133,'EBImage'
+http://www.ebi.ac.uk/efo/swo/SWO_0000685,reb
+http://www.ebi.ac.uk/efo/swo/SWO_0000495,'cellHTS2'
+http://www.ebi.ac.uk/efo/swo/SWO_0000013,ANCOVA
+http://www.ebi.ac.uk/efo/swo/SWO_0000458,affyTiling
+http://www.ebi.ac.uk/efo/swo/SWO_0000129,Digital gene expression (DGE) datasets
+http://www.ebi.ac.uk/efo/swo/SWO_0000078,'BufferedMatrixMethods'
+http://www.ebi.ac.uk/efo/swo/SWO_0000453,affyContam
+http://www.ebi.ac.uk/efo/swo/SWO_0000606,maSigPro
+http://www.ebi.ac.uk/efo/swo/SWO_0000416,ScISI
+http://www.ebi.ac.uk/efo/swo/SWO_0000226,HilbertVisGUI
+http://www.ebi.ac.uk/efo/swo/SWO_0000601,logitT
+http://www.ebi.ac.uk/efo/swo/SWO_0000031,Agilent Feature Extraction software version A.5.1.1
+http://www.ebi.ac.uk/efo/swo/SWO_0000583,iterativeBMAsurv
+http://www.ebi.ac.uk/efo/swo/SWO_0000546,gcRMA quantification
+http://www.ebi.ac.uk/efo/swo/SWO_0000356,RefPlus
+http://www.ebi.ac.uk/efo/swo/SWO_0000166,GLEAMS software
+http://www.ebi.ac.uk/efo/swo/SWO_0000319,PLPE
+http://www.ebi.ac.uk/efo/swo/SWO_0000731,yaqcaffy
+http://www.ebi.ac.uk/efo/swo/SWO_0000541,flowStats
+http://www.ebi.ac.uk/efo/swo/SWO_0000161,GGBase
+http://www.ebi.ac.uk/efo/swo/SWO_0000504,convert
+http://www.ebi.ac.uk/efo/swo/SWO_0000314,PAnnBuilder
+http://www.ebi.ac.uk/efo/swo/SWO_0000124,Cyber-T
+http://www.ebi.ac.uk/efo/swo/SWO_0000676,qvalue
+http://www.ebi.ac.uk/efo/swo/SWO_0000486,'biocDatasets'
+http://www.ebi.ac.uk/efo/swo/SWO_0000639,oligoClasses
+http://www.ebi.ac.uk/efo/swo/SWO_0000259,LPEadj
+http://www.ebi.ac.uk/efo/swo/SWO_0000671,qpcrNorm
+http://www.ebi.ac.uk/efo/swo/SWO_0000481,'betr'
+http://www.ebi.ac.uk/efo/swo/SWO_0000444,WilcEbam
+http://www.ebi.ac.uk/efo/swo/SWO_0000254,LMGene
+http://www.ebi.ac.uk/efo/swo/SWO_0000027,Agi4x44PreProcess
+http://www.ebi.ac.uk/efo/swo/SWO_0000579,idiogram
+http://www.ebi.ac.uk/efo/swo/SWO_0000199,GenePix Pro 4.0
+http://www.ebi.ac.uk/efo/swo/SWO_0000022,'AffyExpress'
+http://www.ebi.ac.uk/efo/swo/SWO_0000574,hopach
+http://www.ebi.ac.uk/efo/swo/SWO_0000384,SLqPCR
+http://www.ebi.ac.uk/efo/swo/SWO_0000194,GeneSpringGX
+http://www.ebi.ac.uk/efo/swo/SWO_0000727,webbioc
+http://www.ebi.ac.uk/efo/swo/SWO_0000537,flowClust
+http://www.ebi.ac.uk/efo/swo/SWO_0000347,RNAither
+http://www.ebi.ac.uk/efo/swo/SWO_0000722,Two-stage measurement error model
+http://www.ebi.ac.uk/efo/swo/SWO_0000532,factDesign
+http://www.ebi.ac.uk/efo/swo/SWO_0000342,RMA++
+http://www.ebi.ac.uk/efo/swo/SWO_0000152,GACK
+http://www.ebi.ac.uk/efo/swo/SWO_0000115,MAGE-TAB inputting software
+http://www.ebi.ac.uk/efo/swo/SWO_0000667,preprocessCore
+http://www.ebi.ac.uk/efo/swo/SWO_0000662,plw
+http://www.ebi.ac.uk/efo/swo/SWO_0000472,arrayMvout
+http://www.ebi.ac.uk/efo/swo/SWO_0000092,'CORREP'
+http://www.ebi.ac.uk/efo/swo/SWO_0000625,minet
+http://www.ebi.ac.uk/efo/swo/SWO_0000435,TargetSearch
+http://www.ebi.ac.uk/efo/swo/SWO_0000245,Jaguar
+http://www.ebi.ac.uk/efo/swo/SWO_0000208,GraphAT
+http://www.ebi.ac.uk/efo/swo/SWO_0000430,Spotfire
+http://www.ebi.ac.uk/efo/swo/SWO_0000203,GeneticsPed
+http://www.ebi.ac.uk/efo/swo/SWO_0000565,gpls
+http://www.ebi.ac.uk/efo/swo/SWO_0000375,"SAS/STAT Software, Version 8"
+http://www.ebi.ac.uk/efo/swo/SWO_0000185,GenePix Pro 6.0
+http://www.ebi.ac.uk/efo/swo/SWO_0000718,tkWidgets
+http://www.ebi.ac.uk/efo/swo/SWO_0000528,exonmap
+http://www.ebi.ac.uk/efo/swo/SWO_0000338,RLMM
+http://www.ebi.ac.uk/efo/swo/SWO_0000148,Firth's bias reduction procedure
+http://www.ebi.ac.uk/efo/swo/SWO_0000370,Ruuid
+http://www.ebi.ac.uk/efo/swo/SWO_0000180,GenePix 5.0.1
+http://www.ebi.ac.uk/efo/swo/SWO_0000523,dyebias
+http://www.ebi.ac.uk/efo/swo/SWO_0000333,RBGL
+http://www.ebi.ac.uk/efo/swo/SWO_0000658,pkgDepTools
+http://www.ebi.ac.uk/efo/swo/SWO_0000468,annotationTools
