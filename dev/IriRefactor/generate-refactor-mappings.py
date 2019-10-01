@@ -2,6 +2,12 @@
 # output as per ROBOT's rename command: http://robot.obolibrary.org/rename
 # to a csv file, refactor-efo-swo-mappings.csv
 #
+# The resulting csv can be used as follows:
+# java -jar ../build/robot.jar rename --input ../ontology/swo-merged.owl --mappings refactor-efo-swo-mappings.csv --output swo-refactored.owl
+#
+# Then tested by performing a diff, e.g.
+# make robot_diff LEFT=ontology/swo-merged.owl RIGHT=IriRefactor/swo-refactored.owl
+#
 # shared-ids.txt has been generated with the following:
 # comm -12 efo-swo-1-ids.txt efo-swo-2-ids.txt > shared-ids.txt
 #
