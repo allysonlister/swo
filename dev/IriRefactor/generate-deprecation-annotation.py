@@ -36,11 +36,11 @@ for line in infile:
     modified = parts[0].replace("http://www.ebi.ac.uk/efo/swo/", "efoswo:").strip()
     updatedIRI = sharedIds.get(parts[0].strip()).replace("http://www.ebi.ac.uk/swo/", "swo:").strip()
     # place class as child of ObsoleteClass
-    outfile.write(modified + " rdfs:subClassOf obo:ObsoleteClass .\n")
+    outfile.write(modified + " rdfs:subClassOf oboInOwl:ObsoleteClass .\n")
     # Update the label
     outfile.write(modified + " rdfs:label \"obsolete " + parts[1].strip() + "\"@en .\n" )
     # add deprecated boolean
-    outfile.write(modified + " oboInOwl:deprecated true .\n")
+    outfile.write(modified + " owl:deprecated true .\n")
     # add version number for deprecation
     outfile.write(modified + " efo:obsoleted_in_version \"1.7\" .\n")
     # suggest replacement

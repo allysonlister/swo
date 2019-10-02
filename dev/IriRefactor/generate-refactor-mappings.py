@@ -5,6 +5,8 @@
 # The resulting csv can be used as follows:
 # java -jar ../build/robot.jar rename --input ../ontology/swo-merged.owl --mappings refactor-efo-swo-mappings.csv --output swo-refactored.owl
 #
+# Although ultimately, when happy with the result, we need to change swo.owl rather than swo-merged.owl.
+#
 # Then tested by performing a diff, e.g.
 # make robot_diff LEFT=ontology/swo-merged.owl RIGHT=IriRefactor/swo-refactored.owl
 #
