@@ -1135,7 +1135,7 @@ efoswo:SWO_0000621 obo:IAO_0100001 swo:SWO_0000621 .
 efoswo:SWO_0000621 efo:reason_for_obsolescence "AL 1.10.2019: Improperly formatted IRI replaced with correct one. Please see https://github.com/allysonlister/swo/issues/10 for more information."@en .
 
 efoswo:SWO_0000241 rdfs:subClassOf obo:ObsoleteClass .
-efoswo:SWO_0000241 rdfs:label "obsolete "Initial microarray data processing (data filtering"@en .
+efoswo:SWO_0000241 rdfs:label "obsolete Initial microarray data processing (data filtering, local normalisation and quality control)"@en .
 efoswo:SWO_0000241 oboInOwl:deprecated true .
 efoswo:SWO_0000241 efo:obsoleted_in_version "1.7" .
 efoswo:SWO_0000241 obo:IAO_0100001 swo:SWO_0000241 .
