@@ -36501,6 +36501,86 @@ The analysis includes normalization and data preprocessing, detection for differ
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/SWO_1100128 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100128">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>https://github.com/bcbio/bcbio-nextgen</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">bcbio provides a shared community resource that handles the data processing component of sequencing analysis, providing researchers with more time to focus on the downstream biology.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">bcbio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_1100129 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100129">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>https://github.com/pinin4fjords/shinyngs</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Shinyngs is an R package designed to facilitate downstream analysis of RNA-seq and similar expression data with various exploratory plots and data mining tools.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">shinyNGS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_1100130 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100130">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>https://satijalab.org/seurat/</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Seurat is an R package designed for QC, analysis, and exploration of single-cell RNA-seq data. Seurat aims to enable users to identify and interpret sources of heterogeneity from single-cell transcriptomic measurements, and to integrate diverse types of single-cell data.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Seurat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_1100131 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100131">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>https://www.graphpad.com/scientific-software/prism/</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">GraphPad Prism is a commercial scientific 2D graphing and statistics software available for both Windows and Macintosh computers.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Graphpad Prism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_1100132 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100132">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>https://combine-lab.github.io/salmon/</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Salmon is a tool for quantifying the expression of transcripts using RNA-seq data. Salmon uses new algorithms (specifically, coupling the concept of quasi-mapping with a two-phase inference procedure) to provide accurate expression estimates very quickly (i.e. wicked-fast) and while using little memory. Salmon performs its inference using an expressive and realistic model of RNA-seq data that takes into account experimental attributes and biases commonly observed in real RNA-seq data.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Salmon</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/swo/SWO_9000005 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000005">
