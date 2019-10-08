@@ -44151,16 +44151,18 @@ access mechanisms. Requests for controlled-access data are reviewed by NIH Data 
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_1000137">
         <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/license/SWO_1000060"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_9001002"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/license/SWO_1000136"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_9001002"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/license/SWO_1000060"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_9001002"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/license/SWO_1000136"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
         <obo:IAO_0000115>Fee-Based Commercial License is a license which, among its license clauses, states that commercial entities may use the resource for a fee.</obo:IAO_0000115>
