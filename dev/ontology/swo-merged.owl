@@ -1635,7 +1635,6 @@ or of directed by the organization to do this.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
-        <owl:disjointWith rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:BFO_0000179>material</obo:BFO_0000179>
         <obo:BFO_0000180>MaterialEntity</obo:BFO_0000180>
         <obo:IAO_0000112>Collection of random bacteria, a chair, dorsal surface of the body.</obo:IAO_0000112>
@@ -1743,7 +1742,6 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
-        <owl:disjointWith rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000111 xml:lang="en">information content entity</obo:IAO_0000111>
         <obo:IAO_0000112>Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
@@ -13495,12 +13493,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004001"/>
-                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/interface/SWO_9000052"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0040005"/>
                 <owl:someValuesFrom rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_778151"/>
             </owl:Restriction>
@@ -13511,10 +13503,24 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200111"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Data analysis software which performs a variety of statistical, summarising, analytical and visualization tasks. </obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue xml:lang="en">http://xray.bmc.uu.se/~aqwww/q/</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Q is a set of tools tailored for some specific kinds of free energy calculations, namely: (I) Free energy perturbation (FEP) simulations.
+(II) Empirical valence bond (EVB) calculations of reaction free energies. (III) Linear interaction energy (LIE) calculations of receptor-ligand binding affinities.</obo:IAO_0000115>
         <dc:creator>Allyson Lister</dc:creator>
         <rdfs:label xml:lang="en">Q</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000073"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">Q is a set of tools tailored for some specific kinds of free energy calculations, namely: (I) Free energy perturbation (FEP) simulations.
+(II) Empirical valence bond (EVB) calculations of reaction free energies. (III) Linear interaction energy (LIE) calculations of receptor-ligand binding affinities.</owl:annotatedTarget>
+        <obo:IAO_0000119>http://xray.bmc.uu.se/~aqwww/q</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -13536,12 +13542,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000043"/>
-                <owl:hasValue>http://www.q-researchsoftware.com</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Q 4.2</rdfs:label>
@@ -24372,11 +24372,16 @@ tiple samples</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Analysis of cell-based RNA interference screens</obo:IAO_0000115>
-        <obo:IAO_0000119>http://bioconductor.org/packages/2.4/bioc/html/cellHTS.html</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Bioconductor package concerned with analysis of cell-based RNA interference screens</obo:IAO_0000115>
         <dc:creator>Nandini Badarinarayan</dc:creator>
         <rdfs:label>&apos;cellHTS&apos;</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000494"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">Bioconductor package concerned with analysis of cell-based RNA interference screens</owl:annotatedTarget>
+        <obo:IAO_0000119 xml:lang="en">http://bioconductor.org/packages/2.4/bioc/html/cellHTS.html</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -26516,11 +26521,17 @@ tiple samples</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Background adjustment using sequence information</obo:IAO_0000115>
-        <obo:IAO_0000119>http://www.bioconductor.org/packages/2.3/bioc/html/gcrma.html</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Bioconductor package concerned with background adjustment using sequence information</obo:IAO_0000115>
+        <dc:contributor xml:lang="en">Allyson Lister</dc:contributor>
         <dc:creator>Nandini Badarinarayan</dc:creator>
         <rdfs:label>gcRMA quantification</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000546"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">Bioconductor package concerned with background adjustment using sequence information</owl:annotatedTarget>
+        <obo:IAO_0000119 xml:lang="en">http://www.bioconductor.org/packages/2.3/bioc/html/gcrma.html</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -34703,11 +34714,17 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000415"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Creates classes used in model-view-controller (MVC) design</obo:IAO_0000115>
-        <obo:IAO_0000119>http://bioconductor.org/packages/2.4/bioc/html/BioMVCClass.html</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Creates classes used in model-view-controller (MVC) design that uses Biobase</obo:IAO_0000115>
+        <dc:contributor xml:lang="en">Allyson Lister</dc:contributor>
         <dc:creator>Nandini Badarinarayan</dc:creator>
         <rdfs:label>&apos;BioMVCClass&apos;</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/swo/SWO_1100044"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">Creates classes used in model-view-controller (MVC) design that uses Biobase</owl:annotatedTarget>
+        <obo:IAO_0000119 xml:lang="en">http://bioconductor.org/packages/2.4/bioc/html/BioMVCClass.html</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -47333,7 +47350,9 @@ For example, bagging of decision trees algorithm includes the specification of a
 
     <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000064">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdfs:label xml:lang="en">Numbers International Pty Ltd</rdfs:label>
+        <dc:contributor xml:lang="en">Allyson Lister</dc:contributor>
+        <rdfs:comment xml:lang="en">AL 8.10.2019: References https://github.com/allysonlister/swo/issues/19</rdfs:comment>
+        <rdfs:label xml:lang="en">Uppsala Molekylmekaniska HB</rdfs:label>
     </owl:NamedIndividual>
     
 
