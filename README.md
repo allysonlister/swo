@@ -1,18 +1,12 @@
 --------------------------------
 # The Software Ontology
-The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, licensing, provenance and associated data. A new release (1.7) is currently in progress, and can be monitored at https://github.com/allysonlister/swo/milestone/1
+The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, licensing, provenance and associated data. The latest release is 1.7.
 
 # Licenses in SWO
 
 As part of SWO, we have developed a hierarchy of license types which can organize licenses based on their clauses. For more information on this work, please see the [LicenceHierarchy](LicenceHierarchy.md) page.
 
 # Files
-
-The directories within SWO are organized as follows:
-
-    swo/
-        dev/ontology/
-        release/
 
 Each directory contains a README describing its contents. Broadly, the `dev` directory contains the working files which are updated in an ongoing manner. The `release` directory is only updated when a release has been built.
 
@@ -22,7 +16,7 @@ Within the `dev/ontology` subdirectory, you will find a number of OWL files. Det
 
 ## Release files
 
-Within the release/ subdirectory are the various files that are published with each SWO release. This will change with the 1.7 release and this section will be updated at that time.
+Within the release/ subdirectory are the various files that are published with each SWO release. Details of releases are available in the [release directory README](release/README.md).
 
 # Release Policy
 
@@ -34,7 +28,7 @@ Within the release/ subdirectory are the various files that are published with e
 
 4. A release notes file will be attached to each release as a README.md and will outline major changes to the ontology.
 
-Release files are created using [ROBOT](http://robot.obolibrary.org/) via a controlling [Makefile](development/Makefile).
+Release files are created using [ROBOT](http://robot.obolibrary.org/) via a controlling [Makefile](dev/Makefile).
 
 # Tools Used
 
@@ -52,8 +46,10 @@ The SWO License is available at [LICENSE.md](LICENSE.md).
 For license information for the external ontologies used to create SWO, please see our [Licensing Compliance](https://github.com/allysonlister/swo/blob/master/LicensingCompliance.md) page.
 
 
-# Restructuring Prior to Release 1.7
+# Restructuring for Release 1.7
 
 Due to improvements in automatically building an ontology via Ontofox and ROBOT, we no longer needed to import all of EDAM. Release 1.7 was the first to employ these semi-automated updates. This allows SWO to be easily aligned with any new releases of its imported ontologies and creates a much simpler build procedure.
 
 Previously, SWO was built with a series of modular OWL files labelled swo_*.owl. While this made things easier in previous years, the number of development files was getting unwieldy. Currently, the only file imported by the development version of SWO is the automatically-generated one produced by Ontofox, which pulls in all of the latest annotation and hierarchies for the imported classes.
+
+Finally, the IRIs across all SWO classes were reconciled according to the official SWO IRI naming scheme. As such, many IRIs were deprecated and new IRIs issued. Full details are available at the [IRI Refactoring Issue](https://github.com/allysonlister/swo/issues/10) in the issue tracker.
