@@ -22,6 +22,3 @@ http://wwww.ebi.ac.uk/efo/bubastis
 # Obsolete Classes
 
 Obsoleted duplicate class SWO_1000102 'Modified BSD License'.
-
-
-
