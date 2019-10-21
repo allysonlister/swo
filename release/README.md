@@ -5,6 +5,10 @@ https://github.com/allysonlister/swo
 * VERSION: 1.7
 * DATE: 21 October 2019
 
+The official release file for SWO is https://github.com/allysonlister/swo/blob/master/release/swo.owl
+
+In addition, for those who wish it, a version of SWO including the inferred hierarchy is available at https://github.com/allysonlister/swo/blob/master/release/swo-inferred.owl
+
 # Summary
 
 Due to improvements in automatically building an ontology via Ontofox and ROBOT, we no longer needed to import all of EDAM. Release 1.7 was the first to employ these semi-automated updates. This allows SWO to be easily aligned with any new releases of its imported ontologies and creates a much simpler build procedure.
