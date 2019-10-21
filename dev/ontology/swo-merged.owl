@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.ebi.ac.uk/swo/swo-merged.owl#"
-     xml:base="http://www.ebi.ac.uk/swo/swo-merged.owl"
+<rdf:RDF xmlns="http://www.ebi.ac.uk/swo/swo.owl#"
+     xml:base="http://www.ebi.ac.uk/swo/swo.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:efo="http://www.ebi.ac.uk/efo/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
@@ -11,7 +11,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:edamontology="http://edamontology.org#">
-    <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/swo-merged.owl">
+    <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/swo.owl">
         <dc:creator xml:lang="en">Allyson Lister</dc:creator>
         <dc:creator xml:lang="en">Andy Brown</dc:creator>
         <dc:creator xml:lang="en">Duncan Hull</dc:creator>
@@ -2016,6 +2016,442 @@ information_encoding
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label xml:lang="en">data visualization</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SWO_1100133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_1100133">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>http://www.stavrox.com</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StavroX software identifies cross-linked peptides.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</obo:IAO_0000117>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:contributor>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:contributor>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:creator>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:creator>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/35</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stavrox</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SWO_1100133"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StavroX software identifies cross-linked peptides.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SWO_1100134 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_1100134">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/license/SWO_1000046"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>https://github.com/shengqh/RCPA.Tools/wiki</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ProteomicsTools software suite contains a bunch of tools used in proteomics research, including identification, result parsing, quantification, and modification.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</obo:IAO_0000117>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:contributor>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:contributor>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:creator>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:creator>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/34</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ProteomicsTools</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SWO_1100134"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ProteomicsTools software suite contains a bunch of tools used in proteomics research, including identification, result parsing, quantification, and modification.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/shengqh/RCPA.Tools</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SWO_1100135 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_1100135">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/license/SWO_1000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>https://www.thermofisher.com/order/catalog/product/CHROMELEON7#/CHROMELEON7</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chromeleon software provides full integration of Thermo Scientific gas chromatography (GC-MS/MS), liquid chromatography (LC-MS/MS), and ion chromatography (IC-MS) instruments.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</obo:IAO_0000117>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:contributor>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:contributor>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:creator>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:creator>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/32</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chromeleon</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SWO_1100135"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chromeleon software provides full integration of Thermo Scientific gas chromatography (GC-MS/MS), liquid chromatography (LC-MS/MS), and ion chromatography (IC-MS) instruments.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://www.thermofisher.com/order/catalog/product/CHROMELEON7#/CHROMELEON7</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SWO_1100136 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_1100136">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/license/SWO_1000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>https://www.spectralworks.com/products/analyzerpro/</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AnalyzerPro​ is a productivity software application for both low and high resolution LC-MS and GC-MS data with support for multiple vendors’ data. This comprehensive post-processing utility provides optimized workflows for sample-to-sample comparison, target component analysis, quantitation and library searching for data generated from any LC-MS and GC-MS platform</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</obo:IAO_0000117>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:contributor>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:contributor>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:creator>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:creator>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/31</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AnalyzerPro</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SWO_1100136"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AnalyzerPro​ is a productivity software application for both low and high resolution LC-MS and GC-MS data with support for multiple vendors’ data. This comprehensive post-processing utility provides optimized workflows for sample-to-sample comparison, target component analysis, quantitation and library searching for data generated from any LC-MS and GC-MS platform</owl:annotatedTarget>
+        <obo:IAO_0000119>https://www.spectralworks.com/products/analyzerpro/</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SWO_1100137 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_1100137">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/license/SWO_1000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>https://sciex.com/technology/swath-acquisition</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SWATH is the only data independent acquisition (DIA) technique that allows comprehensive detection and quantitation of virtually every detectable compound in a sample (MS/MSALL). This provides confidence in your quantitative results and virtually eliminates the risk of missing a critical component. SWATH Acquisition strategy can only be achieved through the power and speed of SCIEX TripleTOF® and QTOF technology.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</obo:IAO_0000117>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:contributor>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:contributor>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:creator>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:creator>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/30</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SWATH Software</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SWO_1100137"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SWATH is the only data independent acquisition (DIA) technique that allows comprehensive detection and quantitation of virtually every detectable compound in a sample (MS/MSALL). This provides confidence in your quantitative results and virtually eliminates the risk of missing a critical component. SWATH Acquisition strategy can only be achieved through the power and speed of SCIEX TripleTOF® and QTOF technology.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://sciex.com/technology/swath-acquisition</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SWO_1100138 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_1100138">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/license/SWO_1000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>https://www.proteinmetrics.com/products/supernovo/</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SupernovoTM is a unique, hands-free solution for end-to-end de novo sequencing of monoclonal antibodies (mAbs), enabling high throughput protein discovery.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</obo:IAO_0000117>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:contributor>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:contributor>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:creator>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:creator>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/29</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supernovo</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SWO_1100138"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SupernovoTM is a unique, hands-free solution for end-to-end de novo sequencing of monoclonal antibodies (mAbs), enabling high throughput protein discovery.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://www.proteinmetrics.com/products/supernovo/</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SWO_1100139 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_1100139">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/license/SWO_1000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>http://www.bioinfor.com/peaksdb/</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein Identification Software including an LC-MS/MS search engine, modification search and PTM profiling, sequence variant search, integration with de novo sequencing, and support for all types of fragment ions.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</obo:IAO_0000117>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:contributor>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:contributor>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:creator>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:creator>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/28</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PEAKS DB</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SWO_1100139"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein Identification Software including an LC-MS/MS search engine, modification search and PTM profiling, sequence variant search, integration with de novo sequencing, and support for all types of fragment ions.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SWO_1100140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_1100140">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/license/SWO_1000046"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>https://htseq.readthedocs.io/en/release_0.11.1/</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTSeq is a Python package that provides infrastructure to process data from high-throughput sequencing assays.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</obo:IAO_0000117>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:contributor>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:contributor>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:creator>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:creator>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/27</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTSeq</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SWO_1100140"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTSeq is a Python package that provides infrastructure to process data from high-throughput sequencing assays.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://htseq.readthedocs.io/en/release_0.11.1/overview.html</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SWO_1100141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_1100141">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/license/SWO_9000085"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>https://github.com/broadinstitute/rnaseqc</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNA-SeQC is a java program which computes a series of quality control metrics for RNA-seq data. The input can be one or more BAM files. The output consists of HTML reports and tab delimited files of metrics data. This program can be valuable for comparing sequencing quality across different samples or experiments to evaluate different experimental parameters. It can also be run on individual samples as a means of quality control before continuing with downstream analysis.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</obo:IAO_0000117>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:contributor>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:contributor>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:creator>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:creator>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/26</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNA-SeQC</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SWO_1100141"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNA-SeQC is a java program which computes a series of quality control metrics for RNA-seq data. The input can be one or more BAM files. The output consists of HTML reports and tab delimited files of metrics data. This program can be valuable for comparing sequencing quality across different samples or experiments to evaluate different experimental parameters. It can also be run on individual samples as a means of quality control before continuing with downstream analysis.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SWO_1100142 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_1100142">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/license/SWO_1000046"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>http://rseqc.sourceforge.net/</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSeQC package provides a number of useful modules that can comprehensively evaluate high throughput sequence data especially RNA-seq data. Some basic modules quickly inspect sequence quality, nucleotide composition bias, PCR bias and GC bias, while RNA-seq specific modules evaluate sequencing saturation, mapped reads distribution, coverage uniformity, strand specificity, transcript level RNA integrity etc.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</obo:IAO_0000117>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:contributor>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:contributor>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:creator>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:creator>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/25</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSeQC</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SWO_1100142"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RSeQC package provides a number of useful modules that can comprehensively evaluate high throughput sequence data especially RNA-seq data. Some basic modules quickly inspect sequence quality, nucleotide composition bias, PCR bias and GC bias, while RNA-seq specific modules evaluate sequencing saturation, mapped reads distribution, coverage uniformity, strand specificity, transcript level RNA integrity etc.</owl:annotatedTarget>
+        <obo:IAO_0000119>http://rseqc.sourceforge.net/</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SWO_1100143 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_1100143">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/license/SWO_9000074"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>https://github.com/samtools/samtools</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAM Tools provide various utilities for manipulating alignments in the SAM format, including sorting, merging, indexing and generating alignments in a per-position format.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</obo:IAO_0000117>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:contributor>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:contributor>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:creator>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:creator>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/24</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAMtools</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SWO_1100143"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAM Tools provide various utilities for manipulating alignments in the SAM format, including sorting, merging, indexing and generating alignments in a per-position format.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SWO_1100144 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_1100144">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/license/SWO_1000047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>https://github.com/s-andrews/FastQC</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FastQC aims to provide a simple way to do some quality control checks on raw sequence data coming from high throughput sequencing pipelines. It provides a modular set of analyses which you can use to give a quick impression of whether your data has any problems of which you should be aware before doing any further analysis.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</obo:IAO_0000117>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:contributor>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:contributor>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:creator>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:creator>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/23</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FastQC</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SWO_1100144"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FastQC aims to provide a simple way to do some quality control checks on raw sequence data coming from high throughput sequencing pipelines. It provides a modular set of analyses which you can use to give a quick impression of whether your data has any problems of which you should be aware before doing any further analysis.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SWO_1100145 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_1100145">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/has_license"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/license/SWO_9000074"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004006"/>
+                <owl:hasValue>https://cutadapt.readthedocs.io/en/stable/</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</obo:IAO_0000117>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:contributor>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:contributor>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allyson Lister</dc:creator>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Reuter</dc:creator>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/22</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CutAdapt</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SWO_1100145"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://cutadapt.readthedocs.io/en/stable/</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
