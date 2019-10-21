@@ -455,9 +455,9 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000304">
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <obo:IAO_0000115>c is_manufactured_by o means that there was a process p in which c was 
-built in which a person, or set of people or machines did the work(bore 
-the &quot;Manufacturer Role&quot;, and those people/and or machines were members 
+        <obo:IAO_0000115>c is_manufactured_by o means that there was a process p in which c was
+built in which a person, or set of people or machines did the work(bore
+the &quot;Manufacturer Role&quot;, and those people/and or machines were members
 or of directed by the organization to do this.</obo:IAO_0000115>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
         <rdfs:label>is manufactured by</rdfs:label>
@@ -40394,7 +40394,7 @@ keep the language concise, consistent, intuitive and flexible.</obo:IAO_0000115>
     The freedom to redistribute copies so you can help your neighbor (freedom 2).
     The freedom to distribute copies of your modified versions to others (freedom 3). By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this.
 
-A program is free software if users have all of these freedoms. Thus, you should be free to redistribute copies, either with or without modifications, either gratis or charging a fee for distribution, to anyone anywhere. Being free to do these things means (among other things) that you do not have to ask or pay for permission to do so. 
+A program is free software if users have all of these freedoms. Thus, you should be free to redistribute copies, either with or without modifications, either gratis or charging a fee for distribution, to anyone anywhere. Being free to do these things means (among other things) that you do not have to ask or pay for permission to do so.
 
 “Free software” does not mean “noncommercial”. A free program must be available for commercial use, commercial development, and commercial distribution. Commercial development of free software is no longer unusual; such free commercial software is very important. You may have paid money to get copies of free software, or you may have obtained copies at no charge. But regardless of how you got your copies, you always have the freedom to copy and change the software, even to sell copies. </obo:IAO_0000115>
         <obo:IAO_0000119>http://www.gnu.org/philosophy/free-sw.html, accessed 12 June 2013.</obo:IAO_0000119>
@@ -44665,7 +44665,7 @@ access mechanisms. Requests for controlled-access data are reviewed by NIH Data 
                 <owl:hasValue>http://www.ebi.ac.uk/about/terms-of-use</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The Terms of Use for EMBL-EBI Services reflect EMBL-EBI’s commitment to OpenScience through its mission to provide freely available online services, databases and software relating to data contributed from life science experiments to the largest possible community. They impose no additional constraints on the use of the contributed data than those provided by the data owner.  EMBL-EBI expects attribution (e.g. in publications, services or products) for any of its online services, databases or software in accordance with good scientific practice. The expected attribution will be indicated on the appropriate web page.  </obo:IAO_0000115>
+        <obo:IAO_0000115>The Terms of Use for EMBL-EBI Services reflect EMBL-EBI’s commitment to OpenScience through its mission to provide freely available online services, databases and software relating to data contributed from life science experiments to the largest possible community. They impose no additional constraints on the use of the contributed data than those provided by the data owner. EMBL-EBI expects attribution (e.g. in publications, services or products) for any of its online services, databases or software in accordance with good scientific practice. The expected attribution will be indicated on the appropriate web page. </obo:IAO_0000115>
         <obo:IAO_0000119>http://www.ebi.ac.uk/about/terms-of-use, accessed 13 July 2016.</obo:IAO_0000119>
         <dc:creator>Allyson Lister</dc:creator>
         <rdfs:label xml:lang="en">Terms of Use for EMBL-EBI Services</rdfs:label>
@@ -46323,7 +46323,7 @@ According to the GNU project, the Apache 2.0 license is better for substantial p
     <owl:Class rdf:about="http://www.ontodm.com/OntoDM-core/OntoDM_000037">
         <rdfs:subClassOf rdf:resource="http://kt.ijs.si/panovp/OntoDM#OntoDM_000034"/>
         <obo:IAO_0000115>A ensemble of generalizations specification is a generalization specification and denotes a type of generalization that is produced by a ensemble algorithm. This algorithm produces a set of generalizations at its output.</obo:IAO_0000115>
-        <obo:IAO_0000115>An ensemble specification denotes a type of generalization which is an output of an execution of a ensemble algorithm. 
+        <obo:IAO_0000115>An ensemble specification denotes a type of generalization which is an output of an execution of a ensemble algorithm.
 Ensembles are sets of generalizations (have as parts single generalizations) with a defined procedure of their combination into a single generalization when executed in a process.</obo:IAO_0000115>
         <obo:IAO_0000119>OntoDM</obo:IAO_0000119>
         <rdfs:label>ensemble specification</rdfs:label>
@@ -46331,7 +46331,7 @@ Ensembles are sets of generalizations (have as parts single generalizations) wit
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.ontodm.com/OntoDM-core/OntoDM_000037"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An ensemble specification denotes a type of generalization which is an output of an execution of a ensemble algorithm. 
+        <owl:annotatedTarget>An ensemble specification denotes a type of generalization which is an output of an execution of a ensemble algorithm.
 Ensembles are sets of generalizations (have as parts single generalizations) with a defined procedure of their combination into a single generalization when executed in a process.</owl:annotatedTarget>
         <swo:SWO_0000144></swo:SWO_0000144>
     </owl:Axiom>
@@ -47728,9 +47728,6 @@ For example, bagging of decision trees algorithm includes the specification of a
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://edamontology.org/format_1930">
-        <obo:IAO_0000118>.fq</obo:IAO_0000118>
-    </rdf:Description>
     <rdf:Description rdf:about="http://edamontology.org/format_2573">
         <obo:IAO_0000118>Sequence Alignment/Map format</obo:IAO_0000118>
         <obo:IAO_0000118>.sam</obo:IAO_0000118>
