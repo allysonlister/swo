@@ -10,6 +10,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:edamontology="http://edamontology.org#">
     <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/swo.owl">
         <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/swo-external.owl"/>
@@ -21,14 +22,15 @@
         <dc:creator xml:lang="en">Jon Ison</dc:creator>
         <dc:creator xml:lang="en">Nandini Badarinarayan</dc:creator>
         <dc:creator xml:lang="en">Robert Stevens</dc:creator>
+        <terms:description xml:lang="en">The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, licences, provenance and associated data.</terms:description>
+        <terms:license xml:lang="en">SWO is provided under a Creative Commons Attribution 4.0 International (CC BY 4.0) license (https://creativecommons.org/licenses/by/4.0/).</terms:license>
+        <terms:title xml:lang="en">SWO (The Software Ontology)</terms:title>
         <rdfs:comment xml:lang="en">The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, licensing, provenance and associated data. It contains SWO-specific classes and axioms as well as imports from:
 
 1. BFO
 2. IAO
 3. OBI
-4. EDAM
-
-SWO is provided under a Creative Commons Attribution 4.0 International (CC BY 4.0) license (https://creativecommons.org/licenses/by/4.0/).</rdfs:comment>
+4. EDAM</rdfs:comment>
     </owl:Ontology>
     
 
@@ -121,6 +123,24 @@ SWO is provided under a Creative Commons Attribution 4.0 International (CC BY 4.
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
