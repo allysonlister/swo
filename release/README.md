@@ -4,10 +4,13 @@ https://github.com/allysonlister/swo
 
 * VERSION: 1.7
 * DATE: 21 October 2019
+* PURL: http://purl.obolibrary.org/obo/swo.owl
 
-The official release file for SWO is https://github.com/allysonlister/swo/blob/master/release/swo.owl
+The following OWL files are available in this directory:
 
-In addition, for those who wish it, a version of SWO including the inferred hierarchy is available at https://github.com/allysonlister/swo/blob/master/release/swo-inferred.owl
+* swo.owl: The standalone ontology file with the asserted hierarchy and axioms only (inferences not included).
+* swo-inferred.owl: The inferred hierarchy, plus all annotation and asserted logical axioms. This is the version of the ontology that our purl redirects to.
+* swo-inferred-annotations.owl: The inferred hierarchy, plus all annotations but **no** asserted logical axioms. This provides a useful lightweight view that highlights the hierarchy.
 
 # Summary
 
