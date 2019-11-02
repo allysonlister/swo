@@ -1,4 +1,4 @@
-# The Software Ontology Release Notes
+# The Software Ontology (SWO) Release Notes
 
 https://github.com/allysonlister/swo
 
@@ -20,10 +20,20 @@ Previously, SWO was built with a series of modular OWL files labelled swo_*.owl.
 
 Finally, the IRIs across all SWO classes were reconciled according to the official SWO IRI naming scheme. As such, many IRIs were deprecated and new IRIs issued. Full details are available at the [IRI Refactoring Issue](https://github.com/allysonlister/swo/issues/10) in the issue tracker.
 
+# SWO in the Wild
+
+You can also find SWO indexed by the following projects:
+
+* [SWO in the OBO Foundry](http://www.obofoundry.org/ontology/swo.html)
+* [SWO in BioPortal](https://bioportal.bioontology.org/ontologies/SWO)
+* [SWO in EBI's OLS](https://www.ebi.ac.uk/ols/ontologies/swo) - update to 1.7 in progress
+* [SWO in Ontobee](http://www.ontobee.org/ontology/SWO) - update to 1.7 in progress
 
 # Change log
 
-If you wish to perform a full diff between these versions please use [ROBOT's diff command](http://robot.obolibrary.org/diff).
+The majority of the improvements included with this release can be found in the [Release Milestone](https://github.com/allysonlister/swo/milestone/1).
+
+If you wish to perform a full diff between these versions please use [ROBOT's diff command](http://robot.obolibrary.org/diff). However, there were large numbers of changes, including to a number of IRIs, therefore this comparison may not be useful for 1.6 -> 1.7.
 
 
 # Obsolete Classes
