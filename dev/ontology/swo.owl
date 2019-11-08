@@ -22,9 +22,9 @@
         <dc:creator xml:lang="en">Jon Ison</dc:creator>
         <dc:creator xml:lang="en">Nandini Badarinarayan</dc:creator>
         <dc:creator xml:lang="en">Robert Stevens</dc:creator>
+        <dc:title xml:lang="en">SWO (The Software Ontology)</dc:title>
         <terms:description xml:lang="en">The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, licences, provenance and associated data.</terms:description>
         <terms:license xml:lang="en">SWO is provided under a Creative Commons Attribution 4.0 International (CC BY 4.0) license (https://creativecommons.org/licenses/by/4.0/).</terms:license>
-        <terms:title xml:lang="en">SWO (The Software Ontology)</terms:title>
         <rdfs:comment xml:lang="en">The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, licensing, provenance and associated data. It contains SWO-specific classes and axioms as well as imports from:
 
 1. BFO
@@ -126,6 +126,12 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
@@ -135,12 +141,6 @@
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 

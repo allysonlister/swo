@@ -22,9 +22,9 @@
         <dc:creator xml:lang="en">Jon Ison</dc:creator>
         <dc:creator xml:lang="en">Nandini Badarinarayan</dc:creator>
         <dc:creator xml:lang="en">Robert Stevens</dc:creator>
+        <dc:title xml:lang="en">SWO (The Software Ontology)</dc:title>
         <terms:description xml:lang="en">The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, licences, provenance and associated data.</terms:description>
         <terms:license xml:lang="en">SWO is provided under a Creative Commons Attribution 4.0 International (CC BY 4.0) license (https://creativecommons.org/licenses/by/4.0/).</terms:license>
-        <terms:title xml:lang="en">SWO (The Software Ontology)</terms:title>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date of release: 21.10.2019</rdfs:comment>
         <rdfs:comment xml:lang="en">The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, licensing, provenance and associated data. It contains SWO-specific classes and axioms as well as imports from:
 
@@ -327,6 +327,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
@@ -336,12 +342,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -23604,8 +23604,8 @@ or of directed by the organization to do this.</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/SWO_0040005">
         <dc:creator>OBI</dc:creator>
-        <obo:IAO_0000119>Allyson Lister</obo:IAO_0000119>
         <dc:creator>Allyson Lister</dc:creator>
+        <obo:IAO_0000119>Allyson Lister</obo:IAO_0000119>
         <rdfs:label>is executed in</rdfs:label>
         <obo:IAO_0000115>is executed in defines the relationship between a software class and an appropriate process in the information processing hierarchy. Specifically, it allows the linking of a particular piece of software to a process of a particular purpose, </obo:IAO_0000115>
     </rdf:Description>
@@ -23621,8 +23621,8 @@ or of directed by the organization to do this.</obo:IAO_0000115>
     <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/license/SWO_1000048">
         <rdfs:label xml:lang="en">is compatible license of</rdfs:label>
         <dc:creator>Allyson Lister</dc:creator>
-        <obo:IAO_0000119>http://www.gnu.org/licenses/gpl-faq.html#WhatDoesCompatMean, accessed 12 June 2013.</obo:IAO_0000119>
         <obo:IAO_0000115>&apos;is compatible license of&apos; provides a method of marking two software licenses as compatible and without conflicts, e.g. that the Apache License version 2 is compatible with GNU GPL version 3. If two licenses are connected with this property, it means code released under one license can be released with code from the other license in a larger program.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.gnu.org/licenses/gpl-faq.html#WhatDoesCompatMean, accessed 12 June 2013.</obo:IAO_0000119>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/maturity/SWO_9000068">
         <rdfs:label>has release date</rdfs:label>
@@ -23867,9 +23867,9 @@ or of directed by the organization to do this.</obo:IAO_0000115>
     <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#part_of">
         <obo:IAO_0000115>For continuants: C part_of C&apos; if and only if: given any c that instantiates C at a time t, there is some c&apos; such that c&apos; instantiates C&apos; at time t, and c *part_of* c&apos; at t. For processes: P part_of P&apos; if and only if: given any p that instantiates P at a time t, there is some p&apos; such that p&apos; instantiates P&apos; at time t, and p *part_of* p&apos; at t. (Here *part_of* is the instance-level part-relation.)</obo:IAO_0000115>
         <obo:IAO_0000112>Cytoscape plugins would be linked to the Cytoscape application via uses software, while Microsoft Excel is linked to Microsoft Office via has_part.</obo:IAO_0000112>
+        <obo:IAO_0000115>This property can be used to describe related but independent members of a larger software package. In other cases, where parts of a larger software package are independent of one another in development but one piece of software executes another directly, please use &quot;uses software&quot;.</obo:IAO_0000115>
         <obo:IAO_0000119>OBO Foundry RO</obo:IAO_0000119>
         <rdfs:label>part of</rdfs:label>
-        <obo:IAO_0000115>This property can be used to describe related but independent members of a larger software package. In other cases, where parts of a larger software package are independent of one another in development but one piece of software executes another directly, please use &quot;uses software&quot;.</obo:IAO_0000115>
     </rdf:Description>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
