@@ -60,7 +60,7 @@ includeAllAnnotationProperties
 ## Where EDAM terms have been used in preference to now-obsolete SWO terms
 ## (such as with Image data_2968) we have placed the EDAM terms within
 ## the IAO hierarchy, as this is the hierarchy we use within SWO and we would
-## like to retain a single hierachy for similar concepts.
+## like to retain a single hierarchy for similar concepts.
 ##
 ##
 
