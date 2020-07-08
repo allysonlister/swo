@@ -926,6 +926,7 @@ or of directed by the organization to do this.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://edamontology.org/format_2330">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000098"/>
+        <rdfs:label>Textual format</rdfs:label>
     </owl:Class>
     
 
