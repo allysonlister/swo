@@ -2,6 +2,12 @@
 # The Software Ontology
 The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, licensing, provenance and associated data. The latest release is 1.7.
 
+You can cite SWO with the following publication:
+
+Malone, J., Brown, A., Lister, A.L. et al. The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation. J Biomed Semant 5, 25 (2014). [https://doi.org/10.1186/2041-1480-5-25](https://doi.org/10.1186/2041-1480-5-25)
+
+You can also view SWO in the EBI's Ontology Lookup Service (OLS) at [https://www.ebi.ac.uk/ols/ontologies/swo](https://www.ebi.ac.uk/ols/ontologies/swo). 
+
 # Licenses in SWO
 
 As part of SWO, we have developed a hierarchy of license types which can organize licenses based on their clauses. For more information on this work, please see the [LicenceHierarchy](LicenceHierarchy.md) page.
