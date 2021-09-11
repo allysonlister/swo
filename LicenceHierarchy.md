@@ -1,6 +1,6 @@
 # Modelling Licences in SWO
 
-Within SWO, software can be related to the licences that describe how that they may be used. The licences themselves are also modelled so that they can be described along two main axes:
+Within SWO, software can be related to the licences that describe how they may be used. The licences themselves are also modelled so that they can be described along two main axes:
 
 1. **Their owning organization.** Licences are grouped according to the organization that developed them, e.g Creative Commons or GNU.
 2. **Their stated requirements.** Licences are also grouped according to the constraints described within them. Attribution, cost and distribution are just a few examples of the clauses described within SWO.
