@@ -47,7 +47,7 @@ BMC Research Notes. 2010, 3:175. PMID: 20569493
 
 # Licensing
 
-The SWO License is available at [LICENSE.md](LICENSE.md).
+The SWO is licensed under the CC BY 4.0 license. Exact text is available at [LICENSE](LICENSE).
 
 For license information for the external ontologies used to create SWO, please see our [Licensing Compliance](https://github.com/allysonlister/swo/blob/master/LicensingCompliance.md) page.
 
