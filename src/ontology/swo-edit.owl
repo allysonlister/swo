@@ -1,4 +1,3 @@
-
 Prefix(:=<http://www.ebi.ac.uk/swo/swo.owl#>)
 Prefix(swo:=<http://www.ebi.ac.uk/swo/>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
@@ -44,10 +43,10 @@ Annotation(rdfs:comment "The Software Ontology (SWO) is a resource for describin
 3. OBI
 4. EDAM")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/SWO_0000000>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
+
 
 ############################
 #   Annotation Properties
@@ -102,10 +101,10 @@ AnnotationAssertion(rdfs:label swo:SWO_0000144 "SWO definition")
 AnnotationAssertion(rdfs:label owl:deprecated "deprecated")
 AnnotationPropertyRange(owl:deprecated xsd:boolean)
 
+############################
+#   Declarations
+############################
 
-############################
-#   Classes
-############################
 
 Declaration(Class(<http://edamontology.org/data_0582>))
 Declaration(Class(<http://edamontology.org/data_1636>))
@@ -1939,7 +1938,6 @@ Declaration(Class(<http://www.ontodm.com/OntoDM-core/OntoDM_000285>))
 Declaration(Class(<http://www.ontodm.com/OntoDM-core/OntoDM_419460>))
 Declaration(Class(<http://www.ontodm.com/OntoDM-core/OntoDM_530819>))
 Declaration(Class(<http://www.ontodm.com/OntoDM-core/OntoDM_731692>))
-Declaration(Class(owl:DeprecatedClass))
 Declaration(Class(owl:Thing))
 Declaration(ObjectProperty(<http://purl.obofoundry.org/obo/IAO_0000136>))
 Declaration(ObjectProperty(obo:BFO_0000060))
@@ -2129,6 +2127,7 @@ Declaration(AnnotationProperty(rdfs:comment))
 Declaration(AnnotationProperty(rdfs:label))
 Declaration(AnnotationProperty(owl:deprecated))
 Declaration(AnnotationProperty(owl:versionInfo))
+
 
 ############################
 #   Object Properties
@@ -2486,11 +2485,10 @@ TransitiveObjectProperty(<http://www.obofoundry.org/ro/ro.owl#has_part>)
 
 AnnotationAssertion(obo:IAO_0000112 <http://www.obofoundry.org/ro/ro.owl#part_of> "Cytoscape plugins would be linked to the Cytoscape application via uses software, while Microsoft Excel is linked to Microsoft Office via has_part.")
 AnnotationAssertion(obo:IAO_0000115 <http://www.obofoundry.org/ro/ro.owl#part_of> "For continuants: C part_of C' if and only if: given any c that instantiates C at a time t, there is some c' such that c' instantiates C' at time t, and c *part_of* c' at t. For processes: P part_of P' if and only if: given any p that instantiates P at a time t, there is some p' such that p' instantiates P' at time t, and p *part_of* p' at t. (Here *part_of* is the instance-level part-relation.)")
-AnnotationAssertion(Annotation(swo:SWO_0000144 _:genid-nodeid-5) obo:IAO_0000115 <http://www.obofoundry.org/ro/ro.owl#part_of> "This property can be used to describe related but independent members of a larger software package. In other cases, where parts of a larger software package are independent of one another in development but one piece of software executes another directly, please use \"uses software\".")
+AnnotationAssertion(obo:IAO_0000115 <http://www.obofoundry.org/ro/ro.owl#part_of> "This property can be used to describe related but independent members of a larger software package. In other cases, where parts of a larger software package are independent of one another in development but one piece of software executes another directly, please use \"uses software\".")
 AnnotationAssertion(obo:IAO_0000119 <http://www.obofoundry.org/ro/ro.owl#part_of> "OBO Foundry RO")
 AnnotationAssertion(rdfs:label <http://www.obofoundry.org/ro/ro.owl#part_of> "part of")
 TransitiveObjectProperty(<http://www.obofoundry.org/ro/ro.owl#part_of>)
-
 
 ############################
 #   Data Properties
@@ -2697,7 +2695,7 @@ AnnotationAssertion(rdfs:comment <http://kt.ijs.si/panovp/OntoDM#OntoDM_361570> 
 AnnotationAssertion(rdfs:label <http://kt.ijs.si/panovp/OntoDM#OntoDM_361570> "data processing algorithm")
 SubClassOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM_361570> obo:IAO_0000064)
 
-# Class: <http://kt.ijs.si/panovp/OntoDM#OntoDM_953101> (data visualization task)
+# Class: <http://kt.ijs.si/panovp/OntoDM#OntoDM_953101> (obsolete 'data visualization task')
 
 AnnotationAssertion(obo:IAO_0100001 <http://kt.ijs.si/panovp/OntoDM#OntoDM_953101> "http://purl.obolibrary.org/obo/OBI_0200111")
 AnnotationAssertion(efo:obsoleted_in_version <http://kt.ijs.si/panovp/OntoDM#OntoDM_953101> "1.7"^^xsd:decimal)
@@ -2705,7 +2703,7 @@ AnnotationAssertion(efo:reason_for_obsolescence <http://kt.ijs.si/panovp/OntoDM#
 AnnotationAssertion(rdfs:comment <http://kt.ijs.si/panovp/OntoDM#OntoDM_953101> "data visualization task is information processing objective achieved by a data visualization algorithm execution process.")
 AnnotationAssertion(rdfs:label <http://kt.ijs.si/panovp/OntoDM#OntoDM_953101> "data visualization task")
 AnnotationAssertion(owl:deprecated <http://kt.ijs.si/panovp/OntoDM#OntoDM_953101> "true"^^xsd:boolean)
-SubClassOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM_953101> owl:DeprecatedClass)
+SubClassOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM_953101> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: obo:BFO_0000040 (material entity)
 
@@ -8915,7 +8913,7 @@ AnnotationAssertion(obo:IAO_0000119 swo:SWO_0000002 "Modified from http://en.wik
 AnnotationAssertion(dcterms:creator swo:SWO_0000002 "James Malone")
 AnnotationAssertion(rdfs:label swo:SWO_0000002 "licence"@en)
 AnnotationAssertion(rdfs:label swo:SWO_0000002 "software license")
-EquivalentClasses(swo:SWO_0000002 ObjectSomeValuesFrom(ObjectInverseOf(swo:has_license) swo:SWO_0000001))
+#EquivalentClasses(swo:SWO_0000002 ObjectSomeValuesFrom(ObjectInverseOf(swo:has_license) swo:SWO_0000001))
 SubClassOf(swo:SWO_0000002 obo:IAO_0000030)
 
 # Class: swo:SWO_0000003 (obsolete information processing)
@@ -9106,6 +9104,7 @@ AnnotationAssertion(obo:IAO_0000115 swo:SWO_0000021 "An operating system is a pi
 AnnotationAssertion(rdfs:label swo:SWO_0000021 "operating system")
 EquivalentClasses(swo:SWO_0000021 ObjectSomeValuesFrom(swo:SWO_0040005 <http://www.ebi.ac.uk/swo/objective/SWO_4000010>))
 SubClassOf(swo:SWO_0000021 swo:SWO_0000001)
+
 
 # Class: swo:SWO_0000022 (Linux)
 
@@ -14478,6 +14477,7 @@ SubClassOf(swo:SWO_0000679 ObjectSomeValuesFrom(swo:SWO_0000087 ObjectIntersecti
 SubClassOf(swo:SWO_0000679 ObjectSomeValuesFrom(swo:SWO_0040005 ObjectIntersectionOf(<http://www.ebi.ac.uk/swo/objective/SWO_7000017> <http://www.ebi.ac.uk/swo/objective/SWO_7000018>)))
 SubClassOf(swo:SWO_0000679 ObjectHasValue(swo:SWO_0004004 <http://www.ebi.ac.uk/efo/swo/SWO_0000073>))
 SubClassOf(swo:SWO_0000679 ObjectExactCardinality(2 swo:SWO_0000088 swo:SWO_0000554))
+
 
 # Class: swo:SWO_0000680 (Rank-invariant set normalization)
 
@@ -20202,6 +20202,4 @@ AnnotationAssertion(obo:IAO_0000118 <http://edamontology.org/format_2573> ".sam"
 AnnotationAssertion(obo:IAO_0000118 <http://edamontology.org/format_2573> "Sequence Alignment/Map format")
 AnnotationAssertion(obo:IAO_0000118 <http://edamontology.org/format_3005> "Wiggle format")
 AnnotationAssertion(obo:IAO_0000118 <http://edamontology.org/format_3008> ".maf")
-AnnotationAssertion(swo:SWO_0000144 _:genid2147489294 "")
-
 )

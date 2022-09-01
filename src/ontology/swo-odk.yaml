@@ -14,9 +14,9 @@ release_artefacts:
   - base
   - full
   - non-classified
-#components:
-#  products:
-#    - filename: swo-external.owl
+components:
+  products:
+    - filename: swo-external.owl
 primary_release: full
 export_formats:
   - owl

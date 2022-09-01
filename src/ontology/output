@@ -1,0 +1,106 @@
+echo "ODK Makefile version: v1.3.1 (this is the version of the ODK with which this Makefile was generated, \
+        not the version of the ODK you are running)" &&\
+echo "ROBOT version (ODK): " && robot --catalog catalog-v001.xml --version
+ODK Makefile version: v1.3.1 (this is the version of the ODK with which this Makefile was generated,         not the version of the ODK you are running)
+ROBOT version (ODK): 
+ROBOT version 1.9.0
+robot --catalog catalog-v001.xml verify  --catalog catalog-v001.xml -i swo-edit.owl --queries ../sparql/owldef-self-reference-violation.sparql ../sparql/iri-range-violation.sparql ../sparql/label-with-iri-violation.sparql -O reports
+PASS Rule ../sparql/owldef-self-reference-violation.sparql: 0 violation(s)
+PASS Rule ../sparql/iri-range-violation.sparql: 0 violation(s)
+PASS Rule ../sparql/label-with-iri-violation.sparql: 0 violation(s)
+robot --catalog catalog-v001.xml remove --input swo-edit.owl --select imports --trim false \
+	merge   -i components/swo-external.owl -o tmp/merged-swo-edit.owl
+robot --catalog catalog-v001.xml report -i tmp/merged-swo-edit.owl -l true  --fail-on None --base-iri http://www.ebi.ac.uk/swo/SWO_ --print 5 -o reports/swo-edit.owl-obo-report.tsv
+Violations: 12
+-----------------
+ERROR:      1
+WARN:       4
+INFO:       7
+
+First 5 violations:
+ERROR	misused_obsolete_label	obsolete object property	label	obsolete object property
+WARN	annotation_whitespace	is implemented by	definition	is implemented by is the relationship between an algorithm and a piece of software which includes an implementation of that software for use when the software is executed. 
+WARN	annotation_whitespace	is executed in	definition	is executed in defines the relationship between a software class and an appropriate process in the information processing hierarchy. Specifically, it allows the linking of a particular piece of software to a process of a particular purpose, 
+WARN	missing_definition	SWO definition	definition	
+WARN	missing_definition	is software for	definition	
+if [ true  = true ] && [ true  = true ]; then curl -L http://purl.obolibrary.org/obo/bfo.owl --create-dirs -o mirror/bfo.owl --retry 4 --max-time 200 &&\
+	robot --catalog catalog-v001.xml convert -i mirror/bfo.owl -o mirror-bfo.tmp.owl &&\
+	mv mirror-bfo.tmp.owl tmp/mirror-bfo.owl; fi
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   352  100   352    0     0   1475      0 --:--:-- --:--:-- --:--:--  1472
+100  154k  100  154k    0     0   265k      0 --:--:-- --:--:-- --:--:--  265k
+if [ true  = true ] && [ true  = true ] && [ -f tmp/mirror-bfo.owl ]; then if cmp -s tmp/mirror-bfo.owl mirror/bfo.owl ; then echo "Mirror identical, ignoring."; else echo "Mirrors different, updating." &&\
+	cp tmp/mirror-bfo.owl mirror/bfo.owl; fi; fi
+Mirror identical, ignoring.
+robot --catalog catalog-v001.xml query -f csv -i tmp/merged-swo-edit.owl --query ../sparql/terms.sparql tmp/pre_seed.txt.tmp &&\
+cat tmp/pre_seed.txt.tmp | sort | uniq >  tmp/pre_seed.txt
+if [ true  = true ]; then cat tmp/pre_seed.txt  | sort | uniq > tmp/seed.txt; fi
+if [ true  = true ]; then cat tmp/seed.txt imports/bfo_terms.txt | grep -v ^# | sort | uniq >  imports/bfo_terms_combined.txt; fi
+if [ true  = true ]; then robot --catalog catalog-v001.xml query -i mirror/bfo.owl --update ../sparql/preprocess-module.ru \
+	extract -T imports/bfo_terms_combined.txt --force true --copy-ontology-annotations true --individuals include --method BOT \
+	query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+	annotate --ontology-iri http://purl.obolibrary.org/obo/swo/imports/bfo_import.owl annotate -V http://purl.obolibrary.org/obo/swo/releases/2022-09-01/imports/bfo_import.owl --annotation owl:versionInfo 2022-09-01 --output imports/bfo_import.owl.tmp.owl && mv imports/bfo_import.owl.tmp.owl imports/bfo_import.owl; fi
+if [ true  = true ] && [ true  = true ]; then curl -L http://purl.obolibrary.org/obo/iao.owl --create-dirs -o mirror/iao.owl --retry 4 --max-time 200 &&\
+	robot --catalog catalog-v001.xml convert -i mirror/iao.owl -o mirror-iao.tmp.owl &&\
+	mv mirror-iao.tmp.owl tmp/mirror-iao.owl; fi
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   356  100   356    0     0   1480      0 --:--:-- --:--:-- --:--:--  1477
+100  547k  100  547k    0     0   650k      0 --:--:-- --:--:-- --:--:--  650k
+if [ true  = true ] && [ true  = true ] && [ -f tmp/mirror-iao.owl ]; then if cmp -s tmp/mirror-iao.owl mirror/iao.owl ; then echo "Mirror identical, ignoring."; else echo "Mirrors different, updating." &&\
+	cp tmp/mirror-iao.owl mirror/iao.owl; fi; fi
+Mirror identical, ignoring.
+if [ true  = true ]; then cat tmp/seed.txt imports/iao_terms.txt | grep -v ^# | sort | uniq >  imports/iao_terms_combined.txt; fi
+if [ true  = true ]; then robot --catalog catalog-v001.xml query -i mirror/iao.owl --update ../sparql/preprocess-module.ru \
+	extract -T imports/iao_terms_combined.txt --force true --copy-ontology-annotations true --individuals include --method BOT \
+	query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+	annotate --ontology-iri http://purl.obolibrary.org/obo/swo/imports/iao_import.owl annotate -V http://purl.obolibrary.org/obo/swo/releases/2022-09-01/imports/iao_import.owl --annotation owl:versionInfo 2022-09-01 --output imports/iao_import.owl.tmp.owl && mv imports/iao_import.owl.tmp.owl imports/iao_import.owl; fi
+if [ true  = true ] && [ true  = true ]; then curl -L http://purl.obolibrary.org/obo/obi.owl --create-dirs -o mirror/obi.owl --retry 4 --max-time 200 &&\
+	robot --catalog catalog-v001.xml convert -i mirror/obi.owl -o mirror-obi.tmp.owl &&\
+	mv mirror-obi.tmp.owl tmp/mirror-obi.owl; fi
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   339  100   339    0     0   1416      0 --:--:-- --:--:-- --:--:--  1418
+ 12 8537k   12 1087k    0     0  1749k      0  0:00:04 --:--:--  0:00:04 1749k 73 8537k   73 6256k    0     0  3856k      0  0:00:02  0:00:01  0:00:01 5168k100 8537k  100 8537k    0     0  4140k      0  0:00:02  0:00:02 --:--:-- 5173k
+if [ true  = true ] && [ true  = true ] && [ -f tmp/mirror-obi.owl ]; then if cmp -s tmp/mirror-obi.owl mirror/obi.owl ; then echo "Mirror identical, ignoring."; else echo "Mirrors different, updating." &&\
+	cp tmp/mirror-obi.owl mirror/obi.owl; fi; fi
+Mirror identical, ignoring.
+if [ true  = true ]; then cat tmp/seed.txt imports/obi_terms.txt | grep -v ^# | sort | uniq >  imports/obi_terms_combined.txt; fi
+if [ true  = true ]; then robot --catalog catalog-v001.xml query -i mirror/obi.owl --update ../sparql/preprocess-module.ru \
+	extract -T imports/obi_terms_combined.txt --force true --copy-ontology-annotations true --individuals include --method BOT \
+	query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+	annotate --ontology-iri http://purl.obolibrary.org/obo/swo/imports/obi_import.owl annotate -V http://purl.obolibrary.org/obo/swo/releases/2022-09-01/imports/obi_import.owl --annotation owl:versionInfo 2022-09-01 --output imports/obi_import.owl.tmp.owl && mv imports/obi_import.owl.tmp.owl imports/obi_import.owl; fi
+if [ true  = true ] && [ true  = true ]; then curl -L http://purl.obolibrary.org/obo/omo.owl --create-dirs -o mirror/omo.owl --retry 4 --max-time 200 &&\
+	robot --catalog catalog-v001.xml convert -i mirror/omo.owl -o mirror-omo.tmp.owl &&\
+	mv mirror-omo.tmp.owl tmp/mirror-omo.owl; fi
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   365  100   365    0     0   1670      0 --:--:-- --:--:-- --:--:--  1674
+  4 79275    4  3614    0     0   7117      0  0:00:11 --:--:--  0:00:11  7117100 79275  100 79275    0     0   143k      0 --:--:-- --:--:-- --:--:-- 2308k
+if [ true  = true ] && [ true  = true ] && [ -f tmp/mirror-omo.owl ]; then if cmp -s tmp/mirror-omo.owl mirror/omo.owl ; then echo "Mirror identical, ignoring."; else echo "Mirrors different, updating." &&\
+	cp tmp/mirror-omo.owl mirror/omo.owl; fi; fi
+Mirror identical, ignoring.
+if [ true  = true ]; then cat tmp/seed.txt imports/omo_terms.txt | grep -v ^# | sort | uniq >  imports/omo_terms_combined.txt; fi
+if [ true  = true ]; then robot --catalog catalog-v001.xml query -i mirror/omo.owl --update ../sparql/preprocess-module.ru \
+	extract -T imports/omo_terms_combined.txt --force true --copy-ontology-annotations true --individuals include --method BOT \
+	query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+	annotate --ontology-iri http://purl.obolibrary.org/obo/swo/imports/omo_import.owl annotate -V http://purl.obolibrary.org/obo/swo/releases/2022-09-01/imports/omo_import.owl --annotation owl:versionInfo 2022-09-01 --output imports/omo_import.owl.tmp.owl && mv imports/omo_import.owl.tmp.owl imports/omo_import.owl; fi
+robot --catalog catalog-v001.xml merge --input swo-edit.owl \
+	reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
+	relax \
+	reduce -r ELK \
+	 annotate --ontology-iri http://purl.obolibrary.org/obo/swo/swo-full.owl annotate -V http://purl.obolibrary.org/obo/swo/releases/2022-09-01/swo-full.owl --annotation owl:versionInfo 2022-09-01 --output swo-full.owl.tmp.owl && mv swo-full.owl.tmp.owl swo-full.owl
+robot --catalog catalog-v001.xml annotate --input swo-full.owl --ontology-iri http://purl.obolibrary.org/obo/swo.owl annotate -V http://purl.obolibrary.org/obo/swo/releases/2022-09-01/swo.owl --annotation owl:versionInfo 2022-09-01 \
+	convert -o swo.owl.tmp.owl && mv swo.owl.tmp.owl swo.owl
+robot --catalog catalog-v001.xml merge -i swo.owl convert -f ofn -o tmp/validate.ofn
+robot --catalog catalog-v001.xml validate-profile --profile DL -i tmp/validate.ofn -o reports/validate_profile_owl2dl_swo.owl.txt || { cat reports/validate_profile_owl2dl_swo.owl.txt && exit 1; }
+PROFILE VIOLATION ERROR http://purl.obolibrary.org/obo/swo.owl violates profile DL
+For details see: http://robot.obolibrary.org/validate-profile#profile-violation-error
+Use the -vvv option to show the stack trace.
+Use the --help option to see usage information.
+OWL 2 DL Profile Report: Ontology and imports closure NOT in profile. The following violations are present:
+Use of reserved vocabulary for class IRI: owl:DeprecatedClass [SubClassOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM_953101> owl:DeprecatedClass) in OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/swo.owl>) VersionIRI(<http://purl.obolibrary.org/obo/swo/releases/2022-09-01/swo.owl>))]
+make: *** [Makefile:144: reports/validate_profile_owl2dl_swo.owl.txt] Error 1
+rm imports/bfo_terms_combined.txt imports/iao_terms_combined.txt imports/obi_terms_combined.txt imports/omo_terms_combined.txt
+Please remember to update your ODK image from time to time: https://oboacademy.github.io/obook/howto/odk-update/.
