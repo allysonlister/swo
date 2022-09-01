@@ -1,0 +1,85 @@
+{
+  "graphs": [
+    {
+      "id": "http://purl.obolibrary.org/obo/swo/swo-base.json",
+      "meta": {
+        "basicPropertyValues": [
+          {
+            "pred": "http://purl.org/dc/elements/1.1/type",
+            "val": "http://purl.obolibrary.org/obo/IAO_8000001"
+          },
+          {
+            "pred": "http://purl.org/dc/terms/creator",
+            "val": "Allyson Lister"
+          },
+          {
+            "pred": "http://purl.org/dc/terms/creator",
+            "val": "Andy Brown"
+          },
+          {
+            "pred": "http://purl.org/dc/terms/creator",
+            "val": "Duncan Hull"
+          },
+          {
+            "pred": "http://purl.org/dc/terms/creator",
+            "val": "Helen Parkinson"
+          },
+          {
+            "pred": "http://purl.org/dc/terms/creator",
+            "val": "James Malone"
+          },
+          {
+            "pred": "http://purl.org/dc/terms/creator",
+            "val": "Jon Ison"
+          },
+          {
+            "pred": "http://purl.org/dc/terms/creator",
+            "val": "Nandini Badarinarayan"
+          },
+          {
+            "pred": "http://purl.org/dc/terms/creator",
+            "val": "Robert Stevens"
+          },
+          {
+            "pred": "http://purl.org/dc/terms/description",
+            "val": "The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, provenance and associated data. It contains detailed information on licensing and formats as well as software applications themselves, mainly (but not limited) to the bioinformatics community."
+          },
+          {
+            "pred": "http://purl.org/dc/terms/license",
+            "val": "https://creativecommons.org/licenses/by/4.0/"
+          },
+          {
+            "pred": "http://purl.org/dc/terms/title",
+            "val": "Software Ontology"
+          },
+          {
+            "pred": "http://www.w3.org/2000/01/rdf-schema#comment",
+            "val": "The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, licensing, provenance and associated data. It contains SWO-specific classes and axioms as well as imports from:\n\n1. BFO\n2. IAO\n3. OBI\n4. EDAM"
+          },
+          {
+            "pred": "http://www.w3.org/2002/07/owl#versionInfo",
+            "val": "2022-09-01"
+          }
+        ],
+        "version": "http://purl.obolibrary.org/obo/swo/releases/2022-09-01/swo-base.json"
+      },
+      "nodes": [
+        {
+          "id": "http://purl.org/dc/terms/description",
+          "lbl": "description",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/license",
+          "lbl": "license",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/title",
+          "lbl": "title",
+          "type": "PROPERTY"
+        }
+      ]
+    }
+  ]
+}

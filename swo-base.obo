@@ -1,0 +1,18 @@
+format-version: 1.2
+data-version: swo/releases/2022-09-01/swo-base.owl
+remark: The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, licensing, provenance and associated data. It contains SWO-specific classes and axioms as well as imports from:\n\n1. BFO\n2. IAO\n3. OBI\n4. EDAM
+ontology: swo/swo-base
+property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
+property_value: http://purl.org/dc/terms/creator "Allyson Lister" xsd:string
+property_value: http://purl.org/dc/terms/creator "Andy Brown" xsd:string
+property_value: http://purl.org/dc/terms/creator "Duncan Hull" xsd:string
+property_value: http://purl.org/dc/terms/creator "Helen Parkinson" xsd:string
+property_value: http://purl.org/dc/terms/creator "James Malone" xsd:string
+property_value: http://purl.org/dc/terms/creator "Jon Ison" xsd:string
+property_value: http://purl.org/dc/terms/creator "Nandini Badarinarayan" xsd:string
+property_value: http://purl.org/dc/terms/creator "Robert Stevens" xsd:string
+property_value: http://purl.org/dc/terms/description "The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, provenance and associated data. It contains detailed information on licensing and formats as well as software applications themselves, mainly (but not limited) to the bioinformatics community." xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/ xsd:string
+property_value: http://purl.org/dc/terms/title "Software Ontology" xsd:string
+property_value: owl:versionInfo "2022-09-01" xsd:string
+

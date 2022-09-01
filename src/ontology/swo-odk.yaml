@@ -1,0 +1,28 @@
+id: swo
+title: Software Ontology
+github_org: allysonlister
+repo: swo
+report_fail_on: error
+import_group:
+  products:
+    - id: bfo
+    - id: iao
+    - id: obi
+    - id: omo
+edit_format: owl
+release_artefacts:
+  - base
+  - full
+  - non-classified
+#components:
+#  products:
+#    - filename: swo-external.owl
+primary_release: full
+export_formats:
+  - owl
+  - obo
+  - json
+namespaces:
+  - http://www.ebi.ac.uk/swo/SWO_
+license: CC-BY 4.0
+robot_java_args: '-Xmx8G'
