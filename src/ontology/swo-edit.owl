@@ -17675,7 +17675,8 @@ SubClassOf(<http://www.ebi.ac.uk/swo/license/SWO_1000061> ObjectSomeValuesFrom(s
 
 # Class: <http://www.ebi.ac.uk/swo/license/SWO_1000064> (<http://www.ebi.ac.uk/swo/license/SWO_1000064>)
 
-SubClassOf(<http://www.ebi.ac.uk/swo/license/SWO_1000064> owl:DeprecatedClass)
+AnnotationAssertion(owl:deprecated <http://www.ebi.ac.uk/swo/license/SWO_1000064> "true"^^xsd:boolean)
+SubClassOf(<http://www.ebi.ac.uk/swo/license/SWO_1000064> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: <http://www.ebi.ac.uk/swo/license/SWO_1000065> (CC BY 4.0)
 
@@ -19397,11 +19398,6 @@ AnnotationAssertion(dcterms:creator <http://www.ebi.ac.uk/swo/organization/SWO_9
 AnnotationAssertion(rdfs:comment <http://www.ebi.ac.uk/swo/organization/SWO_9000056> "AL 24.9.19: Merged the now-obsolete http://www.ebi.ac.uk/swo/objective/SWO_4000007 into this class as they were describing the same concept. See also https://github.com/allysonlister/swo/issues/2"@en)
 AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/organization/SWO_9000056> "software development")
 SubClassOf(<http://www.ebi.ac.uk/swo/organization/SWO_9000056> obo:OBI_0200000)
-
-# Class: <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> (obsolete SWO class)
-
-AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> "obsolete SWO class")
-SubClassOf(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> owl:DeprecatedClass)
 
 # Class: <http://www.ontodm.com/OntoDM-core/OntoDM_000037> (ensemble specification)
 
