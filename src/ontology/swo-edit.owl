@@ -2350,7 +2350,7 @@ AnnotationAssertion(obo:IAO_0000115 swo:SWO_0004002 "Has format specification is
 AnnotationAssertion(obo:IAO_0000119 swo:SWO_0004002 "Allyson Lister")
 AnnotationAssertion(rdfs:label swo:SWO_0004002 "has format specification")
 SubObjectPropertyOf(swo:SWO_0004002 <http://www.ebi.ac.uk/efo/swo/SWO_0000741>)
-ObjectPropertyDomain(swo:SWO_0004002 obo:IAO_0000030)
+ObjectPropertyDomain(swo:SWO_0004002 obo:IAO_0000027)
 ObjectPropertyRange(swo:SWO_0004002 obo:IAO_0000098)
 
 # Object Property: swo:SWO_0004003 (obsolete_is developed by)
@@ -2389,6 +2389,7 @@ AnnotationAssertion(dcterms:creator swo:SWO_0040005 "OBI")
 AnnotationAssertion(rdfs:label swo:SWO_0040005 "is executed in")
 ObjectPropertyDomain(swo:SWO_0040005 swo:SWO_0000001)
 ObjectPropertyRange(swo:SWO_0040005 obo:OBI_0200000)
+ObjectPropertyRange(swo:SWO_0040005 obo:OBI_0200111)
 
 # Object Property: swo:SWO_9000058 (obsolete_is specified output of)
 
@@ -2722,12 +2723,10 @@ AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000064 "A plan specification which 
 AnnotationAssertion(Annotation(swo:SWO_0000144 "") obo:IAO_0000115 obo:IAO_0000064 "An algorithm is a set of instructions for performing a paticular calculation.")
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000064 "IAO")
 AnnotationAssertion(rdfs:label obo:IAO_0000064 "algorithm")
-SubClassOf(obo:IAO_0000064 obo:IAO_0000030)
 
 # Class: obo:IAO_0000098 (data format specification)
 
 AnnotationAssertion(Annotation(swo:SWO_0000144 "") obo:IAO_0000115 obo:IAO_0000098 "The syntax by which data is specified which renders it valid for a given format.")
-SubClassOf(obo:IAO_0000098 obo:IAO_0000030)
 
 # Class: obo:IAO_0000129 (version number)
 
@@ -9682,9 +9681,9 @@ AnnotationAssertion(obo:IAO_0000119 swo:SWO_0000133 "http://david.abcc.ncifcrf.g
 AnnotationAssertion(dcterms:creator swo:SWO_0000133 "James Malone")
 AnnotationAssertion(rdfs:label swo:SWO_0000133 "DAVID")
 SubClassOf(swo:SWO_0000133 swo:SWO_0000001)
+SubClassOf(swo:SWO_0000133 ObjectSomeValuesFrom(<http://www.ebi.ac.uk/efo/swo/SWO_0000740> swo:SWO_0000174))
 SubClassOf(swo:SWO_0000133 ObjectSomeValuesFrom(swo:SWO_0004001 <http://www.ebi.ac.uk/swo/interface/SWO_5000002>))
 SubClassOf(swo:SWO_0000133 ObjectSomeValuesFrom(swo:SWO_0004001 <http://www.ebi.ac.uk/swo/interface/SWO_9000051>))
-SubClassOf(swo:SWO_0000133 ObjectSomeValuesFrom(swo:SWO_0040005 swo:SWO_0000174))
 SubClassOf(swo:SWO_0000133 DataHasValue(swo:SWO_0004006 "http://david.abcc.ncifcrf.gov/"))
 
 # Class: swo:SWO_0000134 (MLXTRAN)
@@ -10702,7 +10701,6 @@ SubClassOf(swo:SWO_0000254 ObjectSomeValuesFrom(<http://www.ebi.ac.uk/efo/swo/SW
 SubClassOf(swo:SWO_0000254 ObjectSomeValuesFrom(<http://www.ebi.ac.uk/efo/swo/SWO_0000741> swo:SWO_0000415))
 SubClassOf(swo:SWO_0000254 ObjectSomeValuesFrom(swo:SWO_0000086 ObjectIntersectionOf(swo:SWO_0000554 ObjectSomeValuesFrom(swo:SWO_0004002 obo:IAO_0000098))))
 SubClassOf(swo:SWO_0000254 ObjectSomeValuesFrom(swo:SWO_0000087 ObjectIntersectionOf(obo:IAO_0000027 ObjectSomeValuesFrom(swo:SWO_0004002 swo:SWO_0000409))))
-SubClassOf(swo:SWO_0000254 ObjectSomeValuesFrom(swo:SWO_0040005 swo:SWO_0000595))
 SubClassOf(swo:SWO_0000254 ObjectSomeValuesFrom(swo:SWO_0040005 <http://www.ebi.ac.uk/swo/objective/SWO_7000015>))
 
 # Class: swo:SWO_0000255 (Locally Moderated Weighted-t (LMW) method)
@@ -11354,9 +11352,10 @@ AnnotationAssertion(obo:IAO_0000119 swo:SWO_0000343 "http://rmaexpress.bmbolstad
 AnnotationAssertion(dcterms:creator swo:SWO_0000343 "Nandini Badarinarayan")
 AnnotationAssertion(rdfs:label swo:SWO_0000343 "RMAExpress")
 SubClassOf(swo:SWO_0000343 swo:SWO_0000001)
-SubClassOf(swo:SWO_0000343 ObjectSomeValuesFrom(<http://www.ebi.ac.uk/efo/swo/SWO_0000740> ObjectIntersectionOf(<http://www.ebi.ac.uk/swo/objective/SWO_7000011> <http://www.ebi.ac.uk/swo/objective/SWO_7000015>)))
-SubClassOf(swo:SWO_0000343 ObjectSomeValuesFrom(swo:SWO_0000086 ObjectAllValuesFrom(swo:SWO_0004002 ObjectIntersectionOf(swo:SWO_0000084 swo:SWO_1100054))))
+SubClassOf(swo:SWO_0000343 ObjectSomeValuesFrom(swo:SWO_0000086 ObjectIntersectionOf(obo:IAO_0000027 ObjectAllValuesFrom(swo:SWO_0004002 ObjectUnionOf(swo:SWO_0000084 swo:SWO_1100054)))))
 SubClassOf(swo:SWO_0000343 ObjectSomeValuesFrom(swo:SWO_0000087 swo:SWO_1100080))
+SubClassOf(swo:SWO_0000343 ObjectSomeValuesFrom(swo:SWO_0040005 <http://www.ebi.ac.uk/swo/objective/SWO_7000011>))
+SubClassOf(swo:SWO_0000343 ObjectSomeValuesFrom(swo:SWO_0040005 <http://www.ebi.ac.uk/swo/objective/SWO_7000015>))
 SubClassOf(swo:SWO_0000343 ObjectHasValue(<http://www.ebi.ac.uk/efo/swo/SWO_0000394> <http://www.ebi.ac.uk/efo/swo/SWO_0000440>))
 
 # Class: swo:SWO_0000344 (RMAExpress 2.0)
@@ -11748,10 +11747,10 @@ AnnotationAssertion(dcterms:creator swo:SWO_0000387 "Nandini Badarinarayan")
 AnnotationAssertion(rdfs:label swo:SWO_0000387 "SNPchip")
 SubClassOf(swo:SWO_0000387 swo:SWO_0000001)
 SubClassOf(swo:SWO_0000387 ObjectSomeValuesFrom(<http://www.ebi.ac.uk/efo/swo/SWO_0000740> swo:SWO_0000217))
-SubClassOf(swo:SWO_0000387 ObjectSomeValuesFrom(<http://www.ebi.ac.uk/efo/swo/SWO_0000740> ObjectIntersectionOf(obo:OBI_0200111 swo:SWO_0000467 <http://www.ebi.ac.uk/swo/objective/SWO_7000017>)))
 SubClassOf(swo:SWO_0000387 ObjectSomeValuesFrom(<http://www.ebi.ac.uk/efo/swo/SWO_0000741> swo:SWO_0000415))
 SubClassOf(swo:SWO_0000387 ObjectSomeValuesFrom(swo:SWO_0000086 ObjectAllValuesFrom(swo:SWO_0004002 swo:SWO_0000409)))
 SubClassOf(swo:SWO_0000387 ObjectSomeValuesFrom(swo:SWO_0000087 ObjectIntersectionOf(swo:SWO_0000661 swo:SWO_1100080)))
+SubClassOf(swo:SWO_0000387 ObjectSomeValuesFrom(swo:SWO_0040005 ObjectUnionOf(obo:OBI_0200111 swo:SWO_0000467 <http://www.ebi.ac.uk/swo/objective/SWO_7000017>)))
 SubClassOf(swo:SWO_0000387 ObjectHasValue(swo:SWO_0004004 <http://www.ebi.ac.uk/efo/swo/SWO_0000073>))
 
 # Class: swo:SWO_0000388 (SPIA)
