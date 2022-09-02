@@ -22,6 +22,8 @@ Import(<http://purl.obolibrary.org/obo/swo/imports/obi_import.owl>)
 
 Import(<http://purl.obolibrary.org/obo/swo/imports/omo_import.owl>)
 
+Import(<http://www.ebi.ac.uk/swo/swo-external.owl>)
+
 
 Annotation(dcterms:description "The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, provenance and associated data. It contains detailed information on licensing and formats as well as software applications themselves, mainly (but not limited) to the bioinformatics community.")
 Annotation(dcterms:license "https://creativecommons.org/licenses/by/4.0/")

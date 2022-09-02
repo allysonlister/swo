@@ -40,5 +40,4 @@ src/patterns/pattern_owl_seed.txt
 src/patterns/all_pattern_terms.txt
 
 build/
-**/**/catalog-v001.xml
 .DS_Store
