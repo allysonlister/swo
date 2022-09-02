@@ -8913,7 +8913,7 @@ AnnotationAssertion(obo:IAO_0000119 swo:SWO_0000002 "Modified from http://en.wik
 AnnotationAssertion(dcterms:creator swo:SWO_0000002 "James Malone")
 AnnotationAssertion(rdfs:label swo:SWO_0000002 "licence"@en)
 AnnotationAssertion(rdfs:label swo:SWO_0000002 "software license")
-#EquivalentClasses(swo:SWO_0000002 ObjectSomeValuesFrom(ObjectInverseOf(swo:has_license) swo:SWO_0000001))
+EquivalentClasses(swo:SWO_0000002 ObjectIntersectionOf(obo:IAO_0000030 ObjectSomeValuesFrom(ObjectInverseOf(swo:has_license) swo:SWO_0000001)))
 SubClassOf(swo:SWO_0000002 obo:IAO_0000030)
 
 # Class: swo:SWO_0000003 (obsolete information processing)
