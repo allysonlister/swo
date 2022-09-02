@@ -1,10 +1,10 @@
 Prefix(:=<http://www.ebi.ac.uk/swo/swo.owl#>)
-Prefix(swo:=<http://www.ebi.ac.uk/swo/>)
-Prefix(obo:=<http://purl.obolibrary.org/obo/>)
-Prefix(efo:=<http://www.ebi.ac.uk/efo/>)
 Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
+Prefix(efo:=<http://www.ebi.ac.uk/efo/>)
+Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(swo:=<http://www.ebi.ac.uk/swo/>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
@@ -13,100 +13,28 @@ Prefix(edamontology:=<http://edamontology.org#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/swo.owl>
-
 Import(<http://purl.obolibrary.org/obo/swo/imports/bfo_import.owl>)
-
 Import(<http://purl.obolibrary.org/obo/swo/imports/iao_import.owl>)
-
 Import(<http://purl.obolibrary.org/obo/swo/imports/obi_import.owl>)
-
 Import(<http://purl.obolibrary.org/obo/swo/imports/omo_import.owl>)
-
 Import(<http://www.ebi.ac.uk/swo/swo-external.owl>)
-
-
+Annotation(dcterms:creator "Allyson Lister")
+Annotation(dcterms:creator "Andy Brown")
+Annotation(dcterms:creator "Duncan Hull")
+Annotation(dcterms:creator "Helen Parkinson")
+Annotation(dcterms:creator "James Malone")
+Annotation(dcterms:creator "Jon Ison")
+Annotation(dcterms:creator "Nandini Badarinarayan")
+Annotation(dcterms:creator "Robert Stevens")
 Annotation(dcterms:description "The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, provenance and associated data. It contains detailed information on licensing and formats as well as software applications themselves, mainly (but not limited) to the bioinformatics community.")
 Annotation(dcterms:license "https://creativecommons.org/licenses/by/4.0/")
 Annotation(dcterms:title "Software Ontology")
-
-Annotation(dcterms:creator "Allyson Lister")
-Annotation(dcterms:creator "Robert Stevens")
-Annotation(dcterms:creator "Helen Parkinson")
-Annotation(dcterms:creator "James Malone")
-Annotation(dcterms:creator "Andy Brown")
-Annotation(dcterms:creator "Duncan Hull")
-Annotation(dcterms:creator "Jon Ison")
-Annotation(dcterms:creator "Nandini Badarinarayan")
-
 Annotation(rdfs:comment "The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, licensing, provenance and associated data. It contains SWO-specific classes and axioms as well as imports from:
 
 1. BFO
 2. IAO
 3. OBI
 4. EDAM")
-
-Declaration(AnnotationProperty(dcterms:description))
-Declaration(AnnotationProperty(dcterms:license))
-Declaration(AnnotationProperty(dcterms:title))
-
-
-############################
-#   Annotation Properties
-############################
-
-AnnotationAssertion(rdfs:label dcterms:description "description")
-AnnotationAssertion(rdfs:label dcterms:license "license")
-AnnotationAssertion(rdfs:label dcterms:title "title")
-
-# Annotation Property: obo:IAO_0000112 (example of usage)
-
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000112 "A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not.")
-AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000112 "IAO")
-AnnotationAssertion(rdfs:label obo:IAO_0000112 "example of usage")
-
-# Annotation Property: obo:IAO_0000115 (textual definition)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
-
-# Annotation Property: obo:IAO_0000118 (alternative term)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000118 "alternative term")
-
-# Annotation Property: obo:IAO_0000119 (definition source)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition source")
-
-# Annotation Property: obo:IAO_0100001 (term replaced by)
-
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0100001 "Use on obsolete terms, relating the term to another term that can be used as a substitute"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:IAO_0100001 "Person:Alan Ruttenberg"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0100001 "term replaced by")
-
-# Annotation Property: efo:obsoleted_in_version (obsoleted in version)
-
-AnnotationAssertion(obo:IAO_0000115 efo:obsoleted_in_version "The version in which a class or property has been made obsolete")
-AnnotationAssertion(dcterms:creator efo:obsoleted_in_version "EFO Development Team")
-AnnotationAssertion(rdfs:label efo:obsoleted_in_version "obsoleted in version")
-
-# Annotation Property: efo:reason_for_obsolescence (reason for obsolescence)
-
-AnnotationAssertion(obo:IAO_0000115 efo:reason_for_obsolescence "The reason a class or property was made obsolete")
-AnnotationAssertion(dcterms:creator efo:reason_for_obsolescence "EFO Development Team")
-AnnotationAssertion(rdfs:label efo:reason_for_obsolescence "reason for obsolescence")
-
-# Annotation Property: swo:SWO_0000144 (SWO definition)
-
-AnnotationAssertion(rdfs:label swo:SWO_0000144 "SWO definition")
-
-# Annotation Property: owl:deprecated (deprecated)
-
-AnnotationAssertion(rdfs:label owl:deprecated "deprecated")
-AnnotationPropertyRange(owl:deprecated xsd:boolean)
-
-############################
-#   Declarations
-############################
-
 
 Declaration(Class(<http://edamontology.org/data_0582>))
 Declaration(Class(<http://edamontology.org/data_1636>))
@@ -153,19 +81,6 @@ Declaration(Class(obo:IAO_0000129))
 Declaration(Class(obo:OBI_0000245))
 Declaration(Class(obo:OBI_0200000))
 Declaration(Class(obo:OBI_0200111))
-Declaration(Class(swo:SWO_1100133))
-Declaration(Class(swo:SWO_1100134))
-Declaration(Class(swo:SWO_1100135))
-Declaration(Class(swo:SWO_1100136))
-Declaration(Class(swo:SWO_1100137))
-Declaration(Class(swo:SWO_1100138))
-Declaration(Class(swo:SWO_1100139))
-Declaration(Class(swo:SWO_1100140))
-Declaration(Class(swo:SWO_1100141))
-Declaration(Class(swo:SWO_1100142))
-Declaration(Class(swo:SWO_1100143))
-Declaration(Class(swo:SWO_1100144))
-Declaration(Class(swo:SWO_1100145))
 Declaration(Class(<http://urigen_local_uri/963a1b3b-49f2-4ef9-8f37-5e9cd5403b2a/http://www.ebi.ac.uk/swo/data/SWO_3000069>))
 Declaration(Class(<http://www.ebi.ac.uk/efo/swo/Class_6>))
 Declaration(Class(<http://www.ebi.ac.uk/efo/swo/SWO_0000003>))
@@ -1603,6 +1518,19 @@ Declaration(Class(swo:SWO_1100129))
 Declaration(Class(swo:SWO_1100130))
 Declaration(Class(swo:SWO_1100131))
 Declaration(Class(swo:SWO_1100132))
+Declaration(Class(swo:SWO_1100133))
+Declaration(Class(swo:SWO_1100134))
+Declaration(Class(swo:SWO_1100135))
+Declaration(Class(swo:SWO_1100136))
+Declaration(Class(swo:SWO_1100137))
+Declaration(Class(swo:SWO_1100138))
+Declaration(Class(swo:SWO_1100139))
+Declaration(Class(swo:SWO_1100140))
+Declaration(Class(swo:SWO_1100141))
+Declaration(Class(swo:SWO_1100142))
+Declaration(Class(swo:SWO_1100143))
+Declaration(Class(swo:SWO_1100144))
+Declaration(Class(swo:SWO_1100145))
 Declaration(Class(swo:SWO_9000005))
 Declaration(Class(swo:SWO_9000006))
 Declaration(Class(swo:SWO_9000007))
@@ -1942,8 +1870,6 @@ Declaration(Class(<http://www.ontodm.com/OntoDM-core/OntoDM_530819>))
 Declaration(Class(<http://www.ontodm.com/OntoDM-core/OntoDM_731692>))
 Declaration(Class(owl:Thing))
 Declaration(ObjectProperty(<http://purl.obofoundry.org/obo/IAO_0000136>))
-Declaration(ObjectProperty(obo:BFO_0000060))
-Declaration(ObjectProperty(obo:BFO_0000063))
 Declaration(ObjectProperty(obo:OBI_0000304))
 Declaration(ObjectProperty(obo:RO_0000056))
 Declaration(ObjectProperty(obo:RO_0000057))
@@ -1966,6 +1892,8 @@ Declaration(ObjectProperty(swo:SWO_0000131))
 Declaration(ObjectProperty(swo:SWO_0000132))
 Declaration(ObjectProperty(swo:SWO_0000150))
 Declaration(ObjectProperty(swo:SWO_0000157))
+Declaration(ObjectProperty(swo:SWO_0000300))
+Declaration(ObjectProperty(swo:SWO_0000301))
 Declaration(ObjectProperty(swo:SWO_0004000))
 Declaration(ObjectProperty(swo:SWO_0004001))
 Declaration(ObjectProperty(swo:SWO_0004002))
@@ -2118,9 +2046,9 @@ Declaration(AnnotationProperty(obo:IAO_0000119))
 Declaration(AnnotationProperty(obo:IAO_0100001))
 Declaration(AnnotationProperty(dce:contributor))
 Declaration(AnnotationProperty(dcterms:creator))
-Declaration(AnnotationProperty(dcterms:title))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
+Declaration(AnnotationProperty(dcterms:title))
 Declaration(AnnotationProperty(efo:obsoleted_in_version))
 Declaration(AnnotationProperty(efo:reason_for_obsolescence))
 Declaration(AnnotationProperty(swo:SWO_0000144))
@@ -2129,6 +2057,66 @@ Declaration(AnnotationProperty(rdfs:comment))
 Declaration(AnnotationProperty(rdfs:label))
 Declaration(AnnotationProperty(owl:deprecated))
 Declaration(AnnotationProperty(owl:versionInfo))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: obo:IAO_0000112 (example of usage)
+
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000112 "A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not.")
+AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000112 "IAO")
+AnnotationAssertion(rdfs:label obo:IAO_0000112 "example of usage")
+
+# Annotation Property: obo:IAO_0000115 (definition)
+
+AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
+
+# Annotation Property: obo:IAO_0000118 (alternative term)
+
+AnnotationAssertion(rdfs:label obo:IAO_0000118 "alternative term")
+
+# Annotation Property: obo:IAO_0000119 (definition source)
+
+AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition source")
+
+# Annotation Property: obo:IAO_0100001 (term replaced by)
+
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0100001 "Use on obsolete terms, relating the term to another term that can be used as a substitute"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:IAO_0100001 "Person:Alan Ruttenberg"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0100001 "term replaced by")
+
+# Annotation Property: dcterms:description (description)
+
+AnnotationAssertion(rdfs:label dcterms:description "description")
+
+# Annotation Property: dcterms:license (license)
+
+AnnotationAssertion(rdfs:label dcterms:license "license")
+
+# Annotation Property: dcterms:title (title)
+
+AnnotationAssertion(rdfs:label dcterms:title "title")
+
+# Annotation Property: efo:obsoleted_in_version (obsoleted in version)
+
+AnnotationAssertion(obo:IAO_0000115 efo:obsoleted_in_version "The version in which a class or property has been made obsolete")
+AnnotationAssertion(dcterms:creator efo:obsoleted_in_version "EFO Development Team")
+AnnotationAssertion(rdfs:label efo:obsoleted_in_version "obsoleted in version")
+
+# Annotation Property: efo:reason_for_obsolescence (reason for obsolescence)
+
+AnnotationAssertion(obo:IAO_0000115 efo:reason_for_obsolescence "The reason a class or property was made obsolete")
+AnnotationAssertion(dcterms:creator efo:reason_for_obsolescence "EFO Development Team")
+AnnotationAssertion(rdfs:label efo:reason_for_obsolescence "reason for obsolescence")
+
+# Annotation Property: swo:SWO_0000144 (SWO definition)
+
+AnnotationAssertion(rdfs:label swo:SWO_0000144 "SWO definition")
+
+# Annotation Property: owl:deprecated (deprecated)
+
+AnnotationAssertion(rdfs:label owl:deprecated "deprecated")
+AnnotationPropertyRange(owl:deprecated xsd:boolean)
 
 
 ############################
@@ -2143,25 +2131,6 @@ AnnotationAssertion(obo:IAO_0000119 <http://purl.obofoundry.org/obo/IAO_0000136>
 AnnotationAssertion(dcterms:creator <http://purl.obofoundry.org/obo/IAO_0000136> "Alan Ruttenberg"@en)
 AnnotationAssertion(rdfs:label <http://purl.obofoundry.org/obo/IAO_0000136> "is about")
 ObjectPropertyDomain(<http://purl.obofoundry.org/obo/IAO_0000136> obo:IAO_0000030)
-
-# Object Property: obo:BFO_0000060 (preceded by)
-
-AnnotationAssertion(dcterms:creator obo:BFO_0000060 "OBO Foundry")
-AnnotationAssertion(rdfs:comment obo:BFO_0000060 "Please note that, as stated on one of the RO documentation pages (https://code.google.com/p/obo-relations/wiki/ROAndBFO), some of the relations RO makes use are either uncontroversial (non-temporalized) parts of BFO2, or will be incorporated in the future. In the case of BFO_0000063, it is not currently in BFO2, but may be in the future. The RO ontologists assume this is the transitive form. For a full definition, refer to the inverse of this property, BFO_0000060. (Allyson Lister)")
-AnnotationAssertion(rdfs:label obo:BFO_0000060 "preceded by")
-SubObjectPropertyOf(obo:BFO_0000060 owl:topObjectProperty)
-InverseObjectProperties(obo:BFO_0000060 obo:BFO_0000063)
-TransitiveObjectProperty(obo:BFO_0000060)
-
-# Object Property: obo:BFO_0000063 (followed by)
-
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000063 "The assertion P 'followed by' P1 tells us something about Ps in general: that is, it tells us something about what happened later, given what we know about what happened earlier. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be preceded by some instance of P. Note that assertions using this property only are rather weak. Typically we will be interested in stronger relations, for example in the relation 'directly followed by'.")
-AnnotationAssertion(obo:IAO_0000119 obo:BFO_0000063 "Modified by Allyson Lister from the preceded_by (which is the inverse of precedes / 'followed by') definition within RO: http://www.obofoundry.org/ro/ro.owl")
-AnnotationAssertion(dcterms:creator obo:BFO_0000063 "OBO Foundry")
-AnnotationAssertion(rdfs:comment obo:BFO_0000063 "Please note that, as stated on one of the RO documentation pages (https://code.google.com/p/obo-relations/wiki/ROAndBFO), some of the relations RO makes use are either uncontroversial (non-temporalized) parts of BFO2, or will be incorporated in the future. In the case of BFO_0000060, it is not currently in BFO2, but may be in the future. The RO ontologists assume this is the transitive form. (Allyson Lister)")
-AnnotationAssertion(rdfs:label obo:BFO_0000063 "followed by")
-SubObjectPropertyOf(obo:BFO_0000063 owl:topObjectProperty)
-TransitiveObjectProperty(obo:BFO_0000063)
 
 # Object Property: obo:OBI_0000304 (is manufactured by)
 
@@ -2188,7 +2157,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:RO_0000057 "http://obo-relations.googlec
 AnnotationAssertion(dcterms:creator obo:RO_0000057 "Andy Brown")
 AnnotationAssertion(rdfs:label obo:RO_0000057 "has participant")
 
-# Object Property: obo:RO_0000087 (has_role)
+# Object Property: obo:RO_0000087 (has role)
 
 AnnotationAssertion(rdfs:label obo:RO_0000087 "has_role")
 
@@ -2281,6 +2250,7 @@ ObjectPropertyRange(swo:SWO_0000085 swo:SWO_0000001)
 
 AnnotationAssertion(obo:IAO_0000115 swo:SWO_0000086 "The relationship between input data which is permitted to a piece of software.")
 AnnotationAssertion(dcterms:creator swo:SWO_0000086 "James Malone")
+AnnotationAssertion(rdfs:comment swo:SWO_0000086 "AL 2.9.22: This cannot be a child of 'has specified input' because the restrictions on domain and range for that hierarchy would create issues for us, as both software and data item (our domain and range, respectively) are continuants. For now, the solution is to take it out of that hierarchy completely.")
 AnnotationAssertion(rdfs:comment swo:SWO_0000086 "See also http://softwareontology.wordpress.com/2011/04/15/ins-and-outs-of-software/")
 AnnotationAssertion(rdfs:label swo:SWO_0000086 "has specified data input")
 InverseObjectProperties(swo:SWO_0000086 swo:SWO_0000088)
@@ -2291,6 +2261,7 @@ ObjectPropertyRange(swo:SWO_0000086 obo:IAO_0000027)
 
 AnnotationAssertion(obo:IAO_0000115 swo:SWO_0000087 "The relationship between a piece of software and the data that it is possible to output."@en)
 AnnotationAssertion(dcterms:creator swo:SWO_0000087 "James Malone")
+AnnotationAssertion(rdfs:comment swo:SWO_0000087 "AL 2.9.22: This cannot be a child of 'has specified output' because the restrictions on domain and range for that hierarchy would create issues for us, as both software and data item (our domain and range, respectively) are continuants. For now, the solution is to take it out of that hierarchy completely.")
 AnnotationAssertion(rdfs:comment swo:SWO_0000087 "See also http://softwareontology.wordpress.com/2011/04/15/ins-and-outs-of-software/")
 AnnotationAssertion(rdfs:label swo:SWO_0000087 "has specified data output"@en)
 InverseObjectProperties(swo:SWO_0000087 swo:SWO_0000089)
@@ -2301,8 +2272,8 @@ ObjectPropertyRange(swo:SWO_0000087 obo:IAO_0000027)
 
 AnnotationAssertion(obo:IAO_0000115 swo:SWO_0000088 "The relationship between a data and the software which can possibly take this data as input.")
 AnnotationAssertion(dcterms:creator swo:SWO_0000088 "James Malone")
+AnnotationAssertion(rdfs:comment swo:SWO_0000088 "AL 2.9.22: This cannot be a child of 'is specified input of' or 'input of' because the restrictions on domain and range for that hierarchy would create issues for us, as both software and data item (our range and domain, respectively) are continuants. For now, the solution is to take it out of that hierarchy completely.")
 AnnotationAssertion(rdfs:label swo:SWO_0000088 "is specified data input of"@en)
-SubObjectPropertyOf(swo:SWO_0000088 obo:RO_0002352)
 ObjectPropertyDomain(swo:SWO_0000088 obo:IAO_0000027)
 ObjectPropertyRange(swo:SWO_0000088 swo:SWO_0000001)
 
@@ -2310,8 +2281,8 @@ ObjectPropertyRange(swo:SWO_0000088 swo:SWO_0000001)
 
 AnnotationAssertion(obo:IAO_0000115 swo:SWO_0000089 "The relationship between a data and the software which can possibly produce this data as output.")
 AnnotationAssertion(dcterms:creator swo:SWO_0000089 "James Malone")
+AnnotationAssertion(rdfs:comment swo:SWO_0000089 "AL 2.9.22: This cannot be a child of 'is specified output of' or 'output of' because the restrictions on domain and range for that hierarchy would create issues for us, as both software and data item (our range and domain, respectively) are continuants. For now, the solution is to take it out of that hierarchy completely.")
 AnnotationAssertion(rdfs:label swo:SWO_0000089 "is specified data output of"@en)
-SubObjectPropertyOf(swo:SWO_0000089 obo:RO_0002353)
 ObjectPropertyDomain(swo:SWO_0000089 obo:IAO_0000027)
 ObjectPropertyRange(swo:SWO_0000089 swo:SWO_0000001)
 
@@ -2322,7 +2293,7 @@ AnnotationAssertion(obo:IAO_0000115 swo:SWO_0000131 "Entity A is 'directly prece
 AnnotationAssertion(obo:IAO_0000119 swo:SWO_0000131 "Allyson Lister")
 AnnotationAssertion(dcterms:creator swo:SWO_0000131 "OBO Foundry")
 AnnotationAssertion(rdfs:label swo:SWO_0000131 "directly preceded by")
-SubObjectPropertyOf(swo:SWO_0000131 obo:BFO_0000060)
+SubObjectPropertyOf(swo:SWO_0000131 swo:SWO_0000301)
 InverseObjectProperties(swo:SWO_0000131 swo:SWO_0000132)
 
 # Object Property: swo:SWO_0000132 (directly followed by)
@@ -2330,7 +2301,7 @@ InverseObjectProperties(swo:SWO_0000131 swo:SWO_0000132)
 AnnotationAssertion(obo:IAO_0000115 swo:SWO_0000132 "'directly followed by' is an object property which further specializes the parent 'followed by' property. In the assertion 'C directly followed by C1', says that Cs generally are immediately followed by C1s.")
 AnnotationAssertion(obo:IAO_0000119 swo:SWO_0000132 "Allyson Lister")
 AnnotationAssertion(rdfs:label swo:SWO_0000132 "directly followed by"@en)
-SubObjectPropertyOf(swo:SWO_0000132 obo:BFO_0000063)
+SubObjectPropertyOf(swo:SWO_0000132 swo:SWO_0000300)
 
 # Object Property: swo:SWO_0000150 (uses platform)
 
@@ -2346,6 +2317,16 @@ ObjectPropertyRange(swo:SWO_0000150 swo:SWO_0000021)
 AnnotationAssertion(rdfs:label swo:SWO_0000157 "is software for"@en)
 ObjectPropertyDomain(swo:SWO_0000157 swo:SWO_0000001)
 ObjectPropertyRange(swo:SWO_0000157 swo:SWO_0000001)
+
+# Object Property: swo:SWO_0000300 (followed by)
+
+AnnotationAssertion(rdfs:comment swo:SWO_0000300 "AL 2.9.22: When incorporating all BFO annotations, it became clear that we were using BFO 'precedes' (which was the original parent for 'directly followed by') incorrectly. 'precedes' has a range  and domain of occurent, and the IAO version number class is an ICE, which is a continuant. This led to an inconsistent ontology. To fix this for now, we have created a new class that performs a similar function to BFO 'precedes' but without the domain/range restrictions.")
+AnnotationAssertion(rdfs:label swo:SWO_0000300 "followed by")
+
+# Object Property: swo:SWO_0000301 (follows)
+
+AnnotationAssertion(rdfs:comment swo:SWO_0000301 "AL 2.9.22: When incorporating all BFO annotations, it became clear that we were using BFO 'precedes' and 'preceded by' (which was the original parent for 'directly preceded by') incorrectly. 'precedes' has a range  and domain of occurent, and the IAO version number class is an ICE, which is a continuant. This led to an inconsistent ontology. To fix this for now, we have created a new class (and this, its inverse) that performs a similar function to BFO 'precedes' but without the domain/range restrictions.")
+AnnotationAssertion(rdfs:label swo:SWO_0000301 "follows")
 
 # Object Property: swo:SWO_0004000 (has version)
 
@@ -2492,6 +2473,7 @@ AnnotationAssertion(obo:IAO_0000119 <http://www.obofoundry.org/ro/ro.owl#part_of
 AnnotationAssertion(rdfs:label <http://www.obofoundry.org/ro/ro.owl#part_of> "part of")
 TransitiveObjectProperty(<http://www.obofoundry.org/ro/ro.owl#part_of>)
 
+
 ############################
 #   Data Properties
 ############################
@@ -2543,12 +2525,12 @@ DataPropertyRange(<http://www.ebi.ac.uk/swo/maturity/SWO_9000070> rdfs:Literal)
 
 SubClassOf(<http://edamontology.org/data_0582> obo:IAO_0000027)
 
-# Class: <http://edamontology.org/data_1636> (Heat map)
+# Class: <http://edamontology.org/data_1636> (Heatmap)
 
 AnnotationAssertion(rdfs:label <http://edamontology.org/data_1636> "Heatmap")
 SubClassOf(<http://edamontology.org/data_1636> <http://edamontology.org/data_2968>)
 
-# Class: <http://edamontology.org/data_2603> (Gene expression data)
+# Class: <http://edamontology.org/data_2603> (Microarray data)
 
 AnnotationAssertion(rdfs:label <http://edamontology.org/data_2603> "Microarray data")
 SubClassOf(<http://edamontology.org/data_2603> obo:IAO_0000027)
@@ -2697,7 +2679,7 @@ AnnotationAssertion(rdfs:comment <http://kt.ijs.si/panovp/OntoDM#OntoDM_361570> 
 AnnotationAssertion(rdfs:label <http://kt.ijs.si/panovp/OntoDM#OntoDM_361570> "data processing algorithm")
 SubClassOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM_361570> obo:IAO_0000064)
 
-# Class: <http://kt.ijs.si/panovp/OntoDM#OntoDM_953101> (obsolete 'data visualization task')
+# Class: <http://kt.ijs.si/panovp/OntoDM#OntoDM_953101> (data visualization task)
 
 AnnotationAssertion(obo:IAO_0100001 <http://kt.ijs.si/panovp/OntoDM#OntoDM_953101> "http://purl.obolibrary.org/obo/OBI_0200111")
 AnnotationAssertion(efo:obsoleted_in_version <http://kt.ijs.si/panovp/OntoDM#OntoDM_953101> "1.7"^^xsd:decimal)
@@ -2750,194 +2732,12 @@ SubClassOf(obo:IAO_0000098 obo:IAO_0000030)
 # Class: obo:IAO_0000129 (version number)
 
 AnnotationAssertion(rdfs:label obo:IAO_0000129 "version name")
-SubClassOf(obo:IAO_0000129 obo:IAO_0000030)
 SubClassOf(obo:IAO_0000129 ObjectAllValuesFrom(swo:SWO_0000081 ObjectUnionOf(obo:IAO_0000025 obo:IAO_0000064 obo:IAO_0000098 swo:SWO_0000001)))
 
 # Class: obo:OBI_0000245 (organization)
 
 AnnotationAssertion(rdfs:label obo:OBI_0000245 "organization")
 SubClassOf(obo:OBI_0000245 obo:BFO_0000040)
-
-# Class: swo:SWO_1100133 (Stavrox)
-
-AnnotationAssertion(Annotation(obo:IAO_0000119 "Mark Reuter"^^xsd:string) obo:IAO_0000115 swo:SWO_1100133 "StavroX software identifies cross-linked peptides."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100133 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100133 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100133 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100133 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100133 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(rdfs:comment swo:SWO_1100133 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/35"^^xsd:string)
-AnnotationAssertion(rdfs:label swo:SWO_1100133 "Stavrox"^^xsd:string)
-SubClassOf(swo:SWO_1100133 swo:SWO_0000001)
-SubClassOf(swo:SWO_1100133 DataHasValue(swo:SWO_0004006 "http://www.stavrox.com"))
-
-# Class: swo:SWO_1100134 (ProteomicsTools)
-
-AnnotationAssertion(Annotation(obo:IAO_0000119 "https://github.com/shengqh/RCPA.Tools"^^xsd:string) obo:IAO_0000115 swo:SWO_1100134 "ProteomicsTools software suite contains a bunch of tools used in proteomics research, including identification, result parsing, quantification, and modification."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100134 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100134 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100134 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100134 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100134 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(rdfs:comment swo:SWO_1100134 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/34"^^xsd:string)
-AnnotationAssertion(rdfs:label swo:SWO_1100134 "ProteomicsTools"^^xsd:string)
-SubClassOf(swo:SWO_1100134 swo:SWO_0000001)
-SubClassOf(swo:SWO_1100134 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_1000046>))
-SubClassOf(swo:SWO_1100134 DataHasValue(swo:SWO_0004006 "https://github.com/shengqh/RCPA.Tools/wiki"))
-
-# Class: swo:SWO_1100135 (Chromeleon)
-
-AnnotationAssertion(Annotation(obo:IAO_0000119 "https://www.thermofisher.com/order/catalog/product/CHROMELEON7#/CHROMELEON7") obo:IAO_0000115 swo:SWO_1100135 "Chromeleon software provides full integration of Thermo Scientific gas chromatography (GC-MS/MS), liquid chromatography (LC-MS/MS), and ion chromatography (IC-MS) instruments."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100135 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100135 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100135 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100135 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100135 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(rdfs:comment swo:SWO_1100135 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/32"^^xsd:string)
-AnnotationAssertion(rdfs:label swo:SWO_1100135 "Chromeleon"^^xsd:string)
-SubClassOf(swo:SWO_1100135 swo:SWO_0000001)
-SubClassOf(swo:SWO_1100135 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_1000002>))
-SubClassOf(swo:SWO_1100135 DataHasValue(swo:SWO_0004006 "https://www.thermofisher.com/order/catalog/product/CHROMELEON7#/CHROMELEON7"))
-
-# Class: swo:SWO_1100136 (AnalyzerPro)
-
-AnnotationAssertion(Annotation(obo:IAO_0000119 "https://www.spectralworks.com/products/analyzerpro/") obo:IAO_0000115 swo:SWO_1100136 "AnalyzerPro​ is a productivity software application for both low and high resolution LC-MS and GC-MS data with support for multiple vendors’ data. This comprehensive post-processing utility provides optimized workflows for sample-to-sample comparison, target component analysis, quantitation and library searching for data generated from any LC-MS and GC-MS platform"^^xsd:string)
-AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100136 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100136 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100136 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100136 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100136 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(rdfs:comment swo:SWO_1100136 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/31"^^xsd:string)
-AnnotationAssertion(rdfs:label swo:SWO_1100136 "AnalyzerPro"^^xsd:string)
-SubClassOf(swo:SWO_1100136 swo:SWO_0000001)
-SubClassOf(swo:SWO_1100136 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_1000002>))
-SubClassOf(swo:SWO_1100136 DataHasValue(swo:SWO_0004006 "https://www.spectralworks.com/products/analyzerpro/"))
-
-# Class: swo:SWO_1100137 (SWATH Software)
-
-AnnotationAssertion(Annotation(obo:IAO_0000119 "https://sciex.com/technology/swath-acquisition") obo:IAO_0000115 swo:SWO_1100137 "SWATH is the only data independent acquisition (DIA) technique that allows comprehensive detection and quantitation of virtually every detectable compound in a sample (MS/MSALL). This provides confidence in your quantitative results and virtually eliminates the risk of missing a critical component. SWATH Acquisition strategy can only be achieved through the power and speed of SCIEX TripleTOF® and QTOF technology."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100137 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100137 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100137 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100137 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100137 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(rdfs:comment swo:SWO_1100137 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/30"^^xsd:string)
-AnnotationAssertion(rdfs:label swo:SWO_1100137 "SWATH Software"^^xsd:string)
-SubClassOf(swo:SWO_1100137 swo:SWO_0000001)
-SubClassOf(swo:SWO_1100137 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_1000002>))
-SubClassOf(swo:SWO_1100137 DataHasValue(swo:SWO_0004006 "https://sciex.com/technology/swath-acquisition"))
-
-# Class: swo:SWO_1100138 (Supernovo)
-
-AnnotationAssertion(Annotation(obo:IAO_0000119 "https://www.proteinmetrics.com/products/supernovo/") obo:IAO_0000115 swo:SWO_1100138 "SupernovoTM is a unique, hands-free solution for end-to-end de novo sequencing of monoclonal antibodies (mAbs), enabling high throughput protein discovery."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100138 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100138 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100138 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100138 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100138 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(rdfs:comment swo:SWO_1100138 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/29"^^xsd:string)
-AnnotationAssertion(rdfs:label swo:SWO_1100138 "Supernovo"^^xsd:string)
-SubClassOf(swo:SWO_1100138 swo:SWO_0000001)
-SubClassOf(swo:SWO_1100138 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_1000002>))
-SubClassOf(swo:SWO_1100138 DataHasValue(swo:SWO_0004006 "https://www.proteinmetrics.com/products/supernovo/"))
-
-# Class: swo:SWO_1100139 (PEAKS DB)
-
-AnnotationAssertion(Annotation(obo:IAO_0000119 "Mark Reuter"^^xsd:string) obo:IAO_0000115 swo:SWO_1100139 "Protein Identification Software including an LC-MS/MS search engine, modification search and PTM profiling, sequence variant search, integration with de novo sequencing, and support for all types of fragment ions."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100139 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100139 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100139 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100139 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100139 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(rdfs:comment swo:SWO_1100139 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/28"^^xsd:string)
-AnnotationAssertion(rdfs:label swo:SWO_1100139 "PEAKS DB"^^xsd:string)
-SubClassOf(swo:SWO_1100139 swo:SWO_0000001)
-SubClassOf(swo:SWO_1100139 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_1000002>))
-SubClassOf(swo:SWO_1100139 DataHasValue(swo:SWO_0004006 "http://www.bioinfor.com/peaksdb/"))
-
-# Class: swo:SWO_1100140 (HTSeq)
-
-AnnotationAssertion(Annotation(obo:IAO_0000119 "https://htseq.readthedocs.io/en/release_0.11.1/overview.html"^^xsd:string) obo:IAO_0000115 swo:SWO_1100140 "HTSeq is a Python package that provides infrastructure to process data from high-throughput sequencing assays."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100140 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100140 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100140 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100140 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100140 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(rdfs:comment swo:SWO_1100140 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/27"^^xsd:string)
-AnnotationAssertion(rdfs:label swo:SWO_1100140 "HTSeq"^^xsd:string)
-SubClassOf(swo:SWO_1100140 swo:SWO_0000001)
-SubClassOf(swo:SWO_1100140 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_1000046>))
-SubClassOf(swo:SWO_1100140 DataHasValue(swo:SWO_0004006 "https://htseq.readthedocs.io/en/release_0.11.1/"))
-
-# Class: swo:SWO_1100141 (RNA-SeQC)
-
-AnnotationAssertion(Annotation(obo:IAO_0000119 "Mark Reuter"^^xsd:string) obo:IAO_0000115 swo:SWO_1100141 "RNA-SeQC is a java program which computes a series of quality control metrics for RNA-seq data. The input can be one or more BAM files. The output consists of HTML reports and tab delimited files of metrics data. This program can be valuable for comparing sequencing quality across different samples or experiments to evaluate different experimental parameters. It can also be run on individual samples as a means of quality control before continuing with downstream analysis."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100141 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100141 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100141 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100141 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100141 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(rdfs:comment swo:SWO_1100141 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/26"^^xsd:string)
-AnnotationAssertion(rdfs:label swo:SWO_1100141 "RNA-SeQC"^^xsd:string)
-SubClassOf(swo:SWO_1100141 swo:SWO_0000001)
-SubClassOf(swo:SWO_1100141 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_9000085>))
-SubClassOf(swo:SWO_1100141 DataHasValue(swo:SWO_0004006 "https://github.com/broadinstitute/rnaseqc"))
-
-# Class: swo:SWO_1100142 (RSeQC)
-
-AnnotationAssertion(Annotation(obo:IAO_0000119 "http://rseqc.sourceforge.net/") obo:IAO_0000115 swo:SWO_1100142 "RSeQC package provides a number of useful modules that can comprehensively evaluate high throughput sequence data especially RNA-seq data. Some basic modules quickly inspect sequence quality, nucleotide composition bias, PCR bias and GC bias, while RNA-seq specific modules evaluate sequencing saturation, mapped reads distribution, coverage uniformity, strand specificity, transcript level RNA integrity etc."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100142 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100142 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100142 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100142 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100142 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(rdfs:comment swo:SWO_1100142 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/25"^^xsd:string)
-AnnotationAssertion(rdfs:label swo:SWO_1100142 "RSeQC"^^xsd:string)
-SubClassOf(swo:SWO_1100142 swo:SWO_0000001)
-SubClassOf(swo:SWO_1100142 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_1000046>))
-SubClassOf(swo:SWO_1100142 DataHasValue(swo:SWO_0004006 "http://rseqc.sourceforge.net/"))
-
-# Class: swo:SWO_1100143 (SAMtools)
-
-AnnotationAssertion(Annotation(obo:IAO_0000119 "Mark Reuter"^^xsd:string) obo:IAO_0000115 swo:SWO_1100143 "SAM Tools provide various utilities for manipulating alignments in the SAM format, including sorting, merging, indexing and generating alignments in a per-position format."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100143 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100143 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100143 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100143 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100143 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(rdfs:comment swo:SWO_1100143 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/24"^^xsd:string)
-AnnotationAssertion(rdfs:label swo:SWO_1100143 "SAMtools"^^xsd:string)
-SubClassOf(swo:SWO_1100143 swo:SWO_0000001)
-SubClassOf(swo:SWO_1100143 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_9000074>))
-SubClassOf(swo:SWO_1100143 DataHasValue(swo:SWO_0004006 "https://github.com/samtools/samtools"))
-
-# Class: swo:SWO_1100144 (FastQC)
-
-AnnotationAssertion(Annotation(obo:IAO_0000119 "Mark Reuter"^^xsd:string) obo:IAO_0000115 swo:SWO_1100144 "FastQC aims to provide a simple way to do some quality control checks on raw sequence data coming from high throughput sequencing pipelines. It provides a modular set of analyses which you can use to give a quick impression of whether your data has any problems of which you should be aware before doing any further analysis."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100144 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100144 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100144 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100144 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100144 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(rdfs:comment swo:SWO_1100144 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/23"^^xsd:string)
-AnnotationAssertion(rdfs:label swo:SWO_1100144 "FastQC"^^xsd:string)
-SubClassOf(swo:SWO_1100144 swo:SWO_0000001)
-SubClassOf(swo:SWO_1100144 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_1000047>))
-SubClassOf(swo:SWO_1100144 DataHasValue(swo:SWO_0004006 "https://github.com/s-andrews/FastQC"))
-
-# Class: swo:SWO_1100145 (CutAdapt)
-
-AnnotationAssertion(Annotation(obo:IAO_0000119 "https://cutadapt.readthedocs.io/en/stable/") obo:IAO_0000115 swo:SWO_1100145 "Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100145 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100145 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dce:contributor swo:SWO_1100145 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100145 "Allyson Lister"^^xsd:string)
-AnnotationAssertion(dcterms:creator swo:SWO_1100145 "Mark Reuter"^^xsd:string)
-AnnotationAssertion(rdfs:comment swo:SWO_1100145 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/22"^^xsd:string)
-AnnotationAssertion(rdfs:label swo:SWO_1100145 "CutAdapt"^^xsd:string)
-SubClassOf(swo:SWO_1100145 swo:SWO_0000001)
-SubClassOf(swo:SWO_1100145 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_9000074>))
-SubClassOf(swo:SWO_1100145 DataHasValue(swo:SWO_0004006 "https://cutadapt.readthedocs.io/en/stable/"))
 
 # Class: <http://urigen_local_uri/963a1b3b-49f2-4ef9-8f37-5e9cd5403b2a/http://www.ebi.ac.uk/swo/data/SWO_3000069> (obsolete sequence feature format)
 
@@ -9107,7 +8907,6 @@ AnnotationAssertion(rdfs:label swo:SWO_0000021 "operating system")
 EquivalentClasses(swo:SWO_0000021 ObjectSomeValuesFrom(swo:SWO_0040005 <http://www.ebi.ac.uk/swo/objective/SWO_4000010>))
 SubClassOf(swo:SWO_0000021 swo:SWO_0000001)
 
-
 # Class: swo:SWO_0000022 (Linux)
 
 AnnotationAssertion(rdfs:label swo:SWO_0000022 "Linux")
@@ -14480,7 +14279,6 @@ SubClassOf(swo:SWO_0000679 ObjectSomeValuesFrom(swo:SWO_0040005 ObjectIntersecti
 SubClassOf(swo:SWO_0000679 ObjectHasValue(swo:SWO_0004004 <http://www.ebi.ac.uk/efo/swo/SWO_0000073>))
 SubClassOf(swo:SWO_0000679 ObjectExactCardinality(2 swo:SWO_0000088 swo:SWO_0000554))
 
-
 # Class: swo:SWO_0000680 (Rank-invariant set normalization)
 
 AnnotationAssertion(rdfs:label swo:SWO_0000680 "Rank-invariant set normalization")
@@ -16142,7 +15940,7 @@ SubClassOf(swo:SWO_1100126 <http://edamontology.org/format_2330>)
 # Class: swo:SWO_1100127 (software before Microsoft 2007)
 
 AnnotationAssertion(rdfs:label swo:SWO_1100127 "software before Microsoft 2007")
-EquivalentClasses(swo:SWO_1100127 ObjectIntersectionOf(swo:SWO_0000001 ObjectSomeValuesFrom(swo:SWO_0004000 ObjectIntersectionOf(obo:IAO_0000129 ObjectHasValue(obo:BFO_0000063 <http://www.ebi.ac.uk/swo/version/SWO_2000007>)))))
+EquivalentClasses(swo:SWO_1100127 ObjectIntersectionOf(swo:SWO_0000001 ObjectSomeValuesFrom(swo:SWO_0004000 ObjectIntersectionOf(obo:IAO_0000129 ObjectHasValue(swo:SWO_0000300 <http://www.ebi.ac.uk/swo/version/SWO_2000007>)))))
 SubClassOf(swo:SWO_1100127 swo:SWO_0000001)
 
 # Class: swo:SWO_1100128 (bcbio)
@@ -16198,6 +15996,187 @@ AnnotationAssertion(rdfs:label swo:SWO_1100132 "Salmon"@en)
 SubClassOf(swo:SWO_1100132 swo:SWO_0000001)
 SubClassOf(swo:SWO_1100132 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_1000046>))
 SubClassOf(swo:SWO_1100132 DataHasValue(swo:SWO_0004006 "https://combine-lab.github.io/salmon/"))
+
+# Class: swo:SWO_1100133 (Stavrox)
+
+AnnotationAssertion(Annotation(obo:IAO_0000119 "Mark Reuter"^^xsd:string) obo:IAO_0000115 swo:SWO_1100133 "StavroX software identifies cross-linked peptides."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100133 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100133 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100133 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100133 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100133 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(rdfs:comment swo:SWO_1100133 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/35"^^xsd:string)
+AnnotationAssertion(rdfs:label swo:SWO_1100133 "Stavrox"^^xsd:string)
+SubClassOf(swo:SWO_1100133 swo:SWO_0000001)
+SubClassOf(swo:SWO_1100133 DataHasValue(swo:SWO_0004006 "http://www.stavrox.com"))
+
+# Class: swo:SWO_1100134 (ProteomicsTools)
+
+AnnotationAssertion(Annotation(obo:IAO_0000119 "https://github.com/shengqh/RCPA.Tools"^^xsd:string) obo:IAO_0000115 swo:SWO_1100134 "ProteomicsTools software suite contains a bunch of tools used in proteomics research, including identification, result parsing, quantification, and modification."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100134 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100134 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100134 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100134 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100134 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(rdfs:comment swo:SWO_1100134 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/34"^^xsd:string)
+AnnotationAssertion(rdfs:label swo:SWO_1100134 "ProteomicsTools"^^xsd:string)
+SubClassOf(swo:SWO_1100134 swo:SWO_0000001)
+SubClassOf(swo:SWO_1100134 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_1000046>))
+SubClassOf(swo:SWO_1100134 DataHasValue(swo:SWO_0004006 "https://github.com/shengqh/RCPA.Tools/wiki"))
+
+# Class: swo:SWO_1100135 (Chromeleon)
+
+AnnotationAssertion(Annotation(obo:IAO_0000119 "https://www.thermofisher.com/order/catalog/product/CHROMELEON7#/CHROMELEON7") obo:IAO_0000115 swo:SWO_1100135 "Chromeleon software provides full integration of Thermo Scientific gas chromatography (GC-MS/MS), liquid chromatography (LC-MS/MS), and ion chromatography (IC-MS) instruments."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100135 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100135 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100135 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100135 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100135 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(rdfs:comment swo:SWO_1100135 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/32"^^xsd:string)
+AnnotationAssertion(rdfs:label swo:SWO_1100135 "Chromeleon"^^xsd:string)
+SubClassOf(swo:SWO_1100135 swo:SWO_0000001)
+SubClassOf(swo:SWO_1100135 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_1000002>))
+SubClassOf(swo:SWO_1100135 DataHasValue(swo:SWO_0004006 "https://www.thermofisher.com/order/catalog/product/CHROMELEON7#/CHROMELEON7"))
+
+# Class: swo:SWO_1100136 (AnalyzerPro)
+
+AnnotationAssertion(Annotation(obo:IAO_0000119 "https://www.spectralworks.com/products/analyzerpro/") obo:IAO_0000115 swo:SWO_1100136 "AnalyzerPro​ is a productivity software application for both low and high resolution LC-MS and GC-MS data with support for multiple vendors’ data. This comprehensive post-processing utility provides optimized workflows for sample-to-sample comparison, target component analysis, quantitation and library searching for data generated from any LC-MS and GC-MS platform"^^xsd:string)
+AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100136 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100136 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100136 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100136 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100136 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(rdfs:comment swo:SWO_1100136 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/31"^^xsd:string)
+AnnotationAssertion(rdfs:label swo:SWO_1100136 "AnalyzerPro"^^xsd:string)
+SubClassOf(swo:SWO_1100136 swo:SWO_0000001)
+SubClassOf(swo:SWO_1100136 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_1000002>))
+SubClassOf(swo:SWO_1100136 DataHasValue(swo:SWO_0004006 "https://www.spectralworks.com/products/analyzerpro/"))
+
+# Class: swo:SWO_1100137 (SWATH Software)
+
+AnnotationAssertion(Annotation(obo:IAO_0000119 "https://sciex.com/technology/swath-acquisition") obo:IAO_0000115 swo:SWO_1100137 "SWATH is the only data independent acquisition (DIA) technique that allows comprehensive detection and quantitation of virtually every detectable compound in a sample (MS/MSALL). This provides confidence in your quantitative results and virtually eliminates the risk of missing a critical component. SWATH Acquisition strategy can only be achieved through the power and speed of SCIEX TripleTOF® and QTOF technology."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100137 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100137 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100137 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100137 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100137 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(rdfs:comment swo:SWO_1100137 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/30"^^xsd:string)
+AnnotationAssertion(rdfs:label swo:SWO_1100137 "SWATH Software"^^xsd:string)
+SubClassOf(swo:SWO_1100137 swo:SWO_0000001)
+SubClassOf(swo:SWO_1100137 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_1000002>))
+SubClassOf(swo:SWO_1100137 DataHasValue(swo:SWO_0004006 "https://sciex.com/technology/swath-acquisition"))
+
+# Class: swo:SWO_1100138 (Supernovo)
+
+AnnotationAssertion(Annotation(obo:IAO_0000119 "https://www.proteinmetrics.com/products/supernovo/") obo:IAO_0000115 swo:SWO_1100138 "SupernovoTM is a unique, hands-free solution for end-to-end de novo sequencing of monoclonal antibodies (mAbs), enabling high throughput protein discovery."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100138 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100138 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100138 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100138 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100138 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(rdfs:comment swo:SWO_1100138 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/29"^^xsd:string)
+AnnotationAssertion(rdfs:label swo:SWO_1100138 "Supernovo"^^xsd:string)
+SubClassOf(swo:SWO_1100138 swo:SWO_0000001)
+SubClassOf(swo:SWO_1100138 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_1000002>))
+SubClassOf(swo:SWO_1100138 DataHasValue(swo:SWO_0004006 "https://www.proteinmetrics.com/products/supernovo/"))
+
+# Class: swo:SWO_1100139 (PEAKS DB)
+
+AnnotationAssertion(Annotation(obo:IAO_0000119 "Mark Reuter"^^xsd:string) obo:IAO_0000115 swo:SWO_1100139 "Protein Identification Software including an LC-MS/MS search engine, modification search and PTM profiling, sequence variant search, integration with de novo sequencing, and support for all types of fragment ions."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100139 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100139 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100139 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100139 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100139 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(rdfs:comment swo:SWO_1100139 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/28"^^xsd:string)
+AnnotationAssertion(rdfs:label swo:SWO_1100139 "PEAKS DB"^^xsd:string)
+SubClassOf(swo:SWO_1100139 swo:SWO_0000001)
+SubClassOf(swo:SWO_1100139 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_1000002>))
+SubClassOf(swo:SWO_1100139 DataHasValue(swo:SWO_0004006 "http://www.bioinfor.com/peaksdb/"))
+
+# Class: swo:SWO_1100140 (HTSeq)
+
+AnnotationAssertion(Annotation(obo:IAO_0000119 "https://htseq.readthedocs.io/en/release_0.11.1/overview.html"^^xsd:string) obo:IAO_0000115 swo:SWO_1100140 "HTSeq is a Python package that provides infrastructure to process data from high-throughput sequencing assays."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100140 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100140 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100140 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100140 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100140 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(rdfs:comment swo:SWO_1100140 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/27"^^xsd:string)
+AnnotationAssertion(rdfs:label swo:SWO_1100140 "HTSeq"^^xsd:string)
+SubClassOf(swo:SWO_1100140 swo:SWO_0000001)
+SubClassOf(swo:SWO_1100140 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_1000046>))
+SubClassOf(swo:SWO_1100140 DataHasValue(swo:SWO_0004006 "https://htseq.readthedocs.io/en/release_0.11.1/"))
+
+# Class: swo:SWO_1100141 (RNA-SeQC)
+
+AnnotationAssertion(Annotation(obo:IAO_0000119 "Mark Reuter"^^xsd:string) obo:IAO_0000115 swo:SWO_1100141 "RNA-SeQC is a java program which computes a series of quality control metrics for RNA-seq data. The input can be one or more BAM files. The output consists of HTML reports and tab delimited files of metrics data. This program can be valuable for comparing sequencing quality across different samples or experiments to evaluate different experimental parameters. It can also be run on individual samples as a means of quality control before continuing with downstream analysis."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100141 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100141 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100141 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100141 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100141 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(rdfs:comment swo:SWO_1100141 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/26"^^xsd:string)
+AnnotationAssertion(rdfs:label swo:SWO_1100141 "RNA-SeQC"^^xsd:string)
+SubClassOf(swo:SWO_1100141 swo:SWO_0000001)
+SubClassOf(swo:SWO_1100141 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_9000085>))
+SubClassOf(swo:SWO_1100141 DataHasValue(swo:SWO_0004006 "https://github.com/broadinstitute/rnaseqc"))
+
+# Class: swo:SWO_1100142 (RSeQC)
+
+AnnotationAssertion(Annotation(obo:IAO_0000119 "http://rseqc.sourceforge.net/") obo:IAO_0000115 swo:SWO_1100142 "RSeQC package provides a number of useful modules that can comprehensively evaluate high throughput sequence data especially RNA-seq data. Some basic modules quickly inspect sequence quality, nucleotide composition bias, PCR bias and GC bias, while RNA-seq specific modules evaluate sequencing saturation, mapped reads distribution, coverage uniformity, strand specificity, transcript level RNA integrity etc."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100142 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100142 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100142 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100142 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100142 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(rdfs:comment swo:SWO_1100142 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/25"^^xsd:string)
+AnnotationAssertion(rdfs:label swo:SWO_1100142 "RSeQC"^^xsd:string)
+SubClassOf(swo:SWO_1100142 swo:SWO_0000001)
+SubClassOf(swo:SWO_1100142 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_1000046>))
+SubClassOf(swo:SWO_1100142 DataHasValue(swo:SWO_0004006 "http://rseqc.sourceforge.net/"))
+
+# Class: swo:SWO_1100143 (SAMtools)
+
+AnnotationAssertion(Annotation(obo:IAO_0000119 "Mark Reuter"^^xsd:string) obo:IAO_0000115 swo:SWO_1100143 "SAM Tools provide various utilities for manipulating alignments in the SAM format, including sorting, merging, indexing and generating alignments in a per-position format."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100143 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100143 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100143 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100143 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100143 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(rdfs:comment swo:SWO_1100143 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/24"^^xsd:string)
+AnnotationAssertion(rdfs:label swo:SWO_1100143 "SAMtools"^^xsd:string)
+SubClassOf(swo:SWO_1100143 swo:SWO_0000001)
+SubClassOf(swo:SWO_1100143 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_9000074>))
+SubClassOf(swo:SWO_1100143 DataHasValue(swo:SWO_0004006 "https://github.com/samtools/samtools"))
+
+# Class: swo:SWO_1100144 (FastQC)
+
+AnnotationAssertion(Annotation(obo:IAO_0000119 "Mark Reuter"^^xsd:string) obo:IAO_0000115 swo:SWO_1100144 "FastQC aims to provide a simple way to do some quality control checks on raw sequence data coming from high throughput sequencing pipelines. It provides a modular set of analyses which you can use to give a quick impression of whether your data has any problems of which you should be aware before doing any further analysis."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100144 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100144 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100144 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100144 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100144 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(rdfs:comment swo:SWO_1100144 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/23"^^xsd:string)
+AnnotationAssertion(rdfs:label swo:SWO_1100144 "FastQC"^^xsd:string)
+SubClassOf(swo:SWO_1100144 swo:SWO_0000001)
+SubClassOf(swo:SWO_1100144 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_1000047>))
+SubClassOf(swo:SWO_1100144 DataHasValue(swo:SWO_0004006 "https://github.com/s-andrews/FastQC"))
+
+# Class: swo:SWO_1100145 (CutAdapt)
+
+AnnotationAssertion(Annotation(obo:IAO_0000119 "https://cutadapt.readthedocs.io/en/stable/") obo:IAO_0000115 swo:SWO_1100145 "Cutadapt finds and removes adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000117 swo:SWO_1100145 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100145 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dce:contributor swo:SWO_1100145 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100145 "Allyson Lister"^^xsd:string)
+AnnotationAssertion(dcterms:creator swo:SWO_1100145 "Mark Reuter"^^xsd:string)
+AnnotationAssertion(rdfs:comment swo:SWO_1100145 "AL 21.10.2019: Added in reference to https://github.com/allysonlister/swo/issues/22"^^xsd:string)
+AnnotationAssertion(rdfs:label swo:SWO_1100145 "CutAdapt"^^xsd:string)
+SubClassOf(swo:SWO_1100145 swo:SWO_0000001)
+SubClassOf(swo:SWO_1100145 ObjectSomeValuesFrom(swo:has_license <http://www.ebi.ac.uk/swo/license/SWO_9000074>))
+SubClassOf(swo:SWO_1100145 DataHasValue(swo:SWO_0004006 "https://cutadapt.readthedocs.io/en/stable/"))
 
 # Class: swo:SWO_9000005 (licence clause)
 
