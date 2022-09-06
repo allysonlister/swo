@@ -17,6 +17,7 @@ Import(<http://purl.obolibrary.org/obo/swo/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/swo/imports/iao_import.owl>)
 Import(<http://purl.obolibrary.org/obo/swo/imports/obi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/swo/imports/omo_import.owl>)
+Import(<http://purl.obolibrary.org/obo/swo/imports/ro_import.owl>)
 Import(<http://www.ebi.ac.uk/swo/swo-external.owl>)
 Annotation(dcterms:creator "Allyson Lister")
 Annotation(dcterms:creator "Andy Brown")
@@ -2051,7 +2052,6 @@ Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
 Declaration(AnnotationProperty(efo:obsoleted_in_version))
 Declaration(AnnotationProperty(efo:reason_for_obsolescence))
-Declaration(AnnotationProperty(swo:SWO_0000144))
 Declaration(AnnotationProperty(rdf:type))
 Declaration(AnnotationProperty(rdfs:comment))
 Declaration(AnnotationProperty(rdfs:label))
@@ -2109,10 +2109,6 @@ AnnotationAssertion(obo:IAO_0000115 efo:reason_for_obsolescence "The reason a cl
 AnnotationAssertion(dcterms:creator efo:reason_for_obsolescence "EFO Development Team")
 AnnotationAssertion(rdfs:label efo:reason_for_obsolescence "reason for obsolescence")
 
-# Annotation Property: swo:SWO_0000144 (SWO definition)
-
-AnnotationAssertion(rdfs:label swo:SWO_0000144 "SWO definition")
-
 # Annotation Property: owl:deprecated (deprecated)
 
 AnnotationAssertion(rdfs:label owl:deprecated "deprecated")
@@ -2157,7 +2153,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:RO_0000057 "http://obo-relations.googlec
 AnnotationAssertion(dcterms:creator obo:RO_0000057 "Andy Brown")
 AnnotationAssertion(rdfs:label obo:RO_0000057 "has participant")
 
-# Object Property: obo:RO_0000087 (has role)
+# Object Property: obo:RO_0000087 (has_role)
 
 AnnotationAssertion(rdfs:label obo:RO_0000087 "has_role")
 
@@ -2667,7 +2663,6 @@ SubClassOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_806059> <http://kt.ijs.si/
 
 # Class: <http://kt.ijs.si/panovp/OntoDM#OntoDM_000034> (generalization specification)
 
-AnnotationAssertion(Annotation(swo:SWO_0000144 "") obo:IAO_0000115 <http://kt.ijs.si/panovp/OntoDM#OntoDM_000034> "A generalization is a broad name for an output of a execution of a data mining algorithm on a specific dataset. A generalization specification is an informational entity that specifies the type of the generalization such as: decision trees, decision rules, neural networks, itemsets etc.")
 AnnotationAssertion(obo:IAO_0000115 <http://kt.ijs.si/panovp/OntoDM#OntoDM_000034> "Generalization specification of a directive informational entity class that specifies the type of generalization. It includes information about the types of data used to produced the generalization and the language in which the generalization is expressed.")
 AnnotationAssertion(obo:IAO_0000119 <http://kt.ijs.si/panovp/OntoDM#OntoDM_000034> "OntoDM")
 AnnotationAssertion(rdfs:label <http://kt.ijs.si/panovp/OntoDM#OntoDM_000034> "generalization specification")
@@ -2720,15 +2715,10 @@ AnnotationAssertion(rdfs:label obo:IAO_0000030 "information content entity")
 # Class: obo:IAO_0000064 (algorithm)
 
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000064 "A plan specification which describes inputs, output of mathematical functions as well as workflow of execution for achieving an predefined objective. Algorithms are realized usually by means of implementation as computer programs for execution by automata.")
-AnnotationAssertion(Annotation(swo:SWO_0000144 "") obo:IAO_0000115 obo:IAO_0000064 "An algorithm is a set of instructions for performing a paticular calculation.")
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000064 "IAO")
 AnnotationAssertion(rdfs:label obo:IAO_0000064 "algorithm")
 
-# Class: obo:IAO_0000098 (data format specification)
-
-AnnotationAssertion(Annotation(swo:SWO_0000144 "") obo:IAO_0000115 obo:IAO_0000098 "The syntax by which data is specified which renders it valid for a given format.")
-
-# Class: obo:IAO_0000129 (version number)
+# Class: obo:IAO_0000129 (version name)
 
 AnnotationAssertion(rdfs:label obo:IAO_0000129 "version name")
 SubClassOf(obo:IAO_0000129 ObjectAllValuesFrom(swo:SWO_0000081 ObjectUnionOf(obo:IAO_0000025 obo:IAO_0000064 obo:IAO_0000098 swo:SWO_0000001)))
@@ -17022,24 +17012,26 @@ AnnotationAssertion(dcterms:creator <http://www.ebi.ac.uk/swo/data/SWO_3000052> 
 AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/data/SWO_3000052> "Interaction data"@en)
 SubClassOf(<http://www.ebi.ac.uk/swo/data/SWO_3000052> obo:IAO_0000027)
 
-# Class: <http://www.ebi.ac.uk/swo/data/SWO_3000053> (Knowledge representation role)
+# Class: <http://www.ebi.ac.uk/swo/data/SWO_3000053> (Knowledge representation)
 
 AnnotationAssertion(obo:IAO_0000115 <http://www.ebi.ac.uk/swo/data/SWO_3000053> "A knowledge representation role is a role borne by a data format which utilizes formalisms to make complex systems easier to design and build. Knowledge representation is the field of artificial intelligence devoted to representing information about the world in a form that a computer system can utilize to solve complex tasks.")
 AnnotationAssertion(obo:IAO_0000119 <http://www.ebi.ac.uk/swo/data/SWO_3000053> "Modified from http://en.wikipedia.org/wiki/Knowledge_representation, accessed 10 February 2014")
-AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/data/SWO_3000053> "Knowledge representation role"@en)
-SubClassOf(<http://www.ebi.ac.uk/swo/data/SWO_3000053> obo:BFO_0000023)
+AnnotationAssertion(rdfs:comment <http://www.ebi.ac.uk/swo/data/SWO_3000053> "AL 6.9.22: This has been moved from 'role' and used to be called 'knowledge representation role'. The issue in its former placement is to do with the domain and range of role. Bcause this class is intended as a role for a data format, it means that we use it for various children of IAO data format specification (http://purl.obolibrary.org/obo/IAO_0000098). has_role is an RO property with a domain of independent continuant, and data format specification is an ICE (a generically dependent continuant). This means we cannot use has_role for this class. Therefore, we have moved the class out of role and updated the label, and are now using 'characteristic of'/'has characteristic' instead. We may wish to refine the placement of this class in future.")
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/data/SWO_3000053> "Knowledge representation"@en)
+SubClassOf(<http://www.ebi.ac.uk/swo/data/SWO_3000053> obo:BFO_0000017)
 
 # Class: <http://www.ebi.ac.uk/swo/data/SWO_3000055> (BioPAX RDF/XML format)
 
+AnnotationAssertion(rdfs:comment <http://www.ebi.ac.uk/swo/data/SWO_3000055> "AL 6.9.22: I would prefer to use the updated RO label 'has characteristic', but for some reason Protege only allows the use of the label RO deems older, 'bearer of'")
 AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/data/SWO_3000055> "BioPAX RDF/XML format"@en)
 SubClassOf(<http://www.ebi.ac.uk/swo/data/SWO_3000055> <http://www.ebi.ac.uk/swo/data/SWO_3000007>)
-SubClassOf(<http://www.ebi.ac.uk/swo/data/SWO_3000055> ObjectSomeValuesFrom(obo:RO_0000087 <http://www.ebi.ac.uk/swo/data/SWO_3000053>))
+SubClassOf(<http://www.ebi.ac.uk/swo/data/SWO_3000055> ObjectSomeValuesFrom(obo:RO_0000053 <http://www.ebi.ac.uk/swo/data/SWO_3000053>))
 
 # Class: <http://www.ebi.ac.uk/swo/data/SWO_3000056> (BioPAX Manchester OWL Syntax format)
 
 AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/swo/data/SWO_3000056> "BioPAX Manchester OWL Syntax format"@en)
 SubClassOf(<http://www.ebi.ac.uk/swo/data/SWO_3000056> <http://edamontology.org/format_2330>)
-SubClassOf(<http://www.ebi.ac.uk/swo/data/SWO_3000056> ObjectSomeValuesFrom(obo:RO_0000087 <http://www.ebi.ac.uk/swo/data/SWO_3000053>))
+SubClassOf(<http://www.ebi.ac.uk/swo/data/SWO_3000056> ObjectSomeValuesFrom(obo:RO_0000053 <http://www.ebi.ac.uk/swo/data/SWO_3000053>))
 SubClassOf(<http://www.ebi.ac.uk/swo/data/SWO_3000056> ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/data/SWO_3000054> <http://www.ebi.ac.uk/swo/data/SWO_3000055>))
 
 # Class: <http://www.ebi.ac.uk/swo/data/SWO_3000057> (CDF ASCII format)
@@ -17158,7 +17150,6 @@ SubClassOf(<http://www.ebi.ac.uk/swo/data/SWO_3000072> <http://edamontology.org/
 # Class: <http://www.ebi.ac.uk/swo/data/SWO_3000073> (GMTK parameter data)
 
 AnnotationAssertion(obo:IAO_0000115 <http://www.ebi.ac.uk/swo/data/SWO_3000073> "GMTK parameter data is a type of data which contains the various parameter files required by GMTK to define a dynamic Bayesian network.")
-AnnotationAssertion(Annotation(swo:SWO_0000144 "") obo:IAO_0000115 <http://www.ebi.ac.uk/swo/data/SWO_3000073> "These parameter files come in multiple types (e.g. structure files and master files), and therefore this is a data type rather than a single format.")
 AnnotationAssertion(obo:IAO_0000118 <http://www.ebi.ac.uk/swo/data/SWO_3000073> "Graphical Models Toolkit parameter data")
 AnnotationAssertion(obo:IAO_0000119 <http://www.ebi.ac.uk/swo/data/SWO_3000073> "Allyson Lister")
 AnnotationAssertion(obo:IAO_0000119 <http://www.ebi.ac.uk/swo/data/SWO_3000073> "http://noble.gs.washington.edu/proj/philius/README, accessed 3 December 2014.")
@@ -19380,8 +19371,6 @@ SubClassOf(<http://www.ebi.ac.uk/swo/organization/SWO_9000056> obo:OBI_0200000)
 # Class: <http://www.ontodm.com/OntoDM-core/OntoDM_000037> (ensemble specification)
 
 AnnotationAssertion(obo:IAO_0000115 <http://www.ontodm.com/OntoDM-core/OntoDM_000037> "A ensemble of generalizations specification is a generalization specification and denotes a type of generalization that is produced by a ensemble algorithm. This algorithm produces a set of generalizations at its output.")
-AnnotationAssertion(Annotation(swo:SWO_0000144 "") obo:IAO_0000115 <http://www.ontodm.com/OntoDM-core/OntoDM_000037> "An ensemble specification denotes a type of generalization which is an output of an execution of a ensemble algorithm.
-Ensembles are sets of generalizations (have as parts single generalizations) with a defined procedure of their combination into a single generalization when executed in a process.")
 AnnotationAssertion(obo:IAO_0000119 <http://www.ontodm.com/OntoDM-core/OntoDM_000037> "OntoDM")
 AnnotationAssertion(rdfs:label <http://www.ontodm.com/OntoDM-core/OntoDM_000037> "ensemble specification")
 SubClassOf(<http://www.ontodm.com/OntoDM-core/OntoDM_000037> <http://kt.ijs.si/panovp/OntoDM#OntoDM_000034>)
@@ -19401,7 +19390,6 @@ SubClassOf(<http://www.ontodm.com/OntoDM-core/OntoDM_000072> <http://www.ontodm.
 # Class: <http://www.ontodm.com/OntoDM-core/OntoDM_000078> (pattern specification)
 
 AnnotationAssertion(obo:IAO_0000115 <http://www.ontodm.com/OntoDM-core/OntoDM_000078> "A patten specification is a single generalization specification and denotes a pattern P on type T which is a boolean funtion on objects of type T.")
-AnnotationAssertion(Annotation(swo:SWO_0000144 "") obo:IAO_0000115 <http://www.ontodm.com/OntoDM-core/OntoDM_000078> "A pattern P on type T specifies a Boolean function on objects of type T, i.e., has the signature p :: T → bool. A pattern on type T is true or false on an object of type T. Frawley et al. (1991) define a pattern as a statement (expression) in a given language, that describes (relationships among) the facts in (a subset of) the data. In the broadest sense, the word pattern is used to describe the output of a variety of data mining algorithms and includes probability distributions, predictive models and clusters/clusterings; however, we restrict it here to the sense that it is most commonly used, i.e., in the sense of frequent pattern mining.")
 AnnotationAssertion(obo:IAO_0000119 <http://www.ontodm.com/OntoDM-core/OntoDM_000078> "OntoDM")
 AnnotationAssertion(rdfs:label <http://www.ontodm.com/OntoDM-core/OntoDM_000078> "pattern specification")
 SubClassOf(<http://www.ontodm.com/OntoDM-core/OntoDM_000078> <http://www.ontodm.com/OntoDM-core/OntoDM_419460>)
@@ -19476,7 +19464,7 @@ SubClassOf(<http://www.ontodm.com/OntoDM-core/OntoDM_000192> <http://www.ontodm.
 # Class: <http://www.ontodm.com/OntoDM-core/OntoDM_000228> (predictive model specification)
 
 AnnotationAssertion(obo:IAO_0000112 <http://www.ontodm.com/OntoDM-core/OntoDM_000228> "OntoDM")
-AnnotationAssertion(Annotation(swo:SWO_0000144 "") obo:IAO_0000115 <http://www.ontodm.com/OntoDM-core/OntoDM_000228> "A predictive model M for types Td, Tc specifies a function that takes an object of type Td and returns one of type Tc, i.e., has the signature m :: Td → Tc. Most often, predictive modelling is concerned with classification, where Tc would be Boolean (for binary classification) or Discrete(S) (for multi-class classification), or regression, where Tc would be Real. In our case, we allow both Td (description) and Tc (class/target) to be arbitrarily complex data types.")
+AnnotationAssertion(obo:IAO_0000115 <http://www.ontodm.com/OntoDM-core/OntoDM_000228> "A predictive model M for types Td, Tc specifies a function that takes an object of type Td and returns one of type Tc, i.e., has the signature m :: Td → Tc. Most often, predictive modelling is concerned with classification, where Tc would be Boolean (for binary classification) or Discrete(S) (for multi-class classification), or regression, where Tc would be Real. In our case, we allow both Td (description) and Tc (class/target) to be arbitrarily complex data types.")
 AnnotationAssertion(obo:IAO_0000115 <http://www.ontodm.com/OntoDM-core/OntoDM_000228> "Predictive model specification is a single generalization specification and denotes a type of generalization that represents a mapping taking objects of type Td and returns objects of type To.")
 AnnotationAssertion(rdfs:label <http://www.ontodm.com/OntoDM-core/OntoDM_000228> "predictive model specification")
 SubClassOf(<http://www.ontodm.com/OntoDM-core/OntoDM_000228> <http://www.ontodm.com/OntoDM-core/OntoDM_419460>)
@@ -19509,7 +19497,7 @@ SubClassOf(<http://www.ontodm.com/OntoDM-core/OntoDM_000264> <http://www.ontodm.
 
 # Class: <http://www.ontodm.com/OntoDM-core/OntoDM_000285> (probability distribution specification)
 
-AnnotationAssertion(Annotation(swo:SWO_0000144 "") obo:IAO_0000115 <http://www.ontodm.com/OntoDM-core/OntoDM_000285> "A probability distribution D on type T specifies a mapping from objects of type T to non-negative Reals, i.e., has the signature d :: T → R0+. For uncountably infinite types, probability densities are used instead. The sum of all probabilities (the integral of the probability densities) over T is constrained to amount to one.")
+AnnotationAssertion(obo:IAO_0000115 <http://www.ontodm.com/OntoDM-core/OntoDM_000285> "A probability distribution D on type T specifies a mapping from objects of type T to non-negative Reals, i.e., has the signature d :: T → R0+. For uncountably infinite types, probability densities are used instead. The sum of all probabilities (the integral of the probability densities) over T is constrained to amount to one.")
 AnnotationAssertion(obo:IAO_0000115 <http://www.ontodm.com/OntoDM-core/OntoDM_000285> "A probability distribution specification is a single generalization specification and denotes a type of generalization that is a mapping from objects of type T to non-negative reals. This generalization is an output of a probability distribution estimation algorithm.")
 AnnotationAssertion(obo:IAO_0000119 <http://www.ontodm.com/OntoDM-core/OntoDM_000285> "OntoDM")
 AnnotationAssertion(rdfs:label <http://www.ontodm.com/OntoDM-core/OntoDM_000285> "probability distribution specification")

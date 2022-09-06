@@ -8,6 +8,7 @@ import_group:
     - id: bfo
     - id: iao
     - id: obi
+    - id: ro
     - id: omo
 edit_format: owl
 release_artefacts:
