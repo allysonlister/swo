@@ -12,7 +12,7 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 Prefix(edamontology:=<http://edamontology.org#>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/swo.owl>
+Ontology(<http://www.ebi.ac.uk/swo/swo.owl>
 Import(<http://purl.obolibrary.org/obo/swo/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/swo/imports/iao_import.owl>)
 Import(<http://purl.obolibrary.org/obo/swo/imports/obi_import.owl>)
@@ -2128,7 +2128,7 @@ AnnotationAssertion(dcterms:creator <http://purl.obofoundry.org/obo/IAO_0000136>
 AnnotationAssertion(rdfs:label <http://purl.obofoundry.org/obo/IAO_0000136> "is about")
 ObjectPropertyDomain(<http://purl.obofoundry.org/obo/IAO_0000136> obo:IAO_0000030)
 
-# Object Property: obo:OBI_0000304 (is manufactured by)
+# Object Property: obo:OBI_0000304 (is_manufactured_by)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000304 "c is_manufactured_by o means that there was a process p in which c was
 built in which a person, or set of people or machines did the work(bore
@@ -2153,7 +2153,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:RO_0000057 "http://obo-relations.googlec
 AnnotationAssertion(dcterms:creator obo:RO_0000057 "Andy Brown")
 AnnotationAssertion(rdfs:label obo:RO_0000057 "has participant")
 
-# Object Property: obo:RO_0000087 (has_role)
+# Object Property: obo:RO_0000087 (has role)
 
 AnnotationAssertion(rdfs:label obo:RO_0000087 "has_role")
 
@@ -2522,12 +2522,12 @@ DataPropertyRange(<http://www.ebi.ac.uk/swo/maturity/SWO_9000070> rdfs:Literal)
 
 SubClassOf(<http://edamontology.org/data_0582> obo:IAO_0000027)
 
-# Class: <http://edamontology.org/data_1636> (Heatmap)
+# Class: <http://edamontology.org/data_1636> (Heat map)
 
 AnnotationAssertion(rdfs:label <http://edamontology.org/data_1636> "Heatmap")
 SubClassOf(<http://edamontology.org/data_1636> <http://edamontology.org/data_2968>)
 
-# Class: <http://edamontology.org/data_2603> (Microarray data)
+# Class: <http://edamontology.org/data_2603> (Gene expression data)
 
 AnnotationAssertion(rdfs:label <http://edamontology.org/data_2603> "Microarray data")
 SubClassOf(<http://edamontology.org/data_2603> obo:IAO_0000027)
@@ -2692,6 +2692,10 @@ AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000040 "An independent continuant [
 AnnotationAssertion(obo:IAO_0000119 obo:BFO_0000040 "BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000040 "material entity")
 
+# Class: obo:IAO_0000010 (software)
+
+EquivalentClasses(obo:IAO_0000010 swo:SWO_0000001)
+
 # Class: obo:IAO_0000025 (programming language)
 
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000025 "A language in which source code is written, intended to executed/run by a software interpreter. Programming languages are ways to write instructions that specify what to do, and sometimes, how to do it.")
@@ -2718,7 +2722,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000064 "A plan specification which 
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000064 "IAO")
 AnnotationAssertion(rdfs:label obo:IAO_0000064 "algorithm")
 
-# Class: obo:IAO_0000129 (version name)
+# Class: obo:IAO_0000129 (version number)
 
 AnnotationAssertion(rdfs:label obo:IAO_0000129 "version name")
 SubClassOf(obo:IAO_0000129 ObjectAllValuesFrom(swo:SWO_0000081 ObjectUnionOf(obo:IAO_0000025 obo:IAO_0000064 obo:IAO_0000098 swo:SWO_0000001)))
@@ -8693,8 +8697,9 @@ AnnotationAssertion(obo:IAO_0000115 swo:SWO_0000001 "Computer software, or gener
 AnnotationAssertion(obo:IAO_0000119 swo:SWO_0000001 "James Malone")
 AnnotationAssertion(obo:IAO_0000119 swo:SWO_0000001 "Modified in parts from https://en.wikipedia.org/wiki/Software")
 AnnotationAssertion(obo:IAO_0000119 swo:SWO_0000001 "Robert Stevens")
+AnnotationAssertion(rdfs:comment swo:SWO_0000001 "AL 7.9.22: There are some reasoning oddities associated with marking IAO and SWO software as equivalent; once these are sorted out, the equivalence statement will take the place of this current parent-child relationship.")
 AnnotationAssertion(rdfs:label swo:SWO_0000001 "software")
-SubClassOf(swo:SWO_0000001 obo:IAO_0000030)
+SubClassOf(swo:SWO_0000001 obo:IAO_0000104)
 SubClassOf(swo:SWO_0000001 ObjectSomeValuesFrom(swo:SWO_0040005 obo:OBI_0200000))
 
 # Class: swo:SWO_0000002 (software license)

@@ -21,9 +21,11 @@ components:
 primary_release: full
 export_formats:
   - owl
-  - obo
+# OBO format has been (hopefully temporarily) removed from the release due to issues relating to https://github.com/ontodev/robot/issues/995
+#  - obo
   - json
 namespaces:
   - http://www.ebi.ac.uk/swo/SWO_
 license: CC-BY 4.0
 robot_java_args: '-Xmx8G'
+#uribase: http://www.ebi.ac.uk/swo/

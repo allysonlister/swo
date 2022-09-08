@@ -1,106 +1,1858 @@
-echo "ODK Makefile version: v1.3.1 (this is the version of the ODK with which this Makefile was generated, \
-        not the version of the ODK you are running)" &&\
-echo "ROBOT version (ODK): " && robot --catalog catalog-v001.xml --version
-ODK Makefile version: v1.3.1 (this is the version of the ODK with which this Makefile was generated,         not the version of the ODK you are running)
-ROBOT version (ODK): 
-ROBOT version 1.9.0
-robot --catalog catalog-v001.xml verify  --catalog catalog-v001.xml -i swo-edit.owl --queries ../sparql/owldef-self-reference-violation.sparql ../sparql/iri-range-violation.sparql ../sparql/label-with-iri-violation.sparql -O reports
-PASS Rule ../sparql/owldef-self-reference-violation.sparql: 0 violation(s)
-PASS Rule ../sparql/iri-range-violation.sparql: 0 violation(s)
-PASS Rule ../sparql/label-with-iri-violation.sparql: 0 violation(s)
-robot --catalog catalog-v001.xml remove --input swo-edit.owl --select imports --trim false \
-	merge   -i components/swo-external.owl -o tmp/merged-swo-edit.owl
-robot --catalog catalog-v001.xml report -i tmp/merged-swo-edit.owl -l true  --fail-on None --base-iri http://www.ebi.ac.uk/swo/SWO_ --print 5 -o reports/swo-edit.owl-obo-report.tsv
-Violations: 12
------------------
-ERROR:      1
-WARN:       4
-INFO:       7
+java.io.IOException: OBO STRUCTURE ERROR ontology cannot be saved in OBO format. Please use '--check true' to see cause.
+	at org.obolibrary.robot.IOHelper.saveOntologyFile(IOHelper.java:1754)
+	at org.obolibrary.robot.IOHelper.saveOntology(IOHelper.java:846)
+	at org.obolibrary.robot.CommandLineHelper.maybeSaveOutput(CommandLineHelper.java:667)
+	at org.obolibrary.robot.ConvertCommand.execute(ConvertCommand.java:141)
+	at org.obolibrary.robot.CommandManager.executeCommand(CommandManager.java:244)
+	at org.obolibrary.robot.CommandManager.execute(CommandManager.java:188)
+	at org.obolibrary.robot.CommandManager.main(CommandManager.java:135)
+	at org.obolibrary.robot.CommandLineInterface.main(CommandLineInterface.java:61)
+ URL for service jar:file:/home/allyson/github/FAIRterminology/build/robot.jar!/META-INF/services/org.semanticweb.owlapi.model.OWLDataFactory
+DEBUG Loading URL for service jar:file:/home/allyson/github/FAIRterminology/build/robot.jar!/META-INF/services/org.semanticweb.owlapi.model.OWLDataFactory
+DEBUG Loading URL for service jar:file:/home/allyson/github/FAIRterminology/build/robot.jar!/META-INF/services/org.semanticweb.owlapi.model.OWLDataFactory
+DEBUG Injecting object uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl@2cc44ad
+DEBUG Loading file META-INF/services/org.semanticweb.owlapi.model.OWLOntologyIRIMapper
+DEBUG No files found for META-INF/services/org.semanticweb.owlapi.model.OWLOntologyIRIMapper
+DEBUG Injecting values [[]] on method public void uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.setIRIMappers(java.util.Set).
+DEBUG Loading file META-INF/services/org.semanticweb.owlapi.io.OWLParserFactory
+DEBUG Loading URL for service jar:file:/home/allyson/github/FAIRterminology/build/robot.jar!/META-INF/services/org.semanticweb.owlapi.io.OWLParserFactory
+DEBUG Loading URL for service jar:file:/home/allyson/github/FAIRterminology/build/robot.jar!/META-INF/services/org.semanticweb.owlapi.io.OWLParserFactory
+DEBUG Loading URL for service jar:file:/home/allyson/github/FAIRterminology/build/robot.jar!/META-INF/services/org.semanticweb.owlapi.io.OWLParserFactory
+DEBUG Injecting values [[org.semanticweb.owlapi.rio.RioRDFXMLParserFactory@35e5d0e5, org.semanticweb.owlapi.rio.RioTrigParserFactory@4233e892, org.semanticweb.owlapi.rdf.turtle.parser.TurtleOntologyParserFactory@19648c40, org.semanticweb.owlapi.krss2.parser.KRSS2OWLParserFactory@1d131e1b, org.semanticweb.owlapi.rio.RioJsonLDParserFactory@2d36e77e, org.semanticweb.owlapi.rio.RioTurtleParserFactory@58fb7731, org.semanticweb.owlapi.rio.RioBinaryRdfParserFactory@2dd29a59, org.semanticweb.owlapi.rio.RioRDFaParserFactory@2101b44a, org.semanticweb.owlapi.oboformat.OBOFormatOWLAPIParserFactory@18bc345, org.semanticweb.owlapi.rio.RioJsonParserFactory@8c11eee, org.semanticweb.owlapi.rio.RioNQuadsParserFactory@4566d049, org.semanticweb.owlapi.rio.RioNTriplesParserFactory@ccb4b1b, org.semanticweb.owlapi.manchestersyntax.parser.ManchesterOWLSyntaxOntologyParserFactory@64ba3208, org.semanticweb.owlapi.functional.parser.OWLFunctionalSyntaxOWLParserFactory@6f152006, org.semanticweb.owlapi.rio.RioTrixParserFactory@522a32b1, org.semanticweb.owlapi.rdf.rdfxml.parser.RDFXMLParserFactory@4983159f, org.semanticweb.owlapi.rio.RioN3ParserFactory@5829e4f4, org.semanticweb.owlapi.owlxml.parser.OWLXMLParserFactory@4b2a01d4]] on method public void uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.setOntologyParsers(java.util.Set).
+DEBUG Loading file META-INF/services/org.semanticweb.owlapi.model.OWLOntologyFactory
+DEBUG Loading URL for service jar:file:/home/allyson/github/FAIRterminology/build/robot.jar!/META-INF/services/org.semanticweb.owlapi.model.OWLOntologyFactory
+DEBUG Loading URL for service jar:file:/home/allyson/github/FAIRterminology/build/robot.jar!/META-INF/services/org.semanticweb.owlapi.model.OWLOntologyFactory
+DEBUG Loading URL for service jar:file:/home/allyson/github/FAIRterminology/build/robot.jar!/META-INF/services/org.semanticweb.owlapi.model.OWLOntologyFactory
+DEBUG Injecting values [[uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl@6c5945a7]] on method public void uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.setOntologyFactories(java.util.Set).
+DEBUG Loading file META-INF/services/org.semanticweb.owlapi.model.OWLStorerFactory
+DEBUG Loading URL for service jar:file:/home/allyson/github/FAIRterminology/build/robot.jar!/META-INF/services/org.semanticweb.owlapi.model.OWLStorerFactory
+DEBUG Loading URL for service jar:file:/home/allyson/github/FAIRterminology/build/robot.jar!/META-INF/services/org.semanticweb.owlapi.model.OWLStorerFactory
+DEBUG Loading URL for service jar:file:/home/allyson/github/FAIRterminology/build/robot.jar!/META-INF/services/org.semanticweb.owlapi.model.OWLStorerFactory
+DEBUG Injecting values [[org.semanticweb.owlapi.rio.RioBinaryRdfStorerFactory@14d14731, org.semanticweb.owlapi.rio.RioRDFXMLStorerFactory@31e4bb20, org.semanticweb.owlapi.rio.RioTurtleStorerFactory@758a34ce, org.semanticweb.owlapi.rio.RioNQuadsStorerFactory@33aeca0b, org.semanticweb.owlapi.dlsyntax.renderer.DLSyntaxStorerFactory@19553973, org.semanticweb.owlapi.functional.renderer.FunctionalSyntaxStorerFactory@1af687fe, org.semanticweb.owlapi.krss2.renderer.KRSS2OWLSyntaxStorerFactory@47a5b70d, org.semanticweb.owlapi.rio.RioTrigStorerFactory@62f68dff, org.semanticweb.owlapi.rio.RioJsonStorerFactory@3c989952, org.semanticweb.owlapi.rio.RioJsonLDStorerFactory@3f07b12c, org.semanticweb.owlapi.oboformat.OBOFormatStorerFactory@7ce97ee5, org.semanticweb.owlapi.latex.renderer.LatexStorerFactory@bf1ec20, org.semanticweb.owlapi.dlsyntax.renderer.DLSyntaxHTMLStorerFactory@b7838a9, org.semanticweb.owlapi.rio.RioTrixStorerFactory@4bc28c33, org.semanticweb.owlapi.owlxml.renderer.OWLXMLStorerFactory@5b529706, org.semanticweb.owlapi.manchestersyntax.renderer.ManchesterSyntaxStorerFactory@5a411614, org.semanticweb.owlapi.rio.RioNTriplesStorerFactory@e98770d, org.semanticweb.owlapi.rdf.turtle.renderer.TurtleStorerFactory@5286c33a, org.semanticweb.owlapi.rio.RioN3StorerFactory@5d1659ea, org.semanticweb.owlapi.rdf.rdfxml.renderer.RDFXMLStorerFactory@17cdf2d0]] on method public void uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.setOntologyStorers(java.util.Set).
+DEBUG Parsed: 10000 triples
+DEBUG Parsed: 20000 triples
+DEBUG Parsed: 30000 triples
+DEBUG 1000: Annotations Cache stats: CacheStats{hitCount=294, missCount=706, loadSuccessCount=706, loadFailureCount=0, totalLoadTime=400380, evictionCount=194, evictionWeight=194}
+DEBUG Total number of triples: 35598
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000085> Variable(<urn:swrl#e>) Variable(<urn:swrl#d>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl#e>) Variable(<urn:swrl#d>))
+DEBUG list: ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000034> Variable(<urn:swrl#d>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002578> Variable(<urn:swrl#eff>) Variable(<urn:swrl#mf2>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002578> Variable(<urn:swrl#mf>) Variable(<urn:swrl#mf2>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002025> Variable(<urn:swrl#mf>) Variable(<urn:swrl#eff>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000091> Variable(<urn:swrl#e>) Variable(<urn:swrl#d>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl#e>) Variable(<urn:swrl#d>))
+DEBUG list: ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000016> Variable(<urn:swrl#d>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002630> Variable(<urn:swrl#A>) Variable(<urn:swrl#D>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002352> Variable(<urn:swrl#B>) Variable(<urn:swrl#C>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002333> Variable(<urn:swrl#A>) Variable(<urn:swrl#B>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002014> Variable(<urn:swrl#D>) Variable(<urn:swrl#C>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0019001> Variable(<urn:swrl:var#x>) Variable(<urn:swrl:var#z>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002212> Variable(<urn:swrl:var#x>) Variable(<urn:swrl:var#y>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0019002> Variable(<urn:swrl:var#y>) Variable(<urn:swrl:var#z>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002629> Variable(<urn:swrl#A>) Variable(<urn:swrl#D>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002352> Variable(<urn:swrl#B>) Variable(<urn:swrl#C>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002333> Variable(<urn:swrl#A>) Variable(<urn:swrl#B>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002015> Variable(<urn:swrl#D>) Variable(<urn:swrl#C>))
+DEBUG list: ClassAtom(owl:Nothing Variable(<urn:swrl#y>))
+DEBUG list: ClassAtom(owl:Nothing Variable(<urn:swrl#x>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002131> Variable(<urn:swrl#x>) Variable(<urn:swrl#y>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002404> Variable(<urn:swrl#x>) Variable(<urn:swrl#y>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002327> Variable(<urn:swrl#x>) Variable(<urn:swrl#z>))
+DEBUG list: ClassAtom(<http://purl.obolibrary.org/obo/GO_0003674> Variable(<urn:swrl#y>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002327> Variable(<urn:swrl#x>) Variable(<urn:swrl#y>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/BFO_0000051> Variable(<urn:swrl#y>) Variable(<urn:swrl#z>))
+DEBUG list: ClassAtom(owl:Nothing Variable(<urn:swrl#y>))
+DEBUG list: ClassAtom(owl:Nothing Variable(<urn:swrl#x>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002131> Variable(<urn:swrl#x>) Variable(<urn:swrl#y>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002411> Variable(<urn:swrl#x>) Variable(<urn:swrl#y>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002263> Variable(<urn:swrl:var#x>) Variable(<urn:swrl:var#z>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002411> Variable(<urn:swrl:var#y>) Variable(<urn:swrl:var#z>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002264> Variable(<urn:swrl:var#x>) Variable(<urn:swrl:var#y>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000086> Variable(<urn:swrl#e>) Variable(<urn:swrl#d>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl#e>) Variable(<urn:swrl#d>))
+DEBUG list: ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000019> Variable(<urn:swrl#d>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002233> Variable(<urn:swrl#mf>) Variable(<urn:swrl#in>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002025> Variable(<urn:swrl#mf>) Variable(<urn:swrl#eff>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002233> Variable(<urn:swrl#eff>) Variable(<urn:swrl#in>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002212> Variable(<urn:swrl#x>) Variable(<urn:swrl#z>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002212> Variable(<urn:swrl#x>) Variable(<urn:swrl#y>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002213> Variable(<urn:swrl#y>) Variable(<urn:swrl#z>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002233> Variable(<http://purl.obolibrary.org/obo/ro.owl#x>) Variable(<http://purl.obolibrary.org/obo/ro.owl#z>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002327> Variable(<http://purl.obolibrary.org/obo/ro.owl#z>) Variable(<http://purl.obolibrary.org/obo/ro.owl#y>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002578> Variable(<http://purl.obolibrary.org/obo/ro.owl#x>) Variable(<http://purl.obolibrary.org/obo/ro.owl#y>))
+DEBUG list: ClassAtom(<http://purl.obolibrary.org/obo/GO_0003674> Variable(<http://purl.obolibrary.org/obo/ro.owl#x>))
+DEBUG list: ClassAtom(<http://purl.obolibrary.org/obo/GO_0003674> Variable(<http://purl.obolibrary.org/obo/ro.owl#y>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002629> Variable(<urn:swrl#eff>) Variable(<urn:swrl#mf2>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002025> Variable(<urn:swrl#mf>) Variable(<urn:swrl#eff>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002629> Variable(<urn:swrl#mf>) Variable(<urn:swrl#mf2>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000087> Variable(<urn:swrl#e>) Variable(<urn:swrl#d>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl#e>) Variable(<urn:swrl#d>))
+DEBUG list: ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000023> Variable(<urn:swrl#d>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002233> Variable(<urn:swrl#eff>) Variable(<urn:swrl#in>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002025> Variable(<urn:swrl#mf>) Variable(<urn:swrl#eff>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002233> Variable(<urn:swrl#mf>) Variable(<urn:swrl#in>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002331> Variable(<urn:swrl#x>) Variable(<urn:swrl#z>))
+DEBUG list: ClassAtom(<http://purl.obolibrary.org/obo/GO_0008150> Variable(<urn:swrl#z>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/BFO_0000050> Variable(<urn:swrl#y>) Variable(<urn:swrl#z>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002327> Variable(<urn:swrl#x>) Variable(<urn:swrl#y>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002212> Variable(<urn:swrl#x>) Variable(<urn:swrl#z>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002212> Variable(<urn:swrl#y>) Variable(<urn:swrl#z>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002213> Variable(<urn:swrl#x>) Variable(<urn:swrl#y>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002018> Variable(<urn:swrl#w>) Variable(<urn:swrl#p>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002180> Variable(<urn:swrl#w>) Variable(<urn:swrl#p>))
+DEBUG list: ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000015> Variable(<urn:swrl#w>))
+DEBUG list: ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000015> Variable(<urn:swrl#p>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002447> Variable(<urn:swrl#g1>) Variable(<urn:swrl#g2>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002578> Variable(<urn:swrl#a1>) Variable(<urn:swrl#a2>))
+DEBUG list: ClassAtom(<http://purl.obolibrary.org/obo/GO_0016301> Variable(<urn:swrl#a1>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002333> Variable(<urn:swrl#a1>) Variable(<urn:swrl#g1>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002333> Variable(<urn:swrl#a2>) Variable(<urn:swrl#g2>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002578> Variable(<urn:swrl#A>) Variable(<urn:swrl#D>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002352> Variable(<urn:swrl#B>) Variable(<urn:swrl#C>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002333> Variable(<urn:swrl#A>) Variable(<urn:swrl#B>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002013> Variable(<urn:swrl#D>) Variable(<urn:swrl#C>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002630> Variable(<urn:swrl#eff>) Variable(<urn:swrl#mf2>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002630> Variable(<urn:swrl#mf>) Variable(<urn:swrl#mf2>))
+DEBUG list: ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002025> Variable(<urn:swrl#mf>) Variable(<urn:swrl#eff>))
+DEBUG list: <http://purl.obolibrary.org/obo/NCBITaxon_9606>
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0000245>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000226>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000227>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000228>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000229>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000120>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000121>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000122>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000123>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000124>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000125>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000423>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000428>
+DEBUG list: <http://www.ontodm.com/OntoDM-core/OntoDM_000087>
+DEBUG list: <http://www.ontodm.com/OntoDM-core/OntoDM_000092>
+DEBUG list: <http://www.ontodm.com/OntoDM-core/OntoDM_000235>
+DEBUG list: <http://www.ontodm.com/OntoDM-core/OntoDM_000264>
+DEBUG list: <http://www.ebi.ac.uk/swo/maturity/SWO_9000062>
+DEBUG list: <http://www.ebi.ac.uk/swo/maturity/SWO_9000063>
+DEBUG list: <http://www.ebi.ac.uk/swo/maturity/SWO_9000064>
+DEBUG list: <http://www.ebi.ac.uk/swo/maturity/SWO_9000065>
+DEBUG list: <http://www.ebi.ac.uk/swo/maturity/SWO_9000066>
+DEBUG list: <http://www.ontodm.com/OntoDM-core/OntoDM_000072>
+DEBUG list: <http://www.ontodm.com/OntoDM-core/OntoDM_000160>
+DEBUG list: <http://www.ontodm.com/OntoDM-core/OntoDM_000192>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000004>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000020>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000031>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000050>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002215>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0000052>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000050>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002215>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000050>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000051>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000050>
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000325>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000570>)
+DEBUG list: <http://edamontology.org/data_2968>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002215>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000050>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002212>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002212>
+DEBUG list: <http://purl.obolibrary.org/obo/NCBITaxon_10239>
+DEBUG list: <http://purl.obolibrary.org/obo/NCBITaxon_2>
+DEBUG list: <http://purl.obolibrary.org/obo/NCBITaxon_2157>
+DEBUG list: <http://purl.obolibrary.org/obo/NCBITaxon_2759>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000449>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000682>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_9001002> <http://www.ebi.ac.uk/swo/SWO_9000032>)
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_9001002> <http://www.ebi.ac.uk/swo/license/SWO_1000059>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000084>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100054>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> ObjectUnionOf(<http://www.ebi.ac.uk/swo/SWO_0000084> <http://www.ebi.ac.uk/swo/SWO_1100054>))
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000409>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000516>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000034>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000040>
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/OBI_0000112>)
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000011>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000051>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0000057>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000592>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000695>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2305>)
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0200111>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002327>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002418>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002327>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002411>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_9001002> <http://www.ebi.ac.uk/swo/license/SWO_1000060>)
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_9001002> <http://www.ebi.ac.uk/swo/license/SWO_1000136>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://edamontology.org/data_2603>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://edamontology.org/data_2603>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://edamontology.org/data_2603>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000406>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000325>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000253>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000469>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2330>)
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0000011>
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0000684>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000406>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000253>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100081>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000357>)
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/OBI_0000023>)
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0200179>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000010>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000340>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000614>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100091>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100100>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000015>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000009>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000001>
+DEBUG list: ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#has_part> <http://www.ebi.ac.uk/swo/SWO_0000001>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000010>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_3162>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000003>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000046>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000011>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0200111>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000010>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000002>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000002>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000001>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000001>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000010>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000096>
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0000011>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000010>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000096>
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectUnionOf(<http://purl.obolibrary.org/obo/IAO_0000010> <http://purl.obolibrary.org/obo/IAO_0000096>))
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0200111>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100007>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100011>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002578>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002578>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002211>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002025>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_3162>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100081>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000012>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000575>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000467>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000013>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0200111>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000011>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000013>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000315>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000715>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100004>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100072>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000013>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2330>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000023>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_1100122>)
+DEBUG list: <http://edamontology.org/data_2968>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000084>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000023>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000014>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000014>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000351>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000015>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000136>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000290>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000016>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2332>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://edamontology.org/data_2968>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100081>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100081>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000040>
+DEBUG list: ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002351> <http://purl.obolibrary.org/obo/OBI_0100051>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2330>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2330>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000406>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100008>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000103>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000226>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000227>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000228>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000229>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000103>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000226>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000227>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000228>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000229>
+DEBUG list: <http://purl.obolibrary.org/obo/OMO_0001000>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002327>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002305>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002327>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002304>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002327>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0004046>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002327>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0004047>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002327>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000051>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000059>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000060>
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0200111>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000286>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100008>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000023>)
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000408>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2305>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100008>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000299>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000318>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000340>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000084>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000059>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000084>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000059>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000005>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000010>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000084>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000059>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000318>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000340>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000618>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000010>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000084>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100035>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000010>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000084>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000059>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000015>)
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002215>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002212>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002215>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002211>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100081>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2330>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000708>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000575>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000340>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100102>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000363>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://purl.obolibrary.org/obo/NCBITaxon_9606>
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0000245>
+DEBUG list: ObjectUnionOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/OBI_0000245>)
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/OBI_0000018>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000467>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000553>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000051>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002215>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000084>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100054>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000057>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000059>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000084>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100054>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000057>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000059>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: ObjectComplementOf(<http://www.ebi.ac.uk/swo/license/SWO_1000046>)
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: ObjectComplementOf(<http://www.ebi.ac.uk/swo/license/SWO_1000046>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000575>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000406>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000575>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000051>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000050>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000050>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000050>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000051>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002131>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002131>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000050>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000409>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000018>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> ObjectIntersectionOf(<http://www.ebi.ac.uk/swo/SWO_0000409> <http://www.ebi.ac.uk/swo/data/SWO_3000018>))
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000005>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000010>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002215>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002213>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_10000037>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_9000059>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000002>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_9001002> <http://www.ebi.ac.uk/swo/SWO_9000020>)
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_9001002> <http://www.ebi.ac.uk/swo/SWO_9000030>)
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_9001002> <http://www.ebi.ac.uk/swo/license/SWO_10000038>)
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_10000037>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_9000059>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_9001002> ObjectUnionOf(<http://www.ebi.ac.uk/swo/license/SWO_10000037> <http://www.ebi.ac.uk/swo/license/SWO_9000059>))
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000043>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/license/SWO_1000048> ObjectUnionOf(<http://www.ebi.ac.uk/swo/license/SWO_1000046> <http://www.ebi.ac.uk/swo/license/SWO_1000047>))
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000250>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000281>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000575>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000030>
+DEBUG list: ObjectSomeValuesFrom(ObjectInverseOf(<http://www.ebi.ac.uk/swo/has_license>) <http://www.ebi.ac.uk/swo/SWO_0000001>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000002>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000004>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000004>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000002>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000003>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000046>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000046>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000004>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000027>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000004>)
+DEBUG list: <http://edamontology.org/data_0582>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000038>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000003>)
+DEBUG list: <http://edamontology.org/data_0582>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000038>)
+DEBUG list: <http://edamontology.org/data_0582>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000039>)
+DEBUG list: <http://edamontology.org/data_0582>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000007>)
+DEBUG list: <http://edamontology.org/data_0582>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000039>)
+DEBUG list: <http://edamontology.org/data_0582>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000007>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000003>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000084>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000059>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002418> <http://purl.obolibrary.org/obo/BFO_0000015>))
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002418> <http://purl.obolibrary.org/obo/BFO_0000015>)))
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000073>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000019>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_3162>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000019>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000467>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000575>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000037>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000179>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000180>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000183>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000184>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000015>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000263>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000321>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000070>
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000008>)
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/OBI_0000648>)
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0200178>)
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000046>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000047>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000013>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000277>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100041>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/OBI_0000648>)
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0200178>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000240>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000119>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2330>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000684>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000003>)
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002327>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002411>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002233>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002327>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002411>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002333>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000129>
+DEBUG list: ObjectHasValue(<http://www.ebi.ac.uk/swo/SWO_0000300> <http://www.ebi.ac.uk/swo/version/SWO_2000007>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000001>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000129>
+DEBUG list: ObjectHasValue(<http://www.ebi.ac.uk/swo/SWO_0000300> <http://www.ebi.ac.uk/swo/version/SWO_2000007>)
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004000> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000129> ObjectHasValue(<http://www.ebi.ac.uk/swo/SWO_0000300> <http://www.ebi.ac.uk/swo/version/SWO_2000007>)))
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000363>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000303>)
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000066>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_1929>)
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000066>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_1936>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000303>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000518>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_1929>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000436>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000074>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2330>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://edamontology.org/data_2968>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000084>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000575>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2331>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000023>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_1929>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000001>
+DEBUG list: ObjectHasValue(<http://www.ebi.ac.uk/swo/SWO_0004004> <http://www.ebi.ac.uk/efo/swo/SWO_0000023>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000548>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2330>)
+DEBUG list: <http://edamontology.org/data_1636>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000498>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000575>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2331>)
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002213>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0019002>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002212>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0019001>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002211>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0019000>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002213>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0019001>
+DEBUG list: <http://edamontology.org/data_2603>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000084>)
+DEBUG list: <http://edamontology.org/data_2603>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000084>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2330>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100081>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2330>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000253>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000015>)
+DEBUG list: <http://edamontology.org/data_2968>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2330>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2330>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000640>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000351>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000232>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000575>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2331>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000492>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000001>
+DEBUG list: ObjectHasValue(<http://www.ebi.ac.uk/swo/SWO_0004004> <http://www.ebi.ac.uk/efo/swo/SWO_0000073>)
+DEBUG list: <http://edamontology.org/data_2968>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2330>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_3162>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_3162>)
+DEBUG list: <http://edamontology.org/data_1636>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://edamontology.org/data_2968>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000381>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000575>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2331>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000067>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000136>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000242>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100081>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000340>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000614>
+DEBUG list: <http://edamontology.org/data_2968>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000011>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000084>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100054>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000057>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000059>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000340>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000614>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000502>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000010>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://edamontology.org/data_2603>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000408>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://edamontology.org/data_2968>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://edamontology.org/data_2968>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000084>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2330>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000302>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000302>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000439>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2330>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000406>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100081>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2330>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://edamontology.org/format_2585>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000378>
+DEBUG list: <http://edamontology.org/format_2585>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000378>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000595>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000715>
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0200111>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0200111>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000467>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://edamontology.org/data_1636>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0200111>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0200111>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100074>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000005>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000016>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://edamontology.org/data_2968>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://edamontology.org/data_2968>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://edamontology.org/data_2968>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0000245>
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/OBI_0000014>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000016>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000016>)
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000084>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100054>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000057>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000059>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000340>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100102>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000631>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100097>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000221>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000277>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000340>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000595>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100011>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100102>
+DEBUG list: <http://edamontology.org/data_1636>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000084>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000059>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100011>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100102>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000409>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000061>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000629>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100041>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100096>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000524>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100009>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100054>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000057>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000648>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000409>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000061>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000575>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000172>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100102>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000073>)
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000010>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000084>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000059>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000010>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000715>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100102>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000336>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100103>
+DEBUG list: ObjectUnionOf(<http://www.ebi.ac.uk/swo/SWO_0000336> <http://www.ebi.ac.uk/swo/SWO_1100103>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000410>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000420>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000421>
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/OBI_0000648>)
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0200178>)
+DEBUG list: <http://edamontology.org/format_2305>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000409>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0200111>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100074>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000050>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000062>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000050>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000063>
+DEBUG list: <http://purl.obolibrary.org/obo/NCBITaxon_9606>
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0000245>
+DEBUG list: ObjectUnionOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/OBI_0000245>)
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/OBI_0000571>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://edamontology.org/format_2332>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000011>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://edamontology.org/format_1929>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000409>
+DEBUG list: <http://edamontology.org/data_2968>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000575>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: ObjectUnionOf(<http://www.ebi.ac.uk/swo/SWO_0000575> ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>))
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000267>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100102>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://edamontology.org/data_2968>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000575>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: ObjectUnionOf(<http://www.ebi.ac.uk/swo/SWO_0000575> ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>))
+DEBUG list: <http://edamontology.org/format_1929>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000409>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000084>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000059>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000684>)
+DEBUG list: <http://edamontology.org/data_1636>
+DEBUG list: <http://edamontology.org/format_1910>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000493>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000569>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> ObjectUnionOf(<http://edamontology.org/format_1910> <http://www.ebi.ac.uk/swo/SWO_0000493> <http://www.ebi.ac.uk/swo/SWO_0000569>))
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000531>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100102>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100081>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000251>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000490>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000005>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000010>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_3162>)
+DEBUG list: ObjectIntersectionOf(<http://www.ebi.ac.uk/swo/SWO_1100080> ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_3162>))
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002327>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002213>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002331>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002213>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002327>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002211>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002331>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002211>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002331>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002212>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002327>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002212>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002327>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002630>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002333>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002327>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002211>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002333>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002327>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002629>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002333>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000002>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000120>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000121>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000122>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000123>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000124>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000125>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000423>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000428>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000098>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000001>
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000061>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000061>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000019>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000061>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000019>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000062>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000019>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000062>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000062>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000019>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000060>)
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000040>
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0000094>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000065>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000062>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000062>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000062>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000064>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000063>)
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000052>
+DEBUG list: <http://edamontology.org/format_2585>
+DEBUG list: <http://edamontology.org/format_3158>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000049>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000050>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000051>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000055>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> ObjectUnionOf(<http://edamontology.org/format_2585> <http://edamontology.org/format_3158> <http://www.ebi.ac.uk/swo/data/SWO_3000049> <http://www.ebi.ac.uk/swo/data/SWO_3000050> <http://www.ebi.ac.uk/swo/data/SWO_3000051> <http://www.ebi.ac.uk/swo/data/SWO_3000055>))
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000029>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000005>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000007>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000034>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000034>)
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000002>
+DEBUG list: <http://www.ebi.ac.uk/swo/license/SWO_1000005>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000575>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000467>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000003>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2585>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2585>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_3239>)
+DEBUG list: <http://edamontology.org/data_1636>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000016>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000277>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100041>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000031>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000031>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000006>)
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000575>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000038>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000101>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000038>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000101>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000032>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000032>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000001>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000023>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000018>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000016>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000012>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000009>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000023>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000019>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000015>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000015>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000017>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000011>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000011>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000009>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000010>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000010>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000009>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000032>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000022>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000017>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000022>)
+DEBUG list: <http://edamontology.org/data_0582>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2549>)
+DEBUG list: <http://edamontology.org/data_0582>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2549>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000001>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000001>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000033>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000033>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000709>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000484>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2330>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000036>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000151>)
+DEBUG list: <http://edamontology.org/data_0582>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2330>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000098>
+DEBUG list: ObjectHasValue(<http://www.ebi.ac.uk/swo/SWO_0004004> <http://www.ebi.ac.uk/efo/swo/SWO_0000023>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000098>
+DEBUG list: ObjectHasValue(<http://www.ebi.ac.uk/swo/SWO_0004004> <http://www.ebi.ac.uk/efo/swo/SWO_0000023>)
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000065>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_1929>)
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000065>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_1936>)
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000065>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_1936>)
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000065>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_1929>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000575>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2331>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000406>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000242>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000160>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000408>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000406>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000408>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000211>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000374>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100097>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100102>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000575>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://edamontology.org/data_1636>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000084>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000508>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000340>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000614>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000011>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000011>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000340>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000589>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000644>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000519>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0000011>
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0000100>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000490>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000560>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000715>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100011>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://edamontology.org/data_2968>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000084>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000024>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2305>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_3003>)
+DEBUG list: <http://edamontology.org/data_1636>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_3003>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2305>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000204>)
+DEBUG list: <http://purl.obolibrary.org/obo/NCBITaxon_9606>
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0000245>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://edamontology.org/data_2968>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000084>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000301>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000069>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000023>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000406>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2330>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2330>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000249>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000061>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000084>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000059>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> ObjectUnionOf(<http://www.ebi.ac.uk/swo/SWO_0000084> <http://www.ebi.ac.uk/swo/data/SWO_3000059>))
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000553>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100081>
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0200111>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0200111>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000013>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000306>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000391>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100041>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100096>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000017>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100081>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100054>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000057>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> ObjectUnionOf(<http://www.ebi.ac.uk/swo/SWO_1100054> <http://www.ebi.ac.uk/swo/data/SWO_3000057>))
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000267>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000552>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000011>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000255>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000320>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000011>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000084>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000059>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100099>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000062>)
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000062>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100081>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000084>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000059>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000323>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000340>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000315>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000478>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000673>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000680>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000233>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000084>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100035>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000084>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100035>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000553>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000648>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000277>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100041>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2330>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2330>)
+DEBUG list: <http://edamontology.org/data_1636>
+DEBUG list: <http://edamontology.org/data_2968>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2330>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://edamontology.org/format_2305>
+DEBUG list: <http://edamontology.org/format_3003>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000648>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000013>
+DEBUG list: <http://purl.obolibrary.org/obo/NCBITaxon_9606>
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0000245>
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0200111>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000615>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000687>
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0200111>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000011>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000490>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100011>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100078>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100102>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000409>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://edamontology.org/data_1636>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000406>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000339>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100102>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000573>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000575>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0200111>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100074>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000332>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000589>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100034>
+DEBUG list: <http://edamontology.org/data_2968>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000408>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000575>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000715>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100011>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100054>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000057>
+DEBUG list: <http://edamontology.org/format_1929>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100054>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000057>
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0000047>
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0100051>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000566>)
+DEBUG list: ObjectIntersectionOf(<http://www.ebi.ac.uk/swo/SWO_1100080> ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000566>))
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000084>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000409>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000059>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000276>
+DEBUG list: <http://www.ontodm.com/OntoDM-core/OntoDM_000072>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://edamontology.org/data_1636>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000626>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100013>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100123>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000282>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000016>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://edamontology.org/data_2968>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000084>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000059>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000386>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100058>
+DEBUG list: <http://purl.obolibrary.org/obo/OBI_0200111>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000011>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000015>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000016>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000017>
+DEBUG list: <http://www.ebi.ac.uk/swo/objective/SWO_7000018>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000339>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000340>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000374>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100102>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000015>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000233>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000084>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100126>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000059>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> ObjectUnionOf(<http://www.ebi.ac.uk/swo/SWO_0000084> <http://www.ebi.ac.uk/swo/SWO_1100126> <http://www.ebi.ac.uk/swo/data/SWO_3000059>))
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectAllValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000050>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002215>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002327>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002017>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002327>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000051>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002331>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000050>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002327>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000050>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002314>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000050>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0000052>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000050>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000084>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000059>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000602>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000715>
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000040>
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000059> <http://purl.obolibrary.org/obo/IAO_0000030>))
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/OBI_0000648>)
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0200178>)
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/OBI_0000648>)
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0200178>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000299>)
+DEBUG list: <http://edamontology.org/data_2968>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2332>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000198>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_1929>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000406>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://edamontology.org/data_2968>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000084>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000024>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000406>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000743>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000036>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000554>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000064>
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/IAO_0000005>)
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002215>
+DEBUG list: <http://purl.obolibrary.org/obo/RO_0002233>
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000067>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_1936>)
+DEBUG list: <http://www.ebi.ac.uk/swo/data/SWO_3000067>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_1929>)
+DEBUG list: <http://purl.obolibrary.org/obo/BFO_0000040>
+DEBUG list: ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0000659>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000071>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_3003>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000146>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000147>
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000056>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000017>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/swo/organization/SWO_9000017>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000001>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0040005> <http://www.ebi.ac.uk/swo/SWO_0000139>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2585>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2585>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2585>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2585>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000025>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000064>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000098>
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000001>
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2585>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2585>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2585>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2585>)
+DEBUG list: <http://www.ebi.ac.uk/swo/organization/SWO_9000055>
+DEBUG list: ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0000057> <http://www.ebi.ac.uk/efo/swo/SWO_0000300>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000575>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2331>)
+DEBUG list: <http://edamontology.org/data_2603>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000406>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://purl.obolibrary.org/obo/IAO_0000098>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_0000661>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/data/SWO_3000008>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000684>)
+DEBUG list: <http://www.ebi.ac.uk/swo/SWO_1100080>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://edamontology.org/format_2330>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG list: <http://purl.obolibrary.org/obo/IAO_0000027>
+DEBUG list: ObjectSomeValuesFrom(<http://www.ebi.ac.uk/swo/SWO_0004002> <http://www.ebi.ac.uk/swo/SWO_0000409>)
+DEBUG Loaded OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/swo.owl>) VersionIRI(<http://purl.obolibrary.org/obo/swo/releases/2022-09-06/swo.owl>))
+INFO  Unparsed triple: http://www.ebi.ac.uk/efo/swo/SWO_0000023 -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> _:genid2147489157
+INFO  Unparsed triple: http://www.ebi.ac.uk/efo/swo/SWO_0000023 -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> _:genid2147489158
+INFO  Unparsed triple: http://www.ebi.ac.uk/efo/swo/SWO_0000290 -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> _:genid2147489159
+ERROR Input ontology contains 3 triple(s) that could not be parsed:
+ - <http://www.ebi.ac.uk/efo/swo/SWO_0000290> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid2147489159.
+ - <http://www.ebi.ac.uk/efo/swo/SWO_0000023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid2147489157.
+ - <http://www.ebi.ac.uk/efo/swo/SWO_0000023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid2147489158.
 
-First 5 violations:
-ERROR	misused_obsolete_label	obsolete object property	label	obsolete object property
-WARN	annotation_whitespace	is implemented by	definition	is implemented by is the relationship between an algorithm and a piece of software which includes an implementation of that software for use when the software is executed. 
-WARN	annotation_whitespace	is executed in	definition	is executed in defines the relationship between a software class and an appropriate process in the information processing hierarchy. Specifically, it allows the linking of a particular piece of software to a process of a particular purpose, 
-WARN	missing_definition	SWO definition	definition	
-WARN	missing_definition	is software for	definition	
-if [ true  = true ] && [ true  = true ]; then curl -L http://purl.obolibrary.org/obo/bfo.owl --create-dirs -o mirror/bfo.owl --retry 4 --max-time 200 &&\
-	robot --catalog catalog-v001.xml convert -i mirror/bfo.owl -o mirror-bfo.tmp.owl &&\
-	mv mirror-bfo.tmp.owl tmp/mirror-bfo.owl; fi
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   352  100   352    0     0   1475      0 --:--:-- --:--:-- --:--:--  1472
-100  154k  100  154k    0     0   265k      0 --:--:-- --:--:-- --:--:--  265k
-if [ true  = true ] && [ true  = true ] && [ -f tmp/mirror-bfo.owl ]; then if cmp -s tmp/mirror-bfo.owl mirror/bfo.owl ; then echo "Mirror identical, ignoring."; else echo "Mirrors different, updating." &&\
-	cp tmp/mirror-bfo.owl mirror/bfo.owl; fi; fi
-Mirror identical, ignoring.
-robot --catalog catalog-v001.xml query -f csv -i tmp/merged-swo-edit.owl --query ../sparql/terms.sparql tmp/pre_seed.txt.tmp &&\
-cat tmp/pre_seed.txt.tmp | sort | uniq >  tmp/pre_seed.txt
-if [ true  = true ]; then cat tmp/pre_seed.txt  | sort | uniq > tmp/seed.txt; fi
-if [ true  = true ]; then cat tmp/seed.txt imports/bfo_terms.txt | grep -v ^# | sort | uniq >  imports/bfo_terms_combined.txt; fi
-if [ true  = true ]; then robot --catalog catalog-v001.xml query -i mirror/bfo.owl --update ../sparql/preprocess-module.ru \
-	extract -T imports/bfo_terms_combined.txt --force true --copy-ontology-annotations true --individuals include --method BOT \
-	query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
-	annotate --ontology-iri http://purl.obolibrary.org/obo/swo/imports/bfo_import.owl annotate -V http://purl.obolibrary.org/obo/swo/releases/2022-09-01/imports/bfo_import.owl --annotation owl:versionInfo 2022-09-01 --output imports/bfo_import.owl.tmp.owl && mv imports/bfo_import.owl.tmp.owl imports/bfo_import.owl; fi
-if [ true  = true ] && [ true  = true ]; then curl -L http://purl.obolibrary.org/obo/iao.owl --create-dirs -o mirror/iao.owl --retry 4 --max-time 200 &&\
-	robot --catalog catalog-v001.xml convert -i mirror/iao.owl -o mirror-iao.tmp.owl &&\
-	mv mirror-iao.tmp.owl tmp/mirror-iao.owl; fi
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   356  100   356    0     0   1480      0 --:--:-- --:--:-- --:--:--  1477
-100  547k  100  547k    0     0   650k      0 --:--:-- --:--:-- --:--:--  650k
-if [ true  = true ] && [ true  = true ] && [ -f tmp/mirror-iao.owl ]; then if cmp -s tmp/mirror-iao.owl mirror/iao.owl ; then echo "Mirror identical, ignoring."; else echo "Mirrors different, updating." &&\
-	cp tmp/mirror-iao.owl mirror/iao.owl; fi; fi
-Mirror identical, ignoring.
-if [ true  = true ]; then cat tmp/seed.txt imports/iao_terms.txt | grep -v ^# | sort | uniq >  imports/iao_terms_combined.txt; fi
-if [ true  = true ]; then robot --catalog catalog-v001.xml query -i mirror/iao.owl --update ../sparql/preprocess-module.ru \
-	extract -T imports/iao_terms_combined.txt --force true --copy-ontology-annotations true --individuals include --method BOT \
-	query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
-	annotate --ontology-iri http://purl.obolibrary.org/obo/swo/imports/iao_import.owl annotate -V http://purl.obolibrary.org/obo/swo/releases/2022-09-01/imports/iao_import.owl --annotation owl:versionInfo 2022-09-01 --output imports/iao_import.owl.tmp.owl && mv imports/iao_import.owl.tmp.owl imports/iao_import.owl; fi
-if [ true  = true ] && [ true  = true ]; then curl -L http://purl.obolibrary.org/obo/obi.owl --create-dirs -o mirror/obi.owl --retry 4 --max-time 200 &&\
-	robot --catalog catalog-v001.xml convert -i mirror/obi.owl -o mirror-obi.tmp.owl &&\
-	mv mirror-obi.tmp.owl tmp/mirror-obi.owl; fi
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   339  100   339    0     0   1416      0 --:--:-- --:--:-- --:--:--  1418
- 12 8537k   12 1087k    0     0  1749k      0  0:00:04 --:--:--  0:00:04 1749k 73 8537k   73 6256k    0     0  3856k      0  0:00:02  0:00:01  0:00:01 5168k100 8537k  100 8537k    0     0  4140k      0  0:00:02  0:00:02 --:--:-- 5173k
-if [ true  = true ] && [ true  = true ] && [ -f tmp/mirror-obi.owl ]; then if cmp -s tmp/mirror-obi.owl mirror/obi.owl ; then echo "Mirror identical, ignoring."; else echo "Mirrors different, updating." &&\
-	cp tmp/mirror-obi.owl mirror/obi.owl; fi; fi
-Mirror identical, ignoring.
-if [ true  = true ]; then cat tmp/seed.txt imports/obi_terms.txt | grep -v ^# | sort | uniq >  imports/obi_terms_combined.txt; fi
-if [ true  = true ]; then robot --catalog catalog-v001.xml query -i mirror/obi.owl --update ../sparql/preprocess-module.ru \
-	extract -T imports/obi_terms_combined.txt --force true --copy-ontology-annotations true --individuals include --method BOT \
-	query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
-	annotate --ontology-iri http://purl.obolibrary.org/obo/swo/imports/obi_import.owl annotate -V http://purl.obolibrary.org/obo/swo/releases/2022-09-01/imports/obi_import.owl --annotation owl:versionInfo 2022-09-01 --output imports/obi_import.owl.tmp.owl && mv imports/obi_import.owl.tmp.owl imports/obi_import.owl; fi
-if [ true  = true ] && [ true  = true ]; then curl -L http://purl.obolibrary.org/obo/omo.owl --create-dirs -o mirror/omo.owl --retry 4 --max-time 200 &&\
-	robot --catalog catalog-v001.xml convert -i mirror/omo.owl -o mirror-omo.tmp.owl &&\
-	mv mirror-omo.tmp.owl tmp/mirror-omo.owl; fi
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   365  100   365    0     0   1670      0 --:--:-- --:--:-- --:--:--  1674
-  4 79275    4  3614    0     0   7117      0  0:00:11 --:--:--  0:00:11  7117100 79275  100 79275    0     0   143k      0 --:--:-- --:--:-- --:--:-- 2308k
-if [ true  = true ] && [ true  = true ] && [ -f tmp/mirror-omo.owl ]; then if cmp -s tmp/mirror-omo.owl mirror/omo.owl ; then echo "Mirror identical, ignoring."; else echo "Mirrors different, updating." &&\
-	cp tmp/mirror-omo.owl mirror/omo.owl; fi; fi
-Mirror identical, ignoring.
-if [ true  = true ]; then cat tmp/seed.txt imports/omo_terms.txt | grep -v ^# | sort | uniq >  imports/omo_terms_combined.txt; fi
-if [ true  = true ]; then robot --catalog catalog-v001.xml query -i mirror/omo.owl --update ../sparql/preprocess-module.ru \
-	extract -T imports/omo_terms_combined.txt --force true --copy-ontology-annotations true --individuals include --method BOT \
-	query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
-	annotate --ontology-iri http://purl.obolibrary.org/obo/swo/imports/omo_import.owl annotate -V http://purl.obolibrary.org/obo/swo/releases/2022-09-01/imports/omo_import.owl --annotation owl:versionInfo 2022-09-01 --output imports/omo_import.owl.tmp.owl && mv imports/omo_import.owl.tmp.owl imports/omo_import.owl; fi
-robot --catalog catalog-v001.xml merge --input swo-edit.owl \
-	reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
-	relax \
-	reduce -r ELK \
-	 annotate --ontology-iri http://purl.obolibrary.org/obo/swo/swo-full.owl annotate -V http://purl.obolibrary.org/obo/swo/releases/2022-09-01/swo-full.owl --annotation owl:versionInfo 2022-09-01 --output swo-full.owl.tmp.owl && mv swo-full.owl.tmp.owl swo-full.owl
-robot --catalog catalog-v001.xml annotate --input swo-full.owl --ontology-iri http://purl.obolibrary.org/obo/swo.owl annotate -V http://purl.obolibrary.org/obo/swo/releases/2022-09-01/swo.owl --annotation owl:versionInfo 2022-09-01 \
-	convert -o swo.owl.tmp.owl && mv swo.owl.tmp.owl swo.owl
-robot --catalog catalog-v001.xml merge -i swo.owl convert -f ofn -o tmp/validate.ofn
-robot --catalog catalog-v001.xml validate-profile --profile DL -i tmp/validate.ofn -o reports/validate_profile_owl2dl_swo.owl.txt || { cat reports/validate_profile_owl2dl_swo.owl.txt && exit 1; }
-PROFILE VIOLATION ERROR http://purl.obolibrary.org/obo/swo.owl violates profile DL
-For details see: http://robot.obolibrary.org/validate-profile#profile-violation-error
-Use the -vvv option to show the stack trace.
-Use the --help option to see usage information.
-OWL 2 DL Profile Report: Ontology and imports closure NOT in profile. The following violations are present:
-Use of reserved vocabulary for class IRI: owl:DeprecatedClass [SubClassOf(<http://kt.ijs.si/panovp/OntoDM#OntoDM_953101> owl:DeprecatedClass) in OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/swo.owl>) VersionIRI(<http://purl.obolibrary.org/obo/swo/releases/2022-09-01/swo.owl>))]
-make: *** [Makefile:144: reports/validate_profile_owl2dl_swo.owl.txt] Error 1
-rm imports/bfo_terms_combined.txt imports/iao_terms_combined.txt imports/obi_terms_combined.txt imports/omo_terms_combined.txt
-Please remember to update your ODK image from time to time: https://oboacademy.github.io/obook/howto/odk-update/.
+DEBUG Saving ontology as OBO Format with to IRI file:/home/allyson/github/swo/src/ontology/swo.obo.tmp.obo
+DEBUG Missing exception ID: OBO STRUCTURE ERROR ontology cannot be saved in OBO format. Please use '--check true' to see cause.
+OBO STRUCTURE ERROR ontology cannot be saved in OBO format. Please use '--check true' to see cause.
