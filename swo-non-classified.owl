@@ -617,6 +617,14 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch">
+        <rdfs:comment>Allyson Lister 14.9.22: Added as a temporary workaround with issues relating to equivalentClass axioms between IAO software and SWO software.</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -4435,7 +4443,6 @@ of this, different, term.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000010">
-        <owl:equivalentClass rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
         <obo:IAO_0000111 xml:lang="en">software</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -4448,6 +4455,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP: OBI</obo:IAO_0000119>
         <rdfs:label xml:lang="en">software</rdfs:label>
+        <skos:exactMatch>http://www.ebi.ac.uk/swo/SWO_0000001</skos:exactMatch>
     </owl:Class>
     
 
@@ -15664,6 +15672,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <obo:IAO_0000119>Robert Stevens</obo:IAO_0000119>
         <rdfs:comment>AL 7.9.22: There are some reasoning oddities associated with marking IAO and SWO software as equivalent; once these are sorted out, the equivalence statement will take the place of this current parent-child relationship.</rdfs:comment>
         <rdfs:label>software</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/IAO_0000010</skos:exactMatch>
     </owl:Class>
     
 
@@ -58220,118 +58229,6 @@ e.g.  if GP X enables ATPase coupled transporter activity&apos; and &apos;ATPase
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdfs:label>&apos;causally downstream of&apos; and &apos;overlaps&apos; should be disjoint properties (a SWRL rule is required because these are non-simple properties).</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002404"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdfs:label>&apos;causally upstream of&apos; and &apos;overlaps&apos; should be disjoint properties (a SWRL rule is required because these are non-simple properties).</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002411"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
             </rdf:Description>
         </swrl:head>
     </rdf:Description>

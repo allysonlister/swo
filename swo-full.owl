@@ -617,6 +617,14 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch">
+        <rdfs:comment>Allyson Lister 14.9.22: Added as a temporary workaround with issues relating to equivalentClass axioms between IAO software and SWO software.</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -4454,8 +4462,7 @@ of this, different, term.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000010">
-        <owl:equivalentClass rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
         <obo:IAO_0000111 xml:lang="en">software</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">Software is a plan specification composed of a series of instructions that can be 
@@ -4467,6 +4474,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP: OBI</obo:IAO_0000119>
         <rdfs:label xml:lang="en">software</rdfs:label>
+        <skos:exactMatch>http://www.ebi.ac.uk/swo/SWO_0000001</skos:exactMatch>
     </owl:Class>
     
 
@@ -5822,7 +5830,6 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000713">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <obo:IAO_0000111>GenePattern software</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>a software that provides access to more than 100 tools for gene expression analysis, proteomics, SNP analysis and common data processing tasks.</obo:IAO_0000115>
@@ -15739,13 +15746,27 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://www.ebi.ac.uk/swo/SWO_0000001 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0040005"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200000"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200111"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Computer software, or generally just software, is any set of machine-readable instructions (most often in the form of a computer program) that conform to a given syntax (sometimes referred to as a language) that is interpretable by a given processor and that directs a computer&apos;s processor to perform specific operations.</obo:IAO_0000115>
         <obo:IAO_0000119>James Malone</obo:IAO_0000119>
         <obo:IAO_0000119>Modified in parts from https://en.wikipedia.org/wiki/Software</obo:IAO_0000119>
         <obo:IAO_0000119>Robert Stevens</obo:IAO_0000119>
         <rdfs:comment>AL 7.9.22: There are some reasoning oddities associated with marking IAO and SWO software as equivalent; once these are sorted out, the equivalence statement will take the place of this current parent-child relationship.</rdfs:comment>
         <rdfs:label>software</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/IAO_0000010</skos:exactMatch>
     </owl:Class>
     
 
@@ -15888,7 +15909,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://www.ebi.ac.uk/swo/SWO_0000005 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -16138,7 +16158,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://www.ebi.ac.uk/swo/SWO_0000007 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -16290,7 +16309,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://www.ebi.ac.uk/swo/SWO_0000010 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -16360,7 +16378,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://www.ebi.ac.uk/swo/SWO_0000011 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -16466,7 +16483,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://www.ebi.ac.uk/swo/SWO_0000013 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000013">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -16673,7 +16689,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://www.ebi.ac.uk/swo/SWO_0000019 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000019">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -16705,7 +16720,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
                 <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/objective/SWO_4000010"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -17163,7 +17177,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
                 </owl:someValuesFrom>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -17250,7 +17263,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
                 <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/objective/SWO_4000005"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -17282,7 +17294,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
                 </owl:someValuesFrom>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -17314,7 +17325,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
                 <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/interface/SWO_9000053"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -17330,7 +17340,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://www.ebi.ac.uk/swo/SWO_0000031 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000031">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -17409,7 +17418,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
                 </owl:someValuesFrom>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -17496,7 +17504,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://www.ebi.ac.uk/swo/SWO_0000037 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000037">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -17528,7 +17535,6 @@ Pipeline: complete integrated solutions for gene expression research including A
     <!-- http://www.ebi.ac.uk/swo/SWO_0000039 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000039">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -17559,7 +17565,6 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
     <!-- http://www.ebi.ac.uk/swo/SWO_0000040 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000040">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -17644,7 +17649,6 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
     <!-- http://www.ebi.ac.uk/swo/SWO_0000042 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000042">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -17818,7 +17822,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000050 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000050">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:label xml:lang="en">Ensembl</rdfs:label>
     </owl:Class>
@@ -17828,7 +17831,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000051 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000051">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -18087,7 +18089,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000060 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000060">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -18203,7 +18204,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000064 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000064">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -18552,7 +18552,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000073 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000073">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -18615,7 +18614,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000075 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000075">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -18677,7 +18675,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000077 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000077">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -18728,7 +18725,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000079 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000079">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -18831,7 +18827,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000090 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000090">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -19242,7 +19237,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000133 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000133">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -19428,7 +19422,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -19446,7 +19439,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000141 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000141">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -19482,7 +19474,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000142 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000142">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -19516,7 +19507,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000145 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000145">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -19704,7 +19694,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000152 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000152">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -19803,7 +19792,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000153 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000153">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -19898,7 +19886,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000154 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000154">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -20335,7 +20322,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000166 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000166">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -20364,7 +20350,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000167 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000167">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <terms:creator>Nandini Badarinarayan</terms:creator>
         <rdfs:label>GMS</rdfs:label>
@@ -20633,7 +20618,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000175 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000175">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -20662,7 +20646,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000176 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000176">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -21157,7 +21140,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000195 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000195">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -21663,7 +21645,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000210 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000210">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -22193,7 +22174,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000228 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000228">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -22382,7 +22362,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000236 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000236">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -22412,7 +22391,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000237 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000237">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <terms:creator>Nandini Badarinarayan</terms:creator>
         <rdfs:label>ImageReader</rdfs:label>
@@ -22423,7 +22401,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000238 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000238">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -22464,7 +22441,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000241 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000241">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -22502,7 +22478,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000245 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000245">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -23115,7 +23090,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000266 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000266">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <obo:IAO_0000115>Tools for analyzing Micro Array experiments</obo:IAO_0000115>
         <obo:IAO_0000119>http://cran.r-project.org/web/packages/maanova/index.html</obo:IAO_0000119>
@@ -23195,7 +23169,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000271 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000271">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -23246,7 +23219,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000275 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000275">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -24150,7 +24122,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000310 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000310">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -24659,7 +24630,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000324 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000324">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -24716,7 +24686,6 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <!-- http://www.ebi.ac.uk/swo/SWO_0000329 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000329">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -25007,7 +24976,6 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
     <!-- http://www.ebi.ac.uk/swo/SWO_0000343 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000343">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -25689,7 +25657,6 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
     <!-- http://www.ebi.ac.uk/swo/SWO_0000365 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000365">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -25964,7 +25931,6 @@ easily and accurately visualize and quantitate gene expression data.</obo:IAO_00
     <!-- http://www.ebi.ac.uk/swo/SWO_0000375 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000375">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -26707,7 +26673,6 @@ the graph structure of GO.</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_0000417 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000417">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -26726,7 +26691,6 @@ the graph structure of GO.</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_0000418 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000418">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -26758,7 +26722,6 @@ the graph structure of GO.</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_0000420 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000420">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <terms:creator>Nandini Badarinarayan</terms:creator>
         <rdfs:label>scanning software</rdfs:label>
@@ -26832,7 +26795,6 @@ the graph structure of GO.</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_0000424 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000424">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -26870,7 +26832,6 @@ the graph structure of GO.</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_0000428 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000428">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <terms:creator>Nandini Badarinarayan</terms:creator>
         <rdfs:label>Spot quantification</rdfs:label>
@@ -26881,7 +26842,6 @@ the graph structure of GO.</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_0000429 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000429">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -26906,7 +26866,6 @@ the graph structure of GO.</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_0000430 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000430">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -27204,7 +27163,6 @@ the graph structure of GO.</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_0000447 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000447">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -27310,7 +27268,6 @@ the graph structure of GO.</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_0000451 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000451">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -28272,7 +28229,6 @@ the graph structure of GO.</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_0000476 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000476">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -29388,7 +29344,6 @@ tiple samples</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_0000513 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000513">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -30687,7 +30642,6 @@ tiple samples</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_0000546 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000546">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -37161,7 +37115,6 @@ tiple samples</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_1100005 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -37256,7 +37209,6 @@ tiple samples</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_1100006 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -37549,7 +37501,6 @@ tiple samples</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_1100021 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100021">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -37592,7 +37543,6 @@ tiple samples</obo:IAO_0000115>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <terms:creator>Nandini Badarinarayan</terms:creator>
         <rdfs:label>Affymetrix Software</rdfs:label>
@@ -37876,7 +37826,6 @@ tiple samples</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_1100032 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100032">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -38004,7 +37953,6 @@ tiple samples</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_1100036 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100036">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -38078,7 +38026,6 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_1100038 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100038">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -38116,7 +38063,6 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_1100040 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100040">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -38154,7 +38100,6 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_1100042 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100042">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -38264,7 +38209,6 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -38309,7 +38253,6 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_1100049 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100049">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -38723,7 +38666,6 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/swo/SWO_1100060 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100060">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -38899,7 +38841,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100064 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100064">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -38929,7 +38870,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100065 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100065">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -39272,7 +39212,6 @@ The analysis includes normalization and data preprocessing, detection for differ
                 <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000415"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -39336,7 +39275,6 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:someValuesFrom>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -39459,7 +39397,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100084 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100084">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -39488,7 +39425,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100085 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100085">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -39525,7 +39461,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100087 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100087">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -40020,7 +39955,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100106 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100106">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -40071,7 +40005,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100109 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100109">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -40256,7 +40189,6 @@ The analysis includes normalization and data preprocessing, detection for differ
                 <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000274"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -40272,7 +40204,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100116 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100116">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -40589,7 +40520,6 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -40615,7 +40545,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100128 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100128">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -40641,7 +40570,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100129 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100129">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -40673,7 +40601,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100130 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100130">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -40705,7 +40632,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100131 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100131">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -40737,7 +40663,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100132 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100132">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -40769,7 +40694,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100133 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100133">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -40798,7 +40722,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100134 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100134">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -40833,7 +40756,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100135 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100135">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -40868,7 +40790,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100136 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100136">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -40903,7 +40824,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100137 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100137">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -40938,7 +40858,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100138 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100138">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -40973,7 +40892,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100139 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100139">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -41008,7 +40926,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100140 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100140">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -41043,7 +40960,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100141 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100141">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -41078,7 +40994,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100142 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100142">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -41113,7 +41028,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100143 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100143">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -41148,7 +41062,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100144 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100144">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -41183,7 +41096,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_1100145 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100145">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -41776,7 +41688,6 @@ The analysis includes normalization and data preprocessing, detection for differ
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -41792,7 +41703,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_9000077 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000077">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -41949,7 +41859,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_9000079 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000079">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -42011,7 +41920,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_9000081 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000081">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -42234,7 +42142,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_9000091 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000091">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -42363,7 +42270,6 @@ The analysis includes normalization and data preprocessing, detection for differ
     <!-- http://www.ebi.ac.uk/swo/SWO_9000093 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_9000093">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -55835,118 +55741,6 @@ e.g.  if GP X enables ATPase coupled transporter activity&apos; and &apos;ATPase
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdfs:label>&apos;causally downstream of&apos; and &apos;overlaps&apos; should be disjoint properties (a SWRL rule is required because these are non-simple properties).</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002404"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdfs:label>&apos;causally upstream of&apos; and &apos;overlaps&apos; should be disjoint properties (a SWRL rule is required because these are non-simple properties).</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002411"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
             </rdf:Description>
         </swrl:head>
     </rdf:Description>

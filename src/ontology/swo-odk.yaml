@@ -28,4 +28,5 @@ namespaces:
   - http://www.ebi.ac.uk/swo/SWO_
 license: CC-BY 4.0
 robot_java_args: '-Xmx8G'
-uribase: http://www.ebi.ac.uk/swo/
+#uribase: http://www.ebi.ac.uk/swo/
+remove_owl_nothing: TRUE

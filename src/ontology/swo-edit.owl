@@ -2057,6 +2057,7 @@ Declaration(AnnotationProperty(rdfs:comment))
 Declaration(AnnotationProperty(rdfs:label))
 Declaration(AnnotationProperty(owl:deprecated))
 Declaration(AnnotationProperty(owl:versionInfo))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#exactMatch>))
 ############################
 #   Annotation Properties
 ############################
@@ -2113,6 +2114,10 @@ AnnotationAssertion(rdfs:label efo:reason_for_obsolescence "reason for obsolesce
 
 AnnotationAssertion(rdfs:label owl:deprecated "deprecated")
 AnnotationPropertyRange(owl:deprecated xsd:boolean)
+
+# Annotation Property: <http://www.w3.org/2004/02/skos/core#exactMatch> (<http://www.w3.org/2004/02/skos/core#exactMatch>)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2004/02/skos/core#exactMatch> "Allyson Lister 14.9.22: Added as a temporary workaround with issues relating to equivalentClass axioms between IAO software and SWO software.")
 
 
 ############################
@@ -2691,10 +2696,6 @@ AnnotationAssertion(obo:IAO_0000112 obo:BFO_0000040 "Collection of random bacter
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000040 "An independent continuant [snap:IndependentContinuant] that is spatially extended whose identity is independent of that of other entities and can be maintained through time. Note: Material entity [snap:MaterialEntity] subsumes object [snap:Object], fiat object part [snap:FiatObjectPart], and object aggregate [snap:ObjectAggregate], which assume a three level theory of granularity, which is inadequate for some domains, such as biology.")
 AnnotationAssertion(obo:IAO_0000119 obo:BFO_0000040 "BFO")
 AnnotationAssertion(rdfs:label obo:BFO_0000040 "material entity")
-
-# Class: obo:IAO_0000010 (software)
-
-EquivalentClasses(obo:IAO_0000010 swo:SWO_0000001)
 
 # Class: obo:IAO_0000025 (programming language)
 
@@ -8699,6 +8700,7 @@ AnnotationAssertion(obo:IAO_0000119 swo:SWO_0000001 "Modified in parts from http
 AnnotationAssertion(obo:IAO_0000119 swo:SWO_0000001 "Robert Stevens")
 AnnotationAssertion(rdfs:comment swo:SWO_0000001 "AL 7.9.22: There are some reasoning oddities associated with marking IAO and SWO software as equivalent; once these are sorted out, the equivalence statement will take the place of this current parent-child relationship.")
 AnnotationAssertion(rdfs:label swo:SWO_0000001 "software")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#exactMatch> swo:SWO_0000001 "http://purl.obolibrary.org/obo/IAO_0000010")
 SubClassOf(swo:SWO_0000001 obo:IAO_0000104)
 SubClassOf(swo:SWO_0000001 ObjectSomeValuesFrom(swo:SWO_0040005 ObjectUnionOf(obo:OBI_0200000 obo:OBI_0200111)))
 
@@ -20171,4 +20173,5 @@ AnnotationAssertion(obo:IAO_0000118 <http://edamontology.org/format_2573> ".sam"
 AnnotationAssertion(obo:IAO_0000118 <http://edamontology.org/format_2573> "Sequence Alignment/Map format")
 AnnotationAssertion(obo:IAO_0000118 <http://edamontology.org/format_3005> "Wiggle format")
 AnnotationAssertion(obo:IAO_0000118 <http://edamontology.org/format_3008> ".maf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#exactMatch> obo:IAO_0000010 "http://www.ebi.ac.uk/swo/SWO_0000001")
 )

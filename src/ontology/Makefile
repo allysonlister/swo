@@ -436,7 +436,7 @@ $(ONT).json: $(ONT)-full.owl
 # -----------------------------------------------------
 # Release artefacts: variants (base, full, simple, etc)
 # -----------------------------------------------------
-SHARED_ROBOT_COMMANDS = 
+SHARED_ROBOT_COMMANDS = remove --term owl:Nothing
 
 $(ONTOLOGYTERMS): $(SRC) $(OTHER_SRC)
 	touch $(ONTOLOGYTERMS) && \

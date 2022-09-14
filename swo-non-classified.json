@@ -21137,15 +21137,6 @@
           "sub": "http://www.ebi.ac.uk/swo/SWO_0004004"
         }
       ],
-      "equivalentNodesSets": [
-        {
-          "nodeIds": [
-            "http://purl.obolibrary.org/obo/IAO_0000010",
-            "http://www.ebi.ac.uk/swo/SWO_0000001"
-          ],
-          "representativeNodeId": "http://purl.obolibrary.org/obo/IAO_0000010"
-        }
-      ],
       "id": "http://purl.obolibrary.org/obo/swo/swo-non-classified.json",
       "logicalDefinitionAxioms": [
         {
@@ -23090,6 +23081,10 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "GROUP: OBI"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#exactMatch",
+                "val": "http://www.ebi.ac.uk/swo/SWO_0000001"
               }
             ],
             "definition": {
@@ -53454,6 +53449,10 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "Robert Stevens"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#exactMatch",
+                "val": "http://purl.obolibrary.org/obo/IAO_0000010"
               }
             ],
             "comments": [

@@ -10,6 +10,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:edamontology="http://edamontology.org#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/swo/swo-base.owl">
@@ -229,6 +230,14 @@
     <!-- http://www.w3.org/2002/07/owl#versionInfo -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch">
+        <rdfs:comment>Allyson Lister 14.9.22: Added as a temporary workaround with issues relating to equivalentClass axioms between IAO software and SWO software.</rdfs:comment>
+    </owl:AnnotationProperty>
     
 
 
@@ -1257,14 +1266,6 @@ or of directed by the organization to do this.</obo:IAO_0000115>
         <obo:IAO_0000115>An independent continuant [snap:IndependentContinuant] that is spatially extended whose identity is independent of that of other entities and can be maintained through time. Note: Material entity [snap:MaterialEntity] subsumes object [snap:Object], fiat object part [snap:FiatObjectPart], and object aggregate [snap:ObjectAggregate], which assume a three level theory of granularity, which is inadequate for some domains, such as biology.</obo:IAO_0000115>
         <obo:IAO_0000119>BFO</obo:IAO_0000119>
         <rdfs:label>material entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000010 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000010">
-        <owl:equivalentClass rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
     </owl:Class>
     
 
@@ -10008,6 +10009,7 @@ or of directed by the organization to do this.</obo:IAO_0000115>
         <obo:IAO_0000119>Robert Stevens</obo:IAO_0000119>
         <rdfs:comment>AL 7.9.22: There are some reasoning oddities associated with marking IAO and SWO software as equivalent; once these are sorted out, the equivalence statement will take the place of this current parent-child relationship.</rdfs:comment>
         <rdfs:label>software</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/IAO_0000010</skos:exactMatch>
     </owl:Class>
     
 
@@ -47499,6 +47501,9 @@ For example, bagging of decision trees algorithm includes the specification of a
     </rdf:Description>
     <rdf:Description rdf:about="http://edamontology.org/format_3008">
         <obo:IAO_0000118>.maf</obo:IAO_0000118>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000010">
+        <skos:exactMatch>http://www.ebi.ac.uk/swo/SWO_0000001</skos:exactMatch>
     </rdf:Description>
     
 
