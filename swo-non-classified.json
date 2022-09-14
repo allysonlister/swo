@@ -4978,11 +4978,6 @@
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0200000",
-          "pred": "http://www.ebi.ac.uk/swo/SWO_0040005",
-          "sub": "http://www.ebi.ac.uk/swo/SWO_0000001"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OBI_0200000",
           "pred": "is_a",
           "sub": "http://edamontology.org/operation_0224"
         },
@@ -21373,10 +21368,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-09-08"
+            "val": "2022-09-14"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/swo/releases/2022-09-08/swo-non-classified.json"
+        "version": "http://purl.obolibrary.org/obo/swo/releases/2022-09-14/swo-non-classified.json"
       },
       "nodes": [
         {

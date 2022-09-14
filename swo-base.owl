@@ -13,7 +13,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:edamontology="http://edamontology.org#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/swo/swo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/swo/releases/2022-09-08/swo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/swo/releases/2022-09-14/swo-base.owl"/>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:creator>Allyson Lister</terms:creator>
         <terms:creator>Andy Brown</terms:creator>
@@ -32,7 +32,7 @@
 2. IAO
 3. OBI
 4. EDAM</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-08</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-14</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -9992,7 +9992,14 @@ or of directed by the organization to do this.</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ebi.ac.uk/swo/SWO_0040005"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200000"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200111"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Computer software, or generally just software, is any set of machine-readable instructions (most often in the form of a computer program) that conform to a given syntax (sometimes referred to as a language) that is interpretable by a given processor and that directs a computer&apos;s processor to perform specific operations.</obo:IAO_0000115>

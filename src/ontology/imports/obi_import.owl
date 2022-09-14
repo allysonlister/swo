@@ -10,9 +10,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/swo/imports/obi_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/swo/releases/2022-09-08/imports/obi_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/swo/releases/2022-09-14/imports/obi_import.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-08</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-14</owl:versionInfo>
     </owl:Ontology>
     
 

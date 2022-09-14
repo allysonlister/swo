@@ -8700,7 +8700,7 @@ AnnotationAssertion(obo:IAO_0000119 swo:SWO_0000001 "Robert Stevens")
 AnnotationAssertion(rdfs:comment swo:SWO_0000001 "AL 7.9.22: There are some reasoning oddities associated with marking IAO and SWO software as equivalent; once these are sorted out, the equivalence statement will take the place of this current parent-child relationship.")
 AnnotationAssertion(rdfs:label swo:SWO_0000001 "software")
 SubClassOf(swo:SWO_0000001 obo:IAO_0000104)
-SubClassOf(swo:SWO_0000001 ObjectSomeValuesFrom(swo:SWO_0040005 obo:OBI_0200000))
+SubClassOf(swo:SWO_0000001 ObjectSomeValuesFrom(swo:SWO_0040005 ObjectUnionOf(obo:OBI_0200000 obo:OBI_0200111)))
 
 # Class: swo:SWO_0000002 (software license)
 
