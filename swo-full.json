@@ -20042,7 +20042,7 @@
           "sub": "http://www.ebi.ac.uk/swo/SWO_0004004"
         }
       ],
-      "id": "http://purl.obolibrary.org/obo/swo/swo-full.json",
+      "id": "http://www.ebi.ac.uk/swo/swo/swo-full.json",
       "logicalDefinitionAxioms": [
         {
           "definedClassId": "http://purl.obolibrary.org/obo/APOLLO_SV_00000008",
@@ -20264,10 +20264,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-09-14"
+            "val": "2022-10-11"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/swo/releases/2022-09-14/swo-full.json"
+        "version": "http://www.ebi.ac.uk/swo/swo/releases/2022-10-11/swo-full.json"
       },
       "nodes": [
         {

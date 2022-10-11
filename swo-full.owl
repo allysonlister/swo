@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/swo/swo-full.owl#"
-     xml:base="http://purl.obolibrary.org/obo/swo/swo-full.owl"
+<rdf:RDF xmlns="http://www.ebi.ac.uk/swo/swo/swo-full.owl#"
+     xml:base="http://www.ebi.ac.uk/swo/swo/swo-full.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:efo="http://www.ebi.ac.uk/efo/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
@@ -18,8 +18,8 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:edamontology="http://edamontology.org#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/swo/swo-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/swo/releases/2022-09-14/swo-full.owl"/>
+    <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/swo/swo-full.owl">
+        <owl:versionIRI rdf:resource="http://www.ebi.ac.uk/swo/swo/releases/2022-10-11/swo-full.owl"/>
         <terms:creator>Allyson Lister</terms:creator>
         <terms:creator>Andy Brown</terms:creator>
         <terms:creator>Duncan Hull</terms:creator>
@@ -37,7 +37,7 @@
 2. IAO
 3. OBI
 4. EDAM</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-14</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-11</owl:versionInfo>
     </owl:Ontology>
     
 
