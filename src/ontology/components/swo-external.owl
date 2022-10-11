@@ -1,0 +1,137 @@
+Prefix(:=<http://www.ebi.ac.uk/swo/swo-external.owl#>)
+Prefix(obo:=<http://purl.obolibrary.org/obo/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(edamontology:=<http://edamontology.org/>)
+
+
+Ontology(<http://www.ebi.ac.uk/swo/swo-external.owl>
+
+Declaration(Class(edamontology:data_0582))
+Declaration(Class(edamontology:data_1636))
+Declaration(Class(edamontology:data_2603))
+Declaration(Class(edamontology:data_2968))
+Declaration(Class(edamontology:data_3768))
+Declaration(Class(edamontology:format_1936))
+Declaration(Class(edamontology:format_2332))
+Declaration(Class(edamontology:format_3239))
+Declaration(Class(edamontology:operation_0224))
+Declaration(Class(edamontology:operation_0362))
+Declaration(Class(edamontology:operation_2426))
+
+Declaration(AnnotationProperty(rdf:type))
+Declaration(AnnotationProperty(rdfs:comment))
+Declaration(AnnotationProperty(rdfs:isDefinedBy))
+Declaration(AnnotationProperty(rdfs:label))
+
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: rdfs:label (label)
+
+AnnotationAssertion(obo:IAO_0000111 rdfs:label "label")
+AnnotationAssertion(rdfs:label rdfs:label "label")
+
+
+
+############################
+#   Classes
+############################
+
+# Class: edamontology:data_0582 (Ontology)
+
+AnnotationAssertion(obo:IAO_0000115 edamontology:data_0582 "An ontology of biological or bioinformatics concepts and relations, a controlled vocabulary, structured glossary etc.")
+AnnotationAssertion(obo:IAO_0000118 edamontology:data_0582 "Ontologies")
+AnnotationAssertion(obo:IAO_0000412 edamontology:data_0582 edamontology:EDAM.owl)
+AnnotationAssertion(rdfs:label edamontology:data_0582 "Ontology")
+SubClassOf(edamontology:data_0582 obo:IAO_0000027)
+
+# Class: edamontology:data_1636 (Heat map)
+
+AnnotationAssertion(obo:IAO_0000115 edamontology:data_1636 "A graphical 2D tabular representation of gene expression data, typically derived from a DNA microarray experiment.")
+AnnotationAssertion(obo:IAO_0000412 edamontology:data_1636 edamontology:EDAM.owl)
+AnnotationAssertion(rdfs:label edamontology:data_1636 "Heat map")
+SubClassOf(edamontology:data_1636 edamontology:data_2968)
+SubClassOf(edamontology:data_1636 edamontology:data_3768)
+
+# Class: edamontology:data_2603 (Gene expression data)
+
+AnnotationAssertion(obo:IAO_0000115 edamontology:data_2603 "Image, hybridisation or some other data arising from a study of gene expression, typically profiling or quantification.")
+AnnotationAssertion(obo:IAO_0000118 edamontology:data_2603 "Gene product profile")
+AnnotationAssertion(obo:IAO_0000118 edamontology:data_2603 "Gene product quantification data")
+AnnotationAssertion(obo:IAO_0000118 edamontology:data_2603 "Gene transcription profile")
+AnnotationAssertion(obo:IAO_0000118 edamontology:data_2603 "Gene transcription quantification data")
+AnnotationAssertion(obo:IAO_0000118 edamontology:data_2603 "Microarray data")
+AnnotationAssertion(obo:IAO_0000118 edamontology:data_2603 "Non-coding RNA profile")
+AnnotationAssertion(obo:IAO_0000118 edamontology:data_2603 "Non-coding RNA quantification data")
+AnnotationAssertion(obo:IAO_0000118 edamontology:data_2603 "RNA profile")
+AnnotationAssertion(obo:IAO_0000118 edamontology:data_2603 "RNA quantification data")
+AnnotationAssertion(obo:IAO_0000118 edamontology:data_2603 "RNA-seq data")
+AnnotationAssertion(obo:IAO_0000118 edamontology:data_2603 "Transcriptome profile")
+AnnotationAssertion(obo:IAO_0000118 edamontology:data_2603 "Transcriptome quantification data")
+AnnotationAssertion(obo:IAO_0000118 edamontology:data_2603 "mRNA profile")
+AnnotationAssertion(obo:IAO_0000118 edamontology:data_2603 "mRNA quantification data")
+AnnotationAssertion(obo:IAO_0000412 edamontology:data_2603 edamontology:EDAM.owl)
+AnnotationAssertion(rdfs:label edamontology:data_2603 "Gene expression data")
+SubClassOf(edamontology:data_2603 obo:IAO_0000027)
+
+# Class: edamontology:data_2968 (Image)
+
+AnnotationAssertion(obo:IAO_0000115 edamontology:data_2968 "Biological or biomedical data has been rendered into an image, typically for display on screen.")
+AnnotationAssertion(obo:IAO_0000118 edamontology:data_2968 "Image data")
+AnnotationAssertion(obo:IAO_0000412 edamontology:data_2968 edamontology:EDAM.owl)
+AnnotationAssertion(rdfs:label edamontology:data_2968 "Image")
+SubClassOf(edamontology:data_2968 obo:IAO_0000027)
+
+# Class: edamontology:data_3768 (Clustered gene expression profiles)
+
+AnnotationAssertion(obo:IAO_0000115 edamontology:data_3768 "Groupings of gene expression profiles according to a clustering algorithm.")
+AnnotationAssertion(obo:IAO_0000412 edamontology:data_3768 edamontology:EDAM.owl)
+AnnotationAssertion(rdfs:label edamontology:data_3768 "Clustered gene expression profiles")
+SubClassOf(edamontology:data_3768 edamontology:data_2603)
+
+# Class: edamontology:format_1936 (GenBank format)
+
+AnnotationAssertion(obo:IAO_0000115 edamontology:format_1936 "Genbank entry format.")
+AnnotationAssertion(obo:IAO_0000118 edamontology:format_1936 "GenBank")
+AnnotationAssertion(obo:IAO_0000412 edamontology:format_1936 edamontology:EDAM.owl)
+AnnotationAssertion(rdfs:label edamontology:format_1936 "GenBank format")
+SubClassOf(edamontology:format_1936 obo:IAO_0000098)
+
+# Class: edamontology:format_3239 (CopasiML)
+
+AnnotationAssertion(obo:IAO_0000115 edamontology:format_3239 "CopasiML, the native format of COPASI.")
+AnnotationAssertion(obo:IAO_0000412 edamontology:format_3239 edamontology:EDAM.owl)
+AnnotationAssertion(rdfs:label edamontology:format_3239 "CopasiML")
+SubClassOf(edamontology:format_3239 edamontology:format_2332)
+
+# Class: edamontology:operation_0224 (Query and retrieval)
+
+AnnotationAssertion(obo:IAO_0000115 edamontology:operation_0224 "Search or query a data resource and retrieve entries and / or annotation.")
+AnnotationAssertion(obo:IAO_0000118 edamontology:operation_0224 "Database retrieval")
+AnnotationAssertion(obo:IAO_0000118 edamontology:operation_0224 "Query")
+AnnotationAssertion(obo:IAO_0000412 edamontology:operation_0224 edamontology:EDAM.owl)
+AnnotationAssertion(rdfs:label edamontology:operation_0224 "Query and retrieval")
+SubClassOf(edamontology:operation_0224 obo:OBI_0200000)
+
+# Class: edamontology:operation_0362 (Genome annotation)
+
+AnnotationAssertion(obo:IAO_0000115 edamontology:operation_0362 "Annotate a genome sequence with terms from a controlled vocabulary.")
+AnnotationAssertion(obo:IAO_0000118 edamontology:operation_0362 "Metagenome annotation")
+AnnotationAssertion(obo:IAO_0000412 edamontology:operation_0362 edamontology:EDAM.owl)
+AnnotationAssertion(rdfs:label edamontology:operation_0362 "Genome annotation")
+SubClassOf(edamontology:operation_0362 obo:OBI_0200000)
+
+# Class: edamontology:operation_2426 (Modelling and simulation)
+
+AnnotationAssertion(obo:IAO_0000115 edamontology:operation_2426 "Model or simulate some biological entity or system, typically using mathematical techniques including  dynamical systems, statistical models, differential equations, and game theoretic models.")
+AnnotationAssertion(obo:IAO_0000118 edamontology:operation_2426 "Mathematical modelling")
+AnnotationAssertion(obo:IAO_0000412 edamontology:operation_2426 edamontology:EDAM.owl)
+AnnotationAssertion(rdfs:label edamontology:operation_2426 "Modelling and simulation")
+SubClassOf(edamontology:operation_2426 obo:OBI_0200000)
+
+)

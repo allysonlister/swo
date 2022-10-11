@@ -1,0 +1,32 @@
+id: swo
+title: Software Ontology
+github_org: allysonlister
+repo: swo
+report_fail_on: error
+import_group:
+  products:
+    - id: bfo
+    - id: iao
+    - id: obi
+    - id: ro
+    - id: omo
+edit_format: owl
+release_artefacts:
+  - base
+  - full
+  - non-classified
+components:
+  products:
+    - filename: swo-external.owl
+primary_release: full
+export_formats:
+  - owl
+# OBO format has been (hopefully temporarily) removed from the release due to issues relating to https://github.com/ontodev/robot/issues/995
+#  - obo
+  - json
+namespaces:
+  - http://www.ebi.ac.uk/swo/SWO_
+license: CC-BY 4.0
+robot_java_args: '-Xmx8G'
+uribase: http://www.ebi.ac.uk/swo
+remove_owl_nothing: TRUE

@@ -1,0 +1,2 @@
+http://purl.obolibrary.org/obo/BFO_0000023 # role
+http://purl.obolibrary.org/obo/BFO_0000015 # process

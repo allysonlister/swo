@@ -1,0 +1,3 @@
+http://purl.obolibrary.org/obo/OBI_0000245 # organization
+http://purl.obolibrary.org/obo/OBI_0200000 # data transformation
+http://purl.obolibrary.org/obo/OBI_0200111 # data visualization
