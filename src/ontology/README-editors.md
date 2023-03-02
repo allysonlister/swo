@@ -43,10 +43,6 @@ These are stored in the file
 
 ** ONLY USE IDs WITHIN YOUR RANGE!! **
 
-If you have only just set up this repository, modify the idranges file
-	and add yourself or other editors. Note Protege does not read the file
-- it is up to you to ensure correct Protege configuration.
-
 
 ### Setting ID ranges in Protege
 

@@ -74,6 +74,8 @@ If you have never editted this ontology before, first follow a [general tutorial
 
 **Process**:
 
+Please see the [editors documentation](src/ontology/README-editors.md) to find out more information on editing src/ontology/swo-edit.owl, and then follow the instructions below.
+
 1. Clone the repository (In case you are not an offical team member, create a fork first)
 1. Create new branch in git, for example `git checkout -b issue123`
 1. Open src/ontology/swo-edit.owl in your favourite editor, i.e. [Protege](https://protege.stanford.edu/). **Careful:** double check you are editing the correct file. There are many ontology files in this repository, but only one _editors file_!
