@@ -44,6 +44,10 @@ These are stored in the file
 ** ONLY USE IDs WITHIN YOUR RANGE!! **
 
 
+Here is an example setup - you will need to pull your ID range from [swo-idranges.owl](swo-idranges.owl) (let us know if you need your own!) and then use those values within the File -> Preferences of Protege. Please note the non-standard EBI IRI instead of the OBO purls.
+![Example ID range setup](../../images/example-id-ranges.png)
+
+
 ### Setting ID ranges in Protege
 
 We aim to put this up on the technical docs for OBO on http://obofoundry.org/
