@@ -1,4 +1,5 @@
 --------------------------------
+![The Software Ontology](images/swo.png)
 # The Software Ontology
 The Software Ontology (SWO) is an [OBO Foundry](http://obofoundry.org) ontology describing software tools, their types, tasks, versions, licensing, provenance and associated data. The latest release is 1.7.
 
