@@ -1,0 +1,47 @@
+http://www.ebi.ac.uk/efo/swo/SWO_0000023,Affymetrix
+http://www.ebi.ac.uk/efo/swo/SWO_0000033,Agilent Technologies
+http://www.ebi.ac.uk/efo/swo/SWO_0000036,Applied Biosystems
+http://www.ebi.ac.uk/efo/swo/SWO_0000038,Applied Precision Life Science
+http://www.ebi.ac.uk/efo/swo/SWO_0000061,Bahler Lab
+http://www.ebi.ac.uk/efo/swo/SWO_0000067,Bio-Rad Laboratories, Inc.
+http://www.ebi.ac.uk/efo/swo/SWO_0000069,Bio Discovery
+http://www.ebi.ac.uk/efo/swo/SWO_0000073,Bioconductor
+http://www.ebi.ac.uk/efo/swo/SWO_0000074,Biometric Research Branch
+http://www.ebi.ac.uk/efo/swo/SWO_0000093,COSE, France
+http://www.ebi.ac.uk/efo/swo/SWO_0000119,Clontech Laboratories, Inc
+http://www.ebi.ac.uk/efo/swo/SWO_0000131,Dana-Farber Cancer Institute and Harvard School of Public Health
+http://www.ebi.ac.uk/efo/swo/SWO_0000136,EMBL
+http://www.ebi.ac.uk/efo/swo/SWO_0000151,Fujifilm
+http://www.ebi.ac.uk/efo/swo/SWO_0000160,GE Healthcare Life Sciences
+http://www.ebi.ac.uk/efo/swo/SWO_0000198,Genedata
+http://www.ebi.ac.uk/efo/swo/SWO_0000204,Genicon Sciences
+http://www.ebi.ac.uk/efo/swo/SWO_0000211,Grid grinder
+http://www.ebi.ac.uk/efo/swo/SWO_0000223,Havard School of Public Health
+http://www.ebi.ac.uk/efo/swo/SWO_0000232,Illumina
+http://www.ebi.ac.uk/efo/swo/SWO_0000240,Incyte Genomics
+http://www.ebi.ac.uk/efo/swo/SWO_0000242,Institute for Genomics and Bioinformatics Graz University of Technology
+http://www.ebi.ac.uk/efo/swo/SWO_0000244,J. Craig Venter Institute
+http://www.ebi.ac.uk/efo/swo/SWO_0000286,MWG Biotech
+http://www.ebi.ac.uk/efo/swo/SWO_0000290,Matforsk
+http://www.ebi.ac.uk/efo/swo/SWO_0000299,Molecular Devices
+http://www.ebi.ac.uk/efo/swo/SWO_0000300,Molecular Neuroscience Core, Center for Behavioral Neuroscience, Atlanta
+http://www.ebi.ac.uk/efo/swo/SWO_0000301,Molecular Dynamics
+http://www.ebi.ac.uk/efo/swo/SWO_0000302,Motorola Life Sciences
+http://www.ebi.ac.uk/efo/swo/SWO_0000303,NIH
+http://www.ebi.ac.uk/efo/swo/SWO_0000325,PerkinElmer
+http://www.ebi.ac.uk/efo/swo/SWO_0000351,Raytest
+http://www.ebi.ac.uk/efo/swo/SWO_0000357,Research Genetics
+http://www.ebi.ac.uk/efo/swo/SWO_0000366,Rosetta Biosoftware
+http://www.ebi.ac.uk/efo/swo/SWO_0000376,SAS Institute Inc.
+http://www.ebi.ac.uk/efo/swo/SWO_0000394,is developed by
+http://www.ebi.ac.uk/efo/swo/SWO_0000427,Speed Berkeley Research Group
+http://www.ebi.ac.uk/efo/swo/SWO_0000431,obsolete_Stanford University
+http://www.ebi.ac.uk/efo/swo/SWO_0000433,TIBCO Software Inc
+http://www.ebi.ac.uk/efo/swo/SWO_0000436,Technological Advances for Genomics and Clinics, France
+http://www.ebi.ac.uk/efo/swo/SWO_0000439,UC Irvine
+http://www.ebi.ac.uk/efo/swo/SWO_0000440,University Of California, Berkeley
+http://www.ebi.ac.uk/efo/swo/SWO_0000443,Walter and Eliza Hall Institute
+http://www.ebi.ac.uk/efo/swo/SWO_0000492,Cambridge Bluegnome
+http://www.ebi.ac.uk/efo/swo/SWO_0000740,implements
+http://www.ebi.ac.uk/efo/swo/SWO_0000741,is encoded in
+http://www.ebi.ac.uk/efo/swo/SWO_0000743,Strand Life Sciences

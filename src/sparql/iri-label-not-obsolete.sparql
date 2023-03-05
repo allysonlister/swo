@@ -1,0 +1,19 @@
+#
+# List all IRIs and labels that are not obsolete already.
+# Use grep to only get those with 'efo' in the IRI
+#
+# Run with:
+# java -jar robot.jar query --input ../../ontology/swo-edit.owl --query iri-label.sparql  iri-label.txt
+#
+# grep '\/efo\/' iri-label.txt > efo-iri-label.txt
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?x (STR(?lab) AS ?label) WHERE {
+	?x ?p ?o .
+    FILTER NOT EXISTS{ ?x owl:deprecated ?value }
+	OPTIONAL {?x rdfs:label ?lab}
+}
+ORDER BY ?x
