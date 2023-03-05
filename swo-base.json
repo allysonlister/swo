@@ -16,11 +16,11 @@
           "allValuesFromEdges": [
             {
               "obj": "http://www.ebi.ac.uk/swo/SWO_0000118",
-              "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000741",
+              "pred": "http://www.ebi.ac.uk/swo/SWO_0000741",
               "sub": "http://www.ebi.ac.uk/swo/SWO_0000155"
             }
           ],
-          "predicateId": "http://www.ebi.ac.uk/efo/swo/SWO_0000741"
+          "predicateId": "http://www.ebi.ac.uk/swo/SWO_0000741"
         },
         {
           "allValuesFromEdges": [
@@ -201,7 +201,7 @@
         },
         {
           "obj": "http://edamontology.org/format_2331",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000741",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000741",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000575"
         },
         {
@@ -273,6 +273,11 @@
           "obj": "http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_778151",
           "pred": "http://www.ebi.ac.uk/swo/SWO_0040005",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000075"
+        },
+        {
+          "obj": "http://purl.obofoundry.org/obo/IAO_0000136",
+          "pred": "subPropertyOf",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000741"
         },
         {
           "obj": "http://purl.obofoundry.org/obo/IAO_0000136",
@@ -1465,6 +1470,221 @@
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000397"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000033"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000036"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000038"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000198"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000204"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000211"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000223"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000232"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000240"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000242"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000244"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000286"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000290"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000299"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000302"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000303"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000325"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000351"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000357"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000366"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000376"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000427"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000433"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000436"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000439"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000440"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000443"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000492"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000743"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_1200000"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_1200001"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_1200002"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_1200003"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_1200004"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_1200005"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_1200006"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_1200007"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_1200008"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_1200009"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_1200010"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_1200011"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_1200012"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_1200013"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/OBI_0200000",
           "pred": "is_a",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000143"
@@ -1568,11 +1788,6 @@
           "obj": "http://purl.obolibrary.org/obo/OBI_0200111",
           "pred": "http://www.ebi.ac.uk/swo/SWO_0040005",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000711"
-        },
-        {
-          "obj": "http://www.ebi.ac.uk/efo/swo/SWO_0000741",
-          "pred": "subPropertyOf",
-          "sub": "http://www.ebi.ac.uk/swo/SWO_0004002"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000001",
@@ -2181,12 +2396,12 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000012",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000741",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000741",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000141"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000012",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000741",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000741",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000158"
         },
         {
@@ -2386,7 +2601,7 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000049",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100063"
         },
         {
@@ -2551,32 +2766,32 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000095",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000741",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000741",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000158"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000096",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000741",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000741",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000158"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000097",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000741",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000741",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000158"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000115",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000741",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000741",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000158"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000118",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000741",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000741",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000155"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000118",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000741",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000741",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000158"
         },
         {
@@ -2591,12 +2806,12 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000120",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000741",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000741",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000158"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000136",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000741",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000741",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000137"
         },
         {
@@ -2656,57 +2871,57 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000159",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000741",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000741",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000158"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000165",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000164"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000165",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000231"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000165",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000269"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000169",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000551"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000173",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000246"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000174",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000133"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000174",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000171"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000174",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000347"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000174",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000521"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000174",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000563"
         },
         {
@@ -2786,77 +3001,77 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000212",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000572"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000215",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000214"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000216",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100083"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000217",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000078"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000217",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000385"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000217",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000387"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000217",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000442"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000217",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000450"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000217",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000700"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000218",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000574"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000219",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000677"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000220",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000231"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000220",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000269"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000227",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000168"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000229",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000565"
         },
         {
@@ -2876,12 +3091,12 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000243",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100083"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000251",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000719"
         },
         {
@@ -2891,12 +3106,12 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000256",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100095"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000257",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100095"
         },
         {
@@ -2906,27 +3121,27 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000261",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000703"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000262",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000591"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000264",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100023"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000265",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000293"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000265",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000599"
         },
         {
@@ -2956,52 +3171,52 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000274",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000741",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000741",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100115"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000277",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000152"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000277",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000214"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000277",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000619"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000277",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000637"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000277",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100031"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000278",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000496"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000284",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000191"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000287",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000338"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000296",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000295"
         },
         {
@@ -3011,7 +3226,7 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000298",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000203"
         },
         {
@@ -3026,37 +3241,37 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000304",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100048"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000305",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000632"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000313",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000646"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000318",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000667"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000326",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000659"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000328",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000660"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000328",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100005"
         },
         {
@@ -3071,62 +3286,62 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000334",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000248"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000334",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000567"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000337",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000362"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000339",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000293"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000339",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000654"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000340",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000041"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000340",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000222"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000340",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000458"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000340",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000547"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000340",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000711"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000340",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000717"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000340",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100005"
         },
         {
@@ -3141,32 +3356,32 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000364",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000683"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000371",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000710"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000372",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000691"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000374",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000192"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000374",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100088"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000389",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000207"
         },
         {
@@ -3176,7 +3391,7 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000398",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100001"
         },
         {
@@ -3221,7 +3436,7 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000415",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000741",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000741",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100075"
         },
         {
@@ -3236,37 +3451,37 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000423",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000388"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000425",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000311"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000426",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100048"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000437",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000370"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000441",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000603"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000444",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000192"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000445",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000192"
         },
         {
@@ -3301,7 +3516,7 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000477",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000520"
         },
         {
@@ -3311,12 +3526,12 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000503",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100083"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000506",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000507"
         },
         {
@@ -3546,32 +3761,32 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000560",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000316"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000560",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000382"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000561",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000561"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000573",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000499"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000573",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000512"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000573",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000550"
         },
         {
@@ -3611,127 +3826,127 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000576",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000316"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000576",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000622"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000584",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000308"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000584",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000309"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000587",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000577"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000588",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000208"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000588",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000288"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000588",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100073"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000589",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000283"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000589",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000322"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000589",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000555"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000589",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000581"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000595",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000171"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000595",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000192"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000595",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000254"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000595",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000335"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000595",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000529"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000595",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000593"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000595",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000594"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000595",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000613"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000597",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000258"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000597",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000259"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000597",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100002"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000614",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000222"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000614",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100005"
         },
         {
@@ -3741,22 +3956,22 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000627",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000723"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000628",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000630"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000628",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000727"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000633",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000635"
         },
         {
@@ -3986,7 +4201,7 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000664",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000692"
         },
         {
@@ -3996,48 +4211,53 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000674",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000312"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000681",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000350"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000713",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000319"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000715",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000168"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000715",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000192"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000715",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000450"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000715",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100002"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000715",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100088"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0000722",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000292"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/swo/SWO_0000741",
+          "pred": "subPropertyOf",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0004002"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_0004007",
@@ -4071,22 +4291,22 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100010",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000206"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100011",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000645"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100011",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100002"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100011",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100019"
         },
         {
@@ -4106,12 +4326,12 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100015",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000231"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100015",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000269"
         },
         {
@@ -4131,12 +4351,12 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100029",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100029"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100030",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000333"
         },
         {
@@ -4151,47 +4371,47 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100033",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000582"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100033",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000583"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100039",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000192"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100041",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000048"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100041",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000192"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100041",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000209"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100041",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000481"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100041",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000621"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100041",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100031"
         },
         {
@@ -4996,22 +5216,22 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100055",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100055"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100058",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000510"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100059",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000289"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100061",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100062"
         },
         {
@@ -5021,12 +5241,12 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100070",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000470"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100072",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000701"
         },
         {
@@ -6641,7 +6861,7 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100077",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000506"
         },
         {
@@ -6841,17 +7061,17 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100082",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100067"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100086",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000697"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100090",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100089"
         },
         {
@@ -6861,77 +7081,77 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100096",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000636"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100097",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000214"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100097",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100095"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100101",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100088"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100102",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000214"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100102",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000252"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100102",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000258"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100102",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000259"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100102",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000307"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100102",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000450"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100102",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000651"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100102",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000676"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100102",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100002"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100102",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100073"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100102",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100088"
         },
         {
@@ -6956,12 +7176,12 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100107",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000523"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100114",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100095"
         },
         {
@@ -6971,17 +7191,17 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100118",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100120"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100118",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_1100121"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/SWO_1100125",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000192"
         },
         {
@@ -7186,52 +7406,52 @@
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/algorithm/SWO_4000004",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000137"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/algorithm/SWO_4000005",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000145"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/algorithm/SWO_4000006",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000013"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/algorithm/SWO_4000006",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000152"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/algorithm/SWO_4000006",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000153"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/algorithm/SWO_4000006",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000154"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/algorithm/SWO_4000007",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000013"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/algorithm/SWO_4000008",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000152"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/algorithm/SWO_4000009",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000153"
         },
         {
           "obj": "http://www.ebi.ac.uk/swo/algorithm/SWO_4000010",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000153"
         },
         {
@@ -8415,18 +8635,23 @@
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000003"
         },
         {
+          "obj": "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass",
+          "pred": "type",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000431"
+        },
+        {
           "obj": "http://www.ontodm.com/OntoDM-core/OntoDM_000072",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000294"
         },
         {
           "obj": "http://www.ontodm.com/OntoDM-core/OntoDM_000072",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000609"
         },
         {
           "obj": "http://www.ontodm.com/OntoDM-core/OntoDM_000072",
-          "pred": "http://www.ebi.ac.uk/efo/swo/SWO_0000740",
+          "pred": "http://www.ebi.ac.uk/swo/SWO_0000740",
           "sub": "http://www.ebi.ac.uk/swo/SWO_0000707"
         },
         {
@@ -8530,10 +8755,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-10-11"
+            "val": "2023-03-05"
           }
         ],
-        "version": "http://www.ebi.ac.uk/swo/swo/releases/2022-10-11/swo-base.json"
+        "version": "http://www.ebi.ac.uk/swo/swo/releases/2023-03-05/swo-base.json"
       },
       "nodes": [
         {
@@ -8603,11 +8828,10 @@
               {
                 "pred": "http://www.ebi.ac.uk/efo/obsoleted_in_version",
                 "val": "1.7"
-              },
-              {
-                "pred": "http://www.ebi.ac.uk/efo/reason_for_obsolescence",
-                "val": "AL 18.9.2019: This class is identical (based on its definition) with OBI 'data transformation' and is no longer required."
               }
+            ],
+            "comments": [
+              "AL 18.9.2019: This class is identical (based on its definition) with OBI 'data transformation' and is no longer required."
             ],
             "definition": {
               "val": "Information processing is a process in which input information is analysed or transformed in order to produce information as output."
@@ -13162,6 +13386,16 @@
           "type": "CLASS"
         },
         {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000394",
+          "lbl": "is developed by",
+          "meta": {
+            "definition": {
+              "val": "The relationship between a software and software developer."
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://www.ebi.ac.uk/swo/SWO_0000396",
           "lbl": "software developer organization",
           "meta": {
@@ -13431,6 +13665,26 @@
             }
           },
           "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000431",
+          "lbl": "obsolete_Stanford University",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Marked as obsolete by Allyson Lister."
+              },
+              {
+                "pred": "http://www.ebi.ac.uk/efo/obsoleted_in_version",
+                "val": "0.3"
+              }
+            ],
+            "comments": [
+              "Stanford University (SWO_0000431 and SWO_9000003). SWO_9000003 was retained, while SWO_0000431 became an instance of obsolete class. Please use SWO_9000003 instead."
+            ]
+          },
+          "type": "INDIVIDUAL"
         },
         {
           "id": "http://www.ebi.ac.uk/swo/SWO_0000432",
@@ -17452,6 +17706,42 @@
           "type": "CLASS"
         },
         {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000740",
+          "lbl": "implements",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/creator",
+                "val": "James Malone"
+              }
+            ],
+            "definition": {
+              "val": "implements is the relationship between software and an algorithm that is defined for use within that software when executed. "
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000741",
+          "lbl": "is encoded in",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "Linking a type of software to its particular programming language."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "Allyson Lister"
+              }
+            ],
+            "definition": {
+              "val": "Is encoded in is an \"is about\" relationship which describes the type of encoding used for the referenced class."
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://www.ebi.ac.uk/swo/SWO_0004000",
           "lbl": "has version",
           "meta": {
@@ -17520,11 +17810,10 @@
               {
                 "pred": "http://www.ebi.ac.uk/efo/obsoleted_in_version",
                 "val": "0.3"
-              },
-              {
-                "pred": "http://www.ebi.ac.uk/efo/reason_for_obsolescence",
-                "val": "is developed by and is_developed_by. The former is from the core file and originally had no identifier (though it is now identified via SWO_0004003), and the latter is from the original file (SWO_0000394).  SWO_0000394 was retained and SWO_0004003 marked as obsolete as SWO_0004003 had no usages while SWO_0000394 has many usages. Finally, the underscores were removed from the label of  SWO_0000394 so it would conform to our naming scheme. Please use SWO_0000394 instead."
               }
+            ],
+            "comments": [
+              "is developed by and is_developed_by. The former is from the core file and originally had no identifier (though it is now identified via SWO_0004003), and the latter is from the original file (SWO_0000394).  SWO_0000394 was retained and SWO_0004003 marked as obsolete as SWO_0004003 had no usages while SWO_0000394 has many usages. Finally, the underscores were removed from the label of  SWO_0000394 so it would conform to our naming scheme. Please use SWO_0000394 instead."
             ],
             "deprecated": true
           },
@@ -19837,6 +20126,29 @@
           "type": "CLASS"
         },
         {
+          "id": "http://www.ebi.ac.uk/swo/SWO_1200005",
+          "lbl": "Biometric Research Branch",
+          "meta": {
+            "comments": [
+              ""
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_1200009",
+          "lbl": "EMBL",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "European Molecular Biology Laboratory"
+              }
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
           "id": "http://www.ebi.ac.uk/swo/SWO_9000005",
           "lbl": "licence clause",
           "meta": {
@@ -20294,11 +20606,10 @@
               {
                 "pred": "http://www.ebi.ac.uk/efo/obsoleted_in_version",
                 "val": "0.3"
-              },
-              {
-                "pred": "http://www.ebi.ac.uk/efo/reason_for_obsolescence",
-                "val": "There is an object property duplication for is specified output of, where one is from OBI (OBI_0000312) and one is from SWO (SWO_9000058); additionally, the reasoner infers these two object properties as equivalent. Both are the inverse properties for has specified output. It makes sense to retain the OBI object property. The SWO class URI was renamed to the OBI term URI (to make the moving of the axioms across to the OBI term simple), and then an SWO class with the original URI was marked as obsolete. Please use OBI_0000312 instead."
               }
+            ],
+            "comments": [
+              "There is an object property duplication for is specified output of, where one is from OBI (OBI_0000312) and one is from SWO (SWO_9000058); additionally, the reasoner infers these two object properties as equivalent. Both are the inverse properties for has specified output. It makes sense to retain the OBI object property. The SWO class URI was renamed to the OBI term URI (to make the moving of the axioms across to the OBI term simple), and then an SWO class with the original URI was marked as obsolete. Please use OBI_0000312 instead."
             ],
             "deprecated": true
           },
@@ -20531,6 +20842,21 @@
           "type": "CLASS"
         },
         {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000033",
+          "lbl": "Agilent Technologies",
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000036",
+          "lbl": "Applied Biosystems",
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000038",
+          "lbl": "Applied Precision Life Science",
+          "type": "INDIVIDUAL"
+        },
+        {
           "id": "http://www.ebi.ac.uk/swo/SWO_0000050",
           "lbl": "Ensembl",
           "type": "CLASS"
@@ -20651,6 +20977,21 @@
           "type": "CLASS"
         },
         {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000198",
+          "lbl": "Genedata",
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000204",
+          "lbl": "Genicon Sciences",
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000211",
+          "lbl": "Grid grinder",
+          "type": "INDIVIDUAL"
+        },
+        {
           "id": "http://www.ebi.ac.uk/swo/SWO_0000212",
           "lbl": "Hexagon binning algorithm",
           "type": "CLASS"
@@ -20686,6 +21027,11 @@
           "type": "CLASS"
         },
         {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000223",
+          "lbl": "Havard School of Public Health",
+          "type": "INDIVIDUAL"
+        },
+        {
           "id": "http://www.ebi.ac.uk/swo/SWO_0000227",
           "lbl": "Hypergeometric probability",
           "type": "CLASS"
@@ -20696,14 +21042,34 @@
           "type": "CLASS"
         },
         {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000232",
+          "lbl": "Illumina",
+          "type": "INDIVIDUAL"
+        },
+        {
           "id": "http://www.ebi.ac.uk/swo/SWO_0000233",
           "lbl": "ILLUMINA data",
           "type": "CLASS"
         },
         {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000240",
+          "lbl": "Incyte Genomics",
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000242",
+          "lbl": "Institute for Genomics and Bioinformatics Graz University of Technology",
+          "type": "INDIVIDUAL"
+        },
+        {
           "id": "http://www.ebi.ac.uk/swo/SWO_0000243",
           "lbl": "Jaccard’s index",
           "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000244",
+          "lbl": "J. Craig Venter Institute",
+          "type": "INDIVIDUAL"
         },
         {
           "id": "http://www.ebi.ac.uk/swo/SWO_0000249",
@@ -20796,9 +21162,19 @@
           "type": "CLASS"
         },
         {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000286",
+          "lbl": "MWG Biotech",
+          "type": "INDIVIDUAL"
+        },
+        {
           "id": "http://www.ebi.ac.uk/swo/SWO_0000287",
           "lbl": "Mahalanobis distance",
           "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000290",
+          "lbl": "Matforsk",
+          "type": "INDIVIDUAL"
         },
         {
           "id": "http://www.ebi.ac.uk/swo/SWO_0000296",
@@ -20809,6 +21185,21 @@
           "id": "http://www.ebi.ac.uk/swo/SWO_0000298",
           "lbl": "Mixed model equations",
           "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000299",
+          "lbl": "Molecular Devices",
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000302",
+          "lbl": "Motorola Life Sciences",
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000303",
+          "lbl": "NIH",
+          "type": "INDIVIDUAL"
         },
         {
           "id": "http://www.ebi.ac.uk/swo/SWO_0000304",
@@ -20839,6 +21230,11 @@
           "id": "http://www.ebi.ac.uk/swo/SWO_0000321",
           "lbl": "PPC algorithm",
           "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000325",
+          "lbl": "PerkinElmer",
+          "type": "INDIVIDUAL"
         },
         {
           "id": "http://www.ebi.ac.uk/swo/SWO_0000326",
@@ -20886,6 +21282,16 @@
           "type": "CLASS"
         },
         {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000351",
+          "lbl": "Raytest",
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000357",
+          "lbl": "Research Genetics",
+          "type": "INDIVIDUAL"
+        },
+        {
           "id": "http://www.ebi.ac.uk/swo/SWO_0000363",
           "lbl": "Rnw",
           "type": "CLASS"
@@ -20896,6 +21302,11 @@
           "type": "CLASS"
         },
         {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000366",
+          "lbl": "Rosetta Biosoftware",
+          "type": "INDIVIDUAL"
+        },
+        {
           "id": "http://www.ebi.ac.uk/swo/SWO_0000371",
           "lbl": "S-Score algorithm",
           "type": "CLASS"
@@ -20904,6 +21315,11 @@
           "id": "http://www.ebi.ac.uk/swo/SWO_0000372",
           "lbl": "Serial Analysis of Gene Expression (SAGE)",
           "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000376",
+          "lbl": "SAS Institute Inc.",
+          "type": "INDIVIDUAL"
         },
         {
           "id": "http://www.ebi.ac.uk/swo/SWO_0000378",
@@ -20961,14 +21377,44 @@
           "type": "CLASS"
         },
         {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000427",
+          "lbl": "Speed Berkeley Research Group",
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000433",
+          "lbl": "TIBCO Software Inc",
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000436",
+          "lbl": "Technological Advances for Genomics and Clinics, France",
+          "type": "INDIVIDUAL"
+        },
+        {
           "id": "http://www.ebi.ac.uk/swo/SWO_0000437",
           "lbl": "Theodore Ts’o’s",
           "type": "CLASS"
         },
         {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000439",
+          "lbl": "UC Irvine",
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000440",
+          "lbl": "University Of California, Berkeley",
+          "type": "INDIVIDUAL"
+        },
+        {
           "id": "http://www.ebi.ac.uk/swo/SWO_0000441",
           "lbl": "Variance-stabilizing transformation (VST) algorithm",
           "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000443",
+          "lbl": "Walter and Eliza Hall Institute",
+          "type": "INDIVIDUAL"
         },
         {
           "id": "http://www.ebi.ac.uk/swo/SWO_0000444",
@@ -21014,6 +21460,11 @@
           "id": "http://www.ebi.ac.uk/swo/SWO_0000490",
           "lbl": "Bootstrap",
           "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000492",
+          "lbl": "Cambridge Bluegnome",
+          "type": "INDIVIDUAL"
         },
         {
           "id": "http://www.ebi.ac.uk/swo/SWO_0000493",
@@ -21301,6 +21752,11 @@
           "type": "CLASS"
         },
         {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000743",
+          "lbl": "Strand Life Sciences",
+          "type": "INDIVIDUAL"
+        },
+        {
           "id": "http://www.ebi.ac.uk/swo/SWO_1100000",
           "lbl": "2-sample pooled t-test",
           "type": "CLASS"
@@ -21491,6 +21947,66 @@
           "type": "CLASS"
         },
         {
+          "id": "http://www.ebi.ac.uk/swo/SWO_1200000",
+          "lbl": "Affymetrix",
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_1200001",
+          "lbl": "Bahler Lab",
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_1200002",
+          "lbl": "Bio-Rad Laboratories, Inc.",
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_1200003",
+          "lbl": "Bio Discovery",
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_1200004",
+          "lbl": "Bioconductor",
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_1200006",
+          "lbl": "COSE, France",
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_1200007",
+          "lbl": "Clontech Laboratories, Inc",
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_1200008",
+          "lbl": "Dana-Farber Cancer Institute and Harvard School of Public Health",
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_1200010",
+          "lbl": "Fujifilm",
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_1200011",
+          "lbl": "GE Healthcare Life Sciences",
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_1200012",
+          "lbl": "Molecular Neuroscience Core, Center for Behavioral Neuroscience, Atlanta",
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_1200013",
+          "lbl": "Molecular Dynamics",
+          "type": "INDIVIDUAL"
+        },
+        {
           "id": "http://www.ebi.ac.uk/swo/SWO_9000070",
           "lbl": "Microsoft Excel",
           "type": "CLASS"
@@ -21533,6 +22049,14 @@
         {
           "id": "http://www.ebi.ac.uk/swo/SWO_9000092",
           "lbl": "EMBOSS package",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass",
           "type": "CLASS"
         }
       ]

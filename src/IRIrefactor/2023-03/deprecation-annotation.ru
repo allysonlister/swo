@@ -253,13 +253,6 @@ efoswo:SWO_0000376 obo:IAO_0100001 swo:SWO_0000376 .
 efoswo:SWO_0000376 obo:IAO_0000233 'https://github.com/allysonlister/swo/issues/59' .
 efoswo:SWO_0000376 rdfs:comment "AL 2023-03-05: Improperly created IRI (with 'efo' in the IRI) replaced by the correct form for SWO IRIs."@en .
 
-efoswo:SWO_0000394 rdf:type oboInOwl:ObsoleteClass, owl:NamedIndividual .
-efoswo:SWO_0000394 rdfs:label "obsolete is developed by"@en .
-efoswo:SWO_0000394 owl:deprecated true .
-efoswo:SWO_0000394 obo:IAO_0100001 swo:SWO_0000394 .
-efoswo:SWO_0000394 obo:IAO_0000233 'https://github.com/allysonlister/swo/issues/59' .
-efoswo:SWO_0000394 rdfs:comment "AL 2023-03-05: Improperly created IRI (with 'efo' in the IRI) replaced by the correct form for SWO IRIs."@en .
-
 efoswo:SWO_0000427 rdf:type oboInOwl:ObsoleteClass, owl:NamedIndividual .
 efoswo:SWO_0000427 rdfs:label "obsolete Speed Berkeley Research Group"@en .
 efoswo:SWO_0000427 owl:deprecated true .
@@ -316,13 +309,6 @@ efoswo:SWO_0000492 obo:IAO_0100001 swo:SWO_0000492 .
 efoswo:SWO_0000492 obo:IAO_0000233 'https://github.com/allysonlister/swo/issues/59' .
 efoswo:SWO_0000492 rdfs:comment "AL 2023-03-05: Improperly created IRI (with 'efo' in the IRI) replaced by the correct form for SWO IRIs."@en .
 
-efoswo:SWO_0000740 rdf:type oboInOwl:ObsoleteClass, owl:NamedIndividual .
-efoswo:SWO_0000740 rdfs:label "obsolete implements"@en .
-efoswo:SWO_0000740 owl:deprecated true .
-efoswo:SWO_0000740 obo:IAO_0100001 swo:SWO_0000740 .
-efoswo:SWO_0000740 obo:IAO_0000233 'https://github.com/allysonlister/swo/issues/59' .
-efoswo:SWO_0000740 rdfs:comment "AL 2023-03-05: Improperly created IRI (with 'efo' in the IRI) replaced by the correct form for SWO IRIs."@en .
-
 efoswo:SWO_0000743 rdf:type oboInOwl:ObsoleteClass, owl:NamedIndividual .
 efoswo:SWO_0000743 rdfs:label "obsolete Strand Life Sciences"@en .
 efoswo:SWO_0000743 owl:deprecated true .
@@ -330,14 +316,28 @@ efoswo:SWO_0000743 obo:IAO_0100001 swo:SWO_0000743 .
 efoswo:SWO_0000743 obo:IAO_0000233 'https://github.com/allysonlister/swo/issues/59' .
 efoswo:SWO_0000743 rdfs:comment "AL 2023-03-05: Improperly created IRI (with 'efo' in the IRI) replaced by the correct form for SWO IRIs."@en .
 
-efoswo:SWO_0000741 a owl:ObjectProperty .
+efoswo:SWO_0000394 rdfs:subPropertyOf swo:SWO_0004007 .
+efoswo:SWO_0000394 rdfs:label "obsolete is developed by"@en .
+efoswo:SWO_0000394 owl:deprecated true .
+efoswo:SWO_0000394 obo:IAO_0100001 swo:SWO_0000394 .
+efoswo:SWO_0000394 obo:IAO_0000233 'https://github.com/allysonlister/swo/issues/59' .
+efoswo:SWO_0000394 rdfs:comment "AL 2023-03-05: Improperly created IRI (with 'efo' in the IRI) replaced by the correct form for SWO IRIs."@en .
+
+efoswo:SWO_0000740 rdfs:subPropertyOf swo:SWO_0004007 .
+efoswo:SWO_0000740 rdfs:label "obsolete implements"@en .
+efoswo:SWO_0000740 owl:deprecated true .
+efoswo:SWO_0000740 obo:IAO_0100001 swo:SWO_0000740 .
+efoswo:SWO_0000740 obo:IAO_0000233 'https://github.com/allysonlister/swo/issues/59' .
+efoswo:SWO_0000740 rdfs:comment "AL 2023-03-05: Improperly created IRI (with 'efo' in the IRI) replaced by the correct form for SWO IRIs."@en .
+
+efoswo:SWO_0000741 rdfs:subPropertyOf swo:SWO_0004007 .
 efoswo:SWO_0000741 rdfs:label "obsolete is encoded in"@en .
 efoswo:SWO_0000741 owl:deprecated true .
 efoswo:SWO_0000741 obo:IAO_0100001 swo:SWO_0000741 .
 efoswo:SWO_0000741 obo:IAO_0000233 'https://github.com/allysonlister/swo/issues/59' .
 efoswo:SWO_0000741 rdfs:comment "AL 2023-03-05: Improperly created IRI (with 'efo' in the IRI) replaced by the correct form for SWO IRIs."@en .
 
-efo:reason_for_obsolescence a owl:ObjectProperty .
+efo:reason_for_obsolescence rdfs:subPropertyOf swo:SWO_0004007 .
 efo:reason_for_obsolescence rdfs:label "obsolete reason_for_obsolescence"@en .
 efo:reason_for_obsolescence owl:deprecated true .
 efo:reason_for_obsolescence obo:IAO_0000233 'https://github.com/allysonlister/swo/issues/59' .

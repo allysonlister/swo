@@ -9,10 +9,12 @@
      xmlns:swo="http://www.ebi.ac.uk/swo/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:edamontology="http://edamontology.org#">
@@ -323,9 +325,23 @@ or of directed by the organization to do this.</obo:IAO_0000115>
     <!-- http://www.ebi.ac.uk/efo/reason_for_obsolescence -->
 
     <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/efo/reason_for_obsolescence">
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004007"/>
         <obo:IAO_0000233>https://github.com/allysonlister/swo/issues/59</obo:IAO_0000233>
         <rdfs:comment xml:lang="en">AL 2023-03-05: Replaced by rdfs:comment as no longer within the EFO release files.</rdfs:comment>
         <rdfs:label xml:lang="en">obsolete reason_for_obsolescence</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000394 -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000394">
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004007"/>
+        <obo:IAO_0000233>https://github.com/allysonlister/swo/issues/59</obo:IAO_0000233>
+        <obo:IAO_0100001 rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000394"/>
+        <rdfs:comment xml:lang="en">AL 2023-03-05: Improperly created IRI (with &apos;efo&apos; in the IRI) replaced by the correct form for SWO IRIs.</rdfs:comment>
+        <rdfs:label xml:lang="en">obsolete is developed by</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
     
@@ -359,9 +375,23 @@ or of directed by the organization to do this.</obo:IAO_0000115>
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000740 -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000740">
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004007"/>
+        <obo:IAO_0000233>https://github.com/allysonlister/swo/issues/59</obo:IAO_0000233>
+        <obo:IAO_0100001 rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000740"/>
+        <rdfs:comment xml:lang="en">AL 2023-03-05: Improperly created IRI (with &apos;efo&apos; in the IRI) replaced by the correct form for SWO IRIs.</rdfs:comment>
+        <rdfs:label xml:lang="en">obsolete implements</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000741 -->
 
     <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000741">
+        <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0004007"/>
         <obo:IAO_0000233>https://github.com/allysonlister/swo/issues/59</obo:IAO_0000233>
         <obo:IAO_0100001 rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000741"/>
         <rdfs:comment xml:lang="en">AL 2023-03-05: Improperly created IRI (with &apos;efo&apos; in the IRI) replaced by the correct form for SWO IRIs.</rdfs:comment>
@@ -46783,19 +46813,6 @@ For example, bagging of decision trees algorithm includes the specification of a
     
 
 
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000394 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000394">
-        <rdf:type rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000233>https://github.com/allysonlister/swo/issues/59</obo:IAO_0000233>
-        <obo:IAO_0100001 rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000394"/>
-        <rdfs:comment xml:lang="en">AL 2023-03-05: Improperly created IRI (with &apos;efo&apos; in the IRI) replaced by the correct form for SWO IRIs.</rdfs:comment>
-        <rdfs:label xml:lang="en">obsolete is developed by</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000427 -->
 
     <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000427">
@@ -46895,19 +46912,6 @@ For example, bagging of decision trees algorithm includes the specification of a
         <obo:IAO_0100001 rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000492"/>
         <rdfs:comment xml:lang="en">AL 2023-03-05: Improperly created IRI (with &apos;efo&apos; in the IRI) replaced by the correct form for SWO IRIs.</rdfs:comment>
         <rdfs:label xml:lang="en">obsolete Cambridge Bluegnome</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000740 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000740">
-        <rdf:type rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000233>https://github.com/allysonlister/swo/issues/59</obo:IAO_0000233>
-        <obo:IAO_0100001 rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000740"/>
-        <rdfs:comment xml:lang="en">AL 2023-03-05: Improperly created IRI (with &apos;efo&apos; in the IRI) replaced by the correct form for SWO IRIs.</rdfs:comment>
-        <rdfs:label xml:lang="en">obsolete implements</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:NamedIndividual>
     

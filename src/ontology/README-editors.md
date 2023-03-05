@@ -102,6 +102,10 @@ them in the top level (../..).
 Note that the versionIRI value automatically will be added, and will
 end with YYYY-MM-DD, as per OBO guidelines.
 
+Check them against the previous version by downloading the last release's swo.owl, or just copy that file before running the prepare_release command.
+
+    java -jar robot.jar diff --left swo-original.owl --right swo.owl --format markdown --output diff-with-previous-release.md 
+
 Commit and push these files.
 
     git commit -a
