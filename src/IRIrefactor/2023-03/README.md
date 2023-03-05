@@ -1,4 +1,4 @@
-##Background
+## Background
 
 In 2019, we did a large IRI refactoring when some IRIs containing "efo" crept into the ontology, which were unresolvable (see the [original ticket](https://github.com/allysonlister/swo/issues/10)).
 
