@@ -2110,12 +2110,6 @@ AnnotationAssertion(obo:IAO_0000115 efo:obsoleted_in_version "The version in whi
 AnnotationAssertion(dcterms:creator efo:obsoleted_in_version "EFO Development Team")
 AnnotationAssertion(rdfs:label efo:obsoleted_in_version "obsoleted in version")
 
-# Annotation Property: efo:reason_for_obsolescence (reason for obsolescence)
-
-AnnotationAssertion(obo:IAO_0000115 efo:reason_for_obsolescence "The reason a class or property was made obsolete")
-AnnotationAssertion(dcterms:creator efo:reason_for_obsolescence "EFO Development Team")
-AnnotationAssertion(rdfs:label efo:reason_for_obsolescence "reason for obsolescence")
-
 # Annotation Property: owl:deprecated (deprecated)
 
 AnnotationAssertion(rdfs:label owl:deprecated "deprecated")
