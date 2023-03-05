@@ -2049,6 +2049,7 @@ Declaration(AnnotationProperty(obo:IAO_0000115))
 Declaration(AnnotationProperty(obo:IAO_0000117))
 Declaration(AnnotationProperty(obo:IAO_0000118))
 Declaration(AnnotationProperty(obo:IAO_0000119))
+Declaration(AnnotationProperty(obo:IAO_0000233))
 Declaration(AnnotationProperty(obo:IAO_0100001))
 Declaration(AnnotationProperty(dce:contributor))
 Declaration(AnnotationProperty(dcterms:creator))
@@ -19545,9 +19546,13 @@ SubClassOf(<http://www.ontodm.com/OntoDM-core/OntoDM_731692> <http://www.ontodm.
 #   Named Individuals
 ############################
 
-# Individual: <http://www.ebi.ac.uk/efo/swo/OBI_0000245_1> (<http://www.ebi.ac.uk/efo/swo/OBI_0000245_1>)
+# Individual: <http://www.ebi.ac.uk/efo/swo/OBI_0000245_1> (OBSOLETE OBI_0000245_1)
 
-ClassAssertion(swo:SWO_0000260 <http://www.ebi.ac.uk/efo/swo/OBI_0000245_1>)
+AnnotationAssertion(obo:IAO_0000233 <http://www.ebi.ac.uk/efo/swo/OBI_0000245_1> "https://github.com/allysonlister/swo/issues/59"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://www.ebi.ac.uk/efo/swo/OBI_0000245_1> "AL 5.4.23: We believe this was erroneously created some time ago and therefore are obsoleting it with no recommended alternative individual."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/efo/swo/OBI_0000245_1> "OBSOLETE OBI_0000245_1"^^xsd:string)
+AnnotationAssertion(owl:deprecated <http://www.ebi.ac.uk/efo/swo/OBI_0000245_1> "true"^^xsd:boolean)
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> <http://www.ebi.ac.uk/efo/swo/OBI_0000245_1>)
 
 # Individual: <http://www.ebi.ac.uk/efo/swo/SWO_0000023> (Affymetrix)
 
