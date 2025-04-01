@@ -47124,7 +47124,7 @@ According to the GNU project, the Apache 2.0 license is better for substantial p
                 <owl:hasValue>https://www.addgene.org/terms-of-use/</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The Addgene Terms of Use specifies under what legal requirements Addgene data may be accessed. Data is available for use for non-commercial purposes, but users must get express written consent of Addgene to exploit the data for commercial purposes. All copyright, trademark and other proprietary notices must be retained on the data. As consent must be aquired for commercial use, this license only allows non-commercial use (a separate agreement must be entered into for commercial use).</obo:IAO_0000115>
+        <obo:IAO_0000115>The Addgene Terms of Use specifies under what legal requirements Addgene data may be accessed. Data is available for use for non-commercial purposes, but users must get express written consent of Addgene to exploit the data for commercial purposes. All copyright, trademark and other proprietary notices must be retained on the data. As consent must be acquired for commercial use, this license only allows non-commercial use (a separate agreement must be entered into for commercial use).</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.addgene.org/terms-of-use/, accessed 7 July 2016</obo:IAO_0000119>
         <terms:creator>Allyson Lister</terms:creator>
         <rdfs:label xml:lang="en">Addgene Terms of Use</rdfs:label>
@@ -47547,7 +47547,7 @@ You may not, except with our express written permission, distribute or commercia
                 <owl:hasValue>http://ctdbase.org/about/legal.jsp</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The CTD Legal Notice and Terms of Data Use specifies under what legal requirements the CTD data may be accessed. Data is available for use for non-commercial purposes as long as the data is properly attributed, but users must get express written consent of CTD to exploit the data for commercial purposes. As consent must be aquired for commercial use, this license only allows non-commercial use (a separate agreement must be entered into for commercial use). Additionally,You must notify CTD and describe your use of their data. For quality control purposes, you must provide CTD with periodic access to your publication of their data.</obo:IAO_0000115>
+        <obo:IAO_0000115>The CTD Legal Notice and Terms of Data Use specifies under what legal requirements the CTD data may be accessed. Data is available for use for non-commercial purposes as long as the data is properly attributed, but users must get express written consent of CTD to exploit the data for commercial purposes. As consent must be acquired for commercial use, this license only allows non-commercial use (a separate agreement must be entered into for commercial use). Additionally,You must notify CTD and describe your use of their data. For quality control purposes, you must provide CTD with periodic access to your publication of their data.</obo:IAO_0000115>
         <obo:IAO_0000118>Comparative Toxicogenomics Database Legal Notice and Terms of Use</obo:IAO_0000118>
         <obo:IAO_0000119>http://ctdbase.org/about/legal.jsp, accessed 12 July 2016</obo:IAO_0000119>
         <terms:creator>Allyson Lister</terms:creator>
@@ -47761,7 +47761,7 @@ access mechanisms. Requests for controlled-access data are reviewed by NIH Data 
                 <owl:hasValue>https://www.facebase.org/methods/policies/</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The Facebase Data Access Policy specifies under what legal requirements Facebase data may be accessed. Non-sensitive data is available for use for all purposes and usages. As consent must be aquired for sensitive (or closed) data, this license only covers the use of the open data (a separate agreement must be entered into for restricted access data).</obo:IAO_0000115>
+        <obo:IAO_0000115>The Facebase Data Access Policy specifies under what legal requirements Facebase data may be accessed. Non-sensitive data is available for use for all purposes and usages. As consent must be acquired for sensitive (or closed) data, this license only covers the use of the open data (a separate agreement must be entered into for restricted access data).</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.facebase.org/methods/policies/, accessed 12 July 2016</obo:IAO_0000119>
         <terms:creator>Allyson Lister</terms:creator>
         <rdfs:label xml:lang="en">Facebase Data Access Policy</rdfs:label>
@@ -47827,7 +47827,7 @@ access mechanisms. Requests for controlled-access data are reviewed by NIH Data 
                 <owl:hasValue>http://ppdb.agr.gifu-u.ac.jp/ppdb/cgi-bin/license.cgi</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The PPDB Academic Licens specifies under what legal requirements PPDB data may be accessed. Data is available for use for non-commercial purposes, but users must get express written consent of PPDB to exploit the data for commercial purposes. The resource will be used for teaching or not-for-profit research purposes only. The resource will not be further distributed to others. The recipient agrees to acknowledge the source of the material in any publication reporting its use. As consent must be aquired for commercial use, this license only allows non-commercial use (a separate agreement must be entered into for commercial use).</obo:IAO_0000115>
+        <obo:IAO_0000115>The PPDB Academic Licens specifies under what legal requirements PPDB data may be accessed. Data is available for use for non-commercial purposes, but users must get express written consent of PPDB to exploit the data for commercial purposes. The resource will be used for teaching or not-for-profit research purposes only. The resource will not be further distributed to others. The recipient agrees to acknowledge the source of the material in any publication reporting its use. As consent must be acquired for commercial use, this license only allows non-commercial use (a separate agreement must be entered into for commercial use).</obo:IAO_0000115>
         <obo:IAO_0000118>Plant Promoter Database Academic License</obo:IAO_0000118>
         <obo:IAO_0000119>http://ppdb.agr.gifu-u.ac.jp/ppdb/cgi-bin/license.cgi, accessed 12 July 2016</obo:IAO_0000119>
         <terms:creator>Allyson Lister</terms:creator>
@@ -48050,7 +48050,7 @@ access mechanisms. Requests for controlled-access data are reviewed by NIH Data 
                 <owl:hasValue>http://sabiork.h-its.org/layouts/content/termscondition.gsp</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The SABIO-RK Non-Commercial Purpose License covers use of the Database for Non-Commercial Purpose only, and appropriate attribution must be given. Non-Commercial Purpose means the use of the Database solely for internal non-commercial research and academic purposes. As consent must be aquired for commercial use, a separate agreement must be entered into for commercial use and is not covered here.</obo:IAO_0000115>
+        <obo:IAO_0000115>The SABIO-RK Non-Commercial Purpose License covers use of the Database for Non-Commercial Purpose only, and appropriate attribution must be given. Non-Commercial Purpose means the use of the Database solely for internal non-commercial research and academic purposes. As consent must be acquired for commercial use, a separate agreement must be entered into for commercial use and is not covered here.</obo:IAO_0000115>
         <obo:IAO_0000119>http://sabiork.h-its.org/layouts/content/termscondition.gsp, accessed 13 July 2016</obo:IAO_0000119>
         <terms:creator>Allyson Lister</terms:creator>
         <rdfs:label xml:lang="en">SABIO-RK Non-Commercial Purpose License</rdfs:label>
@@ -48508,7 +48508,7 @@ access mechanisms. Requests for controlled-access data are reviewed by NIH Data 
                 <owl:hasValue>http://www.drugbank.ca/about</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>DrugBank is offered to the public as a freely available resource. Use and re-distribution of the data, in whole or in part, for commercial purposes (including internal use) requires a license. We ask that users who download significant portions of the database cite the DrugBank paper in any resulting publications. As consent must be aquired for commercial use, this license only describes the non-commercial aspects of data usage (a separate agreement must be entered into for commercial use).</obo:IAO_0000115>
+        <obo:IAO_0000115>DrugBank is offered to the public as a freely available resource. Use and re-distribution of the data, in whole or in part, for commercial purposes (including internal use) requires a license. We ask that users who download significant portions of the database cite the DrugBank paper in any resulting publications. As consent must be acquired for commercial use, this license only describes the non-commercial aspects of data usage (a separate agreement must be entered into for commercial use).</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.drugbank.ca/about, accessed 13 July 2016</obo:IAO_0000119>
         <terms:creator>Allyson Lister</terms:creator>
         <rdfs:label xml:lang="en">DrugBank Academic License</rdfs:label>
@@ -48594,7 +48594,7 @@ access mechanisms. Requests for controlled-access data are reviewed by NIH Data 
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Data are to be used only for purposes of research and education. Commercial use is prohibited without written permission from Xenbase.
-The contributor(s) of unpublished data should be explicitly acknowledged in any publication that incorporates, or is based in part or entirely on these data. Xenbase should be explicitly acknowledged when data used in any publication, has been in part or solely derived from analysis of data from this website. As consent must be aquired for commercial use, this license only describes the non-commercial aspects of data usage (a separate agreement must be entered into for commercial use).</obo:IAO_0000115>
+The contributor(s) of unpublished data should be explicitly acknowledged in any publication that incorporates, or is based in part or entirely on these data. Xenbase should be explicitly acknowledged when data used in any publication, has been in part or solely derived from analysis of data from this website. As consent must be acquired for commercial use, this license only describes the non-commercial aspects of data usage (a separate agreement must be entered into for commercial use).</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.xenbase.org/other/static/aboutXenbase.jsp, accessed 13 July 2016</obo:IAO_0000119>
         <terms:creator>Allyson Lister</terms:creator>
         <rdfs:label xml:lang="en">Xenbase Academic Conditions of Use</rdfs:label>
