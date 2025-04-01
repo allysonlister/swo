@@ -3903,7 +3903,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000112 xml:lang="en">the Second World War</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">your body mass index</obo:IAO_0000112>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Entity doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. For example Werner Ceusters &apos;portions of reality&apos; include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, &apos;How to track absolutely everything&apos; at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Entity doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilities. For example Werner Ceusters &apos;portions of reality&apos; include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, &apos;How to track absolutely everything&apos; at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf</obo:IAO_0000116>
         <obo:IAO_0000600 xml:lang="en">An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])</obo:IAO_0000600>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">entity</rdfs:label>
@@ -3911,7 +3911,7 @@ For example, A and B may be gene products and binding of B by A positively regul
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
-        <owl:annotatedTarget xml:lang="en">Entity doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. For example Werner Ceusters &apos;portions of reality&apos; include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, &apos;How to track absolutely everything&apos; at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">Entity doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilities. For example Werner Ceusters &apos;portions of reality&apos; include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, &apos;How to track absolutely everything&apos; at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000004"/>
         <rdfs:comment>per discussion with Barry Smith</rdfs:comment>
         <rdfs:seeAlso rdf:resource="http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf"/>
@@ -3947,7 +3947,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000111 xml:lang="en">continuant</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Continuant doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. For example, in an expansion involving bringing in some of Ceuster&apos;s other portions of reality, questions are raised as to whether universals are continuants</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Continuant doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilities. For example, in an expansion involving bringing in some of Ceuster&apos;s other portions of reality, questions are raised as to whether universals are continuants</obo:IAO_0000116>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
         <obo:IAO_0000600 xml:lang="en">A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (axiom label in BFO2 Reference: [008-002])</obo:IAO_0000600>
         <obo:IAO_0000601 xml:lang="en">if b is a continuant and if, for some t, c has_continuant_part b at t, then c is a continuant. (axiom label in BFO2 Reference: [126-001])</obo:IAO_0000601>
@@ -3963,7 +3963,7 @@ For example, A and B may be gene products and binding of B by A positively regul
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
-        <owl:annotatedTarget xml:lang="en">Continuant doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. For example, in an expansion involving bringing in some of Ceuster&apos;s other portions of reality, questions are raised as to whether universals are continuants</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">Continuant doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilities. For example, in an expansion involving bringing in some of Ceuster&apos;s other portions of reality, questions are raised as to whether universals are continuants</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000007"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -4038,7 +4038,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000115 xml:lang="en">An entity that has temporal parts and that happens, unfolds or develops through time.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: every occurrent that is not a temporal or spatiotemporal region is s-dependent on some independent continuant that is not a spatial region</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: s-dependence obtains between every process and its participants in the sense that, as a matter of necessity, this process could not have existed unless these or those participants existed also. A process may have a succession of participants at different phases of its unfolding. Thus there may be different players on the field at different times during the course of a football game; but the process which is the entire game s-depends_on all of these players nonetheless. Some temporal parts of this process will s-depend_on on only some of the players.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Occurrent doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. An example would be the sum of a process and the process boundary of another process.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Occurrent doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilities. An example would be the sum of a process and the process boundary of another process.</obo:IAO_0000116>
         <obo:IAO_0000116>Simons uses different terminology for relations of occurrents to regions: Denote the spatio-temporal location of a given occurrent e by &apos;spn[e]&apos; and call this region its span. We may say an occurrent is at its span, in any larger region, and covers any smaller region. Now suppose we have fixed a frame of reference so that we can speak not merely of spatio-temporal but also of spatial regions (places) and temporal regions (times). The spread of an occurrent, (relative to a frame of reference) is the space it exactly occupies, and its spell is likewise the time it exactly occupies. We write &apos;spr[e]&apos; and `spl[e]&apos; respectively for the spread and spell of e, omitting mention of the frame.</obo:IAO_0000116>
         <obo:IAO_0000600 xml:lang="en">An occurrent is an entity that unfolds itself in time or it is the instantaneous boundary of such an entity (for example a beginning or an ending) or it is a temporal or spatiotemporal region which such an entity occupies_temporal_region or occupies_spatiotemporal_region. (axiom label in BFO2 Reference: [077-002])</obo:IAO_0000600>
         <obo:IAO_0000601 xml:lang="en">Every occurrent occupies_spatiotemporal_region some spatiotemporal region. (axiom label in BFO2 Reference: [108-001])</obo:IAO_0000601>
@@ -4051,7 +4051,7 @@ For example, A and B may be gene products and binding of B by A positively regul
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
-        <owl:annotatedTarget xml:lang="en">Occurrent doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. An example would be the sum of a process and the process boundary of another process.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">Occurrent doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilities. An example would be the sum of a process and the process boundary of another process.</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000006"/>
         <rdfs:comment>per discussion with Barry Smith</rdfs:comment>
     </owl:Axiom>
@@ -4381,7 +4381,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000115 xml:lang="en">A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &amp;gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &amp;lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">b is a specifically dependent continuant = Def. b is a continuant &amp; there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">Specifically dependent continuant doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. We&apos;re not sure what else will develop here, but for example there are questions such as what are promises, obligation, etc.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Specifically dependent continuant doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilities. We&apos;re not sure what else will develop here, but for example there are questions such as what are promises, obligation, etc.</obo:IAO_0000116>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
         <obo:IAO_0000602>(iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004] </obo:IAO_0000602>
         <obo:IAO_0000602>(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] </obo:IAO_0000602>
@@ -4403,7 +4403,7 @@ For example, A and B may be gene products and binding of B by A positively regul
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
-        <owl:annotatedTarget xml:lang="en">Specifically dependent continuant doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. We&apos;re not sure what else will develop here, but for example there are questions such as what are promises, obligation, etc.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">Specifically dependent continuant doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilities. We&apos;re not sure what else will develop here, but for example there are questions such as what are promises, obligation, etc.</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000005"/>
         <rdfs:comment>per discussion with Barry Smith</rdfs:comment>
     </owl:Axiom>
@@ -49392,7 +49392,7 @@ According to the GNU project, the Apache 2.0 license is better for substantial p
                 <owl:hasValue>https://www.addgene.org/terms-of-use/</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The Addgene Terms of Use specifies under what legal requirements Addgene data may be accessed. Data is available for use for non-commercial purposes, but users must get express written consent of Addgene to exploit the data for commercial purposes. All copyright, trademark and other proprietary notices must be retained on the data. As consent must be aquired for commercial use, this license only allows non-commercial use (a separate agreement must be entered into for commercial use).</obo:IAO_0000115>
+        <obo:IAO_0000115>The Addgene Terms of Use specifies under what legal requirements Addgene data may be accessed. Data is available for use for non-commercial purposes, but users must get express written consent of Addgene to exploit the data for commercial purposes. All copyright, trademark and other proprietary notices must be retained on the data. As consent must be acquired for commercial use, this license only allows non-commercial use (a separate agreement must be entered into for commercial use).</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.addgene.org/terms-of-use/, accessed 7 July 2016</obo:IAO_0000119>
         <terms:creator>Allyson Lister</terms:creator>
         <rdfs:label xml:lang="en">Addgene Terms of Use</rdfs:label>
@@ -49826,7 +49826,7 @@ You may not, except with our express written permission, distribute or commercia
                 <owl:hasValue>http://ctdbase.org/about/legal.jsp</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The CTD Legal Notice and Terms of Data Use specifies under what legal requirements the CTD data may be accessed. Data is available for use for non-commercial purposes as long as the data is properly attributed, but users must get express written consent of CTD to exploit the data for commercial purposes. As consent must be aquired for commercial use, this license only allows non-commercial use (a separate agreement must be entered into for commercial use). Additionally,You must notify CTD and describe your use of their data. For quality control purposes, you must provide CTD with periodic access to your publication of their data.</obo:IAO_0000115>
+        <obo:IAO_0000115>The CTD Legal Notice and Terms of Data Use specifies under what legal requirements the CTD data may be accessed. Data is available for use for non-commercial purposes as long as the data is properly attributed, but users must get express written consent of CTD to exploit the data for commercial purposes. As consent must be acquired for commercial use, this license only allows non-commercial use (a separate agreement must be entered into for commercial use). Additionally,You must notify CTD and describe your use of their data. For quality control purposes, you must provide CTD with periodic access to your publication of their data.</obo:IAO_0000115>
         <obo:IAO_0000118>Comparative Toxicogenomics Database Legal Notice and Terms of Use</obo:IAO_0000118>
         <obo:IAO_0000119>http://ctdbase.org/about/legal.jsp, accessed 12 July 2016</obo:IAO_0000119>
         <terms:creator>Allyson Lister</terms:creator>
@@ -50062,7 +50062,7 @@ access mechanisms. Requests for controlled-access data are reviewed by NIH Data 
                 <owl:hasValue>https://www.facebase.org/methods/policies/</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The Facebase Data Access Policy specifies under what legal requirements Facebase data may be accessed. Non-sensitive data is available for use for all purposes and usages. As consent must be aquired for sensitive (or closed) data, this license only covers the use of the open data (a separate agreement must be entered into for restricted access data).</obo:IAO_0000115>
+        <obo:IAO_0000115>The Facebase Data Access Policy specifies under what legal requirements Facebase data may be accessed. Non-sensitive data is available for use for all purposes and usages. As consent must be acquired for sensitive (or closed) data, this license only covers the use of the open data (a separate agreement must be entered into for restricted access data).</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.facebase.org/methods/policies/, accessed 12 July 2016</obo:IAO_0000119>
         <terms:creator>Allyson Lister</terms:creator>
         <rdfs:label xml:lang="en">Facebase Data Access Policy</rdfs:label>
@@ -50128,7 +50128,7 @@ access mechanisms. Requests for controlled-access data are reviewed by NIH Data 
                 <owl:hasValue>http://ppdb.agr.gifu-u.ac.jp/ppdb/cgi-bin/license.cgi</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The PPDB Academic Licens specifies under what legal requirements PPDB data may be accessed. Data is available for use for non-commercial purposes, but users must get express written consent of PPDB to exploit the data for commercial purposes. The resource will be used for teaching or not-for-profit research purposes only. The resource will not be further distributed to others. The recipient agrees to acknowledge the source of the material in any publication reporting its use. As consent must be aquired for commercial use, this license only allows non-commercial use (a separate agreement must be entered into for commercial use).</obo:IAO_0000115>
+        <obo:IAO_0000115>The PPDB Academic Licens specifies under what legal requirements PPDB data may be accessed. Data is available for use for non-commercial purposes, but users must get express written consent of PPDB to exploit the data for commercial purposes. The resource will be used for teaching or not-for-profit research purposes only. The resource will not be further distributed to others. The recipient agrees to acknowledge the source of the material in any publication reporting its use. As consent must be acquired for commercial use, this license only allows non-commercial use (a separate agreement must be entered into for commercial use).</obo:IAO_0000115>
         <obo:IAO_0000118>Plant Promoter Database Academic License</obo:IAO_0000118>
         <obo:IAO_0000119>http://ppdb.agr.gifu-u.ac.jp/ppdb/cgi-bin/license.cgi, accessed 12 July 2016</obo:IAO_0000119>
         <terms:creator>Allyson Lister</terms:creator>
@@ -50394,7 +50394,7 @@ access mechanisms. Requests for controlled-access data are reviewed by NIH Data 
                 <owl:hasValue>http://sabiork.h-its.org/layouts/content/termscondition.gsp</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The SABIO-RK Non-Commercial Purpose License covers use of the Database for Non-Commercial Purpose only, and appropriate attribution must be given. Non-Commercial Purpose means the use of the Database solely for internal non-commercial research and academic purposes. As consent must be aquired for commercial use, a separate agreement must be entered into for commercial use and is not covered here.</obo:IAO_0000115>
+        <obo:IAO_0000115>The SABIO-RK Non-Commercial Purpose License covers use of the Database for Non-Commercial Purpose only, and appropriate attribution must be given. Non-Commercial Purpose means the use of the Database solely for internal non-commercial research and academic purposes. As consent must be acquired for commercial use, a separate agreement must be entered into for commercial use and is not covered here.</obo:IAO_0000115>
         <obo:IAO_0000119>http://sabiork.h-its.org/layouts/content/termscondition.gsp, accessed 13 July 2016</obo:IAO_0000119>
         <terms:creator>Allyson Lister</terms:creator>
         <rdfs:label xml:lang="en">SABIO-RK Non-Commercial Purpose License</rdfs:label>
@@ -50860,7 +50860,7 @@ access mechanisms. Requests for controlled-access data are reviewed by NIH Data 
                 <owl:hasValue>http://www.drugbank.ca/about</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>DrugBank is offered to the public as a freely available resource. Use and re-distribution of the data, in whole or in part, for commercial purposes (including internal use) requires a license. We ask that users who download significant portions of the database cite the DrugBank paper in any resulting publications. As consent must be aquired for commercial use, this license only describes the non-commercial aspects of data usage (a separate agreement must be entered into for commercial use).</obo:IAO_0000115>
+        <obo:IAO_0000115>DrugBank is offered to the public as a freely available resource. Use and re-distribution of the data, in whole or in part, for commercial purposes (including internal use) requires a license. We ask that users who download significant portions of the database cite the DrugBank paper in any resulting publications. As consent must be acquired for commercial use, this license only describes the non-commercial aspects of data usage (a separate agreement must be entered into for commercial use).</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.drugbank.ca/about, accessed 13 July 2016</obo:IAO_0000119>
         <terms:creator>Allyson Lister</terms:creator>
         <rdfs:label xml:lang="en">DrugBank Academic License</rdfs:label>
@@ -50957,7 +50957,7 @@ access mechanisms. Requests for controlled-access data are reviewed by NIH Data 
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Data are to be used only for purposes of research and education. Commercial use is prohibited without written permission from Xenbase.
-The contributor(s) of unpublished data should be explicitly acknowledged in any publication that incorporates, or is based in part or entirely on these data. Xenbase should be explicitly acknowledged when data used in any publication, has been in part or solely derived from analysis of data from this website. As consent must be aquired for commercial use, this license only describes the non-commercial aspects of data usage (a separate agreement must be entered into for commercial use).</obo:IAO_0000115>
+The contributor(s) of unpublished data should be explicitly acknowledged in any publication that incorporates, or is based in part or entirely on these data. Xenbase should be explicitly acknowledged when data used in any publication, has been in part or solely derived from analysis of data from this website. As consent must be acquired for commercial use, this license only describes the non-commercial aspects of data usage (a separate agreement must be entered into for commercial use).</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.xenbase.org/other/static/aboutXenbase.jsp, accessed 13 July 2016</obo:IAO_0000119>
         <terms:creator>Allyson Lister</terms:creator>
         <rdfs:label xml:lang="en">Xenbase Academic Conditions of Use</rdfs:label>
