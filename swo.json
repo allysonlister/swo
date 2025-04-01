@@ -21049,7 +21049,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "Entity doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example Werner Ceusters 'portions of reality' include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, 'How to track absolutely everything' at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf"
+                "val": "Entity doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilities. For example Werner Ceusters 'portions of reality' include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, 'How to track absolutely everything' at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000600",
@@ -21086,7 +21086,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "Continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example, in an expansion involving bringing in some of Ceuster's other portions of reality, questions are raised as to whether universals are continuants"
+                "val": "Continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilities. For example, in an expansion involving bringing in some of Ceuster's other portions of reality, questions are raised as to whether universals are continuants"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
@@ -21158,7 +21158,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "Occurrent doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. An example would be the sum of a process and the process boundary of another process."
+                "val": "Occurrent doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilities. An example would be the sum of a process and the process boundary of another process."
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
@@ -21580,7 +21580,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "Specifically dependent continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. We're not sure what else will develop here, but for example there are questions such as what are promises, obligation, etc."
+                "val": "Specifically dependent continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilities. We're not sure what else will develop here, but for example there are questions such as what are promises, obligation, etc."
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
