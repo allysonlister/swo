@@ -13,6 +13,7 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:edamontology="http://edamontology.org#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/swo.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/swo.owl/1.9.0"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/swo/components/swo-external.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/swo/components/swo-software.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/swo/imports/bfo_import.owl"/>
