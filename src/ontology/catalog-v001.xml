@@ -12,5 +12,8 @@
   <uri name="http://purl.obolibrary.org/obo/swo/components/swo-software.owl" uri="components/swo-software.owl"/>
 
 
+  <uri name="http://purl.obolibrary.org/obo/swo/imports/deprecated.owl" uri="imports/deprecated.owl"/>
+
+
 </group>
 </catalog>
