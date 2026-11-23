@@ -19,12 +19,13 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:edamontology="http://edamontology.org#">
     <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/swo.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/swo/components/swo-external.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/swo/components/swo-software.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/swo/imports/bfo_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/swo/imports/iao_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/swo/imports/obi_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/swo/imports/omo_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/swo/imports/ro_import.owl"/>
-        <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/swo-external.owl"/>
         <terms:creator>Allyson Lister</terms:creator>
         <terms:creator>Andy Brown</terms:creator>
         <terms:creator>Duncan Hull</terms:creator>
@@ -971,7 +972,10 @@ or of directed by the organization to do this.</obo:IAO_0000115>
 
     <!-- http://edamontology.org/format_1936 -->
 
-    <owl:Class rdf:about="http://edamontology.org/format_1936"/>
+    <owl:Class rdf:about="http://edamontology.org/format_1936">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000098"/>
+        <rdfs:label xml:lang="en">GenBank Format</rdfs:label>
+    </owl:Class>
     
 
 
@@ -1093,7 +1097,10 @@ or of directed by the organization to do this.</obo:IAO_0000115>
 
     <!-- http://edamontology.org/format_3239 -->
 
-    <owl:Class rdf:about="http://edamontology.org/format_3239"/>
+    <owl:Class rdf:about="http://edamontology.org/format_3239">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000098"/>
+        <rdfs:label xml:lang="en">CopasiML</rdfs:label>
+    </owl:Class>
     
 
 
@@ -1208,19 +1215,25 @@ or of directed by the organization to do this.</obo:IAO_0000115>
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <rdfs:label xml:lang="en">process</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
+        <rdfs:label xml:lang="en">realizable entity</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
+        <rdfs:label xml:lang="en">role</rdfs:label>
+    </owl:Class>
     
 
 
@@ -1256,6 +1269,7 @@ or of directed by the organization to do this.</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000098"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">data entity</rdfs:label>
         <rdfs:seeAlso>http://www.ontobee.org/browser/rdf.php?o=IAO&amp;iri=http://purl.obolibrary.org/obo/IAO_0000027</rdfs:seeAlso>
     </owl:Class>
     
@@ -1274,7 +1288,9 @@ or of directed by the organization to do this.</obo:IAO_0000115>
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
+        <rdfs:label xml:lang="en">directive information entity</rdfs:label>
+    </owl:Class>
     
 
 
@@ -1290,13 +1306,17 @@ or of directed by the organization to do this.</obo:IAO_0000115>
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000098 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000098"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000098">
+        <rdfs:label xml:lang="en">data format specification</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000104 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104">
+        <rdfs:label xml:lang="en">plan specification</rdfs:label>
+    </owl:Class>
     
 
 
@@ -1334,13 +1354,17 @@ or of directed by the organization to do this.</obo:IAO_0000115>
 
     <!-- http://purl.obolibrary.org/obo/OBI_0200000 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200000">
+        <rdfs:label xml:lang="en">data transformation</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0200111 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200111"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200111">
+        <rdfs:label xml:lang="en">data visualization</rdfs:label>
+    </owl:Class>
     
 
 
@@ -33170,7 +33194,7 @@ tiple samples</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100016">
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000297"/>
         <terms:creator>Nandini Badarinarayan</terms:creator>
-        <rdfs:label>Absolute Expression Analysis</rdfs:label>
+        <rdfs:label>Absolute Expression Analysis for v4.0</rdfs:label>
     </owl:Class>
     
 
@@ -33180,7 +33204,7 @@ tiple samples</obo:IAO_0000115>
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_1100017">
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000272"/>
         <terms:creator>Nandini Badarinarayan</terms:creator>
-        <rdfs:label>Absolute Expression Analysis</rdfs:label>
+        <rdfs:label>Absolute Expression Analysis for v5.0</rdfs:label>
     </owl:Class>
     
 
@@ -47481,7 +47505,7 @@ For example, bagging of decision trees algorithm includes the specification of a
 
     <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/organization/SWO_9000014">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdfs:label>Dropbox</rdfs:label>
+        <rdfs:label>Dropbox, Inc.</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -47681,7 +47705,7 @@ For example, bagging of decision trees algorithm includes the specification of a
 
     <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000001">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000129"/>
-        <rdfs:label>beta</rdfs:label>
+        <rdfs:label>beta version</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -47690,7 +47714,7 @@ For example, bagging of decision trees algorithm includes the specification of a
 
     <owl:NamedIndividual rdf:about="http://www.ebi.ac.uk/swo/version/SWO_2000002">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000129"/>
-        <rdfs:label>alpha</rdfs:label>
+        <rdfs:label>alpha version</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -48089,5 +48113,5 @@ For example, bagging of decision trees algorithm includes the specification of a
 
 
 
-<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
