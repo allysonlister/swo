@@ -1,0 +1,44 @@
+curie	label	iri
+SWOB:4000013	annotation editing	http://www.ebi.ac.uk/swo/objective/SWO_4000013
+SWOB:7000005	averaging	http://www.ebi.ac.uk/swo/objective/SWO_7000005
+SWOB:7000011	background correction	http://www.ebi.ac.uk/swo/objective/SWO_7000011
+SWOB:4000014	biological data processing	http://www.ebi.ac.uk/swo/objective/SWO_4000014
+SWOB:7000006	center calculation	http://www.ebi.ac.uk/swo/objective/SWO_7000006
+SWOB:4000017	citation management	http://www.ebi.ac.uk/swo/objective/SWO_4000017
+SWOB:7000007	class discovery	http://www.ebi.ac.uk/swo/objective/SWO_7000007
+SWOB:7000008	class prediction	http://www.ebi.ac.uk/swo/objective/SWO_7000008
+SWOB:7000010	correction	http://www.ebi.ac.uk/swo/objective/SWO_7000010
+SWOB:7000013	cross validation	http://www.ebi.ac.uk/swo/objective/SWO_7000013
+SWOB:7000014	curve fitting	http://www.ebi.ac.uk/swo/objective/SWO_7000014
+SWO:0000467	data annotation	http://www.ebi.ac.uk/swo/SWO_0000467
+SWOB:7000015	data normalization	http://www.ebi.ac.uk/swo/objective/SWO_7000015
+ODME:OntoDM-KDD_778151	data processing task	http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD_778151
+SWO:0000143	data storage	http://www.ebi.ac.uk/swo/SWO_0000143
+OBI:0200000	data transformation	http://purl.obolibrary.org/obo/OBI_0200000
+OBI:0200111	data visualization	http://purl.obolibrary.org/obo/OBI_0200111
+SWO:0000509	database creation	http://www.ebi.ac.uk/swo/SWO_0000509
+SWO:0000502	dataset comparison	http://www.ebi.ac.uk/swo/SWO_0000502
+SWOB:7000016	decision tree induction	http://www.ebi.ac.uk/swo/objective/SWO_7000016
+SWOB:7000017	descriptive statistical calculation	http://www.ebi.ac.uk/swo/objective/SWO_7000017
+SWOB:7000018	differential expression analysis	http://www.ebi.ac.uk/swo/objective/SWO_7000018
+SWO:1100074	distance calculation	http://www.ebi.ac.uk/swo/SWO_1100074
+SWOB:4000003	document outlining	http://www.ebi.ac.uk/swo/objective/SWO_4000003
+SWOB:7000012	error correction	http://www.ebi.ac.uk/swo/objective/SWO_7000012
+SWOB:7000019	feature extraction	http://www.ebi.ac.uk/swo/objective/SWO_7000019
+SWOB:4000012	file rendering	http://www.ebi.ac.uk/swo/objective/SWO_4000012
+SWO:0000553	gene expression analysis	http://www.ebi.ac.uk/swo/SWO_0000553
+SWOB:4000004	image compression	http://www.ebi.ac.uk/swo/objective/SWO_4000004
+SWOB:4000009	laboratory information management	http://www.ebi.ac.uk/swo/objective/SWO_4000009
+SWOB:4000010	manage computer operations	http://www.ebi.ac.uk/swo/objective/SWO_4000010
+SWOB:40000002	matrix manipulation	http://www.ebi.ac.uk/swo/objective/SWO_40000002
+SWOB:4000016	molecular sequence analysis	http://www.ebi.ac.uk/swo/objective/SWO_4000016
+SWOB:7000003	multiple sequence alignment	http://www.ebi.ac.uk/swo/objective/SWO_7000003
+SWOB:4000005	ontology engineering	http://www.ebi.ac.uk/swo/objective/SWO_4000005
+SWOB:7000004	pairwise sequence alignment	http://www.ebi.ac.uk/swo/objective/SWO_7000004
+SWO:0000648	parse	http://www.ebi.ac.uk/swo/SWO_0000648
+SWOB:7000002	sequence alignment	http://www.ebi.ac.uk/swo/objective/SWO_7000002
+SWOB:4000008	simulation and analysis of biochemical networks	http://www.ebi.ac.uk/swo/objective/SWO_4000008
+SWOO:9000056	software development	http://www.ebi.ac.uk/swo/organization/SWO_9000056
+SWOB:4000001	spreadsheet editing	http://www.ebi.ac.uk/swo/objective/SWO_4000001
+SWOB:4000011	text editing	http://www.ebi.ac.uk/swo/objective/SWO_4000011
+SWOB:4000006	word processing	http://www.ebi.ac.uk/swo/objective/SWO_4000006

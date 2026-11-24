@@ -1,0 +1,70 @@
+# Schema configuration for onto_to_linkml_schema.py
+# enums.<name>.action: accept | narrow | skip
+# excluded_properties: property IRIs skipped by rarity prompt
+enums:
+  DirectlyFollowedByMenu:
+    action: narrow
+    labels:
+      http://purl.obolibrary.org/obo/SWO_0000001: software
+    root_iris:
+    - http://purl.obolibrary.org/obo/SWO_0000001
+  DirectlyPrecededByMenu:
+    action: narrow
+    labels:
+      http://purl.obolibrary.org/obo/SWO_0000001: software
+    root_iris:
+    - http://purl.obolibrary.org/obo/SWO_0000001
+  HasDeclaredStatusMenu:
+    action: accept
+  HasInterfaceMenu:
+    action: accept
+  HasLicenseMenu:
+    action: accept
+  HasPartMenu:
+    action: narrow
+    labels:
+      http://purl.obolibrary.org/obo/SWO_0000001: software
+    root_iris:
+    - http://purl.obolibrary.org/obo/SWO_0000001
+  HasSpecifiedDataInputAllAmlDataSetMenu:
+    action: accept
+  HasSpecifiedDataInputDataEntityMenu_DataEntity:
+    action: accept
+  HasSpecifiedDataInputDatasetsMenu:
+    action: accept
+  HasSpecifiedDataInputDigitalGeneExpressionDgeDatasetsMenu:
+    action: accept
+  HasSpecifiedDataInputGeneExpressionDatasetMenu:
+    action: accept
+  HasSpecifiedDataInputImageMenu_Image:
+    action: accept
+  HasSpecifiedDataInputMenu_DataEntity:
+    action: accept
+  HasSpecifiedDataInputMicroarrayDataMenu:
+    action: accept
+  HasSpecifiedDataInputTextDataSetMenu_TextDataSet:
+    action: accept
+  HasSpecifiedDataOutputDatasetsMenu:
+    action: accept
+  HasSpecifiedDataOutputGraphPlotMenu:
+    action: accept
+  ImplementsMenu:
+    action: accept
+  IsEncodedInMenu:
+    action: accept
+  IsExecutedInMenu:
+    action: accept
+  IsSoftwareForMenu:
+    action: accept
+  OutputOfMenu_SoftwarePublishingProcess:
+    action: accept
+  OutputOfSoftwareDevelopmentMenu_SoftwareDevelopment:
+    action: accept
+  OutputOfSoftwarePublishingProcessMenu_SoftwarePublishingProcess:
+    action: accept
+  SoftwareMenu:
+    action: accept
+  UsesPlatformMenu:
+    action: accept
+  UsesSoftwareMenu:
+    action: accept
