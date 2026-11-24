@@ -20,6 +20,7 @@ import csv
 import os
 import subprocess
 import sys
+import yaml
 
 from rdflib import Graph, URIRef, Literal, BNode, Namespace
 from rdflib.namespace import OWL, RDF, RDFS
@@ -183,41 +184,28 @@ TITLES = [
     "type",       # ROBOT auxiliary
 ]
 
-ROBOT_CODES = [
-    "ID",
-    "AL rdfs:label@en",
-    "SC %",
-    "AL IAO:0000115@en",
-    "A IAO:0000119 SPLIT=|",
-    "AL rdfs:comment@en",
-    "A dcterms:creator SPLIT=|",
-    "SC 'has specified data output' some % SPLIT=|",
-    "SC 'has specified data output' some % SPLIT=|",
-    "SC 'implements' some % SPLIT=|",
-    "SC 'is executed in' some % SPLIT=|",
-    "SC 'has specified data input' some % SPLIT=|",
-    "SC 'has specified data input' some % SPLIT=|",
-    "SC 'is encoded in' some % SPLIT=|",
-    "SC 'is published by' value %",
-    "SC 'has license' some % SPLIT=|",
-    "SC 'has website homepage' value %",
-    "SC 'output of' some (SWO:9000055 and 'has participant' value %) SPLIT=|",
-    "SC 'has interface' some % SPLIT=|",
-    "SC 'is developed by' value % SPLIT=|",
-    "SC 'uses software' some % SPLIT=|",
-    "SC 'has documentation' value %",
-    "SC 'has support URL' value %",
-    "SC 'has version' value %",
-    "SC 'has download location' value %",
-    "SC 'directly preceded by' some % SPLIT=|",
-    "SC 'has release date' value %",
-    "SC 'has declared status' some % SPLIT=|",
-    "SC 'is software for' some % SPLIT=|",
-    "SC 'uses platform' some % SPLIT=|",
-    "SC 'directly followed by' some % SPLIT=|",
-    "SC 'has part' some % SPLIT=|",
-    "TYPE",       # ROBOT auxiliary — kept last so Ontology ID leads the file
-]
+SCHEMA_PATH = os.path.join(SCRIPT_DIR, "schema.yaml")
+
+
+def _robot_codes_from_schema(schema_path, headers):
+    """Read slot robot: annotations from schema.yaml and return codes in header order.
+
+    For the ROBOT-only 'type' header there is no schema slot; 'TYPE' is used.
+    """
+    with open(schema_path, encoding="utf-8") as fh:
+        schema = yaml.safe_load(fh)
+    slots = schema.get("slots", {})
+    codes = []
+    for h in headers:
+        if h == "type":
+            codes.append("TYPE")
+        else:
+            robot = slots.get(h, {}).get("annotations", {}).get("robot", "")
+            codes.append(robot)
+    return codes
+
+
+ROBOT_CODES = _robot_codes_from_schema(SCHEMA_PATH, HEADERS)
 
 # Properties whose someValuesFrom filler label goes directly into one column.
 # Maps property URIRef → header name.

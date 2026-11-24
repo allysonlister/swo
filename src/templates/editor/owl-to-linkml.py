@@ -597,7 +597,7 @@ def _ce_fingerprint(ce: dict) -> str:
     if t == "some":
         return f"some:{ce['property']}:{_ce_fingerprint(ce.get('filler'))}"
     if t == "value":
-        return f"value:{ce['property']}"
+        return f"value:{ce['property']}:{ce.get('value', '')}"
     if t == "all":
         return f"all:{ce['property']}:{_ce_fingerprint(ce.get('filler'))}"
     if t == "and":
@@ -855,6 +855,19 @@ def discover_property_slots(
         # identical ROBOT codes (e.g. all "has input format" restrictions map to
         # "SC P some (C and P2 some %) SPLIT=|").  Merge their user sets so we
         # get one slot per unique template code rather than one per subclass.
+
+        # Detect multivalued hasValue: if every pattern for this property is a
+        # hasValue restriction AND any single class carries more than one distinct
+        # hasValue filler for this property, the slot is multivalued and needs
+        # SPLIT=| so ROBOT can expand pipe-separated values into separate axioms.
+        _val_multivalued = False
+        if all(info["ce"].get("type") == "value" for info in fp_patterns.values()):
+            cls_fp_count: dict = {}
+            for info in fp_patterns.values():
+                for cls in info["users"]:
+                    cls_fp_count[cls] = cls_fp_count.get(cls, 0) + 1
+            _val_multivalued = any(n > 1 for n in cls_fp_count.values())
+
         robot_groups: dict = {}     # robot_code → {ce (representative), users}
         unsupported_count = 0
         for fp, info in fp_patterns.items():
@@ -862,6 +875,8 @@ def discover_property_slots(
             if robot is None:
                 unsupported_count += 1
                 continue
+            if _val_multivalued and robot.endswith(" value %"):
+                robot += " SPLIT=|"
             if robot not in robot_groups:
                 robot_groups[robot] = {"ce": info["ce"], "users": set()}
             robot_groups[robot]["users"].update(info["users"])
