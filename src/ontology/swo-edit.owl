@@ -2646,7 +2646,7 @@ or of directed by the organization to do this.</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>This package provides user interface and database connection code for annotation data packages using SQLite data storage.</obo:IAO_0000115>
-        <rdfs:label>&apos;AnnotationDbi&apos;</rdfs:label>
+        <rdfs:label>AnnotationDbi</rdfs:label>
     </rdf:Description>
     
 
@@ -2687,7 +2687,7 @@ or of directed by the organization to do this.</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>This package is designed to provide solutions for quality assessment and to detect differentially expressed genes for the Affymetrix GeneChips, including both 3&apos; -arrays and gene 1.0-ST arrays.</obo:IAO_0000115>
-        <rdfs:label>&apos;ArrayTools&apos;</rdfs:label>
+        <rdfs:label>ArrayTools</rdfs:label>
     </rdf:Description>
     
 
@@ -4328,7 +4328,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_0000148">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
-        <rdfs:label>Firth&apos;s bias reduction procedure</rdfs:label>
+        <rdfs:label>Firth’s bias reduction procedure</rdfs:label>
     </owl:Class>
     
 
@@ -6559,7 +6559,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_0000250">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
-        <rdfs:label>&apos;KLD&apos;</rdfs:label>
+        <rdfs:label>KLD</rdfs:label>
     </rdf:Description>
     
 
@@ -7063,7 +7063,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_0000281">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
-        <rdfs:label>&apos;MI&apos;</rdfs:label>
+        <rdfs:label>MI</rdfs:label>
     </rdf:Description>
     
 
@@ -7510,7 +7510,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_0000304">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
-        <rdfs:label>&apos;Needleman-Wunsch&apos;</rdfs:label>
+        <rdfs:label>Needleman-Wunsch</rdfs:label>
     </rdf:Description>
     
 
@@ -7958,7 +7958,7 @@ eciency by avoiding the calculation of an all-against-all distance matrix.</obo:
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_0000318">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
         <obo:IAO_0000115>it is where we fit a model with probe level and chip level parameters on a probeset by probeset basis</obo:IAO_0000115>
-        <rdfs:label>&apos;PLM&apos;</rdfs:label>
+        <rdfs:label>PLM</rdfs:label>
     </rdf:Description>
     
 
@@ -9562,7 +9562,7 @@ the graph structure of GO.</obo:IAO_0000115>
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_0000426">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
-        <rdfs:label>&apos;Smith-Waterman&apos;</rdfs:label>
+        <rdfs:label>Smith-Waterman</rdfs:label>
     </rdf:Description>
     
 
@@ -9986,7 +9986,7 @@ the graph structure of GO.</obo:IAO_0000115>
         <obo:IAO_0000115>A package that extends and improves the functionality of the base affy package. Routines that make heavy use of compiled code for speed. Central focus is on implementation of methods for fitting probe-level models and tools using these models. PLM based quality assessment tools.</obo:IAO_0000115>
         <obo:IAO_0000119>http://bioconductor.org/packages/2.4/bioc/html/affyPLM.html</obo:IAO_0000119>
         <dcterms:creator>Nandini Badarinarayan</dcterms:creator>
-        <rdfs:label>&apos;affyPLM&apos;</rdfs:label>
+        <rdfs:label>affyPLM</rdfs:label>
     </owl:Class>
     
 
@@ -10175,7 +10175,7 @@ the graph structure of GO.</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Various wrapper functions that have been written to streamline the more common analyses that a core Biostatistician might see</obo:IAO_0000115>
-        <rdfs:label>&apos;affycoretools&apos;</rdfs:label>
+        <rdfs:label>affycoretools</rdfs:label>
     </rdf:Description>
     
 
@@ -10531,7 +10531,7 @@ the graph structure of GO.</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>betr is a software package which implements the BETR (Bayesian Estimation of Temporal Regulation) algorithm to identify differentially expressed genes in microarray time-course data.</obo:IAO_0000115>
-        <rdfs:label>&apos;betr&apos;</rdfs:label>
+        <rdfs:label>betr</rdfs:label>
     </rdf:Description>
     
 
@@ -10671,7 +10671,7 @@ the graph structure of GO.</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>This package provides examples and code that make use of the different graph related packages produced by Bioconductor.</obo:IAO_0000115>
-        <rdfs:label>&apos;biocGraph&apos;</rdfs:label>
+        <rdfs:label>biocGraph</rdfs:label>
     </rdf:Description>
     
 
@@ -10723,7 +10723,7 @@ the graph structure of GO.</obo:IAO_0000115>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The bridge package consists of several functions for testing for dierential expression among mul-
 tiple samples</obo:IAO_0000115>
-        <rdfs:label>&apos;bridge&apos;</rdfs:label>
+        <rdfs:label>bridge</rdfs:label>
     </rdf:Description>
     
 
@@ -10767,7 +10767,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Bioconductor package concerned with analysis of cell-based RNA interference screens</obo:IAO_0000115>
-        <rdfs:label>&apos;cellHTS&apos;</rdfs:label>
+        <rdfs:label>cellHTS</rdfs:label>
     </rdf:Description>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SWO_0000494"/>
@@ -10809,7 +10809,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Analysis of cell-based RNA interference screens</obo:IAO_0000115>
-        <rdfs:label>&apos;cellHTS2&apos;</rdfs:label>
+        <rdfs:label>cellHTS2</rdfs:label>
     </rdf:Description>
     
 
@@ -10900,7 +10900,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>This package can be used to estimate the number of clusters in a set of microarray data, as well as test the stability of these clusters.</obo:IAO_0000115>
-        <rdfs:label>&apos;clusterStab&apos;</rdfs:label>
+        <rdfs:label>clusterStab</rdfs:label>
     </rdf:Description>
     
 
@@ -10950,7 +10950,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>This packages allow reading into R of Codelink bioarray data exported as text from the Codelink software. Also includes some functions to ease the manipulation and pre-processing of data, such in background correction and normalization.</obo:IAO_0000115>
-        <rdfs:label>&apos;codelink&apos;</rdfs:label>
+        <rdfs:label>codelink</rdfs:label>
     </rdf:Description>
     
 
@@ -11337,7 +11337,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Analyze microarray data</obo:IAO_0000115>
-        <rdfs:label>&apos;diffGeneAnalysis&apos;</rdfs:label>
+        <rdfs:label>diffGeneAnalysis</rdfs:label>
     </rdf:Description>
     
 
@@ -11385,7 +11385,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>This package implements a Kolmogorov Smirnov rank-sum based algorithm for training and classification of gene expression data sets. One of the chief strengths of this approach is that it is amenable to the &quot;multiclass&quot; problem. That is, it can discriminate between more than 2 classes.</obo:IAO_0000115>
-        <rdfs:label>&apos;dualKS&apos;</rdfs:label>
+        <rdfs:label>dualKS</rdfs:label>
     </rdf:Description>
     
 
@@ -11550,7 +11550,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Estimation and Testing for Differential Expression in Multiple Digital Gene Expression Libraries.</obo:IAO_0000115>
-        <rdfs:label>&apos;edgeR&apos;</rdfs:label>
+        <rdfs:label>edgeR</rdfs:label>
     </rdf:Description>
     
 
@@ -11641,7 +11641,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>This package explores and analyzes *omics data with R and GGobi</obo:IAO_0000115>
-        <rdfs:label>&apos;explorase&apos;</rdfs:label>
+        <rdfs:label>explorase</rdfs:label>
     </rdf:Description>
     
 
@@ -12263,7 +12263,7 @@ tiple samples</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>genArise is an easy to use tool for dual color microarray data. Its GUI-Tk based environment let any non-experienced user performs a basic, but not simple, data analysis just following a wizard. In addition it provides some tools for the developer.</obo:IAO_0000115>
-        <rdfs:label>&apos;genArise&apos;</rdfs:label>
+        <rdfs:label>genArise</rdfs:label>
     </rdf:Description>
     
 
@@ -13592,7 +13592,7 @@ tiple samples</obo:IAO_0000115>
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_0000614">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
-        <rdfs:label>&apos;MAS5&apos;</rdfs:label>
+        <rdfs:label>MAS5</rdfs:label>
     </rdf:Description>
     
 
@@ -16011,7 +16011,7 @@ tiple samples</obo:IAO_0000115>
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_0000715">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
-        <rdfs:label>&apos;t-test&apos;</rdfs:label>
+        <rdfs:label>t-test</rdfs:label>
     </rdf:Description>
     
 
@@ -22084,7 +22084,7 @@ This website is also covered by the Creative Commons Attribution 4.0 Internation
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_1100003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
         <obo:IAO_0000115>The ACME algorithm is quite straightforward. Using a user-dened quantile of the data,called the threshold, any probes in the data that are above that threshold are considered positive probes. A p-value is then assigned to each probe.</obo:IAO_0000115>
-        <rdfs:label>&apos;ACME&apos;</rdfs:label>
+        <rdfs:label>ACME</rdfs:label>
     </owl:Class>
     
 
@@ -22227,7 +22227,7 @@ This website is also covered by the Creative Commons Attribution 4.0 Internation
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
         <obo:IAO_0000115>ANOVA or Analysis of Variance is a hypothesis testing algorithm which a variable is partitioned into components attributable to different sources of variation.</obo:IAO_0000115>
         <obo:IAO_0000118>ANNOVA</obo:IAO_0000118>
-        <rdfs:label>&apos;ANOVA&apos;</rdfs:label>
+        <rdfs:label>ANOVA</rdfs:label>
     </rdf:Description>
     
 
@@ -22324,7 +22324,7 @@ This website is also covered by the Creative Commons Attribution 4.0 Internation
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The AffyCompatible package provides an interface to Affymetrix chip annotation and sample attribute files. The package allows an easy way for users to download and manage local data bases of Affynmetrix NetAffx annotation files. The package also provides access to GeneChip Operating System (GCOS) and GeneChip Command Console (AGCC)-compatible sample annotation files.</obo:IAO_0000115>
-        <rdfs:label>&apos;AffyCompatible&apos;</rdfs:label>
+        <rdfs:label>AffyCompatible</rdfs:label>
     </rdf:Description>
     
 
@@ -22397,7 +22397,7 @@ This website is also covered by the Creative Commons Attribution 4.0 Internation
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The purpose of this package is to provide a comprehensive and easy-to-use tool for quality assessment and to identify differentially expressed genes in the Affymetrix gene expression data.</obo:IAO_0000115>
-        <rdfs:label>&apos;AffyExpress&apos;</rdfs:label>
+        <rdfs:label>AffyExpress</rdfs:label>
     </rdf:Description>
     
 
@@ -22634,7 +22634,7 @@ This website is also covered by the Creative Commons Attribution 4.0 Internation
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Functions and classes for de novo prediction of transcription factor binding consensus by heuristic search</obo:IAO_0000115>
-        <rdfs:label>&apos;BCRANK&apos;</rdfs:label>
+        <rdfs:label>BCRANK</rdfs:label>
     </rdf:Description>
     
 
@@ -22781,7 +22781,7 @@ This website is also covered by the Creative Commons Attribution 4.0 Internation
         </rdfs:subClassOf>
         <obo:IAO_0000115>This document describes the process of forging a BSgenome data package. It is intended for Bioconductor
 users who want to make a new BSgenome data package</obo:IAO_0000115>
-        <rdfs:label>&apos;BSgenome&apos;</rdfs:label>
+        <rdfs:label>BSgenome</rdfs:label>
     </rdf:Description>
     
 
@@ -22824,7 +22824,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>This package is dedicated to biclustering analysis which allows to discover sets of genes that have the same expression pattern accross a set of samples</obo:IAO_0000115>
-        <rdfs:label>&apos;BicARE&apos;</rdfs:label>
+        <rdfs:label>BicARE</rdfs:label>
     </rdf:Description>
     
 
@@ -22920,7 +22920,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>This package creates a tabular style data object where most data is stored outside main memory. A buffer is used to speed up access to data.</obo:IAO_0000115>
-        <rdfs:label>&apos;BufferedMatrix&apos;</rdfs:label>
+        <rdfs:label>BufferedMatrix</rdfs:label>
     </rdf:Description>
     
 
@@ -22961,7 +22961,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>This package involves microarray Data related methods that utlize BufferedMatrix objects</obo:IAO_0000115>
-        <rdfs:label>&apos;BufferedMatrixMethods&apos;</rdfs:label>
+        <rdfs:label>BufferedMatrixMethods</rdfs:label>
     </rdf:Description>
     
 
@@ -23002,7 +23002,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>This package contains functions for normalizing spotted microarray data, based on a physically motivated calibration model. The model parameters and error distributions are estiamted from external control spikes.</obo:IAO_0000115>
-        <rdfs:label>&apos;CALIB&apos;</rdfs:label>
+        <rdfs:label>CALIB</rdfs:label>
     </rdf:Description>
     
 
@@ -23043,7 +23043,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Annotation of peaklists generated by xcms, rule based annotation of isotopes and adducts, EIC correlation based tagging of unknown adducts and fragments</obo:IAO_0000115>
-        <rdfs:label>&apos;CAMERA&apos;</rdfs:label>
+        <rdfs:label>CAMERA</rdfs:label>
     </rdf:Description>
     
 
@@ -23102,7 +23102,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>This package provides a comprehensive collection of various microarray-based classification algorithms both from Machine Learning and Statistics. Variable Selection, Hyperparameter tuning, Evaluation and Comparison can be performed combined or stepwise in a user-friendly environment.</obo:IAO_0000115>
-        <rdfs:label>&apos;CMA&apos;</rdfs:label>
+        <rdfs:label>CMA</rdfs:label>
     </rdf:Description>
     
 
@@ -23153,7 +23153,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Multivariate correlation estimation and statistical inference.</obo:IAO_0000115>
-        <rdfs:label>&apos;CORREP&apos;</rdfs:label>
+        <rdfs:label>CORREP</rdfs:label>
     </rdf:Description>
     
 
@@ -23274,7 +23274,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>ChemMineR is an open source compound mining framework. It contains functions for atom descriptor calculation, structure similarity searching, clustering of compound libraries and various utilities for managing complex compound data. It also offers a wide range of visualization functions for compound clusters and chemical structures. The package is integrated with the online ChemMine environment and allows bidirectional communications between the two services.</obo:IAO_0000115>
-        <rdfs:label>&apos;ChemmineR&apos;</rdfs:label>
+        <rdfs:label>ChemmineR</rdfs:label>
     </rdf:Description>
     
 
@@ -23673,7 +23673,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A collection of software tools for dealing with co-citation data.</obo:IAO_0000115>
-        <rdfs:label>&apos;CoCiteStats&apos;</rdfs:label>
+        <rdfs:label>CoCiteStats</rdfs:label>
     </rdf:Description>
     
 
@@ -23723,7 +23723,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>This library contains functions that calculate various statistics of differential expression for microarray data, including t statistics, fold change, F statistics, SAM, moderated t and F statistics and B statistics. It also implements a new methodology called DEDS (Differential Expression via Distance Summary), which selects differentially expressed genes by integrating and summarizing a set of statistics using a weighted distance approach.</obo:IAO_0000115>
-        <rdfs:label>&apos;DEDS&apos;</rdfs:label>
+        <rdfs:label>DEDS</rdfs:label>
     </rdf:Description>
     
 
@@ -23764,7 +23764,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>This package provides a supervised technique able to identify differentially expressed genes. The Fuzzy Patterns are built by means of applying 3 Membership Functions to discretized gene expression values.</obo:IAO_0000115>
-        <rdfs:label>&apos;DFP&apos;</rdfs:label>
+        <rdfs:label>DFP</rdfs:label>
     </rdf:Description>
     
 
@@ -23833,7 +23833,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Segments DNA copy number data using circular binary segmentation to detect regions with abnormal copy number</obo:IAO_0000115>
-        <rdfs:label>&apos;DNAcopy&apos;</rdfs:label>
+        <rdfs:label>DNAcopy</rdfs:label>
     </rdf:Description>
     
 
@@ -23890,7 +23890,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>EBImage is an R package which provides general purpose functionality for the reading, writing, processing and analysis of images. Furthermore, in the context of microscopy based cellular assays, EBImage offers tools to transform the images, segment cells and extract quantitative cellular descriptors.</obo:IAO_0000115>
-        <rdfs:label>&apos;EBImage&apos;</rdfs:label>
+        <rdfs:label>EBImage</rdfs:label>
     </rdf:Description>
     
 
@@ -23947,7 +23947,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>EBarrays provides tools for the analysis of replicated/unreplicated microarray data.</obo:IAO_0000115>
-        <rdfs:label>&apos;EBarrays&apos;</rdfs:label>
+        <rdfs:label>EBarrays</rdfs:label>
     </rdf:Description>
     
 
@@ -24004,7 +24004,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_1100102">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
-        <rdfs:label>&apos;FDR&apos;</rdfs:label>
+        <rdfs:label>FDR</rdfs:label>
     </rdf:Description>
     
 
@@ -24034,7 +24034,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_1100105">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
-        <rdfs:label>Fischer&apos;s Exact Test</rdfs:label>
+        <rdfs:label>Fischer’s Exact Test</rdfs:label>
     </owl:Class>
     
 
@@ -24258,7 +24258,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Contains functions and classes that are needed by arrayCGH packages.</obo:IAO_0000115>
-        <rdfs:label>&apos;CGHbase&apos;</rdfs:label>
+        <rdfs:label>CGHbase</rdfs:label>
     </rdf:Description>
     
 
@@ -24299,7 +24299,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Calls aberrations for array CGH data using a six state mixture model as well as several biological concepts that are ignored by existing algorithms. Visualization of profiles is also provided.</obo:IAO_0000115>
-        <rdfs:label>&apos;CGHcall&apos;</rdfs:label>
+        <rdfs:label>CGHcall</rdfs:label>
     </rdf:Description>
     
 
@@ -24340,7 +24340,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Dimension Reduction for Array CGH Data with Minimal Information Loss</obo:IAO_0000115>
-        <rdfs:label>&apos;CGHregions&apos;</rdfs:label>
+        <rdfs:label>CGHregions</rdfs:label>
     </rdf:Description>
     
 
@@ -24393,7 +24393,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A set of functions to create and interact with dynamic documents and vignettes.</obo:IAO_0000115>
-        <rdfs:label>&apos;DynDoc&apos;</rdfs:label>
+        <rdfs:label>DynDoc</rdfs:label>
     </rdf:Description>
     
 
@@ -25397,7 +25397,7 @@ keep the language concise, consistent, intuitive and flexible.</obo:IAO_0000115>
         <obo:IAO_0000115>Gillespie&apos;s Stochastic Simulation Algorithm is an algorithm which generates a statistically correct trajectory (possible solution) of a stochastic equation. It can be used to simulate chemical or biochemical systems of reactions efficiently and accurately using limited computational power. The algorithm is particularly useful for simulating reactions within cells where the number of reagents typically number in the tens of molecules (or less). Mathematically, it is a variety of a dynamic Monte Carlo method and similar to the kinetic Monte Carlo methods. It is used heavily in computational systems biology</obo:IAO_0000115>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Gillespie_algorithm, accessed 25 March 2015.</obo:IAO_0000119>
         <dcterms:creator>Allyson Lister</dcterms:creator>
-        <rdfs:label>Gillespie&apos;s Stochastic Simulation Algorithm</rdfs:label>
+        <rdfs:label>Gillespie’s Stochastic Simulation Algorithm</rdfs:label>
     </rdf:Description>
     
 
@@ -28445,27 +28445,27 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_0000466">
         <obo:IAO_0000115>Using R enviroments for annotation.</obo:IAO_0000115>
-        <rdfs:label>&apos;annotate&apos;</rdfs:label>
+        <rdfs:label>annotate</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_0000470">
         <obo:IAO_0000115>This package functions to estimate a bipartite graph of protein complex membership using AP-MS data.</obo:IAO_0000115>
-        <rdfs:label>&apos;apComplex&apos;</rdfs:label>
+        <rdfs:label>apComplex</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_0000479">
         <obo:IAO_0000115>The package is able to read bead-level data (raw TIFFs and text files) output by BeadScan as well as bead-summary data from BeadStudio. Methods for quality assessment and low-level analysis are provided.</obo:IAO_0000115>
-        <rdfs:label>&apos;beadarray&apos;</rdfs:label>
+        <rdfs:label>beadarray</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_0000480">
         <obo:IAO_0000115>Importing data from Illumina SNP experiments and performing copy number calculations and reports.</obo:IAO_0000115>
-        <rdfs:label>&apos;beadarraySNP&apos;</rdfs:label>
+        <rdfs:label>beadarraySNP</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_0000486">
         <obo:IAO_0000115>Synthetic datasets to a) demonstrate the usage of bioconductor packages, b) write unit tests, while keeping dependencies and ressources usage minimal.</obo:IAO_0000115>
-        <rdfs:label>&apos;biocDatasets&apos;</rdfs:label>
+        <rdfs:label>biocDatasets</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_0000488">
         <obo:IAO_0000115>Categorized views of R package repositories</obo:IAO_0000115>
-        <rdfs:label>&apos;biocViews&apos;</rdfs:label>
+        <rdfs:label>biocViews</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_0000513">
         <obo:IAO_0000115>Analysis and visualization of gene expression and SNP microarrays</obo:IAO_0000115>
@@ -28473,15 +28473,15 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_0000521">
         <obo:IAO_0000115>Find significantly enriched gene classifications in a list of functionally undescribed genes based on their InterPro domain structure.</obo:IAO_0000115>
-        <rdfs:label>&apos;domainsignatures&apos;</rdfs:label>
+        <rdfs:label>domainsignatures</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_0000530">
         <obo:IAO_0000115>Basic class definitions and generics for external pointer based vector objects for R. A simple in-memory implementation is also provided</obo:IAO_0000115>
-        <rdfs:label>&apos;externalVector&apos;</rdfs:label>
+        <rdfs:label>externalVector</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_0000545">
         <obo:IAO_0000115>This package contains functions connecting R with the Gaggle</obo:IAO_0000115>
-        <rdfs:label>&apos;gaggle&apos;</rdfs:label>
+        <rdfs:label>gaggle</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_0000546">
         <obo:IAO_0000115 xml:lang="en">Bioconductor package concerned with background adjustment using sequence information</obo:IAO_0000115>
@@ -28535,7 +28535,7 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_1100031">
         <obo:IAO_0000115>Bayesian models for differential gene expression</obo:IAO_0000115>
-        <rdfs:label>&apos;BGmix&apos;</rdfs:label>
+        <rdfs:label>BGmix</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_1100036">
         <obo:IAO_0000115>BRB-ArrayTools is an integrated package for the visualization and statistical analysis of DNA microarray gene expression data. It was developed by professional statisticians experienced in the analysis of microarray data and involved in the development of improved methods for the design and analysis of microarray based experiments. The system incorporates a variety of powerful analytic and visualization tools developed specifically for microarray data analysis.</obo:IAO_0000115>
@@ -28556,7 +28556,7 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_1100044">
         <obo:IAO_0000115 xml:lang="en">Creates classes used in model-view-controller (MVC) design that uses Biobase</obo:IAO_0000115>
         <dc:contributor xml:lang="en">Allyson Lister</dc:contributor>
-        <rdfs:label>&apos;BioMVCClass&apos;</rdfs:label>
+        <rdfs:label>BioMVCClass</rdfs:label>
     </rdf:Description>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SWO_1100044"/>
@@ -28566,15 +28566,15 @@ Its ultra-friendly navigation and functions can handle any kind of array (CLONTE
     </owl:Axiom>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_1100045">
         <obo:IAO_0000115>Functions that are needed by many other packages or which replace R functions</obo:IAO_0000115>
-        <rdfs:label>&apos;Biobase&apos;</rdfs:label>
+        <rdfs:label>Biobase</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_1100046">
         <obo:IAO_0000115>Software and data to support the case studies.</obo:IAO_0000115>
-        <rdfs:label>&apos;BiocCaseStudies&apos;</rdfs:label>
+        <rdfs:label>BiocCaseStudies</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_1100048">
         <obo:IAO_0000115>Memory efficient string containers, string matching algorithms, and other utilities, for fast manipulation of large biological sequences or set of sequences.</obo:IAO_0000115>
-        <rdfs:label>&apos;Biostrings&apos;</rdfs:label>
+        <rdfs:label>Biostrings</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_1100049">
         <obo:IAO_0000115>BlueFuse  for Microarrays is a powerful software solution for the analysis of microarray expression and arrayCGH experiments. Operation is simple and fully automated, saving time, removing operator error and subjectivity and ensuring experimental reproducibility.</obo:IAO_0000115>
