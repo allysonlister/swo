@@ -40,7 +40,7 @@ Options
   --push               Upload software.tsv to the 'software' tab.
   --pull               Download 'software' tab → software.tsv.
   --schema             Generate DataHarmonizer export.js.
-  --schema-dir DIR     Directory for export.js output (default: src/templates/swo/).
+  --schema-dir DIR     Directory for export.js output (default: src/templates/editor/).
 
 Note
 ----
@@ -70,7 +70,7 @@ SRC_DIR      = os.path.dirname(SCRIPT_DIR)
 DEFAULT_OWL  = os.path.join(SRC_DIR, "ontology", "swo-edit.owl")
 DEFAULT_TSV  = os.path.join(SRC_DIR, "templates", "software.tsv")
 DEFAULT_LDIR = os.path.join(SRC_DIR, "templates", "lookups")
-DEFAULT_SDIR = os.path.join(SRC_DIR, "templates", "swo")
+DEFAULT_SDIR = os.path.join(SRC_DIR, "templates", "editor")
 
 # ---------------------------------------------------------------------------
 # CURIE map — must stay in sync with software.py

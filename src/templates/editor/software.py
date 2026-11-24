@@ -103,6 +103,10 @@ def iri_to_label(iri_str, labels):
 # ---------------------------------------------------------------------------
 # TSV headers and ROBOT codes — aligned with schema.yaml slot names
 # ---------------------------------------------------------------------------
+# ROBOT template requires properties to be referenced by their rdfs:label
+# (single-quoted) rather than by CURIE.  Using CURIEs causes ROBOT to
+# misidentify object properties as data properties and reject class fillers.
+# Data input/output filler values are CURIEs (not labels) for the same reason.
 HEADERS = [
     "type",
     "ontology_id",
@@ -148,31 +152,31 @@ ROBOT_CODES = [
     "A IAO:0000119 SPLIT=|",
     "AL rdfs:comment@en",
     "A dcterms:creator SPLIT=|",
-    "SC SWO:0000086 some (IAO:0000027 and SWO:0004002 some %) SPLIT=|",
-    "SC SWO:0000086 some % SPLIT=|",
-    "SC SWO:0000087 some (IAO:0000027 and SWO:0004002 some %) SPLIT=|",
-    "SC SWO:0000087 some % SPLIT=|",
-    "SC SWO:0000741 some % SPLIT=|",
-    "SC SWO:0004004 value %",
-    "SC SWO:0000740 some % SPLIT=|",
-    "SC RO:0002353 some (SWO:9000055 and RO:0000057 value %) SPLIT=|",
-    "SC SWO:0040005 some % SPLIT=|",
-    "SC SWO:0000150 some % SPLIT=|",
-    "SC obo:swo/has_license some % SPLIT=|",
-    "SC SWO:0004001 some % SPLIT=|",
-    "SC SWO:0004006 value %",
-    "SC SWO:0004000 value %",
-    "SC <http://www.obofoundry.org/ro/ro.owl#has_part> some % SPLIT=|",
-    "SC SWO:0000394 value % SPLIT=|",
-    "SC SWO:0000043 value %",
-    "SC SWO:0000082 some % SPLIT=|",
-    "SC SWO:9000067 some % SPLIT=|",
-    "SC SWO:9000068 value %",
-    "SC SWO:0000046 value %",
-    "SC SWO:0000157 some % SPLIT=|",
-    "SC SWO:0000132 some % SPLIT=|",
-    "SC SWO:0000131 some % SPLIT=|",
-    "SC SWO:0000784 value %",
+    "SC 'has specified data input' some % SPLIT=|",
+    "SC 'has specified data input' some % SPLIT=|",
+    "SC 'has specified data output' some % SPLIT=|",
+    "SC 'has specified data output' some % SPLIT=|",
+    "SC 'is encoded in' some % SPLIT=|",
+    "SC 'is published by' value %",
+    "SC 'implements' some % SPLIT=|",
+    "SC 'output of' some (SWO:9000055 and 'has participant' value %) SPLIT=|",
+    "SC 'is executed in' some % SPLIT=|",
+    "SC 'uses platform' some % SPLIT=|",
+    "SC 'has license' some % SPLIT=|",
+    "SC 'has interface' some % SPLIT=|",
+    "SC 'has website homepage' value %",
+    "SC 'has version' value %",
+    "SC 'has part' some % SPLIT=|",
+    "SC 'is developed by' value % SPLIT=|",
+    "SC 'has documentation' value %",
+    "SC 'uses software' some % SPLIT=|",
+    "SC 'has declared status' some % SPLIT=|",
+    "SC 'has release date' value %",
+    "SC 'has download location' value %",
+    "SC 'is software for' some % SPLIT=|",
+    "SC 'directly followed by' some % SPLIT=|",
+    "SC 'directly preceded by' some % SPLIT=|",
+    "SC 'has support URL' value %",
 ]
 
 # Properties whose someValuesFrom filler label goes directly into one column.
@@ -267,11 +271,12 @@ def intersection_parts(g, bnode):
 # Extraction
 # ---------------------------------------------------------------------------
 
-def _extract_format(g, filler, labels):
+def _extract_format(g, filler):
     """
     From a someValuesFrom filler that is an intersectionOf, extract the
-    format label from a HAS_FORMAT_SPEC someValuesFrom restriction inside it.
-    Returns the format label string, or None if pattern doesn't match.
+    format CURIE from a HAS_FORMAT_SPEC someValuesFrom restriction inside it.
+    Returns the CURIE string (e.g. 'SWO:3000004'), or None if pattern doesn't
+    match or the IRI falls outside all known prefixes.
     """
     if not isinstance(filler, BNode):
         return None
@@ -281,7 +286,9 @@ def _extract_format(g, filler, labels):
             if r and r[0] == HAS_FORMAT_SPEC and r[1] == "someValuesFrom":
                 fmt = r[2]
                 if isinstance(fmt, URIRef):
-                    return iri_to_label(str(fmt), labels)
+                    curie = iri_to_curie(str(fmt))
+                    if not curie.startswith("<"):
+                        return curie
     return None
 
 
@@ -362,16 +369,21 @@ def _handle_restriction(g, restriction, labels, row, multi):
     """Dispatch a parsed restriction to the appropriate output column(s)."""
     prop, kind, filler = restriction
 
-    # --- simple someValuesFrom → label ---
+    # --- simple someValuesFrom → CURIE (labels break Manchester if they contain
+    #     apostrophes or spaces; CURIEs are always safe) ---
     if kind == "someValuesFrom" and prop in _SOME_TO_COL:
         col = _SOME_TO_COL[prop]
         if isinstance(filler, URIRef):
-            multi[col].append(iri_to_label(str(filler), labels))
+            curie = iri_to_curie(str(filler))
+            if not curie.startswith("<"):
+                multi[col].append(curie)
         elif isinstance(filler, BNode):
             # union or simple intersection — flatten named classes
             for item in intersection_parts(g, filler):
                 if isinstance(item, URIRef):
-                    multi[col].append(iri_to_label(str(item), labels))
+                    curie = iri_to_curie(str(item))
+                    if not curie.startswith("<"):
+                        multi[col].append(curie)
         return
 
     # --- hasValue with Literal → quoted string ---
@@ -397,39 +409,43 @@ def _handle_restriction(g, restriction, labels, row, multi):
     # --- has_specified_data_input ---
     if prop == HAS_DATA_INPUT and kind == "someValuesFrom":
         if isinstance(filler, URIRef):
-            # simple named class → datasets column
-            multi["has_specified_data_input_datasets"].append(
-                iri_to_label(str(filler), labels))
+            # simple named class → datasets column (CURIE for ROBOT)
+            curie = iri_to_curie(str(filler))
+            if not curie.startswith("<"):
+                multi["has_specified_data_input_datasets"].append(curie)
         elif isinstance(filler, BNode):
-            fmt = _extract_format(g, filler, labels)
+            fmt = _extract_format(g, filler)
             if fmt:
-                # intersection with format spec → format column
+                # intersection with format spec → format column (CURIE)
                 multi["has_specified_data_input"].append(fmt)
             else:
-                # intersection of named classes (no format) → datasets column
+                # intersection of named classes (no format) → datasets column (CURIE)
                 for item in intersection_parts(g, filler):
                     if isinstance(item, URIRef):
-                        multi["has_specified_data_input_datasets"].append(
-                            iri_to_label(str(item), labels))
+                        curie = iri_to_curie(str(item))
+                        if not curie.startswith("<"):
+                            multi["has_specified_data_input_datasets"].append(curie)
         return
 
     # --- has_specified_data_output ---
     if prop == HAS_DATA_OUTPUT and kind == "someValuesFrom":
         if isinstance(filler, URIRef):
-            # direct named class → datasets column
-            multi["has_specified_data_output_datasets"].append(
-                iri_to_label(str(filler), labels))
+            # direct named class → datasets column (CURIE for ROBOT)
+            curie = iri_to_curie(str(filler))
+            if not curie.startswith("<"):
+                multi["has_specified_data_output_datasets"].append(curie)
         elif isinstance(filler, BNode):
-            fmt = _extract_format(g, filler, labels)
+            fmt = _extract_format(g, filler)
             if fmt:
-                # intersection with format spec → format column
+                # intersection with format spec → format column (CURIE)
                 multi["has_specified_data_output"].append(fmt)
             else:
-                # intersection of named classes (no format) → datasets column
+                # intersection of named classes (no format) → datasets column (CURIE)
                 for item in intersection_parts(g, filler):
                     if isinstance(item, URIRef):
-                        multi["has_specified_data_output_datasets"].append(
-                            iri_to_label(str(item), labels))
+                        curie = iri_to_curie(str(item))
+                        if not curie.startswith("<"):
+                            multi["has_specified_data_output_datasets"].append(curie)
         return
 
     # --- output_of (developer or publisher via process) ---
@@ -446,10 +462,10 @@ def _handle_restriction(g, restriction, labels, row, multi):
         if org_val is None:
             return
         if process_cls == SW_PUBLISHING:
-            # Publisher org via complex output_of pattern → output_of column
+            # Publisher org → output_of column
             multi["output_of"].append(iri_to_label(str(org_val), labels))
         elif process_cls == SW_DEVELOPMENT:
-            # Developer org via complex output_of pattern → normalize to is_developed_by
+            # Developer org → normalize to is_developed_by
             multi["is_developed_by"].append(iri_to_label(str(org_val), labels))
 
 
@@ -516,6 +532,7 @@ def robot_build():
         "--prefix", "IAO: http://purl.obolibrary.org/obo/IAO_",
         "--prefix", "SWO: http://purl.obolibrary.org/obo/SWO_",
         "--prefix", "EDAM: http://edamontology.org/",
+        "--prefix", "ODME: http://kt.ijs.si/panovp/OntoDM#",
         "--prefix", "dcterms: http://purl.org/dc/terms/",
         "--xml-entities",
         "--ontology-iri", COMPONENT_IRI,
