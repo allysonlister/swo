@@ -2839,7 +2839,16 @@ or of directed by the organization to do this.</obo:IAO_0000115>
 eciency by avoiding the calculation of an all-against-all distance matrix.</obo:IAO_0000115>
         <rdfs:label>Binning clustering method</rdfs:label>
     </rdf:Description>
-    
+
+
+
+    <!-- http://purl.obolibrary.org/obo/SWO_0000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_0000001"/>
+        <rdfs:label xml:lang="en">Ensembl</rdfs:label>
+    </owl:Class>
+
 
 
     <!-- http://purl.obolibrary.org/obo/SWO_0000051 -->
@@ -24464,12 +24473,12 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000002 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000002">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_3000001"/>
         <obo:IAO_0000115>A spreadsheet data format designed for Microsoft Excel.</obo:IAO_0000115>
         <dcterms:creator>James Malone</dcterms:creator>
         <rdfs:label>XLS spreadsheet</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -24486,11 +24495,11 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000004 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000004">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_3000033"/>
         <dcterms:creator>James Malone</dcterms:creator>
         <rdfs:label>Matlab .m file</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -24516,70 +24525,70 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000007 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000007">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000007">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_3000006"/>
         <obo:IAO_0000115>A serialisation of RDF into an XML format.</obo:IAO_0000115>
         <dcterms:creator>James Malone</dcterms:creator>
         <rdfs:label>RDF-XML</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000008 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000008">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000098"/>
         <rdfs:label>image format</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000009 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000009">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_3000008"/>
         <obo:IAO_0000115>DWG (&quot;drawing&quot;) is a binary file format used for storing two and three dimensional design data and metadata</obo:IAO_0000115>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/.dwg</obo:IAO_0000119>
         <dcterms:creator>James Malone</dcterms:creator>
         <rdfs:label>DWG</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000010 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000010">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_3000008"/>
         <obo:IAO_0000115>DXF (Drawing Interchange Format, or Drawing Exchange Format) is a CAD data file format developed by Autodesk for enabling data interoperability between AutoCAD and other programs.</obo:IAO_0000115>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/AutoCAD_DXF</obo:IAO_0000119>
         <dcterms:creator>James Malone</dcterms:creator>
         <rdfs:label>DXF</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000011 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000011">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_3000020"/>
         <obo:IAO_0000115>The BMP File Format is a Raster graphics image file format used to store bitmap digital images, independently of the display device (such as a graphics adapter).</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.fileformat.info/format/bmp/egff.htm</obo:IAO_0000119>
         <dcterms:creator>James Malone</dcterms:creator>
         <rdfs:label>BMP</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000012 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000012">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000012">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_3000020"/>
         <obo:IAO_0000115>Computer Graphics Metafile (CGM) is a free and open international standard file format for 2D vector graphics, raster graphics, and text, and is defined by ISO/IEC 8632.</obo:IAO_0000115>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Computer_Graphics_Metafile</obo:IAO_0000119>
         <dcterms:creator>James Malone</dcterms:creator>
         <rdfs:label>CGM</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -24603,56 +24612,56 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000015 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000015">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_3000014"/>
         <obo:IAO_0000115>PDF is an open standard for document exchange. </obo:IAO_0000115>
         <obo:IAO_0000118>Portable Document Format</obo:IAO_0000118>
         <rdfs:label>pdf</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000016 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000016">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_3000020"/>
         <obo:IAO_0000115>TIFF is a flexible, adaptable file format for handling images and data within a single file, by including the header tags (size, definition, image-data arrangement, applied image compression) defining the image&apos;s geometry.</obo:IAO_0000115>
         <obo:IAO_0000118>Tagged Image File Format</obo:IAO_0000118>
         <rdfs:label>TIFF</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000017 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000017">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_3000020"/>
         <obo:IAO_0000115>JPEG is a lossy file format for storing images</obo:IAO_0000115>
         <obo:IAO_0000118>JPG</obo:IAO_0000118>
         <rdfs:label>JPEG</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000018 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000018">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000018">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_3000020"/>
         <obo:IAO_0000115>PNG is a bitmapped image format and video codec that employs lossless data compression.</obo:IAO_0000115>
         <obo:IAO_0000118>Portable Network Graphics</obo:IAO_0000118>
         <rdfs:label>PNG</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000019 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000019">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_3000020"/>
         <obo:IAO_0000115>The Graphics Interchange Format (GIF) is a bitmap image format. The format supports up to 8 bits per pixel thus allowing a single image to reference a palette of up to 256 distinct colors. The colors are chosen from the 24-bit RGB color space. It also supports animations and allows a separate palette of 256 colors for each frame. The color limitation makes the GIF format unsuitable for reproducing color photographs and other images with continuous color, but it is well-suited for simpler images such as graphics or logos with solid areas of color. [wikipedia]</obo:IAO_0000115>
         <obo:IAO_0000118>Graphics Interchange Format</obo:IAO_0000118>
         <rdfs:label>GIF</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -24678,31 +24687,31 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000022 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000022">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_3000021"/>
         <obo:IAO_0000118>Scalable Vector Graphics</obo:IAO_0000118>
         <rdfs:label>SVG</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000023 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000023">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_3000021"/>
         <obo:IAO_0000118>Adobe Illustrator format</obo:IAO_0000118>
         <rdfs:label>AI</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000024 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000024">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_3000014"/>
         <obo:IAO_0000115>PostScript is a format used for describing documents.</obo:IAO_0000115>
         <rdfs:label>PostScript</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -24729,11 +24738,11 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000027 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000027">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_3000026"/>
         <obo:IAO_0000115>A proprietary format for documents created and edited using OmniOutliner outliner software,</obo:IAO_0000115>
         <rdfs:label>OmniOutline format</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -24750,11 +24759,11 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000029 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000029">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000029">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_3000020"/>
         <obo:IAO_0000115>JPEG 2000 is a compression standard enabling both lossless and lossy storage. The compression methods used are different from the ones in standard JFIF/JPEG; they improve quality and compression ratios, but also require more computational power to process. [wikipedia]</obo:IAO_0000115>
         <rdfs:label>JPEG 2000</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -24769,20 +24778,20 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000031 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000031">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_3000030"/>
         <rdfs:label>WordStar format</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000032 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000032">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000032">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_3000030"/>
         <obo:IAO_0000115>A file format for word processing documents for Microsoft Word. </obo:IAO_0000115>
         <rdfs:label>Microsoft Word doc</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -24797,12 +24806,12 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000034 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000034">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_3000033"/>
         <obo:IAO_0000115>A source code file format which is specified to be used with the Java programming language.</obo:IAO_0000115>
         <obo:IAO_0000119>James Malone</obo:IAO_0000119>
         <rdfs:label>.java file</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -24819,21 +24828,21 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000038 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000038">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000038">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
         <obo:IAO_0000115>The Web Ontology Language (OWL) in XML serialization</obo:IAO_0000115>
         <rdfs:label>OWL-XML</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000039 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000039">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000039">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
         <obo:IAO_0000115>Web Ontology Language version 2 in XML Serialization</obo:IAO_0000115>
         <rdfs:label>OWL2-XML</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -24857,13 +24866,13 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000046 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000046">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000046">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_3000043"/>
         <obo:IAO_0000115>Tab delimited file format is a plain text file format where each field value of a record is separated from the next by a tab stop character.</obo:IAO_0000115>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Tab-separated_values, accessed 6 June 2013.</obo:IAO_0000119>
         <dcterms:creator>Allyson Lister</dcterms:creator>
         <rdfs:label>tab delimited file format</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -25017,7 +25026,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000060 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000060">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000060">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SWO_0004002"/>
@@ -25038,7 +25047,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
         <obo:IAO_0000115>Affymetrix-compliant data is data produced in a format compatible with Affymetrix software. This is a defined class where other data classes will be inferred to be members if they have a data format specification which has been published by Affymetrix.</obo:IAO_0000115>
         <dcterms:creator>Allyson Lister</dcterms:creator>
         <rdfs:label xml:lang="en">Affymetrix-compliant data</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -25057,7 +25066,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000062 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000062">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000062">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SWO_3000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -25069,7 +25078,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.bioconductor.org/packages/2.12/bioc/vignettes/prada/inst/doc/fcs3.html, accessed May 29. 2013.</obo:IAO_0000119>
         <dcterms:creator>Allyson Lister</dcterms:creator>
         <rdfs:label xml:lang="en">FCS3.0</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -25177,13 +25186,13 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000071 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000071">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000071">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000098"/>
         <obo:IAO_0000115>Genomedata provides a way to store and access large-scale functional genomics data in a format which is both space-efficient and allows efficient random-access. Genomedata archives are implemented as one or more HDF5 files, either as single files or as directory archives. HDF5 archives are self describing, like XML, but may also contain more complex structures such contain binary data.</obo:IAO_0000115>
         <obo:IAO_0000119>http://pmgenomics.ca/hoffmanlab/proj/genomedata/doc/1.3.5/genomedata.html and http://www.hdfgroup.org/why_hdf/, accessed 27 November 2014.</obo:IAO_0000119>
         <dcterms:creator>Allyson Lister</dcterms:creator>
         <rdfs:label xml:lang="en">genomedata format</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -25201,7 +25210,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
 
     <!-- http://purl.obolibrary.org/obo/SWO_3000073 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SWO_3000073">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SWO_3000073">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000115>GMTK parameter data is a type of data which contains the various parameter files required by GMTK to define a dynamic Bayesian network.</obo:IAO_0000115>
         <obo:IAO_0000118>Graphical Models Toolkit parameter data</obo:IAO_0000118>
@@ -25209,7 +25218,7 @@ users who want to make a new BSgenome data package</obo:IAO_0000115>
         <obo:IAO_0000119>http://noble.gs.washington.edu/proj/philius/README, accessed 3 December 2014.</obo:IAO_0000119>
         <dcterms:creator>Allyson Lister</dcterms:creator>
         <rdfs:label xml:lang="en">GMTK parameter data</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
