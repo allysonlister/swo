@@ -1526,6 +1526,8 @@ def write_schema_yaml(spec: dict, enum_items: dict, output_path: str) -> None:
         for line in schema["description"].strip().splitlines():
             _w(L, f"  {line.strip()}")
     _w(L, f"version: {schema.get('version', '1.0.0')}")
+    _w(L, "annotations:")
+    _w(L, '  list_delimiter: "|"')
     _w(L)
     _w(L, "imports:")
     _w(L, "  - linkml:types")

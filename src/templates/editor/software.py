@@ -374,7 +374,7 @@ def extract_row(g, cls_iri, labels):
     if comment:
         row["comment"] = str(comment)
 
-    creators = [str(o) for o in g.objects(cls_iri, DCTERMS_CREATOR)]
+    creators = list(dict.fromkeys(str(o) for o in g.objects(cls_iri, DCTERMS_CREATOR)))
     row["term_creator"] = "|".join(creators)
 
     # Collect multi-valued columns
@@ -397,10 +397,12 @@ def extract_row(g, cls_iri, labels):
                     if r:
                         _handle_restriction(g, r, labels, row, multi)
 
-    # Flatten multi-valued columns
+    # Flatten multi-valued columns, deduplicating while preserving order
     for col, vals in multi.items():
         if vals:
-            row[col] = "|".join(vals)
+            seen = set()
+            deduped = [v for v in vals if not (v in seen or seen.add(v))]
+            row[col] = "|".join(deduped)
 
     return [row[h] for h in HEADERS]
 

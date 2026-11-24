@@ -48,6 +48,8 @@ enums:
     action: accept
   HasSpecifiedDataOutputGraphPlotMenu:
     action: accept
+  HasSpecifiedDataOutputMenu_DataEntity:
+    action: accept
   ImplementsMenu:
     action: accept
   IsEncodedInMenu:
