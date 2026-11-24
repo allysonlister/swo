@@ -111,7 +111,6 @@ def iri_to_label(iri_str, labels):
 # HEADERS: internal snake_case keys used throughout the code.
 # TITLES:  human-readable titles (from schema.yaml) written as row 1 of the TSV.
 HEADERS = [
-    "type",
     "ontology_id",
     "label",
     "parent",
@@ -144,11 +143,11 @@ HEADERS = [
     "uses_platform",
     "directly_followed_by",
     "has_part",
+    "type",       # ROBOT auxiliary — kept last so Ontology ID leads the file
 ]
 
 # Titles matching schema.yaml slot titles (1:1 with HEADERS).
 TITLES = [
-    "type",
     "Ontology ID",
     "label",
     "parent",
@@ -181,10 +180,10 @@ TITLES = [
     "uses platform",
     "directly followed by",
     "has part",
+    "type",       # ROBOT auxiliary
 ]
 
 ROBOT_CODES = [
-    "TYPE",
     "ID",
     "AL rdfs:label@en",
     "SC %",
@@ -217,6 +216,7 @@ ROBOT_CODES = [
     "SC 'uses platform' some % SPLIT=|",
     "SC 'directly followed by' some % SPLIT=|",
     "SC 'has part' some % SPLIT=|",
+    "TYPE",       # ROBOT auxiliary — kept last so Ontology ID leads the file
 ]
 
 # Properties whose someValuesFrom filler label goes directly into one column.
