@@ -186,30 +186,55 @@ def is_deprecated(g: Graph, uri: URIRef) -> bool:
     return bool(g.value(uri, OWL.deprecated))
 
 
-def classes_to_lookup_rows(g: Graph, cls_set: set, prefix_map: dict) -> list:
+def classes_to_lookup_rows(
+    g: Graph,
+    cls_set: set,
+    prefix_map: dict,
+    root_iris: frozenset = frozenset(),
+) -> list:
     """
-    Given a set of class URIRefs, return sorted [(curie, label, iri)] rows.
-    Skips deprecated terms and classes without a label or a mapped CURIE.
+    Given a set of class URIRefs, return sorted [(curie, label, iri, parent_curie)]
+    rows.  Skips deprecated terms and classes without a label or a mapped CURIE.
+
+    parent_curie is set when a class has a named rdfs:subClassOf parent that is
+    also in cls_set AND is not one of root_iris.  This encodes is_a hierarchy
+    for entries that are deeper than one level from the enum root(s).
     """
-    items = []
+    # Pre-compute {URIRef → curie} for valid (non-deprecated, labeled, mapped) members
+    cls_to_curie: dict = {}
     for cls in cls_set:
         if not isinstance(cls, URIRef):
             continue
         if is_deprecated(g, cls):
             continue
-        label = g.value(cls, RDFS.label)
-        if not label:
+        if not g.value(cls, RDFS.label):
             continue
-        curie = iri_to_curie(str(cls), prefix_map)
-        if curie.startswith("<"):
-            continue
-        items.append((curie, str(label), str(cls)))
+        c = iri_to_curie(str(cls), prefix_map)
+        if not c.startswith("<"):
+            cls_to_curie[cls] = c
+
+    items = []
+    for cls, curie in cls_to_curie.items():
+        label = str(g.value(cls, RDFS.label))
+
+        # Find the nearest named parent that is also in the enum but not a root.
+        # (Direct children of a root get no is_a — they're at level 1.)
+        parent_curie = None
+        for parent in g.objects(cls, RDFS.subClassOf):
+            if (isinstance(parent, URIRef)
+                    and parent in cls_to_curie
+                    and parent not in root_iris):
+                parent_curie = cls_to_curie[parent]
+                break
+
+        items.append((curie, label, str(cls), parent_curie))
     return sorted(items, key=lambda x: x[1].casefold())
 
 
 def individuals_in_namespace(g: Graph, namespace: str, prefix_map: dict) -> list:
-    """Return sorted [(curie, label, iri)] for non-deprecated NamedIndividuals
-    whose IRI starts with *namespace*."""
+    """Return sorted [(curie, label, iri, None)] for non-deprecated
+    NamedIndividuals whose IRI starts with *namespace*.
+    (Individuals have no class hierarchy, so parent_curie is always None.)"""
     items = []
     for ind in g.subjects(RDF.type, OWL.NamedIndividual):
         if not (isinstance(ind, URIRef) and str(ind).startswith(namespace)):
@@ -222,7 +247,7 @@ def individuals_in_namespace(g: Graph, namespace: str, prefix_map: dict) -> list
         curie = iri_to_curie(str(ind), prefix_map)
         if curie.startswith("<"):
             continue
-        items.append((curie, str(label), str(ind)))
+        items.append((curie, str(label), str(ind), None))
     return sorted(items, key=lambda x: x[1].casefold())
 
 
@@ -280,12 +305,15 @@ def iri_to_curie(iri_str: str, prefix_map: dict) -> str:
 
 def build_enum_items(g: Graph, query_spec: dict, prefix_map: dict) -> list:
     """
-    Build sorted [(curie, label, iri)] rows for one enum from *query_spec*.
+    Build sorted [(curie, label, iri, parent_curie)] rows for one enum from
+    *query_spec*.  parent_curie encodes the is_a hierarchy for entries deeper
+    than one level from the enum root(s).
 
     Supported query types:
       subclasses_of          root_iri, include_root (bool, default true)
       range_of_property      property_iri, ns_fallbacks (list)
       individuals_in_namespace  namespace
+      roots_union            root_iris (list); union of subclasses of each root
     """
     qtype = query_spec.get("type")
 
@@ -294,7 +322,8 @@ def build_enum_items(g: Graph, query_spec: dict, prefix_map: dict) -> list:
         cls_set = all_subclasses(g, root)
         if query_spec.get("include_root", True):
             cls_set = cls_set | {root}
-        return classes_to_lookup_rows(g, cls_set, prefix_map)
+        return classes_to_lookup_rows(g, cls_set, prefix_map,
+                                      root_iris=frozenset([root]))
 
     elif qtype == "range_of_property":
         cls_set = classes_for_property(
@@ -302,7 +331,14 @@ def build_enum_items(g: Graph, query_spec: dict, prefix_map: dict) -> list:
             query_spec["property_iri"],
             query_spec.get("ns_fallbacks", []),
         )
-        return classes_to_lookup_rows(g, cls_set, prefix_map)
+        # Treat the property's declared rdfs:range class(es) as roots so that
+        # direct children of those ranges don't get a redundant is_a.
+        prop = URIRef(query_spec["property_iri"])
+        range_roots = frozenset(
+            o for o in g.objects(prop, RDFS.range) if isinstance(o, URIRef)
+        )
+        return classes_to_lookup_rows(g, cls_set, prefix_map,
+                                      root_iris=range_roots)
 
     elif qtype == "individuals_in_namespace":
         return individuals_in_namespace(g, query_spec["namespace"], prefix_map)
@@ -313,7 +349,8 @@ def build_enum_items(g: Graph, query_spec: dict, prefix_map: dict) -> list:
             r = URIRef(root_iri_str)
             result.add(r)
             result.update(all_subclasses(g, r))
-        return classes_to_lookup_rows(g, result, prefix_map)
+        roots = frozenset(URIRef(r) for r in query_spec.get("root_iris", []))
+        return classes_to_lookup_rows(g, result, prefix_map, root_iris=roots)
 
     else:
         print(f"WARNING: unknown enum query type {qtype!r} — skipping", file=sys.stderr)
@@ -1099,11 +1136,17 @@ def build_schema_from_owl(
         else "ont"
     )
     class_snake = to_snake(class_name)
-    auto_id     = f"{ont_iri or 'http://example.org'}/schema/{class_snake}"
+    # id is the ontology IRI itself; name is CamelCase form of the ontology title.
+    auto_id   = ont_iri or f"http://example.org/schema/{class_snake}"
+    auto_name = (
+        "".join(w.capitalize() for w in ont_title.split())
+        if ont_title
+        else f"{class_name}Schema"
+    )
 
     schema_meta = {
         "id":          getattr(args, "schema_id",      None) or auto_id,
-        "name":        getattr(args, "schema_name",    None) or f"{class_name}Schema",
+        "name":        getattr(args, "schema_name",    None) or auto_name,
         "title":       getattr(args, "schema_title",   None) or (
             f"{ont_title} \u2014 {class_lbl} Template"
             if ont_title and class_lbl else f"{class_lbl} Template"
@@ -1577,13 +1620,17 @@ def write_schema_yaml(spec: dict, enum_items: dict, output_path: str) -> None:
         if enum_def.get("description"):
             _w(L, f"    description: {enum_def['description']}")
         _w(L, "    permissible_values:")
-        for curie, label, _iri in items:
+        for curie, label, _iri, parent_curie in items:
             # Key and text are the CURIE (always unique); human-readable
             # label goes in title for DataHarmonizer display.
+            # is_a encodes OWL subClassOf hierarchy for entries deeper than
+            # one level from the enum root (direct children of root get no is_a).
             _w(L, f"      {curie}:")
             _w(L, f"        text: {curie}")
             _w(L, f"        title: {label}")
             _w(L, f"        meaning: {curie}")
+            if parent_curie:
+                _w(L, f"        is_a: {parent_curie}")
         _w(L)
 
     # --- types ---
@@ -1638,6 +1685,14 @@ def main() -> None:
     parser.add_argument(
         "--class", dest="root_class", metavar="IRI",
         help="Root class IRI for OWL-driven mode.",
+    )
+    parser.add_argument(
+        "--also-load", dest="also_load", metavar="OWL", action="append", default=[],
+        help=(
+            "Additional OWL file(s) to merge into the graph before processing. "
+            "Repeatable. Use when axioms are split across component files "
+            "(e.g. after robot unmerge)."
+        ),
     )
     parser.add_argument(
         "--prefixes", metavar="YAML",
@@ -1710,6 +1765,10 @@ def main() -> None:
         print(f"Loading {owl_path} ...")
         g = Graph()
         g.parse(owl_path, format="xml")
+        for extra in args.also_load:
+            extra_path = os.path.abspath(extra)
+            print(f"  also loading {extra_path} ...")
+            g.parse(extra_path, format="xml")
         print(f"  {len(g)} triples loaded")
 
         print("Building enums ...")
@@ -1748,10 +1807,14 @@ def main() -> None:
     if os.path.exists(config_path):
         print(f"Config loaded from {config_path}")
 
-    # Load ontology
+    # Load ontology (and any additional component files)
     print(f"Loading {owl_path} ...")
     g = Graph()
     g.parse(owl_path, format="xml")
+    for extra in args.also_load:
+        extra_path = os.path.abspath(extra)
+        print(f"  also loading {extra_path} ...")
+        g.parse(extra_path, format="xml")
     print(f"  {len(g)} triples loaded")
 
     # Build prefix map

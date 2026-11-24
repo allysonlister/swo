@@ -62,6 +62,8 @@ enums:
     action: accept
   OutputOfSoftwarePublishingProcessMenu_SoftwarePublishingProcess:
     action: accept
+  RootMenu:
+    action: accept
   SoftwareMenu:
     action: accept
   UsesPlatformMenu:
