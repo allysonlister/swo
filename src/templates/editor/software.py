@@ -107,6 +107,9 @@ def iri_to_label(iri_str, labels):
 # (single-quoted) rather than by CURIE.  Using CURIEs causes ROBOT to
 # misidentify object properties as data properties and reject class fillers.
 # Data input/output filler values are CURIEs (not labels) for the same reason.
+#
+# HEADERS: internal snake_case keys used throughout the code.
+# TITLES:  human-readable titles (from schema.yaml) written as row 1 of the TSV.
 HEADERS = [
     "type",
     "ontology_id",
@@ -141,6 +144,43 @@ HEADERS = [
     "directly_followed_by",
     "directly_preceded_by",
     "has_support_url",
+]
+
+# Titles matching schema.yaml slot titles (1:1 with HEADERS).
+TITLES = [
+    "type",
+    "Ontology ID",
+    "label",
+    "parent",
+    "definition",
+    "definition source",
+    "comment",
+    "term creator",
+    "has specified data input",
+    "has specified data input datasets",
+    "has specified data output",
+    "has specified data output datasets",
+    "is encoded in",
+    "is published by",
+    "implements",
+    "output of",
+    "is executed in",
+    "uses platform",
+    "has license",
+    "has interface",
+    "has website homepage",
+    "has version",
+    "has part",
+    "is developed by",
+    "has documentation",
+    "uses software",
+    "has declared status",
+    "has release date",
+    "has download location",
+    "is software for",
+    "directly followed by",
+    "directly preceded by",
+    "has support URL",
 ]
 
 ROBOT_CODES = [
@@ -478,7 +518,7 @@ def extract_to_tsv(g, software_classes, labels, tsv_path):
 
     with open(tsv_path, "w", newline="", encoding="utf-8") as fh:
         writer = csv.writer(fh, delimiter="\t", quoting=csv.QUOTE_MINIMAL)
-        writer.writerow(HEADERS)
+        writer.writerow(TITLES)
         writer.writerow(ROBOT_CODES)
         for row in rows:
             clean = [
@@ -609,6 +649,9 @@ def main():
         print("Loading {} ...".format(OWL_PATH))
         g = Graph()
         g.parse(OWL_PATH, format="xml")
+        # Also load the software component (axioms live there after unmerge)
+        if os.path.exists(COMPONENT_PATH):
+            g.parse(COMPONENT_PATH, format="xml")
         print("  {} triples loaded".format(len(g)))
 
         labels = build_label_map(g)
