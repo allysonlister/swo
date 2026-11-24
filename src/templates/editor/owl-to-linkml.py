@@ -1147,10 +1147,7 @@ def build_schema_from_owl(
     schema_meta = {
         "id":          getattr(args, "schema_id",      None) or auto_id,
         "name":        getattr(args, "schema_name",    None) or auto_name,
-        "title":       getattr(args, "schema_title",   None) or (
-            f"{ont_title} \u2014 {class_lbl} Template"
-            if ont_title and class_lbl else f"{class_lbl} Template"
-        ),
+        "title":       getattr(args, "schema_title",   None) or ont_title or class_lbl,
         "description": ont_meta.get("description") or "",
         "version":     getattr(args, "schema_version", None) or ont_meta.get("version") or "1.0.0",
     }
