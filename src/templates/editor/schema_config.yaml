@@ -46,6 +46,8 @@ enums:
     action: accept
   HasSpecifiedDataInputMenu_AminoAcidProteinSequenceData:
     action: accept
+  HasSpecifiedDataInputMenu_CsvDataSet:
+    action: accept
   HasSpecifiedDataInputMenu_DataEntity:
     action: accept
   HasSpecifiedDataInputMicroarrayDataMenu:
