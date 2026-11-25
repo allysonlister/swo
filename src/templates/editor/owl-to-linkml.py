@@ -109,8 +109,22 @@ _STANDARD_SLOTS = [
         "range": "WhitespaceMinimizedString",
         "required": True,
         "slot_group": "Ontology Metadata",
-        "robot": "AL rdfs:label@en",
+        # TODO: promote to "AL rdfs:label@en" once swo-edit.owl plain-literal
+        # annotations are upgraded to language-tagged (@en) literals throughout.
+        "robot": "A rdfs:label",
         "description": "Primary English name (rdfs:label) of this class.",
+    },
+    {
+        "name": "exact synonym",
+        "slot_uri": "IAO:0000118",
+        "range": "WhitespaceMinimizedString",
+        "multivalued": True,
+        "slot_group": "Ontology Metadata",
+        "robot": "A IAO:0000118 SPLIT=|",
+        "description": (
+            "Exact synonym(s) (IAO:0000118) for this class. "
+            "Separate multiple values with |."
+        ),
     },
     {
         "name": "parent",
@@ -124,7 +138,9 @@ _STANDARD_SLOTS = [
         "slot_uri": "IAO:0000115",
         "range": "string",
         "slot_group": "Ontology Metadata",
-        "robot": "AL IAO:0000115@en",
+        # TODO: promote to "AL IAO:0000115@en" once swo-edit.owl plain-literal
+        # annotations are upgraded to language-tagged (@en) literals throughout.
+        "robot": "A IAO:0000115",
         "description": "Textual definition (IAO:0000115) for this class.",
     },
     {
@@ -144,7 +160,9 @@ _STANDARD_SLOTS = [
         "slot_uri": "rdfs:comment",
         "range": "string",
         "slot_group": "Ontology Metadata",
-        "robot": "AL rdfs:comment@en",
+        # TODO: promote to "AL rdfs:comment@en" once swo-edit.owl plain-literal
+        # annotations are upgraded to language-tagged (@en) literals throughout.
+        "robot": "A rdfs:comment",
         "description": "Free-text rdfs:comment annotation.",
     },
     {
@@ -1957,12 +1975,22 @@ def write_class_tsv(
                       for s, o in g.subject_objects(RDFS.label)
                       if isinstance(s, URIRef) and isinstance(o, Literal)}
 
-    # Direct non-deprecated subclasses, sorted by label
-    subclasses = sorted(
-        [c for c in g.subjects(RDFS.subClassOf, root_iri)
-         if isinstance(c, URIRef) and not is_deprecated(g, c)],
-        key=lambda c: labels.get(str(c), str(c)).casefold(),
-    )
+    # Hierarchical DFS order: children sorted alphabetically appear immediately
+    # after their parent, mirroring the Protégé class tree display.
+    def _tree_order(parent: URIRef, seen: set) -> list:
+        children = sorted(
+            [c for c in g.subjects(RDFS.subClassOf, parent)
+             if isinstance(c, URIRef) and not is_deprecated(g, c) and c not in seen],
+            key=lambda c: labels.get(str(c), str(c)).casefold(),
+        )
+        result = []
+        for child in children:
+            seen.add(child)
+            result.append(child)
+            result.extend(_tree_order(child, seen))
+        return result
+
+    subclasses = _tree_order(root_iri, set())
 
     slot_descriptors = [(robot, parsed) for _, robot, parsed in columns]
     header_row       = [title for title, _, _ in columns]

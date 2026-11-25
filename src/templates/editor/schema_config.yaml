@@ -66,6 +66,8 @@ enums:
     action: accept
   HasSpecifiedDataOutputMenu_GraphPlot:
     action: accept
+  HasSpecifiedDataOutputMenu_HtmlReport:
+    action: accept
   ImplementsMenu:
     action: accept
   IsEncodedInMenu:
