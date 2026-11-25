@@ -179,7 +179,9 @@ slots:
     name: label
     title: label
     annotations:
-      robot: "AL rdfs:label@en"
+      robot: "A rdfs:label"
+      # TODO: promote to "AL rdfs:label@en" once swo-edit.owl plain-literal
+      # annotations are upgraded to language-tagged (@en) literals throughout.
     description: >-
       Primary English name (rdfs:label) of this class.
     slot_uri: rdfs:label
@@ -199,7 +201,9 @@ slots:
     name: definition
     title: definition
     annotations:
-      robot: "AL IAO:0000115@en"
+      robot: "A IAO:0000115"
+      # TODO: promote to "AL IAO:0000115@en" once swo-edit.owl plain-literal
+      # annotations are upgraded to language-tagged (@en) literals throughout.
     description: >-
       Textual definition (IAO:0000115) for this class.
     slot_uri: IAO:0000115
@@ -221,7 +225,9 @@ slots:
     name: comment
     title: comment
     annotations:
-      robot: "AL rdfs:comment@en"
+      robot: "A rdfs:comment"
+      # TODO: promote to "AL rdfs:comment@en" once swo-edit.owl plain-literal
+      # annotations are upgraded to language-tagged (@en) literals throughout.
     description: >-
       Free-text rdfs:comment annotation.
     slot_uri: rdfs:comment
