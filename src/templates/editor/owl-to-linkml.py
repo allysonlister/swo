@@ -14,7 +14,7 @@ OWL-driven mode  (--class required, --spec not needed):
 
   python onto_to_linkml_schema.py \\
       --ontology swo-edit.owl \\
-      --class    http://www.ebi.ac.uk/swo/SWO_0000001 \\
+      --class    http://purl.obolibrary.org/obo/SWO_0000001 \\
       --output   schema.yaml
 
   Optional flags (OWL-driven mode):
@@ -49,9 +49,14 @@ Supported enum query types (spec enums.<name>.query.type):
                          (produced by interactive narrowing)
 """
 import argparse
+import json
 import os
 import re
+import shutil
+import subprocess
 import sys
+import csv
+import tempfile
 
 try:
     import yaml
@@ -59,7 +64,7 @@ except ImportError:
     print("ERROR: PyYAML required.  pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
-from rdflib import BNode, Graph, URIRef
+from rdflib import BNode, Graph, Literal, URIRef
 from rdflib.collection import Collection
 from rdflib.namespace import OWL, RDF, RDFS
 
@@ -69,18 +74,13 @@ from rdflib.namespace import OWL, RDF, RDFS
 # ---------------------------------------------------------------------------
 
 WELL_KNOWN_PREFIXES = {
-    "https://w3id.org/linkml/":                   "linkml",
-    "http://www.w3.org/2001/XMLSchema#":           "xsd",
-    "http://www.w3.org/2000/01/rdf-schema#":       "rdfs",
-    "http://www.w3.org/2002/07/owl#":              "owl",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#": "rdf",
-    "http://purl.org/dc/terms/":                   "dcterms",
-    "http://purl.org/dc/elements/1.1/":            "dc",
-    "http://purl.obolibrary.org/obo/IAO_":         "IAO",
-    "http://purl.obolibrary.org/obo/RO_":          "RO",
-    "http://purl.obolibrary.org/obo/OBI_":         "OBI",
-    "http://purl.obolibrary.org/obo/BFO_":         "BFO",
-    "http://edamontology.org/":                    "EDAM",
+    # Prefixes not in ROBOT's default OBO table that owl-to-linkml.py needs.
+    # These supplement (and override) the robot export-prefixes output.
+    "https://w3id.org/linkml/":           "linkml",
+    "http://purl.org/dc/terms/":          "dcterms",
+    "http://purl.org/dc/elements/1.1/":   "dc",
+    "http://edamontology.org/":           "EDAM",
+    "http://kt.ijs.si/panovp/OntoDM#":    "ODME",
 }
 
 # ---------------------------------------------------------------------------
@@ -184,6 +184,22 @@ def all_subclasses(g: Graph, root: URIRef) -> set:
 def is_deprecated(g: Graph, uri: URIRef) -> bool:
     """Return True if *uri* carries owl:deprecated true."""
     return bool(g.value(uri, OWL.deprecated))
+
+
+def _yaml_scalar(s: str) -> str:
+    """Return s as a safe YAML scalar, double-quoting when the string contains
+    characters that would be misread by a YAML parser (any colon, leading special
+    chars, empty string, or any value YAML would parse as a non-string type such
+    as integers, floats, booleans, or null)."""
+    need_quote = (
+        not s
+        or ":" in s
+        or s[0] in "#&*!|>'\",%@`{["
+        or not isinstance(yaml.safe_load(s), str)   # e.g. 1, 6.02, true, null
+    )
+    if need_quote:
+        return '"' + s.replace("\\", "\\\\").replace('"', '\\"') + '"'
+    return s
 
 
 def classes_to_lookup_rows(
@@ -320,10 +336,15 @@ def build_enum_items(g: Graph, query_spec: dict, prefix_map: dict) -> list:
     if qtype == "subclasses_of":
         root    = URIRef(query_spec["root_iri"])
         cls_set = all_subclasses(g, root)
-        if query_spec.get("include_root", True):
+        include_self = query_spec.get("include_self", False)
+        if include_self or query_spec.get("include_root", True):
             cls_set = cls_set | {root}
+        # With include_self: root is a regular member so direct children get
+        # is_a: <root_label>.  Without it: root is treated as an implicit root
+        # and direct children get no is_a (they're level-1 entries).
+        root_iris = frozenset() if include_self else frozenset([root])
         return classes_to_lookup_rows(g, cls_set, prefix_map,
-                                      root_iris=frozenset([root]))
+                                      root_iris=root_iris)
 
     elif qtype == "range_of_property":
         cls_set = classes_for_property(
@@ -402,17 +423,6 @@ def to_snake(name: str) -> str:
 # Namespace discovery (OWL-driven mode)
 # ---------------------------------------------------------------------------
 
-def parse_owl_namespaces(owl_path: str) -> dict:
-    """Read xmlns: declarations from the root element of an OWL/RDF-XML file.
-    Returns {prefix: namespace_uri} without trailing colons on keys."""
-    result = {}
-    with open(owl_path, "rb") as fh:
-        header = fh.read(8192).decode("utf-8", errors="replace")
-    for m in re.finditer(r'xmlns:([A-Za-z_][A-Za-z0-9_.-]*)="([^"]+)"', header):
-        result[m.group(1)] = m.group(2)
-    return result
-
-
 def _extract_ns(iri: str) -> str:
     """Extract namespace from an IRI using the numeric-segment heuristic.
     Returns the IRI up to and including the last separator before an all-digit
@@ -423,81 +433,43 @@ def _extract_ns(iri: str) -> str:
 
 
 def build_prefix_map_from_owl(owl_path: str, g: Graph) -> dict:
-    """Build a prefix→namespace map by combining:
-      1. Well-known prefix table
-      2. XML-declared xmlns: prefixes from the OWL file
-      3. Sub-namespace discovery via the numeric-segment heuristic
+    """Build a prefix→namespace map from ROBOT's default OBO prefix table,
+    supplemented by WELL_KNOWN_PREFIXES for namespaces ROBOT does not carry
+    (linkml, dcterms, EDAM, ODME, dc).
 
-    Prints a WARNING for every auto-generated prefix name so users can verify
-    or supply a --prefixes file on the next run.
-    Returns the map (longer namespaces sort first in iri_to_curie)."""
+    Falls back to WELL_KNOWN_PREFIXES alone if `robot` is not on PATH.
+    Pass --prefixes to override this entirely with a hand-curated file."""
 
-    # --- 1. Seed from WELL_KNOWN_PREFIXES ---
-    result: dict = {pfx: ns for ns, pfx in WELL_KNOWN_PREFIXES.items()}
-    ns_to_prefix: dict = {ns: pfx for pfx, ns in result.items()}
+    result: dict = {}
 
-    # --- 2. Merge XML-declared xmlns: prefixes ---
-    for pfx, ns in parse_owl_namespaces(owl_path).items():
-        if ns in ns_to_prefix:
-            continue            # already mapped to a canonical prefix
-        if pfx in result:
-            continue            # prefix already claimed
+    if shutil.which("robot") is not None:
+        with tempfile.NamedTemporaryFile(suffix=".json", delete=False) as tmp:
+            tmp_path = tmp.name
+        try:
+            subprocess.run(
+                ["robot", "export-prefixes", "--output", tmp_path],
+                check=True, capture_output=True,
+            )
+            with open(tmp_path, encoding="utf-8") as fh:
+                data = json.load(fh)
+            for pfx, val in data.get("@context", {}).items():
+                ns = val.get("@id") if isinstance(val, dict) else val
+                if ns:
+                    result[pfx] = ns
+        except Exception as exc:
+            print(f"WARNING: robot export-prefixes failed ({exc}); "
+                  "falling back to WELL_KNOWN_PREFIXES only.", file=sys.stderr)
+            result = {}
+        finally:
+            if os.path.exists(tmp_path):
+                os.unlink(tmp_path)
+    else:
+        print("WARNING: `robot` not found on PATH; "
+              "prefix map limited to WELL_KNOWN_PREFIXES.", file=sys.stderr)
+
+    # Supplement/override with WELL_KNOWN_PREFIXES (linkml, dcterms, EDAM, ODME, dc)
+    for ns, pfx in WELL_KNOWN_PREFIXES.items():
         result[pfx] = ns
-        ns_to_prefix[ns] = pfx
-
-    # --- 3. Collect all named IRIs in the graph ---
-    all_iris: set = set()
-    for triple in g:
-        for node in triple:
-            if isinstance(node, URIRef):
-                all_iris.add(str(node))
-
-    # --- 4. Numeric-segment heuristic for uncovered sub-namespaces ---
-    new_ns: set = set()
-    for iri in all_iris:
-        if any(iri.startswith(ns) for ns in result.values()):
-            continue
-        ns_candidate = _extract_ns(iri)
-        if ns_candidate and ns_candidate not in result.values():
-            new_ns.add(ns_candidate)
-
-    # --- 5. Generate prefix names for newly discovered sub-namespaces ---
-    used_prefixes: set = set(result.keys())
-    for ns_candidate in sorted(new_ns):
-        # Find longest matching declared namespace (parent)
-        parent_prefix = ""
-        parent_ns = ""
-        for pfx, ns in result.items():
-            if ns_candidate.startswith(ns) and len(ns) > len(parent_ns):
-                parent_ns = ns
-                parent_prefix = pfx
-
-        if parent_prefix:
-            sub = ns_candidate[len(parent_ns):]
-            # First letter of first path component
-            first_component = sub.split("/")[0] if "/" in sub else sub.rstrip("_")
-            letters = re.sub(r'[^a-zA-Z]', '', first_component)
-            suffix = letters[0].upper() if letters else "X"
-            base_candidate = parent_prefix.upper() + suffix
-        else:
-            seg = ns_candidate.rstrip("/").rstrip("_").rsplit("/", 1)[-1]
-            base_candidate = re.sub(r'[^A-Za-z0-9]', '', seg).upper()[:6] or "NS"
-
-        # Ensure uniqueness
-        candidate = base_candidate
-        i = 1
-        while candidate in used_prefixes:
-            candidate = f"{base_candidate}{i}"
-            i += 1
-
-        result[candidate] = ns_candidate
-        used_prefixes.add(candidate)
-        print(
-            f"WARNING: namespace {ns_candidate!r} not in known prefixes; "
-            f"assigned prefix {candidate!r}. "
-            f"Edit schema.yaml or use --prefixes if incorrect.",
-            file=sys.stderr,
-        )
 
     return result
 
@@ -560,7 +532,12 @@ def parse_ce(g: Graph, node) -> dict:
 
         val = g.value(node, OWL.hasValue)
         if val is not None:
-            return {"type": "value", "property": prop_iri, "value": str(val)}
+            return {
+                "type": "value",
+                "property": prop_iri,
+                "value": str(val),
+                "value_is_uri": isinstance(val, URIRef),
+            }
 
         all_f = g.value(node, OWL.allValuesFrom)
         if all_f is not None:
@@ -606,15 +583,34 @@ def _ce_fingerprint(ce: dict) -> str:
     return str(ce)
 
 
-def _ce_to_robot(ce: dict, prefix_map: dict) -> str:
+def _ce_to_robot(ce: dict, prefix_map: dict, g=None) -> str:
     """Convert a parsed CE dict to a ROBOT template code string.
-    Returns None for unsupported patterns (complex intersections)."""
+    Returns None for unsupported patterns (complex intersections).
+
+    When *g* (an rdflib Graph) is provided, the property is referenced by its
+    quoted rdfs:label (e.g. ``'has specified data input'``), which ROBOT resolves
+    to the property IRI at template-compile time.  This is more readable and
+    matches ROBOT's label-resolution behaviour used for value cells.
+    Falls back to a CURIE when no rdfs:label is found.
+
+    Restriction type determines the ROBOT quantifier:
+      someValuesFrom  → ``SC 'prop' some % SPLIT=|``   (class range)
+      hasValue (URI)  → ``SC 'prop' value % SPLIT=|``  (named individual range)
+      hasValue (lit.) → ``SC 'prop' value %``           (data/literal value)
+    """
     if ce is None:
         return None
     t = ce.get("type")
 
+    def _prop_ref(iri: str) -> str:
+        if g is not None:
+            lbl = g.value(URIRef(iri), RDFS.label)
+            if lbl:
+                return f"'{lbl}'"
+        return iri_to_curie(iri, prefix_map)
+
     if t == "some":
-        p = iri_to_curie(ce["property"], prefix_map)
+        p = _prop_ref(ce["property"])
         filler = ce.get("filler") or {}
         ft = filler.get("type")
 
@@ -622,25 +618,21 @@ def _ce_to_robot(ce: dict, prefix_map: dict) -> str:
             return f"SC {p} some % SPLIT=|"
 
         if ft == "and":
-            ops = filler.get("operands", [])
-            named   = [op for op in ops if op.get("type") == "class"]
-            some_ops = [op for op in ops if op.get("type") == "some"]
-            val_ops  = [op for op in ops if op.get("type") == "value"]
-
-            if len(named) == 1 and len(some_ops) == 1:
-                c1 = iri_to_curie(named[0]["iri"], prefix_map)
-                p2 = iri_to_curie(some_ops[0]["property"], prefix_map)
-                return f"SC {p} some ({c1} and {p2} some %) SPLIT=|"
-
-            if len(named) == 1 and len(val_ops) == 1:
-                c1 = iri_to_curie(named[0]["iri"], prefix_map)
-                p2 = iri_to_curie(val_ops[0]["property"], prefix_map)
-                return f"SC {p} some ({c1} and {p2} value %) SPLIT=|"
+            # ROBOT template engine cannot parse nested restrictions inside
+            # intersections (e.g. "P some (C and P2 some %)"), so we emit the
+            # simplified outer someValuesFrom form.  The extraction code puts the
+            # inner target class CURIE in the cell, so the generated axiom is
+            # "SubClassOf(P some Target)" rather than the full intersection.
+            return f"SC {p} some % SPLIT=|"
 
         return None
 
     if t == "value":
-        p = iri_to_curie(ce["property"], prefix_map)
+        p = _prop_ref(ce["property"])
+        if ce.get("value_is_uri"):
+            # Named-individual (hasValue) range: use 'value' restriction.
+            # SPLIT=| supports properties whose target is multi-valued per class.
+            return f"SC {p} value % SPLIT=|"
         return f"SC {p} value %"
 
     return None
@@ -856,11 +848,12 @@ def discover_property_slots(
         # "SC P some (C and P2 some %) SPLIT=|").  Merge their user sets so we
         # get one slot per unique template code rather than one per subclass.
         # someValuesFrom → SPLIT=| (multivalued by OWL semantics)
-        # hasValue       → no SPLIT=| (singular assignment to a specific individual)
+        # hasValue URI   → SPLIT=| (named-individual range, can be multi-valued)
+        # hasValue lit.  → no SPLIT=| (data/literal value, singular)
         robot_groups: dict = {}     # robot_code → {ce (representative), users}
         unsupported_count = 0
         for fp, info in fp_patterns.items():
-            robot = _ce_to_robot(info["ce"], prefix_map)
+            robot = _ce_to_robot(info["ce"], prefix_map, g)
             if robot is None:
                 unsupported_count += 1
                 continue
@@ -929,11 +922,13 @@ def discover_property_slots(
             # all with the same snake_case name when a property has many
             # intersection variants differing only in the named intersection class.
             def _robot_category(r: str) -> str:
-                if " some % " in r or r.endswith(" some %") or r.endswith(" some % "):
-                    return "direct"
+                # intersection must be checked before direct: intersection
+                # codes also contain "some" and "%", but always have "some (".
                 if " some (" in r:
                     return "intersection"
-                if r.startswith("SC ") and " value %" in r and " some " not in r:
+                if " some " in r and "%" in r:
+                    return "direct"
+                if r.startswith("SC ") and " value " in r and " some " not in r:
                     return "value"
                 return "other"
 
@@ -981,12 +976,24 @@ def discover_property_slots(
 
             for cat, (robot, info, _score) in best.items():
                 ce = info["ce"]
-                # When both intersection and direct slots exist, append " datasets"
-                # to the direct slot's name (e.g. has_specified_data_input_datasets).
-                if cat == "direct" and has_both:
-                    slot_name = prop_label_str + " datasets"
-                else:
-                    slot_name = prop_label_str
+                # When both intersection and direct slots exist, skip the
+                # intersection slot: it involves complex nested axioms
+                # (someValuesFrom(C and P some X)) that cannot be cleanly
+                # represented as a simple ROBOT template column.
+                # The direct someValuesFrom slot is kept under the plain
+                # property label.  A future --robot TSV pass can omit the
+                # intersection values or handle them separately.
+                if cat == "intersection" and has_both:
+                    print(
+                        f"NOTE: Omitting '{prop_label_str} datasets' slot for "
+                        f"{iri_to_curie(prop_iri, prefix_map)}: intersection "
+                        f"axiom pattern (someValuesFrom(C and P some X)) cannot "
+                        f"be represented as a simple ROBOT template column.",
+                        file=sys.stderr,
+                    )
+                    continue
+
+                slot_name   = prop_label_str
                 multivalued = "SPLIT=|" in robot
 
                 slots.append({
@@ -1248,8 +1255,12 @@ def build_schema_from_owl(
     # --- Build enum items ---
     print("Building enums ...")
     enum_items: dict = {}
+    cfg_enums = (config or {}).get("enums", {})
     for enum_name, enum_def in enums.items():
-        items = build_enum_items(g, enum_def["query"], prefix_map)
+        query = dict(enum_def["query"])  # copy so we don't mutate the spec
+        if cfg_enums.get(enum_name, {}).get("include_self"):
+            query["include_self"] = True
+        items = build_enum_items(g, query, prefix_map)
         enum_items[enum_name] = items
         print(f"  {enum_name}: {len(items)} entries")
         # The root-class menu (parent choices) is expected to be large
@@ -1530,6 +1541,7 @@ def write_schema_yaml(spec: dict, enum_items: dict, output_path: str) -> None:
     _w(L, f"version: {schema.get('version', '1.0.0')}")
     _w(L, "annotations:")
     _w(L, '  list_delimiter: "|"')
+    _w(L, '  application: robot')
     _w(L)
     _w(L, "imports:")
     _w(L, "  - linkml:types")
@@ -1579,7 +1591,7 @@ def write_schema_yaml(spec: dict, enum_items: dict, output_path: str) -> None:
         _w(L, f"    title: {name}")
         if robot:
             _w(L, "    annotations:")
-            _w(L, f"      robot: '{robot}'")
+            _w(L, f'      robot: "{robot}"')
         if desc:
             _w(L, "    description: >-")
             words = desc.split()
@@ -1621,17 +1633,32 @@ def write_schema_yaml(spec: dict, enum_items: dict, output_path: str) -> None:
         if enum_def.get("description"):
             _w(L, f"    description: {enum_def['description']}")
         _w(L, "    permissible_values:")
+        # Detect duplicate labels within this enum; disambiguate by appending
+        # the CURIE so each YAML key is unique.  The text/title fields keep the
+        # original label so DataHarmonizer displays and round-trips it cleanly.
+        label_counts: dict = {}
+        for _, lbl, _, _ in items:
+            label_counts[lbl] = label_counts.get(lbl, 0) + 1
+        # Build curie→display-key map for this enum (used for is_a references).
+        curie_to_key = {
+            c: (f"{lbl} ({c})" if label_counts[lbl] > 1 else lbl)
+            for c, lbl, _, _ in items
+        }
         for curie, label, _iri, parent_curie in items:
-            # Key and text are the CURIE (always unique); human-readable
-            # label goes in title for DataHarmonizer display.
+            # Key is the rdfs:label (disambiguated with CURIE when needed);
+            # text stays as the plain label so DH stores and saves it cleanly.
+            # meaning carries the CURIE for downstream ROBOT/OWL use.
             # is_a encodes OWL subClassOf hierarchy for entries deeper than
             # one level from the enum root (direct children of root get no is_a).
-            _w(L, f"      {curie}:")
-            _w(L, f"        text: {curie}")
-            _w(L, f"        title: {label}")
+            key = _yaml_scalar(curie_to_key[curie])
+            lbl = _yaml_scalar(label)
+            _w(L, f"      {key}:")
+            _w(L, f"        text: {lbl}")
+            _w(L, f"        title: {lbl}")
             _w(L, f"        meaning: {curie}")
-            if parent_curie:
-                _w(L, f"        is_a: {parent_curie}")
+            if parent_curie and parent_curie in curie_to_key:
+                parent_key = _yaml_scalar(curie_to_key[parent_curie])
+                _w(L, f"        is_a: {parent_key}")
         _w(L)
 
     # --- types ---
@@ -1653,6 +1680,267 @@ def write_schema_yaml(spec: dict, enum_items: dict, output_path: str) -> None:
     with open(output_path, "w", encoding="utf-8") as fh:
         fh.write("\n".join(L) + "\n")
     print(f"  {output_path}")
+
+
+# ---------------------------------------------------------------------------
+# TSV generation (--robot mode)
+# ---------------------------------------------------------------------------
+
+def build_label_map(g: Graph) -> dict:
+    """Return {iri_string: label_string} for every entity with an rdfs:label."""
+    result = {}
+    for s, o in g.subject_objects(RDFS.label):
+        if isinstance(s, URIRef) and isinstance(o, Literal):
+            result[str(s)] = str(o)
+    return result
+
+
+def _curie_to_iri(curie: str, prefix_map: dict) -> str:
+    """Resolve a CURIE (e.g. 'IAO:0000115') to a full IRI using prefix_map.
+    Returns None when the prefix is unknown."""
+    if ":" not in curie:
+        return None
+    prefix, local = curie.split(":", 1)
+    ns = prefix_map.get(prefix)
+    return (ns + local) if ns else None
+
+
+def _parse_robot_code(code: str) -> dict:
+    """Parse a ROBOT template code string into a descriptor dict.
+
+    Supported patterns:
+      ID                                → {kind: 'id'}
+      SC %                              → {kind: 'parent'}
+      AL <curie>[@lang]                 → {kind: 'annotation', literal: True,
+                                           prop_curie: ..., lang: ..., split: False}
+      A  <curie>[@lang][ SPLIT=|]       → {kind: 'annotation', literal: False,
+                                           prop_curie: ..., lang: ..., split: bool}
+      SC 'prop label' some %[ SPLIT=|]  → {kind: 'some',  prop_label: ..., split: bool}
+      SC 'prop label' value %[ SPLIT=|] → {kind: 'value', prop_label: ..., split: bool}
+
+    Returns None for unrecognised / empty codes.
+    """
+    if not code:
+        return None
+    code = code.strip()
+
+    if code == "ID":
+        return {"kind": "id"}
+    if code == "SC %":
+        return {"kind": "parent"}
+
+    # AL <curie>[@lang]
+    m = re.match(r"^AL\s+(\S+?)(?:@(\w+))?$", code)
+    if m:
+        return {"kind": "annotation", "literal": True,
+                "prop_curie": m.group(1), "lang": m.group(2), "split": False}
+
+    # A <curie>[@lang][ SPLIT=|]
+    m = re.match(r"^A\s+(\S+?)(?:@(\w+))?(?:\s+SPLIT=\|)?$", code)
+    if m:
+        return {"kind": "annotation", "literal": False,
+                "prop_curie": m.group(1), "lang": m.group(2),
+                "split": "SPLIT=|" in code}
+
+    # SC 'prop label' some/value %[ SPLIT=|]
+    m = re.match(r"^SC\s+'(.+?)'\s+(some|value)\s+%(\s+SPLIT=\|)?$", code)
+    if m:
+        return {"kind": m.group(2), "prop_label": m.group(1),
+                "split": bool(m.group(3))}
+
+    return None
+
+
+def _extract_tsv_row(
+    g: Graph,
+    cls: URIRef,
+    slot_descriptors: list,
+    labels: dict,
+    prefix_map: dict,
+    prop_label_map: dict,
+) -> list:
+    """Return a list of cell values (strings) for one class row.
+
+    slot_descriptors: list of (robot_code, parsed_robot_dict) in column order.
+    prop_label_map: {rdfs_label_str: iri_str} for all properties in the graph.
+    """
+    row = []
+    for robot_code, parsed in slot_descriptors:
+        if parsed is None:
+            row.append("")
+            continue
+
+        kind = parsed["kind"]
+
+        # --- ID ---
+        if kind == "id":
+            row.append(iri_to_curie(str(cls), prefix_map))
+
+        # --- Parent (SC %) ---
+        elif kind == "parent":
+            val = ""
+            for parent in g.objects(cls, RDFS.subClassOf):
+                if isinstance(parent, URIRef) and not is_deprecated(g, parent):
+                    val = labels.get(str(parent)) or iri_to_curie(str(parent), prefix_map)
+                    break
+            row.append(val)
+
+        # --- Annotation property ---
+        elif kind == "annotation":
+            prop_iri_str = _curie_to_iri(parsed["prop_curie"], prefix_map)
+            if not prop_iri_str:
+                row.append("")
+                continue
+            prop = URIRef(prop_iri_str)
+            lang = parsed.get("lang")
+            split = parsed.get("split", False)
+            values = []
+            for obj in g.objects(cls, prop):
+                if isinstance(obj, Literal):
+                    if lang is None or str(obj.language) == lang:
+                        # Normalise embedded newlines — TSV cells must be single-line
+                        values.append(" ".join(str(obj).splitlines()))
+                elif isinstance(obj, URIRef):
+                    values.append(str(obj))
+            if not values:
+                row.append("")
+            elif split:
+                row.append("|".join(values))
+            else:
+                row.append(values[0])
+
+        # --- someValuesFrom or hasValue restriction ---
+        elif kind in ("some", "value"):
+            prop_lbl   = parsed["prop_label"]
+            prop_iri_str = prop_label_map.get(prop_lbl)
+            if not prop_iri_str:
+                row.append("")
+                continue
+            prop  = URIRef(prop_iri_str)
+            split = parsed.get("split", False)
+            values = []
+            for sc in g.objects(cls, RDFS.subClassOf):
+                if not isinstance(sc, BNode):
+                    continue
+                if (sc, RDF.type, OWL.Restriction) not in g:
+                    continue
+                if g.value(sc, OWL.onProperty) != prop:
+                    continue
+                if kind == "some":
+                    filler = g.value(sc, OWL.someValuesFrom)
+                    # Only named-class fillers; skip BNode intersections
+                    # (those belonged to the now-omitted 'datasets' slots).
+                    if isinstance(filler, URIRef):
+                        lbl = labels.get(str(filler)) or iri_to_curie(str(filler), prefix_map)
+                        values.append(lbl)
+                else:  # value
+                    val = g.value(sc, OWL.hasValue)
+                    if isinstance(val, URIRef):
+                        lbl = labels.get(str(val)) or iri_to_curie(str(val), prefix_map)
+                        values.append(lbl)
+                    elif isinstance(val, Literal):
+                        # Literal hasValue fillers (URLs, dates) must be quoted in
+                        # ROBOT template syntax so they are treated as string literals,
+                        # not parsed as Manchester IRI expressions.
+                        values.append(f'"{val}"')
+            if not values:
+                row.append("")
+            elif split:
+                row.append("|".join(values))
+            else:
+                row.append(values[0])
+
+        else:
+            row.append("")
+
+    return row
+
+
+def write_class_tsv(
+    g: Graph,
+    schema: dict,
+    class_name: str,
+    prefix_map: dict,
+    output_dir: str,
+) -> None:
+    """Write a ROBOT template TSV for the named schema class.
+
+    Finds the class definition in *schema*, resolves its root OWL class by
+    matching the rdfs:label of the given *class_name* (case-insensitive),
+    iterates over its direct non-deprecated subclasses, and writes one row
+    per subclass to <output_dir>/<class_name>.tsv.
+    """
+    classes = schema.get("classes", {})
+    # Case-insensitive class lookup
+    cls_key = next(
+        (k for k in classes if k.lower() == class_name.lower()), None
+    )
+    if cls_key is None:
+        print(f"ERROR: class '{class_name}' not found in schema (available: "
+              f"{', '.join(classes)}).", file=sys.stderr)
+        return
+
+    cls_def    = classes[cls_key]
+    all_slots  = schema.get("slots", {})
+    slot_usage = cls_def.get("slot_usage", {})
+
+    # Build ordered slot list from class definition, sorted by rank
+    slot_names = cls_def.get("slots", [])
+    ranked = sorted(
+        slot_names,
+        key=lambda s: slot_usage.get(to_snake(s), {}).get("rank", 9999),
+    )
+
+    # Build column descriptors: (title, robot_code, parsed_robot)
+    columns = []
+    for sn in ranked:
+        snake    = to_snake(sn)
+        slot_def = all_slots.get(snake, {})
+        title    = slot_def.get("title", snake)
+        robot    = slot_def.get("annotations", {}).get("robot", "")
+        parsed   = _parse_robot_code(robot)
+        columns.append((title, robot, parsed))
+
+    # Find root OWL class by rdfs:label (case-insensitive)
+    root_iri = None
+    for s, o in g.subject_objects(RDFS.label):
+        if isinstance(s, URIRef) and isinstance(o, Literal):
+            if str(o).lower() == class_name.lower():
+                root_iri = s
+                break
+    if root_iri is None:
+        print(f"ERROR: no OWL class with rdfs:label matching '{class_name}'.",
+              file=sys.stderr)
+        return
+
+    labels         = build_label_map(g)
+    prop_label_map = {str(o): str(s)
+                      for s, o in g.subject_objects(RDFS.label)
+                      if isinstance(s, URIRef) and isinstance(o, Literal)}
+
+    # Direct non-deprecated subclasses, sorted by label
+    subclasses = sorted(
+        [c for c in g.subjects(RDFS.subClassOf, root_iri)
+         if isinstance(c, URIRef) and not is_deprecated(g, c)],
+        key=lambda c: labels.get(str(c), str(c)).casefold(),
+    )
+
+    slot_descriptors = [(robot, parsed) for _, robot, parsed in columns]
+    header_row       = [title for title, _, _ in columns]
+    robot_row        = [robot for _, robot, _ in columns]
+
+    tsv_path = os.path.join(output_dir, f"{class_name.lower()}.tsv")
+    os.makedirs(output_dir, exist_ok=True)
+    with open(tsv_path, "w", newline="", encoding="utf-8") as fh:
+        writer = csv.writer(fh, delimiter="\t")
+        writer.writerow(header_row)
+        writer.writerow(robot_row)
+        for cls in subclasses:
+            writer.writerow(_extract_tsv_row(
+                g, cls, slot_descriptors, labels, prefix_map, prop_label_map
+            ))
+
+    print(f"Wrote {len(subclasses)} rows to {tsv_path}")
 
 
 # ---------------------------------------------------------------------------
@@ -1719,12 +2007,24 @@ def main() -> None:
             "Defaults to schema_config.yaml beside --output."
         ),
     )
+    parser.add_argument(
+        "--robot", metavar="CLASS", dest="robot_classes", nargs="+",
+        help=(
+            "Instead of generating schema.yaml, generate a ROBOT template TSV "
+            "for each named schema class (e.g. --robot software).  Reads the "
+            "schema.yaml at --output to determine columns; writes <class>.tsv "
+            "in the same directory.  Requires --ontology and an existing "
+            "schema.yaml."
+        ),
+    )
     args = parser.parse_args()
 
     # --- Validate mode ---
-    if not args.spec and not args.root_class:
+    robot_mode = bool(getattr(args, "robot_classes", None))
+    if not args.spec and not args.root_class and not robot_mode:
         parser.error(
-            "Provide --spec (spec-driven mode) or --class IRI (OWL-driven mode)."
+            "Provide --spec (spec-driven mode), --class IRI (OWL-driven mode), "
+            "or --robot CLASS (TSV generation mode)."
         )
     if args.spec and args.root_class:
         print(
@@ -1829,6 +2129,26 @@ def main() -> None:
         print("Discovering prefixes from ontology ...")
         prefix_map = build_prefix_map_from_owl(owl_path, g)
         print(f"  {len(prefix_map)} prefixes resolved")
+
+    # --robot mode: generate TSV file(s) from an existing schema.yaml
+    if getattr(args, "robot_classes", None):
+        if not os.path.exists(output_path):
+            print(
+                f"ERROR: schema.yaml not found at {output_path}.\n"
+                f"Run without --robot first to generate it.",
+                file=sys.stderr,
+            )
+            sys.exit(1)
+        with open(output_path, encoding="utf-8") as fh:
+            schema = yaml.safe_load(fh)
+        # Use schema.yaml's own prefixes section — no separate --prefixes needed.
+        schema_prefixes = schema.get("prefixes", {})
+        if schema_prefixes:
+            prefix_map = {k.rstrip(":"): v for k, v in schema_prefixes.items()}
+        output_dir = os.path.dirname(output_path)
+        for class_name in args.robot_classes:
+            write_class_tsv(g, schema, class_name, prefix_map, output_dir)
+        return
 
     # Build schema (rarity prompts may appear here; decisions stored in config)
     print(f"Discovering schema structure for <{args.root_class}> ...")

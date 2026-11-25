@@ -32,11 +32,19 @@ enums:
     action: accept
   HasSpecifiedDataInputDatasetsMenu:
     action: accept
+  HasSpecifiedDataInputDatasetsMenu_DataEntity:
+    action: accept
   HasSpecifiedDataInputDigitalGeneExpressionDgeDatasetsMenu:
     action: accept
   HasSpecifiedDataInputGeneExpressionDatasetMenu:
     action: accept
   HasSpecifiedDataInputImageMenu_Image:
+    action: accept
+  HasSpecifiedDataInputMenu:
+    action: accept
+  HasSpecifiedDataInputMenu_AllAmlDataSet:
+    action: accept
+  HasSpecifiedDataInputMenu_AminoAcidProteinSequenceData:
     action: accept
   HasSpecifiedDataInputMenu_DataEntity:
     action: accept
@@ -46,9 +54,15 @@ enums:
     action: accept
   HasSpecifiedDataOutputDatasetsMenu:
     action: accept
+  HasSpecifiedDataOutputDatasetsMenu_DataEntity:
+    action: accept
   HasSpecifiedDataOutputGraphPlotMenu:
     action: accept
+  HasSpecifiedDataOutputMenu:
+    action: accept
   HasSpecifiedDataOutputMenu_DataEntity:
+    action: accept
+  HasSpecifiedDataOutputMenu_GraphPlot:
     action: accept
   ImplementsMenu:
     action: accept
@@ -57,6 +71,8 @@ enums:
   IsExecutedInMenu:
     action: accept
   IsSoftwareForMenu:
+    action: accept
+  OutputOfMenu_SoftwareDevelopment:
     action: accept
   OutputOfMenu_SoftwarePublishingProcess:
     action: accept
@@ -68,6 +84,7 @@ enums:
     action: accept
   SoftwareMenu:
     action: accept
+    include_self: true
   UsesPlatformMenu:
     action: accept
   UsesSoftwareMenu:
