@@ -475,6 +475,45 @@ def build_prefix_map_from_owl(owl_path: str, g: Graph) -> dict:
 
 
 # ---------------------------------------------------------------------------
+# OWL file loader (handles RDF/XML and OFN via ROBOT conversion)
+# ---------------------------------------------------------------------------
+
+def _load_owl_to_graph(g: Graph, owl_path: str) -> None:
+    """Parse an OWL file into *g*.
+
+    rdflib supports RDF/XML, Turtle, N3 etc. but not OWL Functional Notation
+    (OFN).  OFN files (those starting with 'Prefix(' or 'Ontology(') are first
+    converted to Turtle via ROBOT, then loaded from the temp Turtle file.
+    """
+    with open(owl_path, "rb") as fh:
+        head = fh.read(16).lstrip()
+
+    is_ofn = head.startswith(b"Prefix(") or head.startswith(b"Ontology(")
+
+    if not is_ofn:
+        g.parse(owl_path, format="xml")
+        return
+
+    if shutil.which("robot") is None:
+        raise RuntimeError(
+            f"{owl_path!r} is in OWL Functional Notation (OFN) but `robot` "
+            "is not on PATH.  Install ROBOT to load OFN files."
+        )
+    with tempfile.NamedTemporaryFile(suffix=".ttl", delete=False) as tmp:
+        tmp_path = tmp.name
+    try:
+        subprocess.run(
+            ["robot", "convert", "--input", owl_path, "--format", "ttl",
+             "--output", tmp_path],
+            check=True, capture_output=True,
+        )
+        g.parse(tmp_path, format="turtle")
+    finally:
+        if os.path.exists(tmp_path):
+            os.unlink(tmp_path)
+
+
+# ---------------------------------------------------------------------------
 # Ontology metadata
 # ---------------------------------------------------------------------------
 
@@ -2065,11 +2104,11 @@ def main() -> None:
 
         print(f"Loading {owl_path} ...")
         g = Graph()
-        g.parse(owl_path, format="xml")
+        _load_owl_to_graph(g, owl_path)
         for extra in args.also_load:
             extra_path = os.path.abspath(extra)
             print(f"  also loading {extra_path} ...")
-            g.parse(extra_path, format="xml")
+            _load_owl_to_graph(g, extra_path)
         print(f"  {len(g)} triples loaded")
 
         print("Building enums ...")
@@ -2111,11 +2150,11 @@ def main() -> None:
     # Load ontology (and any additional component files)
     print(f"Loading {owl_path} ...")
     g = Graph()
-    g.parse(owl_path, format="xml")
+    _load_owl_to_graph(g, owl_path)
     for extra in args.also_load:
         extra_path = os.path.abspath(extra)
         print(f"  also loading {extra_path} ...")
-        g.parse(extra_path, format="xml")
+        _load_owl_to_graph(g, extra_path)
     print(f"  {len(g)} triples loaded")
 
     # Build prefix map
