@@ -1,4 +1,4 @@
-Prefix(:=<http://www.ebi.ac.uk/swo/swo-external.owl#>)
+Prefix(:=<http://purl.obolibrary.org/obo/swo/components/swo-external.owl#>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
@@ -8,7 +8,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(edamontology:=<http://edamontology.org/>)
 
 
-Ontology(<http://www.ebi.ac.uk/swo/swo-external.owl>
+Ontology(<http://purl.obolibrary.org/obo/swo/components/swo-external.owl>
 
 Declaration(Class(edamontology:data_0582))
 Declaration(Class(edamontology:data_1636))
@@ -21,12 +21,17 @@ Declaration(Class(edamontology:format_3239))
 Declaration(Class(edamontology:operation_0224))
 Declaration(Class(edamontology:operation_0362))
 Declaration(Class(edamontology:operation_2426))
-
+Declaration(Class(obo:IAO_0000027))
+Declaration(Class(obo:IAO_0000098))
+Declaration(Class(obo:OBI_0200000))
+Declaration(AnnotationProperty(obo:IAO_0000111))
+Declaration(AnnotationProperty(obo:IAO_0000115))
+Declaration(AnnotationProperty(obo:IAO_0000118))
+Declaration(AnnotationProperty(obo:IAO_0000412))
 Declaration(AnnotationProperty(rdf:type))
 Declaration(AnnotationProperty(rdfs:comment))
 Declaration(AnnotationProperty(rdfs:isDefinedBy))
 Declaration(AnnotationProperty(rdfs:label))
-
 ############################
 #   Annotation Properties
 ############################
@@ -133,5 +138,6 @@ AnnotationAssertion(obo:IAO_0000118 edamontology:operation_2426 "Mathematical mo
 AnnotationAssertion(obo:IAO_0000412 edamontology:operation_2426 edamontology:EDAM.owl)
 AnnotationAssertion(rdfs:label edamontology:operation_2426 "Modelling and simulation")
 SubClassOf(edamontology:operation_2426 obo:OBI_0200000)
+
 
 )

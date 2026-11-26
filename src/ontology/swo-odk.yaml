@@ -18,6 +18,11 @@ release_artefacts:
 components:
   products:
     - filename: swo-external.owl
+    - filename: SWO_Software.owl
+      use_template: TRUE
+      template_options: --input swo-edit.owl --ontology-iri "http://purl.obolibrary.org/obo/swo/components/SWO_Software.owl"
+      templates:
+        - editor/SWO_Software.tsv
 primary_release: full
 export_formats:
   - owl

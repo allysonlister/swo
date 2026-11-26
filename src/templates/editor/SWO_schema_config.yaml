@@ -1,0 +1,112 @@
+# Schema configuration for onto_to_linkml_schema.py
+# enums.<name>.action: accept | narrow | skip
+# enums.<name>.enum_uri: CURIE — manually pins enum_uri (overrides graph-derived value)
+# enums.<name>.include_self: true — include the root class as a permissible value
+# excluded_properties: property IRIs skipped by rarity prompt
+enums:
+  DirectlyFollowedByMenu:
+    action: narrow
+    labels:
+      http://purl.obolibrary.org/obo/SWO_0000001: software
+    root_iris:
+    - http://purl.obolibrary.org/obo/SWO_0000001
+  DirectlyPrecededByMenu:
+    action: narrow
+    labels:
+      http://purl.obolibrary.org/obo/SWO_0000001: software
+    root_iris:
+    - http://purl.obolibrary.org/obo/SWO_0000001
+  HasDeclaredStatusMenu:
+    action: accept
+  HasInterfaceMenu:
+    action: accept
+  HasLicenseMenu:
+    action: accept
+  HasPartMenu:
+    action: narrow
+    labels:
+      http://purl.obolibrary.org/obo/SWO_0000001: software
+    root_iris:
+    - http://purl.obolibrary.org/obo/SWO_0000001
+  HasSpecifiedDataInputAllAmlDataSetMenu:
+    action: accept
+  HasSpecifiedDataInputDataEntityMenu_DataEntity:
+    action: accept
+  HasSpecifiedDataInputDatasetsMenu:
+    action: accept
+  HasSpecifiedDataInputDatasetsMenu_DataEntity:
+    action: accept
+  HasSpecifiedDataInputDigitalGeneExpressionDgeDatasetsMenu:
+    action: accept
+  HasSpecifiedDataInputGeneExpressionDatasetMenu:
+    action: accept
+  HasSpecifiedDataInputImageMenu_Image:
+    action: accept
+  HasSpecifiedDataInputMenu:
+    action: accept
+  HasSpecifiedDataInputMenu_AllAmlDataSet:
+    action: accept
+  HasSpecifiedDataInputMenu_AminoAcidProteinSequenceData:
+    action: accept
+  HasSpecifiedDataInputMenu_BiologicalSequenceData:
+    action: accept
+  HasSpecifiedDataInputMenu_CsvDataSet:
+    action: accept
+  HasSpecifiedDataInputMenu_DataEntity:
+    action: accept
+  HasSpecifiedDataInputMenu_GeneExpressionDataset:
+    action: accept
+  HasSpecifiedDataInputMenu_Image:
+    action: accept
+  HasSpecifiedDataInputMenu_MicroarrayData:
+    action: accept
+  HasSpecifiedDataInputMenu_TextDataSet:
+    action: accept
+  HasSpecifiedDataInputMicroarrayDataMenu:
+    action: accept
+  HasSpecifiedDataInputTextDataSetMenu_TextDataSet:
+    action: accept
+  HasSpecifiedDataOutputDatasetsMenu:
+    action: accept
+  HasSpecifiedDataOutputDatasetsMenu_DataEntity:
+    action: accept
+  HasSpecifiedDataOutputGraphPlotMenu:
+    action: accept
+  HasSpecifiedDataOutputMenu:
+    action: accept
+  HasSpecifiedDataOutputMenu_DataEntity:
+    action: accept
+  HasSpecifiedDataOutputMenu_GeneList:
+    action: accept
+  HasSpecifiedDataOutputMenu_GraphPlot:
+    action: accept
+  HasSpecifiedDataOutputMenu_Heatmap:
+    action: accept
+  HasSpecifiedDataOutputMenu_HtmlReport:
+    action: accept
+  ImplementsMenu:
+    action: accept
+  IsEncodedInMenu:
+    action: accept
+    enum_uri: IAO:0000025
+  IsExecutedInMenu:
+    action: accept
+  IsSoftwareForMenu:
+    action: accept
+  OutputOfMenu_SoftwareDevelopment:
+    action: accept
+  OutputOfMenu_SoftwarePublishingProcess:
+    action: accept
+  OutputOfSoftwareDevelopmentMenu_SoftwareDevelopment:
+    action: accept
+  OutputOfSoftwarePublishingProcessMenu_SoftwarePublishingProcess:
+    action: accept
+  RootMenu:
+    action: accept
+  SoftwareMenu:
+    action: accept
+    include_self: true
+  UsesPlatformMenu:
+    action: accept
+  UsesSoftwareMenu:
+    action: accept
