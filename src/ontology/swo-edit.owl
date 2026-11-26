@@ -954,12 +954,10 @@ SubClassOf(<http://edamontology.org/data_0582> obo:IAO_0000027)
 
 # Class: <http://edamontology.org/data_1636> (Heat map)
 
-AnnotationAssertion(rdfs:label <http://edamontology.org/data_1636> "Heatmap")
 SubClassOf(<http://edamontology.org/data_1636> <http://edamontology.org/data_2968>)
 
 # Class: <http://edamontology.org/data_2603> (Gene expression data)
 
-AnnotationAssertion(rdfs:label <http://edamontology.org/data_2603> "Microarray data")
 SubClassOf(<http://edamontology.org/data_2603> obo:IAO_0000027)
 
 # Class: <http://edamontology.org/data_2968> (Image)
@@ -990,7 +988,6 @@ SubClassOf(<http://edamontology.org/format_1929> <http://edamontology.org/format
 
 # Class: <http://edamontology.org/format_1936> (GenBank format)
 
-AnnotationAssertion(rdfs:label <http://edamontology.org/format_1936> "GenBank Format"@en)
 SubClassOf(<http://edamontology.org/format_1936> obo:IAO_0000098)
 
 # Class: <http://edamontology.org/format_2305> (GFF)
@@ -3373,7 +3370,7 @@ SubClassOf(obo:SWO_0000574 ObjectSomeValuesFrom(obo:SWO_0040005 ObjectIntersecti
 
 AnnotationAssertion(rdfs:label obo:SWO_0000575 "HTML report")
 SubClassOf(obo:SWO_0000575 obo:IAO_0000027)
-SubClassOf(obo:SWO_0000575 ObjectSomeValuesFrom(obo:SWO_0000741 <http://edamontology.org/format_2331>))
+SubClassOf(obo:SWO_0000575 ObjectSomeValuesFrom(obo:SWO_0004002 <http://edamontology.org/format_2331>))
 
 # Class: obo:SWO_0000576 (Hypergeometric enrichment)
 
@@ -8380,5 +8377,5 @@ AnnotationAssertion(dc:contributor obo:SWO_1100145 "Mark Reuter")
 AnnotationAssertion(rdfs:label obo:SWO_2000037 "Segway version 1.2"@en)
 AnnotationAssertion(dc:contributor obo:SWO_9000081 "Andy Brown")
 AnnotationAssertion(dc:contributor obo:SWO_9000093 "Andy Brown")
-AnnotationAssertion(owl:hasValue _:genid2147488553 "https://opensource.org/licenses/MIT")
+AnnotationAssertion(owl:hasValue _:genid2147484421 "https://opensource.org/licenses/MIT")
 )
