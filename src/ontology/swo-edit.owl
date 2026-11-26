@@ -1328,6 +1328,10 @@ SubClassOf(obo:SWO_0000014 ObjectSomeValuesFrom(obo:SWO_0000087 ObjectIntersecti
 
 EquivalentClasses(obo:SWO_0000021 ObjectSomeValuesFrom(obo:SWO_0040005 obo:SWO_4000010))
 
+# Class: obo:SWO_0000022 (Linux)
+
+SubClassOf(obo:SWO_0000022 obo:SWO_0000021)
+
 # Class: obo:SWO_0000024 (Adobe Illustrator 10)
 
 SubClassOf(obo:SWO_0000024 ObjectSomeValuesFrom(obo:RO_0002353 ObjectIntersectionOf(obo:SWO_9000056 ObjectHasValue(obo:RO_0000057 obo:SWO_0000760))))
@@ -1834,6 +1838,7 @@ SubClassOf(obo:SWO_0000148 obo:IAO_0000064)
 
 # Class: obo:SWO_0000149 (Mac OS)
 
+SubClassOf(obo:SWO_0000149 obo:SWO_0000021)
 SubClassOf(obo:SWO_0000149 ObjectSomeValuesFrom(obo:RO_0002353 ObjectIntersectionOf(obo:SWO_9000056 ObjectHasValue(obo:RO_0000057 obo:SWO_0000766))))
 
 # Class: obo:SWO_0000152 (iBioSim)
@@ -7344,6 +7349,7 @@ SubClassOf(obo:SWO_9000070 ObjectSomeValuesFrom(obo:SWO_0000087 ObjectIntersecti
 
 # Class: obo:SWO_9000072 (Microsoft Windows)
 
+SubClassOf(obo:SWO_9000072 obo:SWO_0000021)
 SubClassOf(obo:SWO_9000072 ObjectSomeValuesFrom(obo:RO_0002353 ObjectIntersectionOf(obo:SWO_9000056 ObjectHasValue(obo:RO_0000057 obo:SWO_9000001))))
 
 # Class: obo:SWO_9000076 (software suite)
@@ -8386,5 +8392,5 @@ AnnotationAssertion(dc:contributor obo:SWO_1100145 "Mark Reuter")
 AnnotationAssertion(rdfs:label obo:SWO_2000037 "Segway version 1.2"@en)
 AnnotationAssertion(dc:contributor obo:SWO_9000081 "Andy Brown")
 AnnotationAssertion(dc:contributor obo:SWO_9000093 "Andy Brown")
-AnnotationAssertion(owl:hasValue _:genid2147484421 "https://opensource.org/licenses/MIT")
+AnnotationAssertion(owl:hasValue _:genid2147484256 "https://opensource.org/licenses/MIT")
 )
