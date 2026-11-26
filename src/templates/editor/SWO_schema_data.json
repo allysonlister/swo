@@ -1,6 +1,6 @@
 {
   "schema": "http://purl.obolibrary.org/obo/swo.owl",
-  "version": "1.0.0",
+  "version": "1.9.0",
   "in_language": "en",
   "container": {
     "Softwares": [
@@ -35,9 +35,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "data format specification",
           "image format"
@@ -50,6 +47,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ],
         "is_executed_in": [
           "gene expression analysis"
@@ -80,13 +80,13 @@
         "is_executed_in": [
           "file rendering"
         ],
-        "has_interface": [
-          "graphical user interface"
-        ],
         "has_license": [
           "Proprietary commercial software license"
         ],
         "has_website_homepage": "http://get.adobe.com/reader/",
+        "has_interface": [
+          "graphical user interface"
+        ],
         "has_declared_status": [
           "Maintained"
         ]
@@ -98,6 +98,16 @@
         "definition": "Adobe Illustrator is a graphics editor for creating and editing vector graphics.",
         "term_creator": [
           "James Malone"
+        ],
+        "has_specified_data_output": [
+          "DWG",
+          "DXF",
+          "BMP",
+          "pdf",
+          "JPEG",
+          "GIF",
+          "SVG",
+          "AI"
         ],
         "has_specified_data_input": [
           "DWG",
@@ -112,21 +122,11 @@
           "AI",
           "Microsoft Word doc"
         ],
-        "has_specified_data_output": [
-          "DWG",
-          "DXF",
-          "BMP",
-          "pdf",
-          "JPEG",
-          "GIF",
-          "SVG",
-          "AI"
+        "is_developed_by": [
+          "Adobe Systems"
         ],
         "has_interface": [
           "graphical user interface"
-        ],
-        "is_developed_by": [
-          "Adobe Systems"
         ]
       },
       {
@@ -205,14 +205,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "MAGE-TAB"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ],
         "is_executed_in": [
           "parse"
@@ -267,10 +267,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "Textual format",
-          "CEL binary format"
-        ],
         "has_specified_data_output": [
           "HTML",
           "data format specification"
@@ -280,6 +276,10 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "Textual format",
+          "CEL binary format"
         ],
         "is_executed_in": [
           "correction",
@@ -332,9 +332,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "CEL binary format"
-        ],
         "has_specified_data_output": [
           "CHP binary format"
         ],
@@ -342,6 +339,9 @@
           "PLIER (Probe Logarithmic Error Intensity Estimate) method",
           "RMA",
           "MAS5"
+        ],
+        "has_specified_data_input": [
+          "CEL binary format"
         ],
         "is_developed_by": [
           "Affymetrix"
@@ -425,11 +425,11 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ]
       },
       {
@@ -501,10 +501,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "Textual format",
-          "image format"
-        ],
         "has_specified_data_output": [
           "HTML",
           "data format specification",
@@ -516,6 +512,10 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "Textual format",
+          "image format"
         ],
         "is_executed_in": [
           "correction",
@@ -621,15 +621,15 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "implements": [
           "Algorithms for Calculating Microarray Enrichment",
           "Chi-square"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ]
       },
       {
@@ -692,25 +692,25 @@
         "contributor": [
           "Andy Brown"
         ],
-        "has_specified_data_input": [
+        "has_specified_data_output": [
           "MAGE-TAB"
         ],
-        "has_specified_data_output": [
+        "has_specified_data_input": [
           "MAGE-TAB"
         ],
         "is_executed_in": [
           "annotation editing"
         ],
-        "has_interface": [
-          "graphical user interface"
-        ],
         "has_license": [
           "MIT License"
         ],
+        "has_website_homepage": "http://code.google.com/p/annotare/",
         "is_developed_by": [
           "Stanford University"
         ],
-        "has_website_homepage": "http://code.google.com/p/annotare/",
+        "has_interface": [
+          "graphical user interface"
+        ],
         "has_declared_status": [
           "Latest release"
         ]
@@ -741,9 +741,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "Textual format"
-        ],
         "has_specified_data_output": [
           "image format"
         ],
@@ -753,6 +750,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "Textual format"
         ]
       },
       {
@@ -766,15 +766,15 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "Textual format"
-        ],
         "has_specified_data_output": [
           "data format specification",
           "sqlite"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "Textual format"
         ]
       },
       {
@@ -857,9 +857,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "Textual format"
-        ],
         "has_specified_data_output": [
           "sproc",
           "image format"
@@ -871,6 +868,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "Textual format"
         ]
       },
       {
@@ -884,14 +884,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "MAGE-TAB"
-        ],
         "has_specified_data_output": [
           "R data frame"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "MAGE-TAB"
         ],
         "is_developed_by": [
           "European Bioinformatics Institute"
@@ -980,9 +980,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "has_specified_data_output": [
           "HTML"
         ],
@@ -991,6 +988,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ],
         "is_executed_in": [
           "differential expression analysis"
@@ -1064,14 +1064,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "implements": [
           "Bayesian Model"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ]
       },
       {
@@ -1112,9 +1112,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "FASTA format"
-        ],
         "has_specified_data_output": [
           "R data frame"
         ],
@@ -1123,6 +1120,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "FASTA format"
         ]
       },
       {
@@ -1382,16 +1382,16 @@
         "is_executed_in": [
           "biological data processing"
         ],
-        "has_interface": [
-          "application programming interface"
-        ],
         "has_license": [
           "GNU LGPL"
         ],
+        "has_website_homepage": "http://biojava.org",
         "is_developed_by": [
           "The Community"
         ],
-        "has_website_homepage": "http://biojava.org",
+        "has_interface": [
+          "application programming interface"
+        ],
         "has_declared_status": [
           "Live"
         ]
@@ -1436,13 +1436,13 @@
         "is_executed_in": [
           "biological data processing"
         ],
-        "has_interface": [
-          "application programming interface"
-        ],
         "has_license": [
           "Artistic License 1.0"
         ],
         "has_website_homepage": "http://www.bioperl.org",
+        "has_interface": [
+          "application programming interface"
+        ],
         "has_declared_status": [
           "Live"
         ]
@@ -1501,12 +1501,12 @@
         "term_creator": [
           "Allyson Lister"
         ],
-        "has_version": [
-          "BLAST+ version 2.2.26"
-        ],
         "has_interface": [
           "web user interface",
           "command-line interface"
+        ],
+        "has_version": [
+          "BLAST+ version 2.2.26"
         ],
         "has_download_location": "ftp://ftp.ncbi.nih.gov/blast/executables/"
       },
@@ -1579,14 +1579,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "FASTA format"
-        ],
         "has_specified_data_output": [
           "dcf"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "FASTA format"
         ]
       },
       {
@@ -1600,16 +1600,16 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "Textual format",
-          "pdf"
-        ],
         "has_specified_data_output": [
           "Textual format",
           "image format"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "Textual format",
+          "pdf"
         ]
       },
       {
@@ -1623,14 +1623,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "CEL binary format"
-        ],
         "has_specified_data_output": [
           "CEL binary format"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "CEL binary format"
         ]
       },
       {
@@ -1656,14 +1656,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "Textual format"
-        ],
         "has_specified_data_output": [
           "image format"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "Textual format"
         ],
         "is_executed_in": [
           "data normalization",
@@ -1678,14 +1678,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "Textual format"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ],
         "is_executed_in": [
           "data annotation"
@@ -1777,14 +1777,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "has_specified_data_output": [
           "R data frame"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ],
         "is_executed_in": [
           "averaging",
@@ -1802,9 +1802,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "has_specified_data_output": [
           "R data frame"
         ],
@@ -1813,6 +1810,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ],
         "is_executed_in": [
           "averaging",
@@ -1852,9 +1852,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "has_specified_data_output": [
           "R data frame"
         ],
@@ -1863,6 +1860,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ]
       },
       {
@@ -1876,9 +1876,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "SDF format"
-        ],
         "has_specified_data_output": [
           "HTML",
           "image format"
@@ -1888,6 +1885,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "SDF format"
         ],
         "is_executed_in": [
           "distance calculation"
@@ -2040,11 +2040,11 @@
         "term_creator": [
           "Allyson Lister"
         ],
-        "has_interface": [
-          "web user interface"
-        ],
         "uses_software": [
           "Clustal Omega 1.1"
+        ],
+        "has_interface": [
+          "web user interface"
         ]
       },
       {
@@ -2054,11 +2054,11 @@
         "term_creator": [
           "Allyson Lister"
         ],
-        "has_interface": [
-          "web user interface"
-        ],
         "uses_software": [
           "ClustalW 2.1"
+        ],
+        "has_interface": [
+          "web user interface"
         ]
       },
       {
@@ -2094,9 +2094,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "R data frame"
         ],
@@ -2105,6 +2102,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ],
         "is_executed_in": [
           "descriptive statistical calculation"
@@ -2121,14 +2121,14 @@
         "term_creator": [
           "Allyson Lister"
         ],
-        "has_specified_data_input": [
-          "SBML"
-        ],
         "has_specified_data_output": [
           "SBML"
         ],
         "implements": [
           "ODE Algorithm"
+        ],
+        "has_specified_data_input": [
+          "SBML"
         ],
         "has_license": [
           "GNU GPL v2"
@@ -2180,9 +2180,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "Textual format"
         ],
@@ -2193,6 +2190,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ],
         "is_executed_in": [
           "descriptive statistical calculation"
@@ -2286,16 +2286,16 @@
         "definition_source": [
           "http://sbml.org/SBML_Software_Guide/SBML_Software_Summary, accessed 24 March 2015."
         ],
-        "has_specified_data_input": [
-          "SBML",
-          "CopasiML"
-        ],
         "has_specified_data_output": [
           "SBML"
         ],
         "implements": [
           "ODE Algorithm",
           "Gillespie’s Stochastic Simulation Algorithm"
+        ],
+        "has_specified_data_input": [
+          "SBML",
+          "CopasiML"
         ],
         "is_executed_in": [
           "simulation and analysis of biochemical networks"
@@ -2321,14 +2321,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "has_specified_data_output": [
           "R data frame"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ],
         "is_executed_in": [
           "descriptive statistical calculation",
@@ -2512,11 +2512,11 @@
         "implements": [
           "Gene-Set Enrichment Analysis"
         ],
+        "has_website_homepage": "http://david.abcc.ncifcrf.gov/",
         "has_interface": [
           "web user interface",
           "web service"
-        ],
-        "has_website_homepage": "http://david.abcc.ncifcrf.gov/"
+        ]
       },
       {
         "ontology_id": "SWO:0000513",
@@ -2541,9 +2541,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "R data frame"
         ],
@@ -2555,6 +2552,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ],
         "is_executed_in": [
           "descriptive statistical calculation",
@@ -2572,9 +2572,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "Textual format"
-        ],
         "has_specified_data_output": [
           "R data frame"
         ],
@@ -2583,6 +2580,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "Textual format"
         ],
         "is_executed_in": [
           "differential expression analysis"
@@ -2617,14 +2617,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "has_specified_data_output": [
           "R data frame"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ]
       },
       {
@@ -2641,14 +2641,14 @@
         "is_executed_in": [
           "Modelling and simulation"
         ],
-        "has_interface": [
-          "graphical user interface",
-          "command-line interface"
-        ],
+        "has_website_homepage": "http://ecobas.org/www-server/rem/mdb/dndc.html",
         "is_developed_by": [
           "University of New Hampshire"
         ],
-        "has_website_homepage": "http://ecobas.org/www-server/rem/mdb/dndc.html"
+        "has_interface": [
+          "graphical user interface",
+          "command-line interface"
+        ]
       },
       {
         "ontology_id": "SWO:0000521",
@@ -2676,30 +2676,30 @@
         "label": "DROID",
         "parent": "software",
         "comment": "Digital Record Object Identification",
-        "has_interface": [
-          "graphical user interface",
-          "command-line interface"
-        ],
         "has_license": [
           "FreeBSD"
         ],
-        "has_website_homepage": "http://sourceforge.net/projects/droid/"
+        "has_website_homepage": "http://sourceforge.net/projects/droid/",
+        "has_interface": [
+          "graphical user interface",
+          "command-line interface"
+        ]
       },
       {
         "ontology_id": "SWO:9000090",
         "label": "Dropbox",
         "parent": "software",
-        "has_interface": [
-          "command-line interface",
-          "application programming interface"
-        ],
         "has_license": [
           "Proprietary commercial software license"
         ],
+        "has_website_homepage": "www.dropbox.com",
         "is_developed_by": [
           "Dropbox, Inc."
         ],
-        "has_website_homepage": "www.dropbox.com"
+        "has_interface": [
+          "command-line interface",
+          "application programming interface"
+        ]
       },
       {
         "ontology_id": "SWO:0000522",
@@ -2758,11 +2758,11 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "Rnw"
-        ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "Rnw"
         ]
       },
       {
@@ -2776,9 +2776,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "has_specified_data_output": [
           "data format specification",
           "R data frame"
@@ -2791,6 +2788,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ],
         "is_executed_in": [
           "differential expression analysis"
@@ -2807,15 +2807,15 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "Textual format",
-          "CEL binary format"
-        ],
         "has_specified_data_output": [
           "image format"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "Textual format",
+          "CEL binary format"
         ]
       },
       {
@@ -2832,16 +2832,16 @@
         "is_executed_in": [
           "APOLLO_SV:00000008"
         ],
-        "has_interface": [
-          "graphical user interface"
-        ],
         "has_license": [
           "EPL v1"
         ],
+        "has_website_homepage": "http://www.eclipse.org",
         "is_developed_by": [
           "Eclipse Foundation"
         ],
-        "has_website_homepage": "http://www.eclipse.org"
+        "has_interface": [
+          "graphical user interface"
+        ]
       },
       {
         "ontology_id": "SWO:0000525",
@@ -2910,12 +2910,12 @@
           "biological data processing",
           "molecular sequence analysis"
         ],
-        "has_interface": [
-          "command-line interface"
-        ],
         "has_license": [
           "GNU GPL",
           "GNU LGPL"
+        ],
+        "has_interface": [
+          "command-line interface"
         ]
       },
       {
@@ -2929,13 +2929,13 @@
         "is_executed_in": [
           "citation management"
         ],
-        "has_interface": [
-          "graphical user interface"
-        ],
         "has_license": [
           "Proprietary commercial software license"
         ],
         "has_website_homepage": "http://www.endnote.com/",
+        "has_interface": [
+          "graphical user interface"
+        ],
         "has_declared_status": [
           "Live"
         ]
@@ -3634,13 +3634,13 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
+        "is_encoded_in": [
+          "R language"
+        ],
         "has_specified_data_input": [
           "FASTA format",
           "data format specification",
           "R data frame"
-        ],
-        "is_encoded_in": [
-          "R language"
         ]
       },
       {
@@ -3676,14 +3676,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "CEL binary format"
-        ],
         "has_specified_data_output": [
           "image format"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "CEL binary format"
         ]
       },
       {
@@ -3697,14 +3697,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "has_specified_data_output": [
           "PostScript"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ]
       },
       {
@@ -3718,9 +3718,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "R data frame",
           "image format"
@@ -3730,6 +3727,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ],
         "is_executed_in": [
           "differential expression analysis"
@@ -3771,14 +3771,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "data format specification"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ],
         "is_developed_by": [
           "Strand Life Sciences"
@@ -3818,14 +3818,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "Textual format"
-        ],
         "has_specified_data_output": [
           "Textual format"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "Textual format"
         ]
       },
       {
@@ -3839,14 +3839,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "has_specified_data_output": [
           "Textual format"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ]
       },
       {
@@ -3899,14 +3899,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "image format"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ]
       },
       {
@@ -3974,16 +3974,16 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "Textual format",
-          "R data frame"
-        ],
         "has_specified_data_output": [
           "R data frame",
           "rda"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "Textual format",
+          "R data frame"
         ]
       },
       {
@@ -3997,16 +3997,16 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "Textual format",
-          "R data frame"
-        ],
         "has_specified_data_output": [
           "R data frame",
           "rda"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "Textual format",
+          "R data frame"
         ]
       },
       {
@@ -4020,9 +4020,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "has_specified_data_output": [
           "image format"
         ],
@@ -4031,6 +4028,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ]
       },
       {
@@ -4056,9 +4056,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "image format"
         ],
@@ -4067,6 +4064,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ],
         "is_executed_in": [
           "descriptive statistical calculation",
@@ -4136,9 +4136,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "R data frame"
         ],
@@ -4147,6 +4144,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ],
         "is_executed_in": [
           "descriptive statistical calculation"
@@ -4163,9 +4163,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "HTML",
           "data format specification",
@@ -4177,6 +4174,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ],
         "is_executed_in": [
           "differential expression analysis"
@@ -4251,9 +4251,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "has_specified_data_output": [
           "R data frame"
         ],
@@ -4262,6 +4259,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ]
       },
       {
@@ -4275,9 +4275,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "image format"
         ],
@@ -4286,6 +4283,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ]
       },
       {
@@ -4328,15 +4328,15 @@
         "has_specified_data_output": [
           "XML"
         ],
+        "has_license": [
+          "Modified BSD"
+        ],
+        "has_website_homepage": "http://sf.net/projects/grimoires",
         "has_interface": [
           "web service",
           "command-line interface",
           "application programming interface"
         ],
-        "has_license": [
-          "Modified BSD"
-        ],
-        "has_website_homepage": "http://sf.net/projects/grimoires",
         "has_declared_status": [
           "Latest release"
         ]
@@ -4352,15 +4352,15 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "XML"
-        ],
         "has_specified_data_output": [
           "data format specification",
           "R data frame"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "XML"
         ]
       },
       {
@@ -4401,9 +4401,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "CEL binary format"
-        ],
         "has_specified_data_output": [
           "PostScript"
         ],
@@ -4413,6 +4410,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "CEL binary format"
         ]
       },
       {
@@ -4426,14 +4426,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "has_specified_data_output": [
           "image format"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ],
         "is_executed_in": [
           "data visualization"
@@ -4450,10 +4450,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "design file",
-          "pair file"
-        ],
         "has_specified_data_output": [
           "data format specification",
           "image format"
@@ -4464,6 +4460,10 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "design file",
+          "pair file"
         ],
         "is_executed_in": [
           "data visualization",
@@ -4482,9 +4482,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "has_specified_data_output": [
           "R data frame"
         ],
@@ -4496,6 +4493,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ]
       },
       {
@@ -4531,15 +4531,15 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "GFF",
-          "BED format"
-        ],
         "has_specified_data_output": [
           "image format"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "GFF",
+          "BED format"
         ],
         "is_executed_in": [
           "data visualization",
@@ -4557,15 +4557,15 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "GFF",
-          "BED format"
-        ],
         "has_specified_data_output": [
           "image format"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "GFF",
+          "BED format"
         ],
         "is_executed_in": [
           "data visualization"
@@ -4647,9 +4647,6 @@
         "term_creator": [
           "Allyson Lister"
         ],
-        "has_specified_data_input": [
-          "SBML"
-        ],
         "has_specified_data_output": [
           "SBML"
         ],
@@ -4657,6 +4654,9 @@
           "Markov Chain Monte Carlo",
           "ODE Algorithm",
           "Monte Carlo"
+        ],
+        "has_specified_data_input": [
+          "SBML"
         ],
         "is_executed_in": [
           "simulation and analysis of biochemical networks"
@@ -4681,14 +4681,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "has_specified_data_output": [
           "image format"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ]
       },
       {
@@ -4827,22 +4827,22 @@
         ],
         "parent": "software",
         "definition": "IntelliJ IDEA is a commercial Java IDE for developing software.",
-        "has_specified_data_input": [
+        "has_specified_data_output": [
           ".java file"
         ],
-        "has_specified_data_output": [
+        "has_specified_data_input": [
           ".java file"
         ],
         "is_executed_in": [
           "APOLLO_SV:00000008"
         ],
-        "has_interface": [
-          "graphical user interface"
-        ],
+        "has_website_homepage": "http://www.jetbrains.com/idea/",
         "is_developed_by": [
           "JetBrains"
         ],
-        "has_website_homepage": "http://www.jetbrains.com/idea/"
+        "has_interface": [
+          "graphical user interface"
+        ]
       },
       {
         "ontology_id": "SWO:0000230",
@@ -4855,14 +4855,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "has_specified_data_output": [
           "R data frame"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ],
         "is_executed_in": [
           "data normalization",
@@ -4880,9 +4880,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "CEL binary format"
-        ],
         "has_specified_data_output": [
           "image format"
         ],
@@ -4893,6 +4890,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "CEL binary format"
         ],
         "is_executed_in": [
           "data normalization"
@@ -4947,19 +4947,19 @@
         "ontology_id": "SWO:0000009",
         "label": "Kakadu",
         "parent": "software",
-        "has_specified_data_input": [
-          "image format"
-        ],
         "has_specified_data_output": [
           "JPEG 2000"
+        ],
+        "has_specified_data_input": [
+          "image format"
         ],
         "is_executed_in": [
           "image compression"
         ],
+        "has_website_homepage": "http://www.kakadusoftware.com",
         "has_interface": [
           "graphical user interface"
-        ],
-        "has_website_homepage": "http://www.kakadusoftware.com"
+        ]
       },
       {
         "ontology_id": "SWO:0000246",
@@ -4972,10 +4972,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame",
-          "image format"
-        ],
         "has_specified_data_output": [
           "Textual format"
         ],
@@ -4984,6 +4980,10 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame",
+          "image format"
         ],
         "is_executed_in": [
           "background correction",
@@ -5001,9 +5001,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "KGML"
-        ],
         "has_specified_data_output": [
           "image format"
         ],
@@ -5012,6 +5009,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "KGML"
         ]
       },
       {
@@ -5040,14 +5040,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "Textual format"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ]
       },
       {
@@ -5083,9 +5083,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "R data frame",
           "image format"
@@ -5095,6 +5092,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ],
         "is_executed_in": [
           "differential expression analysis"
@@ -5111,9 +5111,6 @@
         "term_creator": [
           "Allyson Lister"
         ],
-        "has_specified_data_input": [
-          "SBML"
-        ],
         "has_specified_data_output": [
           "SBML"
         ],
@@ -5128,8 +5125,8 @@
           "GNU Octave",
           "R language"
         ],
-        "has_interface": [
-          "application programming interface"
+        "has_specified_data_input": [
+          "SBML"
         ],
         "has_license": [
           "GNU LGPL"
@@ -5141,6 +5138,9 @@
           "Linux",
           "OS X",
           "Microsoft Windows"
+        ],
+        "has_interface": [
+          "application programming interface"
         ]
       },
       {
@@ -5182,7 +5182,7 @@
       {
         "ontology_id": "SWO:0000022",
         "label": "Linux",
-        "parent": "software",
+        "parent": "operating system",
         "is_executed_in": [
           "manage computer operations"
         ],
@@ -5201,9 +5201,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "R data frame"
         ],
@@ -5212,6 +5209,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ],
         "is_executed_in": [
           "data normalization"
@@ -5268,9 +5268,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "R data frame"
         ],
@@ -5280,6 +5277,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ],
         "is_executed_in": [
           "data normalization",
@@ -5298,9 +5298,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "has_specified_data_output": [
           "R data frame",
           "image format"
@@ -5311,6 +5308,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ],
         "is_executed_in": [
           "data normalization",
@@ -5376,7 +5376,7 @@
       {
         "ontology_id": "SWO:0000149",
         "label": "Mac OS",
-        "parent": "software",
+        "parent": "operating system",
         "definition": "Mac OS is software which is used as the operating system for the Macintosh personal computer created by Apple Inc.",
         "definition_source": [
           "http://en.wikipedia.org/wiki/History_of_Mac_OS, accessed 25 March 2015."
@@ -5580,9 +5580,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "data format specification"
         ],
@@ -5591,6 +5588,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ],
         "is_executed_in": [
           "differential expression analysis"
@@ -5650,9 +5650,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "has_specified_data_output": [
           "image format"
         ],
@@ -5661,6 +5658,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ]
       },
       {
@@ -5689,10 +5689,10 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
+        "has_specified_data_output": [
           "Matlab .m file"
         ],
-        "has_specified_data_output": [
+        "has_specified_data_input": [
           "Matlab .m file"
         ],
         "is_executed_in": [
@@ -5701,10 +5701,10 @@
         "has_license": [
           "Proprietary commercial software license"
         ],
+        "has_website_homepage": "http://www.mathworks.com/products/matlab/",
         "is_developed_by": [
           "MathWorks"
-        ],
-        "has_website_homepage": "http://www.mathworks.com/products/matlab/"
+        ]
       },
       {
         "ontology_id": "SWO:0000017",
@@ -5754,14 +5754,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "R data frame"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ]
       },
       {
@@ -5794,9 +5794,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "has_specified_data_output": [
           "R data frame"
         ],
@@ -5805,6 +5802,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ],
         "is_executed_in": [
           "descriptive statistical calculation"
@@ -5821,14 +5821,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "has_specified_data_output": [
           "GFF"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ]
       },
       {
@@ -5842,9 +5842,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "Textual format",
           "image format"
@@ -5855,6 +5852,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ]
       },
       {
@@ -5904,9 +5904,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "Textual format",
           "image format"
@@ -5916,6 +5913,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ]
       },
       {
@@ -6005,23 +6005,23 @@
         "ontology_id": "SWO:9000070",
         "label": "Microsoft Excel",
         "parent": "software",
-        "has_specified_data_input": [
+        "has_specified_data_output": [
           "XLS spreadsheet"
         ],
-        "has_specified_data_output": [
+        "has_specified_data_input": [
           "XLS spreadsheet"
         ],
         "is_executed_in": [
           "spreadsheet editing"
-        ],
-        "has_interface": [
-          "graphical user interface"
         ],
         "has_license": [
           "Proprietary commercial software license"
         ],
         "is_developed_by": [
           "Microsoft"
+        ],
+        "has_interface": [
+          "graphical user interface"
         ]
       },
       {
@@ -6046,10 +6046,10 @@
         "label": "Microsoft Excel 2007",
         "parent": "Microsoft Excel",
         "definition": "Microsoft Excel 2007 is a spreadsheet editing and viewing tool.",
+        "has_website_homepage": "http://office.microsoft.com/",
         "has_version": [
           "Microsoft 2007 version"
         ],
-        "has_website_homepage": "http://office.microsoft.com/",
         "has_release_date": "2007-01-30T0:00:00",
         "directly_followed_by": [
           "Microsoft Excel for Windows 2010"
@@ -6059,12 +6059,12 @@
         "ontology_id": "SWO:9000071",
         "label": "Microsoft Excel for Windows 2010",
         "parent": "Microsoft Excel",
-        "has_version": [
-          "Excel 14"
-        ],
         "has_declared_status": [
           "Live",
           "Latest release"
+        ],
+        "has_version": [
+          "Excel 14"
         ],
         "has_release_date": "2010-06-15T0:00:00"
       },
@@ -6080,16 +6080,16 @@
       {
         "ontology_id": "SWO:9000072",
         "label": "Microsoft Windows",
-        "parent": "software",
+        "parent": "operating system",
         "comment": "The Windows Operating System",
         "is_executed_in": [
           "manage computer operations"
         ],
-        "has_interface": [
-          "graphical user interface"
-        ],
         "is_developed_by": [
           "Microsoft"
+        ],
+        "has_interface": [
+          "graphical user interface"
         ]
       },
       {
@@ -6108,11 +6108,11 @@
         "ontology_id": "SWO:9000074",
         "label": "Windows XP",
         "parent": "Microsoft Windows",
-        "has_version": [
-          "Windows 5.1"
-        ],
         "has_declared_status": [
           "Superseded"
+        ],
+        "has_version": [
+          "Windows 5.1"
         ],
         "has_release_date": "2001-10-25T0:00:00"
       },
@@ -6120,20 +6120,20 @@
         "ontology_id": "SWO:0000025",
         "label": "Microsoft Word",
         "parent": "software",
-        "has_specified_data_input": [
+        "has_specified_data_output": [
           "Microsoft Word doc"
         ],
-        "has_specified_data_output": [
+        "has_specified_data_input": [
           "Microsoft Word doc"
         ],
         "is_executed_in": [
           "word processing"
         ],
-        "has_interface": [
-          "graphical user interface"
-        ],
         "is_developed_by": [
           "Microsoft"
+        ],
+        "has_interface": [
+          "graphical user interface"
         ]
       },
       {
@@ -6175,9 +6175,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "R data frame"
         ],
@@ -6186,6 +6183,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ],
         "is_executed_in": [
           "data normalization"
@@ -6223,9 +6223,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "data format specification"
         ],
@@ -6234,6 +6231,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ]
       },
       {
@@ -6304,11 +6304,11 @@
         "term_creator": [
           "Allyson Lister"
         ],
-        "has_version": [
-          "MUSCLE version 3.8.31"
-        ],
         "has_interface": [
           "command-line interface"
+        ],
+        "has_version": [
+          "MUSCLE version 3.8.31"
         ],
         "has_documentation": "http://www.drive5.com/muscle/muscle_userguide3.8.html",
         "has_download_location": "http://www.drive5.com/muscle/downloads.htm"
@@ -6320,11 +6320,11 @@
         "term_creator": [
           "Allyson Lister"
         ],
-        "has_interface": [
-          "web user interface"
-        ],
         "uses_software": [
           "MUSCLE 3.8.31"
+        ],
+        "has_interface": [
+          "web user interface"
         ]
       },
       {
@@ -6338,14 +6338,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "has_specified_data_output": [
           "R data frame"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ],
         "is_executed_in": [
           "data visualization"
@@ -6405,11 +6405,11 @@
         "is_encoded_in": [
           "NMTRAN"
         ],
-        "has_interface": [
-          "command-line interface"
-        ],
         "has_license": [
           "Proprietary commercial software license"
+        ],
+        "has_interface": [
+          "command-line interface"
         ]
       },
       {
@@ -6441,19 +6441,19 @@
         ],
         "parent": "software",
         "definition": "OBO-Edit is an open source ontology editor optimized for the OBO biological ontology file format. It features an easy to use editing interface, a simple but fast reasoner, and powerful search capabilities.",
-        "has_specified_data_input": [
+        "has_specified_data_output": [
           "OBO Flat File Format"
         ],
-        "has_specified_data_output": [
+        "has_specified_data_input": [
           "OBO Flat File Format"
         ],
         "is_executed_in": [
           "ontology engineering"
         ],
+        "has_website_homepage": "http://oboedit.org/",
         "has_interface": [
           "graphical user interface"
-        ],
-        "has_website_homepage": "http://oboedit.org/"
+        ]
       },
       {
         "ontology_id": "SWO:0000637",
@@ -6484,9 +6484,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "R data frame",
           "image format"
@@ -6496,6 +6493,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ]
       },
       {
@@ -6543,9 +6543,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "image format"
         ],
@@ -6554,6 +6551,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ],
         "is_executed_in": [
           "correction",
@@ -6571,9 +6571,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "image format"
         ],
@@ -6582,6 +6579,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ],
         "is_executed_in": [
           "data visualization",
@@ -6603,10 +6603,10 @@
         "has_license": [
           "Proprietary commercial software license"
         ],
+        "has_website_homepage": "http://www.omnigroup.com/products/omnioutliner/",
         "is_developed_by": [
           "Omni"
-        ],
-        "has_website_homepage": "http://www.omnigroup.com/products/omnioutliner/"
+        ]
       },
       {
         "ontology_id": "SWO:0000641",
@@ -6689,9 +6689,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "data format specification"
         ],
@@ -6700,6 +6697,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ],
         "is_executed_in": [
           "differential expression analysis"
@@ -6716,9 +6716,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "R data frame"
         ],
@@ -6727,6 +6724,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ],
         "is_executed_in": [
           "data normalization"
@@ -6764,14 +6764,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "Textual format"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ]
       },
       {
@@ -6899,9 +6899,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "has_specified_data_output": [
           "R data frame",
           "image format"
@@ -6912,6 +6909,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ],
         "is_executed_in": [
           "descriptive statistical calculation",
@@ -6990,14 +6990,14 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "data format specification"
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ]
       },
       {
@@ -7108,9 +7108,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "R data frame"
         ],
@@ -7119,6 +7116,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ],
         "is_executed_in": [
           "descriptive statistical calculation",
@@ -7188,11 +7188,11 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "FCS3.0"
-        ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "FCS3.0"
         ]
       },
       {
@@ -7224,9 +7224,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "data format specification"
-        ],
         "has_specified_data_output": [
           "image format"
         ],
@@ -7235,6 +7232,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "data format specification"
         ],
         "is_executed_in": [
           "background correction",
@@ -7245,12 +7245,12 @@
         "ontology_id": "SWO:0000006",
         "label": "Protege 4",
         "parent": "software",
-        "has_specified_data_input": [
+        "has_specified_data_output": [
           "RDF-XML",
           "OWL-XML",
           "OWL2-XML"
         ],
-        "has_specified_data_output": [
+        "has_specified_data_input": [
           "RDF-XML",
           "OWL-XML",
           "OWL2-XML"
@@ -7258,16 +7258,16 @@
         "is_executed_in": [
           "ontology engineering"
         ],
-        "has_interface": [
-          "graphical user interface"
-        ],
         "has_license": [
           "MPL v1.1"
         ],
+        "has_website_homepage": "http://protege.stanford.edu/",
         "is_developed_by": [
           "Stanford University"
         ],
-        "has_website_homepage": "http://protege.stanford.edu/"
+        "has_interface": [
+          "graphical user interface"
+        ]
       },
       {
         "ontology_id": "SWO:1100134",
@@ -7306,11 +7306,11 @@
           "FASTA format",
           "EDAM:format_1936"
         ],
-        "has_interface": [
-          "graphical user interface"
-        ],
         "has_license": [
           "free to use license"
+        ],
+        "has_interface": [
+          "graphical user interface"
         ]
       },
       {
@@ -7551,10 +7551,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "XML",
-          "gxl format"
-        ],
         "has_specified_data_output": [
           "image format"
         ],
@@ -7563,6 +7559,10 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "XML",
+          "gxl format"
         ],
         "is_executed_in": [
           "data visualization",
@@ -7580,9 +7580,6 @@
         "term_creator": [
           "Nandini Badarinarayan"
         ],
-        "has_specified_data_input": [
-          "R data frame"
-        ],
         "has_specified_data_output": [
           "image format"
         ],
@@ -7591,6 +7588,9 @@
         ],
         "is_encoded_in": [
           "R language"
+        ],
+        "has_specified_data_input": [
+          "R data frame"
         ]
       },
       {
@@ -8342,14 +8342,14 @@
         "definition_source": [
           "http://pmgenomics.ca/hoffmanlab/proj/segway/, accessed 27 November 2014."
         ],
-        "has_specified_data_input": [
-          "genomedata format"
-        ],
         "has_specified_data_output": [
           "BED format"
         ],
         "implements": [
           "dynamic Bayesian network model"
+        ],
+        "has_specified_data_input": [
+          "genomedata format"
         ],
         "is_executed_in": [
           "Genome annotation"
@@ -9131,13 +9131,13 @@
         "term_creator": [
           "Allyson Lister"
         ],
+        "uses_software": [
+          "CRG TCoffee 9.02.r1228"
+        ],
         "has_interface": [
           "web user interface"
         ],
-        "has_documentation": "http://dx.doi.org/10.1093/nar/gkl092",
-        "uses_software": [
-          "CRG TCoffee 9.02.r1228"
-        ]
+        "has_documentation": "http://dx.doi.org/10.1093/nar/gkl092"
       },
       {
         "ontology_id": "SWO:0000069",
@@ -9150,13 +9150,13 @@
         "term_creator": [
           "Allyson Lister"
         ],
+        "uses_software": [
+          "CRG TCoffee 9.02.r1228"
+        ],
         "has_interface": [
           "web user interface"
         ],
-        "has_documentation": "http://dx.doi.org/10.1093/nar/gkm333",
-        "uses_software": [
-          "CRG TCoffee 9.02.r1228"
-        ]
+        "has_documentation": "http://dx.doi.org/10.1093/nar/gkm333"
       },
       {
         "ontology_id": "SWO:0000071",
@@ -9169,13 +9169,13 @@
         "term_creator": [
           "Allyson Lister"
         ],
+        "uses_software": [
+          "CRG TCoffee 9.02.r1228"
+        ],
         "has_interface": [
           "web user interface"
         ],
-        "has_documentation": "http://dx.doi.org/10.1093/nar/gkr245",
-        "uses_software": [
-          "CRG TCoffee 9.02.r1228"
-        ]
+        "has_documentation": "http://dx.doi.org/10.1093/nar/gkr245"
       },
       {
         "ontology_id": "SWO:0000067",
@@ -9188,13 +9188,13 @@
         "term_creator": [
           "Allyson Lister"
         ],
+        "uses_software": [
+          "CRG TCoffee 9.02.r1228"
+        ],
         "has_interface": [
           "web user interface"
         ],
-        "has_documentation": "http://dx.doi.org/10.1093/nar/gkn278",
-        "uses_software": [
-          "CRG TCoffee 9.02.r1228"
-        ]
+        "has_documentation": "http://dx.doi.org/10.1093/nar/gkn278"
       },
       {
         "ontology_id": "SWO:0000065",
@@ -9214,12 +9214,12 @@
         "term_creator": [
           "Allyson Lister"
         ],
-        "has_version": [
-          "CRG TCoffee version 9.02.r1228"
-        ],
         "has_interface": [
           "graphical user interface",
           "command-line interface"
+        ],
+        "has_version": [
+          "CRG TCoffee version 9.02.r1228"
         ]
       },
       {
@@ -9233,13 +9233,13 @@
         "term_creator": [
           "Allyson Lister"
         ],
+        "uses_software": [
+          "CRG TCoffee 9.02.r1228"
+        ],
         "has_interface": [
           "web user interface"
         ],
-        "has_documentation": "http://dx.doi.org/10.1093/nar/gkr245",
-        "uses_software": [
-          "CRG TCoffee 9.02.r1228"
-        ]
+        "has_documentation": "http://dx.doi.org/10.1093/nar/gkr245"
       },
       {
         "ontology_id": "SWO:0000066",
@@ -9249,12 +9249,12 @@
         "term_creator": [
           "Allyson Lister"
         ],
+        "uses_software": [
+          "CRG TCoffee 9.02.r1228"
+        ],
         "has_interface": [
           "web user interface",
           "web service"
-        ],
-        "uses_software": [
-          "CRG TCoffee 9.02.r1228"
         ]
       },
       {
@@ -9452,9 +9452,6 @@
         "term_creator": [
           "Allyson Lister"
         ],
-        "has_specified_data_input": [
-          "SBML"
-        ],
         "has_specified_data_output": [
           "SBML"
         ],
@@ -9462,6 +9459,9 @@
           "ODE Algorithm",
           "DAE Algorithm",
           "PDE Algorithm"
+        ],
+        "has_specified_data_input": [
+          "SBML"
         ],
         "is_executed_in": [
           "Modelling and simulation"
@@ -9539,13 +9539,13 @@
         "is_encoded_in": [
           "Java"
         ],
-        "has_interface": [
-          "graphical user interface"
-        ],
         "has_license": [
           "GNU GPL"
         ],
-        "has_website_homepage": "http://www.cs.waikato.ac.nz/~ml/weka/"
+        "has_website_homepage": "http://www.cs.waikato.ac.nz/~ml/weka/",
+        "has_interface": [
+          "graphical user interface"
+        ]
       },
       {
         "ontology_id": "SWO:0000728",
@@ -9566,10 +9566,10 @@
         "ontology_id": "SWO:0000010",
         "label": "WordStar",
         "parent": "software",
-        "has_specified_data_input": [
+        "has_specified_data_output": [
           "WordStar format"
         ],
-        "has_specified_data_output": [
+        "has_specified_data_input": [
           "WordStar format"
         ],
         "is_executed_in": [
@@ -10582,1047 +10582,6 @@
         "definition": "XGMML stands for eXtensible Graph Markup and Modelling Language, and it is a XML standard; similar to but preferred over GML.",
         "definition_source": [
           "http://wiki.cytoscape.org/GettingStarted, accessed 20 June 2012"
-        ]
-      }
-    ],
-    "Algorithms": [
-      {
-        "ontology_id": "SWO:1100000",
-        "label": "2-sample pooled t-test",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000398",
-        "label": "50-50 MANOVA algorithm",
-        "parent": "algorithm",
-        "definition": "Classical multivariate analysis-of-variance tests perform poorly in cases with several highly correlated responses and the tests collapse when the number of responses exceeds the number of observations. This paper presents a new method which handles this problem. The dimensionality of the data is reduced by using principal component decompositions and the final tests are still based on the classical test statistics and their distributions. The methodology is illustrated with an example from the production of sausages with responses from near infrared reflectance spectroscopy. A closely related method for testing relationships in uniresponse regression with collinear explanatory variables is also presented. The new test, which is called the 50-50 F-test, uses the first k components to calculate SSMODEL. The next d components are not involved in SSERROR and they are called buffer components.",
-        "definition_source": [
-          "Langsrud, &Oslash. (2002), 50-50 Multivariate Analysis of Variance for Collinear Responses, The Statistician, 51, 305-317."
-        ]
-      },
-      {
-        "ontology_id": "SWO:1100003",
-        "label": "ACME",
-        "parent": "algorithm",
-        "definition": "The ACME algorithm is quite straightforward. Using a user-dened quantile of the data,called the threshold, any probes in the data that are above that threshold are considered positive probes. A p-value is then assigned to each probe."
-      },
-      {
-        "ontology_id": "SWO:1100009",
-        "label": "AMDIS",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100010",
-        "label": "ANCOVA",
-        "parent": "algorithm",
-        "definition": "The ANCOVA global test is a test for the association between expression values and clinical entities. The test is carried out by comparison of linear models via the extra sum of squares principle. If the mean expression level for at least one gene diers between corresponding models the global null hypothesis, which is the intersection of all single gene null hypotheses, is violated. FDR"
-      },
-      {
-        "ontology_id": "SWO:1100011",
-        "label": "ANOVA",
-        "exact_synonym": [
-          "ANNOVA"
-        ],
-        "parent": "algorithm",
-        "definition": "ANOVA or Analysis of Variance is a hypothesis testing algorithm which a variable is partitioned into components attributable to different sources of variation."
-      },
-      {
-        "ontology_id": "SWO:1100013",
-        "label": "ARACNE algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000477",
-        "label": "Associative T method",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100007",
-        "label": "Average log expression across arrays (ALE)",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000478",
-        "label": "AvgNRRs",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100015",
-        "label": "AWS algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100039",
-        "label": "BaldiLongT",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100034",
-        "label": "Base-Pair-Distance Kernel",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100041",
-        "label": "Bayesian Model",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000751",
-        "label": "dynamic Bayesian network model",
-        "parent": "Bayesian Model",
-        "definition": "A Dynamic Bayesian Network model is a Bayesian Network which relates variables to each other over adjacent time steps.",
-        "definition_source": [
-          "http://en.wikipedia.org/wiki/Dynamic_Bayesian_network, accessed 27 November 2014."
-        ]
-      },
-      {
-        "ontology_id": "SWO:1100076",
-        "label": "BCRANK algorithm",
-        "parent": "algorithm",
-        "definition": "BCRANK is a method that takes a ranked list of genomic regions as input and outputs short DNA sequences that are overrepresented in some part of the list."
-      },
-      {
-        "ontology_id": "SWO:1100030",
-        "label": "BGL",
-        "parent": "algorithm",
-        "definition": "BGL implements Depth First Search, Breadth First Search,Dijkstra's, Bellman Ford's and DAG,Johnson's and Floyd Warshall's.Kruskal's algorithm and Prim's algorithm Cuthill-McKee's algorithm Minimum degree Ordering"
-      },
-      {
-        "ontology_id": "SWO:0000049",
-        "label": "Binning clustering method",
-        "parent": "algorithm",
-        "definition": "binning clustering method- The algorithm uses single-linkage clustering to join compounds into similarity groups, where every member in a cluster shares with at least one other member a similarity value above a user-specified threshold. The algorithm is optimized for speed and memory eciency by avoiding the calculation of an all-against-all distance matrix."
-      },
-      {
-        "ontology_id": "SWO:0000490",
-        "label": "Bootstrap",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100061",
-        "label": "Category analysis",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100117",
-        "label": "CBS",
-        "parent": "algorithm",
-        "definition": "The circular binary segmentation (CBS) algorithm divides the genome into regions of equal copy number . The algorithm tests for change-points using a maximal t-statistic with a permutation reference distribution to obtain the corresponding p-value. The number of computations required for the maximal test statistic is O(N^2),where N is the number of markers. This makes the full permutation approach computationally prohibitive for the newer arrays that contain tens of thousands markers and highlights the need for a faster algorithm."
-      },
-      {
-        "ontology_id": "SWO:1100118",
-        "label": "CBS algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100072",
-        "label": "Chi-square",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100123",
-        "label": "CLR algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100056",
-        "label": "CMA algorithm",
-        "parent": "algorithm",
-        "definition": "CMA- it implements k-fold cross validation, MCMC cross validation, bootstrap and (t.test or welch.test or wilcox.test or f.test or kruskal.test or One-step Recursive Feature Elimination or random forest variable importance measure or lasso or elastic net or componentwise boosting)"
-      },
-      {
-        "ontology_id": "SWO:1100086",
-        "label": "Complex Estimation Algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000503",
-        "label": "Concordance",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100059",
-        "label": "Continuous Wavelet Transform (CWT)-based peak detection algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100077",
-        "label": "Cosmo",
-        "parent": "algorithm",
-        "definition": "cosmo allows the user to target the motif search by specifying a set of constraints that the unknown position weight matrix must satisfy. The algorithm is based on a probabilistic model that describes the DNA sequences of interest through a two- component multinomial mixture model with estimates of the position weight matrix entries obtained by maximizing the observed data likelihood over the smaller parameter space corresponding to the imposed constraints. It includes methods such as Probabilistic models and one-occurrence-per-sequence and zero-or-one-occurrence-per-sequence and two-component mixture"
-      },
-      {
-        "ontology_id": "SWO:1100058",
-        "label": "CRLMM algorithm",
-        "parent": "algorithm",
-        "definition": "This algorithm offers improved confidence scores, quality scores for SNP’s and batches, higher accuracy on different datasets and better performance."
-      },
-      {
-        "ontology_id": "SWO:0000754",
-        "label": "DAE Algorithm",
-        "exact_synonym": [
-          "Differential Algebraic Equation Algorithm"
-        ],
-        "parent": "algorithm",
-        "definition": "Differential Algebraic equations (DAEs) are a general form of (systems of) differential equations for vector–valued functions in one independent variable. In practical terms, the distinction between DAEs and ODEs is often that the solution of a DAE system depends on the derivatives of the input signal and not just the signal itself as in the case of ODEs.",
-        "definition_source": [
-          "http://en.wikipedia.org/wiki/Differential_algebraic_equation, accessed 26 March 2015."
-        ],
-        "term_creator": [
-          "Allyson Lister"
-        ]
-      },
-      {
-        "ontology_id": "OntoDM:OntoDM_000038",
-        "label": "data mining algorithm",
-        "parent": "algorithm",
-        "comment": "A data mining algorithm is an algorithm that has as its objective a data mining task and outputs as a result a generalization specified by a generalization specification."
-      },
-      {
-        "ontology_id": "OntoDM:OntoDM_530819",
-        "label": "ensemble algorithm",
-        "parent": "data mining algorithm",
-        "comment": "Ensemble algorithms are algorithms that generate an ensemble when executed on a dataset. The ensemble algorithms include a specification of  single generalization algorithms which are executed in oreder to produce the single generalizations that compose the ensemble.  Examples of ensemble algorithms include bagging, boosting, stacking, random forests, random subspaces,bagging of random subspaces etc.  For example, bagging of decision trees algorithm includes the specification of a bagging algorithm and having a decision tree algorithm for generating the base models composing the ensemble."
-      },
-      {
-        "ontology_id": "OntoDM:OntoDM_731692",
-        "label": "single generalization algorithm",
-        "parent": "data mining algorithm",
-        "comment": "single generalization algorithms are data mining algorithms that given a dataset on input produce a generalization at the output."
-      },
-      {
-        "ontology_id": "OntoDM:OntoDM_000072",
-        "label": "clustering algorithm",
-        "parent": "single generalization algorithm",
-        "definition": "Clustering algorithm is a data mining algorithm that solves a clustering task and as a result produces a clustering."
-      },
-      {
-        "ontology_id": "OntoDM:OntoDM_000192",
-        "label": "pattern discovery algorithm",
-        "parent": "single generalization algorithm",
-        "definition": "Pattern discovery algorithm is a data mining algorithm that solves a pattern discovery task and as a result produces a set of patterns."
-      },
-      {
-        "ontology_id": "OntoDM:OntoDM_000160",
-        "label": "predictive modeling algorithm",
-        "parent": "single generalization algorithm",
-        "definition": "Predictive modeling algorithm is a data mining algorithm that solves a predictive modeling task and as a result produces a predictive model."
-      },
-      {
-        "ontology_id": "OntoDM:OntoDM_000253",
-        "label": "probability distribution estimation algorithm",
-        "parent": "single generalization algorithm"
-      },
-      {
-        "ontology_id": "ODME:OntoDM_361570",
-        "label": "data processing algorithm",
-        "parent": "algorithm",
-        "definition_source": [
-          "Allyson Lister"
-        ],
-        "comment": "A data processing algorithm is an algorithm that has as its objective a data processing task and has data items both as input and output."
-      },
-      {
-        "ontology_id": "ODME:OntoDM-KDD_545286",
-        "label": "data cleaning algorithm",
-        "parent": "data processing algorithm"
-      },
-      {
-        "ontology_id": "ODME:OntoDM-KDD_806059",
-        "label": "data construction algorithm",
-        "parent": "data processing algorithm"
-      },
-      {
-        "ontology_id": "ODME:OntoDM-KDD_776185",
-        "label": "data integration algorithm",
-        "parent": "data processing algorithm"
-      },
-      {
-        "ontology_id": "ODME:OntoDM-KDD_573276",
-        "label": "data selection algorithm",
-        "parent": "data processing algorithm"
-      },
-      {
-        "ontology_id": "ODME:OntoDM-KDD_511616",
-        "label": "data visualization algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100091",
-        "label": "DFW",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100090",
-        "label": "Discriminant Fuzzy Pattern Algorithm",
-        "parent": "algorithm",
-        "definition": "A DFP version of a FP (fuzzy pattern) only includes those genes that can serve to differentiate it from the rest of the patterns.This algorithm is based on the discretization of float values (gene expression values) stored in an ExpressionSet object into labels combining 'Low', 'Medium' and 'High'"
-      },
-      {
-        "ontology_id": "SWO:0000524",
-        "label": "Dynamic programming algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100097",
-        "label": "Empirical Bayes rule",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100096",
-        "label": "Expectation-Maximization(EM) algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100078",
-        "label": "F test",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000531",
-        "label": "f-test",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100100",
-        "label": "FARMS",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100101",
-        "label": "FC",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100102",
-        "label": "FDR",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000148",
-        "label": "Firth’s bias reduction procedure",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100105",
-        "label": "Fischer’s Exact Test",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100103",
-        "label": "Fixed effect model",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100125",
-        "label": "FoxDimmicT",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100114",
-        "label": "Gamma Gamma Model",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000172",
-        "label": "Gamma-Gamma hierarchical model",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100107",
-        "label": "GASSCO method",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000173",
-        "label": "Gaussian locally weighted regression",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000552",
-        "label": "Gene array analysis algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000169",
-        "label": "Gene Recommender algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000174",
-        "label": "Gene-Set Enrichment Analysis",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:4000007",
-        "label": "Gillespie’s Stochastic Simulation Algorithm",
-        "parent": "algorithm",
-        "definition": "Gillespie's Stochastic Simulation Algorithm is an algorithm which generates a statistically correct trajectory (possible solution) of a stochastic equation. It can be used to simulate chemical or biochemical systems of reactions efficiently and accurately using limited computational power. The algorithm is particularly useful for simulating reactions within cells where the number of reagents typically number in the tens of molecules (or less). Mathematically, it is a variety of a dynamic Monte Carlo method and similar to the kinetic Monte Carlo methods. It is used heavily in computational systems biology",
-        "definition_source": [
-          "http://en.wikipedia.org/wiki/Gillespie_algorithm, accessed 25 March 2015."
-        ],
-        "term_creator": [
-          "Allyson Lister"
-        ]
-      },
-      {
-        "ontology_id": "SWO:0000560",
-        "label": "Global test",
-        "parent": "algorithm",
-        "definition": "global test allows the unit of analysis of the microarray experiment to be shifted from the single gene level to the pathway level, where a ‘pathway’ may be any set of genes, e.g. chosen using the Gene Ontology database or from earlier experiments."
-      },
-      {
-        "ontology_id": "SWO:0000220",
-        "label": "HaarSeg algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000221",
-        "label": "Hardy-Weinberg equilibrium",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000215",
-        "label": "Heterogeneous Error Model (HEM)",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000212",
-        "label": "Hexagon binning algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000217",
-        "label": "Hidden Markov Model",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000219",
-        "label": "Hidden Variable Dynamic Modelling HVDM)",
-        "parent": "algorithm",
-        "definition": "Technique which predicts a given transcription factor activity and then uses this infor- mation to predict its targets."
-      },
-      {
-        "ontology_id": "SWO:0000573",
-        "label": "Hierarchical clustering",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000218",
-        "label": "Hierarchical Ordered Partitioning and Collapsing Hybrid (HOPACH) algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000216",
-        "label": "Hubert’s gamma",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000576",
-        "label": "Hypergeometric enrichment",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000227",
-        "label": "Hypergeometric probability",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100033",
-        "label": "Iterative Bayesian Model Averaging (BMA)",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000584",
-        "label": "Iterative local regression and model selection",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000229",
-        "label": "Iteratively ReWeighted Least Squares",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000243",
-        "label": "Jaccard’s index",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000587",
-        "label": "k-cores",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000588",
-        "label": "k-means",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000589",
-        "label": "k-nearest neighbour classification",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000250",
-        "label": "KLD",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000251",
-        "label": "Kolmogorov Smirnov rank-sum based algorithm",
-        "parent": "algorithm",
-        "definition": "KS measures how biased the ranks of a subset of items are among the ranks of the entire set"
-      },
-      {
-        "ontology_id": "SWO:0000261",
-        "label": "Langmuir Isotherm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000262",
-        "label": "Laplace mixture model",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000263",
-        "label": "Library Search Algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000592",
-        "label": "Likelihood method",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000595",
-        "label": "Linear modelling",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000597",
-        "label": "Local-pooled-error",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000255",
-        "label": "Locally Moderated Weighted-t (LMW) method",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000264",
-        "label": "Loess algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000265",
-        "label": "Logic regression",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000602",
-        "label": "Logit-t algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000256",
-        "label": "Lognormal Normal Model",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000257",
-        "label": "Lognormal Normal with Modied Variance Model",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000618",
-        "label": "M-estimation regression",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000287",
-        "label": "Mahalanobis distance",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000277",
-        "label": "Markov Chain Monte Carlo",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000614",
-        "label": "MAS5",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000278",
-        "label": "MCR algorithm",
-        "parent": "algorithm",
-        "definition": "minimum common regions (MCR) algorithm- Minimal common regions (MCRs) are dened as contiguous spans having at least a recurrence rate dened by a parameter (recurrence) across samples."
-      },
-      {
-        "ontology_id": "SWO:0000267",
-        "label": "Median Average Difference Algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000281",
-        "label": "MI",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000296",
-        "label": "Misclassification-Penalized Posteriors (MiPP)",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000298",
-        "label": "Mixed model equations",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000284",
-        "label": "MMD",
-        "parent": "algorithm",
-        "definition": "MMD describes the distributions of gene expression levels directly via the marginal distributions. It includes EM algorithm, FDR, it is the percentage of nondifferentially expressed genes among selected genes), false non-discovery rate (denoted as FNDR; it is the percentage of differentially expressed genes among unselected genes),false positive rate (denoted as FPR; it is the percentage of selected genes among nondifferentially expressed genes), and false negative rate (denoted as FNR; it is the percentage of un-selected genes among differentially expressed genes),"
-      },
-      {
-        "ontology_id": "SWO:0000165",
-        "label": "Modified version of the GLAD algorithm (Gain and Loss Analysis of DNA)",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000753",
-        "label": "Monte Carlo",
-        "parent": "algorithm",
-        "definition": "Monte Carlo is a discrete stochastic simulation algorithm and an estimation procedure algorithm. If it is necessary to know the average value of some random variable and its distribution can not be stated, and if it is possible to take samples from the distribution, we can estimate it by taking the samples, independently, and averaging them. If there are sufficiently enough samples, then the law of large numbers says the average must be close to the true value. The central limit theorem says that the average has a Gaussian distribution around the true value.",
-        "definition_source": [
-          "http://en.wikipedia.org/wiki/Stochastic_simulation#Monte_Carlo_simulation, accessed 25 March 2015, and http://www.async.ece.utah.edu/iBioSim/docs/iBioSim.html, accessed 25 March 2015."
-        ],
-        "term_creator": [
-          "Allyson Lister"
-        ]
-      },
-      {
-        "ontology_id": "SWO:0000626",
-        "label": "mrnet algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000627",
-        "label": "Multinomial probit regression with Gaussian Process priors",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000628",
-        "label": "Multiple testing",
-        "parent": "algorithm",
-        "definition": "multiple testing which includes controlling the family-wise error rate (FWER), generalized family-wise error rate (gFWER), tail probability of the proportion of false positives (TPPFP), and false discovery rate (FDR). Tests based on a variety of t- and F-statistics (including t-statistics based on regression parameters from linear and survival models as well as those based on correlation parameters) are included."
-      },
-      {
-        "ontology_id": "SWO:0000276",
-        "label": "Multivariate correlation estimator",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000629",
-        "label": "Multivariate t mixture models",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000304",
-        "label": "Needleman-Wunsch",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000631",
-        "label": "Negative binomial distribution",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000305",
-        "label": "Nested Effects Models",
-        "parent": "algorithm",
-        "definition": "This includes exhaustive enumeration, triple-based inference,pairwise heuristic,  module based inference, greedy hillclimbing"
-      },
-      {
-        "ontology_id": "SWO:0000633",
-        "label": "Neural networks models",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:1100082",
-        "label": "Non-linear functional regression model",
-        "parent": "algorithm",
-        "definition": "non-linear functional regression model with both additive and multiplicative error terms"
-      },
-      {
-        "ontology_id": "SWO:0000306",
-        "label": "Nonlinear Estimation by Iterative Partial Least Squares",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000752",
-        "label": "ODE Algorithm",
-        "exact_synonym": [
-          "Ordinary Differential Equation Algorithm"
-        ],
-        "parent": "algorithm",
-        "definition": "In mathematics, an ordinary differential equation or ODE is an equation containing a function of one independent variable and its derivatives. The term \"ordinary\" is used in contrast with the term partial differential equation which may be with respect to more than one independent variable.",
-        "definition_source": [
-          "http://en.wikipedia.org/wiki/Ordinary_differential_equation, accessed 25 March 2015."
-        ],
-        "term_creator": [
-          "Allyson Lister"
-        ]
-      },
-      {
-        "ontology_id": "SWO:1100070",
-        "label": "PCMG",
-        "parent": "algorithm",
-        "definition": "PCMG- a bipartite graph in which one set of nodes represents proteins, the other set represents complexes, and an edge from a protein node to a complex node represents membership of the protein in that complex."
-      },
-      {
-        "ontology_id": "SWO:0000755",
-        "label": "PDE Algorithm",
-        "exact_synonym": [
-          "Partial Differential Equation Algorithm"
-        ],
-        "parent": "algorithm",
-        "definition": "A partial differential equation (PDE) is a differential equation that contains unknown multivariable functions and their partial derivatives. This is in contrast to ordinary differential equations, which deal with functions of a single variable and their derivatives.",
-        "definition_source": [
-          "http://en.wikipedia.org/wiki/Partial_differential_equation, accessed 26 March 2015."
-        ],
-        "term_creator": [
-          "Allyson Lister"
-        ]
-      },
-      {
-        "ontology_id": "SWO:0000315",
-        "label": "Pearson correlation estimator",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000328",
-        "label": "PLIER (Probe Logarithmic Error Intensity Estimate) method",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000318",
-        "label": "PLM",
-        "parent": "algorithm",
-        "definition": "it is where we fit a model with probe level and chip level parameters on a probeset by probeset basis"
-      },
-      {
-        "ontology_id": "SWO:0000664",
-        "label": "Position weight matrix (PWM )",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000326",
-        "label": "Power Law Global Error Model (PLGEM) analysis method",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000321",
-        "label": "PPC algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000313",
-        "label": "Presence-Absence calls with Negative Probesets (PANP)",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000320",
-        "label": "Probe level Locally moderated Weighted median-t (PLW) method",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000323",
-        "label": "Propagation of uncertainty in microarray analysis",
-        "parent": "algorithm",
-        "definition": "Included are summarisation, differential expression detection, clustering and PCA methods, together with useful plotting and data manipulation functions"
-      },
-      {
-        "ontology_id": "SWO:0000673",
-        "label": "Quantile normalization",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000674",
-        "label": "Quantile regression techniques",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000334",
-        "label": "R interface to boost graph library algorithm (RBGL)",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000332",
-        "label": "Radial basis function",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000336",
-        "label": "Random effects model",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000681",
-        "label": "Rank product non-parametric method",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000680",
-        "label": "Rank-invariant set normalization",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000337",
-        "label": "Recursive Feature Elimination (RFE)",
-        "parent": "algorithm",
-        "definition": "for the Support Vector Machine (SVM), as presented in [3] and the Nearest Shrunken Centroid (NSC)"
-      },
-      {
-        "ontology_id": "SWO:0000339",
-        "label": "Regression model",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000340",
-        "label": "RMA",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000341",
-        "label": "RMA+",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000342",
-        "label": "RMA++",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000364",
-        "label": "Robust likelihood-based survival modeling",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000371",
-        "label": "S-Score algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000750",
-        "label": "SAEM",
-        "parent": "algorithm",
-        "definition": "A stochastic algorithm for population pharmacology modeling",
-        "definition_source": [
-          "http://www.math.u-bordeaux1.fr/MAS10/DOC/PDF-PRES/Lavielle.pdf"
-        ]
-      },
-      {
-        "ontology_id": "SWO:0000374",
-        "label": "SAM",
-        "parent": "algorithm",
-        "comment": "Note: It is unclear from just the label what is meant by a SAM algorithm. It may or may not be related to the SAM sequence alignment software described by the class SWO_0000077 (Allyson Lister)"
-      },
-      {
-        "ontology_id": "SWO:0000389",
-        "label": "Semantic Similarity Measures",
-        "parent": "algorithm",
-        "definition": "Semantic Similarity Measures- Four methods proposed by Resnik[Philip, 1999], Jiang[Jiang and Conrath, 1997], Lin[Lin, 1998] and Schlicker[Schlicker et al., 2006] respectively have presented to determine the semantic similarities of two GO terms based on the annotation statistics of their common ancestor terms. Wang [Wang et al., 2007] proposed a new method to measure the similarities based on the graph structure of GO."
-      },
-      {
-        "ontology_id": "SWO:0000372",
-        "label": "Serial Analysis of Gene Expression (SAGE)",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000423",
-        "label": "Signaling Pathway Impact Analysis (SPIA) algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000695",
-        "label": "Sim method",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000425",
-        "label": "Similarity score",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000426",
-        "label": "Smith-Waterman",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000386",
-        "label": "SNPRMA algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000713",
-        "label": "Statistical tests",
-        "parent": "algorithm",
-        "definition": "A statistical test is an algorithm for making quantitative decisions to determine which outcomes of a study would lead to a rejection of the null hypothesis for a pre-specified level of significance.",
-        "definition_source": [
-          "Modified from http://en.wikipedia.org/wiki/Statistical_test, accessed 9 May 2013; http://www.itl.nist.gov/div898/handbook/prc/section1/prc13.htm, accessed 9 May 2013."
-        ]
-      },
-      {
-        "ontology_id": "SWO:0000391",
-        "label": "SVDimpute algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000715",
-        "label": "t-test",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000437",
-        "label": "Theodore Ts’o’s",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000722",
-        "label": "Two-stage measurement error model",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000441",
-        "label": "Variance-stabilizing transformation (VST) algorithm",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000444",
-        "label": "WilcEbam",
-        "parent": "algorithm"
-      },
-      {
-        "ontology_id": "SWO:0000445",
-        "label": "Wilcoxon",
-        "parent": "algorithm"
-      }
-    ],
-    "SoftwareInterfaces": [
-      {
-        "ontology_id": "SWO:9000054",
-        "label": "application programming interface",
-        "exact_synonym": [
-          "API"
-        ],
-        "parent": "software interface",
-        "definition": "An application programming interface is a set of routines, protocols, and tools for building software applications. An API expresses a software component in terms of its operations, inputs, outputs, and underlying types. An API defines functionalities that are independent of their respective implementations, which allows definitions and implementations to vary without compromising each other. The API specifies how software components should interact.",
-        "definition_source": [
-          "http://en.wikipedia.org/wiki/Application_programming_interface, accessed 25 November 2014."
-        ]
-      },
-      {
-        "ontology_id": "SWO:9000053",
-        "label": "command-line interface",
-        "exact_synonym": [
-          "Command line",
-          "Command line interface",
-          "Command-line"
-        ],
-        "parent": "software interface",
-        "definition": "A command-line interface is a means of interacting with a computer program where the user (or client) issues commands to the program in the form of successive lines of text (command lines).",
-        "definition_source": [
-          "http://en.wikipedia.org/wiki/Command-line_interface, accessed 25 November 2014."
-        ]
-      },
-      {
-        "ontology_id": "SWO:9000052",
-        "label": "graphical user interface",
-        "exact_synonym": [
-          "GUI"
-        ],
-        "parent": "software interface",
-        "definition": "A Graphical user interface is a type of software interface that allows users to interact with electronic devices using images rather than text commands. A GUI represents the information and actions available to a user through graphical icons and visual indicators such as secondary notation, as opposed to text-based interfaces, typed command labels or text navigation.",
-        "term_creator": [
-          "Allyson Lister"
-        ]
-      },
-      {
-        "ontology_id": "SWO:5000003",
-        "label": "desktop graphical user interface",
-        "exact_synonym": [
-          "Desktop GUI"
-        ],
-        "parent": "graphical user interface",
-        "definition": "A Desktop Graphical User interface is a Graphical User Interface which is loaded and run within the user's operating system rather than via a Web browser.",
-        "term_creator": [
-          "Allyson Lister"
-        ]
-      },
-      {
-        "ontology_id": "SWO:5000002",
-        "label": "web user interface",
-        "exact_synonym": [
-          "WUI",
-          "Web UI"
-        ],
-        "parent": "graphical user interface",
-        "definition": "A Web User interface is a Graphical User Interface which is loaded and run via a Web browser rather than within the user's operating system.",
-        "term_creator": [
-          "Allyson Lister"
-        ]
-      },
-      {
-        "ontology_id": "SWO:9000051",
-        "label": "web service",
-        "exact_synonym": [
-          "Web Service"
-        ],
-        "parent": "software interface",
-        "definition": "A web service is a software interface which works as a method of communication between two electronic devices over the World Wide Web and which is provided at a particular network address. There are two major classes of Web services: REST-compliant Web services, and arbitrary (or application-specific) Web services.",
-        "definition_source": [
-          "Modified from http://www.w3.org/TR/ws-arch/, accessed 6 June 2013; Modified from http://en.wikipedia.org/wiki/Web_service, accessed 6 June 2013."
-        ],
-        "term_creator": [
-          "Allyson Lister"
-        ]
-      },
-      {
-        "ontology_id": "SWO:5000006",
-        "label": "JSON web service",
-        "parent": "web service",
-        "definition": "A web service in which calls invoked return JSON."
-      },
-      {
-        "ontology_id": "SWO:5000005",
-        "label": "REST service",
-        "exact_synonym": [
-          "REST Service"
-        ],
-        "parent": "web service",
-        "definition": "A REST service is a Web service in which the primary purpose of the service is to manipulate XML representations of Web resources using a uniform set of \"stateless\" operations. RESTful APIs do not require XML-based web service protocols (SOAP and WSDL) to support their light-weight interfaces.",
-        "definition_source": [
-          "Modified from http://www.w3.org/TR/ws-arch, accessed 6 June 2013, Modified from http://en.wikipedia.org/wiki/Web_service, accessed 6 June 2013."
-        ],
-        "term_creator": [
-          "Allyson Lister"
-        ]
-      },
-      {
-        "ontology_id": "SWO:5000004",
-        "label": "SOAP service",
-        "exact_synonym": [
-          "SOAP Service"
-        ],
-        "parent": "web service",
-        "definition": "A SOAP service is a Web service which provides a standard, extensible, composable framework for packaging and exchanging XML messages. The service may expose an arbitrary, application-specific set of operations.",
-        "definition_source": [
-          "Modified from http://en.wikipedia.org/wiki/SOAP, accessed 6 June 2013; modified from http://www.w3.org/TR/ws-arch, accessed 6 June 2013."
-        ],
-        "term_creator": [
-          "Allyson Lister"
         ]
       }
     ],
@@ -13014,6 +11973,169 @@
         ]
       }
     ],
+    "OperatingSystems": [
+      {
+        "ontology_id": "SWO:0000022",
+        "label": "Linux",
+        "parent": "operating system"
+      },
+      {
+        "ontology_id": "SWO:0000149",
+        "label": "Mac OS",
+        "parent": "operating system",
+        "definition": "Mac OS is software which is used as the operating system for the Macintosh personal computer created by Apple Inc.",
+        "definition_source": [
+          "http://en.wikipedia.org/wiki/History_of_Mac_OS, accessed 25 March 2015."
+        ],
+        "term_creator": [
+          "Allyson Lister"
+        ]
+      },
+      {
+        "ontology_id": "SWO:0000151",
+        "label": "OS X",
+        "parent": "Mac OS",
+        "definition": "OS X is a Mac OS operating system which succeeds the original Mac OS, which had been Apple's primary operating system since 1984. Unlike the earlier Macintosh operating system, OS X is a Unix-based operating system.",
+        "definition_source": [
+          "http://en.wikipedia.org/wiki/History_of_Mac_OS#OS_X, accessed 25 March 2015."
+        ],
+        "term_creator": [
+          "Allyson Lister"
+        ]
+      },
+      {
+        "ontology_id": "SWO:9000072",
+        "label": "Microsoft Windows",
+        "parent": "operating system",
+        "comment": "The Windows Operating System"
+      },
+      {
+        "ontology_id": "SWO:9000073",
+        "label": "Windows Vista",
+        "parent": "Microsoft Windows"
+      },
+      {
+        "ontology_id": "SWO:9000074",
+        "label": "Windows XP",
+        "parent": "Microsoft Windows"
+      }
+    ],
+    "SoftwareInterfaces": [
+      {
+        "ontology_id": "SWO:9000054",
+        "label": "application programming interface",
+        "exact_synonym": [
+          "API"
+        ],
+        "parent": "software interface",
+        "definition": "An application programming interface is a set of routines, protocols, and tools for building software applications. An API expresses a software component in terms of its operations, inputs, outputs, and underlying types. An API defines functionalities that are independent of their respective implementations, which allows definitions and implementations to vary without compromising each other. The API specifies how software components should interact.",
+        "definition_source": [
+          "http://en.wikipedia.org/wiki/Application_programming_interface, accessed 25 November 2014."
+        ]
+      },
+      {
+        "ontology_id": "SWO:9000053",
+        "label": "command-line interface",
+        "exact_synonym": [
+          "Command line",
+          "Command line interface",
+          "Command-line"
+        ],
+        "parent": "software interface",
+        "definition": "A command-line interface is a means of interacting with a computer program where the user (or client) issues commands to the program in the form of successive lines of text (command lines).",
+        "definition_source": [
+          "http://en.wikipedia.org/wiki/Command-line_interface, accessed 25 November 2014."
+        ]
+      },
+      {
+        "ontology_id": "SWO:9000052",
+        "label": "graphical user interface",
+        "exact_synonym": [
+          "GUI"
+        ],
+        "parent": "software interface",
+        "definition": "A Graphical user interface is a type of software interface that allows users to interact with electronic devices using images rather than text commands. A GUI represents the information and actions available to a user through graphical icons and visual indicators such as secondary notation, as opposed to text-based interfaces, typed command labels or text navigation.",
+        "term_creator": [
+          "Allyson Lister"
+        ]
+      },
+      {
+        "ontology_id": "SWO:5000003",
+        "label": "desktop graphical user interface",
+        "exact_synonym": [
+          "Desktop GUI"
+        ],
+        "parent": "graphical user interface",
+        "definition": "A Desktop Graphical User interface is a Graphical User Interface which is loaded and run within the user's operating system rather than via a Web browser.",
+        "term_creator": [
+          "Allyson Lister"
+        ]
+      },
+      {
+        "ontology_id": "SWO:5000002",
+        "label": "web user interface",
+        "exact_synonym": [
+          "WUI",
+          "Web UI"
+        ],
+        "parent": "graphical user interface",
+        "definition": "A Web User interface is a Graphical User Interface which is loaded and run via a Web browser rather than within the user's operating system.",
+        "term_creator": [
+          "Allyson Lister"
+        ]
+      },
+      {
+        "ontology_id": "SWO:9000051",
+        "label": "web service",
+        "exact_synonym": [
+          "Web Service"
+        ],
+        "parent": "software interface",
+        "definition": "A web service is a software interface which works as a method of communication between two electronic devices over the World Wide Web and which is provided at a particular network address. There are two major classes of Web services: REST-compliant Web services, and arbitrary (or application-specific) Web services.",
+        "definition_source": [
+          "Modified from http://www.w3.org/TR/ws-arch/, accessed 6 June 2013; Modified from http://en.wikipedia.org/wiki/Web_service, accessed 6 June 2013."
+        ],
+        "term_creator": [
+          "Allyson Lister"
+        ]
+      },
+      {
+        "ontology_id": "SWO:5000006",
+        "label": "JSON web service",
+        "parent": "web service",
+        "definition": "A web service in which calls invoked return JSON."
+      },
+      {
+        "ontology_id": "SWO:5000005",
+        "label": "REST service",
+        "exact_synonym": [
+          "REST Service"
+        ],
+        "parent": "web service",
+        "definition": "A REST service is a Web service in which the primary purpose of the service is to manipulate XML representations of Web resources using a uniform set of \"stateless\" operations. RESTful APIs do not require XML-based web service protocols (SOAP and WSDL) to support their light-weight interfaces.",
+        "definition_source": [
+          "Modified from http://www.w3.org/TR/ws-arch, accessed 6 June 2013, Modified from http://en.wikipedia.org/wiki/Web_service, accessed 6 June 2013."
+        ],
+        "term_creator": [
+          "Allyson Lister"
+        ]
+      },
+      {
+        "ontology_id": "SWO:5000004",
+        "label": "SOAP service",
+        "exact_synonym": [
+          "SOAP Service"
+        ],
+        "parent": "web service",
+        "definition": "A SOAP service is a Web service which provides a standard, extensible, composable framework for packaging and exchanging XML messages. The service may expose an arbitrary, application-specific set of operations.",
+        "definition_source": [
+          "Modified from http://en.wikipedia.org/wiki/SOAP, accessed 6 June 2013; modified from http://www.w3.org/TR/ws-arch, accessed 6 June 2013."
+        ],
+        "term_creator": [
+          "Allyson Lister"
+        ]
+      }
+    ],
     "DevelopmentStatuses": [
       {
         "ontology_id": "SWO:0000780",
@@ -13105,7 +12227,6 @@
           "Andy Brown"
         ]
       }
-    ],
-    "OperatingSystems": []
+    ]
   }
 }

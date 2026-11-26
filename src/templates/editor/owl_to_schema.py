@@ -12,8 +12,10 @@ OWL-driven mode  (--class required, --spec not needed):
   a slot; standard annotation slots (ID, label, parent, definition, …) are
   always prepended automatically.
 
-  Output file names are derived from the ontology file name: swo-edit.owl
-  produces swo_schema.yaml, swo_schema_config.yaml, and swo_schema_data.json.
+  Output file names are derived from the ontology's default_prefix (the CURIE
+  namespace of the root class): a root class in the SWO prefix namespace
+  produces SWO_schema.yaml, SWO_schema_config.yaml, and SWO_schema_data.json.
+  Falls back to the uppercased OWL filename stem when the IRI is unresolvable.
 
   python owl_to_schema.py \\
       --ontology swo-edit.owl \\
@@ -93,17 +95,19 @@ _OWL_STEM_SUFFIXES = ("-merged", "-simple", "-full", "-base", "-core", "-edit")
 
 
 def _derive_ontology_prefix(owl_path: str) -> str:
-    """Derive a short prefix from an OWL file path.
+    """Derive a short uppercase prefix from an OWL file path.
 
-    Strips the directory component, the file extension, and any common
-    release-stage suffix so that e.g. ``swo-edit.owl`` → ``swo``.
+    Used as a fallback when the root-class IRI cannot be resolved to a known
+    CURIE namespace.  Strips the directory, extension, and any common
+    release-stage suffix, then uppercases per OBO convention:
+    ``swo-edit.owl`` → ``SWO``.
     """
     stem = os.path.splitext(os.path.basename(owl_path))[0]
     for suffix in _OWL_STEM_SUFFIXES:
         if stem.endswith(suffix):
             stem = stem[: -len(suffix)]
             break
-    return stem
+    return stem.upper()
 
 
 # ---------------------------------------------------------------------------
@@ -623,8 +627,14 @@ def _load_owl_to_graph(g: Graph, owl_path: str) -> None:
 
 def get_ontology_metadata(g: Graph) -> dict:
     """Query the owl:Ontology node for dcterms:title, dcterms:description,
-    owl:versionInfo.  Returns {title, description, version} with None values
-    for missing fields."""
+    and version.  Returns {title, description, version} with None values
+    for missing fields.
+
+    Version resolution order:
+    1. owl:versionInfo (plain string annotation, e.g. "1.9.0")
+    2. Last path segment of owl:versionIRI (OBO convention:
+       http://purl.obolibrary.org/obo/swo.owl/1.9.0 → "1.9.0")
+    """
     DCTERMS = "http://purl.org/dc/terms/"
     ont = None
     for s in g.subjects(RDF.type, OWL.Ontology):
@@ -632,10 +642,17 @@ def get_ontology_metadata(g: Graph) -> dict:
         break
     if ont is None:
         return {"title": None, "description": None, "version": None}
+
+    version = None
+    if v := g.value(ont, OWL.versionInfo):
+        version = str(v)
+    elif v := g.value(ont, OWL.versionIRI):
+        version = str(v).rstrip("/").split("/")[-1]
+
     return {
         "title":       str(t) if (t := g.value(ont, URIRef(DCTERMS + "title"))) else None,
         "description": str(d) if (d := g.value(ont, URIRef(DCTERMS + "description"))) else None,
-        "version":     str(v) if (v := g.value(ont, OWL.versionInfo)) else None,
+        "version":     version,
     }
 
 
@@ -1792,8 +1809,6 @@ def write_schema_yaml(
     _w(L, "annotations:")
     _w(L, '  list_delimiter: "|"')
     _w(L, '  application: robot')
-    if schema.get("ontology_prefix"):
-        _w(L, f'  ontology_prefix: {schema["ontology_prefix"]}')
     _w(L)
     _w(L, "imports:")
     _w(L, "  - linkml:types")
@@ -2317,13 +2332,14 @@ def write_class_tsv(
     class_name: str,
     prefix_map: dict,
     output_dir: str,
+    file_prefix: str = "",
 ) -> None:
     """Write a ROBOT template TSV for the named schema class.
 
     Finds the class definition in *schema*, resolves its root OWL class by
     matching the rdfs:label of the given *class_name* (case-insensitive),
     iterates over its direct non-deprecated subclasses, and writes one row
-    per subclass to <output_dir>/<class_name>.tsv.
+    per subclass to <output_dir>/<file_prefix>_<ClassName>.tsv.
     """
     classes = schema.get("classes", {})
     # Case-insensitive class lookup
@@ -2409,7 +2425,8 @@ def write_class_tsv(
     header_row       = [title for title, _, _ in columns]
     robot_row        = [robot for _, robot, _ in columns]
 
-    tsv_path = os.path.join(output_dir, f"{class_name.lower()}.tsv")
+    tsv_name = f"{file_prefix}_{class_name}.tsv" if file_prefix else f"{class_name}.tsv"
+    tsv_path = os.path.join(output_dir, tsv_name)
     os.makedirs(output_dir, exist_ok=True)
     with open(tsv_path, "w", newline="", encoding="utf-8") as fh:
         writer = csv.writer(fh, delimiter="\t")
@@ -2768,27 +2785,11 @@ def main() -> None:
     if not args.ontology:
         parser.error("--ontology is required in OWL-driven mode.")
 
-    owl_path   = os.path.abspath(args.ontology)
-    owl_dir    = os.path.dirname(owl_path)
-    ont_prefix = _derive_ontology_prefix(owl_path)   # e.g. "swo"
-    output_path = os.path.abspath(
-        args.output if args.output
-        else os.path.join(owl_dir, f"{ont_prefix}_schema.yaml")
-    )
+    owl_path = os.path.abspath(args.ontology)
+    owl_dir  = os.path.dirname(owl_path)
 
-    # Resolve config path and load existing decisions
-    config_path = os.path.abspath(
-        args.config_path if args.config_path
-        else os.path.join(
-            os.path.dirname(output_path),
-            f"{ont_prefix}_schema_config.yaml",
-        )
-    )
-    config = load_schema_config(config_path)
-    if os.path.exists(config_path):
-        print(f"Config loaded from {config_path}")
-
-    # Load ontology (and any additional component files)
+    # Load ontology (and any additional component files) first so we can build
+    # the prefix map, which is needed to derive the correct file prefix below.
     print(f"Loading {owl_path} ...")
     g = Graph()
     _load_owl_to_graph(g, owl_path)
@@ -2810,6 +2811,38 @@ def main() -> None:
         prefix_map = build_prefix_map_from_owl(owl_path, g)
         print(f"  {len(prefix_map)} prefixes resolved")
 
+    # Derive the file prefix from the ontology's default_prefix (the CURIE
+    # namespace of the root class), matching the value that build_schema_from_owl
+    # stores as default_prefix in the schema.  Falls back to the filename-derived
+    # prefix (uppercased per OBO convention) when the IRI can't be resolved.
+    # TODO: allow schema_config.yaml to supply a "file_prefix:" override.
+    _fb = _derive_ontology_prefix(owl_path)   # filename fallback, e.g. "SWO"
+    _root_curie = iri_to_curie(args.root_class, prefix_map) if args.root_class else ""
+    file_prefix = (
+        getattr(args, "default_prefix", None)
+        or (_root_curie.split(":")[0]
+            if ":" in _root_curie and not _root_curie.startswith("<")
+            else _fb)
+    )
+
+    # Resolve output and config paths using the ontology's default_prefix
+    output_path = os.path.abspath(
+        args.output if args.output
+        else os.path.join(owl_dir, f"{file_prefix}_schema.yaml")
+    )
+    config_path = os.path.abspath(
+        args.config_path if args.config_path
+        else os.path.join(
+            os.path.dirname(output_path),
+            f"{file_prefix}_schema_config.yaml",
+        )
+    )
+
+    # Load existing enum decisions
+    config = load_schema_config(config_path)
+    if os.path.exists(config_path):
+        print(f"Config loaded from {config_path}")
+
     # --robot mode: generate TSV file(s) from an existing schema.yaml
     if getattr(args, "robot_classes", None):
         if not os.path.exists(output_path):
@@ -2825,9 +2858,10 @@ def main() -> None:
         schema_prefixes = schema.get("prefixes", {})
         if schema_prefixes:
             prefix_map = {k.rstrip(":"): v for k, v in schema_prefixes.items()}
+        tsv_prefix = schema.get("default_prefix") or file_prefix
         output_dir = os.path.dirname(output_path)
         for class_name in args.robot_classes:
-            write_class_tsv(g, schema, class_name, prefix_map, output_dir)
+            write_class_tsv(g, schema, class_name, prefix_map, output_dir, tsv_prefix)
         return
 
     # Build schema (rarity prompts may appear here; decisions stored in config)
@@ -2841,11 +2875,6 @@ def main() -> None:
     spec, enum_items, config = interactive_refine_enums(
         g, spec, enum_items, prefix_map, config, config_path
     )
-
-    # Store the ontology prefix in the schema so downstream tools (e.g. --robot
-    # mode, software_googlesheet.py) can derive file names without needing the
-    # original OWL path.
-    spec.setdefault("schema", {})["ontology_prefix"] = ont_prefix
 
     # Enrich enums with enum_uri (single-root enums only; always applied)
     _enrich_enum_uris(g, spec, prefix_map)
