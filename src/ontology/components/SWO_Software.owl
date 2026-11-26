@@ -1,4 +1,4 @@
-Prefix(:=<http://purl.obolibrary.org/obo/swo/components/swo-software.owl#>)
+Prefix(:=<http://purl.obolibrary.org/obo/swo/components/SWO_Software.owl#>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
@@ -8,7 +8,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(terms:=<http://purl.org/dc/terms/>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/swo/components/swo-software.owl>
+Ontology(<http://purl.obolibrary.org/obo/swo/components/SWO_Software.owl>
 
 Declaration(Class(<http://edamontology.org/format_1929>))
 Declaration(Class(<http://edamontology.org/format_1936>))

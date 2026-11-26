@@ -20,7 +20,7 @@ Prefix(edamontology:=<http://edamontology.org#>)
 Ontology(<http://purl.obolibrary.org/obo/swo.owl>
 <http://purl.obolibrary.org/obo/swo.owl/1.9.0>
 Import(<http://purl.obolibrary.org/obo/swo/components/swo-external.owl>)
-Import(<http://purl.obolibrary.org/obo/swo/components/swo-software.owl>)
+Import(<http://purl.obolibrary.org/obo/swo/components/SWO_Software.owl>)
 Import(<http://purl.obolibrary.org/obo/swo/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/swo/imports/deprecated.owl>)
 Import(<http://purl.obolibrary.org/obo/swo/imports/iao_import.owl>)

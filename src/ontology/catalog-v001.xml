@@ -9,7 +9,7 @@
   <uri name="http://purl.obolibrary.org/obo/swo/imports/omo_import.owl" uri="imports/omo_import.owl"/>
   <uri name="http://purl.obolibrary.org/obo/swo/imports/ro_import.owl" uri="imports/ro_import.owl"/>
   <uri name="http://purl.obolibrary.org/obo/swo/components/swo-external.owl" uri="components/swo-external.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/swo/components/swo-software.owl" uri="components/swo-software.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/swo/components/SWO_Software.owl" uri="components/SWO_Software.owl"/>
 
 
   <uri name="http://purl.obolibrary.org/obo/swo/imports/deprecated.owl" uri="imports/deprecated.owl"/>
