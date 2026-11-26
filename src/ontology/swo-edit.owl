@@ -70,6 +70,7 @@ Declaration(Class(obo:BFO_0000023))
 Declaration(Class(obo:BFO_0000040))
 Declaration(Class(obo:COB_0000035))
 Declaration(Class(obo:COB_0000082))
+Declaration(Class(obo:COB_0000502))
 Declaration(Class(obo:IAO_0000025))
 Declaration(Class(obo:IAO_0000027))
 Declaration(Class(obo:IAO_0000030))
@@ -1135,6 +1136,10 @@ AnnotationAssertion(rdfs:label obo:BFO_0000015 "process"@en)
 
 AnnotationAssertion(rdfs:label obo:BFO_0000017 "realizable entity"@en)
 
+# Class: obo:BFO_0000019 (quality)
+
+SubClassOf(obo:BFO_0000019 obo:COB_0000502)
+
 # Class: obo:BFO_0000023 (role)
 
 AnnotationAssertion(rdfs:label obo:BFO_0000023 "role"@en)
@@ -1156,6 +1161,10 @@ SubClassOf(obo:COB_0000035 obo:COB_0000082)
 
 AnnotationAssertion(rdfs:label obo:COB_0000082 "planned process"@en)
 SubClassOf(obo:COB_0000082 obo:BFO_0000015)
+
+# Class: obo:COB_0000502 (characteristic)
+
+AnnotationAssertion(rdfs:label obo:COB_0000502 "characteristic"@en)
 
 # Class: obo:IAO_0000025 (programming language)
 
