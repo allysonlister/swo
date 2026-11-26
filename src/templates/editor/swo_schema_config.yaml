@@ -1,5 +1,7 @@
 # Schema configuration for onto_to_linkml_schema.py
 # enums.<name>.action: accept | narrow | skip
+# enums.<name>.enum_uri: CURIE — manually pins enum_uri (overrides graph-derived value)
+# enums.<name>.include_self: true — include the root class as a permissible value
 # excluded_properties: property IRIs skipped by rarity prompt
 enums:
   DirectlyFollowedByMenu:
@@ -46,9 +48,19 @@ enums:
     action: accept
   HasSpecifiedDataInputMenu_AminoAcidProteinSequenceData:
     action: accept
+  HasSpecifiedDataInputMenu_BiologicalSequenceData:
+    action: accept
   HasSpecifiedDataInputMenu_CsvDataSet:
     action: accept
   HasSpecifiedDataInputMenu_DataEntity:
+    action: accept
+  HasSpecifiedDataInputMenu_GeneExpressionDataset:
+    action: accept
+  HasSpecifiedDataInputMenu_Image:
+    action: accept
+  HasSpecifiedDataInputMenu_MicroarrayData:
+    action: accept
+  HasSpecifiedDataInputMenu_TextDataSet:
     action: accept
   HasSpecifiedDataInputMicroarrayDataMenu:
     action: accept
@@ -64,7 +76,11 @@ enums:
     action: accept
   HasSpecifiedDataOutputMenu_DataEntity:
     action: accept
+  HasSpecifiedDataOutputMenu_GeneList:
+    action: accept
   HasSpecifiedDataOutputMenu_GraphPlot:
+    action: accept
+  HasSpecifiedDataOutputMenu_Heatmap:
     action: accept
   HasSpecifiedDataOutputMenu_HtmlReport:
     action: accept
@@ -72,6 +88,7 @@ enums:
     action: accept
   IsEncodedInMenu:
     action: accept
+    enum_uri: IAO:0000025
   IsExecutedInMenu:
     action: accept
   IsSoftwareForMenu:

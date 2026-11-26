@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-onto_to_linkml_schema.py — Generate a robot-annotated LinkML schema.yaml
-                            from an OWL ontology.
+owl_to_schema.py — Generate a robot-annotated LinkML schema.yaml
+                   from an OWL ontology.
 
 Two operating modes
 -------------------
@@ -12,14 +12,17 @@ OWL-driven mode  (--class required, --spec not needed):
   a slot; standard annotation slots (ID, label, parent, definition, …) are
   always prepended automatically.
 
-  python onto_to_linkml_schema.py \\
+  Output file names are derived from the ontology file name: swo-edit.owl
+  produces swo_schema.yaml, swo_schema_config.yaml, and swo_schema_data.json.
+
+  python owl_to_schema.py \\
       --ontology swo-edit.owl \\
-      --class    http://purl.obolibrary.org/obo/SWO_0000001 \\
-      --output   schema.yaml
+      --class    http://purl.obolibrary.org/obo/SWO_0000001
 
   Optional flags (OWL-driven mode):
+    --output    swo_schema.yaml     override default output path
     --prefixes  prefixes.yaml      prefix→namespace map; auto-discovered if omitted
-    --config    schema_config.yaml persist enum accept/narrow/skip decisions
+    --config    swo_schema_config.yaml persist enum accept/narrow/skip decisions
     --schema-id    IRI             override auto-generated schema @id
     --schema-name  STR             override auto-generated schema name
     --schema-title STR             override auto-generated schema title
@@ -31,7 +34,7 @@ OWL-driven mode  (--class required, --spec not needed):
 Spec-driven mode  (--spec required, legacy):
   Reads schema structure from a hand-authored YAML spec file.
 
-  python onto_to_linkml_schema.py \\
+  python owl_to_schema.py \\
       --spec   software_schema_spec.yaml \\
       --output schema.yaml
 
@@ -74,14 +77,34 @@ from rdflib.namespace import OWL, RDF, RDFS
 # ---------------------------------------------------------------------------
 
 WELL_KNOWN_PREFIXES = {
-    # Prefixes not in ROBOT's default OBO table that owl-to-linkml.py needs.
+    # Prefixes not in ROBOT's default OBO table that owl_to_schema.py needs.
     # These supplement (and override) the robot export-prefixes output.
-    "https://w3id.org/linkml/":           "linkml",
-    "http://purl.org/dc/terms/":          "dcterms",
-    "http://purl.org/dc/elements/1.1/":   "dc",
-    "http://edamontology.org/":           "EDAM",
-    "http://kt.ijs.si/panovp/OntoDM#":    "ODME",
+    "https://w3id.org/linkml/":               "linkml",
+    "http://purl.org/dc/terms/":              "dcterms",
+    "http://purl.org/dc/elements/1.1/":       "dc",
+    "http://edamontology.org/":               "EDAM",
+    "http://kt.ijs.si/panovp/OntoDM#":        "ODME",
+    "http://www.ontodm.com/OntoDM-core/":     "OntoDM",
 }
+
+# Common OWL release-stage suffixes that are stripped when deriving the
+# ontology prefix from the file name (order matters: longest match wins).
+_OWL_STEM_SUFFIXES = ("-merged", "-simple", "-full", "-base", "-core", "-edit")
+
+
+def _derive_ontology_prefix(owl_path: str) -> str:
+    """Derive a short prefix from an OWL file path.
+
+    Strips the directory component, the file extension, and any common
+    release-stage suffix so that e.g. ``swo-edit.owl`` → ``swo``.
+    """
+    stem = os.path.splitext(os.path.basename(owl_path))[0]
+    for suffix in _OWL_STEM_SUFFIXES:
+        if stem.endswith(suffix):
+            stem = stem[: -len(suffix)]
+            break
+    return stem
+
 
 # ---------------------------------------------------------------------------
 # Standard annotation slots — always generated first in OWL-driven mode.
@@ -172,8 +195,48 @@ _STANDARD_SLOTS = [
         "multivalued": True,
         "slot_group": "Ontology Metadata",
         "robot": "A dcterms:creator SPLIT=|",
+        "people_menu": "TermCreatorMenu",
         "description": (
             "Name(s) of the curator(s) who added this entry (dcterms:creator). "
+            "Separate multiple values with |."
+        ),
+    },
+    {
+        "name": "contributor",
+        "slot_uri": "dc:contributor",
+        "range": "WhitespaceMinimizedString",
+        "multivalued": True,
+        "slot_group": "Ontology Metadata",
+        "robot": "A dc:contributor SPLIT=|",
+        "people_menu": "ContributorMenu",
+        "description": (
+            "Name(s) of contributor(s) (dc:contributor). "
+            "Separate multiple values with |."
+        ),
+    },
+    {
+        "name": "dcterms contributor",
+        "slot_uri": "dcterms:contributor",
+        "range": "WhitespaceMinimizedString",
+        "multivalued": True,
+        "slot_group": "Ontology Metadata",
+        "robot": "A dcterms:contributor SPLIT=|",
+        "people_menu": "DctermsContributorMenu",
+        "description": (
+            "Name(s) of contributor(s) (dcterms:contributor). "
+            "Separate multiple values with |."
+        ),
+    },
+    {
+        "name": "term editor",
+        "slot_uri": "IAO:0000117",
+        "range": "WhitespaceMinimizedString",
+        "multivalued": True,
+        "slot_group": "Ontology Metadata",
+        "robot": "A IAO:0000117 SPLIT=|",
+        "people_menu": "TermEditorMenu",
+        "description": (
+            "Name(s) of the editor(s) for this term (IAO:0000117). "
             "Separate multiple values with |."
         ),
     },
@@ -185,18 +248,23 @@ _STANDARD_SLOTS = [
 # ---------------------------------------------------------------------------
 
 def all_subclasses(g: Graph, root: URIRef) -> set:
-    """Return all transitive subclasses of *root* (not including root itself)."""
-    seen: set = set()
+    """Return all non-deprecated transitive subclasses of *root* (not including
+    root itself).  Deprecated classes are excluded from the result but are still
+    traversed so that any active classes beneath them are not missed."""
+    visited: set = set()   # all visited nodes (to prevent cycles)
+    result:  set = set()   # non-deprecated nodes only
     queue = [s for s in g.subjects(RDFS.subClassOf, root) if isinstance(s, URIRef)]
     while queue:
         cls = queue.pop()
-        if cls in seen:
+        if cls in visited:
             continue
-        seen.add(cls)
+        visited.add(cls)
+        if not is_deprecated(g, cls):
+            result.add(cls)
         queue.extend(
             s for s in g.subjects(RDFS.subClassOf, cls) if isinstance(s, URIRef)
         )
-    return seen
+    return result
 
 
 def is_deprecated(g: Graph, uri: URIRef) -> bool:
@@ -292,26 +360,30 @@ def classes_for_property(g: Graph, prop_iri: str, ns_fallbacks: list) -> set:
     Strategy:
       1. Collect rdfs:range declarations on the property and all their
          transitive subclasses.
-      2. Add every OWL class found in each *ns_fallbacks* namespace (catches
-         classes outside the declared range), then recurse into their
-         transitive subclasses too.
+      2. Only when no range is declared: add every OWL class found in each
+         *ns_fallbacks* namespace and recurse into their subclasses.
+         (ns_fallbacks are intentionally skipped when a range is found, to
+         avoid bloating the enum with the entire SWO namespace.)
     """
     prop  = URIRef(prop_iri)
-    roots = {o for o in g.objects(prop, RDFS.range) if isinstance(o, URIRef)}
+    roots = {o for o in g.objects(prop, RDFS.range)
+             if isinstance(o, URIRef) and not is_deprecated(g, o)}
 
     result: set = set()
     for root in roots:
         result.add(root)
         result.update(all_subclasses(g, root))
 
-    fallback_new: set = set()
-    for ns in ns_fallbacks:
-        for s in g.subjects(RDF.type, OWL.Class):
-            if isinstance(s, URIRef) and str(s).startswith(ns) and s not in result:
-                result.add(s)
-                fallback_new.add(s)
-    for s in fallback_new:
-        result.update(all_subclasses(g, s))
+    if not roots:
+        fallback_new: set = set()
+        for ns in ns_fallbacks:
+            for s in g.subjects(RDF.type, OWL.Class):
+                if (isinstance(s, URIRef) and str(s).startswith(ns)
+                        and s not in result and not is_deprecated(g, s)):
+                    result.add(s)
+                    fallback_new.add(s)
+        for s in fallback_new:
+            result.update(all_subclasses(g, s))
 
     return result
 
@@ -416,12 +488,26 @@ def save_schema_config(path: str, config: dict) -> None:
     header = (
         "# Schema configuration for onto_to_linkml_schema.py\n"
         "# enums.<name>.action: accept | narrow | skip\n"
+        "# enums.<name>.enum_uri: CURIE — manually pins enum_uri (overrides graph-derived value)\n"
+        "# enums.<name>.include_self: true — include the root class as a permissible value\n"
         "# excluded_properties: property IRIs skipped by rarity prompt\n"
     )
     with open(path, "w", encoding="utf-8") as f:
         f.write(header)
         yaml.dump(config, f, default_flow_style=False, allow_unicode=True, sort_keys=True)
     print(f"Config saved to {path}")
+
+
+def _write_enum_config(
+    config_enums: dict, name: str, entry: dict, saved: dict | None
+) -> None:
+    """Write *entry* to config_enums[name], preserving any fields from *saved*
+    that the new *entry* does not explicitly override (e.g. ``enum_uri``,
+    ``include_self``)."""
+    if saved:
+        preserved = {k: v for k, v in saved.items() if k not in entry}
+        entry = {**preserved, **entry}
+    config_enums[name] = entry
 
 
 # ---------------------------------------------------------------------------
@@ -813,10 +899,112 @@ def _get_range_root_iris(g: Graph, query_spec: dict) -> list:
         return [query_spec["root_iri"]]
     if qtype == "range_of_property":
         prop = URIRef(query_spec["property_iri"])
-        return [str(r) for r in g.objects(prop, RDFS.range) if isinstance(r, URIRef)]
+        return [str(r) for r in g.objects(prop, RDFS.range)
+                if isinstance(r, URIRef) and not is_deprecated(g, r)]
     if qtype == "roots_union":
         return list(query_spec.get("root_iris", []))
     return []
+
+
+def _enum_single_root_iri(g: Graph, enum_def: dict) -> str | None:
+    """Return the single root IRI string for an enum's query, or None when
+    there is not exactly one (multi-root unions, range_of_property with
+    multiple ranges, or individuals_in_namespace)."""
+    query = enum_def.get("query", {})
+    qtype = query.get("type")
+    if qtype == "subclasses_of":
+        return query.get("root_iri")
+    if qtype == "roots_union":
+        iris = query.get("root_iris", [])
+        return iris[0] if len(iris) == 1 else None
+    if qtype == "range_of_property":
+        prop   = URIRef(query["property_iri"])
+        ranges = [str(o) for o in g.objects(prop, RDFS.range)
+                  if isinstance(o, URIRef) and not is_deprecated(g, o)]
+        return ranges[0] if len(ranges) == 1 else None
+    return None   # individuals_in_namespace: no class root
+
+
+def _enrich_enum_uris(g: Graph, spec: dict, prefix_map: dict) -> None:
+    """Add enum_uri to every enum def that has exactly one root class.
+    Called unconditionally (not gated on --scope) since enum_uri is pure
+    annotation metadata useful to any LinkML consumer."""
+    for enum_def in spec.get("enums", {}).values():
+        root_iri = _enum_single_root_iri(g, enum_def)
+        if root_iri:
+            curie = iri_to_curie(root_iri, prefix_map)
+            if not curie.startswith("<"):
+                enum_def["enum_uri"] = curie
+
+
+def _build_scope_classes(
+    g: Graph,
+    spec: dict,
+    enum_items: dict,
+    prefix_map: dict,
+) -> tuple:
+    """Return (new_class_defs, new_enum_defs, new_enum_items) for --scope 1.
+
+    For each enum whose permissible values come from a single OWL parent class,
+    produce:
+      • a class def (standard annotation slots only, parent range → <Name>Menu)
+      • a <Name>Menu enum for the parent slot's range
+      • enum items for that menu
+
+    Skips the main class's own root and deduplicates when two enums share the
+    same root IRI.
+    """
+    main_root_iris = {
+        cls["root_iri"] for cls in spec.get("classes", []) if "root_iri" in cls
+    }
+    seen           = set(main_root_iris)
+    std_slot_names = [to_snake(s["name"]) for s in _STANDARD_SLOTS]
+
+    new_classes: list = []
+    new_enums:   dict = {}
+    new_items:   dict = {}
+
+    for enum_def in spec["enums"].values():
+        root_iri = _enum_single_root_iri(g, enum_def)
+        if not root_iri or root_iri in seen:
+            continue
+        label = str(g.value(URIRef(root_iri), RDFS.label) or "")
+        if not label:
+            continue
+        seen.add(root_iri)
+
+        cls_name   = "".join(
+            w.capitalize()
+            for w in re.sub(r"[^a-zA-Z0-9 ]", " ", label).split()
+        )
+        menu_name  = f"{cls_name}Menu"
+        root_curie = iri_to_curie(root_iri, prefix_map)
+
+        new_classes.append({
+            "name":         cls_name,
+            "description":  f"A {label} entry referenced by the ontology.",
+            "root_iri":     root_iri,
+            "slot_names":   std_slot_names,
+            "parent_range": menu_name,
+        })
+
+        menu_query = {
+            "type":         "subclasses_of",
+            "root_iri":     root_iri,
+            "include_root": True,
+        }
+        menu_def = {
+            "description": (
+                f"All subclasses of {root_curie}, including the root."
+            ),
+            "query": menu_query,
+        }
+        if not root_curie.startswith("<"):
+            menu_def["enum_uri"] = root_curie
+        new_enums[menu_name] = menu_def
+        new_items[menu_name] = build_enum_items(g, menu_query, prefix_map)
+
+    return new_classes, new_enums, new_items
 
 
 def _list_direct_subclasses(g: Graph, root_iri: str, prefix_map: dict) -> list:
@@ -1473,7 +1661,7 @@ def interactive_refine_enums(
         if not sys.stdin.isatty():
             # Non-interactive: no saved decision — accept as-is
             print(f"  {enum_name}: {count} entries  [no config — accepting]")
-            config["enums"][enum_name] = {"action": "accept"}
+            _write_enum_config(config["enums"], enum_name, {"action": "accept"}, saved)
             continue
 
         print(SEP)
@@ -1496,11 +1684,11 @@ def interactive_refine_enums(
         choice = raw[0] if raw else default
 
         if choice == "a":
-            config["enums"][enum_name] = {"action": "accept"}
+            _write_enum_config(config["enums"], enum_name, {"action": "accept"}, saved)
             print(f"  → Accepted {count} entries.")
 
         elif choice == "s":
-            config["enums"][enum_name] = {"action": "skip"}
+            _write_enum_config(config["enums"], enum_name, {"action": "skip"}, saved)
             _apply_skip(spec, enum_items, enum_name)
             print("  → Skipped.")
 
@@ -1510,7 +1698,7 @@ def interactive_refine_enums(
                     "  Narrowing is not supported for individuals_in_namespace enums. "
                     "Accepting as-is."
                 )
-                config["enums"][enum_name] = {"action": "accept"}
+                _write_enum_config(config["enums"], enum_name, {"action": "accept"}, saved)
                 continue
 
             # Gather direct subclasses from all range roots
@@ -1529,19 +1717,19 @@ def interactive_refine_enums(
 
             if not uniq:
                 print("  No direct subclasses found — accepting as-is.")
-                config["enums"][enum_name] = {"action": "accept"}
+                _write_enum_config(config["enums"], enum_name, {"action": "accept"}, saved)
                 continue
 
             selected = _select_subclasses(uniq)
 
             if selected is None:
                 # Cancelled — accept as-is
-                config["enums"][enum_name] = {"action": "accept"}
+                _write_enum_config(config["enums"], enum_name, {"action": "accept"}, saved)
                 print(f"  → Cancelled; accepted {count} entries.")
 
             elif len(selected) == len(uniq):
                 # All selected — equivalent to accept
-                config["enums"][enum_name] = {"action": "accept"}
+                _write_enum_config(config["enums"], enum_name, {"action": "accept"}, saved)
                 print(f"  → All selected; accepted {count} entries.")
 
             else:
@@ -1553,16 +1741,16 @@ def interactive_refine_enums(
                 new_items = build_enum_items(g, new_query, prefix_map)
                 enum_def["query"] = new_query
                 enum_items[enum_name] = new_items
-                config["enums"][enum_name] = {
+                _write_enum_config(config["enums"], enum_name, {
                     "action":    "narrow",
                     "root_iris": selected_iris,
                     "labels":    {s[0]: s[1] for s in selected},
-                }
+                }, saved)
                 print(f"  → Narrowed to {len(new_items)} entries.")
 
         else:
             # Unrecognised input — treat as accept
-            config["enums"][enum_name] = {"action": "accept"}
+            _write_enum_config(config["enums"], enum_name, {"action": "accept"}, saved)
             print(f"  → Accepted {count} entries (unrecognised input).")
 
     print(SEP)
@@ -1578,7 +1766,12 @@ def _w(lines: list, text: str = "") -> None:
     lines.append(text)
 
 
-def write_schema_yaml(spec: dict, enum_items: dict, output_path: str) -> None:
+def write_schema_yaml(
+    spec: dict,
+    enum_items: dict,
+    output_path: str,
+    prefix_map: dict | None = None,
+) -> None:
     """Write a robot-annotated LinkML schema.yaml from *spec* and *enum_items*."""
     L: list = []
     schema   = spec.get("schema", {})
@@ -1599,6 +1792,8 @@ def write_schema_yaml(spec: dict, enum_items: dict, output_path: str) -> None:
     _w(L, "annotations:")
     _w(L, '  list_delimiter: "|"')
     _w(L, '  application: robot')
+    if schema.get("ontology_prefix"):
+        _w(L, f'  ontology_prefix: {schema["ontology_prefix"]}')
     _w(L)
     _w(L, "imports:")
     _w(L, "  - linkml:types")
@@ -1611,6 +1806,53 @@ def write_schema_yaml(spec: dict, enum_items: dict, output_path: str) -> None:
     _w(L, "default_range: string")
     _w(L)
 
+    # --- push-down: slot attributes overridden in any class's slot_usage ---
+    # If class A overrides attribute X on slot S but class B does not, the
+    # global schema.slots.S.X value bleeds into class B via inheritance and
+    # DataHarmonizer honours the global over the per-class slot_usage.  The
+    # fix: drop attribute X from schema.slots.S and stamp it explicitly into
+    # every class's slot_usage.S — using the class-specific override where
+    # one exists, and the original global value everywhere else.
+    #
+    # Currently only 'range' is overridden per-class (via cls_def parent_range).
+    # slot_range_overrides: {slot_snake: {cls_name: override_range_str}}
+    slot_range_overrides: dict = {}
+    for cls_def in classes:
+        override = cls_def.get("parent_range")
+        if override:
+            slot_range_overrides.setdefault("parent", {})[cls_def["name"]] = override
+
+    # Pre-compute the global range for each pushed-down slot so we can
+    # explicitly stamp it on classes that have no per-class override.
+    global_slot_range: dict = {}  # {slot_snake: range_str}
+    for slot in slots:
+        snake = to_snake(slot["name"])
+        if snake in slot_range_overrides:
+            robot_code = slot.get("robot", "")
+            rng = "uriorcurie" if robot_code == "ID" else (slot.get("range") or "string")
+            global_slot_range[snake] = rng
+
+    # --- parent-enum enum_uri alignment ---
+    # For each class with a class_uri, set its parent-slot menu enum's
+    # enum_uri to match the class_uri.  This signals to DataHarmonizer
+    # that new rows added to the class tab will cause that enum to be
+    # dynamically regenerated from the class's OWL class subtree.
+    if prefix_map:
+        for cls_def in classes:
+            root_iri = cls_def.get("root_iri")
+            if not root_iri:
+                continue
+            class_curie = iri_to_curie(str(root_iri), prefix_map)
+            if class_curie.startswith("<"):
+                continue
+            cls_name = cls_def["name"]
+            parent_menu = (
+                slot_range_overrides.get("parent", {}).get(cls_name)
+                or global_slot_range.get("parent")
+            )
+            if parent_menu and parent_menu in enums:
+                enums[parent_menu]["enum_uri"] = class_curie
+
     # --- classes ---
     _w(L, "classes:")
     _w(L)
@@ -1619,19 +1861,62 @@ def write_schema_yaml(spec: dict, enum_items: dict, output_path: str) -> None:
         _w(L, f"  {cls_name}:")
         _w(L, f"    name: {cls_name}")
         _w(L, f"    title: {cls_name}")
+        # class_uri: the CURIE for the OWL class this schema class represents.
+        if cls_def.get("root_iri") and prefix_map:
+            root_curie = iri_to_curie(str(cls_def["root_iri"]), prefix_map)
+            if not root_curie.startswith("<"):
+                _w(L, f"    class_uri: {root_curie}")
         if cls_def.get("description"):
             _w(L, "    description: >-")
             _w(L, f"      {cls_def['description'].strip()}")
+        # Scope classes carry a slot_names list; main class gets all slots.
+        # people_slots (set of snake names) restricts which people annotation
+        # slots appear — only those with values in this class's OWL subtree.
+        class_slot_names = cls_def.get("slot_names")
+        people_slots = cls_def.get("people_slots")  # None → no restriction
+        class_slots = [
+            s for s in slots
+            if (class_slot_names is None or to_snake(s["name"]) in set(class_slot_names))
+            and (not s.get("people_menu") or people_slots is None
+                 or to_snake(s["name"]) in people_slots)
+        ]
         _w(L, "    slots:")
-        for slot in slots:
+        for slot in class_slots:
             _w(L, f"      - {to_snake(slot['name'])}")
         _w(L, "    slot_usage:")
-        for rank, slot in enumerate(slots, start=1):
+        for rank, slot in enumerate(class_slots, start=1):
             snake = to_snake(slot["name"])
             _w(L, f"      {snake}:")
             _w(L, f"        rank: {rank}")
             if slot.get("slot_group"):
                 _w(L, f"        slot_group: {slot['slot_group']}")
+            # Push-down: if this slot's range is overridden in any class,
+            # write range explicitly for every class (override or global default).
+            if snake in slot_range_overrides:
+                range_val = (
+                    slot_range_overrides[snake].get(cls_name)
+                    or global_slot_range.get(snake)
+                )
+                if range_val:
+                    _w(L, f"        range: {range_val}")
+
+    # --- Container class (tree root for DataHarmonizer) ---
+    # One multivalued attribute per data class; no foreign-key dependencies.
+    _w(L)
+    _w(L, "  Container:")
+    _w(L, "    name: Container")
+    _w(L, "    description: >-")
+    _w(L, f"      Holds all {schema.get('name', 'ontology')} entity tables for DataHarmonizer.")
+    _w(L, "    tree_root: true")
+    _w(L, "    attributes:")
+    for cls_def in classes:
+        attr     = _plural_name(cls_def["name"])
+        cls_name = cls_def["name"]
+        _w(L, f"      {attr}:")
+        _w(L, f"        name: {attr}")
+        _w(L, f"        range: {cls_name}")
+        _w(L, "        multivalued: true")
+        _w(L, "        inlined_as_list: true")
     _w(L)
 
     # --- slots ---
@@ -1672,7 +1957,15 @@ def write_schema_yaml(spec: dict, enum_items: dict, output_path: str) -> None:
         if slot.get("multivalued"):
             _w(L, "    multivalued: true")
         rng = "uriorcurie" if robot == "ID" else (slot.get("range") or "string")
-        _w(L, f"    range: {rng}")
+        people_menu = slot.get("people_menu")
+        # People slots: emit any_of with WhitespaceMinimizedString + menu enum.
+        # Omit range from global slot when it has been pushed down per-class.
+        if people_menu and enum_items.get(people_menu) is not None:
+            _w(L, "    any_of:")
+            _w(L, "      - range: WhitespaceMinimizedString")
+            _w(L, f"      - range: {people_menu}")
+        elif snake not in slot_range_overrides:
+            _w(L, f"    range: {rng}")
         examples = slot.get("examples") or []
         if examples:
             _w(L, "    examples:")
@@ -1687,6 +1980,8 @@ def write_schema_yaml(spec: dict, enum_items: dict, output_path: str) -> None:
         items = enum_items.get(enum_name, [])
         _w(L, f"  {enum_name}:")
         _w(L, f"    name: {enum_name}")
+        if enum_def.get("enum_uri"):
+            _w(L, f"    enum_uri: {enum_def['enum_uri']}")
         if enum_def.get("description"):
             _w(L, f"    description: {enum_def['description']}")
         _w(L, "    permissible_values:")
@@ -1701,19 +1996,22 @@ def write_schema_yaml(spec: dict, enum_items: dict, output_path: str) -> None:
             c: (f"{lbl} ({c})" if label_counts[lbl] > 1 else lbl)
             for c, lbl, _, _ in items
         }
+        is_people = enum_def.get("people_menu", False)
         for curie, label, _iri, parent_curie in items:
             # Key is the rdfs:label (disambiguated with CURIE when needed);
             # text stays as the plain label so DH stores and saves it cleanly.
             # meaning carries the CURIE for downstream ROBOT/OWL use.
             # is_a encodes OWL subClassOf hierarchy for entries deeper than
             # one level from the enum root (direct children of root get no is_a).
+            # People menus have no CURIEs/hierarchy; skip meaning and is_a.
             key = _yaml_scalar(curie_to_key[curie])
             lbl = _yaml_scalar(label)
             _w(L, f"      {key}:")
             _w(L, f"        text: {lbl}")
             _w(L, f"        title: {lbl}")
-            _w(L, f"        meaning: {curie}")
-            if parent_curie and parent_curie in curie_to_key:
+            if not is_people:
+                _w(L, f"        meaning: {curie}")
+            if not is_people and parent_curie and parent_curie in curie_to_key:
                 parent_key = _yaml_scalar(curie_to_key[parent_curie])
                 _w(L, f"        is_a: {parent_key}")
         _w(L)
@@ -1760,6 +2058,106 @@ def _curie_to_iri(curie: str, prefix_map: dict) -> str:
     prefix, local = curie.split(":", 1)
     ns = prefix_map.get(prefix)
     return (ns + local) if ns else None
+
+
+def _plural_name(name: str) -> str:
+    """Return a simple plural form for a CamelCase class name, used as the
+    Container attribute key (e.g. Software→Softwares, DataEntity→DataEntities,
+    DevelopmentStatus→DevelopmentStatuses)."""
+    if name.endswith("Status"):
+        return name + "es"
+    if name.endswith("y") and len(name) > 1 and name[-2].lower() not in "aeiou":
+        return name[:-1] + "ies"
+    return name + "s"
+
+
+def _build_people_menus(
+    g: Graph, slots: list, prefix_map: dict
+) -> tuple[dict, dict]:
+    """Scan unique annotation values for all 'people slots' (those with a
+    ``people_menu`` key) and return ``(enum_defs, enum_items)`` dicts.
+
+    Each enum holds alphabetically sorted unique literal values found for the
+    corresponding annotation property across the whole loaded graph.  Values are
+    trimmed of whitespace.  Menus with zero entries are still created so the
+    slot's ``any_of:`` block is written consistently.
+    """
+    enum_defs: dict = {}
+    enum_items_out: dict = {}
+
+    for slot in slots:
+        menu_name = slot.get("people_menu")
+        if not menu_name:
+            continue
+        slot_uri = slot.get("slot_uri")
+        if not slot_uri:
+            continue
+        prop_iri = _curie_to_iri(slot_uri, prefix_map)
+        if not prop_iri:
+            continue
+        prop = URIRef(prop_iri)
+
+        values = sorted(
+            {
+                str(o).strip()
+                for _, o in g.subject_objects(prop)
+                if isinstance(o, Literal) and str(o).strip()
+            },
+            key=str.casefold,
+        )
+
+        enum_defs[menu_name] = {
+            "description": f"Unique values for {slot_uri} found in the ontology.",
+            "people_menu": True,
+        }
+        # Items: (value, value, None, None) — string-only, no CURIE or hierarchy.
+        enum_items_out[menu_name] = [(v, v, None, None) for v in values]
+        print(f"  {menu_name}: {len(values)} unique value(s)")
+
+    return enum_defs, enum_items_out
+
+
+def _assign_people_slots_to_classes(
+    g: Graph, classes: list, all_slots: list, prefix_map: dict
+) -> None:
+    """For each class def, compute which people slots (those with a
+    ``people_menu`` key) have at least one value anywhere in the class's OWL
+    subtree (the root class itself plus all non-deprecated subclasses).
+
+    The result is stored as ``cls_def['people_slots']`` — a set of snake-case
+    slot names.  Slots NOT in this set are excluded from that class's column
+    list in the generated schema.
+    """
+    people_slot_props: list = []   # [(snake_name, URIRef), ...]
+    for slot in all_slots:
+        if not slot.get("people_menu"):
+            continue
+        slot_uri = slot.get("slot_uri")
+        if not slot_uri:
+            continue
+        prop_iri = _curie_to_iri(slot_uri, prefix_map)
+        if not prop_iri:
+            continue
+        people_slot_props.append((to_snake(slot["name"]), URIRef(prop_iri)))
+
+    if not people_slot_props:
+        return
+
+    for cls_def in classes:
+        root_iri_str = cls_def.get("root_iri")
+        if not root_iri_str:
+            cls_def["people_slots"] = set()
+            continue
+        root_iri = URIRef(root_iri_str)
+        subtree = all_subclasses(g, root_iri) | {root_iri}
+
+        applicable: set = set()
+        for snake, prop in people_slot_props:
+            for cls_node in subtree:
+                if next(g.objects(cls_node, prop), None) is not None:
+                    applicable.add(snake)
+                    break
+        cls_def["people_slots"] = applicable
 
 
 def _parse_robot_code(code: str) -> dict:
@@ -1958,13 +2356,28 @@ def write_class_tsv(
         parsed   = _parse_robot_code(robot)
         columns.append((title, robot, parsed))
 
-    # Find root OWL class by rdfs:label (case-insensitive)
-    root_iri = None
-    for s, o in g.subject_objects(RDFS.label):
-        if isinstance(s, URIRef) and isinstance(o, Literal):
-            if str(o).lower() == class_name.lower():
-                root_iri = s
-                break
+    # Find root OWL class.
+    # Prefer class_uri written into the schema (reliable for scope classes
+    # whose CamelCase name may not match their OWL rdfs:label directly).
+    # Fall back to two label-matching normalisations for backward compat:
+    #   1. exact case-insensitive match  ("Licence" → "licence")
+    #   2. CamelCase split + lower       ("DataFormatSpecification" →
+    #                                     "data format specification")
+    class_uri_curie = cls_def.get("class_uri")
+    if class_uri_curie:
+        # Convert CURIE back to full IRI using the prefix map
+        full_iri = _curie_to_iri(class_uri_curie, prefix_map)
+        root_iri = URIRef(full_iri) if full_iri else None
+    else:
+        name_exact = class_name.lower()
+        name_split = re.sub(r"([a-z])([A-Z])", r"\1 \2", class_name).lower()
+        root_iri   = None
+        for s, o in g.subject_objects(RDFS.label):
+            if isinstance(s, URIRef) and isinstance(o, Literal):
+                lbl = str(o).lower()
+                if lbl == name_exact or lbl == name_split:
+                    root_iri = s
+                    break
     if root_iri is None:
         print(f"ERROR: no OWL class with rdfs:label matching '{class_name}'.",
               file=sys.stderr)
@@ -2008,6 +2421,189 @@ def write_class_tsv(
             ))
 
     print(f"Wrote {len(subclasses)} rows to {tsv_path}")
+
+
+# ---------------------------------------------------------------------------
+# JSON data generation
+# ---------------------------------------------------------------------------
+
+def write_schema_json(
+    g: Graph,
+    spec: dict,
+    prefix_map: dict,
+    output_path: str,
+) -> None:
+    """Write schema_data.json in DataHarmonizer Container format.
+
+    Extracts OWL class data for every schema class (excluding Container) and
+    assembles it into a JSON container keyed by the plural attribute name
+    (e.g. ``Softwares``, ``DataEntities``), mirroring the format DataHarmonizer
+    uses when saving data.  Empty field values are omitted; multivalued slots
+    with more than one value are stored as JSON arrays.
+    """
+    s_meta    = spec.get("schema", {})
+    classes   = spec.get("classes", [])
+    all_slots = spec.get("slots", [])
+
+    labels         = build_label_map(g)
+    prop_label_map = {
+        str(o): str(s)
+        for s, o in g.subject_objects(RDFS.label)
+        if isinstance(s, URIRef) and isinstance(o, Literal)
+    }
+    slots_by_snake = {to_snake(sl["name"]): sl for sl in all_slots}
+
+    def _slot_descs(cls_def):
+        """Return [(snake_name, parsed_robot)] in rank order for cls_def.
+
+        In-memory spec dicts use ``slot_names`` (a filtered list of snake names)
+        for scope classes, or no such key for the main class (all slots apply).
+        ``slot_usage`` is not stored in the in-memory spec so all ranks are 9999
+        and slots come out in their declaration order, which is fine for JSON.
+        """
+        slot_name_filter = cls_def.get("slot_names")  # None → all slots
+        applicable = [
+            sl for sl in all_slots
+            if slot_name_filter is None or to_snake(sl["name"]) in set(slot_name_filter)
+        ]
+        result = []
+        for sl in applicable:
+            snake = to_snake(sl["name"])
+            # In the in-memory spec, the robot code lives directly on the slot dict.
+            # (In the parsed schema YAML it is nested under annotations.robot.)
+            robot = sl.get("robot", "") or sl.get("annotations", {}).get("robot", "")
+            result.append((snake, _parse_robot_code(robot)))
+        return result
+
+    def _json_row(cls, descs):
+        """Return a non-empty {slot_name: value} dict for one OWL class."""
+        row = {}
+        for snake, parsed in descs:
+            if parsed is None:
+                continue
+            kind = parsed["kind"]
+
+            if kind == "id":
+                v = iri_to_curie(str(cls), prefix_map)
+                if v and not v.startswith("<"):
+                    row[snake] = v
+
+            elif kind == "parent":
+                for par in g.objects(cls, RDFS.subClassOf):
+                    if isinstance(par, URIRef) and not is_deprecated(g, par):
+                        lbl = (labels.get(str(par)) or iri_to_curie(str(par), prefix_map) or "").strip()
+                        if lbl:
+                            row[snake] = lbl
+                        break
+
+            elif kind == "annotation":
+                prop_iri = _curie_to_iri(parsed["prop_curie"], prefix_map)
+                if not prop_iri:
+                    continue
+                prop  = URIRef(prop_iri)
+                lang  = parsed.get("lang")
+                split = parsed.get("split", False)
+                vals  = []
+                for obj in g.objects(cls, prop):
+                    if isinstance(obj, Literal):
+                        if lang is None or str(obj.language) == lang:
+                            vals.append(" ".join(str(obj).splitlines()))
+                    elif isinstance(obj, URIRef):
+                        vals.append(str(obj))
+                vals = [v.strip() for v in vals if v.strip()]
+                if vals:
+                    if split:
+                        row[snake] = vals   # always a list for multivalued slots
+                    else:
+                        row[snake] = vals[0]
+
+            elif kind in ("some", "value"):
+                prop_iri = prop_label_map.get(parsed["prop_label"])
+                if not prop_iri:
+                    continue
+                prop  = URIRef(prop_iri)
+                split = parsed.get("split", False)
+                vals  = []
+                for sc in g.objects(cls, RDFS.subClassOf):
+                    if not isinstance(sc, BNode):
+                        continue
+                    if (sc, RDF.type, OWL.Restriction) not in g:
+                        continue
+                    if g.value(sc, OWL.onProperty) != prop:
+                        continue
+                    if kind == "some":
+                        filler = g.value(sc, OWL.someValuesFrom)
+                        if isinstance(filler, URIRef):
+                            vals.append(
+                                labels.get(str(filler))
+                                or iri_to_curie(str(filler), prefix_map)
+                            )
+                    else:
+                        val = g.value(sc, OWL.hasValue)
+                        if isinstance(val, URIRef):
+                            vals.append(
+                                labels.get(str(val))
+                                or iri_to_curie(str(val), prefix_map)
+                            )
+                        elif isinstance(val, Literal):
+                            vals.append(str(val))
+                vals = [v.strip() for v in vals if v.strip()]
+                if vals:
+                    if split:
+                        row[snake] = vals   # always a list for multivalued slots
+                    else:
+                        row[snake] = vals[0]
+
+        return row
+
+    def _dfs_subclasses(root):
+        def _walk(parent, seen):
+            children = sorted(
+                [c for c in g.subjects(RDFS.subClassOf, parent)
+                 if isinstance(c, URIRef) and not is_deprecated(g, c) and c not in seen],
+                key=lambda c: labels.get(str(c), str(c)).casefold(),
+            )
+            result = []
+            for child in children:
+                seen.add(child)
+                result.append(child)
+                result.extend(_walk(child, seen))
+            return result
+        return _walk(root, set())
+
+    container = {}
+    for cls_def in classes:
+        cls_name = cls_def["name"]
+        if cls_name == "Container":
+            continue
+
+        root_iri_str = cls_def.get("root_iri")
+        if not root_iri_str:
+            continue
+        root_iri = URIRef(root_iri_str)
+
+        descs   = _slot_descs(cls_def)
+        members = _dfs_subclasses(root_iri)
+        rows    = [r for m in members if (r := _json_row(m, descs))]
+
+        attr = _plural_name(cls_name)
+        container[attr] = rows
+        print(f"  {cls_name}: {len(rows)} rows → {attr}")
+
+    output = {
+        "schema":      s_meta.get("id", ""),
+        "version":     s_meta.get("version", "1.0.0"),
+        "in_language": "en",
+        "container":   container,
+    }
+
+    out_dir = os.path.dirname(output_path)
+    if out_dir:
+        os.makedirs(out_dir, exist_ok=True)
+    with open(output_path, "w", encoding="utf-8") as fh:
+        json.dump(output, fh, indent=2, ensure_ascii=False)
+        fh.write("\n")
+    print(f"  {output_path}")
 
 
 # ---------------------------------------------------------------------------
@@ -2084,6 +2680,15 @@ def main() -> None:
             "schema.yaml."
         ),
     )
+    parser.add_argument(
+        "--scope", metavar="INT", type=int, default=0,
+        help=(
+            "0 (default): generate schema for the root class only. "
+            "1: also generate a class and TSV tab for every enum that maps to "
+            "a single OWL parent class (object-property targets such as "
+            "'programming language', 'license', etc.)."
+        ),
+    )
     args = parser.parse_args()
 
     # --- Validate mode ---
@@ -2150,7 +2755,10 @@ def main() -> None:
         if out_dir:
             os.makedirs(out_dir, exist_ok=True)
         print(f"\nWriting {output_path} ...")
-        write_schema_yaml(spec, enum_items, output_path)
+        write_schema_yaml(spec, enum_items, output_path, prefix_map=prefix_map)
+        json_path = os.path.splitext(output_path)[0] + "_data.json"
+        print(f"\nWriting {json_path} ...")
+        write_schema_json(g, spec, prefix_map, json_path)
         print("Done.")
         return
 
@@ -2160,16 +2768,21 @@ def main() -> None:
     if not args.ontology:
         parser.error("--ontology is required in OWL-driven mode.")
 
-    owl_path    = os.path.abspath(args.ontology)
-    owl_dir     = os.path.dirname(owl_path)
+    owl_path   = os.path.abspath(args.ontology)
+    owl_dir    = os.path.dirname(owl_path)
+    ont_prefix = _derive_ontology_prefix(owl_path)   # e.g. "swo"
     output_path = os.path.abspath(
-        args.output if args.output else os.path.join(owl_dir, "schema.yaml")
+        args.output if args.output
+        else os.path.join(owl_dir, f"{ont_prefix}_schema.yaml")
     )
 
     # Resolve config path and load existing decisions
     config_path = os.path.abspath(
         args.config_path if args.config_path
-        else os.path.join(os.path.dirname(output_path), "schema_config.yaml")
+        else os.path.join(
+            os.path.dirname(output_path),
+            f"{ont_prefix}_schema_config.yaml",
+        )
     )
     config = load_schema_config(config_path)
     if os.path.exists(config_path):
@@ -2229,9 +2842,55 @@ def main() -> None:
         g, spec, enum_items, prefix_map, config, config_path
     )
 
+    # Store the ontology prefix in the schema so downstream tools (e.g. --robot
+    # mode, software_googlesheet.py) can derive file names without needing the
+    # original OWL path.
+    spec.setdefault("schema", {})["ontology_prefix"] = ont_prefix
+
+    # Enrich enums with enum_uri (single-root enums only; always applied)
+    _enrich_enum_uris(g, spec, prefix_map)
+
+    # Apply any manually-specified enum_uri from schema_config.yaml, overriding
+    # the graph-derived value so curators can pin the URI for enums whose
+    # rdfs:range is absent or points to a deprecated class.
+    for enum_name, enum_def in spec.get("enums", {}).items():
+        cfg_uri = config.get("enums", {}).get(enum_name, {}).get("enum_uri")
+        if cfg_uri:
+            enum_def["enum_uri"] = cfg_uri
+
+    # --scope 1: add a class and menu enum for each single-root enum target
+    if getattr(args, "scope", 0) >= 1:
+        scope_classes, scope_enums, scope_enum_items = _build_scope_classes(
+            g, spec, enum_items, prefix_map
+        )
+        spec["classes"].extend(scope_classes)
+        spec["enums"].update(scope_enums)
+        enum_items.update(scope_enum_items)
+        if scope_classes:
+            print(
+                f"\nScope 1: added {len(scope_classes)} class(es): "
+                + ", ".join(c["name"] for c in scope_classes)
+            )
+
+    # Build people menus from unique annotation values in the loaded graph.
+    # (dcterms:creator, dc:contributor, dcterms:contributor, IAO:0000117)
+    print("\nBuilding people menus ...")
+    people_enum_defs, people_enum_items = _build_people_menus(
+        g, spec["slots"], prefix_map
+    )
+    spec["enums"].update(people_enum_defs)
+    enum_items.update(people_enum_items)
+
+    # Determine per-class which people slots are applicable (have values in
+    # that class's OWL subtree); store as cls_def['people_slots'].
+    _assign_people_slots_to_classes(g, spec["classes"], spec["slots"], prefix_map)
+
     # Write output
     print(f"\nWriting {output_path} ...")
-    write_schema_yaml(spec, enum_items, output_path)
+    write_schema_yaml(spec, enum_items, output_path, prefix_map=prefix_map)
+    json_path = os.path.splitext(output_path)[0] + "_data.json"
+    print(f"\nWriting {json_path} ...")
+    write_schema_json(g, spec, prefix_map, json_path)
     print("Done.")
 
 
